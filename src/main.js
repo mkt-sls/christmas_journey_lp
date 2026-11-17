@@ -3,6 +3,7 @@ import './styles/tokens.css';
 import './styles/base.css';
 import './styles/layout.css';
 import './styles/components.css';
+import './styles/anim.css';
 
 import { CAMPAIGN } from './config.js';
 import { campaignDay, parseNow } from './date.js';
@@ -14,8 +15,13 @@ import { renderHowItWorks } from './render/howItWorks.js';
 import { renderIntro } from './render/intro.js';
 import { renderLegal } from './render/legal.js';
 import { closeOverlay, openOverlay } from './render/overlay.js';
-import { drawGarlands, renderRoute, stageSpec, tickCountdown } from './render/route.js';
+import { desktopFit, drawGarlands, fitLabels, renderRoute, stageSpec, tickCountdown } from './render/route.js';
 import { track } from './track.js';
+import { initAmbient } from './anim/ambient.js';
+import { checkNewDay } from './anim/lastSeen.js';
+import { playOpening } from './anim/open.js';
+import { playUnlock } from './anim/unlock.js';
+import { dayState, visibleDays } from './date.js';
 
 const app = document.getElementById('app');
 const search = window.location.search;
@@ -29,6 +35,7 @@ const now = () => new Date(hasOverride ? Date.now() + clockOffset : Date.now());
 
 const state = { market: null, ui: null, cards: null, today: null };
 
+const MOBILE_FIRST_PAD = 95;
 const layout = () => (mq.matches ? 'desktop' : 'mobile');
 
 async function setMarket(id, { persist = true } = {}) {
@@ -48,9 +55,14 @@ function fitStage() {
   if (!page) return;
   const l = layout();
   const spec = stageSpec(l);
-  const s = l === 'desktop' ? Math.max(0.72, Math.min(1, window.innerWidth / 1920)) : 1;
+  // desktop: see desktopFit; mobile: the 390px stage shrinks on narrower phones (360 -> 0.92) so nothing is cut off
+  const { s, f } = l === 'desktop' ? desktopFit(window.innerWidth) : { s: Math.min(1, window.innerWidth / 390), f: 1 };
   page.style.setProperty('--s', s);
+  page.style.setProperty('--f', f);
+  // mobile, Santa in slot 0 (Dec 1, before the campaign): room above the first gift so he is not cut off by the stage
+  page.style.setProperty('--stage-pad', l === 'mobile' && page.querySelector('[data-santa-first]') ? `${MOBILE_FIRST_PAD * s}px` : '0px');
   page.style.setProperty('--stage-h', `${spec.height * s}px`);
+  fitLabels(app);
 }
 
 function render() {
@@ -83,6 +95,12 @@ function render() {
   </div>`;
   fitStage();
   drawGarlands(app);
+  // the web font changes text widths once loaded: redraw the garlands and re-fit the labels
+  document.fonts?.ready.then(() => {
+    drawGarlands(app);
+    fitLabels(app);
+  });
+  maybePlayUnlock(l);
   bindMarketMenu(app, (id) => {
     if (id === state.market.id) return;
     const from = state.market.id;
@@ -96,12 +114,30 @@ function render() {
   });
 }
 
-function openCard(day) {
+// New day: first render after cj:lastSeenDay < today. Never on the very first visit, only inside the campaign.
+function maybePlayUnlock(l) {
+  if (!checkNewDay(state.today, undefined, CAMPAIGN.days)) return;
+  const { todayIndex } = visibleDays(state.today, stageSpec(l).size, CAMPAIGN.days);
+  playUnlock(app, { layout: l, todayIndex });
+}
+
+let opening = false;
+async function openCard(day) {
+  if (opening) return;
   const l = layout();
   const card = state.cards.days[day - 1];
   if (!card) return;
   const { html, kind } = renderCard({ card, day, today: state.today, ui: state.ui, marketId: state.market.id });
   track('open_gift', { day, state: kind, market: state.market.id });
+  // only today's gift plays the opening; missed and locked cards just play the card-in
+  if (dayState(day, state.today) === 'active') {
+    opening = true;
+    try {
+      await playOpening(app.querySelector(`.gift[data-open="${day}"]`));
+    } finally {
+      opening = false;
+    }
+  }
   openOverlay({
     html,
     layout: l,
@@ -126,6 +162,7 @@ document.addEventListener('click', (e) => {
   if (a.dataset.track === 'terms_click') track('terms_click', data);
 });
 
+initAmbient();
 window.addEventListener('resize', fitStage);
 mq.addEventListener('change', () => {
   closeOverlay(false);

@@ -399,6 +399,28 @@ const { out: uiAll, timerRowSeen } = buildUi();
   if (other25.length) notes.push('Other UI strings still containing "25" (checked, not changed): ' + other25.join('; '));
 }
 
+// Step 3 body: explicit owner override (task 4). The sheet text describes a green "credited" gift that
+// does not exist on the page. These 12 strings are agency-made; the client must verify them.
+const STEP3_BODY = {
+  EN: 'Deposit before 23:59 to claim the day’s bonus.',
+  RU: 'Пополни счёт до 23:59, чтобы забрать бонус дня.',
+  FR_CA: 'Dépose avant 23 h 59 pour réclamer le bonus du jour.',
+  DE: 'Zahle bis 23:59 Uhr ein, um den Tagesbonus zu sichern.',
+  BG: 'Депозирай до 23:59 ч., за да вземеш бонуса за деня.',
+  NL: 'Stort vóór 23:59 uur om de bonus van de dag te claimen.',
+  RO_MD: 'Depune până la 23:59 pentru a revendica bonusul zilei.',
+  TR: 'Günün bonusunu almak için 23:59’a kadar yatırım yap.',
+  NO: 'Sett inn før kl. 23:59 for å hente dagens bonus.',
+  IT: 'Deposita entro le 23:59 per riscuotere il bonus del giorno.',
+  DA: 'Indbetal inden kl. 23:59 for at hente dagens bonus.',
+  SV: 'Sätt in före kl. 23:59 för att hämta dagens bonus.',
+};
+for (const l of UI_LANGS) {
+  if (!STEP3_BODY[l]) throw new Error('STEP3_BODY missing for ' + l);
+  uiAll[l].strings.step3_body = STEP3_BODY[l];
+}
+log('OVERRIDE step3_body replaced in ' + UI_LANGS.length + ' languages (owner decision, agency translations).');
+
 // campaign_ended placeholder
 for (const l of UI_LANGS) uiAll[l].strings.campaign_ended = PLACEHOLDER_ENDED;
 
@@ -471,7 +493,6 @@ for (const m of MARKETS) {
     else unresolved.push(`${l}.opens_dec8: "${s.opens_dec8}"`);
   }
   if (unresolved.length) notes.push('Sample dates/time not turned into templates (kept as sheet text): ' + unresolved.join('; '));
-  notes.push('The sheet text of step 3 (key step3_body, e.g. EN "The gift turns green when the bonus is credited.") describes a green "credited" gift. The page has no such state (only missed / active / locked), so this sentence no longer matches what the visitor sees. The page shows it as written; please send replacement wording.');
   notes.push('IT opens_dec8 template is "Si apre l’{date}": Italian writes "l’8 / l’11" but "il 12", so the elided article is only right for some days. The page does not use this key for the locked card (it shows the sheet’s own card line).');
 }
 
@@ -578,6 +599,12 @@ if (timerRowSeen) missing.push('The last row of the UI ELEMENT tab is called "Ti
 else missing.push('The "Timer" row was not found in the UI ELEMENT tab.');
 missing.push(`There is no "campaign ended" message in the sheet. After 26 December the page needs one, so we added the English placeholder "${PLACEHOLDER_ENDED}" under the key campaign_ended, in all 12 UI languages. Please send the translations.`);
 section('Missing in the sheet', '', missing);
+
+section(
+  'Step 3 text replaced - all 12 translations are agency-made, please verify',
+  'The sheet text of step 3 (key step3_body, EN "The gift turns green when the bonus is credited.") described a green "credited" gift. The page has no such state (only missed / active / locked) and no tracking, so the owner replaced it with "Deposit before 23:59 to claim the day’s bonus." The script applies this override on every import, the sheet is untouched. The heading ("Deposit & claim") stays as in the sheet. These strings were written by the agency, not taken from the sheet:',
+  UI_LANGS.map((l) => `${l}: "${STEP3_BODY[l]}"`),
+);
 
 section(
   'FR_CA (French Canada) cards are our translation',

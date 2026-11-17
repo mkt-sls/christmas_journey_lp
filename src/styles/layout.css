@@ -93,7 +93,7 @@
 
 .route-wrap {
   position: relative;
-  height: var(--stage-h);
+  height: calc(var(--stage-h) + var(--stage-pad, 0px));
   margin-top: -20px;
   overflow: hidden;
 }
@@ -293,4 +293,11 @@
   margin-top: 60px;
   padding-bottom: 36px;
   font-size: 12px;
+}
+
+/* Santa hovers over the first stop when today is in slot 0 (Dec 1, or before the campaign): keep the subtitle clear of him on narrower desktops */
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .page[data-layout='desktop']:has([data-santa-first]) .intro__sub {
+    max-width: min(720px, calc(100% - 48px));
+  }
 }

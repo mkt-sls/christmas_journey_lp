@@ -133,7 +133,7 @@
 /* ---------- route stage ---------- */
 .route-stage {
   position: absolute;
-  top: 0;
+  top: var(--stage-pad, 0px);
   left: 50%;
   transform-origin: 50% 0;
   transform: translateX(-50%) scale(var(--s));
@@ -686,4 +686,38 @@
   width: 56px;
   height: 42px;
   pointer-events: none;
+}
+
+/* ---------- responsive polish (task 4) ---------- */
+/* desktop: the route line is squeezed with the stops (--f, see desktopFit in render/route.js) */
+.route-group {
+  left: 0;
+  top: 0;
+  width: 1920px;
+  height: 735px;
+  transform-origin: 960px 0;
+  transform: scaleX(var(--f, 1));
+  pointer-events: none;
+}
+
+/* long location names wrap instead of widening the label and colliding with the next one */
+.label__name {
+  white-space: normal;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+.label__tag {
+  white-space: nowrap;
+}
+[data-layout='desktop'] .label--active { max-width: 330px; }
+[data-layout='desktop'] .label--locked,
+[data-layout='desktop'] .label--missed { max-width: 210px; }
+[data-layout='desktop'] .label--locked.label--far,
+[data-layout='desktop'] .label--missed.label--far { max-width: 190px; }
+[data-layout='mobile'] .label { max-width: 190px; }
+[data-layout='mobile'] .open-btn { gap: 4px; padding: 0 10px; letter-spacing: 0.02em; }
+[data-layout='mobile'] .label--locked .label__name,
+[data-layout='mobile'] .label--locked .label__tag { text-align: left; }
+.route-group > * {
+  position: absolute;
 }

@@ -34,7 +34,31 @@ const MOBILE = {
 
 export const stageSpec = (layout) => (layout === 'desktop' ? DESKTOP : MOBILE);
 
+/** Centre of Santa for a slot (before the desktop --f squeeze). Desktop slot 0 has no room on the left, so he hovers up-left of the pedestal. */
+export function santaPos(layout, slot) {
+  if (layout === 'desktop') {
+    // slot 0 has no room on the left: Santa hovers above the pedestal, kept inside the viewport (art starts 137px left of his centre)
+    const first = slot === 0;
+    return { x: first ? DESKTOP.x[0] + 10 : DESKTOP.x[slot] - 185, y: DESKTOP.py[slot] - (first ? 250 : 147) };
+  }
+  // slots 0 and 2 (x ~ 90-100): nudged right so his board does not leave the 390px stage
+  return { x: Math.max(MOBILE.x[slot] - 22, 92), y: MOBILE.py[slot] - (slot === 0 ? 137 : 123) };
+}
+
 const r = (n) => Math.round(n * 100) / 100;
+
+/**
+ * Desktop fit for a viewport width: stage scale `s` (the 1920 stage shrinks to 0.72, never further, to keep text legible)
+ * and `f`, how far the five stops are pulled towards the centre once the viewport is narrower than the stage
+ * (below ~1380px the outer stops would be cut off). Stop x = 960 + (x - 960) * f; the route line is squeezed the same way.
+ */
+export function desktopFit(width) {
+  const s = Math.max(0.72, Math.min(1, width / 1920));
+  const visible = width / s; // stage units visible across the viewport
+  const f = Math.max(0.6, Math.min(1, (visible - 330) / 1480));
+  return { s, f };
+}
+const mid = DESKTOP.width / 2;
 
 function giftScale(layout, state, slot) {
   if (layout === 'desktop') return state === 'active' ? DESKTOP.kActive : Math.abs(slot - 2) === 1 ? DESKTOP.kNear : DESKTOP.kFar;
@@ -71,7 +95,7 @@ function stopHtml({ layout, spec, slot, day, today, ui, uiLang, card, chipDay, c
 
   const gift = `
     <button type="button" class="gift gift--${state}" data-open="${day}" aria-label="${esc(label)}"
-      style="left:${r(cx - 60 * k)}px;top:${r(py - 80 * k)}px;--k:${k}">
+      style="left:${layout === 'desktop' ? `calc(${r(mid - 60 * k)}px + var(--f) * ${cx - mid}px)` : `${r(cx - 60 * k)}px`};top:${r(py - 80 * k)}px;--k:${k}">
       <img class="gift__img" src="${asset(img)}" alt="" draggable="false">
       ${state === 'active' ? `<span class="today-pill" aria-hidden="true">${esc(ui.today)}</span>` : ''}
     </button>`;
@@ -80,7 +104,7 @@ function stopHtml({ layout, spec, slot, day, today, ui, uiLang, card, chipDay, c
   let pos;
   if (layout === 'desktop') {
     const dy = state === 'active' ? 53 : Math.abs(slot - 2) === 1 ? 56 : 51;
-    pos = `left:${cx}px;top:${r(py + dy)}px;transform:translateX(-50%)`;
+    pos = `left:calc(${mid}px + var(--f) * ${cx - mid}px);top:${r(py + dy)}px;transform:translateX(-50%)`;
   } else {
     const a = MOBILE.label[slot];
     pos = `left:${r(cx + a.dx)}px;top:${r(py + a.dy)}px;${a.left ? 'transform:translateX(-100%)' : ''}`;
@@ -141,21 +165,21 @@ export function renderRoute(ctx) {
   let scenery;
   if (layout === 'desktop') {
     // Santa rides just before today's pedestal; in slot 0 there is no room on the left, so he hovers up-left
-    const first = santaSlot === 0;
-    const sx = first ? 95 : spec.x[santaSlot] - 185;
-    const sy = spec.py[santaSlot] - (first ? 167 : 147);
+    const { x: sx, y: sy } = santaPos('desktop', santaSlot);
+    const sxCss = `calc(${mid}px + var(--f) * ${sx - mid}px)`;
     scenery = `
       <img class="landscape" src="${asset('landscape-desktop@2x.webp')}" alt="" aria-hidden="true">
       <div class="fade fade--top"></div><div class="fade fade--bottom"></div><div class="fade fade--left"></div><div class="fade fade--right"></div>
-      <img class="route route--base" src="${asset('route-desktop.svg')}" alt="" aria-hidden="true">
-      <div class="route route--gold" style="width:${goldSize}px"><img src="${asset('route-desktop-gold.svg')}" alt="" aria-hidden="true"></div>
-      <div class="santa" style="left:${sx}px;top:${sy}px">
+      <div class="route-group">
+        <img class="route route--base" src="${asset('route-desktop.svg')}" alt="" aria-hidden="true">
+        <div class="route route--gold" style="width:${goldSize}px"><img src="${asset('route-desktop-gold.svg')}" alt="" aria-hidden="true"></div>
+      </div>
+      <div class="santa" style="left:${sxCss};top:${sy}px">
         <span class="santa__glow"></span>
         <img src="${asset('hero-santa-desktop@2x.webp')}" alt="" aria-hidden="true">
       </div>`;
   } else {
-    const sx = spec.x[santaSlot] - 22;
-    const sy = spec.py[santaSlot] - 123;
+    const { x: sx, y: sy } = santaPos('mobile', santaSlot);
     scenery = `
       <img class="route route--base" src="${asset('route-mobile.svg')}" alt="" aria-hidden="true">
       <div class="route route--gold" style="height:${goldSize}px"><img src="${asset('route-mobile-gold.svg')}" alt="" aria-hidden="true"></div>
@@ -166,7 +190,7 @@ export function renderRoute(ctx) {
   }
 
   return `
-  <section class="route-wrap" aria-label="${esc(ui.campaign_title)}">
+  <section class="route-wrap"${santaSlot === 0 ? ' data-santa-first' : ''} aria-label="${esc(ui.campaign_title)}">
     <div class="route-stage" style="width:${spec.width}px;height:${spec.height}px">
       ${scenery}
       ${stops}
@@ -221,4 +245,36 @@ export function drawGarlands(root) {
     el.style.setProperty('--gp', `${pad}px`);
     el.replaceChildren(svg);
   });
+}
+
+/**
+ * Keeps every label inside the viewport: a label that sticks out (long German/Russian names, narrow phones)
+ * is nudged back with the independent `translate` property (transform and scale stay free for the animations).
+ */
+export function fitLabels(root, margin = 8) {
+  const vw = document.documentElement.clientWidth;
+  const labels = [...root.querySelectorAll('.label')];
+  labels.forEach((el) => {
+    el.style.translate = '';
+  });
+  labels.forEach((el) => {
+    const box = el.getBoundingClientRect();
+    const k = box.width / el.offsetWidth || 1; // stage scale
+    let dx = 0;
+    if (box.left < margin) dx = margin - box.left;
+    else if (box.right > vw - margin) dx = vw - margin - box.right;
+    if (dx) el.style.translate = `${r(dx / k)}px 0`;
+  });
+  // neighbours pushed into each other (a wide active label nudged away from the edge): move the right one on
+  const sorted = [...labels].sort((p, q) => p.getBoundingClientRect().left - q.getBoundingClientRect().left);
+  for (let i = 1; i < sorted.length; i++) {
+    const prev = sorted[i - 1].getBoundingClientRect();
+    const cur = sorted[i].getBoundingClientRect();
+    const sameRow = cur.top < prev.bottom && prev.top < cur.bottom;
+    if (sameRow && cur.left < prev.right + 6) {
+      const k = cur.width / sorted[i].offsetWidth || 1;
+      const have = Number.parseFloat(sorted[i].style.translate) || 0;
+      sorted[i].style.translate = `${r(have + (prev.right + 6 - cur.left) / k)}px 0`;
+    }
+  }
 }
