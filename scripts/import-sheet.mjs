@@ -446,6 +446,35 @@ for (const m of MARKETS) {
   }
 }
 
+// ---- turn sample dates / time in UI strings into templates --------------------
+// The sheet hardcodes the Dec-7 sample ("TODAY’S STOP · DEC 7", "Opens 8 December", "Unlocks in 14:32:08").
+// The page needs {date} / {time} placeholders. Every language is checked; a sample that cannot be found is
+// kept as raw text and listed in ISSUES.md.
+{
+  const unresolved = [];
+  const tagKeys = ['yesterday', 'todays_stop', 'tomorrow', 'in_two_days', 'missed'];
+  for (const l of UI_LANGS) {
+    const s = uiAll[l].strings;
+    for (const k of tagKeys) {
+      const v = s[k];
+      // every sample is "<WORD> · <date>"; the date is whatever follows the last " · "
+      const i = typeof v === 'string' ? v.lastIndexOf(' · ') : -1;
+      if (i > 0 && /\d/.test(v.slice(i + 3))) s[k] = v.slice(0, i) + ' · {date}';
+      else unresolved.push(`${l}.${k}: "${v}"`);
+    }
+    // countdown sample 14:32:08 (in "Unlocks in 14:32:08" and in the bare gift_timer)
+    if (typeof s.unlocks_in === 'string' && s.unlocks_in.includes('14:32:08')) s.unlocks_in = s.unlocks_in.replace('14:32:08', '{time}');
+    else unresolved.push(`${l}.unlocks_in: "${s.unlocks_in}"`);
+    if (s.gift_timer === '14:32:08') s.gift_timer = '{time}';
+    // "Opens 8 December": day 8 + month word (a Turkish suffix after the month, e.g. "8 Aralık’ta", stays outside {date})
+    if (typeof s.opens_dec8 === 'string' && /\b8\.?\s+[^\s’]+/.test(s.opens_dec8)) s.opens_dec8 = s.opens_dec8.replace(/\b8\.?\s+[^\s’]+/, '{date}');
+    else unresolved.push(`${l}.opens_dec8: "${s.opens_dec8}"`);
+  }
+  if (unresolved.length) notes.push('Sample dates/time not turned into templates (kept as sheet text): ' + unresolved.join('; '));
+  notes.push('The sheet text of step 3 (key step3_body, e.g. EN "The gift turns green when the bonus is credited.") describes a green "credited" gift. The page has no such state (only missed / active / locked), so this sentence no longer matches what the visitor sees. The page shows it as written; please send replacement wording.');
+  notes.push('IT opens_dec8 template is "Si apre l’{date}": Italian writes "l’8 / l’11" but "il 12", so the elided article is only right for some days. The page does not use this key for the locked card (it shows the sheet’s own card line).');
+}
+
 // ---- write JSON --------------------------------------------------------------
 function writeJson(rel, obj) {
   const f = path.join(root, rel);

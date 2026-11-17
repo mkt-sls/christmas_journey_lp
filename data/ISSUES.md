@@ -52,3 +52,5 @@ We kept every RO_MDL amount exactly as written in the sheet (only the day 4 curr
 
 - The "Bonus credited" column of the market tabs is not used. The page has only three states: missed (Gift expired), active (Deposit & Claim) and locked (Surprise gift).
 - Some UI texts contain sample values that the page replaces with live ones: dates ("YESTERDAY · DEC 6", "TODAY’S STOP · DEC 7", "Opens 8 December", ...) and the countdown "14:32:08".
+- The sheet text of step 3 (key step3_body, e.g. EN "The gift turns green when the bonus is credited.") describes a green "credited" gift. The page has no such state (only missed / active / locked), so this sentence no longer matches what the visitor sees. The page shows it as written; please send replacement wording.
+- IT opens_dec8 template is "Si apre l’{date}": Italian writes "l’8 / l’11" but "il 12", so the elided article is only right for some days. The page does not use this key for the locked card (it shows the sheet’s own card line).
