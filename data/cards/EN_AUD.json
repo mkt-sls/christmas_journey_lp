@@ -1,0 +1,1463 @@
+{
+  "market": "EN_AUD",
+  "uiLang": "EN",
+  "currency": "AUD",
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-12-01",
+      "location": "Santa’s Secrets",
+      "type": "bonus",
+      "amount": {
+        "percent": 70,
+        "max": 550,
+        "currency": "AUD",
+        "text": "70% UP TO 550 AUD"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 55,
+        "currency": "AUD",
+        "text": "Min. deposit: 55 AUD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wagering: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valid until: 23:59, 1 Dec"
+      },
+      "raw": {
+        "active": [
+          "DAY 1 · 1 DECEMBER",
+          "CHRISTMAS BONUS",
+          "70% UP TO 550 AUD",
+          "Min. deposit: 55 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 1 Dec",
+          "Deposit & Claim",
+          "Full terms & conditions"
+        ],
+        "expired": [
+          "DAY 1 · 1 DECEMBER",
+          "CHRISTMAS BONUS",
+          "70% UP TO 550 AUD",
+          "Min. deposit: 55 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 1 Dec",
+          "Gift expired",
+          "Full terms & conditions"
+        ],
+        "locked": [
+          "DAY 1 · 1 DECEMBER",
+          "SURPRISE GIFT",
+          "Opens 1 December",
+          "Come back tomorrow to unlock this gift",
+          "Locked · 1 Dec",
+          "Full terms & conditions"
+        ]
+      }
+    },
+    {
+      "day": 2,
+      "date": "2026-12-02",
+      "location": "Jackpot Under the Tree",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 FREE SPINS"
+      },
+      "game": "Thunder Coins: Hold and Win",
+      "minDeposit": {
+        "value": 40,
+        "currency": "AUD",
+        "text": "Min. deposit: 40 AUD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wagering: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valid until: 23:59, 2 Dec"
+      },
+      "raw": {
+        "active": [
+          "DAY 2 · 2 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "82 FREE SPINS",
+          "on Thunder Coins: Hold and Win",
+          "Min. deposit: 40 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 2 Dec",
+          "Deposit & Claim",
+          "Full terms & conditions"
+        ],
+        "expired": [
+          "DAY 2 · 2 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "82 FREE SPINS",
+          "on Thunder Coins: Hold and Win",
+          "Min. deposit: 40 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 2 Dec",
+          "Gift expired",
+          "Full terms & conditions"
+        ],
+        "locked": [
+          "DAY 2 · 2 DECEMBER",
+          "SURPRISE GIFT",
+          "Opens 2 December",
+          "Come back tomorrow to unlock this gift",
+          "Locked · 2 Dec",
+          "Full terms & conditions"
+        ]
+      }
+    },
+    {
+      "day": 3,
+      "date": "2026-12-03",
+      "location": "Gingerbread House",
+      "type": "bonus",
+      "amount": {
+        "percent": 55,
+        "max": 800,
+        "currency": "AUD",
+        "text": "55% UP TO 800 AUD"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 50,
+        "currency": "AUD",
+        "text": "Min. deposit: 50 AUD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wagering: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valid until: 23:59, 3 Dec"
+      },
+      "raw": {
+        "active": [
+          "DAY 3 · 3 DECEMBER",
+          "CHRISTMAS BONUS",
+          "55% UP TO 800 AUD",
+          "Min. deposit: 50 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 3 Dec",
+          "Deposit & Claim",
+          "Full terms & conditions"
+        ],
+        "expired": [
+          "DAY 3 · 3 DECEMBER",
+          "CHRISTMAS BONUS",
+          "55% UP TO 800 AUD",
+          "Min. deposit: 50 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 3 Dec",
+          "Gift expired",
+          "Full terms & conditions"
+        ],
+        "locked": [
+          "DAY 3 · 3 DECEMBER",
+          "SURPRISE GIFT",
+          "Opens 3 December",
+          "Come back tomorrow to unlock this gift",
+          "Locked · 3 Dec",
+          "Full terms & conditions"
+        ]
+      }
+    },
+    {
+      "day": 4,
+      "date": "2026-12-04",
+      "location": "Santa’s Gift Factory",
+      "type": "freespins",
+      "amount": {
+        "spins": 65,
+        "text": "65 FREE SPINS"
+      },
+      "game": "Big Bass Splash",
+      "minDeposit": {
+        "value": 35,
+        "currency": "AUD",
+        "text": "Min. deposit: 35 AUD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wagering: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valid until: 23:59, 4 Dec"
+      },
+      "raw": {
+        "active": [
+          "DAY 4 · 4 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "65 FREE SPINS",
+          "on Big Bass Splash",
+          "Min. deposit: 35 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 4 Dec",
+          "Deposit & Claim",
+          "Full terms & conditions"
+        ],
+        "expired": [
+          "DAY 4 · 4 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "65 FREE SPINS",
+          "on Big Bass Splash",
+          "Min. deposit: 35 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 4 Dec",
+          "Gift expired",
+          "Full terms & conditions"
+        ],
+        "locked": [
+          "DAY 4 · 4 DECEMBER",
+          "SURPRISE GIFT",
+          "Opens 4 December",
+          "Come back tomorrow to unlock this gift",
+          "Locked · 4 Dec",
+          "Full terms & conditions"
+        ]
+      }
+    },
+    {
+      "day": 5,
+      "date": "2026-12-05",
+      "location": "Snowy Park",
+      "type": "freespins",
+      "amount": {
+        "spins": 75,
+        "text": "75 FREE SPINS"
+      },
+      "game": "John Hunter and the Book of Tut",
+      "minDeposit": {
+        "value": 40,
+        "currency": "AUD",
+        "text": "Min. deposit: 40 AUD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wagering: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valid until: 23:59, 5 Dec"
+      },
+      "raw": {
+        "active": [
+          "DAY 5 · 5 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "75 FREE SPINS",
+          "on John Hunter and the Book of Tut",
+          "Min. deposit: 40 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 5 Dec",
+          "Deposit & Claim",
+          "Full terms & conditions"
+        ],
+        "expired": [
+          "DAY 5 · 5 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "75 FREE SPINS",
+          "on John Hunter and the Book of Tut",
+          "Min. deposit: 40 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 5 Dec",
+          "Gift expired",
+          "Full terms & conditions"
+        ],
+        "locked": [
+          "DAY 5 · 5 DECEMBER",
+          "SURPRISE GIFT",
+          "Opens 5 December",
+          "Come back tomorrow to unlock this gift",
+          "Locked · 5 Dec",
+          "Full terms & conditions"
+        ]
+      }
+    },
+    {
+      "day": 6,
+      "date": "2026-12-06",
+      "location": "Toy Shop",
+      "type": "freespins",
+      "amount": {
+        "spins": 80,
+        "text": "80 FREE SPINS"
+      },
+      "game": "Gemhalla",
+      "minDeposit": {
+        "value": 50,
+        "currency": "AUD",
+        "text": "Min. deposit: 50 AUD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wagering: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valid until: 23:59, 6 Dec"
+      },
+      "raw": {
+        "active": [
+          "DAY 6 · 6 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "80 FREE SPINS",
+          "on Gemhalla",
+          "Min. deposit: 50 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 6 Dec",
+          "Deposit & Claim",
+          "Full terms & conditions"
+        ],
+        "expired": [
+          "DAY 6 · 6 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "80 FREE SPINS",
+          "on Gemhalla",
+          "Min. deposit: 50 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 6 Dec",
+          "Gift expired",
+          "Full terms & conditions"
+        ],
+        "locked": [
+          "DAY 6 · 6 DECEMBER",
+          "SURPRISE GIFT",
+          "Opens 6 December",
+          "Come back tomorrow to unlock this gift",
+          "Locked · 6 Dec",
+          "Full terms & conditions"
+        ]
+      }
+    },
+    {
+      "day": 7,
+      "date": "2026-12-07",
+      "location": "Santa’s Square",
+      "type": "freespins",
+      "amount": {
+        "spins": 90,
+        "text": "90 FREE SPINS"
+      },
+      "game": "Bonanza Billion",
+      "minDeposit": {
+        "value": 55,
+        "currency": "AUD",
+        "text": "Min. deposit: 55 AUD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wagering: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valid until: 23:59, 7 Dec"
+      },
+      "raw": {
+        "active": [
+          "DAY 7 · 7 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "90 FREE SPINS",
+          "on Bonanza Billion",
+          "Min. deposit: 55 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 7 Dec",
+          "Deposit & Claim",
+          "Full terms & conditions"
+        ],
+        "expired": [
+          "DAY 7 · 7 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "90 FREE SPINS",
+          "on Bonanza Billion",
+          "Min. deposit: 55 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 7 Dec",
+          "Gift expired",
+          "Full terms & conditions"
+        ],
+        "locked": [
+          "DAY 7 · 7 DECEMBER",
+          "SURPRISE GIFT",
+          "Opens 7 December",
+          "Come back tomorrow to unlock this gift",
+          "Locked · 7 Dec",
+          "Full terms & conditions"
+        ]
+      }
+    },
+    {
+      "day": 8,
+      "date": "2026-12-08",
+      "location": "Chapel of Wishes",
+      "type": "bonus",
+      "amount": {
+        "percent": 65,
+        "max": 1000,
+        "currency": "AUD",
+        "text": "65% UP TO 1 000 AUD"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 40,
+        "currency": "AUD",
+        "text": "Min. deposit: 40 AUD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wagering: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valid until: 23:59, 8 Dec"
+      },
+      "raw": {
+        "active": [
+          "DAY 8 · 8 DECEMBER",
+          "CHRISTMAS BONUS",
+          "65% UP TO 1 000 AUD",
+          "Min. deposit: 40 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 8 Dec",
+          "Deposit & Claim",
+          "Full terms & conditions"
+        ],
+        "expired": [
+          "DAY 8 · 8 DECEMBER",
+          "CHRISTMAS BONUS",
+          "65% UP TO 1 000 AUD",
+          "Min. deposit: 40 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 8 Dec",
+          "Gift expired",
+          "Full terms & conditions"
+        ],
+        "locked": [
+          "DAY 8 · 8 DECEMBER",
+          "SURPRISE GIFT",
+          "Opens 8 December",
+          "Come back tomorrow to unlock this gift",
+          "Locked · 8 Dec",
+          "Full terms & conditions"
+        ]
+      }
+    },
+    {
+      "day": 9,
+      "date": "2026-12-09",
+      "location": "Magic Carousel",
+      "type": "freespins",
+      "amount": {
+        "spins": 74,
+        "text": "74 FREE SPINS"
+      },
+      "game": "Big Bass Christmas – Frozen Lake",
+      "minDeposit": {
+        "value": 50,
+        "currency": "AUD",
+        "text": "Min. deposit: 50 AUD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wagering: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valid until: 23:59, 9 Dec"
+      },
+      "raw": {
+        "active": [
+          "DAY 9 · 9 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "74 FREE SPINS",
+          "on Big Bass Christmas – Frozen Lake",
+          "Min. deposit: 50 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 9 Dec",
+          "Deposit & Claim",
+          "Full terms & conditions"
+        ],
+        "expired": [
+          "DAY 9 · 9 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "74 FREE SPINS",
+          "on Big Bass Christmas – Frozen Lake",
+          "Min. deposit: 50 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 9 Dec",
+          "Gift expired",
+          "Full terms & conditions"
+        ],
+        "locked": [
+          "DAY 9 · 9 DECEMBER",
+          "SURPRISE GIFT",
+          "Opens 9 December",
+          "Come back tomorrow to unlock this gift",
+          "Locked · 9 Dec",
+          "Full terms & conditions"
+        ]
+      }
+    },
+    {
+      "day": 10,
+      "date": "2026-12-10",
+      "location": "Lucky Lane",
+      "type": "bonus",
+      "amount": {
+        "percent": 62,
+        "max": 1100,
+        "currency": "AUD",
+        "text": "62% UP TO 1 100 AUD"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 55,
+        "currency": "AUD",
+        "text": "Min. deposit: 55 AUD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wagering: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valid until: 23:59, 10 Dec"
+      },
+      "raw": {
+        "active": [
+          "DAY 10 · 10 DECEMBER",
+          "CHRISTMAS BONUS",
+          "62% UP TO 1 100 AUD",
+          "Min. deposit: 55 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 10 Dec",
+          "Deposit & Claim",
+          "Full terms & conditions"
+        ],
+        "expired": [
+          "DAY 10 · 10 DECEMBER",
+          "CHRISTMAS BONUS",
+          "62% UP TO 1 100 AUD",
+          "Min. deposit: 55 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 10 Dec",
+          "Gift expired",
+          "Full terms & conditions"
+        ],
+        "locked": [
+          "DAY 10 · 10 DECEMBER",
+          "SURPRISE GIFT",
+          "Opens 10 December",
+          "Come back tomorrow to unlock this gift",
+          "Locked · 10 Dec",
+          "Full terms & conditions"
+        ]
+      }
+    },
+    {
+      "day": 11,
+      "date": "2026-12-11",
+      "location": "Snowman’s Treasure",
+      "type": "freespins",
+      "amount": {
+        "spins": 55,
+        "text": "55 FREE SPINS"
+      },
+      "game": "Thunder Coins: Hold and Win",
+      "minDeposit": {
+        "value": 35,
+        "currency": "AUD",
+        "text": "Min. deposit: 35 AUD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wagering: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valid until: 23:59, 11 Dec"
+      },
+      "raw": {
+        "active": [
+          "DAY 11 · 11 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "55 FREE SPINS",
+          "on Thunder Coins: Hold and Win",
+          "Min. deposit: 35 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 11 Dec",
+          "Deposit & Claim",
+          "Full terms & conditions"
+        ],
+        "expired": [
+          "DAY 11 · 11 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "55 FREE SPINS",
+          "on Thunder Coins: Hold and Win",
+          "Min. deposit: 35 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 11 Dec",
+          "Gift expired",
+          "Full terms & conditions"
+        ],
+        "locked": [
+          "DAY 11 · 11 DECEMBER",
+          "SURPRISE GIFT",
+          "Opens 11 December",
+          "Come back tomorrow to unlock this gift",
+          "Locked · 11 Dec",
+          "Full terms & conditions"
+        ]
+      }
+    },
+    {
+      "day": 12,
+      "date": "2026-12-12",
+      "location": "Santa’s Post Office",
+      "type": "freespins",
+      "amount": {
+        "spins": 80,
+        "text": "80 FREE SPINS"
+      },
+      "game": "Fruits 'n' Stars Holiday Edition",
+      "minDeposit": {
+        "value": 40,
+        "currency": "AUD",
+        "text": "Min. deposit: 40 AUD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wagering: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valid until: 23:59, 12 Dec"
+      },
+      "raw": {
+        "active": [
+          "DAY 12 · 12 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "80 FREE SPINS",
+          "on Fruits 'n' Stars Holiday Edition",
+          "Min. deposit: 40 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 12 Dec",
+          "Deposit & Claim",
+          "Full terms & conditions"
+        ],
+        "expired": [
+          "DAY 12 · 12 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "80 FREE SPINS",
+          "on Fruits 'n' Stars Holiday Edition",
+          "Min. deposit: 40 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 12 Dec",
+          "Gift expired",
+          "Full terms & conditions"
+        ],
+        "locked": [
+          "DAY 12 · 12 DECEMBER",
+          "SURPRISE GIFT",
+          "Opens 12 December",
+          "Come back tomorrow to unlock this gift",
+          "Locked · 12 Dec",
+          "Full terms & conditions"
+        ]
+      }
+    },
+    {
+      "day": 13,
+      "date": "2026-12-13",
+      "location": "Ice Palace",
+      "type": "freespins",
+      "amount": {
+        "spins": 67,
+        "text": "67 FREE SPINS"
+      },
+      "game": "Yeti Quest",
+      "minDeposit": {
+        "value": 40,
+        "currency": "AUD",
+        "text": "Min. deposit: 40 AUD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wagering: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valid until: 23:59, 13 Dec"
+      },
+      "raw": {
+        "active": [
+          "DAY 13 · 13 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "67 FREE SPINS",
+          "on Yeti Quest",
+          "Min. deposit: 40 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 13 Dec",
+          "Deposit & Claim",
+          "Full terms & conditions"
+        ],
+        "expired": [
+          "DAY 13 · 13 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "67 FREE SPINS",
+          "on Yeti Quest",
+          "Min. deposit: 40 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 13 Dec",
+          "Gift expired",
+          "Full terms & conditions"
+        ],
+        "locked": [
+          "DAY 13 · 13 DECEMBER",
+          "SURPRISE GIFT",
+          "Opens 13 December",
+          "Come back tomorrow to unlock this gift",
+          "Locked · 13 Dec",
+          "Full terms & conditions"
+        ]
+      }
+    },
+    {
+      "day": 14,
+      "date": "2026-12-14",
+      "location": "Shop of Wonders",
+      "type": "freespins",
+      "amount": {
+        "spins": 90,
+        "text": "90 FREE SPINS"
+      },
+      "game": "25 Cookies: Hit the Bonus",
+      "minDeposit": {
+        "value": 55,
+        "currency": "AUD",
+        "text": "Min. deposit: 55 AUD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wagering: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valid until: 23:59, 14 Dec"
+      },
+      "raw": {
+        "active": [
+          "DAY 14 · 14 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "90 FREE SPINS",
+          "on 25 Cookies: Hit the Bonus",
+          "Min. deposit: 55 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 14 Dec",
+          "Deposit & Claim",
+          "Full terms & conditions"
+        ],
+        "expired": [
+          "DAY 14 · 14 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "90 FREE SPINS",
+          "on 25 Cookies: Hit the Bonus",
+          "Min. deposit: 55 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 14 Dec",
+          "Gift expired",
+          "Full terms & conditions"
+        ],
+        "locked": [
+          "DAY 14 · 14 DECEMBER",
+          "SURPRISE GIFT",
+          "Opens 14 December",
+          "Come back tomorrow to unlock this gift",
+          "Locked · 14 Dec",
+          "Full terms & conditions"
+        ]
+      }
+    },
+    {
+      "day": 15,
+      "date": "2026-12-15",
+      "location": "Christmas Market",
+      "type": "bonus",
+      "amount": {
+        "percent": 58,
+        "max": 800,
+        "currency": "AUD",
+        "text": "58% UP TO 800 AUD"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 50,
+        "currency": "AUD",
+        "text": "Min. deposit: 50 AUD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wagering: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valid until: 23:59, 15 Dec"
+      },
+      "raw": {
+        "active": [
+          "DAY 15 · 15 DECEMBER",
+          "CHRISTMAS BONUS",
+          "58% UP TO 800 AUD",
+          "Min. deposit: 50 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 15 Dec",
+          "Deposit & Claim",
+          "Full terms & conditions"
+        ],
+        "expired": [
+          "DAY 15 · 15 DECEMBER",
+          "CHRISTMAS BONUS",
+          "58% UP TO 800 AUD",
+          "Min. deposit: 50 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 15 Dec",
+          "Gift expired",
+          "Full terms & conditions"
+        ],
+        "locked": [
+          "DAY 15 · 15 DECEMBER",
+          "SURPRISE GIFT",
+          "Opens 15 December",
+          "Come back tomorrow to unlock this gift",
+          "Locked · 15 Dec",
+          "Full terms & conditions"
+        ]
+      }
+    },
+    {
+      "day": 16,
+      "date": "2026-12-16",
+      "location": "Winter Garden",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 FREE SPINS"
+      },
+      "game": "Christmas Carol Megaways",
+      "minDeposit": {
+        "value": 50,
+        "currency": "AUD",
+        "text": "Min. deposit: 50 AUD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wagering: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valid until: 23:59, 16 Dec"
+      },
+      "raw": {
+        "active": [
+          "DAY 16 · 16 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "82 FREE SPINS",
+          "on Christmas Carol Megaways",
+          "Min. deposit: 50 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 16 Dec",
+          "Deposit & Claim",
+          "Full terms & conditions"
+        ],
+        "expired": [
+          "DAY 16 · 16 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "82 FREE SPINS",
+          "on Christmas Carol Megaways",
+          "Min. deposit: 50 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 16 Dec",
+          "Gift expired",
+          "Full terms & conditions"
+        ],
+        "locked": [
+          "DAY 16 · 16 DECEMBER",
+          "SURPRISE GIFT",
+          "Opens 16 December",
+          "Come back tomorrow to unlock this gift",
+          "Locked · 16 Dec",
+          "Full terms & conditions"
+        ]
+      }
+    },
+    {
+      "day": 17,
+      "date": "2026-12-17",
+      "location": "Enchanted Forest",
+      "type": "bonus",
+      "amount": {
+        "percent": 45,
+        "max": 800,
+        "currency": "AUD",
+        "text": "45% UP TO 800 AUD"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 40,
+        "currency": "AUD",
+        "text": "Min. deposit: 40 AUD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wagering: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valid until: 23:59, 17 Dec"
+      },
+      "raw": {
+        "active": [
+          "DAY 17 · 17 DECEMBER",
+          "CHRISTMAS BONUS",
+          "45% UP TO 800 AUD",
+          "Min. deposit: 40 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 17 Dec",
+          "Deposit & Claim",
+          "Full terms & conditions"
+        ],
+        "expired": [
+          "DAY 17 · 17 DECEMBER",
+          "CHRISTMAS BONUS",
+          "45% UP TO 800 AUD",
+          "Min. deposit: 40 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 17 Dec",
+          "Gift expired",
+          "Full terms & conditions"
+        ],
+        "locked": [
+          "DAY 17 · 17 DECEMBER",
+          "SURPRISE GIFT",
+          "Opens 17 December",
+          "Come back tomorrow to unlock this gift",
+          "Locked · 17 Dec",
+          "Full terms & conditions"
+        ]
+      }
+    },
+    {
+      "day": 18,
+      "date": "2026-12-18",
+      "location": "Snow Cave",
+      "type": "freespins",
+      "amount": {
+        "spins": 63,
+        "text": "63 FREE SPINS"
+      },
+      "game": "Big Bass Christmas – Frozen Lake",
+      "minDeposit": {
+        "value": 40,
+        "currency": "AUD",
+        "text": "Min. deposit: 40 AUD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wagering: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valid until: 23:59, 18 Dec"
+      },
+      "raw": {
+        "active": [
+          "DAY 18 · 18 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "63 FREE SPINS",
+          "on Big Bass Christmas – Frozen Lake",
+          "Min. deposit: 40 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 18 Dec",
+          "Deposit & Claim",
+          "Full terms & conditions"
+        ],
+        "expired": [
+          "DAY 18 · 18 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "63 FREE SPINS",
+          "on Big Bass Christmas – Frozen Lake",
+          "Min. deposit: 40 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 18 Dec",
+          "Gift expired",
+          "Full terms & conditions"
+        ],
+        "locked": [
+          "DAY 18 · 18 DECEMBER",
+          "SURPRISE GIFT",
+          "Opens 18 December",
+          "Come back tomorrow to unlock this gift",
+          "Locked · 18 Dec",
+          "Full terms & conditions"
+        ]
+      }
+    },
+    {
+      "day": 19,
+      "date": "2026-12-19",
+      "location": "Starlit Ice Rink",
+      "type": "freespins",
+      "amount": {
+        "spins": 95,
+        "text": "95 FREE SPINS"
+      },
+      "game": "Fruits 'n' Stars Holiday Edition",
+      "minDeposit": {
+        "value": 55,
+        "currency": "AUD",
+        "text": "Min. deposit: 55 AUD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wagering: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valid until: 23:59, 19 Dec"
+      },
+      "raw": {
+        "active": [
+          "DAY 19 · 19 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "95 FREE SPINS",
+          "on Fruits 'n' Stars Holiday Edition",
+          "Min. deposit: 55 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 19 Dec",
+          "Deposit & Claim",
+          "Full terms & conditions"
+        ],
+        "expired": [
+          "DAY 19 · 19 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "95 FREE SPINS",
+          "on Fruits 'n' Stars Holiday Edition",
+          "Min. deposit: 55 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 19 Dec",
+          "Gift expired",
+          "Full terms & conditions"
+        ],
+        "locked": [
+          "DAY 19 · 19 DECEMBER",
+          "SURPRISE GIFT",
+          "Opens 19 December",
+          "Come back tomorrow to unlock this gift",
+          "Locked · 19 Dec",
+          "Full terms & conditions"
+        ]
+      }
+    },
+    {
+      "day": 20,
+      "date": "2026-12-20",
+      "location": "Northern Lights",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 FREE SPINS"
+      },
+      "game": "Sweet Bonanza Xmas",
+      "minDeposit": {
+        "value": 50,
+        "currency": "AUD",
+        "text": "Min. deposit: 50 AUD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wagering: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valid until: 23:59, 20 Dec"
+      },
+      "raw": {
+        "active": [
+          "DAY 20 · 20 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "82 FREE SPINS",
+          "on Sweet Bonanza Xmas",
+          "Min. deposit: 50 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 20 Dec",
+          "Deposit & Claim",
+          "Full terms & conditions"
+        ],
+        "expired": [
+          "DAY 20 · 20 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "82 FREE SPINS",
+          "on Sweet Bonanza Xmas",
+          "Min. deposit: 50 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 20 Dec",
+          "Gift expired",
+          "Full terms & conditions"
+        ],
+        "locked": [
+          "DAY 20 · 20 DECEMBER",
+          "SURPRISE GIFT",
+          "Opens 20 December",
+          "Come back tomorrow to unlock this gift",
+          "Locked · 20 Dec",
+          "Full terms & conditions"
+        ]
+      }
+    },
+    {
+      "day": 21,
+      "date": "2026-12-21",
+      "location": "Midnight Express",
+      "type": "bonus",
+      "amount": {
+        "percent": 65,
+        "max": 800,
+        "currency": "AUD",
+        "text": "65% UP TO 800 AUD"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 40,
+        "currency": "AUD",
+        "text": "Min. deposit: 40 AUD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wagering: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valid until: 23:59, 21 Dec"
+      },
+      "raw": {
+        "active": [
+          "DAY 21 · 21 DECEMBER",
+          "CHRISTMAS BONUS",
+          "65% UP TO 800 AUD",
+          "Min. deposit: 40 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 21 Dec",
+          "Deposit & Claim",
+          "Full terms & conditions"
+        ],
+        "expired": [
+          "DAY 21 · 21 DECEMBER",
+          "CHRISTMAS BONUS",
+          "65% UP TO 800 AUD",
+          "Min. deposit: 40 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 21 Dec",
+          "Gift expired",
+          "Full terms & conditions"
+        ],
+        "locked": [
+          "DAY 21 · 21 DECEMBER",
+          "SURPRISE GIFT",
+          "Opens 21 December",
+          "Come back tomorrow to unlock this gift",
+          "Locked · 21 Dec",
+          "Full terms & conditions"
+        ]
+      }
+    },
+    {
+      "day": 22,
+      "date": "2026-12-22",
+      "location": "Snowy Cottage",
+      "type": "freespins",
+      "amount": {
+        "spins": 62,
+        "text": "62 FREE SPINS"
+      },
+      "game": "Yeti Quest",
+      "minDeposit": {
+        "value": 35,
+        "currency": "AUD",
+        "text": "Min. deposit: 35 AUD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wagering: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valid until: 23:59, 22 Dec"
+      },
+      "raw": {
+        "active": [
+          "DAY 22 · 22 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "62 FREE SPINS",
+          "on Yeti Quest",
+          "Min. deposit: 35 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 22 Dec",
+          "Deposit & Claim",
+          "Full terms & conditions"
+        ],
+        "expired": [
+          "DAY 22 · 22 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "62 FREE SPINS",
+          "on Yeti Quest",
+          "Min. deposit: 35 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 22 Dec",
+          "Gift expired",
+          "Full terms & conditions"
+        ],
+        "locked": [
+          "DAY 22 · 22 DECEMBER",
+          "SURPRISE GIFT",
+          "Opens 22 December",
+          "Come back tomorrow to unlock this gift",
+          "Locked · 22 Dec",
+          "Full terms & conditions"
+        ]
+      }
+    },
+    {
+      "day": 23,
+      "date": "2026-12-23",
+      "location": "Santa’s Safe",
+      "type": "freespins",
+      "amount": {
+        "spins": 99,
+        "text": "99 FREE SPINS"
+      },
+      "game": "25 Cookies: Hit the Bonus",
+      "minDeposit": {
+        "value": 50,
+        "currency": "AUD",
+        "text": "Min. deposit: 50 AUD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wagering: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valid until: 23:59, 23 Dec"
+      },
+      "raw": {
+        "active": [
+          "DAY 23 · 23 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "99 FREE SPINS",
+          "on 25 Cookies: Hit the Bonus",
+          "Min. deposit: 50 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 23 Dec",
+          "Deposit & Claim",
+          "Full terms & conditions"
+        ],
+        "expired": [
+          "DAY 23 · 23 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "99 FREE SPINS",
+          "on 25 Cookies: Hit the Bonus",
+          "Min. deposit: 50 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 23 Dec",
+          "Gift expired",
+          "Full terms & conditions"
+        ],
+        "locked": [
+          "DAY 23 · 23 DECEMBER",
+          "SURPRISE GIFT",
+          "Opens 23 December",
+          "Come back tomorrow to unlock this gift",
+          "Locked · 23 Dec",
+          "Full terms & conditions"
+        ]
+      }
+    },
+    {
+      "day": 24,
+      "date": "2026-12-24",
+      "location": "Secret Room",
+      "type": "bonus",
+      "amount": {
+        "percent": 80,
+        "max": 600,
+        "currency": "AUD",
+        "text": "80% UP TO 600 AUD"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 55,
+        "currency": "AUD",
+        "text": "Min. deposit: 55 AUD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wagering: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valid until: 23:59, 24 Dec"
+      },
+      "raw": {
+        "active": [
+          "DAY 24 · 24 DECEMBER",
+          "CHRISTMAS BONUS",
+          "80% UP TO 600 AUD",
+          "Min. deposit: 55 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 24 Dec",
+          "Deposit & Claim",
+          "Full terms & conditions"
+        ],
+        "expired": [
+          "DAY 24 · 24 DECEMBER",
+          "CHRISTMAS BONUS",
+          "80% UP TO 600 AUD",
+          "Min. deposit: 55 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 24 Dec",
+          "Gift expired",
+          "Full terms & conditions"
+        ],
+        "locked": [
+          "DAY 24 · 24 DECEMBER",
+          "SURPRISE GIFT",
+          "Opens 24 December",
+          "Come back tomorrow to unlock this gift",
+          "Locked · 24 Dec",
+          "Full terms & conditions"
+        ]
+      }
+    },
+    {
+      "day": 25,
+      "date": "2026-12-25",
+      "location": "Gift Bag",
+      "type": "freespins",
+      "amount": {
+        "spins": 101,
+        "text": "101 FREE SPINS"
+      },
+      "game": "Christmas Carol Megaways",
+      "minDeposit": {
+        "value": 55,
+        "currency": "AUD",
+        "text": "Min. deposit: 55 AUD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wagering: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valid until: 23:59, 25 Dec"
+      },
+      "raw": {
+        "active": [
+          "DAY 25 · 25 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "101 FREE SPINS",
+          "on Christmas Carol Megaways",
+          "Min. deposit: 55 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 25 Dec",
+          "Deposit & Claim",
+          "Full terms & conditions"
+        ],
+        "expired": [
+          "DAY 25 · 25 DECEMBER",
+          "CHRISTMAS FREE SPINS",
+          "101 FREE SPINS",
+          "on Christmas Carol Megaways",
+          "Min. deposit: 55 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 25 Dec",
+          "Gift expired",
+          "Full terms & conditions"
+        ],
+        "locked": [
+          "DAY 25 · 25 DECEMBER",
+          "SURPRISE GIFT",
+          "Opens 25 December",
+          "Come back tomorrow to unlock this gift",
+          "Locked · 25 Dec",
+          "Full terms & conditions"
+        ]
+      }
+    },
+    {
+      "day": 26,
+      "date": "2026-12-26",
+      "location": "Jackpot Chest",
+      "type": "bonus",
+      "amount": {
+        "percent": 60,
+        "max": 950,
+        "currency": "AUD",
+        "text": "60% UP TO 950 AUD"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 35,
+        "currency": "AUD",
+        "text": "Min. deposit: 35 AUD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wagering: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valid until: 23:59, 26 Dec"
+      },
+      "raw": {
+        "active": [
+          "DAY 26 · 26 DECEMBER",
+          "CHRISTMAS BONUS",
+          "60% UP TO 950 AUD",
+          "Min. deposit: 35 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 26 Dec",
+          "Deposit & Claim",
+          "Full terms & conditions"
+        ],
+        "expired": [
+          "DAY 26 · 26 DECEMBER",
+          "CHRISTMAS BONUS",
+          "60% UP TO 950 AUD",
+          "Min. deposit: 35 AUD",
+          "Wagering: x25",
+          "Valid until: 23:59, 26 Dec",
+          "Gift expired",
+          "Full terms & conditions"
+        ],
+        "locked": [
+          "DAY 26 · 26 DECEMBER",
+          "SURPRISE GIFT",
+          "Opens 26 December",
+          "Come back tomorrow to unlock this gift",
+          "Locked · 26 Dec",
+          "Full terms & conditions"
+        ]
+      }
+    }
+  ]
+}

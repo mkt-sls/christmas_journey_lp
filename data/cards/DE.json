@@ -1,0 +1,1463 @@
+{
+  "market": "DE",
+  "uiLang": "DE",
+  "currency": "EUR",
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-12-01",
+      "location": "Die Geheimnisse des Weihnachtsmanns",
+      "type": "bonus",
+      "amount": {
+        "percent": 70,
+        "max": 350,
+        "currency": "EUR",
+        "text": "70% BIS ZU 350 €"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 35,
+        "currency": "EUR",
+        "text": "Mindesteinzahlung: 35 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Umsatzbedingung: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gültig bis: 23:59 Uhr, 1. Dez."
+      },
+      "raw": {
+        "active": [
+          "TAG 1 · 1. DEZEMBER",
+          "WEIHNACHTSBONUS",
+          "70% BIS ZU 350 €",
+          "Mindesteinzahlung: 35 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59 Uhr, 1. Dez.",
+          "EINZAHLEN & SICHERN",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "expired": [
+          "TAG 1 · 1 DEZEMBER",
+          "WEIHNACHTSBONUS",
+          "70% BIS ZU 350 €",
+          "Mindesteinzahlung: 35 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59, 1 Dez.",
+          "Geschenk abgelaufen",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "locked": [
+          "TAG 1 · 1 DEZEMBER",
+          "ÜBERRASCHUNGSGESCHENK",
+          "Ab 1. Dezember verfügbar",
+          "Komm morgen zurück und sichere dir dein Geschenk!",
+          "Gesperrt · 1. Dez.",
+          "Vollständige Teilnahmebedingungen"
+        ]
+      }
+    },
+    {
+      "day": 2,
+      "date": "2026-12-02",
+      "location": "Jackpot unterm Weihnachtsbaum",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 FREISPIELE"
+      },
+      "game": "Thunder Coins: Hold and Win",
+      "minDeposit": {
+        "value": 25,
+        "currency": "EUR",
+        "text": "Mindesteinzahlung: 25 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Umsatzbedingung: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gültig bis: 23:59 Uhr, 2. Dez."
+      },
+      "raw": {
+        "active": [
+          "TAG 2 · 2. DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "82 FREISPIELE",
+          "in Thunder Coins: Hold and Win",
+          "Mindesteinzahlung: 25 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59 Uhr, 2. Dez.",
+          "EINZAHLEN & SICHERN",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "expired": [
+          "TAG 2 · 2 DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "82 FREISPIELE",
+          "in Thunder Coins: Hold and Win",
+          "Mindesteinzahlung: 25 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59, 2 Dez.",
+          "Geschenk abgelaufen",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "locked": [
+          "TAG 2 · 2 DEZEMBER",
+          "ÜBERRASCHUNGSGESCHENK",
+          "Ab 2. Dezember verfügbar",
+          "Komm morgen zurück und sichere dir dein Geschenk!",
+          "Gesperrt · 2. Dez.",
+          "Vollständige Teilnahmebedingungen"
+        ]
+      }
+    },
+    {
+      "day": 3,
+      "date": "2026-12-03",
+      "location": "Lebkuchenhaus",
+      "type": "bonus",
+      "amount": {
+        "percent": 55,
+        "max": 500,
+        "currency": "EUR",
+        "text": "55% BIS ZU 500 €"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 30,
+        "currency": "EUR",
+        "text": "Mindesteinzahlung: 30 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Umsatzbedingung: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gültig bis: 23:59 Uhr, 3. Dez."
+      },
+      "raw": {
+        "active": [
+          "TAG 3 · 3. DEZEMBER",
+          "WEIHNACHTSBONUS",
+          "55% BIS ZU 500 €",
+          "Mindesteinzahlung: 30 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59 Uhr, 3. Dez.",
+          "EINZAHLEN & SICHERN",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "expired": [
+          "TAG 3 · 3 DEZEMBER",
+          "WEIHNACHTSBONUS",
+          "55% BIS ZU 500 €",
+          "Mindesteinzahlung: 30 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59, 3 Dez.",
+          "Geschenk abgelaufen",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "locked": [
+          "TAG 3 · 3 DEZEMBER",
+          "ÜBERRASCHUNGSGESCHENK",
+          "Ab 3. Dezember verfügbar",
+          "Komm morgen zurück und sichere dir dein Geschenk!",
+          "Gesperrt · 3. Dez.",
+          "Vollständige Teilnahmebedingungen"
+        ]
+      }
+    },
+    {
+      "day": 4,
+      "date": "2026-12-04",
+      "location": "Geschenkefabrik des Weihnachtsmanns",
+      "type": "freespins",
+      "amount": {
+        "spins": 65,
+        "text": "65 FREISPIELE"
+      },
+      "game": "Big Bass Splash",
+      "minDeposit": {
+        "value": 22,
+        "currency": "EUR",
+        "text": "Mindesteinzahlung: 22 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Umsatzbedingung: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gültig bis: 23:59 Uhr, 4. Dez."
+      },
+      "raw": {
+        "active": [
+          "TAG 4 · 4. DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "65 FREISPIELE",
+          "in Big Bass Splash",
+          "Mindesteinzahlung: 22 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59 Uhr, 4. Dez.",
+          "EINZAHLEN & SICHERN",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "expired": [
+          "TAG 4 · 4 DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "65 FREISPIELE",
+          "in Big Bass Splash",
+          "Mindesteinzahlung: 22 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59, 4 Dez.",
+          "Geschenk abgelaufen",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "locked": [
+          "TAG 4 · 4 DEZEMBER",
+          "ÜBERRASCHUNGSGESCHENK",
+          "Ab 4. Dezember verfügbar",
+          "Komm morgen zurück und sichere dir dein Geschenk!",
+          "Gesperrt · 4. Dez.",
+          "Vollständige Teilnahmebedingungen"
+        ]
+      }
+    },
+    {
+      "day": 5,
+      "date": "2026-12-05",
+      "location": "Verschneiter Park",
+      "type": "freespins",
+      "amount": {
+        "spins": 75,
+        "text": "75 FREISPIELE"
+      },
+      "game": "John Hunter and the Book of Tut",
+      "minDeposit": {
+        "value": 25,
+        "currency": "EUR",
+        "text": "Mindesteinzahlung: 25 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Umsatzbedingung: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gültig bis: 23:59 Uhr, 5. Dez."
+      },
+      "raw": {
+        "active": [
+          "TAG 5 · 5. DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "75 FREISPIELE",
+          "in John Hunter and the Book of Tut",
+          "Mindesteinzahlung: 25 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59 Uhr, 5. Dez.",
+          "EINZAHLEN & SICHERN",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "expired": [
+          "TAG 5 · 5 DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "75 FREISPIELE",
+          "in John Hunter and the Book of Tut",
+          "Mindesteinzahlung: 25 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59, 5 Dez.",
+          "Geschenk abgelaufen",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "locked": [
+          "TAG 5 · 5 DEZEMBER",
+          "ÜBERRASCHUNGSGESCHENK",
+          "Ab 5. Dezember verfügbar",
+          "Komm morgen zurück und sichere dir dein Geschenk!",
+          "Gesperrt · 5. Dez.",
+          "Vollständige Teilnahmebedingungen"
+        ]
+      }
+    },
+    {
+      "day": 6,
+      "date": "2026-12-06",
+      "location": "Spielzeugladen",
+      "type": "freespins",
+      "amount": {
+        "spins": 80,
+        "text": "80 FREISPIELE"
+      },
+      "game": "Gemhalla",
+      "minDeposit": {
+        "value": 30,
+        "currency": "EUR",
+        "text": "Mindesteinzahlung: 30 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Umsatzbedingung: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gültig bis: 23:59 Uhr, 6. Dez."
+      },
+      "raw": {
+        "active": [
+          "TAG 6 · 6. DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "80 FREISPIELE",
+          "in Gemhalla",
+          "Mindesteinzahlung: 30 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59 Uhr, 6. Dez.",
+          "EINZAHLEN & SICHERN",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "expired": [
+          "TAG 6 · 6 DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "80 FREISPIELE",
+          "in Gemhalla",
+          "Mindesteinzahlung: 30 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59, 6 Dez.",
+          "Geschenk abgelaufen",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "locked": [
+          "TAG 6 · 6 DEZEMBER",
+          "ÜBERRASCHUNGSGESCHENK",
+          "Ab 6. Dezember verfügbar",
+          "Komm morgen zurück und sichere dir dein Geschenk!",
+          "Gesperrt · 6. Dez.",
+          "Vollständige Teilnahmebedingungen"
+        ]
+      }
+    },
+    {
+      "day": 7,
+      "date": "2026-12-07",
+      "location": "Weihnachtsmannplatz",
+      "type": "freespins",
+      "amount": {
+        "spins": 90,
+        "text": "90 FREISPIELE"
+      },
+      "game": "Bonanza Billion",
+      "minDeposit": {
+        "value": 35,
+        "currency": "EUR",
+        "text": "Mindesteinzahlung: 35 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Umsatzbedingung: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gültig bis: 23:59 Uhr, 7. Dez."
+      },
+      "raw": {
+        "active": [
+          "TAG 7 · 7. DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "90 FREISPIELE",
+          "in Bonanza Billion",
+          "Mindesteinzahlung: 35 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59 Uhr, 7. Dez.",
+          "EINZAHLEN & SICHERN",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "expired": [
+          "TAG 7 · 7 DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "90 FREISPIELE",
+          "in Bonanza Billion",
+          "Mindesteinzahlung: 35 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59, 7 Dez.",
+          "Geschenk abgelaufen",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "locked": [
+          "TAG 7 · 7 DEZEMBER",
+          "ÜBERRASCHUNGSGESCHENK",
+          "Ab 7. Dezember verfügbar",
+          "Komm morgen zurück und sichere dir dein Geschenk!",
+          "Gesperrt · 7. Dez.",
+          "Vollständige Teilnahmebedingungen"
+        ]
+      }
+    },
+    {
+      "day": 8,
+      "date": "2026-12-08",
+      "location": "Kapelle der Wünsche",
+      "type": "bonus",
+      "amount": {
+        "percent": 65,
+        "max": 650,
+        "currency": "EUR",
+        "text": "65% BIS ZU 650 €"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 25,
+        "currency": "EUR",
+        "text": "Mindesteinzahlung: 25 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Umsatzbedingung: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gültig bis: 23:59 Uhr, 8. Dez."
+      },
+      "raw": {
+        "active": [
+          "TAG 8 · 8. DEZEMBER",
+          "WEIHNACHTSBONUS",
+          "65% BIS ZU 650 €",
+          "Mindesteinzahlung: 25 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59 Uhr, 8. Dez.",
+          "EINZAHLEN & SICHERN",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "expired": [
+          "TAG 8 · 8 DEZEMBER",
+          "WEIHNACHTSBONUS",
+          "65% BIS ZU 650 €",
+          "Mindesteinzahlung: 25 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59, 8 Dez.",
+          "Geschenk abgelaufen",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "locked": [
+          "TAG 8 · 8 DEZEMBER",
+          "ÜBERRASCHUNGSGESCHENK",
+          "Ab 8. Dezember verfügbar",
+          "Komm morgen zurück und sichere dir dein Geschenk!",
+          "Gesperrt · 8. Dez.",
+          "Vollständige Teilnahmebedingungen"
+        ]
+      }
+    },
+    {
+      "day": 9,
+      "date": "2026-12-09",
+      "location": "Magisches Karussell",
+      "type": "freespins",
+      "amount": {
+        "spins": 74,
+        "text": "74 FREISPIELE"
+      },
+      "game": "Big Bass Christmas – Frozen Lake",
+      "minDeposit": {
+        "value": 30,
+        "currency": "EUR",
+        "text": "Mindesteinzahlung: 30 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Umsatzbedingung: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gültig bis: 23:59 Uhr, 9. Dez."
+      },
+      "raw": {
+        "active": [
+          "TAG 9 · 9. DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "74 FREISPIELE",
+          "in Big Bass Christmas – Frozen Lake",
+          "Mindesteinzahlung: 30 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59 Uhr, 9. Dez.",
+          "EINZAHLEN & SICHERN",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "expired": [
+          "TAG 9 · 9 DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "74 FREISPIELE",
+          "in Big Bass Christmas – Frozen Lake",
+          "Mindesteinzahlung: 30 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59, 9 Dez.",
+          "Geschenk abgelaufen",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "locked": [
+          "TAG 9 · 9 DEZEMBER",
+          "ÜBERRASCHUNGSGESCHENK",
+          "Ab 9. Dezember verfügbar",
+          "Komm morgen zurück und sichere dir dein Geschenk!",
+          "Gesperrt · 9. Dez.",
+          "Vollständige Teilnahmebedingungen"
+        ]
+      }
+    },
+    {
+      "day": 10,
+      "date": "2026-12-10",
+      "location": "Glücksgasse",
+      "type": "bonus",
+      "amount": {
+        "percent": 62,
+        "max": 700,
+        "currency": "EUR",
+        "text": "62% BIS ZU 700 €"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 35,
+        "currency": "EUR",
+        "text": "Mindesteinzahlung: 35 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Umsatzbedingung: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gültig bis: 23:59 Uhr, 10. Dez."
+      },
+      "raw": {
+        "active": [
+          "TAG 10 · 10. DEZEMBER",
+          "WEIHNACHTSBONUS",
+          "62% BIS ZU 700 €",
+          "Mindesteinzahlung: 35 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59 Uhr, 10. Dez.",
+          "EINZAHLEN & SICHERN",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "expired": [
+          "TAG 10 · 10 DEZEMBER",
+          "WEIHNACHTSBONUS",
+          "62% BIS ZU 700 €",
+          "Mindesteinzahlung: 35 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59, 10 Dez.",
+          "Geschenk abgelaufen",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "locked": [
+          "TAG 10 · 10 DEZEMBER",
+          "ÜBERRASCHUNGSGESCHENK",
+          "Ab 10. Dezember verfügbar",
+          "Komm morgen zurück und sichere dir dein Geschenk!",
+          "Gesperrt · 10. Dez.",
+          "Vollständige Teilnahmebedingungen"
+        ]
+      }
+    },
+    {
+      "day": 11,
+      "date": "2026-12-11",
+      "location": "Schatz des Schneemanns",
+      "type": "freespins",
+      "amount": {
+        "spins": 55,
+        "text": "55 FREISPIELE"
+      },
+      "game": "Thunder Coins: Hold and Win",
+      "minDeposit": {
+        "value": 22,
+        "currency": "EUR",
+        "text": "Mindesteinzahlung: 22 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Umsatzbedingung: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gültig bis: 23:59 Uhr, 11. Dez."
+      },
+      "raw": {
+        "active": [
+          "TAG 11 · 11. DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "55 FREISPIELE",
+          "in Thunder Coins: Hold and Win",
+          "Mindesteinzahlung: 22 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59 Uhr, 11. Dez.",
+          "EINZAHLEN & SICHERN",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "expired": [
+          "TAG 11 · 11 DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "55 FREISPIELE",
+          "in Thunder Coins: Hold and Win",
+          "Mindesteinzahlung: 22 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59, 11 Dez.",
+          "Geschenk abgelaufen",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "locked": [
+          "TAG 11 · 11 DEZEMBER",
+          "ÜBERRASCHUNGSGESCHENK",
+          "Ab 11. Dezember verfügbar",
+          "Komm morgen zurück und sichere dir dein Geschenk!",
+          "Gesperrt · 11. Dez.",
+          "Vollständige Teilnahmebedingungen"
+        ]
+      }
+    },
+    {
+      "day": 12,
+      "date": "2026-12-12",
+      "location": "Postamt des Weihnachtsmanns",
+      "type": "freespins",
+      "amount": {
+        "spins": 80,
+        "text": "80 FREISPIELE"
+      },
+      "game": "Fruits 'n' Stars Holiday Edition",
+      "minDeposit": {
+        "value": 25,
+        "currency": "EUR",
+        "text": "Mindesteinzahlung: 25 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Umsatzbedingung: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gültig bis: 23:59 Uhr, 12. Dez."
+      },
+      "raw": {
+        "active": [
+          "TAG 12 · 12. DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "80 FREISPIELE",
+          "in Fruits 'n' Stars Holiday Edition",
+          "Mindesteinzahlung: 25 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59 Uhr, 12. Dez.",
+          "EINZAHLEN & SICHERN",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "expired": [
+          "TAG 12 · 12 DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "80 FREISPIELE",
+          "in Fruits 'n' Stars Holiday Edition",
+          "Mindesteinzahlung: 25 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59, 12 Dez.",
+          "Geschenk abgelaufen",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "locked": [
+          "TAG 12 · 12 DEZEMBER",
+          "ÜBERRASCHUNGSGESCHENK",
+          "Ab 12. Dezember verfügbar",
+          "Komm morgen zurück und sichere dir dein Geschenk!",
+          "Gesperrt · 12. Dez.",
+          "Vollständige Teilnahmebedingungen"
+        ]
+      }
+    },
+    {
+      "day": 13,
+      "date": "2026-12-13",
+      "location": "Eispalast",
+      "type": "freespins",
+      "amount": {
+        "spins": 67,
+        "text": "67 FREISPIELE"
+      },
+      "game": "Yeti Quest",
+      "minDeposit": {
+        "value": 25,
+        "currency": "EUR",
+        "text": "Mindesteinzahlung: 25 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Umsatzbedingung: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gültig bis: 23:59 Uhr, 13. Dez."
+      },
+      "raw": {
+        "active": [
+          "TAG 13 · 13. DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "67 FREISPIELE",
+          "in Yeti Quest",
+          "Mindesteinzahlung: 25 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59 Uhr, 13. Dez.",
+          "EINZAHLEN & SICHERN",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "expired": [
+          "TAG 13 · 13 DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "67 FREISPIELE",
+          "in Yeti Quest",
+          "Mindesteinzahlung: 25 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59, 13 Dez.",
+          "Geschenk abgelaufen",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "locked": [
+          "TAG 13 · 13 DEZEMBER",
+          "ÜBERRASCHUNGSGESCHENK",
+          "Ab 13. Dezember verfügbar",
+          "Komm morgen zurück und sichere dir dein Geschenk!",
+          "Gesperrt · 13. Dez.",
+          "Vollständige Teilnahmebedingungen"
+        ]
+      }
+    },
+    {
+      "day": 14,
+      "date": "2026-12-14",
+      "location": "Wunderladen",
+      "type": "freespins",
+      "amount": {
+        "spins": 90,
+        "text": "90 FREISPIELE"
+      },
+      "game": "25 Cookies: Hit the Bonus",
+      "minDeposit": {
+        "value": 35,
+        "currency": "EUR",
+        "text": "Mindesteinzahlung: 35 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Umsatzbedingung: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gültig bis: 23:59 Uhr, 14. Dez."
+      },
+      "raw": {
+        "active": [
+          "TAG 14 · 14. DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "90 FREISPIELE",
+          "in 25 Cookies: Hit the Bonus",
+          "Mindesteinzahlung: 35 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59 Uhr, 14. Dez.",
+          "EINZAHLEN & SICHERN",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "expired": [
+          "TAG 14 · 14 DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "90 FREISPIELE",
+          "in 25 Cookies: Hit the Bonus",
+          "Mindesteinzahlung: 35 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59, 14 Dez.",
+          "Geschenk abgelaufen",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "locked": [
+          "TAG 14 · 14 DEZEMBER",
+          "ÜBERRASCHUNGSGESCHENK",
+          "Ab 14. Dezember verfügbar",
+          "Komm morgen zurück und sichere dir dein Geschenk!",
+          "Gesperrt · 14. Dez.",
+          "Vollständige Teilnahmebedingungen"
+        ]
+      }
+    },
+    {
+      "day": 15,
+      "date": "2026-12-15",
+      "location": "Weihnachtsmarkt",
+      "type": "bonus",
+      "amount": {
+        "percent": 58,
+        "max": 500,
+        "currency": "EUR",
+        "text": "58% BIS ZU 500 €"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 30,
+        "currency": "EUR",
+        "text": "Mindesteinzahlung: 30 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Umsatzbedingung: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gültig bis: 23:59 Uhr, 15. Dez."
+      },
+      "raw": {
+        "active": [
+          "TAG 15 · 15. DEZEMBER",
+          "WEIHNACHTSBONUS",
+          "58% BIS ZU 500 €",
+          "Mindesteinzahlung: 30 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59 Uhr, 15. Dez.",
+          "EINZAHLEN & SICHERN",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "expired": [
+          "TAG 15 · 15 DEZEMBER",
+          "WEIHNACHTSBONUS",
+          "58% BIS ZU 500 €",
+          "Mindesteinzahlung: 30 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59, 15 Dez.",
+          "Geschenk abgelaufen",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "locked": [
+          "TAG 15 · 15 DEZEMBER",
+          "ÜBERRASCHUNGSGESCHENK",
+          "Ab 15. Dezember verfügbar",
+          "Komm morgen zurück und sichere dir dein Geschenk!",
+          "Gesperrt · 15. Dez.",
+          "Vollständige Teilnahmebedingungen"
+        ]
+      }
+    },
+    {
+      "day": 16,
+      "date": "2026-12-16",
+      "location": "Wintergarten",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 FREISPIELE"
+      },
+      "game": "Christmas Carol Megaways",
+      "minDeposit": {
+        "value": 30,
+        "currency": "EUR",
+        "text": "Mindesteinzahlung: 30 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Umsatzbedingung: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gültig bis: 23:59 Uhr, 16. Dez."
+      },
+      "raw": {
+        "active": [
+          "TAG 16 · 16. DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "82 FREISPIELE",
+          "in Christmas Carol Megaways",
+          "Mindesteinzahlung: 30 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59 Uhr, 16. Dez.",
+          "EINZAHLEN & SICHERN",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "expired": [
+          "TAG 16 · 16 DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "82 FREISPIELE",
+          "in Christmas Carol Megaways",
+          "Mindesteinzahlung: 30 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59, 16 Dez.",
+          "Geschenk abgelaufen",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "locked": [
+          "TAG 16 · 16 DEZEMBER",
+          "ÜBERRASCHUNGSGESCHENK",
+          "Ab 16. Dezember verfügbar",
+          "Komm morgen zurück und sichere dir dein Geschenk!",
+          "Gesperrt · 16. Dez.",
+          "Vollständige Teilnahmebedingungen"
+        ]
+      }
+    },
+    {
+      "day": 17,
+      "date": "2026-12-17",
+      "location": "Zauberwald",
+      "type": "bonus",
+      "amount": {
+        "percent": 45,
+        "max": 500,
+        "currency": "EUR",
+        "text": "45% BIS ZU 500 €"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 25,
+        "currency": "EUR",
+        "text": "Mindesteinzahlung: 25 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Umsatzbedingung: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gültig bis: 23:59 Uhr, 17. Dez."
+      },
+      "raw": {
+        "active": [
+          "TAG 17 · 17. DEZEMBER",
+          "WEIHNACHTSBONUS",
+          "45% BIS ZU 500 €",
+          "Mindesteinzahlung: 25 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59 Uhr, 17. Dez.",
+          "EINZAHLEN & SICHERN",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "expired": [
+          "TAG 17 · 17 DEZEMBER",
+          "WEIHNACHTSBONUS",
+          "45% BIS ZU 500 €",
+          "Mindesteinzahlung: 25 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59, 17 Dez.",
+          "Geschenk abgelaufen",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "locked": [
+          "TAG 17 · 17 DEZEMBER",
+          "ÜBERRASCHUNGSGESCHENK",
+          "Ab 17. Dezember verfügbar",
+          "Komm morgen zurück und sichere dir dein Geschenk!",
+          "Gesperrt · 17. Dez.",
+          "Vollständige Teilnahmebedingungen"
+        ]
+      }
+    },
+    {
+      "day": 18,
+      "date": "2026-12-18",
+      "location": "Schneehöhle",
+      "type": "freespins",
+      "amount": {
+        "spins": 63,
+        "text": "63 FREISPIELE"
+      },
+      "game": "Big Bass Christmas – Frozen Lake",
+      "minDeposit": {
+        "value": 25,
+        "currency": "EUR",
+        "text": "Mindesteinzahlung: 25 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Umsatzbedingung: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gültig bis: 23:59 Uhr, 18. Dez."
+      },
+      "raw": {
+        "active": [
+          "TAG 18 · 18. DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "63 FREISPIELE",
+          "in Big Bass Christmas – Frozen Lake",
+          "Mindesteinzahlung: 25 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59 Uhr, 18. Dez.",
+          "EINZAHLEN & SICHERN",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "expired": [
+          "TAG 18 · 18 DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "63 FREISPIELE",
+          "in Big Bass Christmas – Frozen Lake",
+          "Mindesteinzahlung: 25 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59, 18 Dez.",
+          "Geschenk abgelaufen",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "locked": [
+          "TAG 18 · 18 DEZEMBER",
+          "ÜBERRASCHUNGSGESCHENK",
+          "Ab 18. Dezember verfügbar",
+          "Komm morgen zurück und sichere dir dein Geschenk!",
+          "Gesperrt · 18. Dez.",
+          "Vollständige Teilnahmebedingungen"
+        ]
+      }
+    },
+    {
+      "day": 19,
+      "date": "2026-12-19",
+      "location": "Sternen-Eisbahn",
+      "type": "freespins",
+      "amount": {
+        "spins": 95,
+        "text": "95 FREISPIELE"
+      },
+      "game": "Fruits 'n' Stars Holiday Edition",
+      "minDeposit": {
+        "value": 35,
+        "currency": "EUR",
+        "text": "Mindesteinzahlung: 35 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Umsatzbedingung: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gültig bis: 23:59 Uhr, 19. Dez."
+      },
+      "raw": {
+        "active": [
+          "TAG 19 · 19. DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "95 FREISPIELE",
+          "in Fruits 'n' Stars Holiday Edition",
+          "Mindesteinzahlung: 35 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59 Uhr, 19. Dez.",
+          "EINZAHLEN & SICHERN",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "expired": [
+          "TAG 19 · 19 DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "95 FREISPIELE",
+          "in Fruits 'n' Stars Holiday Edition",
+          "Mindesteinzahlung: 35 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59, 19 Dez.",
+          "Geschenk abgelaufen",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "locked": [
+          "TAG 19 · 19 DEZEMBER",
+          "ÜBERRASCHUNGSGESCHENK",
+          "Ab 19. Dezember verfügbar",
+          "Komm morgen zurück und sichere dir dein Geschenk!",
+          "Gesperrt · 19. Dez.",
+          "Vollständige Teilnahmebedingungen"
+        ]
+      }
+    },
+    {
+      "day": 20,
+      "date": "2026-12-20",
+      "location": "Nordlichter",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 FREISPIELE"
+      },
+      "game": "Sweet Bonanza Xmas",
+      "minDeposit": {
+        "value": 30,
+        "currency": "EUR",
+        "text": "Mindesteinzahlung: 30 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Umsatzbedingung: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gültig bis: 23:59 Uhr, 20. Dez."
+      },
+      "raw": {
+        "active": [
+          "TAG 20 · 20. DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "82 FREISPIELE",
+          "in Sweet Bonanza Xmas",
+          "Mindesteinzahlung: 30 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59 Uhr, 20. Dez.",
+          "EINZAHLEN & SICHERN",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "expired": [
+          "TAG 20 · 20 DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "82 FREISPIELE",
+          "in Sweet Bonanza Xmas",
+          "Mindesteinzahlung: 30 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59, 20 Dez.",
+          "Geschenk abgelaufen",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "locked": [
+          "TAG 20 · 20 DEZEMBER",
+          "ÜBERRASCHUNGSGESCHENK",
+          "Ab 20. Dezember verfügbar",
+          "Komm morgen zurück und sichere dir dein Geschenk!",
+          "Gesperrt · 20. Dez.",
+          "Vollständige Teilnahmebedingungen"
+        ]
+      }
+    },
+    {
+      "day": 21,
+      "date": "2026-12-21",
+      "location": "Mitternachtsexpress",
+      "type": "bonus",
+      "amount": {
+        "percent": 65,
+        "max": 500,
+        "currency": "EUR",
+        "text": "65% BIS ZU 500 €"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 25,
+        "currency": "EUR",
+        "text": "Mindesteinzahlung: 25 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Umsatzbedingung: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gültig bis: 23:59 Uhr, 21. Dez."
+      },
+      "raw": {
+        "active": [
+          "TAG 21 · 21. DEZEMBER",
+          "WEIHNACHTSBONUS",
+          "65% BIS ZU 500 €",
+          "Mindesteinzahlung: 25 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59 Uhr, 21. Dez.",
+          "EINZAHLEN & SICHERN",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "expired": [
+          "TAG 21 · 21 DEZEMBER",
+          "WEIHNACHTSBONUS",
+          "65% BIS ZU 500 €",
+          "Mindesteinzahlung: 25 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59, 21 Dez.",
+          "Geschenk abgelaufen",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "locked": [
+          "TAG 21 · 21 DEZEMBER",
+          "ÜBERRASCHUNGSGESCHENK",
+          "Ab 21. Dezember verfügbar",
+          "Komm morgen zurück und sichere dir dein Geschenk!",
+          "Gesperrt · 21. Dez.",
+          "Vollständige Teilnahmebedingungen"
+        ]
+      }
+    },
+    {
+      "day": 22,
+      "date": "2026-12-22",
+      "location": "Verschneites Häuschen",
+      "type": "freespins",
+      "amount": {
+        "spins": 62,
+        "text": "62 FREISPIELE"
+      },
+      "game": "Yeti Quest",
+      "minDeposit": {
+        "value": 22,
+        "currency": "EUR",
+        "text": "Mindesteinzahlung: 22 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Umsatzbedingung: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gültig bis: 23:59 Uhr, 22. Dez."
+      },
+      "raw": {
+        "active": [
+          "TAG 22 · 22. DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "62 FREISPIELE",
+          "in Yeti Quest",
+          "Mindesteinzahlung: 22 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59 Uhr, 22. Dez.",
+          "EINZAHLEN & SICHERN",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "expired": [
+          "TAG 22 · 22 DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "62 FREISPIELE",
+          "in Yeti Quest",
+          "Mindesteinzahlung: 22 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59, 22 Dez.",
+          "Geschenk abgelaufen",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "locked": [
+          "TAG 22 · 22 DEZEMBER",
+          "ÜBERRASCHUNGSGESCHENK",
+          "Ab 22. Dezember verfügbar",
+          "Komm morgen zurück und sichere dir dein Geschenk!",
+          "Gesperrt · 22. Dez.",
+          "Vollständige Teilnahmebedingungen"
+        ]
+      }
+    },
+    {
+      "day": 23,
+      "date": "2026-12-23",
+      "location": "Tresor des Weihnachtsmanns",
+      "type": "freespins",
+      "amount": {
+        "spins": 99,
+        "text": "99 FREISPIELE"
+      },
+      "game": "25 Cookies: Hit the Bonus",
+      "minDeposit": {
+        "value": 30,
+        "currency": "EUR",
+        "text": "Mindesteinzahlung: 30 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Umsatzbedingung: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gültig bis: 23:59 Uhr, 23. Dez."
+      },
+      "raw": {
+        "active": [
+          "TAG 23 · 23. DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "99 FREISPIELE",
+          "in 25 Cookies: Hit the Bonus",
+          "Mindesteinzahlung: 30 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59 Uhr, 23. Dez.",
+          "EINZAHLEN & SICHERN",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "expired": [
+          "TAG 23 · 23 DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "99 FREISPIELE",
+          "in 25 Cookies: Hit the Bonus",
+          "Mindesteinzahlung: 30 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59, 23 Dez.",
+          "Geschenk abgelaufen",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "locked": [
+          "TAG 23 · 23 DEZEMBER",
+          "ÜBERRASCHUNGSGESCHENK",
+          "Ab 23. Dezember verfügbar",
+          "Komm morgen zurück und sichere dir dein Geschenk!",
+          "Gesperrt · 23. Dez.",
+          "Vollständige Teilnahmebedingungen"
+        ]
+      }
+    },
+    {
+      "day": 24,
+      "date": "2026-12-24",
+      "location": "Geheimes Zimmer",
+      "type": "bonus",
+      "amount": {
+        "percent": 80,
+        "max": 400,
+        "currency": "EUR",
+        "text": "80% BIS ZU 400 €"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 35,
+        "currency": "EUR",
+        "text": "Mindesteinzahlung: 35 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Umsatzbedingung: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gültig bis: 23:59 Uhr, 24. Dez."
+      },
+      "raw": {
+        "active": [
+          "TAG 24 · 24. DEZEMBER",
+          "WEIHNACHTSBONUS",
+          "80% BIS ZU 400 €",
+          "Mindesteinzahlung: 35 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59 Uhr, 24. Dez.",
+          "EINZAHLEN & SICHERN",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "expired": [
+          "TAG 24 · 24 DEZEMBER",
+          "WEIHNACHTSBONUS",
+          "80% BIS ZU 400 €",
+          "Mindesteinzahlung: 35 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59, 24 Dez.",
+          "Geschenk abgelaufen",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "locked": [
+          "TAG 24 · 24 DEZEMBER",
+          "ÜBERRASCHUNGSGESCHENK",
+          "Ab 24. Dezember verfügbar",
+          "Komm morgen zurück und sichere dir dein Geschenk!",
+          "Gesperrt · 24. Dez.",
+          "Vollständige Teilnahmebedingungen"
+        ]
+      }
+    },
+    {
+      "day": 25,
+      "date": "2026-12-25",
+      "location": "Geschenkesack",
+      "type": "freespins",
+      "amount": {
+        "spins": 101,
+        "text": "101 FREISPIELE"
+      },
+      "game": "Christmas Carol Megaways",
+      "minDeposit": {
+        "value": 35,
+        "currency": "EUR",
+        "text": "Mindesteinzahlung: 35 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Umsatzbedingung: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gültig bis: 23:59 Uhr, 25. Dez."
+      },
+      "raw": {
+        "active": [
+          "TAG 25 · 25. DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "101 FREISPIELE",
+          "in Christmas Carol Megaways",
+          "Mindesteinzahlung: 35 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59 Uhr, 25. Dez.",
+          "EINZAHLEN & SICHERN",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "expired": [
+          "TAG 25 · 25 DEZEMBER",
+          "WEIHNACHTS-FREISPIELE",
+          "101 FREISPIELE",
+          "in Christmas Carol Megaways",
+          "Mindesteinzahlung: 35 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59, 25 Dez.",
+          "Geschenk abgelaufen",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "locked": [
+          "TAG 25 · 25 DEZEMBER",
+          "ÜBERRASCHUNGSGESCHENK",
+          "Ab 25. Dezember verfügbar",
+          "Komm morgen zurück und sichere dir dein Geschenk!",
+          "Gesperrt · 25. Dez.",
+          "Vollständige Teilnahmebedingungen"
+        ]
+      }
+    },
+    {
+      "day": 26,
+      "date": "2026-12-26",
+      "location": "Jackpot-Truhe",
+      "type": "bonus",
+      "amount": {
+        "percent": 60,
+        "max": 600,
+        "currency": "EUR",
+        "text": "60% BIS ZU 600 €"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 22,
+        "currency": "EUR",
+        "text": "Mindesteinzahlung: 22 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Umsatzbedingung: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gültig bis: 23:59 Uhr, 26. Dez."
+      },
+      "raw": {
+        "active": [
+          "TAG 26 · 26. DEZEMBER",
+          "WEIHNACHTSBONUS",
+          "60% BIS ZU 600 €",
+          "Mindesteinzahlung: 22 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59 Uhr, 26. Dez.",
+          "EINZAHLEN & SICHERN",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "expired": [
+          "TAG 26 · 26 DEZEMBER",
+          "WEIHNACHTSBONUS",
+          "60% BIS ZU 600 €",
+          "Mindesteinzahlung: 22 €",
+          "Umsatzbedingung: x25",
+          "Gültig bis: 23:59, 26 Dez.",
+          "Geschenk abgelaufen",
+          "Vollständige Teilnahmebedingungen"
+        ],
+        "locked": [
+          "TAG 26 · 26 DEZEMBER",
+          "ÜBERRASCHUNGSGESCHENK",
+          "Ab 26. Dezember verfügbar",
+          "Komm morgen zurück und sichere dir dein Geschenk!",
+          "Gesperrt · 26. Dez.",
+          "Vollständige Teilnahmebedingungen"
+        ]
+      }
+    }
+  ]
+}

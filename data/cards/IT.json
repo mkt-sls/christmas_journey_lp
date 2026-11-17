@@ -1,0 +1,1463 @@
+{
+  "market": "IT",
+  "uiLang": "IT",
+  "currency": "EUR",
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-12-01",
+      "location": "I segreti di Babbo Natale",
+      "type": "bonus",
+      "amount": {
+        "percent": 70,
+        "max": 350,
+        "currency": "EUR",
+        "text": "70% FINO A 350 €"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 35,
+        "currency": "EUR",
+        "text": "Deposito min.: 35 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Requisito di puntata: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valido fino al: 1 dic., 23:59"
+      },
+      "raw": {
+        "active": [
+          "GIORNO 1 · 1 DICEMBRE",
+          "BONUS DI NATALE",
+          "70% FINO A 350 €",
+          "Deposito min.: 35 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 1 dic., 23:59",
+          "DEPOSITA E RISCUOTI",
+          "Termini e condizioni completi"
+        ],
+        "expired": [
+          "GIORNO 1 · 1 DICEMBRE",
+          "BONUS DI NATALE",
+          "70% FINO A 350 €",
+          "Deposito min.: 35 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 23:59, 1 dic.",
+          "Regalo scaduto",
+          "Termini e condizioni completi"
+        ],
+        "locked": [
+          "GIORNO 1 · 1 DICEMBRE",
+          "REGALO A SORPRESA",
+          "Si sblocca il 1 dicembre",
+          "Torna domani per sbloccare il regalo!",
+          "Bloccato · 1 dic.",
+          "Termini e condizioni completi"
+        ]
+      }
+    },
+    {
+      "day": 2,
+      "date": "2026-12-02",
+      "location": "Jackpot sotto l’albero",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 GIRI GRATIS"
+      },
+      "game": "Thunder Coins: Hold and Win",
+      "minDeposit": {
+        "value": 25,
+        "currency": "EUR",
+        "text": "Deposito min.: 25 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Requisito di puntata: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valido fino al: 2 dic., 23:59"
+      },
+      "raw": {
+        "active": [
+          "GIORNO 2 · 2 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "82 GIRI GRATIS",
+          "su Thunder Coins: Hold and Win",
+          "Deposito min.: 25 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 2 dic., 23:59",
+          "DEPOSITA E RISCUOTI",
+          "Termini e condizioni completi"
+        ],
+        "expired": [
+          "GIORNO 2 · 2 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "82 GIRI GRATIS",
+          "su Thunder Coins: Hold and Win",
+          "Deposito min.: 25 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 23:59, 2 dic.",
+          "Regalo scaduto",
+          "Termini e condizioni completi"
+        ],
+        "locked": [
+          "GIORNO 2 · 2 DICEMBRE",
+          "REGALO A SORPRESA",
+          "Si sblocca il 2 dicembre",
+          "Torna domani per sbloccare il regalo!",
+          "Bloccato · 2 dic.",
+          "Termini e condizioni completi"
+        ]
+      }
+    },
+    {
+      "day": 3,
+      "date": "2026-12-03",
+      "location": "Casetta di pan di zenzero",
+      "type": "bonus",
+      "amount": {
+        "percent": 55,
+        "max": 500,
+        "currency": "EUR",
+        "text": "55% FINO A 500 €"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 30,
+        "currency": "EUR",
+        "text": "Deposito min.: 30 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Requisito di puntata: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valido fino al: 3 dic., 23:59"
+      },
+      "raw": {
+        "active": [
+          "GIORNO 3 · 3 DICEMBRE",
+          "BONUS DI NATALE",
+          "55% FINO A 500 €",
+          "Deposito min.: 30 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 3 dic., 23:59",
+          "DEPOSITA E RISCUOTI",
+          "Termini e condizioni completi"
+        ],
+        "expired": [
+          "GIORNO 3 · 3 DICEMBRE",
+          "BONUS DI NATALE",
+          "55% FINO A 500 €",
+          "Deposito min.: 30 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 23:59, 3 dic.",
+          "Regalo scaduto",
+          "Termini e condizioni completi"
+        ],
+        "locked": [
+          "GIORNO 3 · 3 DICEMBRE",
+          "REGALO A SORPRESA",
+          "Si sblocca il 3 dicembre",
+          "Torna domani per sbloccare il regalo!",
+          "Bloccato · 3 dic.",
+          "Termini e condizioni completi"
+        ]
+      }
+    },
+    {
+      "day": 4,
+      "date": "2026-12-04",
+      "location": "Fabbrica dei regali di Babbo Natale",
+      "type": "freespins",
+      "amount": {
+        "spins": 65,
+        "text": "65 GIRI GRATIS"
+      },
+      "game": "Big Bass Splash",
+      "minDeposit": {
+        "value": 22,
+        "currency": "EUR",
+        "text": "Deposito min.: 22 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Requisito di puntata: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valido fino al: 4 dic., 23:59"
+      },
+      "raw": {
+        "active": [
+          "GIORNO 4 · 4 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "65 GIRI GRATIS",
+          "su Big Bass Splash",
+          "Deposito min.: 22 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 4 dic., 23:59",
+          "DEPOSITA E RISCUOTI",
+          "Termini e condizioni completi"
+        ],
+        "expired": [
+          "GIORNO 4 · 4 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "65 GIRI GRATIS",
+          "su Big Bass Splash",
+          "Deposito min.: 22 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 23:59, 4 dic.",
+          "Regalo scaduto",
+          "Termini e condizioni completi"
+        ],
+        "locked": [
+          "GIORNO 4 · 4 DICEMBRE",
+          "REGALO A SORPRESA",
+          "Si sblocca il 4 dicembre",
+          "Torna domani per sbloccare il regalo!",
+          "Bloccato · 4 dic.",
+          "Termini e condizioni completi"
+        ]
+      }
+    },
+    {
+      "day": 5,
+      "date": "2026-12-05",
+      "location": "Parco innevato",
+      "type": "freespins",
+      "amount": {
+        "spins": 75,
+        "text": "75 GIRI GRATIS"
+      },
+      "game": "John Hunter and the Book of Tut",
+      "minDeposit": {
+        "value": 25,
+        "currency": "EUR",
+        "text": "Deposito min.: 25 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Requisito di puntata: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valido fino al: 5 dic., 23:59"
+      },
+      "raw": {
+        "active": [
+          "GIORNO 5 · 5 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "75 GIRI GRATIS",
+          "su John Hunter and the Book of Tut",
+          "Deposito min.: 25 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 5 dic., 23:59",
+          "DEPOSITA E RISCUOTI",
+          "Termini e condizioni completi"
+        ],
+        "expired": [
+          "GIORNO 5 · 5 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "75 GIRI GRATIS",
+          "su John Hunter and the Book of Tut",
+          "Deposito min.: 25 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 23:59, 5 dic.",
+          "Regalo scaduto",
+          "Termini e condizioni completi"
+        ],
+        "locked": [
+          "GIORNO 5 · 5 DICEMBRE",
+          "REGALO A SORPRESA",
+          "Si sblocca il 5 dicembre",
+          "Torna domani per sbloccare il regalo!",
+          "Bloccato · 5 dic.",
+          "Termini e condizioni completi"
+        ]
+      }
+    },
+    {
+      "day": 6,
+      "date": "2026-12-06",
+      "location": "Negozio di giocattoli",
+      "type": "freespins",
+      "amount": {
+        "spins": 80,
+        "text": "80 GIRI GRATIS"
+      },
+      "game": "Gemhalla",
+      "minDeposit": {
+        "value": 30,
+        "currency": "EUR",
+        "text": "Deposito min.: 30 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Requisito di puntata: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valido fino al: 6 dic., 23:59"
+      },
+      "raw": {
+        "active": [
+          "GIORNO 6 · 6 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "80 GIRI GRATIS",
+          "su Gemhalla",
+          "Deposito min.: 30 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 6 dic., 23:59",
+          "DEPOSITA E RISCUOTI",
+          "Termini e condizioni completi"
+        ],
+        "expired": [
+          "GIORNO 6 · 6 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "80 GIRI GRATIS",
+          "su Gemhalla",
+          "Deposito min.: 30 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 23:59, 6 dic.",
+          "Regalo scaduto",
+          "Termini e condizioni completi"
+        ],
+        "locked": [
+          "GIORNO 6 · 6 DICEMBRE",
+          "REGALO A SORPRESA",
+          "Si sblocca il 6 dicembre",
+          "Torna domani per sbloccare il regalo!",
+          "Bloccato · 6 dic.",
+          "Termini e condizioni completi"
+        ]
+      }
+    },
+    {
+      "day": 7,
+      "date": "2026-12-07",
+      "location": "Piazza di Babbo Natale",
+      "type": "freespins",
+      "amount": {
+        "spins": 90,
+        "text": "90 GIRI GRATIS"
+      },
+      "game": "Bonanza Billion",
+      "minDeposit": {
+        "value": 35,
+        "currency": "EUR",
+        "text": "Deposito min.: 35 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Requisito di puntata: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valido fino al: 7 dic., 23:59"
+      },
+      "raw": {
+        "active": [
+          "GIORNO 7 · 7 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "90 GIRI GRATIS",
+          "su Bonanza Billion",
+          "Deposito min.: 35 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 7 dic., 23:59",
+          "DEPOSITA E RISCUOTI",
+          "Termini e condizioni completi"
+        ],
+        "expired": [
+          "GIORNO 7 · 7 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "90 GIRI GRATIS",
+          "su Bonanza Billion",
+          "Deposito min.: 35 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 23:59, 7 dic.",
+          "Regalo scaduto",
+          "Termini e condizioni completi"
+        ],
+        "locked": [
+          "GIORNO 7 · 7 DICEMBRE",
+          "REGALO A SORPRESA",
+          "Si sblocca il 7 dicembre",
+          "Torna domani per sbloccare il regalo!",
+          "Bloccato · 7 dic.",
+          "Termini e condizioni completi"
+        ]
+      }
+    },
+    {
+      "day": 8,
+      "date": "2026-12-08",
+      "location": "Cappella dei desideri",
+      "type": "bonus",
+      "amount": {
+        "percent": 65,
+        "max": 650,
+        "currency": "EUR",
+        "text": "65% FINO A 650 €"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 25,
+        "currency": "EUR",
+        "text": "Deposito min.: 25 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Requisito di puntata: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valido fino al: 8 dic., 23:59"
+      },
+      "raw": {
+        "active": [
+          "GIORNO 8 · 8 DICEMBRE",
+          "BONUS DI NATALE",
+          "65% FINO A 650 €",
+          "Deposito min.: 25 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 8 dic., 23:59",
+          "DEPOSITA E RISCUOTI",
+          "Termini e condizioni completi"
+        ],
+        "expired": [
+          "GIORNO 8 · 8 DICEMBRE",
+          "BONUS DI NATALE",
+          "65% FINO A 650 €",
+          "Deposito min.: 25 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 23:59, 8 dic.",
+          "Regalo scaduto",
+          "Termini e condizioni completi"
+        ],
+        "locked": [
+          "GIORNO 8 · 8 DICEMBRE",
+          "REGALO A SORPRESA",
+          "Si sblocca il 8 dicembre",
+          "Torna domani per sbloccare il regalo!",
+          "Bloccato · 8 dic.",
+          "Termini e condizioni completi"
+        ]
+      }
+    },
+    {
+      "day": 9,
+      "date": "2026-12-09",
+      "location": "Giostra magica",
+      "type": "freespins",
+      "amount": {
+        "spins": 74,
+        "text": "74 GIRI GRATIS"
+      },
+      "game": "Big Bass Christmas – Frozen Lake",
+      "minDeposit": {
+        "value": 30,
+        "currency": "EUR",
+        "text": "Deposito min.: 30 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Requisito di puntata: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valido fino al: 9 dic., 23:59"
+      },
+      "raw": {
+        "active": [
+          "GIORNO 9 · 9 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "74 GIRI GRATIS",
+          "su Big Bass Christmas – Frozen Lake",
+          "Deposito min.: 30 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 9 dic., 23:59",
+          "DEPOSITA E RISCUOTI",
+          "Termini e condizioni completi"
+        ],
+        "expired": [
+          "GIORNO 9 · 9 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "74 GIRI GRATIS",
+          "su Big Bass Christmas – Frozen Lake",
+          "Deposito min.: 30 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 23:59, 9 dic.",
+          "Regalo scaduto",
+          "Termini e condizioni completi"
+        ],
+        "locked": [
+          "GIORNO 9 · 9 DICEMBRE",
+          "REGALO A SORPRESA",
+          "Si sblocca il 9 dicembre",
+          "Torna domani per sbloccare il regalo!",
+          "Bloccato · 9 dic.",
+          "Termini e condizioni completi"
+        ]
+      }
+    },
+    {
+      "day": 10,
+      "date": "2026-12-10",
+      "location": "Vicolo della fortuna",
+      "type": "bonus",
+      "amount": {
+        "percent": 62,
+        "max": 700,
+        "currency": "EUR",
+        "text": "62% FINO A 700 €"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 35,
+        "currency": "EUR",
+        "text": "Deposito min.: 35 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Requisito di puntata: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valido fino al: 10 dic., 23:59"
+      },
+      "raw": {
+        "active": [
+          "GIORNO 10 · 10 DICEMBRE",
+          "BONUS DI NATALE",
+          "62% FINO A 700 €",
+          "Deposito min.: 35 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 10 dic., 23:59",
+          "DEPOSITA E RISCUOTI",
+          "Termini e condizioni completi"
+        ],
+        "expired": [
+          "GIORNO 10 · 10 DICEMBRE",
+          "BONUS DI NATALE",
+          "62% FINO A 700 €",
+          "Deposito min.: 35 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 23:59, 10 dic.",
+          "Regalo scaduto",
+          "Termini e condizioni completi"
+        ],
+        "locked": [
+          "GIORNO 10 · 10 DICEMBRE",
+          "REGALO A SORPRESA",
+          "Si sblocca il 10 dicembre",
+          "Torna domani per sbloccare il regalo!",
+          "Bloccato · 10 dic.",
+          "Termini e condizioni completi"
+        ]
+      }
+    },
+    {
+      "day": 11,
+      "date": "2026-12-11",
+      "location": "Il tesoro del pupazzo di neve",
+      "type": "freespins",
+      "amount": {
+        "spins": 55,
+        "text": "55 GIRI GRATIS"
+      },
+      "game": "Thunder Coins: Hold and Win",
+      "minDeposit": {
+        "value": 22,
+        "currency": "EUR",
+        "text": "Deposito min.: 22 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Requisito di puntata: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valido fino al: 11 dic., 23:59"
+      },
+      "raw": {
+        "active": [
+          "GIORNO 11 · 11 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "55 GIRI GRATIS",
+          "su Thunder Coins: Hold and Win",
+          "Deposito min.: 22 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 11 dic., 23:59",
+          "DEPOSITA E RISCUOTI",
+          "Termini e condizioni completi"
+        ],
+        "expired": [
+          "GIORNO 11 · 11 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "55 GIRI GRATIS",
+          "su Thunder Coins: Hold and Win",
+          "Deposito min.: 22 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 23:59, 11 dic.",
+          "Regalo scaduto",
+          "Termini e condizioni completi"
+        ],
+        "locked": [
+          "GIORNO 11 · 11 DICEMBRE",
+          "REGALO A SORPRESA",
+          "Si sblocca il 11 dicembre",
+          "Torna domani per sbloccare il regalo!",
+          "Bloccato · 11 dic.",
+          "Termini e condizioni completi"
+        ]
+      }
+    },
+    {
+      "day": 12,
+      "date": "2026-12-12",
+      "location": "Ufficio postale di Babbo Natale",
+      "type": "freespins",
+      "amount": {
+        "spins": 80,
+        "text": "80 GIRI GRATIS"
+      },
+      "game": "Fruits 'n' Stars Holiday Edition",
+      "minDeposit": {
+        "value": 25,
+        "currency": "EUR",
+        "text": "Deposito min.: 25 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Requisito di puntata: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valido fino al: 12 dic., 23:59"
+      },
+      "raw": {
+        "active": [
+          "GIORNO 12 · 12 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "80 GIRI GRATIS",
+          "su Fruits 'n' Stars Holiday Edition",
+          "Deposito min.: 25 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 12 dic., 23:59",
+          "DEPOSITA E RISCUOTI",
+          "Termini e condizioni completi"
+        ],
+        "expired": [
+          "GIORNO 12 · 12 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "80 GIRI GRATIS",
+          "su Fruits 'n' Stars Holiday Edition",
+          "Deposito min.: 25 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 23:59, 12 dic.",
+          "Regalo scaduto",
+          "Termini e condizioni completi"
+        ],
+        "locked": [
+          "GIORNO 12 · 12 DICEMBRE",
+          "REGALO A SORPRESA",
+          "Si sblocca il 12 dicembre",
+          "Torna domani per sbloccare il regalo!",
+          "Bloccato · 12 dic.",
+          "Termini e condizioni completi"
+        ]
+      }
+    },
+    {
+      "day": 13,
+      "date": "2026-12-13",
+      "location": "Palazzo di ghiaccio",
+      "type": "freespins",
+      "amount": {
+        "spins": 67,
+        "text": "67 GIRI GRATIS"
+      },
+      "game": "Yeti Quest",
+      "minDeposit": {
+        "value": 25,
+        "currency": "EUR",
+        "text": "Deposito min.: 25 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Requisito di puntata: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valido fino al: 13 dic., 23:59"
+      },
+      "raw": {
+        "active": [
+          "GIORNO 13 · 13 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "67 GIRI GRATIS",
+          "su Yeti Quest",
+          "Deposito min.: 25 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 13 dic., 23:59",
+          "DEPOSITA E RISCUOTI",
+          "Termini e condizioni completi"
+        ],
+        "expired": [
+          "GIORNO 13 · 13 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "67 GIRI GRATIS",
+          "su Yeti Quest",
+          "Deposito min.: 25 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 23:59, 13 dic.",
+          "Regalo scaduto",
+          "Termini e condizioni completi"
+        ],
+        "locked": [
+          "GIORNO 13 · 13 DICEMBRE",
+          "REGALO A SORPRESA",
+          "Si sblocca il 13 dicembre",
+          "Torna domani per sbloccare il regalo!",
+          "Bloccato · 13 dic.",
+          "Termini e condizioni completi"
+        ]
+      }
+    },
+    {
+      "day": 14,
+      "date": "2026-12-14",
+      "location": "Bottega delle meraviglie",
+      "type": "freespins",
+      "amount": {
+        "spins": 90,
+        "text": "90 GIRI GRATIS"
+      },
+      "game": "25 Cookies: Hit the Bonus",
+      "minDeposit": {
+        "value": 35,
+        "currency": "EUR",
+        "text": "Deposito min.: 35 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Requisito di puntata: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valido fino al: 14 dic., 23:59"
+      },
+      "raw": {
+        "active": [
+          "GIORNO 14 · 14 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "90 GIRI GRATIS",
+          "su 25 Cookies: Hit the Bonus",
+          "Deposito min.: 35 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 14 dic., 23:59",
+          "DEPOSITA E RISCUOTI",
+          "Termini e condizioni completi"
+        ],
+        "expired": [
+          "GIORNO 14 · 14 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "90 GIRI GRATIS",
+          "su 25 Cookies: Hit the Bonus",
+          "Deposito min.: 35 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 23:59, 14 dic.",
+          "Regalo scaduto",
+          "Termini e condizioni completi"
+        ],
+        "locked": [
+          "GIORNO 14 · 14 DICEMBRE",
+          "REGALO A SORPRESA",
+          "Si sblocca il 14 dicembre",
+          "Torna domani per sbloccare il regalo!",
+          "Bloccato · 14 dic.",
+          "Termini e condizioni completi"
+        ]
+      }
+    },
+    {
+      "day": 15,
+      "date": "2026-12-15",
+      "location": "Mercatino di Natale",
+      "type": "bonus",
+      "amount": {
+        "percent": 58,
+        "max": 500,
+        "currency": "EUR",
+        "text": "58% FINO A 500 €"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 30,
+        "currency": "EUR",
+        "text": "Deposito min.: 30 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Requisito di puntata: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valido fino al: 15 dic., 23:59"
+      },
+      "raw": {
+        "active": [
+          "GIORNO 15 · 15 DICEMBRE",
+          "BONUS DI NATALE",
+          "58% FINO A 500 €",
+          "Deposito min.: 30 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 15 dic., 23:59",
+          "DEPOSITA E RISCUOTI",
+          "Termini e condizioni completi"
+        ],
+        "expired": [
+          "GIORNO 15 · 15 DICEMBRE",
+          "BONUS DI NATALE",
+          "58% FINO A 500 €",
+          "Deposito min.: 30 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 23:59, 15 dic.",
+          "Regalo scaduto",
+          "Termini e condizioni completi"
+        ],
+        "locked": [
+          "GIORNO 15 · 15 DICEMBRE",
+          "REGALO A SORPRESA",
+          "Si sblocca il 15 dicembre",
+          "Torna domani per sbloccare il regalo!",
+          "Bloccato · 15 dic.",
+          "Termini e condizioni completi"
+        ]
+      }
+    },
+    {
+      "day": 16,
+      "date": "2026-12-16",
+      "location": "Giardino d’inverno",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 GIRI GRATIS"
+      },
+      "game": "Christmas Carol Megaways",
+      "minDeposit": {
+        "value": 30,
+        "currency": "EUR",
+        "text": "Deposito min.: 30 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Requisito di puntata: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valido fino al: 16 dic., 23:59"
+      },
+      "raw": {
+        "active": [
+          "GIORNO 16 · 16 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "82 GIRI GRATIS",
+          "su Christmas Carol Megaways",
+          "Deposito min.: 30 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 16 dic., 23:59",
+          "DEPOSITA E RISCUOTI",
+          "Termini e condizioni completi"
+        ],
+        "expired": [
+          "GIORNO 16 · 16 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "82 GIRI GRATIS",
+          "su Christmas Carol Megaways",
+          "Deposito min.: 30 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 23:59, 16 dic.",
+          "Regalo scaduto",
+          "Termini e condizioni completi"
+        ],
+        "locked": [
+          "GIORNO 16 · 16 DICEMBRE",
+          "REGALO A SORPRESA",
+          "Si sblocca il 16 dicembre",
+          "Torna domani per sbloccare il regalo!",
+          "Bloccato · 16 dic.",
+          "Termini e condizioni completi"
+        ]
+      }
+    },
+    {
+      "day": 17,
+      "date": "2026-12-17",
+      "location": "Foresta incantata",
+      "type": "bonus",
+      "amount": {
+        "percent": 45,
+        "max": 500,
+        "currency": "EUR",
+        "text": "45% FINO A 500 €"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 25,
+        "currency": "EUR",
+        "text": "Deposito min.: 25 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Requisito di puntata: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valido fino al: 17 dic., 23:59"
+      },
+      "raw": {
+        "active": [
+          "GIORNO 17 · 17 DICEMBRE",
+          "BONUS DI NATALE",
+          "45% FINO A 500 €",
+          "Deposito min.: 25 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 17 dic., 23:59",
+          "DEPOSITA E RISCUOTI",
+          "Termini e condizioni completi"
+        ],
+        "expired": [
+          "GIORNO 17 · 17 DICEMBRE",
+          "BONUS DI NATALE",
+          "45% FINO A 500 €",
+          "Deposito min.: 25 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 23:59, 17 dic.",
+          "Regalo scaduto",
+          "Termini e condizioni completi"
+        ],
+        "locked": [
+          "GIORNO 17 · 17 DICEMBRE",
+          "REGALO A SORPRESA",
+          "Si sblocca il 17 dicembre",
+          "Torna domani per sbloccare il regalo!",
+          "Bloccato · 17 dic.",
+          "Termini e condizioni completi"
+        ]
+      }
+    },
+    {
+      "day": 18,
+      "date": "2026-12-18",
+      "location": "Grotta di neve",
+      "type": "freespins",
+      "amount": {
+        "spins": 63,
+        "text": "63 GIRI GRATIS"
+      },
+      "game": "Big Bass Christmas – Frozen Lake",
+      "minDeposit": {
+        "value": 25,
+        "currency": "EUR",
+        "text": "Deposito min.: 25 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Requisito di puntata: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valido fino al: 18 dic., 23:59"
+      },
+      "raw": {
+        "active": [
+          "GIORNO 18 · 18 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "63 GIRI GRATIS",
+          "su Big Bass Christmas – Frozen Lake",
+          "Deposito min.: 25 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 18 dic., 23:59",
+          "DEPOSITA E RISCUOTI",
+          "Termini e condizioni completi"
+        ],
+        "expired": [
+          "GIORNO 18 · 18 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "63 GIRI GRATIS",
+          "su Big Bass Christmas – Frozen Lake",
+          "Deposito min.: 25 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 23:59, 18 dic.",
+          "Regalo scaduto",
+          "Termini e condizioni completi"
+        ],
+        "locked": [
+          "GIORNO 18 · 18 DICEMBRE",
+          "REGALO A SORPRESA",
+          "Si sblocca il 18 dicembre",
+          "Torna domani per sbloccare il regalo!",
+          "Bloccato · 18 dic.",
+          "Termini e condizioni completi"
+        ]
+      }
+    },
+    {
+      "day": 19,
+      "date": "2026-12-19",
+      "location": "Pista di pattinaggio stellata",
+      "type": "freespins",
+      "amount": {
+        "spins": 95,
+        "text": "95 GIRI GRATIS"
+      },
+      "game": "Fruits 'n' Stars Holiday Edition",
+      "minDeposit": {
+        "value": 35,
+        "currency": "EUR",
+        "text": "Deposito min.: 35 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Requisito di puntata: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valido fino al: 19 dic., 23:59"
+      },
+      "raw": {
+        "active": [
+          "GIORNO 19 · 19 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "95 GIRI GRATIS",
+          "su Fruits 'n' Stars Holiday Edition",
+          "Deposito min.: 35 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 19 dic., 23:59",
+          "DEPOSITA E RISCUOTI",
+          "Termini e condizioni completi"
+        ],
+        "expired": [
+          "GIORNO 19 · 19 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "95 GIRI GRATIS",
+          "su Fruits 'n' Stars Holiday Edition",
+          "Deposito min.: 35 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 23:59, 19 dic.",
+          "Regalo scaduto",
+          "Termini e condizioni completi"
+        ],
+        "locked": [
+          "GIORNO 19 · 19 DICEMBRE",
+          "REGALO A SORPRESA",
+          "Si sblocca il 19 dicembre",
+          "Torna domani per sbloccare il regalo!",
+          "Bloccato · 19 dic.",
+          "Termini e condizioni completi"
+        ]
+      }
+    },
+    {
+      "day": 20,
+      "date": "2026-12-20",
+      "location": "Aurora boreale",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 GIRI GRATIS"
+      },
+      "game": "Sweet Bonanza Xmas",
+      "minDeposit": {
+        "value": 30,
+        "currency": "EUR",
+        "text": "Deposito min.: 30 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Requisito di puntata: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valido fino al: 20 dic., 23:59"
+      },
+      "raw": {
+        "active": [
+          "GIORNO 20 · 20 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "82 GIRI GRATIS",
+          "su Sweet Bonanza Xmas",
+          "Deposito min.: 30 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 20 dic., 23:59",
+          "DEPOSITA E RISCUOTI",
+          "Termini e condizioni completi"
+        ],
+        "expired": [
+          "GIORNO 20 · 20 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "82 GIRI GRATIS",
+          "su Sweet Bonanza Xmas",
+          "Deposito min.: 30 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 23:59, 20 dic.",
+          "Regalo scaduto",
+          "Termini e condizioni completi"
+        ],
+        "locked": [
+          "GIORNO 20 · 20 DICEMBRE",
+          "REGALO A SORPRESA",
+          "Si sblocca il 20 dicembre",
+          "Torna domani per sbloccare il regalo!",
+          "Bloccato · 20 dic.",
+          "Termini e condizioni completi"
+        ]
+      }
+    },
+    {
+      "day": 21,
+      "date": "2026-12-21",
+      "location": "Espresso di mezzanotte",
+      "type": "bonus",
+      "amount": {
+        "percent": 65,
+        "max": 500,
+        "currency": "EUR",
+        "text": "65% FINO A 500 €"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 25,
+        "currency": "EUR",
+        "text": "Deposito min.: 25 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Requisito di puntata: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valido fino al: 21 dic., 23:59"
+      },
+      "raw": {
+        "active": [
+          "GIORNO 21 · 21 DICEMBRE",
+          "BONUS DI NATALE",
+          "65% FINO A 500 €",
+          "Deposito min.: 25 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 21 dic., 23:59",
+          "DEPOSITA E RISCUOTI",
+          "Termini e condizioni completi"
+        ],
+        "expired": [
+          "GIORNO 21 · 21 DICEMBRE",
+          "BONUS DI NATALE",
+          "65% FINO A 500 €",
+          "Deposito min.: 25 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 23:59, 21 dic.",
+          "Regalo scaduto",
+          "Termini e condizioni completi"
+        ],
+        "locked": [
+          "GIORNO 21 · 21 DICEMBRE",
+          "REGALO A SORPRESA",
+          "Si sblocca il 21 dicembre",
+          "Torna domani per sbloccare il regalo!",
+          "Bloccato · 21 dic.",
+          "Termini e condizioni completi"
+        ]
+      }
+    },
+    {
+      "day": 22,
+      "date": "2026-12-22",
+      "location": "Casetta innevata",
+      "type": "freespins",
+      "amount": {
+        "spins": 62,
+        "text": "62 GIRI GRATIS"
+      },
+      "game": "Yeti Quest",
+      "minDeposit": {
+        "value": 22,
+        "currency": "EUR",
+        "text": "Deposito min.: 22 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Requisito di puntata: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valido fino al: 22 dic., 23:59"
+      },
+      "raw": {
+        "active": [
+          "GIORNO 22 · 22 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "62 GIRI GRATIS",
+          "su Yeti Quest",
+          "Deposito min.: 22 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 22 dic., 23:59",
+          "DEPOSITA E RISCUOTI",
+          "Termini e condizioni completi"
+        ],
+        "expired": [
+          "GIORNO 22 · 22 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "62 GIRI GRATIS",
+          "su Yeti Quest",
+          "Deposito min.: 22 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 23:59, 22 dic.",
+          "Regalo scaduto",
+          "Termini e condizioni completi"
+        ],
+        "locked": [
+          "GIORNO 22 · 22 DICEMBRE",
+          "REGALO A SORPRESA",
+          "Si sblocca il 22 dicembre",
+          "Torna domani per sbloccare il regalo!",
+          "Bloccato · 22 dic.",
+          "Termini e condizioni completi"
+        ]
+      }
+    },
+    {
+      "day": 23,
+      "date": "2026-12-23",
+      "location": "Cassaforte di Babbo Natale",
+      "type": "freespins",
+      "amount": {
+        "spins": 99,
+        "text": "99 GIRI GRATIS"
+      },
+      "game": "25 Cookies: Hit the Bonus",
+      "minDeposit": {
+        "value": 30,
+        "currency": "EUR",
+        "text": "Deposito min.: 30 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Requisito di puntata: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valido fino al: 23 dic., 23:59"
+      },
+      "raw": {
+        "active": [
+          "GIORNO 23 · 23 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "99 GIRI GRATIS",
+          "su 25 Cookies: Hit the Bonus",
+          "Deposito min.: 30 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 23 dic., 23:59",
+          "DEPOSITA E RISCUOTI",
+          "Termini e condizioni completi"
+        ],
+        "expired": [
+          "GIORNO 23 · 23 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "99 GIRI GRATIS",
+          "su 25 Cookies: Hit the Bonus",
+          "Deposito min.: 30 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 23:59, 23 dic.",
+          "Regalo scaduto",
+          "Termini e condizioni completi"
+        ],
+        "locked": [
+          "GIORNO 23 · 23 DICEMBRE",
+          "REGALO A SORPRESA",
+          "Si sblocca il 23 dicembre",
+          "Torna domani per sbloccare il regalo!",
+          "Bloccato · 23 dic.",
+          "Termini e condizioni completi"
+        ]
+      }
+    },
+    {
+      "day": 24,
+      "date": "2026-12-24",
+      "location": "Stanza segreta",
+      "type": "bonus",
+      "amount": {
+        "percent": 80,
+        "max": 400,
+        "currency": "EUR",
+        "text": "80% FINO A 400 €"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 35,
+        "currency": "EUR",
+        "text": "Deposito min.: 35 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Requisito di puntata: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valido fino al: 24 dic., 23:59"
+      },
+      "raw": {
+        "active": [
+          "GIORNO 24 · 24 DICEMBRE",
+          "BONUS DI NATALE",
+          "80% FINO A 400 €",
+          "Deposito min.: 35 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 24 dic., 23:59",
+          "DEPOSITA E RISCUOTI",
+          "Termini e condizioni completi"
+        ],
+        "expired": [
+          "GIORNO 24 · 24 DICEMBRE",
+          "BONUS DI NATALE",
+          "80% FINO A 400 €",
+          "Deposito min.: 35 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 23:59, 24 dic.",
+          "Regalo scaduto",
+          "Termini e condizioni completi"
+        ],
+        "locked": [
+          "GIORNO 24 · 24 DICEMBRE",
+          "REGALO A SORPRESA",
+          "Si sblocca il 24 dicembre",
+          "Torna domani per sbloccare il regalo!",
+          "Bloccato · 24 dic.",
+          "Termini e condizioni completi"
+        ]
+      }
+    },
+    {
+      "day": 25,
+      "date": "2026-12-25",
+      "location": "Sacco dei regali",
+      "type": "freespins",
+      "amount": {
+        "spins": 101,
+        "text": "101 GIRI GRATIS"
+      },
+      "game": "Christmas Carol Megaways",
+      "minDeposit": {
+        "value": 35,
+        "currency": "EUR",
+        "text": "Deposito min.: 35 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Requisito di puntata: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valido fino al: 25 dic., 23:59"
+      },
+      "raw": {
+        "active": [
+          "GIORNO 25 · 25 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "101 GIRI GRATIS",
+          "su Christmas Carol Megaways",
+          "Deposito min.: 35 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 25 dic., 23:59",
+          "DEPOSITA E RISCUOTI",
+          "Termini e condizioni completi"
+        ],
+        "expired": [
+          "GIORNO 25 · 25 DICEMBRE",
+          "GIRI GRATIS DI NATALE",
+          "101 GIRI GRATIS",
+          "su Christmas Carol Megaways",
+          "Deposito min.: 35 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 23:59, 25 dic.",
+          "Regalo scaduto",
+          "Termini e condizioni completi"
+        ],
+        "locked": [
+          "GIORNO 25 · 25 DICEMBRE",
+          "REGALO A SORPRESA",
+          "Si sblocca il 25 dicembre",
+          "Torna domani per sbloccare il regalo!",
+          "Bloccato · 25 dic.",
+          "Termini e condizioni completi"
+        ]
+      }
+    },
+    {
+      "day": 26,
+      "date": "2026-12-26",
+      "location": "Forziere del Jackpot",
+      "type": "bonus",
+      "amount": {
+        "percent": 60,
+        "max": 600,
+        "currency": "EUR",
+        "text": "60% FINO A 600 €"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 22,
+        "currency": "EUR",
+        "text": "Deposito min.: 22 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Requisito di puntata: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valido fino al: 26 dic., 23:59"
+      },
+      "raw": {
+        "active": [
+          "GIORNO 26 · 26 DICEMBRE",
+          "BONUS DI NATALE",
+          "60% FINO A 600 €",
+          "Deposito min.: 22 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 26 dic., 23:59",
+          "DEPOSITA E RISCUOTI",
+          "Termini e condizioni completi"
+        ],
+        "expired": [
+          "GIORNO 26 · 26 DICEMBRE",
+          "BONUS DI NATALE",
+          "60% FINO A 600 €",
+          "Deposito min.: 22 €",
+          "Requisito di puntata: x25",
+          "Valido fino al: 23:59, 26 dic.",
+          "Regalo scaduto",
+          "Termini e condizioni completi"
+        ],
+        "locked": [
+          "GIORNO 26 · 26 DICEMBRE",
+          "REGALO A SORPRESA",
+          "Si sblocca il 26 dicembre",
+          "Torna domani per sbloccare il regalo!",
+          "Bloccato · 26 dic.",
+          "Termini e condizioni completi"
+        ]
+      }
+    }
+  ]
+}

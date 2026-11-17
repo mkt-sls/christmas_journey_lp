@@ -1,0 +1,1465 @@
+{
+  "market": "FR_CA",
+  "uiLang": "FR_CA",
+  "currency": "CAD",
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-12-01",
+      "location": "Les secrets du père Noël",
+      "type": "bonus",
+      "amount": {
+        "percent": 70,
+        "max": 550,
+        "currency": "CAD",
+        "text": "70 % JUSQU’À 550 CAD"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 55,
+        "currency": "CAD",
+        "text": "Dépôt min. : 55 CAD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Exigence de mise : x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valable jusqu’au 1er déc., 23 h 59"
+      },
+      "raw": {
+        "active": [
+          "JOUR 1 · 1ER DÉCEMBRE",
+          "BONUS DE NOËL",
+          "70 % JUSQU’À 550 CAD",
+          "Dépôt min. : 55 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 1er déc., 23 h 59",
+          "Déposer et réclamer",
+          "Modalités et conditions complètes"
+        ],
+        "expired": [
+          "JOUR 1 · 1ER DÉCEMBRE",
+          "BONUS DE NOËL",
+          "70 % JUSQU’À 550 CAD",
+          "Dépôt min. : 55 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 1er déc., 23 h 59",
+          "Cadeau expiré",
+          "Modalités et conditions complètes"
+        ],
+        "locked": [
+          "JOUR 1 · 1ER DÉCEMBRE",
+          "CADEAU SURPRISE",
+          "S’ouvre le 1er décembre",
+          "Reviens demain pour débloquer ce cadeau",
+          "Verrouillé · 1er déc.",
+          "Modalités et conditions complètes"
+        ]
+      }
+    },
+    {
+      "day": 2,
+      "date": "2026-12-02",
+      "location": "Jackpot sous le sapin",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 TOURS GRATUITS"
+      },
+      "game": "Thunder Coins: Hold and Win",
+      "minDeposit": {
+        "value": 40,
+        "currency": "CAD",
+        "text": "Dépôt min. : 40 CAD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Exigence de mise : x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valable jusqu’au 2 déc., 23 h 59"
+      },
+      "raw": {
+        "active": [
+          "JOUR 2 · 2 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "82 TOURS GRATUITS",
+          "sur Thunder Coins: Hold and Win",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 2 déc., 23 h 59",
+          "Déposer et réclamer",
+          "Modalités et conditions complètes"
+        ],
+        "expired": [
+          "JOUR 2 · 2 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "82 TOURS GRATUITS",
+          "sur Thunder Coins: Hold and Win",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 2 déc., 23 h 59",
+          "Cadeau expiré",
+          "Modalités et conditions complètes"
+        ],
+        "locked": [
+          "JOUR 2 · 2 DÉCEMBRE",
+          "CADEAU SURPRISE",
+          "S’ouvre le 2 décembre",
+          "Reviens demain pour débloquer ce cadeau",
+          "Verrouillé · 2 déc.",
+          "Modalités et conditions complètes"
+        ]
+      }
+    },
+    {
+      "day": 3,
+      "date": "2026-12-03",
+      "location": "Maison en pain d’épices",
+      "type": "bonus",
+      "amount": {
+        "percent": 55,
+        "max": 800,
+        "currency": "CAD",
+        "text": "55 % JUSQU’À 800 CAD"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 50,
+        "currency": "CAD",
+        "text": "Dépôt min. : 50 CAD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Exigence de mise : x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valable jusqu’au 3 déc., 23 h 59"
+      },
+      "raw": {
+        "active": [
+          "JOUR 3 · 3 DÉCEMBRE",
+          "BONUS DE NOËL",
+          "55 % JUSQU’À 800 CAD",
+          "Dépôt min. : 50 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 3 déc., 23 h 59",
+          "Déposer et réclamer",
+          "Modalités et conditions complètes"
+        ],
+        "expired": [
+          "JOUR 3 · 3 DÉCEMBRE",
+          "BONUS DE NOËL",
+          "55 % JUSQU’À 800 CAD",
+          "Dépôt min. : 50 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 3 déc., 23 h 59",
+          "Cadeau expiré",
+          "Modalités et conditions complètes"
+        ],
+        "locked": [
+          "JOUR 3 · 3 DÉCEMBRE",
+          "CADEAU SURPRISE",
+          "S’ouvre le 3 décembre",
+          "Reviens demain pour débloquer ce cadeau",
+          "Verrouillé · 3 déc.",
+          "Modalités et conditions complètes"
+        ]
+      }
+    },
+    {
+      "day": 4,
+      "date": "2026-12-04",
+      "location": "Fabrique de cadeaux du père Noël",
+      "type": "freespins",
+      "amount": {
+        "spins": 65,
+        "text": "65 TOURS GRATUITS"
+      },
+      "game": "Big Bass Splash",
+      "minDeposit": {
+        "value": 35,
+        "currency": "CAD",
+        "text": "Dépôt min. : 35 CAD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Exigence de mise : x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valable jusqu’au 4 déc., 23 h 59"
+      },
+      "raw": {
+        "active": [
+          "JOUR 4 · 4 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "65 TOURS GRATUITS",
+          "sur Big Bass Splash",
+          "Dépôt min. : 35 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 4 déc., 23 h 59",
+          "Déposer et réclamer",
+          "Modalités et conditions complètes"
+        ],
+        "expired": [
+          "JOUR 4 · 4 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "65 TOURS GRATUITS",
+          "sur Big Bass Splash",
+          "Dépôt min. : 35 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 4 déc., 23 h 59",
+          "Cadeau expiré",
+          "Modalités et conditions complètes"
+        ],
+        "locked": [
+          "JOUR 4 · 4 DÉCEMBRE",
+          "CADEAU SURPRISE",
+          "S’ouvre le 4 décembre",
+          "Reviens demain pour débloquer ce cadeau",
+          "Verrouillé · 4 déc.",
+          "Modalités et conditions complètes"
+        ]
+      }
+    },
+    {
+      "day": 5,
+      "date": "2026-12-05",
+      "location": "Parc enneigé",
+      "type": "freespins",
+      "amount": {
+        "spins": 75,
+        "text": "75 TOURS GRATUITS"
+      },
+      "game": "John Hunter and the Book of Tut",
+      "minDeposit": {
+        "value": 40,
+        "currency": "CAD",
+        "text": "Dépôt min. : 40 CAD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Exigence de mise : x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valable jusqu’au 5 déc., 23 h 59"
+      },
+      "raw": {
+        "active": [
+          "JOUR 5 · 5 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "75 TOURS GRATUITS",
+          "sur John Hunter and the Book of Tut",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 5 déc., 23 h 59",
+          "Déposer et réclamer",
+          "Modalités et conditions complètes"
+        ],
+        "expired": [
+          "JOUR 5 · 5 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "75 TOURS GRATUITS",
+          "sur John Hunter and the Book of Tut",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 5 déc., 23 h 59",
+          "Cadeau expiré",
+          "Modalités et conditions complètes"
+        ],
+        "locked": [
+          "JOUR 5 · 5 DÉCEMBRE",
+          "CADEAU SURPRISE",
+          "S’ouvre le 5 décembre",
+          "Reviens demain pour débloquer ce cadeau",
+          "Verrouillé · 5 déc.",
+          "Modalités et conditions complètes"
+        ]
+      }
+    },
+    {
+      "day": 6,
+      "date": "2026-12-06",
+      "location": "Magasin de jouets",
+      "type": "freespins",
+      "amount": {
+        "spins": 80,
+        "text": "80 TOURS GRATUITS"
+      },
+      "game": "Gemhalla",
+      "minDeposit": {
+        "value": 50,
+        "currency": "CAD",
+        "text": "Dépôt min. : 50 CAD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Exigence de mise : x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valable jusqu’au 6 déc., 23 h 59"
+      },
+      "raw": {
+        "active": [
+          "JOUR 6 · 6 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "80 TOURS GRATUITS",
+          "sur Gemhalla",
+          "Dépôt min. : 50 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 6 déc., 23 h 59",
+          "Déposer et réclamer",
+          "Modalités et conditions complètes"
+        ],
+        "expired": [
+          "JOUR 6 · 6 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "80 TOURS GRATUITS",
+          "sur Gemhalla",
+          "Dépôt min. : 50 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 6 déc., 23 h 59",
+          "Cadeau expiré",
+          "Modalités et conditions complètes"
+        ],
+        "locked": [
+          "JOUR 6 · 6 DÉCEMBRE",
+          "CADEAU SURPRISE",
+          "S’ouvre le 6 décembre",
+          "Reviens demain pour débloquer ce cadeau",
+          "Verrouillé · 6 déc.",
+          "Modalités et conditions complètes"
+        ]
+      }
+    },
+    {
+      "day": 7,
+      "date": "2026-12-07",
+      "location": "Place du père Noël",
+      "type": "freespins",
+      "amount": {
+        "spins": 90,
+        "text": "90 TOURS GRATUITS"
+      },
+      "game": "Bonanza Billion",
+      "minDeposit": {
+        "value": 55,
+        "currency": "CAD",
+        "text": "Dépôt min. : 55 CAD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Exigence de mise : x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valable jusqu’au 7 déc., 23 h 59"
+      },
+      "raw": {
+        "active": [
+          "JOUR 7 · 7 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "90 TOURS GRATUITS",
+          "sur Bonanza Billion",
+          "Dépôt min. : 55 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 7 déc., 23 h 59",
+          "Déposer et réclamer",
+          "Modalités et conditions complètes"
+        ],
+        "expired": [
+          "JOUR 7 · 7 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "90 TOURS GRATUITS",
+          "sur Bonanza Billion",
+          "Dépôt min. : 55 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 7 déc., 23 h 59",
+          "Cadeau expiré",
+          "Modalités et conditions complètes"
+        ],
+        "locked": [
+          "JOUR 7 · 7 DÉCEMBRE",
+          "CADEAU SURPRISE",
+          "S’ouvre le 7 décembre",
+          "Reviens demain pour débloquer ce cadeau",
+          "Verrouillé · 7 déc.",
+          "Modalités et conditions complètes"
+        ]
+      }
+    },
+    {
+      "day": 8,
+      "date": "2026-12-08",
+      "location": "Chapelle des vœux",
+      "type": "bonus",
+      "amount": {
+        "percent": 65,
+        "max": 1000,
+        "currency": "CAD",
+        "text": "65 % JUSQU’À 1 000 CAD"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 40,
+        "currency": "CAD",
+        "text": "Dépôt min. : 40 CAD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Exigence de mise : x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valable jusqu’au 8 déc., 23 h 59"
+      },
+      "raw": {
+        "active": [
+          "JOUR 8 · 8 DÉCEMBRE",
+          "BONUS DE NOËL",
+          "65 % JUSQU’À 1 000 CAD",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 8 déc., 23 h 59",
+          "Déposer et réclamer",
+          "Modalités et conditions complètes"
+        ],
+        "expired": [
+          "JOUR 8 · 8 DÉCEMBRE",
+          "BONUS DE NOËL",
+          "65 % JUSQU’À 1 000 CAD",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 8 déc., 23 h 59",
+          "Cadeau expiré",
+          "Modalités et conditions complètes"
+        ],
+        "locked": [
+          "JOUR 8 · 8 DÉCEMBRE",
+          "CADEAU SURPRISE",
+          "S’ouvre le 8 décembre",
+          "Reviens demain pour débloquer ce cadeau",
+          "Verrouillé · 8 déc.",
+          "Modalités et conditions complètes"
+        ]
+      }
+    },
+    {
+      "day": 9,
+      "date": "2026-12-09",
+      "location": "Carrousel magique",
+      "type": "freespins",
+      "amount": {
+        "spins": 74,
+        "text": "74 TOURS GRATUITS"
+      },
+      "game": "Big Bass Christmas – Frozen Lake",
+      "minDeposit": {
+        "value": 50,
+        "currency": "CAD",
+        "text": "Dépôt min. : 50 CAD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Exigence de mise : x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valable jusqu’au 9 déc., 23 h 59"
+      },
+      "raw": {
+        "active": [
+          "JOUR 9 · 9 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "74 TOURS GRATUITS",
+          "sur Big Bass Christmas – Frozen Lake",
+          "Dépôt min. : 50 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 9 déc., 23 h 59",
+          "Déposer et réclamer",
+          "Modalités et conditions complètes"
+        ],
+        "expired": [
+          "JOUR 9 · 9 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "74 TOURS GRATUITS",
+          "sur Big Bass Christmas – Frozen Lake",
+          "Dépôt min. : 50 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 9 déc., 23 h 59",
+          "Cadeau expiré",
+          "Modalités et conditions complètes"
+        ],
+        "locked": [
+          "JOUR 9 · 9 DÉCEMBRE",
+          "CADEAU SURPRISE",
+          "S’ouvre le 9 décembre",
+          "Reviens demain pour débloquer ce cadeau",
+          "Verrouillé · 9 déc.",
+          "Modalités et conditions complètes"
+        ]
+      }
+    },
+    {
+      "day": 10,
+      "date": "2026-12-10",
+      "location": "Ruelle de la chance",
+      "type": "bonus",
+      "amount": {
+        "percent": 62,
+        "max": 1100,
+        "currency": "CAD",
+        "text": "62 % JUSQU’À 1 100 CAD"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 55,
+        "currency": "CAD",
+        "text": "Dépôt min. : 55 CAD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Exigence de mise : x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valable jusqu’au 10 déc., 23 h 59"
+      },
+      "raw": {
+        "active": [
+          "JOUR 10 · 10 DÉCEMBRE",
+          "BONUS DE NOËL",
+          "62 % JUSQU’À 1 100 CAD",
+          "Dépôt min. : 55 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 10 déc., 23 h 59",
+          "Déposer et réclamer",
+          "Modalités et conditions complètes"
+        ],
+        "expired": [
+          "JOUR 10 · 10 DÉCEMBRE",
+          "BONUS DE NOËL",
+          "62 % JUSQU’À 1 100 CAD",
+          "Dépôt min. : 55 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 10 déc., 23 h 59",
+          "Cadeau expiré",
+          "Modalités et conditions complètes"
+        ],
+        "locked": [
+          "JOUR 10 · 10 DÉCEMBRE",
+          "CADEAU SURPRISE",
+          "S’ouvre le 10 décembre",
+          "Reviens demain pour débloquer ce cadeau",
+          "Verrouillé · 10 déc.",
+          "Modalités et conditions complètes"
+        ]
+      }
+    },
+    {
+      "day": 11,
+      "date": "2026-12-11",
+      "location": "Trésor du bonhomme de neige",
+      "type": "freespins",
+      "amount": {
+        "spins": 55,
+        "text": "55 TOURS GRATUITS"
+      },
+      "game": "Thunder Coins: Hold and Win",
+      "minDeposit": {
+        "value": 35,
+        "currency": "CAD",
+        "text": "Dépôt min. : 35 CAD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Exigence de mise : x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valable jusqu’au 11 déc., 23 h 59"
+      },
+      "raw": {
+        "active": [
+          "JOUR 11 · 11 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "55 TOURS GRATUITS",
+          "sur Thunder Coins: Hold and Win",
+          "Dépôt min. : 35 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 11 déc., 23 h 59",
+          "Déposer et réclamer",
+          "Modalités et conditions complètes"
+        ],
+        "expired": [
+          "JOUR 11 · 11 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "55 TOURS GRATUITS",
+          "sur Thunder Coins: Hold and Win",
+          "Dépôt min. : 35 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 11 déc., 23 h 59",
+          "Cadeau expiré",
+          "Modalités et conditions complètes"
+        ],
+        "locked": [
+          "JOUR 11 · 11 DÉCEMBRE",
+          "CADEAU SURPRISE",
+          "S’ouvre le 11 décembre",
+          "Reviens demain pour débloquer ce cadeau",
+          "Verrouillé · 11 déc.",
+          "Modalités et conditions complètes"
+        ]
+      }
+    },
+    {
+      "day": 12,
+      "date": "2026-12-12",
+      "location": "Poste du père Noël",
+      "type": "freespins",
+      "amount": {
+        "spins": 80,
+        "text": "80 TOURS GRATUITS"
+      },
+      "game": "Fruits 'n' Stars Holiday Edition",
+      "minDeposit": {
+        "value": 40,
+        "currency": "CAD",
+        "text": "Dépôt min. : 40 CAD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Exigence de mise : x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valable jusqu’au 12 déc., 23 h 59"
+      },
+      "raw": {
+        "active": [
+          "JOUR 12 · 12 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "80 TOURS GRATUITS",
+          "sur Fruits 'n' Stars Holiday Edition",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 12 déc., 23 h 59",
+          "Déposer et réclamer",
+          "Modalités et conditions complètes"
+        ],
+        "expired": [
+          "JOUR 12 · 12 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "80 TOURS GRATUITS",
+          "sur Fruits 'n' Stars Holiday Edition",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 12 déc., 23 h 59",
+          "Cadeau expiré",
+          "Modalités et conditions complètes"
+        ],
+        "locked": [
+          "JOUR 12 · 12 DÉCEMBRE",
+          "CADEAU SURPRISE",
+          "S’ouvre le 12 décembre",
+          "Reviens demain pour débloquer ce cadeau",
+          "Verrouillé · 12 déc.",
+          "Modalités et conditions complètes"
+        ]
+      }
+    },
+    {
+      "day": 13,
+      "date": "2026-12-13",
+      "location": "Palais de glace",
+      "type": "freespins",
+      "amount": {
+        "spins": 67,
+        "text": "67 TOURS GRATUITS"
+      },
+      "game": "Yeti Quest",
+      "minDeposit": {
+        "value": 40,
+        "currency": "CAD",
+        "text": "Dépôt min. : 40 CAD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Exigence de mise : x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valable jusqu’au 13 déc., 23 h 59"
+      },
+      "raw": {
+        "active": [
+          "JOUR 13 · 13 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "67 TOURS GRATUITS",
+          "sur Yeti Quest",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 13 déc., 23 h 59",
+          "Déposer et réclamer",
+          "Modalités et conditions complètes"
+        ],
+        "expired": [
+          "JOUR 13 · 13 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "67 TOURS GRATUITS",
+          "sur Yeti Quest",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 13 déc., 23 h 59",
+          "Cadeau expiré",
+          "Modalités et conditions complètes"
+        ],
+        "locked": [
+          "JOUR 13 · 13 DÉCEMBRE",
+          "CADEAU SURPRISE",
+          "S’ouvre le 13 décembre",
+          "Reviens demain pour débloquer ce cadeau",
+          "Verrouillé · 13 déc.",
+          "Modalités et conditions complètes"
+        ]
+      }
+    },
+    {
+      "day": 14,
+      "date": "2026-12-14",
+      "location": "Boutique des merveilles",
+      "type": "freespins",
+      "amount": {
+        "spins": 90,
+        "text": "90 TOURS GRATUITS"
+      },
+      "game": "25 Cookies: Hit the Bonus",
+      "minDeposit": {
+        "value": 55,
+        "currency": "CAD",
+        "text": "Dépôt min. : 55 CAD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Exigence de mise : x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valable jusqu’au 14 déc., 23 h 59"
+      },
+      "raw": {
+        "active": [
+          "JOUR 14 · 14 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "90 TOURS GRATUITS",
+          "sur 25 Cookies: Hit the Bonus",
+          "Dépôt min. : 55 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 14 déc., 23 h 59",
+          "Déposer et réclamer",
+          "Modalités et conditions complètes"
+        ],
+        "expired": [
+          "JOUR 14 · 14 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "90 TOURS GRATUITS",
+          "sur 25 Cookies: Hit the Bonus",
+          "Dépôt min. : 55 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 14 déc., 23 h 59",
+          "Cadeau expiré",
+          "Modalités et conditions complètes"
+        ],
+        "locked": [
+          "JOUR 14 · 14 DÉCEMBRE",
+          "CADEAU SURPRISE",
+          "S’ouvre le 14 décembre",
+          "Reviens demain pour débloquer ce cadeau",
+          "Verrouillé · 14 déc.",
+          "Modalités et conditions complètes"
+        ]
+      }
+    },
+    {
+      "day": 15,
+      "date": "2026-12-15",
+      "location": "Marché de Noël",
+      "type": "bonus",
+      "amount": {
+        "percent": 58,
+        "max": 800,
+        "currency": "CAD",
+        "text": "58 % JUSQU’À 800 CAD"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 50,
+        "currency": "CAD",
+        "text": "Dépôt min. : 50 CAD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Exigence de mise : x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valable jusqu’au 15 déc., 23 h 59"
+      },
+      "raw": {
+        "active": [
+          "JOUR 15 · 15 DÉCEMBRE",
+          "BONUS DE NOËL",
+          "58 % JUSQU’À 800 CAD",
+          "Dépôt min. : 50 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 15 déc., 23 h 59",
+          "Déposer et réclamer",
+          "Modalités et conditions complètes"
+        ],
+        "expired": [
+          "JOUR 15 · 15 DÉCEMBRE",
+          "BONUS DE NOËL",
+          "58 % JUSQU’À 800 CAD",
+          "Dépôt min. : 50 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 15 déc., 23 h 59",
+          "Cadeau expiré",
+          "Modalités et conditions complètes"
+        ],
+        "locked": [
+          "JOUR 15 · 15 DÉCEMBRE",
+          "CADEAU SURPRISE",
+          "S’ouvre le 15 décembre",
+          "Reviens demain pour débloquer ce cadeau",
+          "Verrouillé · 15 déc.",
+          "Modalités et conditions complètes"
+        ]
+      }
+    },
+    {
+      "day": 16,
+      "date": "2026-12-16",
+      "location": "Jardin d’hiver",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 TOURS GRATUITS"
+      },
+      "game": "Christmas Carol Megaways",
+      "minDeposit": {
+        "value": 50,
+        "currency": "CAD",
+        "text": "Dépôt min. : 50 CAD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Exigence de mise : x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valable jusqu’au 16 déc., 23 h 59"
+      },
+      "raw": {
+        "active": [
+          "JOUR 16 · 16 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "82 TOURS GRATUITS",
+          "sur Christmas Carol Megaways",
+          "Dépôt min. : 50 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 16 déc., 23 h 59",
+          "Déposer et réclamer",
+          "Modalités et conditions complètes"
+        ],
+        "expired": [
+          "JOUR 16 · 16 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "82 TOURS GRATUITS",
+          "sur Christmas Carol Megaways",
+          "Dépôt min. : 50 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 16 déc., 23 h 59",
+          "Cadeau expiré",
+          "Modalités et conditions complètes"
+        ],
+        "locked": [
+          "JOUR 16 · 16 DÉCEMBRE",
+          "CADEAU SURPRISE",
+          "S’ouvre le 16 décembre",
+          "Reviens demain pour débloquer ce cadeau",
+          "Verrouillé · 16 déc.",
+          "Modalités et conditions complètes"
+        ]
+      }
+    },
+    {
+      "day": 17,
+      "date": "2026-12-17",
+      "location": "Forêt enchantée",
+      "type": "bonus",
+      "amount": {
+        "percent": 45,
+        "max": 800,
+        "currency": "CAD",
+        "text": "45 % JUSQU’À 800 CAD"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 40,
+        "currency": "CAD",
+        "text": "Dépôt min. : 40 CAD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Exigence de mise : x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valable jusqu’au 17 déc., 23 h 59"
+      },
+      "raw": {
+        "active": [
+          "JOUR 17 · 17 DÉCEMBRE",
+          "BONUS DE NOËL",
+          "45 % JUSQU’À 800 CAD",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 17 déc., 23 h 59",
+          "Déposer et réclamer",
+          "Modalités et conditions complètes"
+        ],
+        "expired": [
+          "JOUR 17 · 17 DÉCEMBRE",
+          "BONUS DE NOËL",
+          "45 % JUSQU’À 800 CAD",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 17 déc., 23 h 59",
+          "Cadeau expiré",
+          "Modalités et conditions complètes"
+        ],
+        "locked": [
+          "JOUR 17 · 17 DÉCEMBRE",
+          "CADEAU SURPRISE",
+          "S’ouvre le 17 décembre",
+          "Reviens demain pour débloquer ce cadeau",
+          "Verrouillé · 17 déc.",
+          "Modalités et conditions complètes"
+        ]
+      }
+    },
+    {
+      "day": 18,
+      "date": "2026-12-18",
+      "location": "Grotte de neige",
+      "type": "freespins",
+      "amount": {
+        "spins": 63,
+        "text": "63 TOURS GRATUITS"
+      },
+      "game": "Big Bass Christmas – Frozen Lake",
+      "minDeposit": {
+        "value": 40,
+        "currency": "CAD",
+        "text": "Dépôt min. : 40 CAD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Exigence de mise : x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valable jusqu’au 18 déc., 23 h 59"
+      },
+      "raw": {
+        "active": [
+          "JOUR 18 · 18 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "63 TOURS GRATUITS",
+          "sur Big Bass Christmas – Frozen Lake",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 18 déc., 23 h 59",
+          "Déposer et réclamer",
+          "Modalités et conditions complètes"
+        ],
+        "expired": [
+          "JOUR 18 · 18 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "63 TOURS GRATUITS",
+          "sur Big Bass Christmas – Frozen Lake",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 18 déc., 23 h 59",
+          "Cadeau expiré",
+          "Modalités et conditions complètes"
+        ],
+        "locked": [
+          "JOUR 18 · 18 DÉCEMBRE",
+          "CADEAU SURPRISE",
+          "S’ouvre le 18 décembre",
+          "Reviens demain pour débloquer ce cadeau",
+          "Verrouillé · 18 déc.",
+          "Modalités et conditions complètes"
+        ]
+      }
+    },
+    {
+      "day": 19,
+      "date": "2026-12-19",
+      "location": "Patinoire étoilée",
+      "type": "freespins",
+      "amount": {
+        "spins": 95,
+        "text": "95 TOURS GRATUITS"
+      },
+      "game": "Fruits 'n' Stars Holiday Edition",
+      "minDeposit": {
+        "value": 55,
+        "currency": "CAD",
+        "text": "Dépôt min. : 55 CAD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Exigence de mise : x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valable jusqu’au 19 déc., 23 h 59"
+      },
+      "raw": {
+        "active": [
+          "JOUR 19 · 19 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "95 TOURS GRATUITS",
+          "sur Fruits 'n' Stars Holiday Edition",
+          "Dépôt min. : 55 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 19 déc., 23 h 59",
+          "Déposer et réclamer",
+          "Modalités et conditions complètes"
+        ],
+        "expired": [
+          "JOUR 19 · 19 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "95 TOURS GRATUITS",
+          "sur Fruits 'n' Stars Holiday Edition",
+          "Dépôt min. : 55 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 19 déc., 23 h 59",
+          "Cadeau expiré",
+          "Modalités et conditions complètes"
+        ],
+        "locked": [
+          "JOUR 19 · 19 DÉCEMBRE",
+          "CADEAU SURPRISE",
+          "S’ouvre le 19 décembre",
+          "Reviens demain pour débloquer ce cadeau",
+          "Verrouillé · 19 déc.",
+          "Modalités et conditions complètes"
+        ]
+      }
+    },
+    {
+      "day": 20,
+      "date": "2026-12-20",
+      "location": "Aurores boréales",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 TOURS GRATUITS"
+      },
+      "game": "Sweet Bonanza XMas",
+      "minDeposit": {
+        "value": 50,
+        "currency": "CAD",
+        "text": "Dépôt min. : 50 CAD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Exigence de mise : x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valable jusqu’au 20 déc., 23 h 59"
+      },
+      "raw": {
+        "active": [
+          "JOUR 20 · 20 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "82 TOURS GRATUITS",
+          "sur Sweet Bonanza XMas",
+          "Dépôt min. : 50 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 20 déc., 23 h 59",
+          "Déposer et réclamer",
+          "Modalités et conditions complètes"
+        ],
+        "expired": [
+          "JOUR 20 · 20 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "82 TOURS GRATUITS",
+          "sur Sweet Bonanza XMas",
+          "Dépôt min. : 50 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 20 déc., 23 h 59",
+          "Cadeau expiré",
+          "Modalités et conditions complètes"
+        ],
+        "locked": [
+          "JOUR 20 · 20 DÉCEMBRE",
+          "CADEAU SURPRISE",
+          "S’ouvre le 20 décembre",
+          "Reviens demain pour débloquer ce cadeau",
+          "Verrouillé · 20 déc.",
+          "Modalités et conditions complètes"
+        ]
+      }
+    },
+    {
+      "day": 21,
+      "date": "2026-12-21",
+      "location": "Express de minuit",
+      "type": "bonus",
+      "amount": {
+        "percent": 65,
+        "max": 800,
+        "currency": "CAD",
+        "text": "65 % JUSQU’À 800 CAD"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 40,
+        "currency": "CAD",
+        "text": "Dépôt min. : 40 CAD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Exigence de mise : x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valable jusqu’au 21 déc., 23 h 59"
+      },
+      "raw": {
+        "active": [
+          "JOUR 21 · 21 DÉCEMBRE",
+          "BONUS DE NOËL",
+          "65 % JUSQU’À 800 CAD",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 21 déc., 23 h 59",
+          "Déposer et réclamer",
+          "Modalités et conditions complètes"
+        ],
+        "expired": [
+          "JOUR 21 · 21 DÉCEMBRE",
+          "BONUS DE NOËL",
+          "65 % JUSQU’À 800 CAD",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 21 déc., 23 h 59",
+          "Cadeau expiré",
+          "Modalités et conditions complètes"
+        ],
+        "locked": [
+          "JOUR 21 · 21 DÉCEMBRE",
+          "CADEAU SURPRISE",
+          "S’ouvre le 21 décembre",
+          "Reviens demain pour débloquer ce cadeau",
+          "Verrouillé · 21 déc.",
+          "Modalités et conditions complètes"
+        ]
+      }
+    },
+    {
+      "day": 22,
+      "date": "2026-12-22",
+      "location": "Chalet enneigé",
+      "type": "freespins",
+      "amount": {
+        "spins": 62,
+        "text": "62 TOURS GRATUITS"
+      },
+      "game": "Yeti Quest",
+      "minDeposit": {
+        "value": 35,
+        "currency": "CAD",
+        "text": "Dépôt min. : 35 CAD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Exigence de mise : x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valable jusqu’au 22 déc., 23 h 59"
+      },
+      "raw": {
+        "active": [
+          "JOUR 22 · 22 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "62 TOURS GRATUITS",
+          "sur Yeti Quest",
+          "Dépôt min. : 35 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 22 déc., 23 h 59",
+          "Déposer et réclamer",
+          "Modalités et conditions complètes"
+        ],
+        "expired": [
+          "JOUR 22 · 22 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "62 TOURS GRATUITS",
+          "sur Yeti Quest",
+          "Dépôt min. : 35 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 22 déc., 23 h 59",
+          "Cadeau expiré",
+          "Modalités et conditions complètes"
+        ],
+        "locked": [
+          "JOUR 22 · 22 DÉCEMBRE",
+          "CADEAU SURPRISE",
+          "S’ouvre le 22 décembre",
+          "Reviens demain pour débloquer ce cadeau",
+          "Verrouillé · 22 déc.",
+          "Modalités et conditions complètes"
+        ]
+      }
+    },
+    {
+      "day": 23,
+      "date": "2026-12-23",
+      "location": "Coffre-fort du père Noël",
+      "type": "freespins",
+      "amount": {
+        "spins": 99,
+        "text": "99 TOURS GRATUITS"
+      },
+      "game": "25 Cookies: Hit the Bonus",
+      "minDeposit": {
+        "value": 50,
+        "currency": "CAD",
+        "text": "Dépôt min. : 50 CAD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Exigence de mise : x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valable jusqu’au 23 déc., 23 h 59"
+      },
+      "raw": {
+        "active": [
+          "JOUR 23 · 23 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "99 TOURS GRATUITS",
+          "sur 25 Cookies: Hit the Bonus",
+          "Dépôt min. : 50 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 23 déc., 23 h 59",
+          "Déposer et réclamer",
+          "Modalités et conditions complètes"
+        ],
+        "expired": [
+          "JOUR 23 · 23 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "99 TOURS GRATUITS",
+          "sur 25 Cookies: Hit the Bonus",
+          "Dépôt min. : 50 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 23 déc., 23 h 59",
+          "Cadeau expiré",
+          "Modalités et conditions complètes"
+        ],
+        "locked": [
+          "JOUR 23 · 23 DÉCEMBRE",
+          "CADEAU SURPRISE",
+          "S’ouvre le 23 décembre",
+          "Reviens demain pour débloquer ce cadeau",
+          "Verrouillé · 23 déc.",
+          "Modalités et conditions complètes"
+        ]
+      }
+    },
+    {
+      "day": 24,
+      "date": "2026-12-24",
+      "location": "Chambre secrète",
+      "type": "bonus",
+      "amount": {
+        "percent": 80,
+        "max": 600,
+        "currency": "CAD",
+        "text": "80 % JUSQU’À 600 CAD"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 55,
+        "currency": "CAD",
+        "text": "Dépôt min. : 55 CAD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Exigence de mise : x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valable jusqu’au 24 déc., 23 h 59"
+      },
+      "raw": {
+        "active": [
+          "JOUR 24 · 24 DÉCEMBRE",
+          "BONUS DE NOËL",
+          "80 % JUSQU’À 600 CAD",
+          "Dépôt min. : 55 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 24 déc., 23 h 59",
+          "Déposer et réclamer",
+          "Modalités et conditions complètes"
+        ],
+        "expired": [
+          "JOUR 24 · 24 DÉCEMBRE",
+          "BONUS DE NOËL",
+          "80 % JUSQU’À 600 CAD",
+          "Dépôt min. : 55 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 24 déc., 23 h 59",
+          "Cadeau expiré",
+          "Modalités et conditions complètes"
+        ],
+        "locked": [
+          "JOUR 24 · 24 DÉCEMBRE",
+          "CADEAU SURPRISE",
+          "S’ouvre le 24 décembre",
+          "Reviens demain pour débloquer ce cadeau",
+          "Verrouillé · 24 déc.",
+          "Modalités et conditions complètes"
+        ]
+      }
+    },
+    {
+      "day": 25,
+      "date": "2026-12-25",
+      "location": "Sac de cadeaux",
+      "type": "freespins",
+      "amount": {
+        "spins": 101,
+        "text": "101 TOURS GRATUITS"
+      },
+      "game": "Christmas Carol Megaways",
+      "minDeposit": {
+        "value": 55,
+        "currency": "CAD",
+        "text": "Dépôt min. : 55 CAD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Exigence de mise : x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valable jusqu’au 25 déc., 23 h 59"
+      },
+      "raw": {
+        "active": [
+          "JOUR 25 · 25 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "101 TOURS GRATUITS",
+          "sur Christmas Carol Megaways",
+          "Dépôt min. : 55 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 25 déc., 23 h 59",
+          "Déposer et réclamer",
+          "Modalités et conditions complètes"
+        ],
+        "expired": [
+          "JOUR 25 · 25 DÉCEMBRE",
+          "TOURS GRATUITS DE NOËL",
+          "101 TOURS GRATUITS",
+          "sur Christmas Carol Megaways",
+          "Dépôt min. : 55 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 25 déc., 23 h 59",
+          "Cadeau expiré",
+          "Modalités et conditions complètes"
+        ],
+        "locked": [
+          "JOUR 25 · 25 DÉCEMBRE",
+          "CADEAU SURPRISE",
+          "S’ouvre le 25 décembre",
+          "Reviens demain pour débloquer ce cadeau",
+          "Verrouillé · 25 déc.",
+          "Modalités et conditions complètes"
+        ]
+      }
+    },
+    {
+      "day": 26,
+      "date": "2026-12-26",
+      "location": "Coffre au Jackpot",
+      "type": "bonus",
+      "amount": {
+        "percent": 60,
+        "max": 950,
+        "currency": "CAD",
+        "text": "60 % JUSQU’À 950 CAD"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 35,
+        "currency": "CAD",
+        "text": "Dépôt min. : 35 CAD"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Exigence de mise : x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valable jusqu’au 26 déc., 23 h 59"
+      },
+      "raw": {
+        "active": [
+          "JOUR 26 · 26 DÉCEMBRE",
+          "BONUS DE NOËL",
+          "60 % JUSQU’À 950 CAD",
+          "Dépôt min. : 35 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 26 déc., 23 h 59",
+          "Déposer et réclamer",
+          "Modalités et conditions complètes"
+        ],
+        "expired": [
+          "JOUR 26 · 26 DÉCEMBRE",
+          "BONUS DE NOËL",
+          "60 % JUSQU’À 950 CAD",
+          "Dépôt min. : 35 CAD",
+          "Exigence de mise : x25",
+          "Valable jusqu’au 26 déc., 23 h 59",
+          "Cadeau expiré",
+          "Modalités et conditions complètes"
+        ],
+        "locked": [
+          "JOUR 26 · 26 DÉCEMBRE",
+          "CADEAU SURPRISE",
+          "S’ouvre le 26 décembre",
+          "Reviens demain pour débloquer ce cadeau",
+          "Verrouillé · 26 déc.",
+          "Modalités et conditions complètes"
+        ]
+      }
+    }
+  ],
+  "translatedBy": "agency, client to verify",
+  "sourceMarket": "EN_CAD"
+}

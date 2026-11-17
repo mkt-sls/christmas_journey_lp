@@ -1,0 +1,137 @@
+[
+  {
+    "id": "DE",
+    "uiLang": "DE",
+    "currency": "EUR",
+    "flag": "de",
+    "flagEmoji": "🇩🇪",
+    "label": "Deutsch",
+    "cardsFile": "data/cards/DE.json"
+  },
+  {
+    "id": "BG",
+    "uiLang": "BG",
+    "currency": "EUR",
+    "flag": "bg",
+    "flagEmoji": "🇧🇬",
+    "label": "Български",
+    "cardsFile": "data/cards/BG.json"
+  },
+  {
+    "id": "NL",
+    "uiLang": "NL",
+    "currency": "EUR",
+    "flag": "nl",
+    "flagEmoji": "🇳🇱",
+    "label": "Nederlands",
+    "cardsFile": "data/cards/NL.json"
+  },
+  {
+    "id": "IT",
+    "uiLang": "IT",
+    "currency": "EUR",
+    "flag": "it",
+    "flagEmoji": "🇮🇹",
+    "label": "Italiano",
+    "cardsFile": "data/cards/IT.json"
+  },
+  {
+    "id": "RU",
+    "uiLang": "RU",
+    "currency": "EUR",
+    "flag": "ru",
+    "flagEmoji": "🇷🇺",
+    "label": "Русский",
+    "cardsFile": "data/cards/RU.json"
+  },
+  {
+    "id": "TR",
+    "uiLang": "TR",
+    "currency": "TRY",
+    "flag": "tr",
+    "flagEmoji": "🇹🇷",
+    "label": "Türkçe",
+    "cardsFile": "data/cards/TR.json"
+  },
+  {
+    "id": "DA",
+    "uiLang": "DA",
+    "currency": "DKK",
+    "flag": "dk",
+    "flagEmoji": "🇩🇰",
+    "label": "Dansk",
+    "cardsFile": "data/cards/DA.json"
+  },
+  {
+    "id": "SV",
+    "uiLang": "SV",
+    "currency": "SEK",
+    "flag": "se",
+    "flagEmoji": "🇸🇪",
+    "label": "Svenska",
+    "cardsFile": "data/cards/SV.json"
+  },
+  {
+    "id": "NO",
+    "uiLang": "NO",
+    "currency": "NOK",
+    "flag": "no",
+    "flagEmoji": "🇳🇴",
+    "label": "Norsk",
+    "cardsFile": "data/cards/NO.json"
+  },
+  {
+    "id": "EN_AUD",
+    "uiLang": "EN",
+    "currency": "AUD",
+    "flag": "au",
+    "flagEmoji": "🇦🇺",
+    "label": "English (Australia)",
+    "cardsFile": "data/cards/EN_AUD.json"
+  },
+  {
+    "id": "EN_GBP",
+    "uiLang": "EN",
+    "currency": "GBP",
+    "flag": "gb",
+    "flagEmoji": "🇬🇧",
+    "label": "English (UK)",
+    "cardsFile": "data/cards/EN_GBP.json"
+  },
+  {
+    "id": "EN_USD",
+    "uiLang": "EN",
+    "currency": "USD",
+    "flag": "us",
+    "flagEmoji": "🇺🇸",
+    "label": "English (US)",
+    "cardsFile": "data/cards/EN_USD.json"
+  },
+  {
+    "id": "EN_CAD",
+    "uiLang": "EN",
+    "currency": "CAD",
+    "flag": "ca",
+    "flagEmoji": "🇨🇦",
+    "label": "English (Canada)",
+    "cardsFile": "data/cards/EN_CAD.json"
+  },
+  {
+    "id": "FR_CA",
+    "uiLang": "FR_CA",
+    "currency": "CAD",
+    "flag": "ca",
+    "flagEmoji": "🇨🇦",
+    "label": "Français (Canada)",
+    "cardsFile": "data/cards/FR_CA.json"
+  },
+  {
+    "id": "RO_MDL",
+    "uiLang": "RO_MD",
+    "currency": "MDL",
+    "flag": "md",
+    "flagEmoji": "🇲🇩",
+    "label": "Română (Moldova)",
+    "cardsFile": "data/cards/RO_MDL.json"
+  }
+]

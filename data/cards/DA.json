@@ -1,0 +1,1463 @@
+{
+  "market": "DA",
+  "uiLang": "DA",
+  "currency": "DKK",
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-12-01",
+      "location": "Julemandens hemmeligheder",
+      "type": "bonus",
+      "amount": {
+        "percent": 70,
+        "max": 2600,
+        "currency": "DKK",
+        "text": "70% OP TIL 2 600 DKK"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 260,
+        "currency": "DKK",
+        "text": "Min. indbetaling: 260 DKK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsætningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig indtil: 23:59, 1. dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 1 · 1. DECEMBER",
+          "JULEBONUS",
+          "70% OP TIL 2 600 DKK",
+          "Min. indbetaling: 260 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 1. dec.",
+          "INDBETAL & HENT",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "expired": [
+          "DAG 1 · 1. DECEMBER",
+          "JULEBONUS",
+          "70% OP TIL 2 600 DKK",
+          "Min. indbetaling: 260 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 1. dec.",
+          "Gaven er udløbet",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "locked": [
+          "DAG 1 · 1. DECEMBER",
+          "OVERRASKELSESGAVE",
+          "Åbner 1. december",
+          "Kom tilbage i morgen for at åbne gaven!",
+          "Låst · 1. dec.",
+          "Fuldstændige vilkår og betingelser"
+        ]
+      }
+    },
+    {
+      "day": 2,
+      "date": "2026-12-02",
+      "location": "Jackpot under juletræet",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 GRATIS SPINS"
+      },
+      "game": "Thunder Coins: Hold and Win",
+      "minDeposit": {
+        "value": 180,
+        "currency": "DKK",
+        "text": "Min. indbetaling: 180 DKK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsætningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig indtil: 23:59, 2. dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 2 · 2. DECEMBER",
+          "JULE-FREESPINS",
+          "82 GRATIS SPINS",
+          "på Thunder Coins: Hold and Win",
+          "Min. indbetaling: 180 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 2. dec.",
+          "INDBETAL & HENT",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "expired": [
+          "DAG 2 · 2. DECEMBER",
+          "JULE-FREESPINS",
+          "82 GRATIS SPINS",
+          "på Thunder Coins: Hold and Win",
+          "Min. indbetaling: 180 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 2. dec.",
+          "Gaven er udløbet",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "locked": [
+          "DAG 2 · 2. DECEMBER",
+          "OVERRASKELSESGAVE",
+          "Åbner 2. december",
+          "Kom tilbage i morgen for at åbne gaven!",
+          "Låst · 2. dec.",
+          "Fuldstændige vilkår og betingelser"
+        ]
+      }
+    },
+    {
+      "day": 3,
+      "date": "2026-12-03",
+      "location": "Peberkagehuset",
+      "type": "bonus",
+      "amount": {
+        "percent": 55,
+        "max": 3700,
+        "currency": "DKK",
+        "text": "55% OP TIL 3 700 DKK"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 225,
+        "currency": "DKK",
+        "text": "Min. indbetaling: 225 DKK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsætningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig indtil: 23:59, 3. dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 3 · 3. DECEMBER",
+          "JULEBONUS",
+          "55% OP TIL 3 700 DKK",
+          "Min. indbetaling: 225 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 3. dec.",
+          "INDBETAL & HENT",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "expired": [
+          "DAG 3 · 3. DECEMBER",
+          "JULEBONUS",
+          "55% OP TIL 3 700 DKK",
+          "Min. indbetaling: 225 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 3. dec.",
+          "Gaven er udløbet",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "locked": [
+          "DAG 3 · 3. DECEMBER",
+          "OVERRASKELSESGAVE",
+          "Åbner 3. december",
+          "Kom tilbage i morgen for at åbne gaven!",
+          "Låst · 3. dec.",
+          "Fuldstændige vilkår og betingelser"
+        ]
+      }
+    },
+    {
+      "day": 4,
+      "date": "2026-12-04",
+      "location": "Julemandens gavefabrik",
+      "type": "freespins",
+      "amount": {
+        "spins": 65,
+        "text": "65 GRATIS SPINS"
+      },
+      "game": "Big Bass Splash",
+      "minDeposit": {
+        "value": 165,
+        "currency": "DKK",
+        "text": "Min. indbetaling: 165 DKK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsætningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig indtil: 23:59, 4. dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 4 · 4. DECEMBER",
+          "JULE-FREESPINS",
+          "65 GRATIS SPINS",
+          "på Big Bass Splash",
+          "Min. indbetaling: 165 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 4. dec.",
+          "INDBETAL & HENT",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "expired": [
+          "DAG 4 · 4. DECEMBER",
+          "JULE-FREESPINS",
+          "65 GRATIS SPINS",
+          "på Big Bass Splash",
+          "Min. indbetaling: 165 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 4. dec.",
+          "Gaven er udløbet",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "locked": [
+          "DAG 4 · 4. DECEMBER",
+          "OVERRASKELSESGAVE",
+          "Åbner 4. december",
+          "Kom tilbage i morgen for at åbne gaven!",
+          "Låst · 4. dec.",
+          "Fuldstændige vilkår og betingelser"
+        ]
+      }
+    },
+    {
+      "day": 5,
+      "date": "2026-12-05",
+      "location": "Snedækket park",
+      "type": "freespins",
+      "amount": {
+        "spins": 75,
+        "text": "75 GRATIS SPINS"
+      },
+      "game": "John Hunter and the Book of Tut",
+      "minDeposit": {
+        "value": 180,
+        "currency": "DKK",
+        "text": "Min. indbetaling: 180 DKK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsætningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig indtil: 23:59, 5. dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 5 · 5. DECEMBER",
+          "JULE-FREESPINS",
+          "75 GRATIS SPINS",
+          "på John Hunter and the Book of Tut",
+          "Min. indbetaling: 180 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 5. dec.",
+          "INDBETAL & HENT",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "expired": [
+          "DAG 5 · 5. DECEMBER",
+          "JULE-FREESPINS",
+          "75 GRATIS SPINS",
+          "på John Hunter and the Book of Tut",
+          "Min. indbetaling: 180 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 5. dec.",
+          "Gaven er udløbet",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "locked": [
+          "DAG 5 · 5. DECEMBER",
+          "OVERRASKELSESGAVE",
+          "Åbner 5. december",
+          "Kom tilbage i morgen for at åbne gaven!",
+          "Låst · 5. dec.",
+          "Fuldstændige vilkår og betingelser"
+        ]
+      }
+    },
+    {
+      "day": 6,
+      "date": "2026-12-06",
+      "location": "Legetøjsbutik",
+      "type": "freespins",
+      "amount": {
+        "spins": 80,
+        "text": "80 GRATIS SPINS"
+      },
+      "game": "Gemhalla",
+      "minDeposit": {
+        "value": 225,
+        "currency": "DKK",
+        "text": "Min. indbetaling: 225 DKK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsætningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig indtil: 23:59, 6. dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 6 · 6. DECEMBER",
+          "JULE-FREESPINS",
+          "80 GRATIS SPINS",
+          "på Gemhalla",
+          "Min. indbetaling: 225 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 6. dec.",
+          "INDBETAL & HENT",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "expired": [
+          "DAG 6 · 6. DECEMBER",
+          "JULE-FREESPINS",
+          "80 GRATIS SPINS",
+          "på Gemhalla",
+          "Min. indbetaling: 225 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 6. dec.",
+          "Gaven er udløbet",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "locked": [
+          "DAG 6 · 6. DECEMBER",
+          "OVERRASKELSESGAVE",
+          "Åbner 6. december",
+          "Kom tilbage i morgen for at åbne gaven!",
+          "Låst · 6. dec.",
+          "Fuldstændige vilkår og betingelser"
+        ]
+      }
+    },
+    {
+      "day": 7,
+      "date": "2026-12-07",
+      "location": "Julemandens torv",
+      "type": "freespins",
+      "amount": {
+        "spins": 90,
+        "text": "90 GRATIS SPINS"
+      },
+      "game": "Bonanza Billion",
+      "minDeposit": {
+        "value": 260,
+        "currency": "DKK",
+        "text": "Min. indbetaling: 260 DKK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsætningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig indtil: 23:59, 7. dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 7 · 7. DECEMBER",
+          "JULE-FREESPINS",
+          "90 GRATIS SPINS",
+          "på Bonanza Billion",
+          "Min. indbetaling: 260 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 7. dec.",
+          "INDBETAL & HENT",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "expired": [
+          "DAG 7 · 7. DECEMBER",
+          "JULE-FREESPINS",
+          "90 GRATIS SPINS",
+          "på Bonanza Billion",
+          "Min. indbetaling: 260 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 7. dec.",
+          "Gaven er udløbet",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "locked": [
+          "DAG 7 · 7. DECEMBER",
+          "OVERRASKELSESGAVE",
+          "Åbner 7. december",
+          "Kom tilbage i morgen for at åbne gaven!",
+          "Låst · 7. dec.",
+          "Fuldstændige vilkår og betingelser"
+        ]
+      }
+    },
+    {
+      "day": 8,
+      "date": "2026-12-08",
+      "location": "Ønskekapellet",
+      "type": "bonus",
+      "amount": {
+        "percent": 65,
+        "max": 5000,
+        "currency": "DKK",
+        "text": "65% OP TIL 5 000 DKK"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 180,
+        "currency": "DKK",
+        "text": "Min. indbetaling: 180 DKK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsætningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig indtil: 23:59, 8. dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 8 · 8. DECEMBER",
+          "JULEBONUS",
+          "65% OP TIL 5 000 DKK",
+          "Min. indbetaling: 180 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 8. dec.",
+          "INDBETAL & HENT",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "expired": [
+          "DAG 8 · 8. DECEMBER",
+          "JULEBONUS",
+          "65% OP TIL 5 000 DKK",
+          "Min. indbetaling: 180 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 8. dec.",
+          "Gaven er udløbet",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "locked": [
+          "DAG 8 · 8. DECEMBER",
+          "OVERRASKELSESGAVE",
+          "Åbner 8. december",
+          "Kom tilbage i morgen for at åbne gaven!",
+          "Låst · 8. dec.",
+          "Fuldstændige vilkår og betingelser"
+        ]
+      }
+    },
+    {
+      "day": 9,
+      "date": "2026-12-09",
+      "location": "Magisk karrusel",
+      "type": "freespins",
+      "amount": {
+        "spins": 74,
+        "text": "74 GRATIS SPINS"
+      },
+      "game": "Big Bass Christmas – Frozen Lake",
+      "minDeposit": {
+        "value": 225,
+        "currency": "DKK",
+        "text": "Min. indbetaling: 225 DKK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsætningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig indtil: 23:59, 9. dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 9 · 9. DECEMBER",
+          "JULE-FREESPINS",
+          "74 GRATIS SPINS",
+          "på Big Bass Christmas – Frozen Lake",
+          "Min. indbetaling: 225 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 9. dec.",
+          "INDBETAL & HENT",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "expired": [
+          "DAG 9 · 9. DECEMBER",
+          "JULE-FREESPINS",
+          "74 GRATIS SPINS",
+          "på Big Bass Christmas – Frozen Lake",
+          "Min. indbetaling: 225 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 9. dec.",
+          "Gaven er udløbet",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "locked": [
+          "DAG 9 · 9. DECEMBER",
+          "OVERRASKELSESGAVE",
+          "Åbner 9. december",
+          "Kom tilbage i morgen for at åbne gaven!",
+          "Låst · 9. dec.",
+          "Fuldstændige vilkår og betingelser"
+        ]
+      }
+    },
+    {
+      "day": 10,
+      "date": "2026-12-10",
+      "location": "Lykkestrædet",
+      "type": "bonus",
+      "amount": {
+        "percent": 62,
+        "max": 5300,
+        "currency": "DKK",
+        "text": "62% OP TIL 5 300 DKK"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 260,
+        "currency": "DKK",
+        "text": "Min. indbetaling: 260 DKK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsætningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig indtil: 23:59, 10. dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 10 · 10. DECEMBER",
+          "JULEBONUS",
+          "62% OP TIL 5 300 DKK",
+          "Min. indbetaling: 260 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 10. dec.",
+          "INDBETAL & HENT",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "expired": [
+          "DAG 10 · 10. DECEMBER",
+          "JULEBONUS",
+          "62% OP TIL 5 300 DKK",
+          "Min. indbetaling: 260 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 10. dec.",
+          "Gaven er udløbet",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "locked": [
+          "DAG 10 · 10. DECEMBER",
+          "OVERRASKELSESGAVE",
+          "Åbner 10. december",
+          "Kom tilbage i morgen for at åbne gaven!",
+          "Låst · 10. dec.",
+          "Fuldstændige vilkår og betingelser"
+        ]
+      }
+    },
+    {
+      "day": 11,
+      "date": "2026-12-11",
+      "location": "Snemandens skat",
+      "type": "freespins",
+      "amount": {
+        "spins": 55,
+        "text": "55 GRATIS SPINS"
+      },
+      "game": "Thunder Coins: Hold and Win",
+      "minDeposit": {
+        "value": 165,
+        "currency": "DKK",
+        "text": "Min. indbetaling: 165 DKK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsætningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig indtil: 23:59, 11. dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 11 · 11. DECEMBER",
+          "JULE-FREESPINS",
+          "55 GRATIS SPINS",
+          "på Thunder Coins: Hold and Win",
+          "Min. indbetaling: 165 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 11. dec.",
+          "INDBETAL & HENT",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "expired": [
+          "DAG 11 · 11. DECEMBER",
+          "JULE-FREESPINS",
+          "55 GRATIS SPINS",
+          "på Thunder Coins: Hold and Win",
+          "Min. indbetaling: 165 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 11. dec.",
+          "Gaven er udløbet",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "locked": [
+          "DAG 11 · 11. DECEMBER",
+          "OVERRASKELSESGAVE",
+          "Åbner 11. december",
+          "Kom tilbage i morgen for at åbne gaven!",
+          "Låst · 11. dec.",
+          "Fuldstændige vilkår og betingelser"
+        ]
+      }
+    },
+    {
+      "day": 12,
+      "date": "2026-12-12",
+      "location": "Julemandens posthus",
+      "type": "freespins",
+      "amount": {
+        "spins": 80,
+        "text": "80 GRATIS SPINS"
+      },
+      "game": "Fruits 'n' Stars Holiday Edition",
+      "minDeposit": {
+        "value": 180,
+        "currency": "DKK",
+        "text": "Min. indbetaling: 180 DKK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsætningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig indtil: 23:59, 12. dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 12 · 12. DECEMBER",
+          "JULE-FREESPINS",
+          "80 GRATIS SPINS",
+          "på Fruits 'n' Stars Holiday Edition",
+          "Min. indbetaling: 180 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 12. dec.",
+          "INDBETAL & HENT",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "expired": [
+          "DAG 12 · 12. DECEMBER",
+          "JULE-FREESPINS",
+          "80 GRATIS SPINS",
+          "på Fruits 'n' Stars Holiday Edition",
+          "Min. indbetaling: 180 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 12. dec.",
+          "Gaven er udløbet",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "locked": [
+          "DAG 12 · 12. DECEMBER",
+          "OVERRASKELSESGAVE",
+          "Åbner 12. december",
+          "Kom tilbage i morgen for at åbne gaven!",
+          "Låst · 12. dec.",
+          "Fuldstændige vilkår og betingelser"
+        ]
+      }
+    },
+    {
+      "day": 13,
+      "date": "2026-12-13",
+      "location": "Ispaladset",
+      "type": "freespins",
+      "amount": {
+        "spins": 67,
+        "text": "67 GRATIS SPINS"
+      },
+      "game": "Yeti Quest",
+      "minDeposit": {
+        "value": 180,
+        "currency": "DKK",
+        "text": "Min. indbetaling: 180 DKK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsætningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig indtil: 23:59, 13. dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 13 · 13. DECEMBER",
+          "JULE-FREESPINS",
+          "67 GRATIS SPINS",
+          "på Yeti Quest",
+          "Min. indbetaling: 180 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 13. dec.",
+          "INDBETAL & HENT",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "expired": [
+          "DAG 13 · 13. DECEMBER",
+          "JULE-FREESPINS",
+          "67 GRATIS SPINS",
+          "på Yeti Quest",
+          "Min. indbetaling: 180 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 13. dec.",
+          "Gaven er udløbet",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "locked": [
+          "DAG 13 · 13. DECEMBER",
+          "OVERRASKELSESGAVE",
+          "Åbner 13. december",
+          "Kom tilbage i morgen for at åbne gaven!",
+          "Låst · 13. dec.",
+          "Fuldstændige vilkår og betingelser"
+        ]
+      }
+    },
+    {
+      "day": 14,
+      "date": "2026-12-14",
+      "location": "Vidunderbutikken",
+      "type": "freespins",
+      "amount": {
+        "spins": 90,
+        "text": "90 GRATIS SPINS"
+      },
+      "game": "25 Cookies: Hit the Bonus",
+      "minDeposit": {
+        "value": 260,
+        "currency": "DKK",
+        "text": "Min. indbetaling: 260 DKK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsætningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig indtil: 23:59, 14. dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 14 · 14. DECEMBER",
+          "JULE-FREESPINS",
+          "90 GRATIS SPINS",
+          "på 25 Cookies: Hit the Bonus",
+          "Min. indbetaling: 260 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 14. dec.",
+          "INDBETAL & HENT",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "expired": [
+          "DAG 14 · 14. DECEMBER",
+          "JULE-FREESPINS",
+          "90 GRATIS SPINS",
+          "på 25 Cookies: Hit the Bonus",
+          "Min. indbetaling: 260 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 14. dec.",
+          "Gaven er udløbet",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "locked": [
+          "DAG 14 · 14. DECEMBER",
+          "OVERRASKELSESGAVE",
+          "Åbner 14. december",
+          "Kom tilbage i morgen for at åbne gaven!",
+          "Låst · 14. dec.",
+          "Fuldstændige vilkår og betingelser"
+        ]
+      }
+    },
+    {
+      "day": 15,
+      "date": "2026-12-15",
+      "location": "Julemarked",
+      "type": "bonus",
+      "amount": {
+        "percent": 58,
+        "max": 3700,
+        "currency": "DKK",
+        "text": "58% OP TIL 3 700 DKK"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 225,
+        "currency": "DKK",
+        "text": "Min. indbetaling: 225 DKK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsætningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig indtil: 23:59, 15. dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 15 · 15. DECEMBER",
+          "JULEBONUS",
+          "58% OP TIL 3 700 DKK",
+          "Min. indbetaling: 225 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 15. dec.",
+          "INDBETAL & HENT",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "expired": [
+          "DAG 15 · 15. DECEMBER",
+          "JULEBONUS",
+          "58% OP TIL 3 700 DKK",
+          "Min. indbetaling: 225 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 15. dec.",
+          "Gaven er udløbet",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "locked": [
+          "DAG 15 · 15. DECEMBER",
+          "OVERRASKELSESGAVE",
+          "Åbner 15. december",
+          "Kom tilbage i morgen for at åbne gaven!",
+          "Låst · 15. dec.",
+          "Fuldstændige vilkår og betingelser"
+        ]
+      }
+    },
+    {
+      "day": 16,
+      "date": "2026-12-16",
+      "location": "Vinterhaven",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 GRATIS SPINS"
+      },
+      "game": "Christmas Carol Megaways",
+      "minDeposit": {
+        "value": 225,
+        "currency": "DKK",
+        "text": "Min. indbetaling: 225 DKK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsætningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig indtil: 23:59, 16. dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 16 · 16. DECEMBER",
+          "JULE-FREESPINS",
+          "82 GRATIS SPINS",
+          "på Christmas Carol Megaways",
+          "Min. indbetaling: 225 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 16. dec.",
+          "INDBETAL & HENT",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "expired": [
+          "DAG 16 · 16. DECEMBER",
+          "JULE-FREESPINS",
+          "82 GRATIS SPINS",
+          "på Christmas Carol Megaways",
+          "Min. indbetaling: 225 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 16. dec.",
+          "Gaven er udløbet",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "locked": [
+          "DAG 16 · 16. DECEMBER",
+          "OVERRASKELSESGAVE",
+          "Åbner 16. december",
+          "Kom tilbage i morgen for at åbne gaven!",
+          "Låst · 16. dec.",
+          "Fuldstændige vilkår og betingelser"
+        ]
+      }
+    },
+    {
+      "day": 17,
+      "date": "2026-12-17",
+      "location": "Den fortryllede skov",
+      "type": "bonus",
+      "amount": {
+        "percent": 45,
+        "max": 3700,
+        "currency": "DKK",
+        "text": "45% OP TIL 3 700 DKK"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 180,
+        "currency": "DKK",
+        "text": "Min. indbetaling: 180 DKK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsætningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig indtil: 23:59, 17. dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 17 · 17. DECEMBER",
+          "JULEBONUS",
+          "45% OP TIL 3 700 DKK",
+          "Min. indbetaling: 180 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 17. dec.",
+          "INDBETAL & HENT",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "expired": [
+          "DAG 17 · 17. DECEMBER",
+          "JULEBONUS",
+          "45% OP TIL 3 700 DKK",
+          "Min. indbetaling: 180 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 17. dec.",
+          "Gaven er udløbet",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "locked": [
+          "DAG 17 · 17. DECEMBER",
+          "OVERRASKELSESGAVE",
+          "Åbner 17. december",
+          "Kom tilbage i morgen for at åbne gaven!",
+          "Låst · 17. dec.",
+          "Fuldstændige vilkår og betingelser"
+        ]
+      }
+    },
+    {
+      "day": 18,
+      "date": "2026-12-18",
+      "location": "Snehulen",
+      "type": "freespins",
+      "amount": {
+        "spins": 63,
+        "text": "63 GRATIS SPINS"
+      },
+      "game": "Big Bass Christmas – Frozen Lake",
+      "minDeposit": {
+        "value": 180,
+        "currency": "DKK",
+        "text": "Min. indbetaling: 180 DKK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsætningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig indtil: 23:59, 18. dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 18 · 18. DECEMBER",
+          "JULE-FREESPINS",
+          "63 GRATIS SPINS",
+          "på Big Bass Christmas – Frozen Lake",
+          "Min. indbetaling: 180 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 18. dec.",
+          "INDBETAL & HENT",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "expired": [
+          "DAG 18 · 18. DECEMBER",
+          "JULE-FREESPINS",
+          "63 GRATIS SPINS",
+          "på Big Bass Christmas – Frozen Lake",
+          "Min. indbetaling: 180 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 18. dec.",
+          "Gaven er udløbet",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "locked": [
+          "DAG 18 · 18. DECEMBER",
+          "OVERRASKELSESGAVE",
+          "Åbner 18. december",
+          "Kom tilbage i morgen for at åbne gaven!",
+          "Låst · 18. dec.",
+          "Fuldstændige vilkår og betingelser"
+        ]
+      }
+    },
+    {
+      "day": 19,
+      "date": "2026-12-19",
+      "location": "Stjerneskøjtebanen",
+      "type": "freespins",
+      "amount": {
+        "spins": 95,
+        "text": "95 GRATIS SPINS"
+      },
+      "game": "Fruits 'n' Stars Holiday Edition",
+      "minDeposit": {
+        "value": 260,
+        "currency": "DKK",
+        "text": "Min. indbetaling: 260 DKK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsætningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig indtil: 23:59, 19. dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 19 · 19. DECEMBER",
+          "JULE-FREESPINS",
+          "95 GRATIS SPINS",
+          "på Fruits 'n' Stars Holiday Edition",
+          "Min. indbetaling: 260 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 19. dec.",
+          "INDBETAL & HENT",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "expired": [
+          "DAG 19 · 19. DECEMBER",
+          "JULE-FREESPINS",
+          "95 GRATIS SPINS",
+          "på Fruits 'n' Stars Holiday Edition",
+          "Min. indbetaling: 260 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 19. dec.",
+          "Gaven er udløbet",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "locked": [
+          "DAG 19 · 19. DECEMBER",
+          "OVERRASKELSESGAVE",
+          "Åbner 19. december",
+          "Kom tilbage i morgen for at åbne gaven!",
+          "Låst · 19. dec.",
+          "Fuldstændige vilkår og betingelser"
+        ]
+      }
+    },
+    {
+      "day": 20,
+      "date": "2026-12-20",
+      "location": "Nordlys",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 GRATIS SPINS"
+      },
+      "game": "Sweet Bonanza Xmas",
+      "minDeposit": {
+        "value": 225,
+        "currency": "DKK",
+        "text": "Min. indbetaling: 225 DKK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsætningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig indtil: 23:59, 20. dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 20 · 20. DECEMBER",
+          "JULE-FREESPINS",
+          "82 GRATIS SPINS",
+          "på Sweet Bonanza Xmas",
+          "Min. indbetaling: 225 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 20. dec.",
+          "INDBETAL & HENT",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "expired": [
+          "DAG 20 · 20. DECEMBER",
+          "JULE-FREESPINS",
+          "82 GRATIS SPINS",
+          "på Sweet Bonanza Xmas",
+          "Min. indbetaling: 225 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 20. dec.",
+          "Gaven er udløbet",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "locked": [
+          "DAG 20 · 20. DECEMBER",
+          "OVERRASKELSESGAVE",
+          "Åbner 20. december",
+          "Kom tilbage i morgen for at åbne gaven!",
+          "Låst · 20. dec.",
+          "Fuldstændige vilkår og betingelser"
+        ]
+      }
+    },
+    {
+      "day": 21,
+      "date": "2026-12-21",
+      "location": "Midnatsekspressen",
+      "type": "bonus",
+      "amount": {
+        "percent": 65,
+        "max": 3700,
+        "currency": "DKK",
+        "text": "65% OP TIL 3 700 DKK"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 180,
+        "currency": "DKK",
+        "text": "Min. indbetaling: 180 DKK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsætningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig indtil: 23:59, 21. dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 21 · 21. DECEMBER",
+          "JULEBONUS",
+          "65% OP TIL 3 700 DKK",
+          "Min. indbetaling: 180 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 21. dec.",
+          "INDBETAL & HENT",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "expired": [
+          "DAG 21 · 21. DECEMBER",
+          "JULEBONUS",
+          "65% OP TIL 3 700 DKK",
+          "Min. indbetaling: 180 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 21. dec.",
+          "Gaven er udløbet",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "locked": [
+          "DAG 21 · 21. DECEMBER",
+          "OVERRASKELSESGAVE",
+          "Åbner 21. december",
+          "Kom tilbage i morgen for at åbne gaven!",
+          "Låst · 21. dec.",
+          "Fuldstændige vilkår og betingelser"
+        ]
+      }
+    },
+    {
+      "day": 22,
+      "date": "2026-12-22",
+      "location": "Snehytten",
+      "type": "freespins",
+      "amount": {
+        "spins": 62,
+        "text": "62 GRATIS SPINS"
+      },
+      "game": "Yeti Quest",
+      "minDeposit": {
+        "value": 165,
+        "currency": "DKK",
+        "text": "Min. indbetaling: 165 DKK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsætningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig indtil: 23:59, 22. dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 22 · 22. DECEMBER",
+          "JULE-FREESPINS",
+          "62 GRATIS SPINS",
+          "på Yeti Quest",
+          "Min. indbetaling: 165 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 22. dec.",
+          "INDBETAL & HENT",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "expired": [
+          "DAG 22 · 22. DECEMBER",
+          "JULE-FREESPINS",
+          "62 GRATIS SPINS",
+          "på Yeti Quest",
+          "Min. indbetaling: 165 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 22. dec.",
+          "Gaven er udløbet",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "locked": [
+          "DAG 22 · 22. DECEMBER",
+          "OVERRASKELSESGAVE",
+          "Åbner 22. december",
+          "Kom tilbage i morgen for at åbne gaven!",
+          "Låst · 22. dec.",
+          "Fuldstændige vilkår og betingelser"
+        ]
+      }
+    },
+    {
+      "day": 23,
+      "date": "2026-12-23",
+      "location": "Julemandens pengeskab",
+      "type": "freespins",
+      "amount": {
+        "spins": 99,
+        "text": "99 GRATIS SPINS"
+      },
+      "game": "25 Cookies: Hit the Bonus",
+      "minDeposit": {
+        "value": 225,
+        "currency": "DKK",
+        "text": "Min. indbetaling: 225 DKK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsætningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig indtil: 23:59, 23. dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 23 · 23. DECEMBER",
+          "JULE-FREESPINS",
+          "99 GRATIS SPINS",
+          "på 25 Cookies: Hit the Bonus",
+          "Min. indbetaling: 225 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 23. dec.",
+          "INDBETAL & HENT",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "expired": [
+          "DAG 23 · 23. DECEMBER",
+          "JULE-FREESPINS",
+          "99 GRATIS SPINS",
+          "på 25 Cookies: Hit the Bonus",
+          "Min. indbetaling: 225 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 23. dec.",
+          "Gaven er udløbet",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "locked": [
+          "DAG 23 · 23. DECEMBER",
+          "OVERRASKELSESGAVE",
+          "Åbner 23. december",
+          "Kom tilbage i morgen for at åbne gaven!",
+          "Låst · 23. dec.",
+          "Fuldstændige vilkår og betingelser"
+        ]
+      }
+    },
+    {
+      "day": 24,
+      "date": "2026-12-24",
+      "location": "Det hemmelige rum",
+      "type": "bonus",
+      "amount": {
+        "percent": 80,
+        "max": 3000,
+        "currency": "DKK",
+        "text": "80% OP TIL 3 000 DKK"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 260,
+        "currency": "DKK",
+        "text": "Min. indbetaling: 260 DKK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsætningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig indtil: 23:59, 24. dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 24 · 24. DECEMBER",
+          "JULEBONUS",
+          "80% OP TIL 3 000 DKK",
+          "Min. indbetaling: 260 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 24. dec.",
+          "INDBETAL & HENT",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "expired": [
+          "DAG 24 · 24. DECEMBER",
+          "JULEBONUS",
+          "80% OP TIL 3 000 DKK",
+          "Min. indbetaling: 260 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 24. dec.",
+          "Gaven er udløbet",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "locked": [
+          "DAG 24 · 24. DECEMBER",
+          "OVERRASKELSESGAVE",
+          "Åbner 24. december",
+          "Kom tilbage i morgen for at åbne gaven!",
+          "Låst · 24. dec.",
+          "Fuldstændige vilkår og betingelser"
+        ]
+      }
+    },
+    {
+      "day": 25,
+      "date": "2026-12-25",
+      "location": "Gavesækken",
+      "type": "freespins",
+      "amount": {
+        "spins": 101,
+        "text": "101 GRATIS SPINS"
+      },
+      "game": "Christmas Carol Megaways",
+      "minDeposit": {
+        "value": 260,
+        "currency": "DKK",
+        "text": "Min. indbetaling: 260 DKK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsætningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig indtil: 23:59, 25. dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 25 · 25. DECEMBER",
+          "JULE-FREESPINS",
+          "101 GRATIS SPINS",
+          "på Christmas Carol Megaways",
+          "Min. indbetaling: 260 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 25. dec.",
+          "INDBETAL & HENT",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "expired": [
+          "DAG 25 · 25. DECEMBER",
+          "JULE-FREESPINS",
+          "101 GRATIS SPINS",
+          "på Christmas Carol Megaways",
+          "Min. indbetaling: 260 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 25. dec.",
+          "Gaven er udløbet",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "locked": [
+          "DAG 25 · 25. DECEMBER",
+          "OVERRASKELSESGAVE",
+          "Åbner 25. december",
+          "Kom tilbage i morgen for at åbne gaven!",
+          "Låst · 25. dec.",
+          "Fuldstændige vilkår og betingelser"
+        ]
+      }
+    },
+    {
+      "day": 26,
+      "date": "2026-12-26",
+      "location": "Jackpot-kisten",
+      "type": "bonus",
+      "amount": {
+        "percent": 60,
+        "max": 4500,
+        "currency": "DKK",
+        "text": "60% OP TIL 4 500 DKK"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 165,
+        "currency": "DKK",
+        "text": "Min. indbetaling: 165 DKK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsætningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig indtil: 23:59, 26. dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 26 · 26. DECEMBER",
+          "JULEBONUS",
+          "60% OP TIL 4 500 DKK",
+          "Min. indbetaling: 165 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 26. dec.",
+          "INDBETAL & HENT",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "expired": [
+          "DAG 26 · 26. DECEMBER",
+          "JULEBONUS",
+          "60% OP TIL 4 500 DKK",
+          "Min. indbetaling: 165 DKK",
+          "Omsætningskrav: x25",
+          "Gyldig indtil: 23:59, 26. dec.",
+          "Gaven er udløbet",
+          "Fuldstændige vilkår og betingelser"
+        ],
+        "locked": [
+          "DAG 26 · 26. DECEMBER",
+          "OVERRASKELSESGAVE",
+          "Åbner 26. december",
+          "Kom tilbage i morgen for at åbne gaven!",
+          "Låst · 26. dec.",
+          "Fuldstændige vilkår og betingelser"
+        ]
+      }
+    }
+  ]
+}

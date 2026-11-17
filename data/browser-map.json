@@ -1,0 +1,25 @@
+{
+  "note": "Match the full tag first (case-insensitive, e.g. \"en-AU\"), then the primary language (\"de\"), then fallback.",
+  "exact": {
+    "en-AU": "EN_AUD",
+    "en-CA": "EN_CAD",
+    "en-US": "EN_USD",
+    "fr-CA": "FR_CA"
+  },
+  "language": {
+    "en": "EN_GBP",
+    "de": "DE",
+    "bg": "BG",
+    "nl": "NL",
+    "it": "IT",
+    "ru": "RU",
+    "tr": "TR",
+    "da": "DA",
+    "sv": "SV",
+    "nb": "NO",
+    "no": "NO",
+    "nn": "NO",
+    "ro": "RO_MDL"
+  },
+  "fallback": "EN_GBP"
+}

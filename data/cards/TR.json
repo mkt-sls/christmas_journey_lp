@@ -1,0 +1,1463 @@
+{
+  "market": "TR",
+  "uiLang": "TR",
+  "currency": "TRY",
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-12-01",
+      "location": "Noel Baba’nın Sırları",
+      "type": "bonus",
+      "amount": {
+        "percent": 70,
+        "max": 20000,
+        "currency": "TRY",
+        "text": "%70 BONUS, 20.000 TRY’YE KADAR"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 1900,
+        "currency": "TRY",
+        "text": "Min. yatırım: 1.900 TRY"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Çevrim şartı: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Son geçerlilik: 23:59, 1 Ara"
+      },
+      "raw": {
+        "active": [
+          "GÜN 1 · 1 ARALIK",
+          "NOEL BONUSU",
+          "%70 BONUS, 20.000 TRY’YE KADAR",
+          "Min. yatırım: 1.900 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 1 Ara",
+          "YATIR & AL",
+          "Tüm şartlar ve koşullar"
+        ],
+        "expired": [
+          "GÜN 1 · 1 ARALIK",
+          "NOEL BONUSU",
+          "%70 BONUS, 20.000 TRY’YE KADAR",
+          "Min. yatırım: 1.900 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 1 Ara",
+          "Hediyenin süresi doldu",
+          "Tüm şartlar ve koşullar"
+        ],
+        "locked": [
+          "GÜN 1 · 1 ARALIK",
+          "SÜRPRİZ HEDİYE",
+          "Aralık 1 tarihinde açılır",
+          "Bu hediyeyi açmak için yarın tekrar gel!",
+          "Kilitli · 1 Ara",
+          "Tüm şartlar ve koşullar"
+        ]
+      }
+    },
+    {
+      "day": 2,
+      "date": "2026-12-02",
+      "location": "Ağacın Altındaki Jackpot",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 FREESPİN"
+      },
+      "game": "Thunder Coins: Hold and Win",
+      "minDeposit": {
+        "value": 1300,
+        "currency": "TRY",
+        "text": "Min. yatırım: 1.300 TRY"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Çevrim şartı: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Son geçerlilik: 23:59, 2 Ara"
+      },
+      "raw": {
+        "active": [
+          "GÜN 2 · 2 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "82 FREESPİN",
+          "oyununda Thunder Coins: Hold and Win",
+          "Min. yatırım: 1.300 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 2 Ara",
+          "YATIR & AL",
+          "Tüm şartlar ve koşullar"
+        ],
+        "expired": [
+          "GÜN 2 · 2 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "82 FREESPİN",
+          "oyununda Thunder Coins: Hold and Win",
+          "Min. yatırım: 1.300 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 2 Ara",
+          "Hediyenin süresi doldu",
+          "Tüm şartlar ve koşullar"
+        ],
+        "locked": [
+          "GÜN 2 · 2 ARALIK",
+          "SÜRPRİZ HEDİYE",
+          "Aralık 2 tarihinde açılır",
+          "Bu hediyeyi açmak için yarın tekrar gel!",
+          "Kilitli · 2 Ara",
+          "Tüm şartlar ve koşullar"
+        ]
+      }
+    },
+    {
+      "day": 3,
+      "date": "2026-12-03",
+      "location": "Zencefilli Kurabiye Evi",
+      "type": "bonus",
+      "amount": {
+        "percent": 55,
+        "max": 28000,
+        "currency": "TRY",
+        "text": "%55 BONUS, 28.000 TRY’YE KADAR"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 1600,
+        "currency": "TRY",
+        "text": "Min. yatırım: 1.600 TRY"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Çevrim şartı: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Son geçerlilik: 23:59, 3 Ara"
+      },
+      "raw": {
+        "active": [
+          "GÜN 3 · 3 ARALIK",
+          "NOEL BONUSU",
+          "%55 BONUS, 28.000 TRY’YE KADAR",
+          "Min. yatırım: 1.600 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 3 Ara",
+          "YATIR & AL",
+          "Tüm şartlar ve koşullar"
+        ],
+        "expired": [
+          "GÜN 3 · 3 ARALIK",
+          "NOEL BONUSU",
+          "%55 BONUS, 28.000 TRY’YE KADAR",
+          "Min. yatırım: 1.600 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 3 Ara",
+          "Hediyenin süresi doldu",
+          "Tüm şartlar ve koşullar"
+        ],
+        "locked": [
+          "GÜN 3 · 3 ARALIK",
+          "SÜRPRİZ HEDİYE",
+          "Aralık 3 tarihinde açılır",
+          "Bu hediyeyi açmak için yarın tekrar gel!",
+          "Kilitli · 3 Ara",
+          "Tüm şartlar ve koşullar"
+        ]
+      }
+    },
+    {
+      "day": 4,
+      "date": "2026-12-04",
+      "location": "Noel Baba’nın Hediye Fabrikası",
+      "type": "freespins",
+      "amount": {
+        "spins": 65,
+        "text": "65 FREESPİN"
+      },
+      "game": "Big Bass Splash",
+      "minDeposit": {
+        "value": 1200,
+        "currency": "TRY",
+        "text": "Min. yatırım: 1.200 TRY"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Çevrim şartı: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Son geçerlilik: 23:59, 4 Ara"
+      },
+      "raw": {
+        "active": [
+          "GÜN 4 · 4 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "65 FREESPİN",
+          "oyununda Big Bass Splash",
+          "Min. yatırım: 1.200 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 4 Ara",
+          "YATIR & AL",
+          "Tüm şartlar ve koşullar"
+        ],
+        "expired": [
+          "GÜN 4 · 4 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "65 FREESPİN",
+          "oyununda Big Bass Splash",
+          "Min. yatırım: 1.200 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 4 Ara",
+          "Hediyenin süresi doldu",
+          "Tüm şartlar ve koşullar"
+        ],
+        "locked": [
+          "GÜN 4 · 4 ARALIK",
+          "SÜRPRİZ HEDİYE",
+          "Aralık 4 tarihinde açılır",
+          "Bu hediyeyi açmak için yarın tekrar gel!",
+          "Kilitli · 4 Ara",
+          "Tüm şartlar ve koşullar"
+        ]
+      }
+    },
+    {
+      "day": 5,
+      "date": "2026-12-05",
+      "location": "Karlı Park",
+      "type": "freespins",
+      "amount": {
+        "spins": 75,
+        "text": "75 FREESPİN"
+      },
+      "game": "John Hunter and the Book of Tut",
+      "minDeposit": {
+        "value": 1300,
+        "currency": "TRY",
+        "text": "Min. yatırım: 1.300 TRY"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Çevrim şartı: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Son geçerlilik: 23:59, 5 Ara"
+      },
+      "raw": {
+        "active": [
+          "GÜN 5 · 5 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "75 FREESPİN",
+          "oyununda John Hunter and the Book of Tut",
+          "Min. yatırım: 1.300 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 5 Ara",
+          "YATIR & AL",
+          "Tüm şartlar ve koşullar"
+        ],
+        "expired": [
+          "GÜN 5 · 5 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "75 FREESPİN",
+          "oyununda John Hunter and the Book of Tut",
+          "Min. yatırım: 1.300 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 5 Ara",
+          "Hediyenin süresi doldu",
+          "Tüm şartlar ve koşullar"
+        ],
+        "locked": [
+          "GÜN 5 · 5 ARALIK",
+          "SÜRPRİZ HEDİYE",
+          "Aralık 5 tarihinde açılır",
+          "Bu hediyeyi açmak için yarın tekrar gel!",
+          "Kilitli · 5 Ara",
+          "Tüm şartlar ve koşullar"
+        ]
+      }
+    },
+    {
+      "day": 6,
+      "date": "2026-12-06",
+      "location": "Oyuncak Dükkânı",
+      "type": "freespins",
+      "amount": {
+        "spins": 80,
+        "text": "80 FREESPİN"
+      },
+      "game": "Gemhalla",
+      "minDeposit": {
+        "value": 1600,
+        "currency": "TRY",
+        "text": "Min. yatırım: 1.600 TRY"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Çevrim şartı: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Son geçerlilik: 23:59, 6 Ara"
+      },
+      "raw": {
+        "active": [
+          "GÜN 6 · 6 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "80 FREESPİN",
+          "oyununda Gemhalla",
+          "Min. yatırım: 1.600 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 6 Ara",
+          "YATIR & AL",
+          "Tüm şartlar ve koşullar"
+        ],
+        "expired": [
+          "GÜN 6 · 6 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "80 FREESPİN",
+          "oyununda Gemhalla",
+          "Min. yatırım: 1.600 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 6 Ara",
+          "Hediyenin süresi doldu",
+          "Tüm şartlar ve koşullar"
+        ],
+        "locked": [
+          "GÜN 6 · 6 ARALIK",
+          "SÜRPRİZ HEDİYE",
+          "Aralık 6 tarihinde açılır",
+          "Bu hediyeyi açmak için yarın tekrar gel!",
+          "Kilitli · 6 Ara",
+          "Tüm şartlar ve koşullar"
+        ]
+      }
+    },
+    {
+      "day": 7,
+      "date": "2026-12-07",
+      "location": "Noel Baba Meydanı",
+      "type": "freespins",
+      "amount": {
+        "spins": 90,
+        "text": "90 FREESPİN"
+      },
+      "game": "Bonanza Billion",
+      "minDeposit": {
+        "value": 1900,
+        "currency": "TRY",
+        "text": "Min. yatırım: 1.900 TRY"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Çevrim şartı: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Son geçerlilik: 23:59, 7 Ara"
+      },
+      "raw": {
+        "active": [
+          "GÜN 7 · 7 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "90 FREESPİN",
+          "oyununda Bonanza Billion",
+          "Min. yatırım: 1.900 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 7 Ara",
+          "YATIR & AL",
+          "Tüm şartlar ve koşullar"
+        ],
+        "expired": [
+          "GÜN 7 · 7 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "90 FREESPİN",
+          "oyununda Bonanza Billion",
+          "Min. yatırım: 1.900 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 7 Ara",
+          "Hediyenin süresi doldu",
+          "Tüm şartlar ve koşullar"
+        ],
+        "locked": [
+          "GÜN 7 · 7 ARALIK",
+          "SÜRPRİZ HEDİYE",
+          "Aralık 7 tarihinde açılır",
+          "Bu hediyeyi açmak için yarın tekrar gel!",
+          "Kilitli · 7 Ara",
+          "Tüm şartlar ve koşullar"
+        ]
+      }
+    },
+    {
+      "day": 8,
+      "date": "2026-12-08",
+      "location": "Dilek Şapeli",
+      "type": "bonus",
+      "amount": {
+        "percent": 65,
+        "max": 35000,
+        "currency": "TRY",
+        "text": "%65 BONUS, 35.000 TRY’YE KADAR"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 1300,
+        "currency": "TRY",
+        "text": "Min. yatırım: 1.300 TRY"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Çevrim şartı: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Son geçerlilik: 23:59, 8 Ara"
+      },
+      "raw": {
+        "active": [
+          "GÜN 8 · 8 ARALIK",
+          "NOEL BONUSU",
+          "%65 BONUS, 35.000 TRY’YE KADAR",
+          "Min. yatırım: 1.300 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 8 Ara",
+          "YATIR & AL",
+          "Tüm şartlar ve koşullar"
+        ],
+        "expired": [
+          "GÜN 8 · 8 ARALIK",
+          "NOEL BONUSU",
+          "%65 BONUS, 35.000 TRY’YE KADAR",
+          "Min. yatırım: 1.300 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 8 Ara",
+          "Hediyenin süresi doldu",
+          "Tüm şartlar ve koşullar"
+        ],
+        "locked": [
+          "GÜN 8 · 8 ARALIK",
+          "SÜRPRİZ HEDİYE",
+          "Aralık 8 tarihinde açılır",
+          "Bu hediyeyi açmak için yarın tekrar gel!",
+          "Kilitli · 8 Ara",
+          "Tüm şartlar ve koşullar"
+        ]
+      }
+    },
+    {
+      "day": 9,
+      "date": "2026-12-09",
+      "location": "Sihirli Atlıkarınca",
+      "type": "freespins",
+      "amount": {
+        "spins": 74,
+        "text": "74 FREESPİN"
+      },
+      "game": "Big Bass Christmas – Frozen Lake",
+      "minDeposit": {
+        "value": 1600,
+        "currency": "TRY",
+        "text": "Min. yatırım: 1.600 TRY"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Çevrim şartı: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Son geçerlilik: 23:59, 9 Ara"
+      },
+      "raw": {
+        "active": [
+          "GÜN 9 · 9 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "74 FREESPİN",
+          "oyununda Big Bass Christmas – Frozen Lake",
+          "Min. yatırım: 1.600 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 9 Ara",
+          "YATIR & AL",
+          "Tüm şartlar ve koşullar"
+        ],
+        "expired": [
+          "GÜN 9 · 9 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "74 FREESPİN",
+          "oyununda Big Bass Christmas – Frozen Lake",
+          "Min. yatırım: 1.600 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 9 Ara",
+          "Hediyenin süresi doldu",
+          "Tüm şartlar ve koşullar"
+        ],
+        "locked": [
+          "GÜN 9 · 9 ARALIK",
+          "SÜRPRİZ HEDİYE",
+          "Aralık 9 tarihinde açılır",
+          "Bu hediyeyi açmak için yarın tekrar gel!",
+          "Kilitli · 9 Ara",
+          "Tüm şartlar ve koşullar"
+        ]
+      }
+    },
+    {
+      "day": 10,
+      "date": "2026-12-10",
+      "location": "Şans Sokağı",
+      "type": "bonus",
+      "amount": {
+        "percent": 62,
+        "max": 39000,
+        "currency": "TRY",
+        "text": "%62 BONUS, 39.000 TRY’YE KADAR"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 1900,
+        "currency": "TRY",
+        "text": "Min. yatırım: 1.900 TRY"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Çevrim şartı: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Son geçerlilik: 23:59, 10 Ara"
+      },
+      "raw": {
+        "active": [
+          "GÜN 10 · 10 ARALIK",
+          "NOEL BONUSU",
+          "%62 BONUS, 39.000 TRY’YE KADAR",
+          "Min. yatırım: 1.900 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 10 Ara",
+          "YATIR & AL",
+          "Tüm şartlar ve koşullar"
+        ],
+        "expired": [
+          "GÜN 10 · 10 ARALIK",
+          "NOEL BONUSU",
+          "%62 BONUS, 39.000 TRY’YE KADAR",
+          "Min. yatırım: 1.900 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 10 Ara",
+          "Hediyenin süresi doldu",
+          "Tüm şartlar ve koşullar"
+        ],
+        "locked": [
+          "GÜN 10 · 10 ARALIK",
+          "SÜRPRİZ HEDİYE",
+          "Aralık 10 tarihinde açılır",
+          "Bu hediyeyi açmak için yarın tekrar gel!",
+          "Kilitli · 10 Ara",
+          "Tüm şartlar ve koşullar"
+        ]
+      }
+    },
+    {
+      "day": 11,
+      "date": "2026-12-11",
+      "location": "Kardan Adamın Hazinesi",
+      "type": "freespins",
+      "amount": {
+        "spins": 55,
+        "text": "55 FREESPİN"
+      },
+      "game": "Thunder Coins: Hold and Win",
+      "minDeposit": {
+        "value": 1200,
+        "currency": "TRY",
+        "text": "Min. yatırım: 1.200 TRY"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Çevrim şartı: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Son geçerlilik: 23:59, 11 Ara"
+      },
+      "raw": {
+        "active": [
+          "GÜN 11 · 11 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "55 FREESPİN",
+          "oyununda Thunder Coins: Hold and Win",
+          "Min. yatırım: 1.200 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 11 Ara",
+          "YATIR & AL",
+          "Tüm şartlar ve koşullar"
+        ],
+        "expired": [
+          "GÜN 11 · 11 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "55 FREESPİN",
+          "oyununda Thunder Coins: Hold and Win",
+          "Min. yatırım: 1.200 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 11 Ara",
+          "Hediyenin süresi doldu",
+          "Tüm şartlar ve koşullar"
+        ],
+        "locked": [
+          "GÜN 11 · 11 ARALIK",
+          "SÜRPRİZ HEDİYE",
+          "Aralık 11 tarihinde açılır",
+          "Bu hediyeyi açmak için yarın tekrar gel!",
+          "Kilitli · 11 Ara",
+          "Tüm şartlar ve koşullar"
+        ]
+      }
+    },
+    {
+      "day": 12,
+      "date": "2026-12-12",
+      "location": "Noel Baba’nın Postanesi",
+      "type": "freespins",
+      "amount": {
+        "spins": 80,
+        "text": "80 FREESPİN"
+      },
+      "game": "Fruits 'n' Stars Holiday Edition",
+      "minDeposit": {
+        "value": 1300,
+        "currency": "TRY",
+        "text": "Min. yatırım: 1.300 TRY"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Çevrim şartı: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Son geçerlilik: 23:59, 12 Ara"
+      },
+      "raw": {
+        "active": [
+          "GÜN 12 · 12 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "80 FREESPİN",
+          "oyununda Fruits 'n' Stars Holiday Edition",
+          "Min. yatırım: 1.300 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 12 Ara",
+          "YATIR & AL",
+          "Tüm şartlar ve koşullar"
+        ],
+        "expired": [
+          "GÜN 12 · 12 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "80 FREESPİN",
+          "oyununda Fruits 'n' Stars Holiday Edition",
+          "Min. yatırım: 1.300 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 12 Ara",
+          "Hediyenin süresi doldu",
+          "Tüm şartlar ve koşullar"
+        ],
+        "locked": [
+          "GÜN 12 · 12 ARALIK",
+          "SÜRPRİZ HEDİYE",
+          "Aralık 12 tarihinde açılır",
+          "Bu hediyeyi açmak için yarın tekrar gel!",
+          "Kilitli · 12 Ara",
+          "Tüm şartlar ve koşullar"
+        ]
+      }
+    },
+    {
+      "day": 13,
+      "date": "2026-12-13",
+      "location": "Buz Sarayı",
+      "type": "freespins",
+      "amount": {
+        "spins": 67,
+        "text": "67 FREESPİN"
+      },
+      "game": "Yeti Quest",
+      "minDeposit": {
+        "value": 1300,
+        "currency": "TRY",
+        "text": "Min. yatırım: 1.300 TRY"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Çevrim şartı: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Son geçerlilik: 23:59, 13 Ara"
+      },
+      "raw": {
+        "active": [
+          "GÜN 13 · 13 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "67 FREESPİN",
+          "oyununda Yeti Quest",
+          "Min. yatırım: 1.300 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 13 Ara",
+          "YATIR & AL",
+          "Tüm şartlar ve koşullar"
+        ],
+        "expired": [
+          "GÜN 13 · 13 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "67 FREESPİN",
+          "oyununda Yeti Quest",
+          "Min. yatırım: 1.300 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 13 Ara",
+          "Hediyenin süresi doldu",
+          "Tüm şartlar ve koşullar"
+        ],
+        "locked": [
+          "GÜN 13 · 13 ARALIK",
+          "SÜRPRİZ HEDİYE",
+          "Aralık 13 tarihinde açılır",
+          "Bu hediyeyi açmak için yarın tekrar gel!",
+          "Kilitli · 13 Ara",
+          "Tüm şartlar ve koşullar"
+        ]
+      }
+    },
+    {
+      "day": 14,
+      "date": "2026-12-14",
+      "location": "Harikalar Dükkânı",
+      "type": "freespins",
+      "amount": {
+        "spins": 90,
+        "text": "90 FREESPİN"
+      },
+      "game": "25 Cookies: Hit the Bonus",
+      "minDeposit": {
+        "value": 1900,
+        "currency": "TRY",
+        "text": "Min. yatırım: 1.900 TRY"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Çevrim şartı: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Son geçerlilik: 23:59, 14 Ara"
+      },
+      "raw": {
+        "active": [
+          "GÜN 14 · 14 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "90 FREESPİN",
+          "oyununda 25 Cookies: Hit the Bonus",
+          "Min. yatırım: 1.900 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 14 Ara",
+          "YATIR & AL",
+          "Tüm şartlar ve koşullar"
+        ],
+        "expired": [
+          "GÜN 14 · 14 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "90 FREESPİN",
+          "oyununda 25 Cookies: Hit the Bonus",
+          "Min. yatırım: 1.900 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 14 Ara",
+          "Hediyenin süresi doldu",
+          "Tüm şartlar ve koşullar"
+        ],
+        "locked": [
+          "GÜN 14 · 14 ARALIK",
+          "SÜRPRİZ HEDİYE",
+          "Aralık 14 tarihinde açılır",
+          "Bu hediyeyi açmak için yarın tekrar gel!",
+          "Kilitli · 14 Ara",
+          "Tüm şartlar ve koşullar"
+        ]
+      }
+    },
+    {
+      "day": 15,
+      "date": "2026-12-15",
+      "location": "Noel Pazarı",
+      "type": "bonus",
+      "amount": {
+        "percent": 58,
+        "max": 28000,
+        "currency": "TRY",
+        "text": "%58 BONUS, 28.000 TRY’YE KADAR"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 1600,
+        "currency": "TRY",
+        "text": "Min. yatırım: 1.600 TRY"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Çevrim şartı: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Son geçerlilik: 23:59, 15 Ara"
+      },
+      "raw": {
+        "active": [
+          "GÜN 15 · 15 ARALIK",
+          "NOEL BONUSU",
+          "%58 BONUS, 28.000 TRY’YE KADAR",
+          "Min. yatırım: 1.600 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 15 Ara",
+          "YATIR & AL",
+          "Tüm şartlar ve koşullar"
+        ],
+        "expired": [
+          "GÜN 15 · 15 ARALIK",
+          "NOEL BONUSU",
+          "%58 BONUS, 28.000 TRY’YE KADAR",
+          "Min. yatırım: 1.600 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 15 Ara",
+          "Hediyenin süresi doldu",
+          "Tüm şartlar ve koşullar"
+        ],
+        "locked": [
+          "GÜN 15 · 15 ARALIK",
+          "SÜRPRİZ HEDİYE",
+          "Aralık 15 tarihinde açılır",
+          "Bu hediyeyi açmak için yarın tekrar gel!",
+          "Kilitli · 15 Ara",
+          "Tüm şartlar ve koşullar"
+        ]
+      }
+    },
+    {
+      "day": 16,
+      "date": "2026-12-16",
+      "location": "Kış Bahçesi",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 FREESPİN"
+      },
+      "game": "Christmas Carol Megaways",
+      "minDeposit": {
+        "value": 1600,
+        "currency": "TRY",
+        "text": "Min. yatırım: 1.600 TRY"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Çevrim şartı: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Son geçerlilik: 23:59, 16 Ara"
+      },
+      "raw": {
+        "active": [
+          "GÜN 16 · 16 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "82 FREESPİN",
+          "oyununda Christmas Carol Megaways",
+          "Min. yatırım: 1.600 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 16 Ara",
+          "YATIR & AL",
+          "Tüm şartlar ve koşullar"
+        ],
+        "expired": [
+          "GÜN 16 · 16 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "82 FREESPİN",
+          "oyununda Christmas Carol Megaways",
+          "Min. yatırım: 1.600 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 16 Ara",
+          "Hediyenin süresi doldu",
+          "Tüm şartlar ve koşullar"
+        ],
+        "locked": [
+          "GÜN 16 · 16 ARALIK",
+          "SÜRPRİZ HEDİYE",
+          "Aralık 16 tarihinde açılır",
+          "Bu hediyeyi açmak için yarın tekrar gel!",
+          "Kilitli · 16 Ara",
+          "Tüm şartlar ve koşullar"
+        ]
+      }
+    },
+    {
+      "day": 17,
+      "date": "2026-12-17",
+      "location": "Büyülü Orman",
+      "type": "bonus",
+      "amount": {
+        "percent": 45,
+        "max": 28000,
+        "currency": "TRY",
+        "text": "%45 BONUS, 28.000 TRY’YE KADAR"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 1300,
+        "currency": "TRY",
+        "text": "Min. yatırım: 1.300 TRY"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Çevrim şartı: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Son geçerlilik: 23:59, 17 Ara"
+      },
+      "raw": {
+        "active": [
+          "GÜN 17 · 17 ARALIK",
+          "NOEL BONUSU",
+          "%45 BONUS, 28.000 TRY’YE KADAR",
+          "Min. yatırım: 1.300 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 17 Ara",
+          "YATIR & AL",
+          "Tüm şartlar ve koşullar"
+        ],
+        "expired": [
+          "GÜN 17 · 17 ARALIK",
+          "NOEL BONUSU",
+          "%45 BONUS, 28.000 TRY’YE KADAR",
+          "Min. yatırım: 1.300 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 17 Ara",
+          "Hediyenin süresi doldu",
+          "Tüm şartlar ve koşullar"
+        ],
+        "locked": [
+          "GÜN 17 · 17 ARALIK",
+          "SÜRPRİZ HEDİYE",
+          "Aralık 17 tarihinde açılır",
+          "Bu hediyeyi açmak için yarın tekrar gel!",
+          "Kilitli · 17 Ara",
+          "Tüm şartlar ve koşullar"
+        ]
+      }
+    },
+    {
+      "day": 18,
+      "date": "2026-12-18",
+      "location": "Kar Mağarası",
+      "type": "freespins",
+      "amount": {
+        "spins": 63,
+        "text": "63 FREESPİN"
+      },
+      "game": "Big Bass Christmas – Frozen Lake",
+      "minDeposit": {
+        "value": 1300,
+        "currency": "TRY",
+        "text": "Min. yatırım: 1.300 TRY"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Çevrim şartı: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Son geçerlilik: 23:59, 18 Ara"
+      },
+      "raw": {
+        "active": [
+          "GÜN 18 · 18 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "63 FREESPİN",
+          "oyununda Big Bass Christmas – Frozen Lake",
+          "Min. yatırım: 1.300 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 18 Ara",
+          "YATIR & AL",
+          "Tüm şartlar ve koşullar"
+        ],
+        "expired": [
+          "GÜN 18 · 18 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "63 FREESPİN",
+          "oyununda Big Bass Christmas – Frozen Lake",
+          "Min. yatırım: 1.300 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 18 Ara",
+          "Hediyenin süresi doldu",
+          "Tüm şartlar ve koşullar"
+        ],
+        "locked": [
+          "GÜN 18 · 18 ARALIK",
+          "SÜRPRİZ HEDİYE",
+          "Aralık 18 tarihinde açılır",
+          "Bu hediyeyi açmak için yarın tekrar gel!",
+          "Kilitli · 18 Ara",
+          "Tüm şartlar ve koşullar"
+        ]
+      }
+    },
+    {
+      "day": 19,
+      "date": "2026-12-19",
+      "location": "Yıldızlı Buz Pisti",
+      "type": "freespins",
+      "amount": {
+        "spins": 95,
+        "text": "95 FREESPİN"
+      },
+      "game": "Fruits 'n' Stars Holiday Edition",
+      "minDeposit": {
+        "value": 1900,
+        "currency": "TRY",
+        "text": "Min. yatırım: 1.900 TRY"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Çevrim şartı: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Son geçerlilik: 23:59, 19 Ara"
+      },
+      "raw": {
+        "active": [
+          "GÜN 19 · 19 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "95 FREESPİN",
+          "oyununda Fruits 'n' Stars Holiday Edition",
+          "Min. yatırım: 1.900 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 19 Ara",
+          "YATIR & AL",
+          "Tüm şartlar ve koşullar"
+        ],
+        "expired": [
+          "GÜN 19 · 19 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "95 FREESPİN",
+          "oyununda Fruits 'n' Stars Holiday Edition",
+          "Min. yatırım: 1.900 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 19 Ara",
+          "Hediyenin süresi doldu",
+          "Tüm şartlar ve koşullar"
+        ],
+        "locked": [
+          "GÜN 19 · 19 ARALIK",
+          "SÜRPRİZ HEDİYE",
+          "Aralık 19 tarihinde açılır",
+          "Bu hediyeyi açmak için yarın tekrar gel!",
+          "Kilitli · 19 Ara",
+          "Tüm şartlar ve koşullar"
+        ]
+      }
+    },
+    {
+      "day": 20,
+      "date": "2026-12-20",
+      "location": "Kuzey Işıkları",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 FREESPİN"
+      },
+      "game": "Sweet Bonanza Xmas",
+      "minDeposit": {
+        "value": 1600,
+        "currency": "TRY",
+        "text": "Min. yatırım: 1.600 TRY"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Çevrim şartı: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Son geçerlilik: 23:59, 20 Ara"
+      },
+      "raw": {
+        "active": [
+          "GÜN 20 · 20 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "82 FREESPİN",
+          "oyununda Sweet Bonanza Xmas",
+          "Min. yatırım: 1.600 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 20 Ara",
+          "YATIR & AL",
+          "Tüm şartlar ve koşullar"
+        ],
+        "expired": [
+          "GÜN 20 · 20 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "82 FREESPİN",
+          "oyununda Sweet Bonanza Xmas",
+          "Min. yatırım: 1.600 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 20 Ara",
+          "Hediyenin süresi doldu",
+          "Tüm şartlar ve koşullar"
+        ],
+        "locked": [
+          "GÜN 20 · 20 ARALIK",
+          "SÜRPRİZ HEDİYE",
+          "Aralık 20 tarihinde açılır",
+          "Bu hediyeyi açmak için yarın tekrar gel!",
+          "Kilitli · 20 Ara",
+          "Tüm şartlar ve koşullar"
+        ]
+      }
+    },
+    {
+      "day": 21,
+      "date": "2026-12-21",
+      "location": "Gece Yarısı Ekspresi",
+      "type": "bonus",
+      "amount": {
+        "percent": 65,
+        "max": 28000,
+        "currency": "TRY",
+        "text": "%65 BONUS, 28.000 TRY’YE KADAR"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 1300,
+        "currency": "TRY",
+        "text": "Min. yatırım: 1.300 TRY"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Çevrim şartı: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Son geçerlilik: 23:59, 21 Ara"
+      },
+      "raw": {
+        "active": [
+          "GÜN 21 · 21 ARALIK",
+          "NOEL BONUSU",
+          "%65 BONUS, 28.000 TRY’YE KADAR",
+          "Min. yatırım: 1.300 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 21 Ara",
+          "YATIR & AL",
+          "Tüm şartlar ve koşullar"
+        ],
+        "expired": [
+          "GÜN 21 · 21 ARALIK",
+          "NOEL BONUSU",
+          "%65 BONUS, 28.000 TRY’YE KADAR",
+          "Min. yatırım: 1.300 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 21 Ara",
+          "Hediyenin süresi doldu",
+          "Tüm şartlar ve koşullar"
+        ],
+        "locked": [
+          "GÜN 21 · 21 ARALIK",
+          "SÜRPRİZ HEDİYE",
+          "Aralık 21 tarihinde açılır",
+          "Bu hediyeyi açmak için yarın tekrar gel!",
+          "Kilitli · 21 Ara",
+          "Tüm şartlar ve koşullar"
+        ]
+      }
+    },
+    {
+      "day": 22,
+      "date": "2026-12-22",
+      "location": "Karlı Kulübe",
+      "type": "freespins",
+      "amount": {
+        "spins": 62,
+        "text": "62 FREESPİN"
+      },
+      "game": "Yeti Quest",
+      "minDeposit": {
+        "value": 1200,
+        "currency": "TRY",
+        "text": "Min. yatırım: 1.200 TRY"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Çevrim şartı: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Son geçerlilik: 23:59, 22 Ara"
+      },
+      "raw": {
+        "active": [
+          "GÜN 22 · 22 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "62 FREESPİN",
+          "oyununda Yeti Quest",
+          "Min. yatırım: 1.200 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 22 Ara",
+          "YATIR & AL",
+          "Tüm şartlar ve koşullar"
+        ],
+        "expired": [
+          "GÜN 22 · 22 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "62 FREESPİN",
+          "oyununda Yeti Quest",
+          "Min. yatırım: 1.200 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 22 Ara",
+          "Hediyenin süresi doldu",
+          "Tüm şartlar ve koşullar"
+        ],
+        "locked": [
+          "GÜN 22 · 22 ARALIK",
+          "SÜRPRİZ HEDİYE",
+          "Aralık 22 tarihinde açılır",
+          "Bu hediyeyi açmak için yarın tekrar gel!",
+          "Kilitli · 22 Ara",
+          "Tüm şartlar ve koşullar"
+        ]
+      }
+    },
+    {
+      "day": 23,
+      "date": "2026-12-23",
+      "location": "Noel Baba’nın Kasası",
+      "type": "freespins",
+      "amount": {
+        "spins": 99,
+        "text": "99 FREESPİN"
+      },
+      "game": "25 Cookies: Hit the Bonus",
+      "minDeposit": {
+        "value": 1600,
+        "currency": "TRY",
+        "text": "Min. yatırım: 1.600 TRY"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Çevrim şartı: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Son geçerlilik: 23:59, 23 Ara"
+      },
+      "raw": {
+        "active": [
+          "GÜN 23 · 23 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "99 FREESPİN",
+          "oyununda 25 Cookies: Hit the Bonus",
+          "Min. yatırım: 1.600 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 23 Ara",
+          "YATIR & AL",
+          "Tüm şartlar ve koşullar"
+        ],
+        "expired": [
+          "GÜN 23 · 23 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "99 FREESPİN",
+          "oyununda 25 Cookies: Hit the Bonus",
+          "Min. yatırım: 1.600 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 23 Ara",
+          "Hediyenin süresi doldu",
+          "Tüm şartlar ve koşullar"
+        ],
+        "locked": [
+          "GÜN 23 · 23 ARALIK",
+          "SÜRPRİZ HEDİYE",
+          "Aralık 23 tarihinde açılır",
+          "Bu hediyeyi açmak için yarın tekrar gel!",
+          "Kilitli · 23 Ara",
+          "Tüm şartlar ve koşullar"
+        ]
+      }
+    },
+    {
+      "day": 24,
+      "date": "2026-12-24",
+      "location": "Gizli Oda",
+      "type": "bonus",
+      "amount": {
+        "percent": 80,
+        "max": 22000,
+        "currency": "TRY",
+        "text": "%80 BONUS, 22.000 TRY’YE KADAR"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 1900,
+        "currency": "TRY",
+        "text": "Min. yatırım: 1.900 TRY"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Çevrim şartı: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Son geçerlilik: 23:59, 24 Ara"
+      },
+      "raw": {
+        "active": [
+          "GÜN 24 · 24 ARALIK",
+          "NOEL BONUSU",
+          "%80 BONUS, 22.000 TRY’YE KADAR",
+          "Min. yatırım: 1.900 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 24 Ara",
+          "YATIR & AL",
+          "Tüm şartlar ve koşullar"
+        ],
+        "expired": [
+          "GÜN 24 · 24 ARALIK",
+          "NOEL BONUSU",
+          "%80 BONUS, 22.000 TRY’YE KADAR",
+          "Min. yatırım: 1.900 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 24 Ara",
+          "Hediyenin süresi doldu",
+          "Tüm şartlar ve koşullar"
+        ],
+        "locked": [
+          "GÜN 24 · 24 ARALIK",
+          "SÜRPRİZ HEDİYE",
+          "Aralık 24 tarihinde açılır",
+          "Bu hediyeyi açmak için yarın tekrar gel!",
+          "Kilitli · 24 Ara",
+          "Tüm şartlar ve koşullar"
+        ]
+      }
+    },
+    {
+      "day": 25,
+      "date": "2026-12-25",
+      "location": "Hediye Çuvalı",
+      "type": "freespins",
+      "amount": {
+        "spins": 101,
+        "text": "101 FREESPİN"
+      },
+      "game": "Christmas Carol Megaways",
+      "minDeposit": {
+        "value": 1900,
+        "currency": "TRY",
+        "text": "Min. yatırım: 1.900 TRY"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Çevrim şartı: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Son geçerlilik: 23:59, 25 Ara"
+      },
+      "raw": {
+        "active": [
+          "GÜN 25 · 25 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "101 FREESPİN",
+          "oyununda Christmas Carol Megaways",
+          "Min. yatırım: 1.900 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 25 Ara",
+          "YATIR & AL",
+          "Tüm şartlar ve koşullar"
+        ],
+        "expired": [
+          "GÜN 25 · 25 ARALIK",
+          "NOEL FREESPİNLERİ",
+          "101 FREESPİN",
+          "oyununda Christmas Carol Megaways",
+          "Min. yatırım: 1.900 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 25 Ara",
+          "Hediyenin süresi doldu",
+          "Tüm şartlar ve koşullar"
+        ],
+        "locked": [
+          "GÜN 25 · 25 ARALIK",
+          "SÜRPRİZ HEDİYE",
+          "Aralık 25 tarihinde açılır",
+          "Bu hediyeyi açmak için yarın tekrar gel!",
+          "Kilitli · 25 Ara",
+          "Tüm şartlar ve koşullar"
+        ]
+      }
+    },
+    {
+      "day": 26,
+      "date": "2026-12-26",
+      "location": "Jackpot Sandığı",
+      "type": "bonus",
+      "amount": {
+        "percent": 60,
+        "max": 33000,
+        "currency": "TRY",
+        "text": "%60 BONUS, 33.000 TRY’YE KADAR"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 1200,
+        "currency": "TRY",
+        "text": "Min. yatırım: 1.200 TRY"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Çevrim şartı: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Son geçerlilik: 23:59, 26 Ara"
+      },
+      "raw": {
+        "active": [
+          "GÜN 26 · 26 ARALIK",
+          "NOEL BONUSU",
+          "%60 BONUS, 33.000 TRY’YE KADAR",
+          "Min. yatırım: 1.200 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 26 Ara",
+          "YATIR & AL",
+          "Tüm şartlar ve koşullar"
+        ],
+        "expired": [
+          "GÜN 26 · 26 ARALIK",
+          "NOEL BONUSU",
+          "%60 BONUS, 33.000 TRY’YE KADAR",
+          "Min. yatırım: 1.200 TRY",
+          "Çevrim şartı: x25",
+          "Son geçerlilik: 23:59, 26 Ara",
+          "Hediyenin süresi doldu",
+          "Tüm şartlar ve koşullar"
+        ],
+        "locked": [
+          "GÜN 26 · 26 ARALIK",
+          "SÜRPRİZ HEDİYE",
+          "Aralık 26 tarihinde açılır",
+          "Bu hediyeyi açmak için yarın tekrar gel!",
+          "Kilitli · 26 Ara",
+          "Tüm şartlar ve koşullar"
+        ]
+      }
+    }
+  ]
+}

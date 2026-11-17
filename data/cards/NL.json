@@ -1,0 +1,1463 @@
+{
+  "market": "NL",
+  "uiLang": "NL",
+  "currency": "EUR",
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-12-01",
+      "location": "De geheimen van de kerstman",
+      "type": "bonus",
+      "amount": {
+        "percent": 70,
+        "max": 350,
+        "currency": "EUR",
+        "text": "70% TOT 350 €"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 35,
+        "currency": "EUR",
+        "text": "Min. storting: 35 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Inzetvereiste: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Geldig tot: 1 dec., 23:59"
+      },
+      "raw": {
+        "active": [
+          "DAG 1 · 1 DECEMBER",
+          "KERSTBONUS",
+          "70% TOT 350 €",
+          "Min. storting: 35 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 1 dec., 23:59",
+          "STORTEN & CLAIMEN",
+          "Volledige voorwaarden"
+        ],
+        "expired": [
+          "DAG 1 · 1 DECEMBER",
+          "KERSTBONUS",
+          "70% TOT 350 €",
+          "Min. storting: 35 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 23:59, 1 dec.",
+          "Cadeau verlopen",
+          "Volledige voorwaarden"
+        ],
+        "locked": [
+          "DAG 1 · 1 DECEMBER",
+          "VERRASSINGSCADEAU",
+          "Beschikbaar vanaf 1 december",
+          "Kom morgen terug om je cadeau te ontgrendelen!",
+          "Vergrendeld · 1 dec.",
+          "Volledige voorwaarden"
+        ]
+      }
+    },
+    {
+      "day": 2,
+      "date": "2026-12-02",
+      "location": "Jackpot onder de kerstboom",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 GRATIS SPINS"
+      },
+      "game": "Thunder Coins: Hold and Win",
+      "minDeposit": {
+        "value": 25,
+        "currency": "EUR",
+        "text": "Min. storting: 25 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Inzetvereiste: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Geldig tot: 2 dec., 23:59"
+      },
+      "raw": {
+        "active": [
+          "DAG 2 · 2 DECEMBER",
+          "KERST GRATIS SPINS",
+          "82 GRATIS SPINS",
+          "in Thunder Coins: Hold and Win",
+          "Min. storting: 25 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 2 dec., 23:59",
+          "STORTEN & CLAIMEN",
+          "Volledige voorwaarden"
+        ],
+        "expired": [
+          "DAG 2 · 2 DECEMBER",
+          "KERST GRATIS SPINS",
+          "82 GRATIS SPINS",
+          "in Thunder Coins: Hold and Win",
+          "Min. storting: 25 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 23:59, 2 dec.",
+          "Cadeau verlopen",
+          "Volledige voorwaarden"
+        ],
+        "locked": [
+          "DAG 2 · 2 DECEMBER",
+          "VERRASSINGSCADEAU",
+          "Beschikbaar vanaf 2 december",
+          "Kom morgen terug om je cadeau te ontgrendelen!",
+          "Vergrendeld · 2 dec.",
+          "Volledige voorwaarden"
+        ]
+      }
+    },
+    {
+      "day": 3,
+      "date": "2026-12-03",
+      "location": "Peperkoekhuisje",
+      "type": "bonus",
+      "amount": {
+        "percent": 55,
+        "max": 500,
+        "currency": "EUR",
+        "text": "55% TOT 500 €"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 30,
+        "currency": "EUR",
+        "text": "Min. storting: 30 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Inzetvereiste: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Geldig tot: 3 dec., 23:59"
+      },
+      "raw": {
+        "active": [
+          "DAG 3 · 3 DECEMBER",
+          "KERSTBONUS",
+          "55% TOT 500 €",
+          "Min. storting: 30 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 3 dec., 23:59",
+          "STORTEN & CLAIMEN",
+          "Volledige voorwaarden"
+        ],
+        "expired": [
+          "DAG 3 · 3 DECEMBER",
+          "KERSTBONUS",
+          "55% TOT 500 €",
+          "Min. storting: 30 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 23:59, 3 dec.",
+          "Cadeau verlopen",
+          "Volledige voorwaarden"
+        ],
+        "locked": [
+          "DAG 3 · 3 DECEMBER",
+          "VERRASSINGSCADEAU",
+          "Beschikbaar vanaf 3 december",
+          "Kom morgen terug om je cadeau te ontgrendelen!",
+          "Vergrendeld · 3 dec.",
+          "Volledige voorwaarden"
+        ]
+      }
+    },
+    {
+      "day": 4,
+      "date": "2026-12-04",
+      "location": "De cadeaufabriek van de kerstman",
+      "type": "freespins",
+      "amount": {
+        "spins": 65,
+        "text": "65 GRATIS SPINS"
+      },
+      "game": "Big Bass Splash",
+      "minDeposit": {
+        "value": 22,
+        "currency": "EUR",
+        "text": "Min. storting: 22 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Inzetvereiste: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Geldig tot: 4 dec., 23:59"
+      },
+      "raw": {
+        "active": [
+          "DAG 4 · 4 DECEMBER",
+          "KERST GRATIS SPINS",
+          "65 GRATIS SPINS",
+          "in Big Bass Splash",
+          "Min. storting: 22 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 4 dec., 23:59",
+          "STORTEN & CLAIMEN",
+          "Volledige voorwaarden"
+        ],
+        "expired": [
+          "DAG 4 · 4 DECEMBER",
+          "KERST GRATIS SPINS",
+          "65 GRATIS SPINS",
+          "in Big Bass Splash",
+          "Min. storting: 22 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 23:59, 4 dec.",
+          "Cadeau verlopen",
+          "Volledige voorwaarden"
+        ],
+        "locked": [
+          "DAG 4 · 4 DECEMBER",
+          "VERRASSINGSCADEAU",
+          "Beschikbaar vanaf 4 december",
+          "Kom morgen terug om je cadeau te ontgrendelen!",
+          "Vergrendeld · 4 dec.",
+          "Volledige voorwaarden"
+        ]
+      }
+    },
+    {
+      "day": 5,
+      "date": "2026-12-05",
+      "location": "Besneeuwd park",
+      "type": "freespins",
+      "amount": {
+        "spins": 75,
+        "text": "75 GRATIS SPINS"
+      },
+      "game": "John Hunter and the Book of Tut",
+      "minDeposit": {
+        "value": 25,
+        "currency": "EUR",
+        "text": "Min. storting: 25 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Inzetvereiste: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Geldig tot: 5 dec., 23:59"
+      },
+      "raw": {
+        "active": [
+          "DAG 5 · 5 DECEMBER",
+          "KERST GRATIS SPINS",
+          "75 GRATIS SPINS",
+          "in John Hunter and the Book of Tut",
+          "Min. storting: 25 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 5 dec., 23:59",
+          "STORTEN & CLAIMEN",
+          "Volledige voorwaarden"
+        ],
+        "expired": [
+          "DAG 5 · 5 DECEMBER",
+          "KERST GRATIS SPINS",
+          "75 GRATIS SPINS",
+          "in John Hunter and the Book of Tut",
+          "Min. storting: 25 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 23:59, 5 dec.",
+          "Cadeau verlopen",
+          "Volledige voorwaarden"
+        ],
+        "locked": [
+          "DAG 5 · 5 DECEMBER",
+          "VERRASSINGSCADEAU",
+          "Beschikbaar vanaf 5 december",
+          "Kom morgen terug om je cadeau te ontgrendelen!",
+          "Vergrendeld · 5 dec.",
+          "Volledige voorwaarden"
+        ]
+      }
+    },
+    {
+      "day": 6,
+      "date": "2026-12-06",
+      "location": "Speelgoedwinkel",
+      "type": "freespins",
+      "amount": {
+        "spins": 80,
+        "text": "80 GRATIS SPINS"
+      },
+      "game": "Gemhalla",
+      "minDeposit": {
+        "value": 30,
+        "currency": "EUR",
+        "text": "Min. storting: 30 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Inzetvereiste: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Geldig tot: 6 dec., 23:59"
+      },
+      "raw": {
+        "active": [
+          "DAG 6 · 6 DECEMBER",
+          "KERST GRATIS SPINS",
+          "80 GRATIS SPINS",
+          "in Gemhalla",
+          "Min. storting: 30 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 6 dec., 23:59",
+          "STORTEN & CLAIMEN",
+          "Volledige voorwaarden"
+        ],
+        "expired": [
+          "DAG 6 · 6 DECEMBER",
+          "KERST GRATIS SPINS",
+          "80 GRATIS SPINS",
+          "in Gemhalla",
+          "Min. storting: 30 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 23:59, 6 dec.",
+          "Cadeau verlopen",
+          "Volledige voorwaarden"
+        ],
+        "locked": [
+          "DAG 6 · 6 DECEMBER",
+          "VERRASSINGSCADEAU",
+          "Beschikbaar vanaf 6 december",
+          "Kom morgen terug om je cadeau te ontgrendelen!",
+          "Vergrendeld · 6 dec.",
+          "Volledige voorwaarden"
+        ]
+      }
+    },
+    {
+      "day": 7,
+      "date": "2026-12-07",
+      "location": "Kerstmanplein",
+      "type": "freespins",
+      "amount": {
+        "spins": 90,
+        "text": "90 GRATIS SPINS"
+      },
+      "game": "Bonanza Billion",
+      "minDeposit": {
+        "value": 35,
+        "currency": "EUR",
+        "text": "Min. storting: 35 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Inzetvereiste: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Geldig tot: 7 dec., 23:59"
+      },
+      "raw": {
+        "active": [
+          "DAG 7 · 7 DECEMBER",
+          "KERST GRATIS SPINS",
+          "90 GRATIS SPINS",
+          "in Bonanza Billion",
+          "Min. storting: 35 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 7 dec., 23:59",
+          "STORTEN & CLAIMEN",
+          "Volledige voorwaarden"
+        ],
+        "expired": [
+          "DAG 7 · 7 DECEMBER",
+          "KERST GRATIS SPINS",
+          "90 GRATIS SPINS",
+          "in Bonanza Billion",
+          "Min. storting: 35 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 23:59, 7 dec.",
+          "Cadeau verlopen",
+          "Volledige voorwaarden"
+        ],
+        "locked": [
+          "DAG 7 · 7 DECEMBER",
+          "VERRASSINGSCADEAU",
+          "Beschikbaar vanaf 7 december",
+          "Kom morgen terug om je cadeau te ontgrendelen!",
+          "Vergrendeld · 7 dec.",
+          "Volledige voorwaarden"
+        ]
+      }
+    },
+    {
+      "day": 8,
+      "date": "2026-12-08",
+      "location": "Kapel der wensen",
+      "type": "bonus",
+      "amount": {
+        "percent": 65,
+        "max": 650,
+        "currency": "EUR",
+        "text": "65% TOT 650 €"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 25,
+        "currency": "EUR",
+        "text": "Min. storting: 25 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Inzetvereiste: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Geldig tot: 8 dec., 23:59"
+      },
+      "raw": {
+        "active": [
+          "DAG 8 · 8 DECEMBER",
+          "KERSTBONUS",
+          "65% TOT 650 €",
+          "Min. storting: 25 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 8 dec., 23:59",
+          "STORTEN & CLAIMEN",
+          "Volledige voorwaarden"
+        ],
+        "expired": [
+          "DAG 8 · 8 DECEMBER",
+          "KERSTBONUS",
+          "65% TOT 650 €",
+          "Min. storting: 25 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 23:59, 8 dec.",
+          "Cadeau verlopen",
+          "Volledige voorwaarden"
+        ],
+        "locked": [
+          "DAG 8 · 8 DECEMBER",
+          "VERRASSINGSCADEAU",
+          "Beschikbaar vanaf 8 december",
+          "Kom morgen terug om je cadeau te ontgrendelen!",
+          "Vergrendeld · 8 dec.",
+          "Volledige voorwaarden"
+        ]
+      }
+    },
+    {
+      "day": 9,
+      "date": "2026-12-09",
+      "location": "Magische draaimolen",
+      "type": "freespins",
+      "amount": {
+        "spins": 74,
+        "text": "74 GRATIS SPINS"
+      },
+      "game": "Big Bass Christmas – Frozen Lake",
+      "minDeposit": {
+        "value": 30,
+        "currency": "EUR",
+        "text": "Min. storting: 30 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Inzetvereiste: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Geldig tot: 9 dec., 23:59"
+      },
+      "raw": {
+        "active": [
+          "DAG 9 · 9 DECEMBER",
+          "KERST GRATIS SPINS",
+          "74 GRATIS SPINS",
+          "in Big Bass Christmas – Frozen Lake",
+          "Min. storting: 30 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 9 dec., 23:59",
+          "STORTEN & CLAIMEN",
+          "Volledige voorwaarden"
+        ],
+        "expired": [
+          "DAG 9 · 9 DECEMBER",
+          "KERST GRATIS SPINS",
+          "74 GRATIS SPINS",
+          "in Big Bass Christmas – Frozen Lake",
+          "Min. storting: 30 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 23:59, 9 dec.",
+          "Cadeau verlopen",
+          "Volledige voorwaarden"
+        ],
+        "locked": [
+          "DAG 9 · 9 DECEMBER",
+          "VERRASSINGSCADEAU",
+          "Beschikbaar vanaf 9 december",
+          "Kom morgen terug om je cadeau te ontgrendelen!",
+          "Vergrendeld · 9 dec.",
+          "Volledige voorwaarden"
+        ]
+      }
+    },
+    {
+      "day": 10,
+      "date": "2026-12-10",
+      "location": "Gelukssteeg",
+      "type": "bonus",
+      "amount": {
+        "percent": 62,
+        "max": 700,
+        "currency": "EUR",
+        "text": "62% TOT 700 €"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 35,
+        "currency": "EUR",
+        "text": "Min. storting: 35 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Inzetvereiste: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Geldig tot: 10 dec., 23:59"
+      },
+      "raw": {
+        "active": [
+          "DAG 10 · 10 DECEMBER",
+          "KERSTBONUS",
+          "62% TOT 700 €",
+          "Min. storting: 35 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 10 dec., 23:59",
+          "STORTEN & CLAIMEN",
+          "Volledige voorwaarden"
+        ],
+        "expired": [
+          "DAG 10 · 10 DECEMBER",
+          "KERSTBONUS",
+          "62% TOT 700 €",
+          "Min. storting: 35 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 23:59, 10 dec.",
+          "Cadeau verlopen",
+          "Volledige voorwaarden"
+        ],
+        "locked": [
+          "DAG 10 · 10 DECEMBER",
+          "VERRASSINGSCADEAU",
+          "Beschikbaar vanaf 10 december",
+          "Kom morgen terug om je cadeau te ontgrendelen!",
+          "Vergrendeld · 10 dec.",
+          "Volledige voorwaarden"
+        ]
+      }
+    },
+    {
+      "day": 11,
+      "date": "2026-12-11",
+      "location": "De schat van de sneeuwman",
+      "type": "freespins",
+      "amount": {
+        "spins": 55,
+        "text": "55 GRATIS SPINS"
+      },
+      "game": "Thunder Coins: Hold and Win",
+      "minDeposit": {
+        "value": 22,
+        "currency": "EUR",
+        "text": "Min. storting: 22 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Inzetvereiste: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Geldig tot: 11 dec., 23:59"
+      },
+      "raw": {
+        "active": [
+          "DAG 11 · 11 DECEMBER",
+          "KERST GRATIS SPINS",
+          "55 GRATIS SPINS",
+          "in Thunder Coins: Hold and Win",
+          "Min. storting: 22 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 11 dec., 23:59",
+          "STORTEN & CLAIMEN",
+          "Volledige voorwaarden"
+        ],
+        "expired": [
+          "DAG 11 · 11 DECEMBER",
+          "KERST GRATIS SPINS",
+          "55 GRATIS SPINS",
+          "in Thunder Coins: Hold and Win",
+          "Min. storting: 22 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 23:59, 11 dec.",
+          "Cadeau verlopen",
+          "Volledige voorwaarden"
+        ],
+        "locked": [
+          "DAG 11 · 11 DECEMBER",
+          "VERRASSINGSCADEAU",
+          "Beschikbaar vanaf 11 december",
+          "Kom morgen terug om je cadeau te ontgrendelen!",
+          "Vergrendeld · 11 dec.",
+          "Volledige voorwaarden"
+        ]
+      }
+    },
+    {
+      "day": 12,
+      "date": "2026-12-12",
+      "location": "Het postkantoor van de kerstman",
+      "type": "freespins",
+      "amount": {
+        "spins": 80,
+        "text": "80 GRATIS SPINS"
+      },
+      "game": "Fruits 'n' Stars Holiday Edition",
+      "minDeposit": {
+        "value": 25,
+        "currency": "EUR",
+        "text": "Min. storting: 25 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Inzetvereiste: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Geldig tot: 12 dec., 23:59"
+      },
+      "raw": {
+        "active": [
+          "DAG 12 · 12 DECEMBER",
+          "KERST GRATIS SPINS",
+          "80 GRATIS SPINS",
+          "in Fruits 'n' Stars Holiday Edition",
+          "Min. storting: 25 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 12 dec., 23:59",
+          "STORTEN & CLAIMEN",
+          "Volledige voorwaarden"
+        ],
+        "expired": [
+          "DAG 12 · 12 DECEMBER",
+          "KERST GRATIS SPINS",
+          "80 GRATIS SPINS",
+          "in Fruits 'n' Stars Holiday Edition",
+          "Min. storting: 25 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 23:59, 12 dec.",
+          "Cadeau verlopen",
+          "Volledige voorwaarden"
+        ],
+        "locked": [
+          "DAG 12 · 12 DECEMBER",
+          "VERRASSINGSCADEAU",
+          "Beschikbaar vanaf 12 december",
+          "Kom morgen terug om je cadeau te ontgrendelen!",
+          "Vergrendeld · 12 dec.",
+          "Volledige voorwaarden"
+        ]
+      }
+    },
+    {
+      "day": 13,
+      "date": "2026-12-13",
+      "location": "IJspaleis",
+      "type": "freespins",
+      "amount": {
+        "spins": 67,
+        "text": "67 GRATIS SPINS"
+      },
+      "game": "Yeti Quest",
+      "minDeposit": {
+        "value": 25,
+        "currency": "EUR",
+        "text": "Min. storting: 25 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Inzetvereiste: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Geldig tot: 13 dec., 23:59"
+      },
+      "raw": {
+        "active": [
+          "DAG 13 · 13 DECEMBER",
+          "KERST GRATIS SPINS",
+          "67 GRATIS SPINS",
+          "in Yeti Quest",
+          "Min. storting: 25 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 13 dec., 23:59",
+          "STORTEN & CLAIMEN",
+          "Volledige voorwaarden"
+        ],
+        "expired": [
+          "DAG 13 · 13 DECEMBER",
+          "KERST GRATIS SPINS",
+          "67 GRATIS SPINS",
+          "in Yeti Quest",
+          "Min. storting: 25 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 23:59, 13 dec.",
+          "Cadeau verlopen",
+          "Volledige voorwaarden"
+        ],
+        "locked": [
+          "DAG 13 · 13 DECEMBER",
+          "VERRASSINGSCADEAU",
+          "Beschikbaar vanaf 13 december",
+          "Kom morgen terug om je cadeau te ontgrendelen!",
+          "Vergrendeld · 13 dec.",
+          "Volledige voorwaarden"
+        ]
+      }
+    },
+    {
+      "day": 14,
+      "date": "2026-12-14",
+      "location": "Wonderwinkel",
+      "type": "freespins",
+      "amount": {
+        "spins": 90,
+        "text": "90 GRATIS SPINS"
+      },
+      "game": "25 Cookies: Hit the Bonus",
+      "minDeposit": {
+        "value": 35,
+        "currency": "EUR",
+        "text": "Min. storting: 35 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Inzetvereiste: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Geldig tot: 14 dec., 23:59"
+      },
+      "raw": {
+        "active": [
+          "DAG 14 · 14 DECEMBER",
+          "KERST GRATIS SPINS",
+          "90 GRATIS SPINS",
+          "in 25 Cookies: Hit the Bonus",
+          "Min. storting: 35 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 14 dec., 23:59",
+          "STORTEN & CLAIMEN",
+          "Volledige voorwaarden"
+        ],
+        "expired": [
+          "DAG 14 · 14 DECEMBER",
+          "KERST GRATIS SPINS",
+          "90 GRATIS SPINS",
+          "in 25 Cookies: Hit the Bonus",
+          "Min. storting: 35 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 23:59, 14 dec.",
+          "Cadeau verlopen",
+          "Volledige voorwaarden"
+        ],
+        "locked": [
+          "DAG 14 · 14 DECEMBER",
+          "VERRASSINGSCADEAU",
+          "Beschikbaar vanaf 14 december",
+          "Kom morgen terug om je cadeau te ontgrendelen!",
+          "Vergrendeld · 14 dec.",
+          "Volledige voorwaarden"
+        ]
+      }
+    },
+    {
+      "day": 15,
+      "date": "2026-12-15",
+      "location": "Kerstmarkt",
+      "type": "bonus",
+      "amount": {
+        "percent": 58,
+        "max": 500,
+        "currency": "EUR",
+        "text": "58% TOT 500 €"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 30,
+        "currency": "EUR",
+        "text": "Min. storting: 30 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Inzetvereiste: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Geldig tot: 15 dec., 23:59"
+      },
+      "raw": {
+        "active": [
+          "DAG 15 · 15 DECEMBER",
+          "KERSTBONUS",
+          "58% TOT 500 €",
+          "Min. storting: 30 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 15 dec., 23:59",
+          "STORTEN & CLAIMEN",
+          "Volledige voorwaarden"
+        ],
+        "expired": [
+          "DAG 15 · 15 DECEMBER",
+          "KERSTBONUS",
+          "58% TOT 500 €",
+          "Min. storting: 30 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 23:59, 15 dec.",
+          "Cadeau verlopen",
+          "Volledige voorwaarden"
+        ],
+        "locked": [
+          "DAG 15 · 15 DECEMBER",
+          "VERRASSINGSCADEAU",
+          "Beschikbaar vanaf 15 december",
+          "Kom morgen terug om je cadeau te ontgrendelen!",
+          "Vergrendeld · 15 dec.",
+          "Volledige voorwaarden"
+        ]
+      }
+    },
+    {
+      "day": 16,
+      "date": "2026-12-16",
+      "location": "Wintertuin",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 GRATIS SPINS"
+      },
+      "game": "Christmas Carol Megaways",
+      "minDeposit": {
+        "value": 30,
+        "currency": "EUR",
+        "text": "Min. storting: 30 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Inzetvereiste: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Geldig tot: 16 dec., 23:59"
+      },
+      "raw": {
+        "active": [
+          "DAG 16 · 16 DECEMBER",
+          "KERST GRATIS SPINS",
+          "82 GRATIS SPINS",
+          "in Christmas Carol Megaways",
+          "Min. storting: 30 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 16 dec., 23:59",
+          "STORTEN & CLAIMEN",
+          "Volledige voorwaarden"
+        ],
+        "expired": [
+          "DAG 16 · 16 DECEMBER",
+          "KERST GRATIS SPINS",
+          "82 GRATIS SPINS",
+          "in Christmas Carol Megaways",
+          "Min. storting: 30 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 23:59, 16 dec.",
+          "Cadeau verlopen",
+          "Volledige voorwaarden"
+        ],
+        "locked": [
+          "DAG 16 · 16 DECEMBER",
+          "VERRASSINGSCADEAU",
+          "Beschikbaar vanaf 16 december",
+          "Kom morgen terug om je cadeau te ontgrendelen!",
+          "Vergrendeld · 16 dec.",
+          "Volledige voorwaarden"
+        ]
+      }
+    },
+    {
+      "day": 17,
+      "date": "2026-12-17",
+      "location": "Betoverd bos",
+      "type": "bonus",
+      "amount": {
+        "percent": 45,
+        "max": 500,
+        "currency": "EUR",
+        "text": "45% TOT 500 €"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 25,
+        "currency": "EUR",
+        "text": "Min. storting: 25 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Inzetvereiste: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Geldig tot: 17 dec., 23:59"
+      },
+      "raw": {
+        "active": [
+          "DAG 17 · 17 DECEMBER",
+          "KERSTBONUS",
+          "45% TOT 500 €",
+          "Min. storting: 25 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 17 dec., 23:59",
+          "STORTEN & CLAIMEN",
+          "Volledige voorwaarden"
+        ],
+        "expired": [
+          "DAG 17 · 17 DECEMBER",
+          "KERSTBONUS",
+          "45% TOT 500 €",
+          "Min. storting: 25 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 23:59, 17 dec.",
+          "Cadeau verlopen",
+          "Volledige voorwaarden"
+        ],
+        "locked": [
+          "DAG 17 · 17 DECEMBER",
+          "VERRASSINGSCADEAU",
+          "Beschikbaar vanaf 17 december",
+          "Kom morgen terug om je cadeau te ontgrendelen!",
+          "Vergrendeld · 17 dec.",
+          "Volledige voorwaarden"
+        ]
+      }
+    },
+    {
+      "day": 18,
+      "date": "2026-12-18",
+      "location": "Sneeuwgrot",
+      "type": "freespins",
+      "amount": {
+        "spins": 63,
+        "text": "63 GRATIS SPINS"
+      },
+      "game": "Big Bass Christmas – Frozen Lake",
+      "minDeposit": {
+        "value": 25,
+        "currency": "EUR",
+        "text": "Min. storting: 25 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Inzetvereiste: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Geldig tot: 18 dec., 23:59"
+      },
+      "raw": {
+        "active": [
+          "DAG 18 · 18 DECEMBER",
+          "KERST GRATIS SPINS",
+          "63 GRATIS SPINS",
+          "in Big Bass Christmas – Frozen Lake",
+          "Min. storting: 25 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 18 dec., 23:59",
+          "STORTEN & CLAIMEN",
+          "Volledige voorwaarden"
+        ],
+        "expired": [
+          "DAG 18 · 18 DECEMBER",
+          "KERST GRATIS SPINS",
+          "63 GRATIS SPINS",
+          "in Big Bass Christmas – Frozen Lake",
+          "Min. storting: 25 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 23:59, 18 dec.",
+          "Cadeau verlopen",
+          "Volledige voorwaarden"
+        ],
+        "locked": [
+          "DAG 18 · 18 DECEMBER",
+          "VERRASSINGSCADEAU",
+          "Beschikbaar vanaf 18 december",
+          "Kom morgen terug om je cadeau te ontgrendelen!",
+          "Vergrendeld · 18 dec.",
+          "Volledige voorwaarden"
+        ]
+      }
+    },
+    {
+      "day": 19,
+      "date": "2026-12-19",
+      "location": "Sterrenijsbaan",
+      "type": "freespins",
+      "amount": {
+        "spins": 95,
+        "text": "95 GRATIS SPINS"
+      },
+      "game": "Fruits 'n' Stars Holiday Edition",
+      "minDeposit": {
+        "value": 35,
+        "currency": "EUR",
+        "text": "Min. storting: 35 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Inzetvereiste: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Geldig tot: 19 dec., 23:59"
+      },
+      "raw": {
+        "active": [
+          "DAG 19 · 19 DECEMBER",
+          "KERST GRATIS SPINS",
+          "95 GRATIS SPINS",
+          "in Fruits 'n' Stars Holiday Edition",
+          "Min. storting: 35 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 19 dec., 23:59",
+          "STORTEN & CLAIMEN",
+          "Volledige voorwaarden"
+        ],
+        "expired": [
+          "DAG 19 · 19 DECEMBER",
+          "KERST GRATIS SPINS",
+          "95 GRATIS SPINS",
+          "in Fruits 'n' Stars Holiday Edition",
+          "Min. storting: 35 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 23:59, 19 dec.",
+          "Cadeau verlopen",
+          "Volledige voorwaarden"
+        ],
+        "locked": [
+          "DAG 19 · 19 DECEMBER",
+          "VERRASSINGSCADEAU",
+          "Beschikbaar vanaf 19 december",
+          "Kom morgen terug om je cadeau te ontgrendelen!",
+          "Vergrendeld · 19 dec.",
+          "Volledige voorwaarden"
+        ]
+      }
+    },
+    {
+      "day": 20,
+      "date": "2026-12-20",
+      "location": "Noorderlicht",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 GRATIS SPINS"
+      },
+      "game": "Sweet Bonanza Xmas",
+      "minDeposit": {
+        "value": 30,
+        "currency": "EUR",
+        "text": "Min. storting: 30 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Inzetvereiste: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Geldig tot: 20 dec., 23:59"
+      },
+      "raw": {
+        "active": [
+          "DAG 20 · 20 DECEMBER",
+          "KERST GRATIS SPINS",
+          "82 GRATIS SPINS",
+          "in Sweet Bonanza Xmas",
+          "Min. storting: 30 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 20 dec., 23:59",
+          "STORTEN & CLAIMEN",
+          "Volledige voorwaarden"
+        ],
+        "expired": [
+          "DAG 20 · 20 DECEMBER",
+          "KERST GRATIS SPINS",
+          "82 GRATIS SPINS",
+          "in Sweet Bonanza Xmas",
+          "Min. storting: 30 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 23:59, 20 dec.",
+          "Cadeau verlopen",
+          "Volledige voorwaarden"
+        ],
+        "locked": [
+          "DAG 20 · 20 DECEMBER",
+          "VERRASSINGSCADEAU",
+          "Beschikbaar vanaf 20 december",
+          "Kom morgen terug om je cadeau te ontgrendelen!",
+          "Vergrendeld · 20 dec.",
+          "Volledige voorwaarden"
+        ]
+      }
+    },
+    {
+      "day": 21,
+      "date": "2026-12-21",
+      "location": "Middernachtexpress",
+      "type": "bonus",
+      "amount": {
+        "percent": 65,
+        "max": 500,
+        "currency": "EUR",
+        "text": "65% TOT 500 €"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 25,
+        "currency": "EUR",
+        "text": "Min. storting: 25 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Inzetvereiste: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Geldig tot: 21 dec., 23:59"
+      },
+      "raw": {
+        "active": [
+          "DAG 21 · 21 DECEMBER",
+          "KERSTBONUS",
+          "65% TOT 500 €",
+          "Min. storting: 25 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 21 dec., 23:59",
+          "STORTEN & CLAIMEN",
+          "Volledige voorwaarden"
+        ],
+        "expired": [
+          "DAG 21 · 21 DECEMBER",
+          "KERSTBONUS",
+          "65% TOT 500 €",
+          "Min. storting: 25 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 23:59, 21 dec.",
+          "Cadeau verlopen",
+          "Volledige voorwaarden"
+        ],
+        "locked": [
+          "DAG 21 · 21 DECEMBER",
+          "VERRASSINGSCADEAU",
+          "Beschikbaar vanaf 21 december",
+          "Kom morgen terug om je cadeau te ontgrendelen!",
+          "Vergrendeld · 21 dec.",
+          "Volledige voorwaarden"
+        ]
+      }
+    },
+    {
+      "day": 22,
+      "date": "2026-12-22",
+      "location": "Besneeuwd huisje",
+      "type": "freespins",
+      "amount": {
+        "spins": 62,
+        "text": "62 GRATIS SPINS"
+      },
+      "game": "Yeti Quest",
+      "minDeposit": {
+        "value": 22,
+        "currency": "EUR",
+        "text": "Min. storting: 22 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Inzetvereiste: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Geldig tot: 22 dec., 23:59"
+      },
+      "raw": {
+        "active": [
+          "DAG 22 · 22 DECEMBER",
+          "KERST GRATIS SPINS",
+          "62 GRATIS SPINS",
+          "in Yeti Quest",
+          "Min. storting: 22 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 22 dec., 23:59",
+          "STORTEN & CLAIMEN",
+          "Volledige voorwaarden"
+        ],
+        "expired": [
+          "DAG 22 · 22 DECEMBER",
+          "KERST GRATIS SPINS",
+          "62 GRATIS SPINS",
+          "in Yeti Quest",
+          "Min. storting: 22 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 23:59, 22 dec.",
+          "Cadeau verlopen",
+          "Volledige voorwaarden"
+        ],
+        "locked": [
+          "DAG 22 · 22 DECEMBER",
+          "VERRASSINGSCADEAU",
+          "Beschikbaar vanaf 22 december",
+          "Kom morgen terug om je cadeau te ontgrendelen!",
+          "Vergrendeld · 22 dec.",
+          "Volledige voorwaarden"
+        ]
+      }
+    },
+    {
+      "day": 23,
+      "date": "2026-12-23",
+      "location": "De kluis van de kerstman",
+      "type": "freespins",
+      "amount": {
+        "spins": 99,
+        "text": "99 GRATIS SPINS"
+      },
+      "game": "25 Cookies: Hit the Bonus",
+      "minDeposit": {
+        "value": 30,
+        "currency": "EUR",
+        "text": "Min. storting: 30 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Inzetvereiste: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Geldig tot: 23 dec., 23:59"
+      },
+      "raw": {
+        "active": [
+          "DAG 23 · 23 DECEMBER",
+          "KERST GRATIS SPINS",
+          "99 GRATIS SPINS",
+          "in 25 Cookies: Hit the Bonus",
+          "Min. storting: 30 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 23 dec., 23:59",
+          "STORTEN & CLAIMEN",
+          "Volledige voorwaarden"
+        ],
+        "expired": [
+          "DAG 23 · 23 DECEMBER",
+          "KERST GRATIS SPINS",
+          "99 GRATIS SPINS",
+          "in 25 Cookies: Hit the Bonus",
+          "Min. storting: 30 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 23:59, 23 dec.",
+          "Cadeau verlopen",
+          "Volledige voorwaarden"
+        ],
+        "locked": [
+          "DAG 23 · 23 DECEMBER",
+          "VERRASSINGSCADEAU",
+          "Beschikbaar vanaf 23 december",
+          "Kom morgen terug om je cadeau te ontgrendelen!",
+          "Vergrendeld · 23 dec.",
+          "Volledige voorwaarden"
+        ]
+      }
+    },
+    {
+      "day": 24,
+      "date": "2026-12-24",
+      "location": "Geheime kamer",
+      "type": "bonus",
+      "amount": {
+        "percent": 80,
+        "max": 400,
+        "currency": "EUR",
+        "text": "80% TOT 400 €"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 35,
+        "currency": "EUR",
+        "text": "Min. storting: 35 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Inzetvereiste: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Geldig tot: 24 dec., 23:59"
+      },
+      "raw": {
+        "active": [
+          "DAG 24 · 24 DECEMBER",
+          "KERSTBONUS",
+          "80% TOT 400 €",
+          "Min. storting: 35 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 24 dec., 23:59",
+          "STORTEN & CLAIMEN",
+          "Volledige voorwaarden"
+        ],
+        "expired": [
+          "DAG 24 · 24 DECEMBER",
+          "KERSTBONUS",
+          "80% TOT 400 €",
+          "Min. storting: 35 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 23:59, 24 dec.",
+          "Cadeau verlopen",
+          "Volledige voorwaarden"
+        ],
+        "locked": [
+          "DAG 24 · 24 DECEMBER",
+          "VERRASSINGSCADEAU",
+          "Beschikbaar vanaf 24 december",
+          "Kom morgen terug om je cadeau te ontgrendelen!",
+          "Vergrendeld · 24 dec.",
+          "Volledige voorwaarden"
+        ]
+      }
+    },
+    {
+      "day": 25,
+      "date": "2026-12-25",
+      "location": "Cadeauzak",
+      "type": "freespins",
+      "amount": {
+        "spins": 101,
+        "text": "101 GRATIS SPINS"
+      },
+      "game": "Christmas Carol Megaways",
+      "minDeposit": {
+        "value": 35,
+        "currency": "EUR",
+        "text": "Min. storting: 35 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Inzetvereiste: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Geldig tot: 25 dec., 23:59"
+      },
+      "raw": {
+        "active": [
+          "DAG 25 · 25 DECEMBER",
+          "KERST GRATIS SPINS",
+          "101 GRATIS SPINS",
+          "in Christmas Carol Megaways",
+          "Min. storting: 35 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 25 dec., 23:59",
+          "STORTEN & CLAIMEN",
+          "Volledige voorwaarden"
+        ],
+        "expired": [
+          "DAG 25 · 25 DECEMBER",
+          "KERST GRATIS SPINS",
+          "101 GRATIS SPINS",
+          "in Christmas Carol Megaways",
+          "Min. storting: 35 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 23:59, 25 dec.",
+          "Cadeau verlopen",
+          "Volledige voorwaarden"
+        ],
+        "locked": [
+          "DAG 25 · 25 DECEMBER",
+          "VERRASSINGSCADEAU",
+          "Beschikbaar vanaf 25 december",
+          "Kom morgen terug om je cadeau te ontgrendelen!",
+          "Vergrendeld · 25 dec.",
+          "Volledige voorwaarden"
+        ]
+      }
+    },
+    {
+      "day": 26,
+      "date": "2026-12-26",
+      "location": "Jackpotkist",
+      "type": "bonus",
+      "amount": {
+        "percent": 60,
+        "max": 600,
+        "currency": "EUR",
+        "text": "60% TOT 600 €"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 22,
+        "currency": "EUR",
+        "text": "Min. storting: 22 €"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Inzetvereiste: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Geldig tot: 26 dec., 23:59"
+      },
+      "raw": {
+        "active": [
+          "DAG 26 · 26 DECEMBER",
+          "KERSTBONUS",
+          "60% TOT 600 €",
+          "Min. storting: 22 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 26 dec., 23:59",
+          "STORTEN & CLAIMEN",
+          "Volledige voorwaarden"
+        ],
+        "expired": [
+          "DAG 26 · 26 DECEMBER",
+          "KERSTBONUS",
+          "60% TOT 600 €",
+          "Min. storting: 22 €",
+          "Inzetvereiste: x25",
+          "Geldig tot: 23:59, 26 dec.",
+          "Cadeau verlopen",
+          "Volledige voorwaarden"
+        ],
+        "locked": [
+          "DAG 26 · 26 DECEMBER",
+          "VERRASSINGSCADEAU",
+          "Beschikbaar vanaf 26 december",
+          "Kom morgen terug om je cadeau te ontgrendelen!",
+          "Vergrendeld · 26 dec.",
+          "Volledige voorwaarden"
+        ]
+      }
+    }
+  ]
+}

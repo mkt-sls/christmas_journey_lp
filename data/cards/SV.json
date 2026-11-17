@@ -1,0 +1,1463 @@
+{
+  "market": "SV",
+  "uiLang": "SV",
+  "currency": "SEK",
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-12-01",
+      "location": "Tomtens hemligheter",
+      "type": "bonus",
+      "amount": {
+        "percent": 70,
+        "max": 3700,
+        "currency": "SEK",
+        "text": "70% UPP TILL 3 700 SEK"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 400,
+        "currency": "SEK",
+        "text": "Min. insättning: 400 SEK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsättningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Giltig till: 23:59, 1 dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 1 · 1 DECEMBER",
+          "JULBONUS",
+          "70% UPP TILL 3 700 SEK",
+          "Min. insättning: 400 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 1 dec.",
+          "SÄTT IN & HÄMTA",
+          "Fullständiga villkor"
+        ],
+        "expired": [
+          "DAG 1 · 1 DECEMBER",
+          "JULBONUS",
+          "70% UPP TILL 3 700 SEK",
+          "Min. insättning: 400 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 1 dec.",
+          "Gåvan har gått ut",
+          "Fullständiga villkor"
+        ],
+        "locked": [
+          "DAG 1 · 1 DECEMBER",
+          "ÖVERRASKNINGSPRESENT",
+          "Öppnas 1 december",
+          "Kom tillbaka imorgon för att låsa upp presenten!",
+          "Låst · 1 dec.",
+          "Fullständiga villkor"
+        ]
+      }
+    },
+    {
+      "day": 2,
+      "date": "2026-12-02",
+      "location": "Jackpot under granen",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 FREESPINS"
+      },
+      "game": "Thunder Coins: Hold and Win",
+      "minDeposit": {
+        "value": 280,
+        "currency": "SEK",
+        "text": "Min. insättning: 280 SEK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsättningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Giltig till: 23:59, 2 dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 2 · 2 DECEMBER",
+          "JUL-FREESPINS",
+          "82 FREESPINS",
+          "i Thunder Coins: Hold and Win",
+          "Min. insättning: 280 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 2 dec.",
+          "SÄTT IN & HÄMTA",
+          "Fullständiga villkor"
+        ],
+        "expired": [
+          "DAG 2 · 2 DECEMBER",
+          "JUL-FREESPINS",
+          "82 FREESPINS",
+          "i Thunder Coins: Hold and Win",
+          "Min. insättning: 280 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 2 dec.",
+          "Gåvan har gått ut",
+          "Fullständiga villkor"
+        ],
+        "locked": [
+          "DAG 2 · 2 DECEMBER",
+          "ÖVERRASKNINGSPRESENT",
+          "Öppnas 2 december",
+          "Kom tillbaka imorgon för att låsa upp presenten!",
+          "Låst · 2 dec.",
+          "Fullständiga villkor"
+        ]
+      }
+    },
+    {
+      "day": 3,
+      "date": "2026-12-03",
+      "location": "Pepparkakshuset",
+      "type": "bonus",
+      "amount": {
+        "percent": 55,
+        "max": 5000,
+        "currency": "SEK",
+        "text": "55% UPP TILL 5 000 SEK"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 350,
+        "currency": "SEK",
+        "text": "Min. insättning: 350 SEK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsättningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Giltig till: 23:59, 3 dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 3 · 3 DECEMBER",
+          "JULBONUS",
+          "55% UPP TILL 5 000 SEK",
+          "Min. insättning: 350 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 3 dec.",
+          "SÄTT IN & HÄMTA",
+          "Fullständiga villkor"
+        ],
+        "expired": [
+          "DAG 3 · 3 DECEMBER",
+          "JULBONUS",
+          "55% UPP TILL 5 000 SEK",
+          "Min. insättning: 350 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 3 dec.",
+          "Gåvan har gått ut",
+          "Fullständiga villkor"
+        ],
+        "locked": [
+          "DAG 3 · 3 DECEMBER",
+          "ÖVERRASKNINGSPRESENT",
+          "Öppnas 3 december",
+          "Kom tillbaka imorgon för att låsa upp presenten!",
+          "Låst · 3 dec.",
+          "Fullständiga villkor"
+        ]
+      }
+    },
+    {
+      "day": 4,
+      "date": "2026-12-04",
+      "location": "Tomtens presentfabrik",
+      "type": "freespins",
+      "amount": {
+        "spins": 65,
+        "text": "65 FREESPINS"
+      },
+      "game": "Big Bass Splash",
+      "minDeposit": {
+        "value": 230,
+        "currency": "SEK",
+        "text": "Min. insättning: 230 SEK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsättningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Giltig till: 23:59, 4 dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 4 · 4 DECEMBER",
+          "JUL-FREESPINS",
+          "65 FREESPINS",
+          "i Big Bass Splash",
+          "Min. insättning: 230 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 4 dec.",
+          "SÄTT IN & HÄMTA",
+          "Fullständiga villkor"
+        ],
+        "expired": [
+          "DAG 4 · 4 DECEMBER",
+          "JUL-FREESPINS",
+          "65 FREESPINS",
+          "i Big Bass Splash",
+          "Min. insättning: 230 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 4 dec.",
+          "Gåvan har gått ut",
+          "Fullständiga villkor"
+        ],
+        "locked": [
+          "DAG 4 · 4 DECEMBER",
+          "ÖVERRASKNINGSPRESENT",
+          "Öppnas 4 december",
+          "Kom tillbaka imorgon för att låsa upp presenten!",
+          "Låst · 4 dec.",
+          "Fullständiga villkor"
+        ]
+      }
+    },
+    {
+      "day": 5,
+      "date": "2026-12-05",
+      "location": "Snötäckt park",
+      "type": "freespins",
+      "amount": {
+        "spins": 75,
+        "text": "75 FREESPINS"
+      },
+      "game": "John Hunter and the Book of Tut",
+      "minDeposit": {
+        "value": 280,
+        "currency": "SEK",
+        "text": "Min. insättning: 280 SEK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsättningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Giltig till: 23:59, 5 dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 5 · 5 DECEMBER",
+          "JUL-FREESPINS",
+          "75 FREESPINS",
+          "i John Hunter and the Book of Tut",
+          "Min. insättning: 280 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 5 dec.",
+          "SÄTT IN & HÄMTA",
+          "Fullständiga villkor"
+        ],
+        "expired": [
+          "DAG 5 · 5 DECEMBER",
+          "JUL-FREESPINS",
+          "75 FREESPINS",
+          "i John Hunter and the Book of Tut",
+          "Min. insättning: 280 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 5 dec.",
+          "Gåvan har gått ut",
+          "Fullständiga villkor"
+        ],
+        "locked": [
+          "DAG 5 · 5 DECEMBER",
+          "ÖVERRASKNINGSPRESENT",
+          "Öppnas 5 december",
+          "Kom tillbaka imorgon för att låsa upp presenten!",
+          "Låst · 5 dec.",
+          "Fullständiga villkor"
+        ]
+      }
+    },
+    {
+      "day": 6,
+      "date": "2026-12-06",
+      "location": "Leksaksbutik",
+      "type": "freespins",
+      "amount": {
+        "spins": 80,
+        "text": "80 FREESPINS"
+      },
+      "game": "Gemhalla",
+      "minDeposit": {
+        "value": 350,
+        "currency": "SEK",
+        "text": "Min. insättning: 350 SEK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsättningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Giltig till: 23:59, 6 dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 6 · 6 DECEMBER",
+          "JUL-FREESPINS",
+          "80 FREESPINS",
+          "i Gemhalla",
+          "Min. insättning: 350 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 6 dec.",
+          "SÄTT IN & HÄMTA",
+          "Fullständiga villkor"
+        ],
+        "expired": [
+          "DAG 6 · 6 DECEMBER",
+          "JUL-FREESPINS",
+          "80 FREESPINS",
+          "i Gemhalla",
+          "Min. insättning: 350 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 6 dec.",
+          "Gåvan har gått ut",
+          "Fullständiga villkor"
+        ],
+        "locked": [
+          "DAG 6 · 6 DECEMBER",
+          "ÖVERRASKNINGSPRESENT",
+          "Öppnas 6 december",
+          "Kom tillbaka imorgon för att låsa upp presenten!",
+          "Låst · 6 dec.",
+          "Fullständiga villkor"
+        ]
+      }
+    },
+    {
+      "day": 7,
+      "date": "2026-12-07",
+      "location": "Tomtens torg",
+      "type": "freespins",
+      "amount": {
+        "spins": 90,
+        "text": "90 FREESPINS"
+      },
+      "game": "Bonanza Billion",
+      "minDeposit": {
+        "value": 400,
+        "currency": "SEK",
+        "text": "Min. insättning: 400 SEK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsättningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Giltig till: 23:59, 7 dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 7 · 7 DECEMBER",
+          "JUL-FREESPINS",
+          "90 FREESPINS",
+          "i Bonanza Billion",
+          "Min. insättning: 400 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 7 dec.",
+          "SÄTT IN & HÄMTA",
+          "Fullständiga villkor"
+        ],
+        "expired": [
+          "DAG 7 · 7 DECEMBER",
+          "JUL-FREESPINS",
+          "90 FREESPINS",
+          "i Bonanza Billion",
+          "Min. insättning: 400 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 7 dec.",
+          "Gåvan har gått ut",
+          "Fullständiga villkor"
+        ],
+        "locked": [
+          "DAG 7 · 7 DECEMBER",
+          "ÖVERRASKNINGSPRESENT",
+          "Öppnas 7 december",
+          "Kom tillbaka imorgon för att låsa upp presenten!",
+          "Låst · 7 dec.",
+          "Fullständiga villkor"
+        ]
+      }
+    },
+    {
+      "day": 8,
+      "date": "2026-12-08",
+      "location": "Önskekapellet",
+      "type": "bonus",
+      "amount": {
+        "percent": 65,
+        "max": 7000,
+        "currency": "SEK",
+        "text": "65% UPP TILL 7 000 SEK"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 280,
+        "currency": "SEK",
+        "text": "Min. insättning: 280 SEK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsättningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Giltig till: 23:59, 8 dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 8 · 8 DECEMBER",
+          "JULBONUS",
+          "65% UPP TILL 7 000 SEK",
+          "Min. insättning: 280 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 8 dec.",
+          "SÄTT IN & HÄMTA",
+          "Fullständiga villkor"
+        ],
+        "expired": [
+          "DAG 8 · 8 DECEMBER",
+          "JULBONUS",
+          "65% UPP TILL 7 000 SEK",
+          "Min. insättning: 280 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 8 dec.",
+          "Gåvan har gått ut",
+          "Fullständiga villkor"
+        ],
+        "locked": [
+          "DAG 8 · 8 DECEMBER",
+          "ÖVERRASKNINGSPRESENT",
+          "Öppnas 8 december",
+          "Kom tillbaka imorgon för att låsa upp presenten!",
+          "Låst · 8 dec.",
+          "Fullständiga villkor"
+        ]
+      }
+    },
+    {
+      "day": 9,
+      "date": "2026-12-09",
+      "location": "Magisk karusell",
+      "type": "freespins",
+      "amount": {
+        "spins": 74,
+        "text": "74 FREESPINS"
+      },
+      "game": "Big Bass Christmas – Frozen Lake",
+      "minDeposit": {
+        "value": 350,
+        "currency": "SEK",
+        "text": "Min. insättning: 350 SEK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsättningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Giltig till: 23:59, 9 dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 9 · 9 DECEMBER",
+          "JUL-FREESPINS",
+          "74 FREESPINS",
+          "i Big Bass Christmas – Frozen Lake",
+          "Min. insättning: 350 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 9 dec.",
+          "SÄTT IN & HÄMTA",
+          "Fullständiga villkor"
+        ],
+        "expired": [
+          "DAG 9 · 9 DECEMBER",
+          "JUL-FREESPINS",
+          "74 FREESPINS",
+          "i Big Bass Christmas – Frozen Lake",
+          "Min. insättning: 350 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 9 dec.",
+          "Gåvan har gått ut",
+          "Fullständiga villkor"
+        ],
+        "locked": [
+          "DAG 9 · 9 DECEMBER",
+          "ÖVERRASKNINGSPRESENT",
+          "Öppnas 9 december",
+          "Kom tillbaka imorgon för att låsa upp presenten!",
+          "Låst · 9 dec.",
+          "Fullständiga villkor"
+        ]
+      }
+    },
+    {
+      "day": 10,
+      "date": "2026-12-10",
+      "location": "Lyckogränden",
+      "type": "bonus",
+      "amount": {
+        "percent": 62,
+        "max": 7400,
+        "currency": "SEK",
+        "text": "62% UPP TILL 7 400 SEK"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 400,
+        "currency": "SEK",
+        "text": "Min. insättning: 400 SEK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsättningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Giltig till: 23:59, 10 dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 10 · 10 DECEMBER",
+          "JULBONUS",
+          "62% UPP TILL 7 400 SEK",
+          "Min. insättning: 400 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 10 dec.",
+          "SÄTT IN & HÄMTA",
+          "Fullständiga villkor"
+        ],
+        "expired": [
+          "DAG 10 · 10 DECEMBER",
+          "JULBONUS",
+          "62% UPP TILL 7 400 SEK",
+          "Min. insättning: 400 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 10 dec.",
+          "Gåvan har gått ut",
+          "Fullständiga villkor"
+        ],
+        "locked": [
+          "DAG 10 · 10 DECEMBER",
+          "ÖVERRASKNINGSPRESENT",
+          "Öppnas 10 december",
+          "Kom tillbaka imorgon för att låsa upp presenten!",
+          "Låst · 10 dec.",
+          "Fullständiga villkor"
+        ]
+      }
+    },
+    {
+      "day": 11,
+      "date": "2026-12-11",
+      "location": "Snögubbens skatt",
+      "type": "freespins",
+      "amount": {
+        "spins": 55,
+        "text": "55 FREESPINS"
+      },
+      "game": "Thunder Coins: Hold and Win",
+      "minDeposit": {
+        "value": 230,
+        "currency": "SEK",
+        "text": "Min. insättning: 230 SEK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsättningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Giltig till: 23:59, 11 dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 11 · 11 DECEMBER",
+          "JUL-FREESPINS",
+          "55 FREESPINS",
+          "i Thunder Coins: Hold and Win",
+          "Min. insättning: 230 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 11 dec.",
+          "SÄTT IN & HÄMTA",
+          "Fullständiga villkor"
+        ],
+        "expired": [
+          "DAG 11 · 11 DECEMBER",
+          "JUL-FREESPINS",
+          "55 FREESPINS",
+          "i Thunder Coins: Hold and Win",
+          "Min. insättning: 230 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 11 dec.",
+          "Gåvan har gått ut",
+          "Fullständiga villkor"
+        ],
+        "locked": [
+          "DAG 11 · 11 DECEMBER",
+          "ÖVERRASKNINGSPRESENT",
+          "Öppnas 11 december",
+          "Kom tillbaka imorgon för att låsa upp presenten!",
+          "Låst · 11 dec.",
+          "Fullständiga villkor"
+        ]
+      }
+    },
+    {
+      "day": 12,
+      "date": "2026-12-12",
+      "location": "Tomtens postkontor",
+      "type": "freespins",
+      "amount": {
+        "spins": 80,
+        "text": "80 FREESPINS"
+      },
+      "game": "Fruits 'n' Stars Holiday Edition",
+      "minDeposit": {
+        "value": 280,
+        "currency": "SEK",
+        "text": "Min. insättning: 280 SEK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsättningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Giltig till: 23:59, 12 dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 12 · 12 DECEMBER",
+          "JUL-FREESPINS",
+          "80 FREESPINS",
+          "i Fruits 'n' Stars Holiday Edition",
+          "Min. insättning: 280 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 12 dec.",
+          "SÄTT IN & HÄMTA",
+          "Fullständiga villkor"
+        ],
+        "expired": [
+          "DAG 12 · 12 DECEMBER",
+          "JUL-FREESPINS",
+          "80 FREESPINS",
+          "i Fruits 'n' Stars Holiday Edition",
+          "Min. insättning: 280 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 12 dec.",
+          "Gåvan har gått ut",
+          "Fullständiga villkor"
+        ],
+        "locked": [
+          "DAG 12 · 12 DECEMBER",
+          "ÖVERRASKNINGSPRESENT",
+          "Öppnas 12 december",
+          "Kom tillbaka imorgon för att låsa upp presenten!",
+          "Låst · 12 dec.",
+          "Fullständiga villkor"
+        ]
+      }
+    },
+    {
+      "day": 13,
+      "date": "2026-12-13",
+      "location": "Ispalatset",
+      "type": "freespins",
+      "amount": {
+        "spins": 67,
+        "text": "67 FREESPINS"
+      },
+      "game": "Yeti Quest",
+      "minDeposit": {
+        "value": 280,
+        "currency": "SEK",
+        "text": "Min. insättning: 280 SEK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsättningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Giltig till: 23:59, 13 dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 13 · 13 DECEMBER",
+          "JUL-FREESPINS",
+          "67 FREESPINS",
+          "i Yeti Quest",
+          "Min. insättning: 280 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 13 dec.",
+          "SÄTT IN & HÄMTA",
+          "Fullständiga villkor"
+        ],
+        "expired": [
+          "DAG 13 · 13 DECEMBER",
+          "JUL-FREESPINS",
+          "67 FREESPINS",
+          "i Yeti Quest",
+          "Min. insättning: 280 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 13 dec.",
+          "Gåvan har gått ut",
+          "Fullständiga villkor"
+        ],
+        "locked": [
+          "DAG 13 · 13 DECEMBER",
+          "ÖVERRASKNINGSPRESENT",
+          "Öppnas 13 december",
+          "Kom tillbaka imorgon för att låsa upp presenten!",
+          "Låst · 13 dec.",
+          "Fullständiga villkor"
+        ]
+      }
+    },
+    {
+      "day": 14,
+      "date": "2026-12-14",
+      "location": "Mirakelbutiken",
+      "type": "freespins",
+      "amount": {
+        "spins": 90,
+        "text": "90 FREESPINS"
+      },
+      "game": "25 Cookies: Hit the Bonus",
+      "minDeposit": {
+        "value": 400,
+        "currency": "SEK",
+        "text": "Min. insättning: 400 SEK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsättningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Giltig till: 23:59, 14 dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 14 · 14 DECEMBER",
+          "JUL-FREESPINS",
+          "90 FREESPINS",
+          "i 25 Cookies: Hit the Bonus",
+          "Min. insättning: 400 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 14 dec.",
+          "SÄTT IN & HÄMTA",
+          "Fullständiga villkor"
+        ],
+        "expired": [
+          "DAG 14 · 14 DECEMBER",
+          "JUL-FREESPINS",
+          "90 FREESPINS",
+          "i 25 Cookies: Hit the Bonus",
+          "Min. insättning: 400 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 14 dec.",
+          "Gåvan har gått ut",
+          "Fullständiga villkor"
+        ],
+        "locked": [
+          "DAG 14 · 14 DECEMBER",
+          "ÖVERRASKNINGSPRESENT",
+          "Öppnas 14 december",
+          "Kom tillbaka imorgon för att låsa upp presenten!",
+          "Låst · 14 dec.",
+          "Fullständiga villkor"
+        ]
+      }
+    },
+    {
+      "day": 15,
+      "date": "2026-12-15",
+      "location": "Julmarknad",
+      "type": "bonus",
+      "amount": {
+        "percent": 58,
+        "max": 5000,
+        "currency": "SEK",
+        "text": "58% UPP TILL 5 000 SEK"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 350,
+        "currency": "SEK",
+        "text": "Min. insättning: 350 SEK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsättningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Giltig till: 23:59, 15 dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 15 · 15 DECEMBER",
+          "JULBONUS",
+          "58% UPP TILL 5 000 SEK",
+          "Min. insättning: 350 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 15 dec.",
+          "SÄTT IN & HÄMTA",
+          "Fullständiga villkor"
+        ],
+        "expired": [
+          "DAG 15 · 15 DECEMBER",
+          "JULBONUS",
+          "58% UPP TILL 5 000 SEK",
+          "Min. insättning: 350 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 15 dec.",
+          "Gåvan har gått ut",
+          "Fullständiga villkor"
+        ],
+        "locked": [
+          "DAG 15 · 15 DECEMBER",
+          "ÖVERRASKNINGSPRESENT",
+          "Öppnas 15 december",
+          "Kom tillbaka imorgon för att låsa upp presenten!",
+          "Låst · 15 dec.",
+          "Fullständiga villkor"
+        ]
+      }
+    },
+    {
+      "day": 16,
+      "date": "2026-12-16",
+      "location": "Vinterträdgården",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 FREESPINS"
+      },
+      "game": "Christmas Carol Megaways",
+      "minDeposit": {
+        "value": 350,
+        "currency": "SEK",
+        "text": "Min. insättning: 350 SEK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsättningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Giltig till: 23:59, 16 dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 16 · 16 DECEMBER",
+          "JUL-FREESPINS",
+          "82 FREESPINS",
+          "i Christmas Carol Megaways",
+          "Min. insättning: 350 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 16 dec.",
+          "SÄTT IN & HÄMTA",
+          "Fullständiga villkor"
+        ],
+        "expired": [
+          "DAG 16 · 16 DECEMBER",
+          "JUL-FREESPINS",
+          "82 FREESPINS",
+          "i Christmas Carol Megaways",
+          "Min. insättning: 350 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 16 dec.",
+          "Gåvan har gått ut",
+          "Fullständiga villkor"
+        ],
+        "locked": [
+          "DAG 16 · 16 DECEMBER",
+          "ÖVERRASKNINGSPRESENT",
+          "Öppnas 16 december",
+          "Kom tillbaka imorgon för att låsa upp presenten!",
+          "Låst · 16 dec.",
+          "Fullständiga villkor"
+        ]
+      }
+    },
+    {
+      "day": 17,
+      "date": "2026-12-17",
+      "location": "Den förtrollade skogen",
+      "type": "bonus",
+      "amount": {
+        "percent": 45,
+        "max": 5000,
+        "currency": "SEK",
+        "text": "45% UPP TILL 5 000 SEK"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 280,
+        "currency": "SEK",
+        "text": "Min. insättning: 280 SEK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsättningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Giltig till: 23:59, 17 dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 17 · 17 DECEMBER",
+          "JULBONUS",
+          "45% UPP TILL 5 000 SEK",
+          "Min. insättning: 280 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 17 dec.",
+          "SÄTT IN & HÄMTA",
+          "Fullständiga villkor"
+        ],
+        "expired": [
+          "DAG 17 · 17 DECEMBER",
+          "JULBONUS",
+          "45% UPP TILL 5 000 SEK",
+          "Min. insättning: 280 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 17 dec.",
+          "Gåvan har gått ut",
+          "Fullständiga villkor"
+        ],
+        "locked": [
+          "DAG 17 · 17 DECEMBER",
+          "ÖVERRASKNINGSPRESENT",
+          "Öppnas 17 december",
+          "Kom tillbaka imorgon för att låsa upp presenten!",
+          "Låst · 17 dec.",
+          "Fullständiga villkor"
+        ]
+      }
+    },
+    {
+      "day": 18,
+      "date": "2026-12-18",
+      "location": "Snögrottan",
+      "type": "freespins",
+      "amount": {
+        "spins": 63,
+        "text": "63 FREESPINS"
+      },
+      "game": "Big Bass Christmas – Frozen Lake",
+      "minDeposit": {
+        "value": 280,
+        "currency": "SEK",
+        "text": "Min. insättning: 280 SEK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsättningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Giltig till: 23:59, 18 dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 18 · 18 DECEMBER",
+          "JUL-FREESPINS",
+          "63 FREESPINS",
+          "i Big Bass Christmas – Frozen Lake",
+          "Min. insättning: 280 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 18 dec.",
+          "SÄTT IN & HÄMTA",
+          "Fullständiga villkor"
+        ],
+        "expired": [
+          "DAG 18 · 18 DECEMBER",
+          "JUL-FREESPINS",
+          "63 FREESPINS",
+          "i Big Bass Christmas – Frozen Lake",
+          "Min. insättning: 280 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 18 dec.",
+          "Gåvan har gått ut",
+          "Fullständiga villkor"
+        ],
+        "locked": [
+          "DAG 18 · 18 DECEMBER",
+          "ÖVERRASKNINGSPRESENT",
+          "Öppnas 18 december",
+          "Kom tillbaka imorgon för att låsa upp presenten!",
+          "Låst · 18 dec.",
+          "Fullständiga villkor"
+        ]
+      }
+    },
+    {
+      "day": 19,
+      "date": "2026-12-19",
+      "location": "Stjärnornas skridskobana",
+      "type": "freespins",
+      "amount": {
+        "spins": 95,
+        "text": "95 FREESPINS"
+      },
+      "game": "Fruits 'n' Stars Holiday Edition",
+      "minDeposit": {
+        "value": 400,
+        "currency": "SEK",
+        "text": "Min. insättning: 400 SEK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsättningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Giltig till: 23:59, 19 dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 19 · 19 DECEMBER",
+          "JUL-FREESPINS",
+          "95 FREESPINS",
+          "i Fruits 'n' Stars Holiday Edition",
+          "Min. insättning: 400 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 19 dec.",
+          "SÄTT IN & HÄMTA",
+          "Fullständiga villkor"
+        ],
+        "expired": [
+          "DAG 19 · 19 DECEMBER",
+          "JUL-FREESPINS",
+          "95 FREESPINS",
+          "i Fruits 'n' Stars Holiday Edition",
+          "Min. insättning: 400 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 19 dec.",
+          "Gåvan har gått ut",
+          "Fullständiga villkor"
+        ],
+        "locked": [
+          "DAG 19 · 19 DECEMBER",
+          "ÖVERRASKNINGSPRESENT",
+          "Öppnas 19 december",
+          "Kom tillbaka imorgon för att låsa upp presenten!",
+          "Låst · 19 dec.",
+          "Fullständiga villkor"
+        ]
+      }
+    },
+    {
+      "day": 20,
+      "date": "2026-12-20",
+      "location": "Norrsken",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 FREESPINS"
+      },
+      "game": "Sweet Bonanza Xmas",
+      "minDeposit": {
+        "value": 350,
+        "currency": "SEK",
+        "text": "Min. insättning: 350 SEK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsättningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Giltig till: 23:59, 20 dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 20 · 20 DECEMBER",
+          "JUL-FREESPINS",
+          "82 FREESPINS",
+          "i Sweet Bonanza Xmas",
+          "Min. insättning: 350 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 20 dec.",
+          "SÄTT IN & HÄMTA",
+          "Fullständiga villkor"
+        ],
+        "expired": [
+          "DAG 20 · 20 DECEMBER",
+          "JUL-FREESPINS",
+          "82 FREESPINS",
+          "i Sweet Bonanza Xmas",
+          "Min. insättning: 350 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 20 dec.",
+          "Gåvan har gått ut",
+          "Fullständiga villkor"
+        ],
+        "locked": [
+          "DAG 20 · 20 DECEMBER",
+          "ÖVERRASKNINGSPRESENT",
+          "Öppnas 20 december",
+          "Kom tillbaka imorgon för att låsa upp presenten!",
+          "Låst · 20 dec.",
+          "Fullständiga villkor"
+        ]
+      }
+    },
+    {
+      "day": 21,
+      "date": "2026-12-21",
+      "location": "Midnattsexpressen",
+      "type": "bonus",
+      "amount": {
+        "percent": 65,
+        "max": 5000,
+        "currency": "SEK",
+        "text": "65% UPP TILL 5 000 SEK"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 280,
+        "currency": "SEK",
+        "text": "Min. insättning: 280 SEK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsättningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Giltig till: 23:59, 21 dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 21 · 21 DECEMBER",
+          "JULBONUS",
+          "65% UPP TILL 5 000 SEK",
+          "Min. insättning: 280 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 21 dec.",
+          "SÄTT IN & HÄMTA",
+          "Fullständiga villkor"
+        ],
+        "expired": [
+          "DAG 21 · 21 DECEMBER",
+          "JULBONUS",
+          "65% UPP TILL 5 000 SEK",
+          "Min. insättning: 280 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 21 dec.",
+          "Gåvan har gått ut",
+          "Fullständiga villkor"
+        ],
+        "locked": [
+          "DAG 21 · 21 DECEMBER",
+          "ÖVERRASKNINGSPRESENT",
+          "Öppnas 21 december",
+          "Kom tillbaka imorgon för att låsa upp presenten!",
+          "Låst · 21 dec.",
+          "Fullständiga villkor"
+        ]
+      }
+    },
+    {
+      "day": 22,
+      "date": "2026-12-22",
+      "location": "Snöstugan",
+      "type": "freespins",
+      "amount": {
+        "spins": 62,
+        "text": "62 FREESPINS"
+      },
+      "game": "Yeti Quest",
+      "minDeposit": {
+        "value": 230,
+        "currency": "SEK",
+        "text": "Min. insättning: 230 SEK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsättningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Giltig till: 23:59, 22 dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 22 · 22 DECEMBER",
+          "JUL-FREESPINS",
+          "62 FREESPINS",
+          "i Yeti Quest",
+          "Min. insättning: 230 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 22 dec.",
+          "SÄTT IN & HÄMTA",
+          "Fullständiga villkor"
+        ],
+        "expired": [
+          "DAG 22 · 22 DECEMBER",
+          "JUL-FREESPINS",
+          "62 FREESPINS",
+          "i Yeti Quest",
+          "Min. insättning: 230 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 22 dec.",
+          "Gåvan har gått ut",
+          "Fullständiga villkor"
+        ],
+        "locked": [
+          "DAG 22 · 22 DECEMBER",
+          "ÖVERRASKNINGSPRESENT",
+          "Öppnas 22 december",
+          "Kom tillbaka imorgon för att låsa upp presenten!",
+          "Låst · 22 dec.",
+          "Fullständiga villkor"
+        ]
+      }
+    },
+    {
+      "day": 23,
+      "date": "2026-12-23",
+      "location": "Tomtens kassaskåp",
+      "type": "freespins",
+      "amount": {
+        "spins": 99,
+        "text": "99 FREESPINS"
+      },
+      "game": "25 Cookies: Hit the Bonus",
+      "minDeposit": {
+        "value": 350,
+        "currency": "SEK",
+        "text": "Min. insättning: 350 SEK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsättningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Giltig till: 23:59, 23 dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 23 · 23 DECEMBER",
+          "JUL-FREESPINS",
+          "99 FREESPINS",
+          "i 25 Cookies: Hit the Bonus",
+          "Min. insättning: 350 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 23 dec.",
+          "SÄTT IN & HÄMTA",
+          "Fullständiga villkor"
+        ],
+        "expired": [
+          "DAG 23 · 23 DECEMBER",
+          "JUL-FREESPINS",
+          "99 FREESPINS",
+          "i 25 Cookies: Hit the Bonus",
+          "Min. insättning: 350 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 23 dec.",
+          "Gåvan har gått ut",
+          "Fullständiga villkor"
+        ],
+        "locked": [
+          "DAG 23 · 23 DECEMBER",
+          "ÖVERRASKNINGSPRESENT",
+          "Öppnas 23 december",
+          "Kom tillbaka imorgon för att låsa upp presenten!",
+          "Låst · 23 dec.",
+          "Fullständiga villkor"
+        ]
+      }
+    },
+    {
+      "day": 24,
+      "date": "2026-12-24",
+      "location": "Hemliga rummet",
+      "type": "bonus",
+      "amount": {
+        "percent": 80,
+        "max": 4000,
+        "currency": "SEK",
+        "text": "80% UPP TILL 4 000 SEK"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 400,
+        "currency": "SEK",
+        "text": "Min. insättning: 400 SEK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsättningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Giltig till: 23:59, 24 dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 24 · 24 DECEMBER",
+          "JULBONUS",
+          "80% UPP TILL 4 000 SEK",
+          "Min. insättning: 400 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 24 dec.",
+          "SÄTT IN & HÄMTA",
+          "Fullständiga villkor"
+        ],
+        "expired": [
+          "DAG 24 · 24 DECEMBER",
+          "JULBONUS",
+          "80% UPP TILL 4 000 SEK",
+          "Min. insättning: 400 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 24 dec.",
+          "Gåvan har gått ut",
+          "Fullständiga villkor"
+        ],
+        "locked": [
+          "DAG 24 · 24 DECEMBER",
+          "ÖVERRASKNINGSPRESENT",
+          "Öppnas 24 december",
+          "Kom tillbaka imorgon för att låsa upp presenten!",
+          "Låst · 24 dec.",
+          "Fullständiga villkor"
+        ]
+      }
+    },
+    {
+      "day": 25,
+      "date": "2026-12-25",
+      "location": "Presentsäcken",
+      "type": "freespins",
+      "amount": {
+        "spins": 101,
+        "text": "101 FREESPINS"
+      },
+      "game": "Christmas Carol Megaways",
+      "minDeposit": {
+        "value": 400,
+        "currency": "SEK",
+        "text": "Min. insättning: 400 SEK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsättningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Giltig till: 23:59, 25 dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 25 · 25 DECEMBER",
+          "JUL-FREESPINS",
+          "101 FREESPINS",
+          "i Christmas Carol Megaways",
+          "Min. insättning: 400 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 25 dec.",
+          "SÄTT IN & HÄMTA",
+          "Fullständiga villkor"
+        ],
+        "expired": [
+          "DAG 25 · 25 DECEMBER",
+          "JUL-FREESPINS",
+          "101 FREESPINS",
+          "i Christmas Carol Megaways",
+          "Min. insättning: 400 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 25 dec.",
+          "Gåvan har gått ut",
+          "Fullständiga villkor"
+        ],
+        "locked": [
+          "DAG 25 · 25 DECEMBER",
+          "ÖVERRASKNINGSPRESENT",
+          "Öppnas 25 december",
+          "Kom tillbaka imorgon för att låsa upp presenten!",
+          "Låst · 25 dec.",
+          "Fullständiga villkor"
+        ]
+      }
+    },
+    {
+      "day": 26,
+      "date": "2026-12-26",
+      "location": "Jackpotkistan",
+      "type": "bonus",
+      "amount": {
+        "percent": 60,
+        "max": 6000,
+        "currency": "SEK",
+        "text": "60% UPP TILL 6 000 SEK"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 230,
+        "currency": "SEK",
+        "text": "Min. insättning: 230 SEK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsättningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Giltig till: 23:59, 26 dec."
+      },
+      "raw": {
+        "active": [
+          "DAG 26 · 26 DECEMBER",
+          "JULBONUS",
+          "60% UPP TILL 6 000 SEK",
+          "Min. insättning: 230 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 26 dec.",
+          "SÄTT IN & HÄMTA",
+          "Fullständiga villkor"
+        ],
+        "expired": [
+          "DAG 26 · 26 DECEMBER",
+          "JULBONUS",
+          "60% UPP TILL 6 000 SEK",
+          "Min. insättning: 230 SEK",
+          "Omsättningskrav: x25",
+          "Giltig till: 23:59, 26 dec.",
+          "Gåvan har gått ut",
+          "Fullständiga villkor"
+        ],
+        "locked": [
+          "DAG 26 · 26 DECEMBER",
+          "ÖVERRASKNINGSPRESENT",
+          "Öppnas 26 december",
+          "Kom tillbaka imorgon för att låsa upp presenten!",
+          "Låst · 26 dec.",
+          "Fullständiga villkor"
+        ]
+      }
+    }
+  ]
+}

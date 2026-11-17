@@ -1,0 +1,1463 @@
+{
+  "market": "RO_MDL",
+  "uiLang": "RO_MD",
+  "currency": "MDL",
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-12-01",
+      "location": "Secretele lui Moș Crăciun",
+      "type": "bonus",
+      "amount": {
+        "percent": 70,
+        "max": 350,
+        "currency": "MDL",
+        "text": "70% PÂNĂ LA 350 MDL"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 35,
+        "currency": "MDL",
+        "text": "Depunere min.: 35 MDL"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Rulaj: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valabil până la: 23:59, 1 dec."
+      },
+      "raw": {
+        "active": [
+          "ZIUA 1 · 1 DECEMBRIE",
+          "BONUS DE CRĂCIUN",
+          "70% PÂNĂ LA 350 MDL",
+          "Depunere min.: 35 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 1 dec.",
+          "DEPUNE ȘI REVENDICĂ",
+          "Termeni și condiții complete"
+        ],
+        "expired": [
+          "ZIUA 1 · 1 DECEMBRIE",
+          "BONUS DE CRĂCIUN",
+          "70% PÂNĂ LA 350 MDL",
+          "Depunere min.: 35 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 1 dec.",
+          "Cadou expirat",
+          "Termeni și condiții complete"
+        ],
+        "locked": [
+          "ZIUA 1 · 1 DECEMBRIE",
+          "CADOU-SURPRIZĂ",
+          "Se deschide pe 1 decembrie",
+          "Revino mâine pentru a debloca acest cadou",
+          "Blocat · 1 dec.",
+          "Termeni și condiții complete"
+        ]
+      }
+    },
+    {
+      "day": 2,
+      "date": "2026-12-02",
+      "location": "Jackpot sub brad",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 ROTIRI GRATUITE"
+      },
+      "game": "Thunder Coins: Hold and Win",
+      "minDeposit": {
+        "value": 350,
+        "currency": "MDL",
+        "text": "Depunere min.: 350 MDL"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Rulaj: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valabil până la: 23:59, 2 dec."
+      },
+      "raw": {
+        "active": [
+          "ZIUA 2 · 2 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "82 ROTIRI GRATUITE",
+          "în Thunder Coins: Hold and Win",
+          "Depunere min.: 350 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 2 dec.",
+          "DEPUNE ȘI REVENDICĂ",
+          "Termeni și condiții complete"
+        ],
+        "expired": [
+          "ZIUA 2 · 2 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "82 ROTIRI GRATUITE",
+          "în Thunder Coins: Hold and Win",
+          "Depunere min.: 350 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 2 dec.",
+          "Cadou expirat",
+          "Termeni și condiții complete"
+        ],
+        "locked": [
+          "ZIUA 2 · 2 DECEMBRIE",
+          "CADOU-SURPRIZĂ",
+          "Se deschide pe 2 decembrie",
+          "Revino mâine pentru a debloca acest cadou",
+          "Blocat · 2 dec.",
+          "Termeni și condiții complete"
+        ]
+      }
+    },
+    {
+      "day": 3,
+      "date": "2026-12-03",
+      "location": "Căsuța de turtă dulce",
+      "type": "bonus",
+      "amount": {
+        "percent": 55,
+        "max": 500,
+        "currency": "MDL",
+        "text": "55% PÂNĂ LA 500 MDL"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 450,
+        "currency": "MDL",
+        "text": "Depunere min.: 450 MDL"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Rulaj: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valabil până la: 23:59, 3 dec."
+      },
+      "raw": {
+        "active": [
+          "ZIUA 3 · 3 DECEMBRIE",
+          "BONUS DE CRĂCIUN",
+          "55% PÂNĂ LA 500 MDL",
+          "Depunere min.: 450 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 3 dec.",
+          "DEPUNE ȘI REVENDICĂ",
+          "Termeni și condiții complete"
+        ],
+        "expired": [
+          "ZIUA 3 · 3 DECEMBRIE",
+          "BONUS DE CRĂCIUN",
+          "55% PÂNĂ LA 500 MDL",
+          "Depunere min.: 450 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 3 dec.",
+          "Cadou expirat",
+          "Termeni și condiții complete"
+        ],
+        "locked": [
+          "ZIUA 3 · 3 DECEMBRIE",
+          "CADOU-SURPRIZĂ",
+          "Se deschide pe 3 decembrie",
+          "Revino mâine pentru a debloca acest cadou",
+          "Blocat · 3 dec.",
+          "Termeni și condiții complete"
+        ]
+      }
+    },
+    {
+      "day": 4,
+      "date": "2026-12-04",
+      "location": "Fabrica de cadouri a lui Moș Crăciun",
+      "type": "freespins",
+      "amount": {
+        "spins": 65,
+        "text": "65 ROTIRI GRATUITE"
+      },
+      "game": "Big Bass Splash",
+      "minDeposit": {
+        "value": 22,
+        "currency": "MDL",
+        "text": "Depunere min.: 22 MDL"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Rulaj: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valabil până la: 23:59, 4 dec."
+      },
+      "raw": {
+        "active": [
+          "ZIUA 4 · 4 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "65 ROTIRI GRATUITE",
+          "în Big Bass Splash",
+          "Depunere min.: 22 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 4 dec.",
+          "DEPUNE ȘI REVENDICĂ",
+          "Termeni și condiții complete"
+        ],
+        "expired": [
+          "ZIUA 4 · 4 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "65 ROTIRI GRATUITE",
+          "în Big Bass Splash",
+          "Depunere min.: 22 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 4 dec.",
+          "Cadou expirat",
+          "Termeni și condiții complete"
+        ],
+        "locked": [
+          "ZIUA 4 · 4 DECEMBRIE",
+          "CADOU-SURPRIZĂ",
+          "Se deschide pe 4 decembrie",
+          "Revino mâine pentru a debloca acest cadou",
+          "Blocat · 4 dec.",
+          "Termeni și condiții complete"
+        ]
+      }
+    },
+    {
+      "day": 5,
+      "date": "2026-12-05",
+      "location": "Parc înzăpezit",
+      "type": "freespins",
+      "amount": {
+        "spins": 75,
+        "text": "75 ROTIRI GRATUITE"
+      },
+      "game": "John Hunter and the Book of Tut",
+      "minDeposit": {
+        "value": 350,
+        "currency": "MDL",
+        "text": "Depunere min.: 350 MDL"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Rulaj: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valabil până la: 23:59, 5 dec."
+      },
+      "raw": {
+        "active": [
+          "ZIUA 5 · 5 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "75 ROTIRI GRATUITE",
+          "în John Hunter and the Book of Tut",
+          "Depunere min.: 350 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 5 dec.",
+          "DEPUNE ȘI REVENDICĂ",
+          "Termeni și condiții complete"
+        ],
+        "expired": [
+          "ZIUA 5 · 5 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "75 ROTIRI GRATUITE",
+          "în John Hunter and the Book of Tut",
+          "Depunere min.: 350 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 5 dec.",
+          "Cadou expirat",
+          "Termeni și condiții complete"
+        ],
+        "locked": [
+          "ZIUA 5 · 5 DECEMBRIE",
+          "CADOU-SURPRIZĂ",
+          "Se deschide pe 5 decembrie",
+          "Revino mâine pentru a debloca acest cadou",
+          "Blocat · 5 dec.",
+          "Termeni și condiții complete"
+        ]
+      }
+    },
+    {
+      "day": 6,
+      "date": "2026-12-06",
+      "location": "Magazin de jucării",
+      "type": "freespins",
+      "amount": {
+        "spins": 80,
+        "text": "80 ROTIRI GRATUITE"
+      },
+      "game": "Gemhalla",
+      "minDeposit": {
+        "value": 450,
+        "currency": "MDL",
+        "text": "Depunere min.: 450 MDL"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Rulaj: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valabil până la: 23:59, 6 dec."
+      },
+      "raw": {
+        "active": [
+          "ZIUA 6 · 6 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "80 ROTIRI GRATUITE",
+          "în Gemhalla",
+          "Depunere min.: 450 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 6 dec.",
+          "DEPUNE ȘI REVENDICĂ",
+          "Termeni și condiții complete"
+        ],
+        "expired": [
+          "ZIUA 6 · 6 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "80 ROTIRI GRATUITE",
+          "în Gemhalla",
+          "Depunere min.: 450 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 6 dec.",
+          "Cadou expirat",
+          "Termeni și condiții complete"
+        ],
+        "locked": [
+          "ZIUA 6 · 6 DECEMBRIE",
+          "CADOU-SURPRIZĂ",
+          "Se deschide pe 6 decembrie",
+          "Revino mâine pentru a debloca acest cadou",
+          "Blocat · 6 dec.",
+          "Termeni și condiții complete"
+        ]
+      }
+    },
+    {
+      "day": 7,
+      "date": "2026-12-07",
+      "location": "Piața lui Moș Crăciun",
+      "type": "freespins",
+      "amount": {
+        "spins": 90,
+        "text": "90 ROTIRI GRATUITE"
+      },
+      "game": "Bonanza Billion",
+      "minDeposit": {
+        "value": 500,
+        "currency": "MDL",
+        "text": "Depunere min.: 500 MDL"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Rulaj: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valabil până la: 23:59, 7 dec."
+      },
+      "raw": {
+        "active": [
+          "ZIUA 7 · 7 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "90 ROTIRI GRATUITE",
+          "în Bonanza Billion",
+          "Depunere min.: 500 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 7 dec.",
+          "DEPUNE ȘI REVENDICĂ",
+          "Termeni și condiții complete"
+        ],
+        "expired": [
+          "ZIUA 7 · 7 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "90 ROTIRI GRATUITE",
+          "în Bonanza Billion",
+          "Depunere min.: 500 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 7 dec.",
+          "Cadou expirat",
+          "Termeni și condiții complete"
+        ],
+        "locked": [
+          "ZIUA 7 · 7 DECEMBRIE",
+          "CADOU-SURPRIZĂ",
+          "Se deschide pe 7 decembrie",
+          "Revino mâine pentru a debloca acest cadou",
+          "Blocat · 7 dec.",
+          "Termeni și condiții complete"
+        ]
+      }
+    },
+    {
+      "day": 8,
+      "date": "2026-12-08",
+      "location": "Capela dorințelor",
+      "type": "bonus",
+      "amount": {
+        "percent": 65,
+        "max": 650,
+        "currency": "MDL",
+        "text": "65% PÂNĂ LA 650 MDL"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 350,
+        "currency": "MDL",
+        "text": "Depunere min.: 350 MDL"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Rulaj: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valabil până la: 23:59, 8 dec."
+      },
+      "raw": {
+        "active": [
+          "ZIUA 8 · 8 DECEMBRIE",
+          "BONUS DE CRĂCIUN",
+          "65% PÂNĂ LA 650 MDL",
+          "Depunere min.: 350 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 8 dec.",
+          "DEPUNE ȘI REVENDICĂ",
+          "Termeni și condiții complete"
+        ],
+        "expired": [
+          "ZIUA 8 · 8 DECEMBRIE",
+          "BONUS DE CRĂCIUN",
+          "65% PÂNĂ LA 650 MDL",
+          "Depunere min.: 350 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 8 dec.",
+          "Cadou expirat",
+          "Termeni și condiții complete"
+        ],
+        "locked": [
+          "ZIUA 8 · 8 DECEMBRIE",
+          "CADOU-SURPRIZĂ",
+          "Se deschide pe 8 decembrie",
+          "Revino mâine pentru a debloca acest cadou",
+          "Blocat · 8 dec.",
+          "Termeni și condiții complete"
+        ]
+      }
+    },
+    {
+      "day": 9,
+      "date": "2026-12-09",
+      "location": "Caruselul magic",
+      "type": "freespins",
+      "amount": {
+        "spins": 74,
+        "text": "74 ROTIRI GRATUITE"
+      },
+      "game": "Big Bass Christmas – Frozen Lake",
+      "minDeposit": {
+        "value": 450,
+        "currency": "MDL",
+        "text": "Depunere min.: 450 MDL"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Rulaj: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valabil până la: 23:59, 9 dec."
+      },
+      "raw": {
+        "active": [
+          "ZIUA 9 · 9 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "74 ROTIRI GRATUITE",
+          "în Big Bass Christmas – Frozen Lake",
+          "Depunere min.: 450 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 9 dec.",
+          "DEPUNE ȘI REVENDICĂ",
+          "Termeni și condiții complete"
+        ],
+        "expired": [
+          "ZIUA 9 · 9 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "74 ROTIRI GRATUITE",
+          "în Big Bass Christmas – Frozen Lake",
+          "Depunere min.: 450 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 9 dec.",
+          "Cadou expirat",
+          "Termeni și condiții complete"
+        ],
+        "locked": [
+          "ZIUA 9 · 9 DECEMBRIE",
+          "CADOU-SURPRIZĂ",
+          "Se deschide pe 9 decembrie",
+          "Revino mâine pentru a debloca acest cadou",
+          "Blocat · 9 dec.",
+          "Termeni și condiții complete"
+        ]
+      }
+    },
+    {
+      "day": 10,
+      "date": "2026-12-10",
+      "location": "Aleea norocului",
+      "type": "bonus",
+      "amount": {
+        "percent": 62,
+        "max": 700,
+        "currency": "MDL",
+        "text": "62% PÂNĂ LA 700 MDL"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 500,
+        "currency": "MDL",
+        "text": "Depunere min.: 500 MDL"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Rulaj: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valabil până la: 23:59, 10 dec."
+      },
+      "raw": {
+        "active": [
+          "ZIUA 10 · 10 DECEMBRIE",
+          "BONUS DE CRĂCIUN",
+          "62% PÂNĂ LA 700 MDL",
+          "Depunere min.: 500 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 10 dec.",
+          "DEPUNE ȘI REVENDICĂ",
+          "Termeni și condiții complete"
+        ],
+        "expired": [
+          "ZIUA 10 · 10 DECEMBRIE",
+          "BONUS DE CRĂCIUN",
+          "62% PÂNĂ LA 700 MDL",
+          "Depunere min.: 500 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 10 dec.",
+          "Cadou expirat",
+          "Termeni și condiții complete"
+        ],
+        "locked": [
+          "ZIUA 10 · 10 DECEMBRIE",
+          "CADOU-SURPRIZĂ",
+          "Se deschide pe 10 decembrie",
+          "Revino mâine pentru a debloca acest cadou",
+          "Blocat · 10 dec.",
+          "Termeni și condiții complete"
+        ]
+      }
+    },
+    {
+      "day": 11,
+      "date": "2026-12-11",
+      "location": "Comoara omului de zăpadă",
+      "type": "freespins",
+      "amount": {
+        "spins": 55,
+        "text": "55 ROTIRI GRATUITE"
+      },
+      "game": "Thunder Coins: Hold and Win",
+      "minDeposit": {
+        "value": 300,
+        "currency": "MDL",
+        "text": "Depunere min.: 300 MDL"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Rulaj: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valabil până la: 23:59, 11 dec."
+      },
+      "raw": {
+        "active": [
+          "ZIUA 11 · 11 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "55 ROTIRI GRATUITE",
+          "în Thunder Coins: Hold and Win",
+          "Depunere min.: 300 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 11 dec.",
+          "DEPUNE ȘI REVENDICĂ",
+          "Termeni și condiții complete"
+        ],
+        "expired": [
+          "ZIUA 11 · 11 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "55 ROTIRI GRATUITE",
+          "în Thunder Coins: Hold and Win",
+          "Depunere min.: 300 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 11 dec.",
+          "Cadou expirat",
+          "Termeni și condiții complete"
+        ],
+        "locked": [
+          "ZIUA 11 · 11 DECEMBRIE",
+          "CADOU-SURPRIZĂ",
+          "Se deschide pe 11 decembrie",
+          "Revino mâine pentru a debloca acest cadou",
+          "Blocat · 11 dec.",
+          "Termeni și condiții complete"
+        ]
+      }
+    },
+    {
+      "day": 12,
+      "date": "2026-12-12",
+      "location": "Poșta lui Moș Crăciun",
+      "type": "freespins",
+      "amount": {
+        "spins": 80,
+        "text": "80 ROTIRI GRATUITE"
+      },
+      "game": "Fruits 'n' Stars Holiday Edition",
+      "minDeposit": {
+        "value": 350,
+        "currency": "MDL",
+        "text": "Depunere min.: 350 MDL"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Rulaj: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valabil până la: 23:59, 12 dec."
+      },
+      "raw": {
+        "active": [
+          "ZIUA 12 · 12 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "80 ROTIRI GRATUITE",
+          "în Fruits 'n' Stars Holiday Edition",
+          "Depunere min.: 350 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 12 dec.",
+          "DEPUNE ȘI REVENDICĂ",
+          "Termeni și condiții complete"
+        ],
+        "expired": [
+          "ZIUA 12 · 12 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "80 ROTIRI GRATUITE",
+          "în Fruits 'n' Stars Holiday Edition",
+          "Depunere min.: 350 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 12 dec.",
+          "Cadou expirat",
+          "Termeni și condiții complete"
+        ],
+        "locked": [
+          "ZIUA 12 · 12 DECEMBRIE",
+          "CADOU-SURPRIZĂ",
+          "Se deschide pe 12 decembrie",
+          "Revino mâine pentru a debloca acest cadou",
+          "Blocat · 12 dec.",
+          "Termeni și condiții complete"
+        ]
+      }
+    },
+    {
+      "day": 13,
+      "date": "2026-12-13",
+      "location": "Palatul de gheață",
+      "type": "freespins",
+      "amount": {
+        "spins": 67,
+        "text": "67 ROTIRI GRATUITE"
+      },
+      "game": "Yeti Quest",
+      "minDeposit": {
+        "value": 350,
+        "currency": "MDL",
+        "text": "Depunere min.: 350 MDL"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Rulaj: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valabil până la: 23:59, 13 dec."
+      },
+      "raw": {
+        "active": [
+          "ZIUA 13 · 13 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "67 ROTIRI GRATUITE",
+          "în Yeti Quest",
+          "Depunere min.: 350 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 13 dec.",
+          "DEPUNE ȘI REVENDICĂ",
+          "Termeni și condiții complete"
+        ],
+        "expired": [
+          "ZIUA 13 · 13 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "67 ROTIRI GRATUITE",
+          "în Yeti Quest",
+          "Depunere min.: 350 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 13 dec.",
+          "Cadou expirat",
+          "Termeni și condiții complete"
+        ],
+        "locked": [
+          "ZIUA 13 · 13 DECEMBRIE",
+          "CADOU-SURPRIZĂ",
+          "Se deschide pe 13 decembrie",
+          "Revino mâine pentru a debloca acest cadou",
+          "Blocat · 13 dec.",
+          "Termeni și condiții complete"
+        ]
+      }
+    },
+    {
+      "day": 14,
+      "date": "2026-12-14",
+      "location": "Prăvălia minunilor",
+      "type": "freespins",
+      "amount": {
+        "spins": 90,
+        "text": "90 ROTIRI GRATUITE"
+      },
+      "game": "25 Cookies: Hit the Bonus",
+      "minDeposit": {
+        "value": 500,
+        "currency": "MDL",
+        "text": "Depunere min.: 500 MDL"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Rulaj: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valabil până la: 23:59, 14 dec."
+      },
+      "raw": {
+        "active": [
+          "ZIUA 14 · 14 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "90 ROTIRI GRATUITE",
+          "în 25 Cookies: Hit the Bonus",
+          "Depunere min.: 500 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 14 dec.",
+          "DEPUNE ȘI REVENDICĂ",
+          "Termeni și condiții complete"
+        ],
+        "expired": [
+          "ZIUA 14 · 14 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "90 ROTIRI GRATUITE",
+          "în 25 Cookies: Hit the Bonus",
+          "Depunere min.: 500 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 14 dec.",
+          "Cadou expirat",
+          "Termeni și condiții complete"
+        ],
+        "locked": [
+          "ZIUA 14 · 14 DECEMBRIE",
+          "CADOU-SURPRIZĂ",
+          "Se deschide pe 14 decembrie",
+          "Revino mâine pentru a debloca acest cadou",
+          "Blocat · 14 dec.",
+          "Termeni și condiții complete"
+        ]
+      }
+    },
+    {
+      "day": 15,
+      "date": "2026-12-15",
+      "location": "Târg de Crăciun",
+      "type": "bonus",
+      "amount": {
+        "percent": 58,
+        "max": 500,
+        "currency": "MDL",
+        "text": "58% PÂNĂ LA 500 MDL"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 450,
+        "currency": "MDL",
+        "text": "Depunere min.: 450 MDL"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Rulaj: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valabil până la: 23:59, 15 dec."
+      },
+      "raw": {
+        "active": [
+          "ZIUA 15 · 15 DECEMBRIE",
+          "BONUS DE CRĂCIUN",
+          "58% PÂNĂ LA 500 MDL",
+          "Depunere min.: 450 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 15 dec.",
+          "DEPUNE ȘI REVENDICĂ",
+          "Termeni și condiții complete"
+        ],
+        "expired": [
+          "ZIUA 15 · 15 DECEMBRIE",
+          "BONUS DE CRĂCIUN",
+          "58% PÂNĂ LA 500 MDL",
+          "Depunere min.: 450 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 15 dec.",
+          "Cadou expirat",
+          "Termeni și condiții complete"
+        ],
+        "locked": [
+          "ZIUA 15 · 15 DECEMBRIE",
+          "CADOU-SURPRIZĂ",
+          "Se deschide pe 15 decembrie",
+          "Revino mâine pentru a debloca acest cadou",
+          "Blocat · 15 dec.",
+          "Termeni și condiții complete"
+        ]
+      }
+    },
+    {
+      "day": 16,
+      "date": "2026-12-16",
+      "location": "Grădina de iarnă",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 ROTIRI GRATUITE"
+      },
+      "game": "Christmas Carol Megaways",
+      "minDeposit": {
+        "value": 450,
+        "currency": "MDL",
+        "text": "Depunere min.: 450 MDL"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Rulaj: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valabil până la: 23:59, 16 dec."
+      },
+      "raw": {
+        "active": [
+          "ZIUA 16 · 16 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "82 ROTIRI GRATUITE",
+          "în Christmas Carol Megaways",
+          "Depunere min.: 450 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 16 dec.",
+          "DEPUNE ȘI REVENDICĂ",
+          "Termeni și condiții complete"
+        ],
+        "expired": [
+          "ZIUA 16 · 16 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "82 ROTIRI GRATUITE",
+          "în Christmas Carol Megaways",
+          "Depunere min.: 450 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 16 dec.",
+          "Cadou expirat",
+          "Termeni și condiții complete"
+        ],
+        "locked": [
+          "ZIUA 16 · 16 DECEMBRIE",
+          "CADOU-SURPRIZĂ",
+          "Se deschide pe 16 decembrie",
+          "Revino mâine pentru a debloca acest cadou",
+          "Blocat · 16 dec.",
+          "Termeni și condiții complete"
+        ]
+      }
+    },
+    {
+      "day": 17,
+      "date": "2026-12-17",
+      "location": "Pădurea fermecată",
+      "type": "bonus",
+      "amount": {
+        "percent": 45,
+        "max": 500,
+        "currency": "MDL",
+        "text": "45% PÂNĂ LA 500 MDL"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 350,
+        "currency": "MDL",
+        "text": "Depunere min.: 350 MDL"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Rulaj: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valabil până la: 23:59, 17 dec."
+      },
+      "raw": {
+        "active": [
+          "ZIUA 17 · 17 DECEMBRIE",
+          "BONUS DE CRĂCIUN",
+          "45% PÂNĂ LA 500 MDL",
+          "Depunere min.: 350 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 17 dec.",
+          "DEPUNE ȘI REVENDICĂ",
+          "Termeni și condiții complete"
+        ],
+        "expired": [
+          "ZIUA 17 · 17 DECEMBRIE",
+          "BONUS DE CRĂCIUN",
+          "45% PÂNĂ LA 500 MDL",
+          "Depunere min.: 350 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 17 dec.",
+          "Cadou expirat",
+          "Termeni și condiții complete"
+        ],
+        "locked": [
+          "ZIUA 17 · 17 DECEMBRIE",
+          "CADOU-SURPRIZĂ",
+          "Se deschide pe 17 decembrie",
+          "Revino mâine pentru a debloca acest cadou",
+          "Blocat · 17 dec.",
+          "Termeni și condiții complete"
+        ]
+      }
+    },
+    {
+      "day": 18,
+      "date": "2026-12-18",
+      "location": "Peștera de zăpadă",
+      "type": "freespins",
+      "amount": {
+        "spins": 63,
+        "text": "63 ROTIRI GRATUITE"
+      },
+      "game": "Big Bass Christmas – Frozen Lake",
+      "minDeposit": {
+        "value": 350,
+        "currency": "MDL",
+        "text": "Depunere min.: 350 MDL"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Rulaj: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valabil până la: 23:59, 18 dec."
+      },
+      "raw": {
+        "active": [
+          "ZIUA 18 · 18 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "63 ROTIRI GRATUITE",
+          "în Big Bass Christmas – Frozen Lake",
+          "Depunere min.: 350 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 18 dec.",
+          "DEPUNE ȘI REVENDICĂ",
+          "Termeni și condiții complete"
+        ],
+        "expired": [
+          "ZIUA 18 · 18 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "63 ROTIRI GRATUITE",
+          "în Big Bass Christmas – Frozen Lake",
+          "Depunere min.: 350 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 18 dec.",
+          "Cadou expirat",
+          "Termeni și condiții complete"
+        ],
+        "locked": [
+          "ZIUA 18 · 18 DECEMBRIE",
+          "CADOU-SURPRIZĂ",
+          "Se deschide pe 18 decembrie",
+          "Revino mâine pentru a debloca acest cadou",
+          "Blocat · 18 dec.",
+          "Termeni și condiții complete"
+        ]
+      }
+    },
+    {
+      "day": 19,
+      "date": "2026-12-19",
+      "location": "Patinoarul înstelat",
+      "type": "freespins",
+      "amount": {
+        "spins": 95,
+        "text": "95 ROTIRI GRATUITE"
+      },
+      "game": "Fruits 'n' Stars Holiday Edition",
+      "minDeposit": {
+        "value": 500,
+        "currency": "MDL",
+        "text": "Depunere min.: 500 MDL"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Rulaj: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valabil până la: 23:59, 19 dec."
+      },
+      "raw": {
+        "active": [
+          "ZIUA 19 · 19 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "95 ROTIRI GRATUITE",
+          "în Fruits 'n' Stars Holiday Edition",
+          "Depunere min.: 500 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 19 dec.",
+          "DEPUNE ȘI REVENDICĂ",
+          "Termeni și condiții complete"
+        ],
+        "expired": [
+          "ZIUA 19 · 19 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "95 ROTIRI GRATUITE",
+          "în Fruits 'n' Stars Holiday Edition",
+          "Depunere min.: 500 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 19 dec.",
+          "Cadou expirat",
+          "Termeni și condiții complete"
+        ],
+        "locked": [
+          "ZIUA 19 · 19 DECEMBRIE",
+          "CADOU-SURPRIZĂ",
+          "Se deschide pe 19 decembrie",
+          "Revino mâine pentru a debloca acest cadou",
+          "Blocat · 19 dec.",
+          "Termeni și condiții complete"
+        ]
+      }
+    },
+    {
+      "day": 20,
+      "date": "2026-12-20",
+      "location": "Aurora boreală",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 ROTIRI GRATUITE"
+      },
+      "game": "Sweet Bonanza XMas",
+      "minDeposit": {
+        "value": 450,
+        "currency": "MDL",
+        "text": "Depunere min.: 450 MDL"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Rulaj: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valabil până la: 23:59, 20 dec."
+      },
+      "raw": {
+        "active": [
+          "ZIUA 20 · 20 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "82 ROTIRI GRATUITE",
+          "în Sweet Bonanza XMas",
+          "Depunere min.: 450 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 20 dec.",
+          "DEPUNE ȘI REVENDICĂ",
+          "Termeni și condiții complete"
+        ],
+        "expired": [
+          "ZIUA 20 · 20 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "82 ROTIRI GRATUITE",
+          "în Sweet Bonanza XMas",
+          "Depunere min.: 450 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 20 dec.",
+          "Cadou expirat",
+          "Termeni și condiții complete"
+        ],
+        "locked": [
+          "ZIUA 20 · 20 DECEMBRIE",
+          "CADOU-SURPRIZĂ",
+          "Se deschide pe 20 decembrie",
+          "Revino mâine pentru a debloca acest cadou",
+          "Blocat · 20 dec.",
+          "Termeni și condiții complete"
+        ]
+      }
+    },
+    {
+      "day": 21,
+      "date": "2026-12-21",
+      "location": "Expresul de la miezul nopții",
+      "type": "bonus",
+      "amount": {
+        "percent": 65,
+        "max": 500,
+        "currency": "MDL",
+        "text": "65% PÂNĂ LA 500 MDL"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 350,
+        "currency": "MDL",
+        "text": "Depunere min.: 350 MDL"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Rulaj: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valabil până la: 23:59, 21 dec."
+      },
+      "raw": {
+        "active": [
+          "ZIUA 21 · 21 DECEMBRIE",
+          "BONUS DE CRĂCIUN",
+          "65% PÂNĂ LA 500 MDL",
+          "Depunere min.: 350 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 21 dec.",
+          "DEPUNE ȘI REVENDICĂ",
+          "Termeni și condiții complete"
+        ],
+        "expired": [
+          "ZIUA 21 · 21 DECEMBRIE",
+          "BONUS DE CRĂCIUN",
+          "65% PÂNĂ LA 500 MDL",
+          "Depunere min.: 350 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 21 dec.",
+          "Cadou expirat",
+          "Termeni și condiții complete"
+        ],
+        "locked": [
+          "ZIUA 21 · 21 DECEMBRIE",
+          "CADOU-SURPRIZĂ",
+          "Se deschide pe 21 decembrie",
+          "Revino mâine pentru a debloca acest cadou",
+          "Blocat · 21 dec.",
+          "Termeni și condiții complete"
+        ]
+      }
+    },
+    {
+      "day": 22,
+      "date": "2026-12-22",
+      "location": "Căsuța înzăpezită",
+      "type": "freespins",
+      "amount": {
+        "spins": 62,
+        "text": "62 ROTIRI GRATUITE"
+      },
+      "game": "Yeti Quest",
+      "minDeposit": {
+        "value": 300,
+        "currency": "MDL",
+        "text": "Depunere min.: 300 MDL"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Rulaj: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valabil până la: 23:59, 22 dec."
+      },
+      "raw": {
+        "active": [
+          "ZIUA 22 · 22 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "62 ROTIRI GRATUITE",
+          "în Yeti Quest",
+          "Depunere min.: 300 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 22 dec.",
+          "DEPUNE ȘI REVENDICĂ",
+          "Termeni și condiții complete"
+        ],
+        "expired": [
+          "ZIUA 22 · 22 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "62 ROTIRI GRATUITE",
+          "în Yeti Quest",
+          "Depunere min.: 300 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 22 dec.",
+          "Cadou expirat",
+          "Termeni și condiții complete"
+        ],
+        "locked": [
+          "ZIUA 22 · 22 DECEMBRIE",
+          "CADOU-SURPRIZĂ",
+          "Se deschide pe 22 decembrie",
+          "Revino mâine pentru a debloca acest cadou",
+          "Blocat · 22 dec.",
+          "Termeni și condiții complete"
+        ]
+      }
+    },
+    {
+      "day": 23,
+      "date": "2026-12-23",
+      "location": "Seiful lui Moș Crăciun",
+      "type": "freespins",
+      "amount": {
+        "spins": 99,
+        "text": "99 ROTIRI GRATUITE"
+      },
+      "game": "25 Cookies: Hit the Bonus",
+      "minDeposit": {
+        "value": 450,
+        "currency": "MDL",
+        "text": "Depunere min.: 450 MDL"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Rulaj: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valabil până la: 23:59, 23 dec."
+      },
+      "raw": {
+        "active": [
+          "ZIUA 23 · 23 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "99 ROTIRI GRATUITE",
+          "în 25 Cookies: Hit the Bonus",
+          "Depunere min.: 450 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 23 dec.",
+          "DEPUNE ȘI REVENDICĂ",
+          "Termeni și condiții complete"
+        ],
+        "expired": [
+          "ZIUA 23 · 23 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "99 ROTIRI GRATUITE",
+          "în 25 Cookies: Hit the Bonus",
+          "Depunere min.: 450 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 23 dec.",
+          "Cadou expirat",
+          "Termeni și condiții complete"
+        ],
+        "locked": [
+          "ZIUA 23 · 23 DECEMBRIE",
+          "CADOU-SURPRIZĂ",
+          "Se deschide pe 23 decembrie",
+          "Revino mâine pentru a debloca acest cadou",
+          "Blocat · 23 dec.",
+          "Termeni și condiții complete"
+        ]
+      }
+    },
+    {
+      "day": 24,
+      "date": "2026-12-24",
+      "location": "Camera secretă",
+      "type": "bonus",
+      "amount": {
+        "percent": 80,
+        "max": 400,
+        "currency": "MDL",
+        "text": "80% PÂNĂ LA 400 MDL"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 500,
+        "currency": "MDL",
+        "text": "Depunere min.: 500 MDL"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Rulaj: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valabil până la: 23:59, 24 dec."
+      },
+      "raw": {
+        "active": [
+          "ZIUA 24 · 24 DECEMBRIE",
+          "BONUS DE CRĂCIUN",
+          "80% PÂNĂ LA 400 MDL",
+          "Depunere min.: 500 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 24 dec.",
+          "DEPUNE ȘI REVENDICĂ",
+          "Termeni și condiții complete"
+        ],
+        "expired": [
+          "ZIUA 24 · 24 DECEMBRIE",
+          "BONUS DE CRĂCIUN",
+          "80% PÂNĂ LA 400 MDL",
+          "Depunere min.: 500 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 24 dec.",
+          "Cadou expirat",
+          "Termeni și condiții complete"
+        ],
+        "locked": [
+          "ZIUA 24 · 24 DECEMBRIE",
+          "CADOU-SURPRIZĂ",
+          "Se deschide pe 24 decembrie",
+          "Revino mâine pentru a debloca acest cadou",
+          "Blocat · 24 dec.",
+          "Termeni și condiții complete"
+        ]
+      }
+    },
+    {
+      "day": 25,
+      "date": "2026-12-25",
+      "location": "Sacul cu cadouri",
+      "type": "freespins",
+      "amount": {
+        "spins": 101,
+        "text": "101 ROTIRI GRATUITE"
+      },
+      "game": "Christmas Carol Megaways",
+      "minDeposit": {
+        "value": 500,
+        "currency": "MDL",
+        "text": "Depunere min.: 500 MDL"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Rulaj: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valabil până la: 23:59, 25 dec."
+      },
+      "raw": {
+        "active": [
+          "ZIUA 25 · 25 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "101 ROTIRI GRATUITE",
+          "în Christmas Carol Megaways",
+          "Depunere min.: 500 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 25 dec.",
+          "DEPUNE ȘI REVENDICĂ",
+          "Termeni și condiții complete"
+        ],
+        "expired": [
+          "ZIUA 25 · 25 DECEMBRIE",
+          "ROTIRI GRATUITE DE CRĂCIUN",
+          "101 ROTIRI GRATUITE",
+          "în Christmas Carol Megaways",
+          "Depunere min.: 500 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 25 dec.",
+          "Cadou expirat",
+          "Termeni și condiții complete"
+        ],
+        "locked": [
+          "ZIUA 25 · 25 DECEMBRIE",
+          "CADOU-SURPRIZĂ",
+          "Se deschide pe 25 decembrie",
+          "Revino mâine pentru a debloca acest cadou",
+          "Blocat · 25 dec.",
+          "Termeni și condiții complete"
+        ]
+      }
+    },
+    {
+      "day": 26,
+      "date": "2026-12-26",
+      "location": "Cufărul cu Jackpot",
+      "type": "bonus",
+      "amount": {
+        "percent": 60,
+        "max": 600,
+        "currency": "MDL",
+        "text": "60% PÂNĂ LA 600 MDL"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 300,
+        "currency": "MDL",
+        "text": "Depunere min.: 300 MDL"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Rulaj: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Valabil până la: 23:59, 26 dec."
+      },
+      "raw": {
+        "active": [
+          "ZIUA 26 · 26 DECEMBRIE",
+          "BONUS DE CRĂCIUN",
+          "60% PÂNĂ LA 600 MDL",
+          "Depunere min.: 300 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 26 dec.",
+          "DEPUNE ȘI REVENDICĂ",
+          "Termeni și condiții complete"
+        ],
+        "expired": [
+          "ZIUA 26 · 26 DECEMBRIE",
+          "BONUS DE CRĂCIUN",
+          "60% PÂNĂ LA 600 MDL",
+          "Depunere min.: 300 MDL",
+          "Rulaj: x25",
+          "Valabil până la: 23:59, 26 dec.",
+          "Cadou expirat",
+          "Termeni și condiții complete"
+        ],
+        "locked": [
+          "ZIUA 26 · 26 DECEMBRIE",
+          "CADOU-SURPRIZĂ",
+          "Se deschide pe 26 decembrie",
+          "Revino mâine pentru a debloca acest cadou",
+          "Blocat · 26 dec.",
+          "Termeni și condiții complete"
+        ]
+      }
+    }
+  ]
+}

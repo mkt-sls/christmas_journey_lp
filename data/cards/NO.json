@@ -1,0 +1,1463 @@
+{
+  "market": "NO",
+  "uiLang": "NO",
+  "currency": "NOK",
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-12-01",
+      "location": "Julenissens hemmeligheter",
+      "type": "bonus",
+      "amount": {
+        "percent": 70,
+        "max": 3700,
+        "currency": "NOK",
+        "text": "70% OPPTIL 3 700 NOK"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 400,
+        "currency": "NOK",
+        "text": "Min. innskudd: 400 NOK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsetningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig til: 23:59, 1. des."
+      },
+      "raw": {
+        "active": [
+          "DAG 1 · 1. DESEMBER",
+          "JULEBONUS",
+          "70% OPPTIL 3 700 NOK",
+          "Min. innskudd: 400 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 1. des.",
+          "SETT INN & HENT",
+          "Fullstendige vilkår"
+        ],
+        "expired": [
+          "DAG 1 · 1. DESEMBER",
+          "JULEBONUS",
+          "70% OPPTIL 3 700 NOK",
+          "Min. innskudd: 400 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 1. des.",
+          "Gaven er utløpt",
+          "Fullstendige vilkår"
+        ],
+        "locked": [
+          "DAG 1 · 1. DESEMBER",
+          "OVERRASKELSESGAVE",
+          "Åpnes 1. desember",
+          "Kom tilbake i morgen for å låse opp gaven!",
+          "Låst · 1. des.",
+          "Fullstendige vilkår"
+        ]
+      }
+    },
+    {
+      "day": 2,
+      "date": "2026-12-02",
+      "location": "Jackpot under juletreet",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 GRATISSPINN"
+      },
+      "game": "Thunder Coins: Hold and Win",
+      "minDeposit": {
+        "value": 280,
+        "currency": "NOK",
+        "text": "Min. innskudd: 280 NOK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsetningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig til: 23:59, 2. des."
+      },
+      "raw": {
+        "active": [
+          "DAG 2 · 2. DESEMBER",
+          "JULESPINN",
+          "82 GRATISSPINN",
+          "på Thunder Coins: Hold and Win",
+          "Min. innskudd: 280 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 2. des.",
+          "SETT INN & HENT",
+          "Fullstendige vilkår"
+        ],
+        "expired": [
+          "DAG 2 · 2. DESEMBER",
+          "JULESPINN",
+          "82 GRATISSPINN",
+          "på Thunder Coins: Hold and Win",
+          "Min. innskudd: 280 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 2. des.",
+          "Gaven er utløpt",
+          "Fullstendige vilkår"
+        ],
+        "locked": [
+          "DAG 2 · 2. DESEMBER",
+          "OVERRASKELSESGAVE",
+          "Åpnes 2. desember",
+          "Kom tilbake i morgen for å låse opp gaven!",
+          "Låst · 2. des.",
+          "Fullstendige vilkår"
+        ]
+      }
+    },
+    {
+      "day": 3,
+      "date": "2026-12-03",
+      "location": "Pepperkakehuset",
+      "type": "bonus",
+      "amount": {
+        "percent": 55,
+        "max": 5000,
+        "currency": "NOK",
+        "text": "55% OPPTIL 5 000 NOK"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 350,
+        "currency": "NOK",
+        "text": "Min. innskudd: 350 NOK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsetningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig til: 23:59, 3. des."
+      },
+      "raw": {
+        "active": [
+          "DAG 3 · 3. DESEMBER",
+          "JULEBONUS",
+          "55% OPPTIL 5 000 NOK",
+          "Min. innskudd: 350 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 3. des.",
+          "SETT INN & HENT",
+          "Fullstendige vilkår"
+        ],
+        "expired": [
+          "DAG 3 · 3. DESEMBER",
+          "JULEBONUS",
+          "55% OPPTIL 5 000 NOK",
+          "Min. innskudd: 350 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 3. des.",
+          "Gaven er utløpt",
+          "Fullstendige vilkår"
+        ],
+        "locked": [
+          "DAG 3 · 3. DESEMBER",
+          "OVERRASKELSESGAVE",
+          "Åpnes 3. desember",
+          "Kom tilbake i morgen for å låse opp gaven!",
+          "Låst · 3. des.",
+          "Fullstendige vilkår"
+        ]
+      }
+    },
+    {
+      "day": 4,
+      "date": "2026-12-04",
+      "location": "Julenissens gavefabrikk",
+      "type": "freespins",
+      "amount": {
+        "spins": 65,
+        "text": "65 GRATISSPINN"
+      },
+      "game": "Big Bass Splash",
+      "minDeposit": {
+        "value": 230,
+        "currency": "NOK",
+        "text": "Min. innskudd: 230 NOK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsetningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig til: 23:59, 4. des."
+      },
+      "raw": {
+        "active": [
+          "DAG 4 · 4. DESEMBER",
+          "JULESPINN",
+          "65 GRATISSPINN",
+          "på Big Bass Splash",
+          "Min. innskudd: 230 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 4. des.",
+          "SETT INN & HENT",
+          "Fullstendige vilkår"
+        ],
+        "expired": [
+          "DAG 4 · 4. DESEMBER",
+          "JULESPINN",
+          "65 GRATISSPINN",
+          "på Big Bass Splash",
+          "Min. innskudd: 230 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 4. des.",
+          "Gaven er utløpt",
+          "Fullstendige vilkår"
+        ],
+        "locked": [
+          "DAG 4 · 4. DESEMBER",
+          "OVERRASKELSESGAVE",
+          "Åpnes 4. desember",
+          "Kom tilbake i morgen for å låse opp gaven!",
+          "Låst · 4. des.",
+          "Fullstendige vilkår"
+        ]
+      }
+    },
+    {
+      "day": 5,
+      "date": "2026-12-05",
+      "location": "Snødekt park",
+      "type": "freespins",
+      "amount": {
+        "spins": 75,
+        "text": "75 GRATISSPINN"
+      },
+      "game": "John Hunter and the Book of Tut",
+      "minDeposit": {
+        "value": 280,
+        "currency": "NOK",
+        "text": "Min. innskudd: 280 NOK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsetningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig til: 23:59, 5. des."
+      },
+      "raw": {
+        "active": [
+          "DAG 5 · 5. DESEMBER",
+          "JULESPINN",
+          "75 GRATISSPINN",
+          "på John Hunter and the Book of Tut",
+          "Min. innskudd: 280 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 5. des.",
+          "SETT INN & HENT",
+          "Fullstendige vilkår"
+        ],
+        "expired": [
+          "DAG 5 · 5. DESEMBER",
+          "JULESPINN",
+          "75 GRATISSPINN",
+          "på John Hunter and the Book of Tut",
+          "Min. innskudd: 280 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 5. des.",
+          "Gaven er utløpt",
+          "Fullstendige vilkår"
+        ],
+        "locked": [
+          "DAG 5 · 5. DESEMBER",
+          "OVERRASKELSESGAVE",
+          "Åpnes 5. desember",
+          "Kom tilbake i morgen for å låse opp gaven!",
+          "Låst · 5. des.",
+          "Fullstendige vilkår"
+        ]
+      }
+    },
+    {
+      "day": 6,
+      "date": "2026-12-06",
+      "location": "Lekebutikk",
+      "type": "freespins",
+      "amount": {
+        "spins": 80,
+        "text": "80 GRATISSPINN"
+      },
+      "game": "Gemhalla",
+      "minDeposit": {
+        "value": 350,
+        "currency": "NOK",
+        "text": "Min. innskudd: 350 NOK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsetningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig til: 23:59, 6. des."
+      },
+      "raw": {
+        "active": [
+          "DAG 6 · 6. DESEMBER",
+          "JULESPINN",
+          "80 GRATISSPINN",
+          "på Gemhalla",
+          "Min. innskudd: 350 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 6. des.",
+          "SETT INN & HENT",
+          "Fullstendige vilkår"
+        ],
+        "expired": [
+          "DAG 6 · 6. DESEMBER",
+          "JULESPINN",
+          "80 GRATISSPINN",
+          "på Gemhalla",
+          "Min. innskudd: 350 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 6. des.",
+          "Gaven er utløpt",
+          "Fullstendige vilkår"
+        ],
+        "locked": [
+          "DAG 6 · 6. DESEMBER",
+          "OVERRASKELSESGAVE",
+          "Åpnes 6. desember",
+          "Kom tilbake i morgen for å låse opp gaven!",
+          "Låst · 6. des.",
+          "Fullstendige vilkår"
+        ]
+      }
+    },
+    {
+      "day": 7,
+      "date": "2026-12-07",
+      "location": "Julenissens torg",
+      "type": "freespins",
+      "amount": {
+        "spins": 90,
+        "text": "90 GRATISSPINN"
+      },
+      "game": "Bonanza Billion",
+      "minDeposit": {
+        "value": 400,
+        "currency": "NOK",
+        "text": "Min. innskudd: 400 NOK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsetningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig til: 23:59, 7. des."
+      },
+      "raw": {
+        "active": [
+          "DAG 7 · 7. DESEMBER",
+          "JULESPINN",
+          "90 GRATISSPINN",
+          "på Bonanza Billion",
+          "Min. innskudd: 400 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 7. des.",
+          "SETT INN & HENT",
+          "Fullstendige vilkår"
+        ],
+        "expired": [
+          "DAG 7 · 7. DESEMBER",
+          "JULESPINN",
+          "90 GRATISSPINN",
+          "på Bonanza Billion",
+          "Min. innskudd: 400 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 7. des.",
+          "Gaven er utløpt",
+          "Fullstendige vilkår"
+        ],
+        "locked": [
+          "DAG 7 · 7. DESEMBER",
+          "OVERRASKELSESGAVE",
+          "Åpnes 7. desember",
+          "Kom tilbake i morgen for å låse opp gaven!",
+          "Låst · 7. des.",
+          "Fullstendige vilkår"
+        ]
+      }
+    },
+    {
+      "day": 8,
+      "date": "2026-12-08",
+      "location": "Ønskekapellet",
+      "type": "bonus",
+      "amount": {
+        "percent": 65,
+        "max": 7000,
+        "currency": "NOK",
+        "text": "65% OPPTIL 7 000 NOK"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 280,
+        "currency": "NOK",
+        "text": "Min. innskudd: 280 NOK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsetningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig til: 23:59, 8. des."
+      },
+      "raw": {
+        "active": [
+          "DAG 8 · 8. DESEMBER",
+          "JULEBONUS",
+          "65% OPPTIL 7 000 NOK",
+          "Min. innskudd: 280 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 8. des.",
+          "SETT INN & HENT",
+          "Fullstendige vilkår"
+        ],
+        "expired": [
+          "DAG 8 · 8. DESEMBER",
+          "JULEBONUS",
+          "65% OPPTIL 7 000 NOK",
+          "Min. innskudd: 280 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 8. des.",
+          "Gaven er utløpt",
+          "Fullstendige vilkår"
+        ],
+        "locked": [
+          "DAG 8 · 8. DESEMBER",
+          "OVERRASKELSESGAVE",
+          "Åpnes 8. desember",
+          "Kom tilbake i morgen for å låse opp gaven!",
+          "Låst · 8. des.",
+          "Fullstendige vilkår"
+        ]
+      }
+    },
+    {
+      "day": 9,
+      "date": "2026-12-09",
+      "location": "Magisk karusell",
+      "type": "freespins",
+      "amount": {
+        "spins": 74,
+        "text": "74 GRATISSPINN"
+      },
+      "game": "Big Bass Christmas – Frozen Lake",
+      "minDeposit": {
+        "value": 350,
+        "currency": "NOK",
+        "text": "Min. innskudd: 350 NOK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsetningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig til: 23:59, 9. des."
+      },
+      "raw": {
+        "active": [
+          "DAG 9 · 9. DESEMBER",
+          "JULESPINN",
+          "74 GRATISSPINN",
+          "på Big Bass Christmas – Frozen Lake",
+          "Min. innskudd: 350 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 9. des.",
+          "SETT INN & HENT",
+          "Fullstendige vilkår"
+        ],
+        "expired": [
+          "DAG 9 · 9. DESEMBER",
+          "JULESPINN",
+          "74 GRATISSPINN",
+          "på Big Bass Christmas – Frozen Lake",
+          "Min. innskudd: 350 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 9. des.",
+          "Gaven er utløpt",
+          "Fullstendige vilkår"
+        ],
+        "locked": [
+          "DAG 9 · 9. DESEMBER",
+          "OVERRASKELSESGAVE",
+          "Åpnes 9. desember",
+          "Kom tilbake i morgen for å låse opp gaven!",
+          "Låst · 9. des.",
+          "Fullstendige vilkår"
+        ]
+      }
+    },
+    {
+      "day": 10,
+      "date": "2026-12-10",
+      "location": "Lykkesmuget",
+      "type": "bonus",
+      "amount": {
+        "percent": 62,
+        "max": 7400,
+        "currency": "NOK",
+        "text": "62% OPPTIL 7 400 NOK"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 400,
+        "currency": "NOK",
+        "text": "Min. innskudd: 400 NOK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsetningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig til: 23:59, 10. des."
+      },
+      "raw": {
+        "active": [
+          "DAG 10 · 10. DESEMBER",
+          "JULEBONUS",
+          "62% OPPTIL 7 400 NOK",
+          "Min. innskudd: 400 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 10. des.",
+          "SETT INN & HENT",
+          "Fullstendige vilkår"
+        ],
+        "expired": [
+          "DAG 10 · 10. DESEMBER",
+          "JULEBONUS",
+          "62% OPPTIL 7 400 NOK",
+          "Min. innskudd: 400 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 10. des.",
+          "Gaven er utløpt",
+          "Fullstendige vilkår"
+        ],
+        "locked": [
+          "DAG 10 · 10. DESEMBER",
+          "OVERRASKELSESGAVE",
+          "Åpnes 10. desember",
+          "Kom tilbake i morgen for å låse opp gaven!",
+          "Låst · 10. des.",
+          "Fullstendige vilkår"
+        ]
+      }
+    },
+    {
+      "day": 11,
+      "date": "2026-12-11",
+      "location": "Snømannens skatt",
+      "type": "freespins",
+      "amount": {
+        "spins": 55,
+        "text": "55 GRATISSPINN"
+      },
+      "game": "Thunder Coins: Hold and Win",
+      "minDeposit": {
+        "value": 230,
+        "currency": "NOK",
+        "text": "Min. innskudd: 230 NOK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsetningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig til: 23:59, 11. des."
+      },
+      "raw": {
+        "active": [
+          "DAG 11 · 11. DESEMBER",
+          "JULESPINN",
+          "55 GRATISSPINN",
+          "på Thunder Coins: Hold and Win",
+          "Min. innskudd: 230 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 11. des.",
+          "SETT INN & HENT",
+          "Fullstendige vilkår"
+        ],
+        "expired": [
+          "DAG 11 · 11. DESEMBER",
+          "JULESPINN",
+          "55 GRATISSPINN",
+          "på Thunder Coins: Hold and Win",
+          "Min. innskudd: 230 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 11. des.",
+          "Gaven er utløpt",
+          "Fullstendige vilkår"
+        ],
+        "locked": [
+          "DAG 11 · 11. DESEMBER",
+          "OVERRASKELSESGAVE",
+          "Åpnes 11. desember",
+          "Kom tilbake i morgen for å låse opp gaven!",
+          "Låst · 11. des.",
+          "Fullstendige vilkår"
+        ]
+      }
+    },
+    {
+      "day": 12,
+      "date": "2026-12-12",
+      "location": "Julenissens postkontor",
+      "type": "freespins",
+      "amount": {
+        "spins": 80,
+        "text": "80 GRATISSPINN"
+      },
+      "game": "Fruits 'n' Stars Holiday Edition",
+      "minDeposit": {
+        "value": 280,
+        "currency": "NOK",
+        "text": "Min. innskudd: 280 NOK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsetningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig til: 23:59, 12. des."
+      },
+      "raw": {
+        "active": [
+          "DAG 12 · 12. DESEMBER",
+          "JULESPINN",
+          "80 GRATISSPINN",
+          "på Fruits 'n' Stars Holiday Edition",
+          "Min. innskudd: 280 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 12. des.",
+          "SETT INN & HENT",
+          "Fullstendige vilkår"
+        ],
+        "expired": [
+          "DAG 12 · 12. DESEMBER",
+          "JULESPINN",
+          "80 GRATISSPINN",
+          "på Fruits 'n' Stars Holiday Edition",
+          "Min. innskudd: 280 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 12. des.",
+          "Gaven er utløpt",
+          "Fullstendige vilkår"
+        ],
+        "locked": [
+          "DAG 12 · 12. DESEMBER",
+          "OVERRASKELSESGAVE",
+          "Åpnes 12. desember",
+          "Kom tilbake i morgen for å låse opp gaven!",
+          "Låst · 12. des.",
+          "Fullstendige vilkår"
+        ]
+      }
+    },
+    {
+      "day": 13,
+      "date": "2026-12-13",
+      "location": "Ispalasset",
+      "type": "freespins",
+      "amount": {
+        "spins": 67,
+        "text": "67 GRATISSPINN"
+      },
+      "game": "Yeti Quest",
+      "minDeposit": {
+        "value": 280,
+        "currency": "NOK",
+        "text": "Min. innskudd: 280 NOK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsetningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig til: 23:59, 13. des."
+      },
+      "raw": {
+        "active": [
+          "DAG 13 · 13. DESEMBER",
+          "JULESPINN",
+          "67 GRATISSPINN",
+          "på Yeti Quest",
+          "Min. innskudd: 280 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 13. des.",
+          "SETT INN & HENT",
+          "Fullstendige vilkår"
+        ],
+        "expired": [
+          "DAG 13 · 13. DESEMBER",
+          "JULESPINN",
+          "67 GRATISSPINN",
+          "på Yeti Quest",
+          "Min. innskudd: 280 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 13. des.",
+          "Gaven er utløpt",
+          "Fullstendige vilkår"
+        ],
+        "locked": [
+          "DAG 13 · 13. DESEMBER",
+          "OVERRASKELSESGAVE",
+          "Åpnes 13. desember",
+          "Kom tilbake i morgen for å låse opp gaven!",
+          "Låst · 13. des.",
+          "Fullstendige vilkår"
+        ]
+      }
+    },
+    {
+      "day": 14,
+      "date": "2026-12-14",
+      "location": "Vidunderbutikken",
+      "type": "freespins",
+      "amount": {
+        "spins": 90,
+        "text": "90 GRATISSPINN"
+      },
+      "game": "25 Cookies: Hit the Bonus",
+      "minDeposit": {
+        "value": 400,
+        "currency": "NOK",
+        "text": "Min. innskudd: 400 NOK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsetningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig til: 23:59, 14. des."
+      },
+      "raw": {
+        "active": [
+          "DAG 14 · 14. DESEMBER",
+          "JULESPINN",
+          "90 GRATISSPINN",
+          "på 25 Cookies: Hit the Bonus",
+          "Min. innskudd: 400 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 14. des.",
+          "SETT INN & HENT",
+          "Fullstendige vilkår"
+        ],
+        "expired": [
+          "DAG 14 · 14. DESEMBER",
+          "JULESPINN",
+          "90 GRATISSPINN",
+          "på 25 Cookies: Hit the Bonus",
+          "Min. innskudd: 400 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 14. des.",
+          "Gaven er utløpt",
+          "Fullstendige vilkår"
+        ],
+        "locked": [
+          "DAG 14 · 14. DESEMBER",
+          "OVERRASKELSESGAVE",
+          "Åpnes 14. desember",
+          "Kom tilbake i morgen for å låse opp gaven!",
+          "Låst · 14. des.",
+          "Fullstendige vilkår"
+        ]
+      }
+    },
+    {
+      "day": 15,
+      "date": "2026-12-15",
+      "location": "Julemarked",
+      "type": "bonus",
+      "amount": {
+        "percent": 58,
+        "max": 5000,
+        "currency": "NOK",
+        "text": "58% OPPTIL 5 000 NOK"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 350,
+        "currency": "NOK",
+        "text": "Min. innskudd: 350 NOK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsetningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig til: 23:59, 15. des."
+      },
+      "raw": {
+        "active": [
+          "DAG 15 · 15. DESEMBER",
+          "JULEBONUS",
+          "58% OPPTIL 5 000 NOK",
+          "Min. innskudd: 350 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 15. des.",
+          "SETT INN & HENT",
+          "Fullstendige vilkår"
+        ],
+        "expired": [
+          "DAG 15 · 15. DESEMBER",
+          "JULEBONUS",
+          "58% OPPTIL 5 000 NOK",
+          "Min. innskudd: 350 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 15. des.",
+          "Gaven er utløpt",
+          "Fullstendige vilkår"
+        ],
+        "locked": [
+          "DAG 15 · 15. DESEMBER",
+          "OVERRASKELSESGAVE",
+          "Åpnes 15. desember",
+          "Kom tilbake i morgen for å låse opp gaven!",
+          "Låst · 15. des.",
+          "Fullstendige vilkår"
+        ]
+      }
+    },
+    {
+      "day": 16,
+      "date": "2026-12-16",
+      "location": "Vinterhagen",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 GRATISSPINN"
+      },
+      "game": "Christmas Carol Megaways",
+      "minDeposit": {
+        "value": 350,
+        "currency": "NOK",
+        "text": "Min. innskudd: 350 NOK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsetningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig til: 23:59, 16. des."
+      },
+      "raw": {
+        "active": [
+          "DAG 16 · 16. DESEMBER",
+          "JULESPINN",
+          "82 GRATISSPINN",
+          "på Christmas Carol Megaways",
+          "Min. innskudd: 350 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 16. des.",
+          "SETT INN & HENT",
+          "Fullstendige vilkår"
+        ],
+        "expired": [
+          "DAG 16 · 16. DESEMBER",
+          "JULESPINN",
+          "82 GRATISSPINN",
+          "på Christmas Carol Megaways",
+          "Min. innskudd: 350 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 16. des.",
+          "Gaven er utløpt",
+          "Fullstendige vilkår"
+        ],
+        "locked": [
+          "DAG 16 · 16. DESEMBER",
+          "OVERRASKELSESGAVE",
+          "Åpnes 16. desember",
+          "Kom tilbake i morgen for å låse opp gaven!",
+          "Låst · 16. des.",
+          "Fullstendige vilkår"
+        ]
+      }
+    },
+    {
+      "day": 17,
+      "date": "2026-12-17",
+      "location": "Den fortryllede skogen",
+      "type": "bonus",
+      "amount": {
+        "percent": 45,
+        "max": 5000,
+        "currency": "NOK",
+        "text": "45% OPPTIL 5 000 NOK"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 280,
+        "currency": "NOK",
+        "text": "Min. innskudd: 280 NOK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsetningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig til: 23:59, 17. des."
+      },
+      "raw": {
+        "active": [
+          "DAG 17 · 17. DESEMBER",
+          "JULEBONUS",
+          "45% OPPTIL 5 000 NOK",
+          "Min. innskudd: 280 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 17. des.",
+          "SETT INN & HENT",
+          "Fullstendige vilkår"
+        ],
+        "expired": [
+          "DAG 17 · 17. DESEMBER",
+          "JULEBONUS",
+          "45% OPPTIL 5 000 NOK",
+          "Min. innskudd: 280 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 17. des.",
+          "Gaven er utløpt",
+          "Fullstendige vilkår"
+        ],
+        "locked": [
+          "DAG 17 · 17. DESEMBER",
+          "OVERRASKELSESGAVE",
+          "Åpnes 17. desember",
+          "Kom tilbake i morgen for å låse opp gaven!",
+          "Låst · 17. des.",
+          "Fullstendige vilkår"
+        ]
+      }
+    },
+    {
+      "day": 18,
+      "date": "2026-12-18",
+      "location": "Snøhulen",
+      "type": "freespins",
+      "amount": {
+        "spins": 63,
+        "text": "63 GRATISSPINN"
+      },
+      "game": "Big Bass Christmas – Frozen Lake",
+      "minDeposit": {
+        "value": 280,
+        "currency": "NOK",
+        "text": "Min. innskudd: 280 NOK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsetningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig til: 23:59, 18. des."
+      },
+      "raw": {
+        "active": [
+          "DAG 18 · 18. DESEMBER",
+          "JULESPINN",
+          "63 GRATISSPINN",
+          "på Big Bass Christmas – Frozen Lake",
+          "Min. innskudd: 280 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 18. des.",
+          "SETT INN & HENT",
+          "Fullstendige vilkår"
+        ],
+        "expired": [
+          "DAG 18 · 18. DESEMBER",
+          "JULESPINN",
+          "63 GRATISSPINN",
+          "på Big Bass Christmas – Frozen Lake",
+          "Min. innskudd: 280 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 18. des.",
+          "Gaven er utløpt",
+          "Fullstendige vilkår"
+        ],
+        "locked": [
+          "DAG 18 · 18. DESEMBER",
+          "OVERRASKELSESGAVE",
+          "Åpnes 18. desember",
+          "Kom tilbake i morgen for å låse opp gaven!",
+          "Låst · 18. des.",
+          "Fullstendige vilkår"
+        ]
+      }
+    },
+    {
+      "day": 19,
+      "date": "2026-12-19",
+      "location": "Stjernehimmelens skøytebane",
+      "type": "freespins",
+      "amount": {
+        "spins": 95,
+        "text": "95 GRATISSPINN"
+      },
+      "game": "Fruits 'n' Stars Holiday Edition",
+      "minDeposit": {
+        "value": 400,
+        "currency": "NOK",
+        "text": "Min. innskudd: 400 NOK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsetningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig til: 23:59, 19. des."
+      },
+      "raw": {
+        "active": [
+          "DAG 19 · 19. DESEMBER",
+          "JULESPINN",
+          "95 GRATISSPINN",
+          "på Fruits 'n' Stars Holiday Edition",
+          "Min. innskudd: 400 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 19. des.",
+          "SETT INN & HENT",
+          "Fullstendige vilkår"
+        ],
+        "expired": [
+          "DAG 19 · 19. DESEMBER",
+          "JULESPINN",
+          "95 GRATISSPINN",
+          "på Fruits 'n' Stars Holiday Edition",
+          "Min. innskudd: 400 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 19. des.",
+          "Gaven er utløpt",
+          "Fullstendige vilkår"
+        ],
+        "locked": [
+          "DAG 19 · 19. DESEMBER",
+          "OVERRASKELSESGAVE",
+          "Åpnes 19. desember",
+          "Kom tilbake i morgen for å låse opp gaven!",
+          "Låst · 19. des.",
+          "Fullstendige vilkår"
+        ]
+      }
+    },
+    {
+      "day": 20,
+      "date": "2026-12-20",
+      "location": "Nordlys",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 GRATISSPINN"
+      },
+      "game": "Sweet Bonanza Xmas",
+      "minDeposit": {
+        "value": 350,
+        "currency": "NOK",
+        "text": "Min. innskudd: 350 NOK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsetningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig til: 23:59, 20. des."
+      },
+      "raw": {
+        "active": [
+          "DAG 20 · 20. DESEMBER",
+          "JULESPINN",
+          "82 GRATISSPINN",
+          "på Sweet Bonanza Xmas",
+          "Min. innskudd: 350 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 20. des.",
+          "SETT INN & HENT",
+          "Fullstendige vilkår"
+        ],
+        "expired": [
+          "DAG 20 · 20. DESEMBER",
+          "JULESPINN",
+          "82 GRATISSPINN",
+          "på Sweet Bonanza Xmas",
+          "Min. innskudd: 350 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 20. des.",
+          "Gaven er utløpt",
+          "Fullstendige vilkår"
+        ],
+        "locked": [
+          "DAG 20 · 20. DESEMBER",
+          "OVERRASKELSESGAVE",
+          "Åpnes 20. desember",
+          "Kom tilbake i morgen for å låse opp gaven!",
+          "Låst · 20. des.",
+          "Fullstendige vilkår"
+        ]
+      }
+    },
+    {
+      "day": 21,
+      "date": "2026-12-21",
+      "location": "Midnattsekspressen",
+      "type": "bonus",
+      "amount": {
+        "percent": 65,
+        "max": 5000,
+        "currency": "NOK",
+        "text": "65% OPPTIL 5 000 NOK"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 280,
+        "currency": "NOK",
+        "text": "Min. innskudd: 280 NOK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsetningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig til: 23:59, 21. des."
+      },
+      "raw": {
+        "active": [
+          "DAG 21 · 21. DESEMBER",
+          "JULEBONUS",
+          "65% OPPTIL 5 000 NOK",
+          "Min. innskudd: 280 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 21. des.",
+          "SETT INN & HENT",
+          "Fullstendige vilkår"
+        ],
+        "expired": [
+          "DAG 21 · 21. DESEMBER",
+          "JULEBONUS",
+          "65% OPPTIL 5 000 NOK",
+          "Min. innskudd: 280 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 21. des.",
+          "Gaven er utløpt",
+          "Fullstendige vilkår"
+        ],
+        "locked": [
+          "DAG 21 · 21. DESEMBER",
+          "OVERRASKELSESGAVE",
+          "Åpnes 21. desember",
+          "Kom tilbake i morgen for å låse opp gaven!",
+          "Låst · 21. des.",
+          "Fullstendige vilkår"
+        ]
+      }
+    },
+    {
+      "day": 22,
+      "date": "2026-12-22",
+      "location": "Snøhytta",
+      "type": "freespins",
+      "amount": {
+        "spins": 62,
+        "text": "62 GRATISSPINN"
+      },
+      "game": "Yeti Quest",
+      "minDeposit": {
+        "value": 230,
+        "currency": "NOK",
+        "text": "Min. innskudd: 230 NOK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsetningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig til: 23:59, 22. des."
+      },
+      "raw": {
+        "active": [
+          "DAG 22 · 22. DESEMBER",
+          "JULESPINN",
+          "62 GRATISSPINN",
+          "på Yeti Quest",
+          "Min. innskudd: 230 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 22. des.",
+          "SETT INN & HENT",
+          "Fullstendige vilkår"
+        ],
+        "expired": [
+          "DAG 22 · 22. DESEMBER",
+          "JULESPINN",
+          "62 GRATISSPINN",
+          "på Yeti Quest",
+          "Min. innskudd: 230 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 22. des.",
+          "Gaven er utløpt",
+          "Fullstendige vilkår"
+        ],
+        "locked": [
+          "DAG 22 · 22. DESEMBER",
+          "OVERRASKELSESGAVE",
+          "Åpnes 22. desember",
+          "Kom tilbake i morgen for å låse opp gaven!",
+          "Låst · 22. des.",
+          "Fullstendige vilkår"
+        ]
+      }
+    },
+    {
+      "day": 23,
+      "date": "2026-12-23",
+      "location": "Julenissens safe",
+      "type": "freespins",
+      "amount": {
+        "spins": 99,
+        "text": "99 GRATISSPINN"
+      },
+      "game": "25 Cookies: Hit the Bonus",
+      "minDeposit": {
+        "value": 350,
+        "currency": "NOK",
+        "text": "Min. innskudd: 350 NOK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsetningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig til: 23:59, 23. des."
+      },
+      "raw": {
+        "active": [
+          "DAG 23 · 23. DESEMBER",
+          "JULESPINN",
+          "99 GRATISSPINN",
+          "på 25 Cookies: Hit the Bonus",
+          "Min. innskudd: 350 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 23. des.",
+          "SETT INN & HENT",
+          "Fullstendige vilkår"
+        ],
+        "expired": [
+          "DAG 23 · 23. DESEMBER",
+          "JULESPINN",
+          "99 GRATISSPINN",
+          "på 25 Cookies: Hit the Bonus",
+          "Min. innskudd: 350 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 23. des.",
+          "Gaven er utløpt",
+          "Fullstendige vilkår"
+        ],
+        "locked": [
+          "DAG 23 · 23. DESEMBER",
+          "OVERRASKELSESGAVE",
+          "Åpnes 23. desember",
+          "Kom tilbake i morgen for å låse opp gaven!",
+          "Låst · 23. des.",
+          "Fullstendige vilkår"
+        ]
+      }
+    },
+    {
+      "day": 24,
+      "date": "2026-12-24",
+      "location": "Det hemmelige rommet",
+      "type": "bonus",
+      "amount": {
+        "percent": 80,
+        "max": 4000,
+        "currency": "NOK",
+        "text": "80% OPPTIL 4 000 NOK"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 400,
+        "currency": "NOK",
+        "text": "Min. innskudd: 400 NOK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsetningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig til: 23:59, 24. des."
+      },
+      "raw": {
+        "active": [
+          "DAG 24 · 24. DESEMBER",
+          "JULEBONUS",
+          "80% OPPTIL 4 000 NOK",
+          "Min. innskudd: 400 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 24. des.",
+          "SETT INN & HENT",
+          "Fullstendige vilkår"
+        ],
+        "expired": [
+          "DAG 24 · 24. DESEMBER",
+          "JULEBONUS",
+          "80% OPPTIL 4 000 NOK",
+          "Min. innskudd: 400 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 24. des.",
+          "Gaven er utløpt",
+          "Fullstendige vilkår"
+        ],
+        "locked": [
+          "DAG 24 · 24. DESEMBER",
+          "OVERRASKELSESGAVE",
+          "Åpnes 24. desember",
+          "Kom tilbake i morgen for å låse opp gaven!",
+          "Låst · 24. des.",
+          "Fullstendige vilkår"
+        ]
+      }
+    },
+    {
+      "day": 25,
+      "date": "2026-12-25",
+      "location": "Gavesekken",
+      "type": "freespins",
+      "amount": {
+        "spins": 101,
+        "text": "101 GRATISSPINN"
+      },
+      "game": "Christmas Carol Megaways",
+      "minDeposit": {
+        "value": 400,
+        "currency": "NOK",
+        "text": "Min. innskudd: 400 NOK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsetningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig til: 23:59, 25. des."
+      },
+      "raw": {
+        "active": [
+          "DAG 25 · 25. DESEMBER",
+          "JULESPINN",
+          "101 GRATISSPINN",
+          "på Christmas Carol Megaways",
+          "Min. innskudd: 400 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 25. des.",
+          "SETT INN & HENT",
+          "Fullstendige vilkår"
+        ],
+        "expired": [
+          "DAG 25 · 25. DESEMBER",
+          "JULESPINN",
+          "101 GRATISSPINN",
+          "på Christmas Carol Megaways",
+          "Min. innskudd: 400 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 25. des.",
+          "Gaven er utløpt",
+          "Fullstendige vilkår"
+        ],
+        "locked": [
+          "DAG 25 · 25. DESEMBER",
+          "OVERRASKELSESGAVE",
+          "Åpnes 25. desember",
+          "Kom tilbake i morgen for å låse opp gaven!",
+          "Låst · 25. des.",
+          "Fullstendige vilkår"
+        ]
+      }
+    },
+    {
+      "day": 26,
+      "date": "2026-12-26",
+      "location": "Jackpot-kisten",
+      "type": "bonus",
+      "amount": {
+        "percent": 60,
+        "max": 6000,
+        "currency": "NOK",
+        "text": "60% OPPTIL 6 000 NOK"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 230,
+        "currency": "NOK",
+        "text": "Min. innskudd: 230 NOK"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Omsetningskrav: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Gyldig til: 23:59, 26. des."
+      },
+      "raw": {
+        "active": [
+          "DAG 26 · 26. DESEMBER",
+          "JULEBONUS",
+          "60% OPPTIL 6 000 NOK",
+          "Min. innskudd: 230 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 26. des.",
+          "SETT INN & HENT",
+          "Fullstendige vilkår"
+        ],
+        "expired": [
+          "DAG 26 · 26. DESEMBER",
+          "JULEBONUS",
+          "60% OPPTIL 6 000 NOK",
+          "Min. innskudd: 230 NOK",
+          "Omsetningskrav: x25",
+          "Gyldig til: 23:59, 26. des.",
+          "Gaven er utløpt",
+          "Fullstendige vilkår"
+        ],
+        "locked": [
+          "DAG 26 · 26. DESEMBER",
+          "OVERRASKELSESGAVE",
+          "Åpnes 26. desember",
+          "Kom tilbake i morgen for å låse opp gaven!",
+          "Låst · 26. des.",
+          "Fullstendige vilkår"
+        ]
+      }
+    }
+  ]
+}
