@@ -1,0 +1,20 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="258.77" height="29" viewBox="0 0 258.77 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Snow cap" filter="url(#filter0_d_0_4)">
+<path id="Vector" d="M14.7213 0H244.049C251.94 0 255.885 3.41026 255.885 10.2308C247.994 16.0769 240.103 16.5641 232.213 11.6923C222.349 21.4359 212.485 21.4359 202.622 11.6923C190.786 16.5641 178.949 16.5641 167.113 11.6923C159.222 21.4359 151.331 21.4359 143.441 11.6923C133.577 16.5641 123.714 16.5641 113.85 11.6923C102.014 21.4359 90.1775 21.4359 78.3412 11.6923C70.4504 16.5641 62.5595 16.5641 54.6687 11.6923C44.8051 21.4359 34.9416 21.4359 25.078 11.6923C21.6258 16.5641 18.1736 16.5641 14.7213 11.6923C6.83048 12.6667 2.88506 11.6923 2.88506 8.76923C2.88506 2.92308 6.83048 0 14.7213 0Z" fill="url(#paint0_linear_0_4)"/>
+</g>
+<defs>
+<filter id="filter0_d_0_4" x="0" y="0" width="258.77" height="34.7701" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="2.88506"/>
+<feGaussianBlur stdDeviation="1.44253"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_4"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_4" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_0_4" x1="129.385" y1="0" x2="129.385" y2="19" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#DCEBFF"/>
+</linearGradient>
+</defs>
+</svg>
