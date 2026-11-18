@@ -2,7 +2,7 @@
 // the parsed fields only decide the layout (is there a game line?).
 import { depositLinkFor, linkFor } from '../config.js';
 import { dayState } from '../date.js';
-import { CLOSE_SVG, asset, esc } from './util.js';
+import { CLOSE_SVG, asset, esc, escNb } from './util.js';
 
 const STARS = [
   [92, 67, 14], [324, 57, 11], [291, 137, 9], [125, 143, 8], [358, 105, 7], [50, 114, 6],
@@ -27,7 +27,7 @@ function art(kind, chip) {
   <div class="card__art">
     ${body}
     <span class="card__artfade card__artfade--top"></span><span class="card__artfade card__artfade--bottom"></span>
-    <span class="card__chip">${esc(chip)}</span>
+    <span class="card__chip">${escNb(chip)}</span>
     <button type="button" class="card__close" data-close aria-label="✕"><span>${CLOSE_SVG}</span></button>
   </div>`;
 }
@@ -41,32 +41,32 @@ export function renderCard({ card, day, today, ui, marketId }) {
   const kind = state === 'active' ? 'active' : state === 'missed' ? 'expired' : 'locked';
   const lines = card.raw[kind];
   const n = lines.length;
-  const termsLink = `<a class="card__terms" href="${esc(linkFor('terms', marketId))}" data-track="terms_click" data-day="${day}">${esc(lines[n - 1])}</a>`;
+  const termsLink = `<a class="card__terms" href="${esc(linkFor('terms', marketId))}" data-track="terms_click" data-day="${day}">${escNb(lines[n - 1])}</a>`;
 
   let body;
   if (kind === 'locked') {
     // [day, SURPRISE GIFT, Opens N December, Come back..., Locked · N Dec, terms]
     body = `
-      <p class="card__type">${esc(lines[1])}</p>
-      <div class="card__offer"><h2 class="card__opens" id="card-title">${esc(lines[2])}</h2><p class="card__game">${esc(lines[3])}</p></div>
-      <button type="button" class="btn-primary" disabled>${esc(lines[4])}</button>
+      <p class="card__type">${escNb(lines[1])}</p>
+      <div class="card__offer"><h2 class="card__opens" id="card-title">${escNb(lines[2])}</h2><p class="card__game">${escNb(lines[3])}</p></div>
+      <button type="button" class="btn-primary" disabled>${escNb(lines[4])}</button>
       ${termsLink}`;
   } else {
     const hasGame = Boolean(card.game);
     const rows = lines.slice(n - 5, n - 2).map(splitTerm);
     body = `
-      <p class="card__type">${esc(lines[1])}</p>
+      <p class="card__type">${escNb(lines[1])}</p>
       <div class="card__offer">
-        <h2 class="card__amount" id="card-title"><span class="card__amount-text">${esc(lines[2])}</span></h2>
-        ${hasGame ? `<p class="card__game">${esc(lines[3])}</p>` : ''}
+        <h2 class="card__amount" id="card-title"><span class="card__amount-text">${escNb(lines[2])}</span></h2>
+        ${hasGame ? `<p class="card__game">${escNb(lines[3])}</p>` : ''}
       </div>
       <dl class="card__terms-list">
-        ${rows.map(([k, v]) => `<div class="term"><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}
+        ${rows.map(([k, v]) => `<div class="term"><dt>${escNb(k)}</dt><dd>${escNb(v)}</dd></div>`).join('')}
       </dl>
       ${
         kind === 'active'
-          ? `<a class="btn-primary" href="${esc(depositLinkFor(day, marketId))}" data-track="deposit_click" data-day="${day}">${esc(lines[n - 2])}</a>`
-          : `<button type="button" class="btn-primary" disabled>${esc(lines[n - 2])}</button>`
+          ? `<a class="btn-primary" href="${esc(depositLinkFor(day, marketId))}" data-track="deposit_click" data-day="${day}">${escNb(lines[n - 2])}</a>`
+          : `<button type="button" class="btn-primary" disabled>${escNb(lines[n - 2])}</button>`
       }
       ${termsLink}`;
   }

@@ -1,6 +1,23 @@
 export const esc = (v) =>
   String(v ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 
+/**
+ * Keeps numbers whole when a line wraps: a plain space becomes U+00A0 (same width, never a break point)
+ *  - inside digit groups ("6 000"),
+ *  - between a number and the word/currency/percent sign after it ("6 000 SEK", "60 %", "25 FREE", "26 Dec", "23 h"),
+ *  - between the French hour mark and the minutes ("23 h 59").
+ * Rendering only: the sheet text and data JSON stay untouched.
+ */
+export const nb = (v) =>
+  String(v ?? '')
+    .replace(/(\d) (?=\d{3}(?!\d))/g, '$1 ')
+    .replace(/(\d) (?=[%€$£₽]|\p{L})/gu, '$1 ')
+    .replace(/(\dh|\d h) (?=\d)/g, '$1 ')
+    .replace(/(\d)([–-])(?=\d)/g, '$1⁠$2⁠'); // ranges "1–26": an en dash is a break point, the word joiners remove it
+
+/** esc() + nb(): for every visible string that can contain an amount, date or time. */
+export const escNb = (v) => esc(nb(v));
+
 /** URL of a file in public/assets (works with the relative Vite base). */
 export const asset = (name) => `${import.meta.env.BASE_URL}assets/${name}`;
 

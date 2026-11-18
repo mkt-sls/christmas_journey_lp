@@ -4,7 +4,7 @@
 import { CAMPAIGN } from '../config.js';
 import { dayDate, dayState, formatCountdown, nextUnlock, relativeKey, secondsUntil, visibleDays } from '../date.js';
 import { fill, longDate, shortDate } from '../i18n.js';
-import { ARROW_SVG, asset, esc } from './util.js';
+import { ARROW_SVG, asset, esc, escNb, nb } from './util.js';
 
 const DESKTOP = {
   size: 5,
@@ -262,7 +262,7 @@ function stopHtml({ layout, spec, slot, day, today, ui, uiLang, card, chipDay, c
   let inner;
   if (state === 'active') {
     inner = `
-      <span class="label__tag">${esc(tag)}</span>
+      <span class="label__tag">${escNb(tag)}</span>
       <span class="label__name">${name}</span>
       <button type="button" class="open-btn" data-open="${day}"><span>${esc(ui.open_gift)}</span>${ARROW_SVG}</button>
       <span class="garland" data-garland aria-hidden="true"></span>
@@ -270,15 +270,15 @@ function stopHtml({ layout, spec, slot, day, today, ui, uiLang, card, chipDay, c
       <img class="label__holly" src="${asset('holly.svg')}" alt="" aria-hidden="true">`;
   } else if (state === 'missed') {
     inner = `
-      <span class="label__tag">${esc(tag)}</span>
+      <span class="label__tag">${escNb(tag)}</span>
       <span class="label__name">${name}</span>
       <img class="label__cap" src="${asset('snow-cap.svg')}" alt="" aria-hidden="true">
       <img class="label__holly" src="${asset('holly.svg')}" alt="" aria-hidden="true">`;
   } else {
     inner = `
-      <span class="label__tag">${esc(tag)}</span>
+      <span class="label__tag">${escNb(tag)}</span>
       <span class="label__name">${name}</span>
-      ${day === chipDay ? `<span class="chip" data-countdown>${esc(fill(ui.unlocks_in, { time: countdown }))}</span>` : ''}`;
+      ${day === chipDay ? `<span class="chip" data-countdown>${escNb(fill(ui.unlocks_in, { time: countdown }))}</span>` : ''}`;
   }
   const lab = `<div class="label label--${state}${near ? ' label--near' : ' label--far'}" data-open="${day}" style="${pos}">${inner}</div>`;
   void marketId;
@@ -351,7 +351,7 @@ export function renderRoute(ctx) {
 export function tickCountdown(root, ui, now) {
   const time = formatCountdown(secondsUntil(now, nextUnlock(now)));
   root.querySelectorAll('[data-countdown]').forEach((el) => {
-    el.textContent = fill(ui.unlocks_in, { time });
+    el.textContent = nb(fill(ui.unlocks_in, { time }));
   });
   return time;
 }
