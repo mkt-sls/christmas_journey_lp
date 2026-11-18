@@ -31,11 +31,16 @@
 .gift--active::before {
   content: '';
   position: absolute;
-  left: -12.5%;
-  top: 47.4%;
-  width: 124.5%;
-  height: 50.4%;
-  border: 3px solid rgba(255, 214, 107, 0.9);
+  /* starts exactly on the thin yellow ellipse drawn on the podium's top face inside gift-today@2x.webp.
+     Measured from the image pixels (629x659, ellipse fitted to the ring pixels): centre (314.5, 394.8), rx 133, ry 64.4;
+     the image sits in the gift box at left -20.83% / top -31.75% / width 141.67% / height 141.27% (see .gift--active .gift__img),
+     which gives centre 50% / 52.9% of the box, width 59.9%, height 27.6%. */
+  box-sizing: border-box;
+  left: 20.04%;
+  top: 39.05%;
+  width: 59.92%;
+  height: 27.6%;
+  border: 2px solid rgba(255, 214, 107, 0.9);
   border-radius: 50%;
   pointer-events: none;
   animation: pulse-ring 1.6s ease-in-out infinite;

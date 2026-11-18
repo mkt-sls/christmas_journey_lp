@@ -39,29 +39,71 @@ export const stageSpec = (layout) => (layout === 'desktop' ? DESKTOP : MOBILE);
 // board sits relative to the Santa centre. Every position below is a POINT OF THAT PATH (board centre), chosen so that his
 // art ends before the active gift's image box (x +-85*k around the stop, k = gift scale) starts.
 const BOARD = { desktop: { x: 0, y: 91 }, mobile: { x: -20, y: 15 } };
-const ROUTE_POINT = {
-  desktop: {
-    start: { x: 152, y: 444 }, // before the campaign: left of the (small, locked) day 1; first segment t=0.82
-    end: { x: 1774, y: 444 }, // after the campaign: right of day 26; last segment t=0.2
-    // today in slot 0..4: just before the active gift (slot 0 has no room on its left: he stands on the line right of it)
-    today: [{ x: 518, y: 366 }, { x: 330, y: 429 }, { x: 717, y: 374 }, { x: 1070, y: 412 }, { x: 1440, y: 374 }],
-  },
-  mobile: {
-    start: { x: 161, y: 30 }, // before the campaign; first segment t=0.4 (the dotted line fades in there)
-    end: { x: 202, y: 542 }, // after the campaign; last segment t=0.7
-    today: [{ x: 183, y: 15 }, { x: 135, y: 168 }, { x: 197, y: 353 }], // segment t=0.25 / 0.35 / 0.4 before each stop
-  },
+// Angle (deg, clockwise on screen) of the board in the art as it is drawn: the desktop art is shown as is, the mobile art is
+// pre-tilted 20.96deg in CSS. Measured on the images (board nose ~18.7deg below horizontal).
+export const BOARD_ANGLE = { desktop: 18.7, mobile: 18.7 + 20.96 };
+
+// The dotted route as cubic bezier segments in stage coordinates: [P0, C1, C2, P1] per segment (the same "d" as
+// public/assets/route-*.svg, moved by the svg's position on the stage). Segment i runs from anchor i to anchor i+1; the
+// stops sit on anchors 1.. (anchor 0 is the start of the line, the last anchor its end).
+function bezierSegments(d, dx, dy) {
+  const n = d.match(/-?\d+(?:\.\d+)?/g).map(Number);
+  const pt = (i) => ({ x: n[i] + dx, y: n[i + 1] + dy });
+  const segs = [];
+  for (let i = 2; i + 5 < n.length + 0; i += 6) segs.push([i === 2 ? pt(0) : segs[segs.length - 1][3], pt(i), pt(i + 2), pt(i + 4)]);
+  return segs;
+}
+const PATH = {
+  desktop: bezierSegments('M15 125C165 125 165 95 315 95C500 95 500 15 685 15C870 15 870 75 1055 75C1240 75 1240 15 1425 15C1610 15 1610 95 1795 95C1945 95 1945 125 2095 125', -95, 346),
+  mobile: bezierSegments('M120.5 10.5C120.5 70.5 10.5 70.5 10.5 130.5C10.5 220.5 170.5 220.5 170.5 310.5C170.5 397.5 20.5 397.5 20.5 484.5C20.5 552 150.5 552 150.5 619.5', 79.5, -31.5),
 };
 
+// Where on the line he stands: always BETWEEN two stops (yesterday's and today's), his board on the line.
+// [segment, t] of PATH. Slot s (today) uses the segment that ends at its stop (segment s; for slot 0 that is the lead-in
+// before day 1). 'before' = lead-in before day 1; 'end' = segment after the last stop of the window.
+const SANTA_SPOT = {
+  desktop: { before: [0, 0.28], end: [5, 0.42], today: [[0, 0.28], [1, 0.37], [2, 0.37], [3, 0.37], [4, 0.37]] },
+  mobile: { before: [0, 0.2], end: [3, 0.5], today: [[0, 0.2], [1, 0.45], [2, 0.45]] },
+};
+
+const bez = (s, t) => {
+  const u = 1 - t;
+  const f = (a, b, c, d) => u * u * u * a + 3 * u * u * t * b + 3 * u * t * t * c + t * t * t * d;
+  return {
+    x: f(s[0].x, s[1].x, s[2].x, s[3].x),
+    y: f(s[0].y, s[1].y, s[2].y, s[3].y),
+    // derivative (tangent direction)
+    tx: 3 * (u * u * (s[1].x - s[0].x) + 2 * u * t * (s[2].x - s[1].x) + t * t * (s[3].x - s[2].x)),
+    ty: 3 * (u * u * (s[1].y - s[0].y) + 2 * u * t * (s[2].y - s[1].y) + t * t * (s[3].y - s[2].y)),
+  };
+};
+
+function spot(layout, slot, mode) {
+  const S = SANTA_SPOT[layout];
+  const [seg, t] = mode === 'end' ? S.end : mode === 'before' ? S.before : S.today[slot];
+  return bez(PATH[layout][seg], t);
+}
+
 /**
- * Centre of Santa (before the desktop --f squeeze).
+ * Centre of Santa (before the desktop --f squeeze). His BOARD centre is a point of the route.
  * mode 'day' (default): today is in `slot`; 'before': campaign not started; 'end': campaign over.
  */
 export function santaPos(layout, slot, mode = 'day') {
   const b = BOARD[layout];
-  const R = ROUTE_POINT[layout];
-  const p = mode === 'end' ? R.end : mode === 'before' ? R.start : R.today[slot];
+  const p = spot(layout, slot, mode);
   return { x: p.x - b.x, y: p.y - b.y };
+}
+
+/**
+ * Rotation (deg) that makes his board parallel to the route at his point. `f` is the desktop horizontal squeeze of the
+ * route (the line gets steeper when it is squeezed). Rotation is about the board centre, so the board stays on the line.
+ */
+export function santaAngle(layout, slot, mode = 'day', f = 1) {
+  const p = spot(layout, slot, mode);
+  let a = (Math.atan2(p.ty, p.tx * f) * 180) / Math.PI; // direction of the line on screen
+  if (a > 90) a -= 180; // he faces right: the board's nose is the right end
+  if (a <= -90) a += 180;
+  return Math.round((a - BOARD_ANGLE[layout]) * 100) / 100;
 }
 
 const r = (n) => Math.round(n * 100) / 100;
@@ -114,7 +156,7 @@ function stopHtml({ layout, spec, slot, day, today, ui, uiLang, card, chipDay, c
 
   const gift = `
     <button type="button" class="gift gift--${state}" data-open="${day}" aria-label="${esc(label)}"
-      style="left:${layout === 'desktop' ? `calc(${r(mid - 60 * k)}px + var(--f) * ${cx - mid}px)` : `${r(cx - 60 * k)}px`};top:${r(py - 80 * k)}px;--k:${k}">
+      style="left:${layout === 'desktop' ? `calc(${r(mid - 60 * k)}px + var(--f) * ${cx - mid}px + var(--dx, 0px))` : `${r(cx - 60 * k)}px`};top:${r(py - 80 * k)}px;--k:${k}">
       <img class="gift__img" src="${asset(img)}" alt="" draggable="false">
       ${state === 'active' ? `<span class="today-pill" aria-hidden="true">${esc(ui.today)}</span>` : ''}
     </button>`;
@@ -123,7 +165,7 @@ function stopHtml({ layout, spec, slot, day, today, ui, uiLang, card, chipDay, c
   let pos;
   if (layout === 'desktop') {
     const dy = state === 'active' ? 53 : Math.abs(slot - 2) === 1 ? 56 : 51;
-    pos = `left:calc(${mid}px + var(--f) * ${cx - mid}px);top:${r(py + dy)}px;transform:translateX(-50%)`;
+    pos = `left:calc(${mid}px + var(--f) * ${cx - mid}px + var(--dx, 0px));top:${r(py + dy)}px;transform:translateX(-50%)`;
   } else {
     const a = MOBILE.label[slot];
     pos = `left:${r(cx + a.dx)}px;top:${r(py + a.dy)}px;${a.left ? 'transform:translateX(-100%)' : ''}`;
@@ -186,7 +228,7 @@ export function renderRoute(ctx) {
   if (layout === 'desktop') {
     // Santa rides just before today's pedestal; in slot 0 there is no room on the left, so he hovers up-left
     const { x: sx, y: sy } = santaPos('desktop', santaSlot, santaMode);
-    const sxCss = `calc(${mid}px + var(--f) * ${sx - mid}px)`;
+    const sxCss = `calc(${mid}px + var(--f) * ${sx - mid}px + var(--dx, 0px))`;
     scenery = `
       <img class="landscape" src="${asset('landscape-desktop@2x.webp')}" alt="" aria-hidden="true">
       <div class="fade fade--top"></div><div class="fade fade--bottom"></div><div class="fade fade--left"></div><div class="fade fade--right"></div>
@@ -194,7 +236,7 @@ export function renderRoute(ctx) {
         <img class="route route--base" src="${asset('route-desktop.svg')}" alt="" aria-hidden="true">
         <div class="route route--gold" style="width:${goldSize}px"><img src="${asset('route-desktop-gold.svg')}" alt="" aria-hidden="true"></div>
       </div>
-      <div class="santa" style="left:${sxCss};top:${sy}px">
+      <div class="santa" data-santa-slot="${santaSlot}" data-santa-mode="${santaMode}" style="left:${sxCss};top:${sy}px;--rot:${santaAngle('desktop', santaSlot, santaMode)}deg">
         <span class="santa__glow"></span>
         <img src="${asset('hero-santa-desktop@2x.webp')}" alt="" aria-hidden="true">
       </div>`;
@@ -203,7 +245,7 @@ export function renderRoute(ctx) {
     scenery = `
       <img class="route route--base" src="${asset('route-mobile.svg')}" alt="" aria-hidden="true">
       <div class="route route--gold" style="height:${goldSize}px"><img src="${asset('route-mobile-gold.svg')}" alt="" aria-hidden="true"></div>
-      <div class="santa" style="left:${r(sx)}px;top:${r(sy)}px">
+      <div class="santa" data-santa-slot="${santaSlot}" data-santa-mode="${santaMode}" style="left:${r(sx)}px;top:${r(sy)}px;--rot:${santaAngle('mobile', santaSlot, santaMode)}deg">
         <span class="santa__glow"></span>
         <img src="${asset('hero-santa-mobile@2x.webp')}" alt="" aria-hidden="true">
       </div>`;

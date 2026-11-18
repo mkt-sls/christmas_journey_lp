@@ -15,7 +15,7 @@ import { renderHowItWorks } from './render/howItWorks.js';
 import { renderIntro } from './render/intro.js';
 import { renderLegal } from './render/legal.js';
 import { closeOverlay, openOverlay } from './render/overlay.js';
-import { desktopFit, drawGarlands, fitLabels, renderRoute, stageSpec, tickCountdown } from './render/route.js';
+import { desktopFit, drawGarlands, fitLabels, renderRoute, santaAngle, santaPos, stageSpec, tickCountdown } from './render/route.js';
 import { track } from './track.js';
 import { initAmbient } from './anim/ambient.js';
 import { checkNewDay } from './anim/lastSeen.js';
@@ -64,6 +64,21 @@ function fitStage() {
   page.style.setProperty('--stage-pad', l === 'mobile' && page.querySelector('[data-santa-first]') ? `${MOBILE_FIRST_PAD * s}px` : '0px');
   page.style.setProperty('--stage-pad-b', l === 'mobile' && page.querySelector('[data-santa-end]') ? `${MOBILE_END_PAD * s}px` : '0px');
   page.style.setProperty('--stage-h', `${spec.height * s}px`);
+  // the desktop route line is squeezed by f, so Santa's board angle follows the squeezed line
+  const santa = page.querySelector('.santa');
+  // desktop, Santa left of the first stop (Dec 1 / before the campaign): shift the whole stage right so he is not cut off at the left edge
+  let dx = 0;
+  if (l === 'desktop' && santa && Number(santa.dataset.santaSlot) === 0) {
+    const half = window.innerWidth / s / 2;
+    const xc = 960 + (santaPos('desktop', 0, santa.dataset.santaMode).x - 960) * f; // Santa's board centre, before the shift
+    const need = 960 - half + 100 - xc; // keep his art (about 100 stage units either side) inside the viewport
+    const room = 960 + half - (960 + 740 * f + 115) - 8; // the last stop and its label must stay inside on the right
+    dx = Math.max(0, Math.min(90 < need ? need : 90, room));
+    // narrow desktops have no room left of the first stop: make him smaller so he still fits between the line start and the gift
+    santa.style.setProperty('--sc', f < 0.95 ? Math.max(0.4, 0.62 * Math.max(0.65, (f - 0.35) / 0.65)).toFixed(2) : '');
+  }
+  page.style.setProperty('--dx', `${dx}px`);
+  if (santa) santa.style.setProperty('--rot', `${santaAngle(l, Number(santa.dataset.santaSlot), santa.dataset.santaMode, f)}deg`);
   fitLabels(app);
 }
 

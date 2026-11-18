@@ -198,7 +198,20 @@
   height: 330px;
   background: radial-gradient(circle, rgba(255, 204, 41, 0.32), rgba(255, 204, 41, 0) 68%);
 }
-[data-layout='mobile'] .santa { width: 150px; height: 150px; }
+/* desktop, stage scaled down: the intro text (outside the stage) stays full size, so his sack would touch the subtitle.
+   Shrink him around the point where his board meets the route (centre + 91px, see BOARD in route.js): he stays ON the line,
+   only his top drops. Factor 1 at full size (s=1), ~0.83 at s=0.72. */
+[data-layout='desktop'] .santa {
+  transform-origin: 50% calc(50% + 91px);
+  transform: translate(-50%, -50%) rotate(var(--rot, 0deg)) scale(var(--sc, 0.62));
+}
+[data-layout='mobile'] .santa {
+  width: 150px;
+  height: 150px;
+  /* rotate about the board centre (BOARD in route.js) so the board stays on the line */
+  transform-origin: calc(50% - 20px) calc(50% + 15px);
+  transform: translate(-50%, -50%) rotate(var(--rot, 0deg)) scale(var(--sc, 0.72));
+}
 [data-layout='mobile'] .santa img {
   left: 50%;
   top: 50%;
@@ -342,7 +355,8 @@
   align-items: center;
   justify-content: center;
   gap: 6px;
-  min-height: 44px;
+  /* the stage is scaled by --s, so 44px here would render smaller: counter-scale to keep a 44px rendered hit area */
+  min-height: calc(44px / var(--s, 1));
   padding: 0 12px;
   border: 1.5px solid rgba(255, 246, 214, 0.9);
   border-radius: var(--r-pill);
@@ -699,7 +713,7 @@
   width: 1920px;
   height: 735px;
   transform-origin: 960px 0;
-  transform: scaleX(var(--f, 1));
+  transform: translateX(var(--dx, 0px)) scaleX(var(--f, 1));
   pointer-events: none;
 }
 
