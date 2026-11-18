@@ -46,11 +46,27 @@ export function bindMarketMenu(root, onSelect) {
     list.setAttribute('aria-activedescendant', opts[active].id);
     opts[active].scrollIntoView({ block: 'nearest' });
   };
+  // presentation only: tells CSS which edge fades to show
+  const updateFades = () => {
+    const more = [];
+    if (list.scrollTop > 2) more.push('up');
+    if (list.scrollTop + list.clientHeight < list.scrollHeight - 2) more.push('down');
+    list.dataset.more = more.join(' ');
+  };
+  list.addEventListener('scroll', updateFades, { passive: true });
   const open = () => {
     list.hidden = false;
     btn.setAttribute('aria-expanded', 'true');
-    list.focus();
+    // keep the panel inside the viewport (short buttons like "RO" left-shift it off-screen)
+    list.style.transform = '';
+    const left = list.getBoundingClientRect().left;
+    if (left < 12) list.style.transform = `translateX(${Math.round(12 - left)}px)`;
+    list.focus({ preventScroll: true });
     setActive(Math.max(0, opts.findIndex((o) => o.classList.contains('is-selected'))));
+    // centre the current language in the visible window
+    const cur = opts[active];
+    list.scrollTop = cur.offsetTop - (list.clientHeight - cur.offsetHeight) / 2;
+    updateFades();
     document.addEventListener('pointerdown', outside, true);
   };
   const close = (focusBtn = true) => {
