@@ -35,7 +35,7 @@ const now = () => new Date(hasOverride ? Date.now() + clockOffset : Date.now());
 
 const state = { market: null, ui: null, cards: null, today: null };
 
-const MOBILE_FIRST_PAD = 75;
+const MOBILE_FIRST_PAD = 85; // room above the first gift for Santa on the lead-in (Dec 1, before the campaign)
 const MOBILE_END_PAD = 45; // room below the last pedestal for Santa after the campaign
 const layout = () => (mq.matches ? 'desktop' : 'mobile');
 
@@ -80,7 +80,11 @@ function fitStage() {
     const room = 960 + half - (960 + 740 * f + 115) - 8; // the last stop and its label must stay inside on the right
     dx = Math.max(0, Math.min(90 < need ? need : 90, room));
     // narrow desktops have no room left of the first stop: make him smaller so he still fits between the line start and the gift
-    santa.style.setProperty('--sc', f < 0.95 ? Math.max(0.4, 0.62 * Math.max(0.65, (f - 0.35) / 0.65)).toFixed(2) : '');
+    let sc = f < 0.95 ? 0.62 * Math.max(0.65, (f - 0.35) / 0.65) : 0.62;
+    // the stage could not shift far enough (room on the right ran out, e.g. 1366: s stays 0.72 so only ~1897 stage units show):
+    // his art reaches ~102 stage units left of his centre at 0.62 (measured, scripts/check-santa.mjs), shrink him to fit
+    sc = Math.min(sc, (0.62 * (xc + dx - (960 - half) - 6)) / 102);
+    santa.style.setProperty('--sc', sc < 0.615 ? Math.max(0.4, sc).toFixed(2) : '');
   }
   page.style.setProperty('--dx', `${dx}px`);
   if (santa) santa.style.setProperty('--rot', `${santaAngle(l, Number(santa.dataset.santaSlot), santa.dataset.santaMode, f)}deg`);

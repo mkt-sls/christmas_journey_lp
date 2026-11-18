@@ -38,10 +38,16 @@ export const stageSpec = (layout) => (layout === 'desktop' ? DESKTOP : MOBILE);
 // The route is a cubic-bezier path (the same "d" as public/assets/route-*.svg, moved to stage coordinates). BOARD is where the
 // board sits relative to the Santa centre. Every position below is a POINT OF THAT PATH (board centre), chosen so that his
 // art ends before the active gift's image box (x +-85*k around the stop, k = gift scale) starts.
-const BOARD = { desktop: { x: 0, y: 91 }, mobile: { x: -20, y: 15 } };
+// Mobile: the middle of the board's UNDERSIDE, measured on hero-santa-mobile@2x.webp (pixel 144,213 of 326x242; the art is
+// shown 140px wide in a 150px box and pre-tilted 20.96deg in CSS) = (-21.75, +33.98) from the box centre. It is also the CSS
+// transform-origin, so rotation, the 0.72 scale and the mirror all keep that point fixed on the line.
+// scripts/check-santa.mjs measures the result on screen against the dotted line the SVG really draws.
+// Desktop: the point of the board's underside right below the old (0, 91) anchor, measured on hero-santa-desktop@2x.webp
+// (underside 96,256 -> 300,321 of 440x327, shown 265px wide at -27,17.5 in a 220px box) = (1.2, 87.3).
+const BOARD = { desktop: { x: 1.2, y: 87.3 }, mobile: { x: -21.75, y: 33.98 } };
 // Angle (deg, clockwise on screen) of the board in the art as it is drawn: the desktop art is shown as is, the mobile art is
-// pre-tilted 20.96deg in CSS. Measured on the images (board nose ~18.7deg below horizontal).
-export const BOARD_ANGLE = { desktop: 18.7, mobile: 18.7 + 20.96 };
+// pre-tilted 20.96deg in CSS. Measured on the images: mobile underside 72,190 -> 216,237 = 18.07deg; desktop ~18.7deg.
+export const BOARD_ANGLE = { desktop: 17.67, mobile: 18.07 + 20.96 };
 
 // The dotted route as cubic bezier segments in stage coordinates: [P0, C1, C2, P1] per segment (the same "d" as
 // public/assets/route-*.svg, moved by the svg's position on the stage). Segment i runs from anchor i to anchor i+1; the
@@ -63,7 +69,7 @@ const PATH = {
 // before day 1). 'before' = lead-in before day 1; 'end' = segment after the last stop of the window.
 const SANTA_SPOT = {
   desktop: { before: [0, 0.28], end: [5, 0.42], today: [[0, 0.28], [1, 0.37], [2, 0.37], [3, 0.37], [4, 0.37]] },
-  mobile: { before: [0, 0.25], end: [3, 0.5], today: [[0, 0.25], [1, 0.45], [2, 0.45]] },
+  mobile: { before: [0, 0.34], end: [3, 0.62], today: [[0, 0.34], [1, 0.53], [2, 0.53]] },
 };
 
 const bez = (s, t) => {
@@ -91,8 +97,8 @@ function spot(layout, slot, mode) {
 export function santaPos(layout, slot, mode = 'day') {
   const b = BOARD[layout];
   const p = spot(layout, slot, mode);
-  // mirrored Santa: the board centre sits on the other side of his centre
-  return { x: p.x - (santaFlipped(layout, slot, mode) ? -b.x : b.x), y: p.y - b.y };
+  // a mirrored Santa (mobile) is mirrored about the board point itself (CSS transform-origin), so his centre does not change
+  return { x: p.x - b.x, y: p.y - b.y };
 }
 
 /**

@@ -282,22 +282,21 @@
   background: radial-gradient(circle, rgba(255, 204, 41, 0.32), rgba(255, 204, 41, 0) 68%);
 }
 /* desktop, stage scaled down: the intro text (outside the stage) stays full size, so his sack would touch the subtitle.
-   Shrink him around the point where his board meets the route (centre + 91px, see BOARD in route.js): he stays ON the line,
-   only his top drops. Factor 1 at full size (s=1), ~0.83 at s=0.72. */
+   Shrink him around the point where his board meets the route (the board's underside, centre + (1.2, 87.3)px, see BOARD in
+   route.js): he stays ON the line, only his top drops. Factor 1 at full size (s=1), ~0.83 at s=0.72. */
 [data-layout='desktop'] .santa {
-  transform-origin: 50% calc(50% + 91px);
+  transform-origin: calc(50% + 1.2px) calc(50% + 87.3px);
   transform: translate(-50%, -50%) rotate(var(--rot, 0deg)) scale(var(--sc, 0.62));
 }
 [data-layout='mobile'] .santa {
   width: 150px;
   height: 150px;
-  /* rotate about the board centre (BOARD in route.js) so the board stays on the line */
-  transform-origin: calc(50% - 20px) calc(50% + 15px);
+  /* rotate, scale and mirror about the middle of the board's underside (BOARD in route.js) so the board stays on the line */
+  transform-origin: calc(50% - 21.75px) calc(50% + 33.98px);
   transform: translate(-50%, -50%) rotate(var(--rot, 0deg)) scale(var(--sc, 0.72));
 }
-/* travelling right-to-left (towards today's stop on the zigzag): mirrored, the board centre is on the other side */
+/* travelling right-to-left (towards today's stop on the zigzag): mirrored about the same board point (same transform-origin) */
 [data-layout='mobile'] .santa[data-flip] {
-  transform-origin: calc(50% + 20px) calc(50% + 15px);
   transform: translate(-50%, -50%) rotate(var(--rot, 0deg)) scale(calc(var(--sc, 0.72) * -1), var(--sc, 0.72));
 }
 [data-layout='mobile'] .santa img {
