@@ -36,6 +36,7 @@ const now = () => new Date(hasOverride ? Date.now() + clockOffset : Date.now());
 const state = { market: null, ui: null, cards: null, today: null };
 
 const MOBILE_FIRST_PAD = 95;
+const MOBILE_END_PAD = 105; // room below the last pedestal for Santa after the campaign
 const layout = () => (mq.matches ? 'desktop' : 'mobile');
 
 async function setMarket(id, { persist = true } = {}) {
@@ -61,6 +62,7 @@ function fitStage() {
   page.style.setProperty('--f', f);
   // mobile, Santa in slot 0 (Dec 1, before the campaign): room above the first gift so he is not cut off by the stage
   page.style.setProperty('--stage-pad', l === 'mobile' && page.querySelector('[data-santa-first]') ? `${MOBILE_FIRST_PAD * s}px` : '0px');
+  page.style.setProperty('--stage-pad-b', l === 'mobile' && page.querySelector('[data-santa-end]') ? `${MOBILE_END_PAD * s}px` : '0px');
   page.style.setProperty('--stage-h', `${spec.height * s}px`);
   fitLabels(app);
 }

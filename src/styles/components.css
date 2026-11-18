@@ -659,7 +659,10 @@
 .card--expired .term dd { color: #6c7690; }
 
 .card__terms {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
   padding: 12px 8px;
   color: #c9b98f;
   font-size: 12px;

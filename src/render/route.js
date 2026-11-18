@@ -35,12 +35,15 @@ const MOBILE = {
 export const stageSpec = (layout) => (layout === 'desktop' ? DESKTOP : MOBILE);
 
 /** Centre of Santa for a slot (before the desktop --f squeeze). Desktop slot 0 has no room on the left, so he hovers up-left of the pedestal. */
-export function santaPos(layout, slot) {
+export function santaPos(layout, slot, end = false) {
   if (layout === 'desktop') {
     // slot 0 has no room on the left: Santa hovers above the pedestal, kept inside the viewport (art starts 137px left of his centre)
-    const first = slot === 0;
-    return { x: first ? DESKTOP.x[0] + 10 : DESKTOP.x[slot] - 185, y: DESKTOP.py[slot] - (first ? 250 : 147) };
+    // slot 0 (start) and, after the campaign, the last slot (end of the route): he hovers above the pedestal
+    const first = slot === 0 || end;
+    return { x: first ? DESKTOP.x[slot] + 10 : DESKTOP.x[slot] - 185, y: DESKTOP.py[slot] - (first ? 250 : 147) };
   }
+  // after the campaign (mobile): he stands BELOW the last pedestal, at the end of the route (stage gets extra room, see MOBILE_END_PAD in main.js)
+  if (end) return { x: 100, y: MOBILE.py[slot] + 100 };
   // slots 0 and 2 (x ~ 90-100): nudged right so his board does not leave the 390px stage
   return { x: Math.max(MOBILE.x[slot] - 22, 92), y: MOBILE.py[slot] - (slot === 0 ? 137 : 123) };
 }
@@ -165,7 +168,7 @@ export function renderRoute(ctx) {
   let scenery;
   if (layout === 'desktop') {
     // Santa rides just before today's pedestal; in slot 0 there is no room on the left, so he hovers up-left
-    const { x: sx, y: sy } = santaPos('desktop', santaSlot);
+    const { x: sx, y: sy } = santaPos('desktop', santaSlot, today > CAMPAIGN.days);
     const sxCss = `calc(${mid}px + var(--f) * ${sx - mid}px)`;
     scenery = `
       <img class="landscape" src="${asset('landscape-desktop@2x.webp')}" alt="" aria-hidden="true">
@@ -179,7 +182,7 @@ export function renderRoute(ctx) {
         <img src="${asset('hero-santa-desktop@2x.webp')}" alt="" aria-hidden="true">
       </div>`;
   } else {
-    const { x: sx, y: sy } = santaPos('mobile', santaSlot);
+    const { x: sx, y: sy } = santaPos('mobile', santaSlot, today > CAMPAIGN.days);
     scenery = `
       <img class="route route--base" src="${asset('route-mobile.svg')}" alt="" aria-hidden="true">
       <div class="route route--gold" style="height:${goldSize}px"><img src="${asset('route-mobile-gold.svg')}" alt="" aria-hidden="true"></div>
@@ -190,7 +193,7 @@ export function renderRoute(ctx) {
   }
 
   return `
-  <section class="route-wrap"${santaSlot === 0 ? ' data-santa-first' : ''} aria-label="${esc(ui.campaign_title)}">
+  <section class="route-wrap"${santaSlot === 0 ? ' data-santa-first' : ''}${today > CAMPAIGN.days ? ' data-santa-end' : ''} aria-label="${esc(ui.campaign_title)}">
     <div class="route-stage" style="width:${spec.width}px;height:${spec.height}px">
       ${scenery}
       ${stops}

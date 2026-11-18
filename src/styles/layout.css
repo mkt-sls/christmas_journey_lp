@@ -33,6 +33,11 @@
   padding: 0 16px;
 }
 
+.header__logo {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+}
 .header__logo img {
   width: 74px;
   height: auto;
@@ -93,7 +98,7 @@
 
 .route-wrap {
   position: relative;
-  height: calc(var(--stage-h) + var(--stage-pad, 0px));
+  height: calc(var(--stage-h) + var(--stage-pad, 0px) + var(--stage-pad-b, 0px));
   margin-top: -20px;
   overflow: hidden;
 }
