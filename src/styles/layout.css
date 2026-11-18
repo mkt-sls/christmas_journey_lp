@@ -5,6 +5,7 @@
   position: relative;
   overflow-x: clip;
   min-height: 100vh;
+  --z: 1;
   --s: 1;
   --stage-h: 735px;
 }
@@ -195,6 +196,12 @@
 }
 
 /* ================= desktop ================= */
+/* wider than 1920: the whole page (header, route stage, steps, legal) is zoomed to fill the viewport; min-height is in zoomed units */
+.page[data-layout='desktop'] {
+  zoom: var(--z, 1);
+  min-height: calc(100vh / var(--z, 1));
+}
+
 .page[data-layout='desktop'] .header {
   /* full-width bar; content aligned to the 200px grid at 1920 */
 }

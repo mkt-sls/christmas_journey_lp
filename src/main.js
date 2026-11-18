@@ -15,7 +15,7 @@ import { renderHowItWorks } from './render/howItWorks.js';
 import { renderIntro } from './render/intro.js';
 import { renderLegal } from './render/legal.js';
 import { closeOverlay, openOverlay } from './render/overlay.js';
-import { desktopFit, drawGarlands, fitLabels, renderRoute, santaAngle, santaPos, stageSpec, tickCountdown } from './render/route.js';
+import { deskZoom, desktopFit, drawGarlands, fitLabels, renderRoute, santaAngle, santaPos, stageSpec, tickCountdown } from './render/route.js';
 import { track } from './track.js';
 import { initAmbient } from './anim/ambient.js';
 import { checkNewDay } from './anim/lastSeen.js';
@@ -57,7 +57,12 @@ function fitStage() {
   const l = layout();
   const spec = stageSpec(l);
   // desktop: see desktopFit; mobile: the 390px stage shrinks on narrower phones (360 -> 0.92) so nothing is cut off
-  const { s, f } = l === 'desktop' ? desktopFit(window.innerWidth) : { s: Math.min(1, window.innerWidth / 390), f: 1 };
+  // desktop wider than the 1920 design: the whole page is CSS-zoomed by z so it fills the viewport; everything inside works in
+  // "design" pixels, so the usable width is innerWidth / z (= 1920 above 1920, the real width below)
+  const z = l === 'desktop' ? deskZoom(window.innerWidth) : 1;
+  const vw = window.innerWidth / z;
+  const { s, f } = l === 'desktop' ? desktopFit(vw) : { s: Math.min(1, window.innerWidth / 390), f: 1 };
+  page.style.setProperty('--z', z);
   page.style.setProperty('--s', s);
   page.style.setProperty('--f', f);
   // mobile, Santa in slot 0 (Dec 1, before the campaign): room above the first gift so he is not cut off by the stage
@@ -69,7 +74,7 @@ function fitStage() {
   // desktop, Santa left of the first stop (Dec 1 / before the campaign): shift the whole stage right so he is not cut off at the left edge
   let dx = 0;
   if (l === 'desktop' && santa && Number(santa.dataset.santaSlot) === 0) {
-    const half = window.innerWidth / s / 2;
+    const half = vw / s / 2;
     const xc = 960 + (santaPos('desktop', 0, santa.dataset.santaMode).x - 960) * f; // Santa's board centre, before the shift
     const need = 960 - half + 100 - xc; // keep his art (about 100 stage units either side) inside the viewport
     const room = 960 + half - (960 + 740 * f + 115) - 8; // the last stop and its label must stay inside on the right

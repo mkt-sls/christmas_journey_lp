@@ -108,6 +108,11 @@ export function santaAngle(layout, slot, mode = 'day', f = 1) {
 
 const r = (n) => Math.round(n * 100) / 100;
 
+/** Page zoom on desktop: 1 up to the 1920 design width, then the page grows with the viewport (4K = 2) so no empty band is left below. */
+export function deskZoom(width) {
+  return Math.max(1, width / 1920);
+}
+
 /**
  * Desktop fit for a viewport width: stage scale `s` (the 1920 stage shrinks to 0.72, never further, to keep text legible)
  * and `f`, how far the five stops are pulled towards the centre once the viewport is narrower than the stage
