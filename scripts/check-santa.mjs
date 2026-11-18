@@ -14,9 +14,11 @@
 //   children; their getBoundingClientRect is where the browser draws that pixel: rotation, mirror, scale, page zoom included).
 // Pass = every board point within MAX_DIST (CSS px at zoom 1) of the visible line, board direction within MAX_ANGLE of the
 // line tangent, nose pointing along the route towards today's stop (after the campaign: forwards), and no part of Santa's
-// opaque silhouette over a gift, the TODAY pill, a label card or the intro text; the BOUNDING BOX of his opaque silhouette does
-// not intersect the box of any gift/pedestal (opaque part of its art), TODAY pill or label; on Dec 1 his centre is left of the
-// Dec 1 stop (he rides the lead-in line BEFORE it).
+// opaque silhouette over a gift, the TODAY pill, a label card or the intro text; on Dec 1 his centre is left of the Dec 1 stop
+// (he rides the lead-in line BEFORE it).
+// Information only (owner decision, T5h): whether the BOUNDING BOX of his opaque silhouette touches the box of a gift/pedestal,
+// TODAY pill or label. His pose is diagonal, so the rectangles often touch while no pixel does (mobile: his raised hand above
+// the TODAY pill). Shown in the "bbox clear" column and counted in the summary, not part of pass/fail.
 // Playwright is not a project dependency: set PLAYWRIGHT_MODULE (path to playwright/index.mjs) and CHROME (browser exe)
 // if the defaults below do not exist on this machine.
 import fs from 'node:fs';
@@ -302,7 +304,7 @@ function evaluate(m, date) {
   // Dec 1: he rides the lead-in BEFORE the first stop
   const santaCx = (sb.l + sb.r) / 2;
   const dec1Ok = date !== '2026-12-01' || santaCx < m.stop.x;
-  const pass = maxDist <= MAX_DIST && diff <= MAX_ANGLE && facingOk && overlapOk && bboxOk && dec1Ok;
+  const pass = maxDist <= MAX_DIST && diff <= MAX_ANGLE && facingOk && overlapOk && dec1Ok;
   return { maxDist, diff, facingOk, overlapOk, hits: [...new Set(hits)], bboxOk, boxHits: [...new Set(boxHits)], dec1Ok, santaCx, stopX: m.stop.x, pass };
 }
 
@@ -364,6 +366,8 @@ async function main() {
     const fails = rows.filter((r) => !r.pass).length;
     const nW = new Set(rows.map((r) => r.width)).size;
     console.log(`\n${rows.length - fails}/${rows.length} pass${fails ? `, ${fails} FAIL` : ''} (${nW} widths x ${DATES.length} dates)`);
+    const boxTouch = rows.filter((r) => !r.bboxOk).length;
+    console.log(`info: bounding box touches a gift/pill/label box (no pixel overlap needed) in ${boxTouch}/${rows.length} rows`);
     if (fails) console.log(`failing widths: ${[...new Set(rows.filter((r) => !r.pass).map((r) => r.width))].join(',')}`);
     for (const w of SHEETS) if (Object.keys(crops).some((k) => k.startsWith(`${w}|`))) await sheet(browser, w, crops);
     process.exitCode = fails ? 1 : 0;
