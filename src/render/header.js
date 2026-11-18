@@ -60,7 +60,7 @@ export function bindMarketMenu(root, onSelect) {
     // keep the panel inside the viewport (short buttons like "RO" left-shift it off-screen)
     list.style.transform = '';
     const left = list.getBoundingClientRect().left;
-    if (left < 12) list.style.transform = `translateX(${Math.round(12 - left)}px)`;
+    if (left < 12) list.style.transform = `translateX(${Math.round((12 - left) / (list.getBoundingClientRect().width / list.offsetWidth || 1))}px)`; // local px: the page may be zoomed
     list.focus({ preventScroll: true });
     setActive(Math.max(0, opts.findIndex((o) => o.classList.contains('is-selected'))));
     // centre the current language in the visible window

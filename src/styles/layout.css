@@ -195,6 +195,12 @@
   pointer-events: none;
 }
 
+/* wider than 390: the whole mobile page is zoomed to fill the viewport width (see mobileZoom in render/route.js) */
+.page[data-layout='mobile'] {
+  zoom: var(--z, 1);
+  min-height: calc(100vh / var(--z, 1));
+}
+
 /* ================= desktop ================= */
 /* wider than 1920: the whole page (header, route stage, steps, legal) is zoomed to fill the viewport; min-height is in zoomed units */
 .page[data-layout='desktop'] {

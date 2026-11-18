@@ -15,7 +15,7 @@ import { renderHowItWorks } from './render/howItWorks.js';
 import { renderIntro } from './render/intro.js';
 import { renderLegal } from './render/legal.js';
 import { closeOverlay, openOverlay } from './render/overlay.js';
-import { deskZoom, desktopFit, drawGarlands, fitLabels, renderRoute, santaAngle, santaPos, stageSpec, tickCountdown } from './render/route.js';
+import { deskZoom, desktopFit, drawGarlands, fitLabels, mobileZoom, renderRoute, santaAngle, santaPos, stageSpec, tickCountdown } from './render/route.js';
 import { track } from './track.js';
 import { initAmbient } from './anim/ambient.js';
 import { checkNewDay } from './anim/lastSeen.js';
@@ -59,7 +59,7 @@ function fitStage() {
   // desktop: see desktopFit; mobile: the 390px stage shrinks on narrower phones (360 -> 0.92) so nothing is cut off
   // desktop wider than the 1920 design: the whole page is CSS-zoomed by z so it fills the viewport; everything inside works in
   // "design" pixels, so the usable width is innerWidth / z (= 1920 above 1920, the real width below)
-  const z = l === 'desktop' ? deskZoom(window.innerWidth) : 1;
+  const z = l === 'desktop' ? deskZoom(window.innerWidth) : mobileZoom(window.innerWidth);
   const vw = window.innerWidth / z;
   const { s, f } = l === 'desktop' ? desktopFit(vw) : { s: Math.min(1, window.innerWidth / 390), f: 1 };
   page.style.setProperty('--z', z);

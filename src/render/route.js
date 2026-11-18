@@ -91,7 +91,16 @@ function spot(layout, slot, mode) {
 export function santaPos(layout, slot, mode = 'day') {
   const b = BOARD[layout];
   const p = spot(layout, slot, mode);
-  return { x: p.x - b.x, y: p.y - b.y };
+  // mirrored Santa: the board centre sits on the other side of his centre
+  return { x: p.x - (santaFlipped(layout, slot, mode) ? -b.x : b.x), y: p.y - b.y };
+}
+
+/**
+ * Santa always rides towards today's stop (yesterday -> today along the route). On the mobile zigzag the route runs
+ * right-to-left on some segments: there his art is mirrored so he still faces the way he travels. Desktop runs left to right only.
+ */
+export function santaFlipped(layout, slot, mode = 'day') {
+  return spot(layout, slot, mode).tx < 0;
 }
 
 /**
@@ -103,7 +112,9 @@ export function santaAngle(layout, slot, mode = 'day', f = 1) {
   let a = (Math.atan2(p.ty, p.tx * f) * 180) / Math.PI; // direction of the line on screen
   if (a > 90) a -= 180; // he faces right: the board's nose is the right end
   if (a <= -90) a += 180;
-  return Math.round((a - BOARD_ANGLE[layout]) * 100) / 100;
+  // mirrored: his nose points left, so the board's angle against the (undirected) line is mirrored too
+  const nose = santaFlipped(layout, slot, mode) ? -BOARD_ANGLE[layout] : BOARD_ANGLE[layout];
+  return Math.round((a - nose) * 100) / 100;
 }
 
 const r = (n) => Math.round(n * 100) / 100;
@@ -111,6 +122,11 @@ const r = (n) => Math.round(n * 100) / 100;
 /** Page zoom on desktop: 1 up to the 1920 design width, then the page grows with the viewport (4K = 2) so no empty band is left below. */
 export function deskZoom(width) {
   return Math.max(1, width / 1920);
+}
+
+/** Page zoom on mobile: 1 up to the 390 design width, then the whole page grows with the viewport (768 = 1.97) so no side bands are left. Below 390 the stage shrinks through --s instead. */
+export function mobileZoom(width) {
+  return Math.max(1, width / 390);
 }
 
 /**
@@ -250,7 +266,7 @@ export function renderRoute(ctx) {
     scenery = `
       <img class="route route--base" src="${asset('route-mobile.svg')}" alt="" aria-hidden="true">
       <div class="route route--gold" style="height:${goldSize}px"><img src="${asset('route-mobile-gold.svg')}" alt="" aria-hidden="true"></div>
-      <div class="santa" data-santa-slot="${santaSlot}" data-santa-mode="${santaMode}" style="left:${r(sx)}px;top:${r(sy)}px;--rot:${santaAngle('mobile', santaSlot, santaMode)}deg">
+      <div class="santa" data-santa-slot="${santaSlot}" data-santa-mode="${santaMode}"${santaFlipped('mobile', santaSlot, santaMode) ? ' data-flip="1"' : ''} style="left:${r(sx)}px;top:${r(sy)}px;--rot:${santaAngle('mobile', santaSlot, santaMode)}deg">
         <span class="santa__glow"></span>
         <img src="${asset('hero-santa-mobile@2x.webp')}" alt="" aria-hidden="true">
       </div>`;

@@ -102,6 +102,12 @@
   outline: none;
 }
 
+/* mobile page is zoomed by --z: viewport units are zoomed too, so divide them back to keep the panel inside the screen */
+[data-layout='mobile'] .market__list {
+  width: min(300px, calc(100vw / var(--z, 1) - 24px));
+  max-height: min(70vh / var(--z, 1), 640px);
+}
+
 @supports not (scrollbar-color: auto) {
   .market__list::-webkit-scrollbar { width: 6px; }
   .market__list::-webkit-scrollbar-track { background: transparent; }
@@ -288,6 +294,11 @@
   /* rotate about the board centre (BOARD in route.js) so the board stays on the line */
   transform-origin: calc(50% - 20px) calc(50% + 15px);
   transform: translate(-50%, -50%) rotate(var(--rot, 0deg)) scale(var(--sc, 0.72));
+}
+/* travelling right-to-left (towards today's stop on the zigzag): mirrored, the board centre is on the other side */
+[data-layout='mobile'] .santa[data-flip] {
+  transform-origin: calc(50% + 20px) calc(50% + 15px);
+  transform: translate(-50%, -50%) rotate(var(--rot, 0deg)) scale(calc(var(--sc, 0.72) * -1), var(--sc, 0.72));
 }
 [data-layout='mobile'] .santa img {
   left: 50%;
