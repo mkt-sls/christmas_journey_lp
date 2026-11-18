@@ -34,25 +34,34 @@ const MOBILE = {
 
 export const stageSpec = (layout) => (layout === 'desktop' ? DESKTOP : MOBILE);
 
-// Santa's snowboard must always touch the dotted route. The route is a cubic-bezier path (the same "d" as public/assets/route-*.svg,
-// moved to stage coordinates); BOARD is where the board sits relative to the Santa centre. Positions that are NOT on a
-// stop (before day 1, after day 26) are points of that path, so the line and Santa can never drift apart.
+// Santa's snowboard must always touch the dotted route, and he must never cover today's gift or its TODAY pill.
+// The route is a cubic-bezier path (the same "d" as public/assets/route-*.svg, moved to stage coordinates). BOARD is where the
+// board sits relative to the Santa centre. Every position below is a POINT OF THAT PATH (board centre), chosen so that his
+// art ends before the active gift's image box (x +-85*k around the stop, k = gift scale) starts.
 const BOARD = { desktop: { x: 0, y: 91 }, mobile: { x: -20, y: 15 } };
-// board centre on the route: before the first stop (start) and after the last stop (end)
 const ROUTE_POINT = {
-  desktop: { start: { x: 152, y: 444 }, end: { x: 1774, y: 444 } }, // first segment t=0.82 / last segment t=0.2 of the desktop route
-  mobile: { start: { x: 128, y: 42 }, end: { x: 202, y: 542 } }, // first segment t=0.55 (the dotted line fades in there) / last segment t=0.7 of the mobile route
+  desktop: {
+    start: { x: 152, y: 444 }, // before the campaign: left of the (small, locked) day 1; first segment t=0.82
+    end: { x: 1774, y: 444 }, // after the campaign: right of day 26; last segment t=0.2
+    // today in slot 0..4: just before the active gift (slot 0 has no room on its left: he stands on the line right of it)
+    today: [{ x: 518, y: 366 }, { x: 330, y: 429 }, { x: 717, y: 374 }, { x: 1070, y: 412 }, { x: 1440, y: 374 }],
+  },
+  mobile: {
+    start: { x: 161, y: 30 }, // before the campaign; first segment t=0.4 (the dotted line fades in there)
+    end: { x: 202, y: 542 }, // after the campaign; last segment t=0.7
+    today: [{ x: 183, y: 15 }, { x: 135, y: 168 }, { x: 197, y: 353 }], // segment t=0.25 / 0.35 / 0.4 before each stop
+  },
 };
 
-/** Centre of Santa for a slot (before the desktop --f squeeze). `end` = after the campaign. Slot 0 (before day 1 or on day 1) uses the route start. */
-export function santaPos(layout, slot, end = false) {
+/**
+ * Centre of Santa (before the desktop --f squeeze).
+ * mode 'day' (default): today is in `slot`; 'before': campaign not started; 'end': campaign over.
+ */
+export function santaPos(layout, slot, mode = 'day') {
   const b = BOARD[layout];
-  const onRoute = (p) => ({ x: p.x - b.x, y: p.y - b.y });
-  if (end) return onRoute(ROUTE_POINT[layout].end);
-  if (slot === 0) return onRoute(ROUTE_POINT[layout].start);
-  if (layout === 'desktop') return { x: DESKTOP.x[slot] - 185, y: DESKTOP.py[slot] - 147 };
-  // mobile slots 1 and 2 (Figma): x nudged right so his board does not leave the 390px stage
-  return { x: Math.max(MOBILE.x[slot] - 22, 92), y: MOBILE.py[slot] - 123 };
+  const R = ROUTE_POINT[layout];
+  const p = mode === 'end' ? R.end : mode === 'before' ? R.start : R.today[slot];
+  return { x: p.x - b.x, y: p.y - b.y };
 }
 
 const r = (n) => Math.round(n * 100) / 100;
@@ -159,6 +168,7 @@ export function renderRoute(ctx) {
 
   // Santa waits at the left before the campaign, stands at the end after it
   const santaSlot = todayIndex >= 0 ? todayIndex : today < 1 ? 0 : spec.size - 1;
+  const santaMode = today < 1 ? 'before' : today > CAMPAIGN.days ? 'end' : 'day';
 
   // gold (travelled) part of the route ends at the Santa slot; nothing before the campaign
   let travelled = 0;
@@ -175,7 +185,7 @@ export function renderRoute(ctx) {
   let scenery;
   if (layout === 'desktop') {
     // Santa rides just before today's pedestal; in slot 0 there is no room on the left, so he hovers up-left
-    const { x: sx, y: sy } = santaPos('desktop', santaSlot, today > CAMPAIGN.days);
+    const { x: sx, y: sy } = santaPos('desktop', santaSlot, santaMode);
     const sxCss = `calc(${mid}px + var(--f) * ${sx - mid}px)`;
     scenery = `
       <img class="landscape" src="${asset('landscape-desktop@2x.webp')}" alt="" aria-hidden="true">
@@ -189,7 +199,7 @@ export function renderRoute(ctx) {
         <img src="${asset('hero-santa-desktop@2x.webp')}" alt="" aria-hidden="true">
       </div>`;
   } else {
-    const { x: sx, y: sy } = santaPos('mobile', santaSlot, today > CAMPAIGN.days);
+    const { x: sx, y: sy } = santaPos('mobile', santaSlot, santaMode);
     scenery = `
       <img class="route route--base" src="${asset('route-mobile.svg')}" alt="" aria-hidden="true">
       <div class="route route--gold" style="height:${goldSize}px"><img src="${asset('route-mobile-gold.svg')}" alt="" aria-hidden="true"></div>

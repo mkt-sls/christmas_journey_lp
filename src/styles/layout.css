@@ -214,7 +214,7 @@
 
 .page[data-layout='desktop'] .intro {
   position: absolute;
-  z-index: 3;
+  z-index: 10; /* above Santa: his sack can reach the subtitle line */
   top: 24px;
   left: 0;
   right: 0;
@@ -303,6 +303,6 @@
 /* Santa hovers over the first stop when today is in slot 0 (Dec 1, or before the campaign): keep the subtitle clear of him on narrower desktops */
 @media (min-width: 1024px) and (max-width: 1500px) {
   .page[data-layout='desktop']:has([data-santa-first]) .intro__sub {
-    max-width: min(720px, calc(100% - 48px));
+    max-width: min(600px, calc(100% - 48px));
   }
 }
