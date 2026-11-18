@@ -55,7 +55,7 @@ function bezierSegments(d, dx, dy) {
 }
 const PATH = {
   desktop: bezierSegments('M15 125C165 125 165 95 315 95C500 95 500 15 685 15C870 15 870 75 1055 75C1240 75 1240 15 1425 15C1610 15 1610 95 1795 95C1945 95 1945 125 2095 125', -95, 346),
-  mobile: bezierSegments('M120.5 10.5C120.5 70.5 10.5 70.5 10.5 130.5C10.5 220.5 170.5 220.5 170.5 310.5C170.5 397.5 20.5 397.5 20.5 484.5C20.5 552 150.5 552 150.5 619.5', 79.5, -31.5),
+  mobile: bezierSegments('M4 7.5C50 15 118 50 90 130.5C90 220.5 250 220.5 250 310.5C250 397.5 100 397.5 100 484.5C100 552 230 552 230 619.5', 0, -31.5),
 };
 
 // Where on the line he stands: always BETWEEN two stops (yesterday's and today's), his board on the line.
@@ -63,7 +63,7 @@ const PATH = {
 // before day 1). 'before' = lead-in before day 1; 'end' = segment after the last stop of the window.
 const SANTA_SPOT = {
   desktop: { before: [0, 0.28], end: [5, 0.42], today: [[0, 0.28], [1, 0.37], [2, 0.37], [3, 0.37], [4, 0.37]] },
-  mobile: { before: [0, 0.2], end: [3, 0.5], today: [[0, 0.2], [1, 0.45], [2, 0.45]] },
+  mobile: { before: [0, 0.25], end: [3, 0.5], today: [[0, 0.25], [1, 0.45], [2, 0.45]] },
 };
 
 const bez = (s, t) => {

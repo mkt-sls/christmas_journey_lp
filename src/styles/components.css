@@ -247,9 +247,9 @@
 [data-layout='desktop'] .route--base { left: -95px; top: 346px; width: 2110px; height: 140px; }
 [data-layout='desktop'] .route--gold { left: -95px; top: 346px; height: 140px; overflow: hidden; }
 [data-layout='desktop'] .route--gold img { width: 2110px; height: 140px; max-width: none; filter: drop-shadow(0 0 5px rgba(255, 204, 41, 0.7)); }
-[data-layout='mobile'] .route--base { left: 79.5px; top: -31.5px; width: 181px; height: 630px; }
-[data-layout='mobile'] .route--gold { left: 79.5px; top: -31.5px; width: 181px; overflow: hidden; }
-[data-layout='mobile'] .route--gold img { width: 181px; height: 630px; max-width: none; filter: drop-shadow(0 0 4px rgba(255, 204, 41, 0.7)); }
+[data-layout='mobile'] .route--base { left: 0; top: -31.5px; width: 260.5px; height: 630px; }
+[data-layout='mobile'] .route--gold { left: 0; top: -31.5px; width: 260.5px; overflow: hidden; }
+[data-layout='mobile'] .route--gold img { width: 260.5px; height: 630px; max-width: none; filter: drop-shadow(0 0 4px rgba(255, 204, 41, 0.7)); }
 
 /* Santa: left/top are his centre */
 .santa {
