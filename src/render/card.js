@@ -57,7 +57,7 @@ export function renderCard({ card, day, today, ui, marketId }) {
     body = `
       <p class="card__type">${esc(lines[1])}</p>
       <div class="card__offer">
-        <h2 class="card__amount" id="card-title">${esc(lines[2])}</h2>
+        <h2 class="card__amount" id="card-title"><span class="card__amount-text">${esc(lines[2])}</span></h2>
         ${hasGame ? `<p class="card__game">${esc(lines[3])}</p>` : ''}
       </div>
       <dl class="card__terms-list">

@@ -732,16 +732,25 @@
   font-weight: 900;
   line-height: 1.05;
   overflow-wrap: anywhere;
+  filter: drop-shadow(0 3px 0 #7a1430) drop-shadow(0 0 14px rgba(255, 204, 41, 0.35));
+}
+/* Gradient text lives on an inline span, not the block: an inline box is cut into one fragment per wrapped line,
+   and box-decoration-break:clone gives every fragment its own full gradient (a block would stretch ONE gradient
+   over all lines). The vertical padding only enlarges the painted area, so accents (Â, Ă) and descenders are
+   not cut at the tight 1.05 line box; inline padding does not change line spacing. */
+.card__amount-text {
+  padding-block: 0.25em;
   background: linear-gradient(180deg, var(--gold-pale), var(--gold) 50%, #f2a900);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 3px 0 #7a1430) drop-shadow(0 0 14px rgba(255, 204, 41, 0.35));
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
-.card--expired .card__amount {
+.card--expired .card__amount { filter: none; }
+.card--expired .card__amount-text {
   background: none;
-  filter: none;
   color: #7c869d;
   -webkit-text-fill-color: #7c869d;
   text-decoration: line-through;
