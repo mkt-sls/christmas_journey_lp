@@ -341,6 +341,27 @@
   width: 141.67%;
   height: 141.27%;
 }
+/* Today's gift is drawn in three layers: the full art (.gift__img), the pulse ring (::before, z 1, see anim.css) on the
+   podium's top face, and on top the red present alone (gift-today-present@2x.webp), so the back half of the ring passes
+   BEHIND the present. That image holds only the present's OPAQUE pixels of gift-today@2x.webp (inside the convex hull of
+   its red + white pixels, grown 2px), cropped at (197, 198) 236x213 of the 629x659 art: drawn over identical pixels it
+   changes nothing except where the ring runs under it. Placed in the same art box as .gift__img; transform-origin = the
+   centre of .gift__img, so the opening wobble (open.js moves both) keeps them together. */
+.gift__front {
+  position: absolute;
+  z-index: 2;
+  left: 23.54%;
+  top: 10.7%;
+  width: 53.15%;
+  height: 45.66%;
+  max-width: none;
+  transform-origin: 49.78% 61.74%;
+  pointer-events: none;
+  user-select: none;
+}
+.gift--active .today-pill {
+  z-index: 3;
+}
 
 .gift:focus-visible {
   outline-offset: 6px;

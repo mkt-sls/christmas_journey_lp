@@ -15,7 +15,7 @@ import { renderHowItWorks } from './render/howItWorks.js';
 import { renderIntro } from './render/intro.js';
 import { renderLegal } from './render/legal.js';
 import { closeOverlay, openOverlay } from './render/overlay.js';
-import { deskZoom, desktopFit, drawGarlands, fitLabels, mobileZoom, renderRoute, santaAngle, santaPos, stageSpec, tickCountdown } from './render/route.js';
+import { deskZoom, desktopSantaFit, drawGarlands, fitLabels, mobileZoom, renderRoute, santaAngle, stageSpec, tickCountdown } from './render/route.js';
 import { track } from './track.js';
 import { initAmbient } from './anim/ambient.js';
 import { checkNewDay } from './anim/lastSeen.js';
@@ -61,7 +61,12 @@ function fitStage() {
   // "design" pixels, so the usable width is innerWidth / z (= 1920 above 1920, the real width below)
   const z = l === 'desktop' ? deskZoom(window.innerWidth) : mobileZoom(window.innerWidth);
   const vw = window.innerWidth / z;
-  const { s, f } = l === 'desktop' ? desktopFit(vw) : { s: Math.min(1, window.innerWidth / 390), f: 1 };
+  const santa = page.querySelector('.santa');
+  const slot = santa ? Number(santa.dataset.santaSlot) : 2;
+  const mode = santa ? santa.dataset.santaMode : 'day';
+  // desktop: the squeeze f, the stage shift dx and Santa's scale come from desktopSantaFit (route.js), so he is never cut off
+  // at an edge or squeezed onto a gift at any width (scripts/check-santa.mjs --sweep)
+  const { s, f, dx, sc } = l === 'desktop' ? desktopSantaFit(vw, slot, mode) : { s: Math.min(1, window.innerWidth / 390), f: 1, dx: 0, sc: null };
   page.style.setProperty('--z', z);
   page.style.setProperty('--s', s);
   page.style.setProperty('--f', f);
@@ -69,24 +74,9 @@ function fitStage() {
   page.style.setProperty('--stage-pad', l === 'mobile' && page.querySelector('[data-santa-first]') ? `${MOBILE_FIRST_PAD * s}px` : '0px');
   page.style.setProperty('--stage-pad-b', l === 'mobile' && page.querySelector('[data-santa-end]') ? `${MOBILE_END_PAD * s}px` : '0px');
   page.style.setProperty('--stage-h', `${spec.height * s}px`);
-  // the desktop route line is squeezed by f, so Santa's board angle follows the squeezed line
-  const santa = page.querySelector('.santa');
-  // desktop, Santa left of the first stop (Dec 1 / before the campaign): shift the whole stage right so he is not cut off at the left edge
-  let dx = 0;
-  if (l === 'desktop' && santa && Number(santa.dataset.santaSlot) === 0) {
-    const half = vw / s / 2;
-    const xc = 960 + (santaPos('desktop', 0, santa.dataset.santaMode).x - 960) * f; // Santa's board centre, before the shift
-    const need = 960 - half + 100 - xc; // keep his art (about 100 stage units either side) inside the viewport
-    const room = 960 + half - (960 + 740 * f + 115) - 8; // the last stop and its label must stay inside on the right
-    dx = Math.max(0, Math.min(90 < need ? need : 90, room));
-    // narrow desktops have no room left of the first stop: make him smaller so he still fits between the line start and the gift
-    let sc = f < 0.95 ? 0.62 * Math.max(0.65, (f - 0.35) / 0.65) : 0.62;
-    // the stage could not shift far enough (room on the right ran out, e.g. 1366: s stays 0.72 so only ~1897 stage units show):
-    // his art reaches ~102 stage units left of his centre at 0.62 (measured, scripts/check-santa.mjs), shrink him to fit
-    sc = Math.min(sc, (0.62 * (xc + dx - (960 - half) - 6)) / 102);
-    santa.style.setProperty('--sc', sc < 0.615 ? Math.max(0.4, sc).toFixed(2) : '');
-  }
+  if (l === 'desktop' && santa) santa.style.setProperty('--sc', sc < 0.615 ? sc.toFixed(3) : '');
   page.style.setProperty('--dx', `${dx}px`);
+  // the desktop route line is squeezed by f, so Santa's board angle follows the squeezed line
   if (santa) santa.style.setProperty('--rot', `${santaAngle(l, Number(santa.dataset.santaSlot), santa.dataset.santaMode, f)}deg`);
   fitLabels(app);
 }

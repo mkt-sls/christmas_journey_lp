@@ -148,6 +148,61 @@ export function desktopFit(width) {
 }
 const mid = DESKTOP.width / 2;
 
+// Santa's opaque art around his board point at the full desktop size (--sc 0.62), in stage units, measured with
+// scripts/check-santa.mjs: it reaches ART.left to the left of the board point and ART.right to the right of it.
+const SANTA_SC = 0.62;
+const ART = { left: 104, right: 56 };
+const LABEL_HALF = 115; // half the width of a far (locked / missed) label, stage units
+const EDGE = 8; // gap to the viewport edge
+
+/**
+ * Santa's scale for a route squeezed by f. The stops come closer (370 * f apart) but his art does not shrink with the
+ * squeeze, so below SQUEEZE_FULL he shrinks with it, or he would touch the gifts on both sides of his segment.
+ */
+const SQUEEZE_FULL = 0.97;
+export function santaScale(f) {
+  return f >= SQUEEZE_FULL ? SANTA_SC : SANTA_SC * Math.max(0.55, 1 - (SQUEEZE_FULL - f) * 2.4);
+}
+
+/**
+ * Desktop fit including Santa: { s, f, dx, sc }. Starts from desktopFit and only changes it where Santa would not fit:
+ * - Dec 1 / before the campaign he rides the lead-in LEFT of the first stop. The stage shifts right by dx so his art is
+ *   inside the viewport, but the last stop and its label must stay inside on the right. When both cannot hold (narrow
+ *   desktops, e.g. 1280: only ~1778 stage units are visible), the route is squeezed further (smaller f), which makes room on
+ *   both sides at once.
+ * - After the campaign he stands right of the last stop: the same, mirrored (stage shifts left, the first label stays in).
+ * Before T5h this was only done for Dec 1 with a fixed squeeze, so 1024-1344 cut him off at the left edge.
+ */
+export function desktopSantaFit(width, slot, mode = 'day') {
+  const { s, f: f0 } = desktopFit(width);
+  const half = width / s / 2; // stage units from the centre to each viewport edge
+  let f = f0;
+  let sc = santaScale(f);
+  let dx = 0;
+  const reach = (side) => (ART[side] * sc) / SANTA_SC;
+  if (slot === 0 && mode !== 'end') {
+    const bx = spot('desktop', 0, mode).x; // board point, left of the first stop
+    // need: dx >= (960 - bx) f + left - half + EDGE; room: dx <= half - 740 f - LABEL_HALF - EDGE
+    for (let i = 0; i < 4; i++) {
+      f = Math.min(f0, (2 * half - 2 * EDGE - LABEL_HALF - reach('left')) / (mid - bx + 740));
+      sc = santaScale(f);
+    }
+    const need = (mid - bx) * f + reach('left') - half + EDGE;
+    const room = half - 740 * f - LABEL_HALF - EDGE;
+    dx = Math.max(0, Math.min(Math.max(need, 90), room)); // at least 90 when there is room: more of the lead-in shows
+  } else if (mode === 'end') {
+    const bx = spot('desktop', slot, 'end').x; // board point, right of the last stop
+    for (let i = 0; i < 4; i++) {
+      f = Math.min(f0, (2 * half - 2 * EDGE - LABEL_HALF - reach('right')) / (bx - mid + 740));
+      sc = santaScale(f);
+    }
+    const need = half - EDGE - (bx - mid) * f - reach('right'); // dx must be <= need (negative: shift left)
+    const room = half - 740 * f - LABEL_HALF - EDGE; // dx >= -room
+    dx = Math.min(0, Math.max(need, -room));
+  }
+  return { s, f, dx, sc };
+}
+
 function giftScale(layout, state, slot) {
   if (layout === 'desktop') return state === 'active' ? DESKTOP.kActive : Math.abs(slot - 2) === 1 ? DESKTOP.kNear : DESKTOP.kFar;
   return state === 'active' ? MOBILE.kActive : MOBILE.kOther;
@@ -185,17 +240,22 @@ function stopHtml({ layout, spec, slot, day, today, ui, uiLang, card, chipDay, c
     <button type="button" class="gift gift--${state}" data-open="${day}" aria-label="${esc(label)}"
       style="left:${layout === 'desktop' ? `calc(${r(mid - 60 * k)}px + var(--f) * ${cx - mid}px + var(--dx, 0px))` : `${r(cx - 60 * k)}px`};top:${r(py - 80 * k)}px;--k:${k}">
       <img class="gift__img" src="${asset(img)}" alt="" draggable="false">
+      ${state === 'active' ? `<img class="gift__front" src="${asset('gift-today-present@2x.webp')}" alt="" aria-hidden="true" draggable="false">` : ''}
       ${state === 'active' ? `<span class="today-pill" aria-hidden="true">${esc(ui.today)}</span>` : ''}
     </button>`;
 
-  // label position
+  // label position. The label is pulled into place with `transform: translateX(...)`, while today's label breathes with the
+  // independent `scale` property (anim.css). `scale` grows about the transform-origin of the box BEFORE that translate, so the
+  // origin must be the label's visual centre in those un-translated coordinates: x 0 when pulled left by half its width,
+  // x -50% when pulled left by its full width. Otherwise the card grows from an edge and drifts sideways
+  // (scripts/check-pulse.mjs, anchor drift).
   let pos;
   if (layout === 'desktop') {
     const dy = state === 'active' ? 53 : Math.abs(slot - 2) === 1 ? 56 : 51;
-    pos = `left:calc(${mid}px + var(--f) * ${cx - mid}px + var(--dx, 0px));top:${r(py + dy)}px;transform:translateX(-50%)`;
+    pos = `left:calc(${mid}px + var(--f) * ${cx - mid}px + var(--dx, 0px));top:${r(py + dy)}px;transform:translateX(-50%);transform-origin:0 50%`;
   } else {
     const a = MOBILE.label[slot];
-    pos = `left:${r(cx + a.dx)}px;top:${r(py + a.dy)}px;${a.left ? 'transform:translateX(-100%)' : ''}`;
+    pos = `left:${r(cx + a.dx)}px;top:${r(py + a.dy)}px;${a.left ? 'transform:translateX(-100%);transform-origin:-50% 50%' : ''}`;
   }
   const near = layout === 'desktop' ? Math.abs(slot - 2) === 1 : true;
   const name = esc(card.location);

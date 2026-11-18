@@ -61,13 +61,14 @@ function burst(gift) {
  * @returns {Promise<void>}
  */
 export async function playOpening(gift) {
-  const img = gift?.querySelector('.gift__img');
-  if (!img || reducedMotion() || busy) return;
+  // the art and its present-only copy drawn above the pulse ring (.gift__front) move as one
+  const imgs = gift ? [...gift.querySelectorAll('.gift__img, .gift__front')] : [];
+  if (!imgs.length || reducedMotion() || busy) return;
+  const playAll = (keyframes, options) => Promise.all(imgs.map((el) => play(el, keyframes, options)));
   busy = true;
   try {
     // 1) wobble 300ms
-    await play(
-      img,
+    await playAll(
       [
         { transform: 'rotate(0) scale(1)' },
         { transform: 'rotate(-6deg) scale(1.04)', offset: 0.25 },
@@ -78,11 +79,11 @@ export async function playOpening(gift) {
       { duration: WOBBLE_MS, easing: 'ease-in-out' },
     );
     // 2) flash + sparks 500ms; the gift pops and settles back
-    const pop = play(img, [{ transform: 'scale(1.05)' }, { transform: 'scale(1.16)', offset: 0.3 }, { transform: 'scale(1)' }], {
+    const pop = playAll([{ transform: 'scale(1.05)' }, { transform: 'scale(1.16)', offset: 0.3 }, { transform: 'scale(1)' }], {
       duration: BURST_MS,
       easing: 'ease-out',
     });
-    Promise.all([burst(gift), pop]).then(() => img.getAnimations().forEach((a) => a.cancel()));
+    Promise.all([burst(gift), pop]).then(() => imgs.forEach((el) => el.getAnimations().forEach((a) => a.cancel())));
     await new Promise((r) => setTimeout(r, BURST_MS - OVERLAP_MS));
   } finally {
     busy = false;

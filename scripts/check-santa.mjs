@@ -2,6 +2,9 @@
 //
 //   node scripts/check-santa.mjs            (all 28 dates x 390, 768, 1366, 1920; writes the QA sheets)
 //   node scripts/check-santa.mjs --widths 390 --dates 2026-12-26
+//   node scripts/check-santa.mjs --sweep --fails-only   (desktop 1024-3840 every 32px + 1280/1440/1536/1600/1680, mobile
+//                                                        360-1023 every 32px + 1023; one load per date and layout, then the
+//                                                        viewport is resized; prints the failing rows and a summary)
 //
 // Starts its own Vite dev server, opens every date with ?date=, and measures in the rendered page:
 // - the LINE from the route SVG file itself (its <path> d, its gradient opacity), placed with the <img>'s on-screen box.
@@ -11,7 +14,9 @@
 //   children; their getBoundingClientRect is where the browser draws that pixel: rotation, mirror, scale, page zoom included).
 // Pass = every board point within MAX_DIST (CSS px at zoom 1) of the visible line, board direction within MAX_ANGLE of the
 // line tangent, nose pointing along the route towards today's stop (after the campaign: forwards), and no part of Santa's
-// opaque silhouette over a gift, the TODAY pill, a label card or the intro text.
+// opaque silhouette over a gift, the TODAY pill, a label card or the intro text; the BOUNDING BOX of his opaque silhouette does
+// not intersect the box of any gift/pedestal (opaque part of its art), TODAY pill or label; on Dec 1 his centre is left of the
+// Dec 1 stop (he rides the lead-in line BEFORE it).
 // Playwright is not a project dependency: set PLAYWRIGHT_MODULE (path to playwright/index.mjs) and CHROME (browser exe)
 // if the defaults below do not exist on this machine.
 import fs from 'node:fs';
@@ -52,8 +57,12 @@ const args = process.argv.slice(2);
 const arg = (k, d) => (args.includes(k) ? args[args.indexOf(k) + 1] : d);
 const ALL_DATES = ['2026-11-25', ...Array.from({ length: 26 }, (_, i) => `2026-12-${String(i + 1).padStart(2, '0')}`), '2026-12-28'];
 const DATES = arg('--dates', ALL_DATES.join(',')).split(',');
-const WIDTHS = arg('--widths', '390,768,1366,1920').split(',').map(Number);
-const SHEETS = (arg('--sheets', '390,1366') || '').split(',').map(Number);
+const SWEEP = args.includes('--sweep');
+const FAILS_ONLY = args.includes('--fails-only');
+const range = (a, b, step) => Array.from({ length: Math.floor((b - a) / step) + 1 }, (_, i) => a + i * step);
+const SWEEP_WIDTHS = [...new Set([...range(1024, 3840, 32), 1280, 1440, 1536, 1600, 1680, ...range(360, 1023, 32), 1023])].sort((a, b) => a - b);
+const WIDTHS = SWEEP ? SWEEP_WIDTHS : arg('--widths', '390,768,1366,1920').split(',').map(Number);
+const SHEETS = (arg('--sheets', SWEEP ? '' : '390,1366') || '').split(',').filter(Boolean).map(Number);
 const HEIGHT = { 390: 844, 768: 1024, 1366: 768, 1920: 1080 };
 
 // ---------------------------------------------------------------- in-page measurement
@@ -256,7 +265,7 @@ function nearest(line, p, visibleOnly) {
   return best || { dist: Infinity, i: 0, s: 0, tx: 1, ty: 0 };
 }
 
-function evaluate(m) {
+function evaluate(m, date) {
   const z = m.z;
   const near = m.board.map((p) => nearest(m.line, p, true));
   const maxDist = Math.max(...near.map((n) => n.dist)) / z;
@@ -282,8 +291,19 @@ function evaluate(m) {
   // cut off: any opaque part of Santa outside the route area (overflow hidden) or the viewport
   if (m.sil.some((p) => p.x < 0 || p.x > m.W || p.y < m.wrap[0] || p.y > m.wrap[1])) hits.push("clipped");
   const overlapOk = hits.length === 0;
-  const pass = maxDist <= MAX_DIST && diff <= MAX_ANGLE && facingOk && overlapOk;
-  return { maxDist, diff, facingOk, overlapOk, hits: [...new Set(hits)], pass };
+  // bounding box of the opaque silhouette against the boxes of gifts/pedestals, the TODAY pill and the labels
+  const xs = m.sil.map((p) => p.x);
+  const ys = m.sil.map((p) => p.y);
+  const sb = { l: Math.min(...xs), t: Math.min(...ys), r: Math.max(...xs), b: Math.max(...ys) };
+  const boxHits = m.obstacles
+    .filter((o) => o.kind !== 'intro' && sb.l < o.r - 1 && sb.r > o.l + 1 && sb.t < o.b - 1 && sb.b > o.t + 1)
+    .map((o) => o.kind);
+  const bboxOk = boxHits.length === 0;
+  // Dec 1: he rides the lead-in BEFORE the first stop
+  const santaCx = (sb.l + sb.r) / 2;
+  const dec1Ok = date !== '2026-12-01' || santaCx < m.stop.x;
+  const pass = maxDist <= MAX_DIST && diff <= MAX_ANGLE && facingOk && overlapOk && bboxOk && dec1Ok;
+  return { maxDist, diff, facingOk, overlapOk, hits: [...new Set(hits)], bboxOk, boxHits: [...new Set(boxHits)], dec1Ok, santaCx, stopX: m.stop.x, pass };
 }
 
 // ---------------------------------------------------------------- run
@@ -296,42 +316,55 @@ async function main() {
   const rows = [];
   const crops = {};
   try {
-    for (const width of WIDTHS) {
-      const ctx = await browser.newContext({ viewport: { width, height: HEIGHT[width] || 900 }, reducedMotion: 'reduce' });
+    const settle = (page) =>
+      page.evaluate(async () => {
+        await document.fonts.ready;
+        await Promise.all([...document.images].map((i) => (i.complete ? 0 : i.decode().catch(() => 0))));
+        await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+      });
+    const heightOf = (w) => HEIGHT[w] || (w >= 1024 ? 900 : 844);
+    // default: a fresh context and page load per width; --sweep: one load per date and layout, then resize (fitStage runs on resize)
+    const groups = SWEEP ? [WIDTHS.filter((w) => w < 1024), WIDTHS.filter((w) => w >= 1024)].filter((g) => g.length) : WIDTHS.map((w) => [w]);
+    for (const group of groups) {
+      const ctx = await browser.newContext({ viewport: { width: group[0], height: heightOf(group[0]) }, reducedMotion: 'reduce' });
       const page = await ctx.newPage();
       for (const date of DATES) {
-        await page.goto(`${base}/?date=${date}`, { waitUntil: 'networkidle' });
-        await page.waitForSelector('.santa img');
-        await page.evaluate(async () => {
-          await document.fonts.ready;
-          await Promise.all([...document.images].map((i) => (i.complete ? 0 : i.decode().catch(() => 0))));
-          await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
-        });
-        const art = (await page.$eval('.santa img', (i) => i.getAttribute('src'))).split('/').pop();
-        const m = await measure(page, BOARD_PX[art]);
-        const e = evaluate(m);
-        if (process.env.DEBUG) {
-          const sx = m.sil.map((p) => p.x);
-          const sy = m.sil.map((p) => p.y);
-          const v = m.line.filter((p) => p.vis);
-          console.log(date, width, "santa", [Math.min(...sx), Math.min(...sy), Math.max(...sx), Math.max(...sy)].map(Math.round), "board", m.board.map((p) => [Math.round(p.x), Math.round(p.y)]), "firstVis", v[0] && [Math.round(v[0].x), Math.round(v[0].y)], "lastVis", v.length && [Math.round(v.at(-1).x), Math.round(v.at(-1).y)], "wrap", m.wrap);
-          m.obstacles.forEach((o) => console.log("  ", o.kind, [o.l, o.t, o.r, o.b].map(Math.round)));
+        for (const width of group) {
+          await page.setViewportSize({ width, height: heightOf(width) });
+          if (width === group[0]) {
+            await page.goto(`${base}/?date=${date}`, { waitUntil: 'networkidle' });
+            await page.waitForSelector('.santa img');
+          }
+          await settle(page);
+          const art = (await page.$eval('.santa img', (i) => i.getAttribute('src'))).split('/').pop();
+          const m = await measure(page, BOARD_PX[art]);
+          const e = evaluate(m, date);
+          if (process.env.DEBUG) {
+            const sx = m.sil.map((p) => p.x);
+            const sy = m.sil.map((p) => p.y);
+            const v = m.line.filter((p) => p.vis);
+            console.log(date, width, "santa", [Math.min(...sx), Math.min(...sy), Math.max(...sx), Math.max(...sy)].map(Math.round), "board", m.board.map((p) => [Math.round(p.x), Math.round(p.y)]), "firstVis", v[0] && [Math.round(v[0].x), Math.round(v[0].y)], "lastVis", v.length && [Math.round(v.at(-1).x), Math.round(v.at(-1).y)], "wrap", m.wrap);
+            m.obstacles.forEach((o) => console.log("  ", o.kind, [o.l, o.t, o.r, o.b].map(Math.round)));
+          }
+          rows.push({ date, width, ...e, mode: m.mode, flip: m.flip });
+          if (SHEETS.includes(width)) crops[`${width}|${date}`] = { png: await crop(page, m), e };
         }
-        rows.push({ date, width, ...e, mode: m.mode, flip: m.flip });
-        if (SHEETS.includes(width)) crops[`${width}|${date}`] = { png: await crop(page, m), e };
       }
       await ctx.close();
     }
     // table
     const pad = (s, n) => String(s).padEnd(n);
-    console.log(`${pad('date', 11)}| ${pad('width', 6)}| ${pad('max dist px', 12)}| ${pad('angle diff', 11)}| ${pad('facing ok', 10)}| ${pad('overlap ok', 11)}| result`);
+    console.log(`${pad('date', 11)}| ${pad('width', 6)}| ${pad('max dist px', 12)}| ${pad('angle diff', 11)}| ${pad('facing ok', 10)}| ${pad('overlap ok', 11)}| ${pad('bbox clear', 16)}| ${pad('Dec 1 left', 22)}| result`);
     for (const r of rows) {
+      if (FAILS_ONLY && r.pass) continue;
       console.log(
-        `${pad(r.date, 11)}| ${pad(r.width, 6)}| ${pad(r.maxDist.toFixed(2), 12)}| ${pad(r.diff.toFixed(1) + 'deg', 11)}| ${pad(r.facingOk ? 'yes' : 'NO', 10)}| ${pad(r.overlapOk ? 'yes' : 'NO ' + r.hits.join('+'), 11)}| ${r.pass ? 'PASS' : 'FAIL'}`,
+        `${pad(r.date, 11)}| ${pad(r.width, 6)}| ${pad(r.maxDist.toFixed(2), 12)}| ${pad(r.diff.toFixed(1) + 'deg', 11)}| ${pad(r.facingOk ? 'yes' : 'NO', 10)}| ${pad(r.overlapOk ? 'yes' : 'NO ' + r.hits.join('+'), 11)}| ${pad(r.bboxOk ? 'yes' : 'NO ' + r.boxHits.join('+'), 16)}| ${pad(r.date === '2026-12-01' ? `${r.dec1Ok ? 'yes' : 'NO'} ${r.santaCx.toFixed(0)}<${r.stopX.toFixed(0)}` : '-', 22)}| ${r.pass ? 'PASS' : 'FAIL'}`,
       );
     }
     const fails = rows.filter((r) => !r.pass).length;
-    console.log(`\n${rows.length - fails}/${rows.length} pass${fails ? `, ${fails} FAIL` : ''}`);
+    const nW = new Set(rows.map((r) => r.width)).size;
+    console.log(`\n${rows.length - fails}/${rows.length} pass${fails ? `, ${fails} FAIL` : ''} (${nW} widths x ${DATES.length} dates)`);
+    if (fails) console.log(`failing widths: ${[...new Set(rows.filter((r) => !r.pass).map((r) => r.width))].join(',')}`);
     for (const w of SHEETS) if (Object.keys(crops).some((k) => k.startsWith(`${w}|`))) await sheet(browser, w, crops);
     process.exitCode = fails ? 1 : 0;
   } finally {
