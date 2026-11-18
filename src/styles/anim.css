@@ -31,10 +31,10 @@
 .gift--active::before {
   content: '';
   position: absolute;
-  left: 4%;
-  top: 28%;
-  width: 92%;
-  height: 74%;
+  left: -12.5%;
+  top: 47.4%;
+  width: 124.5%;
+  height: 50.4%;
   border: 3px solid rgba(255, 214, 107, 0.9);
   border-radius: 50%;
   pointer-events: none;

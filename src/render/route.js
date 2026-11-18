@@ -34,18 +34,25 @@ const MOBILE = {
 
 export const stageSpec = (layout) => (layout === 'desktop' ? DESKTOP : MOBILE);
 
-/** Centre of Santa for a slot (before the desktop --f squeeze). Desktop slot 0 has no room on the left, so he hovers up-left of the pedestal. */
+// Santa's snowboard must always touch the dotted route. The route is a cubic-bezier path (the same "d" as public/assets/route-*.svg,
+// moved to stage coordinates); BOARD is where the board sits relative to the Santa centre. Positions that are NOT on a
+// stop (before day 1, after day 26) are points of that path, so the line and Santa can never drift apart.
+const BOARD = { desktop: { x: 0, y: 91 }, mobile: { x: -20, y: 15 } };
+// board centre on the route: before the first stop (start) and after the last stop (end)
+const ROUTE_POINT = {
+  desktop: { start: { x: 152, y: 444 }, end: { x: 1774, y: 444 } }, // first segment t=0.82 / last segment t=0.2 of the desktop route
+  mobile: { start: { x: 128, y: 42 }, end: { x: 202, y: 542 } }, // first segment t=0.55 (the dotted line fades in there) / last segment t=0.7 of the mobile route
+};
+
+/** Centre of Santa for a slot (before the desktop --f squeeze). `end` = after the campaign. Slot 0 (before day 1 or on day 1) uses the route start. */
 export function santaPos(layout, slot, end = false) {
-  if (layout === 'desktop') {
-    // slot 0 has no room on the left: Santa hovers above the pedestal, kept inside the viewport (art starts 137px left of his centre)
-    // slot 0 (start) and, after the campaign, the last slot (end of the route): he hovers above the pedestal
-    const first = slot === 0 || end;
-    return { x: first ? DESKTOP.x[slot] + 10 : DESKTOP.x[slot] - 185, y: DESKTOP.py[slot] - (first ? 250 : 147) };
-  }
-  // after the campaign (mobile): he stands BELOW the last pedestal, at the end of the route (stage gets extra room, see MOBILE_END_PAD in main.js)
-  if (end) return { x: 100, y: MOBILE.py[slot] + 100 };
-  // slots 0 and 2 (x ~ 90-100): nudged right so his board does not leave the 390px stage
-  return { x: Math.max(MOBILE.x[slot] - 22, 92), y: MOBILE.py[slot] - (slot === 0 ? 137 : 123) };
+  const b = BOARD[layout];
+  const onRoute = (p) => ({ x: p.x - b.x, y: p.y - b.y });
+  if (end) return onRoute(ROUTE_POINT[layout].end);
+  if (slot === 0) return onRoute(ROUTE_POINT[layout].start);
+  if (layout === 'desktop') return { x: DESKTOP.x[slot] - 185, y: DESKTOP.py[slot] - 147 };
+  // mobile slots 1 and 2 (Figma): x nudged right so his board does not leave the 390px stage
+  return { x: Math.max(MOBILE.x[slot] - 22, 92), y: MOBILE.py[slot] - 123 };
 }
 
 const r = (n) => Math.round(n * 100) / 100;

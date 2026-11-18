@@ -35,8 +35,8 @@ const now = () => new Date(hasOverride ? Date.now() + clockOffset : Date.now());
 
 const state = { market: null, ui: null, cards: null, today: null };
 
-const MOBILE_FIRST_PAD = 95;
-const MOBILE_END_PAD = 105; // room below the last pedestal for Santa after the campaign
+const MOBILE_FIRST_PAD = 65;
+const MOBILE_END_PAD = 45; // room below the last pedestal for Santa after the campaign
 const layout = () => (mq.matches ? 'desktop' : 'mobile');
 
 async function setMarket(id, { persist = true } = {}) {
