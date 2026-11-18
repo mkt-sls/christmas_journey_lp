@@ -1,3 +1,5 @@
+import dayLinks from '../data/links.json';
+
 // Campaign settings and every outgoing link in one place.
 // Replace the "#" placeholders before launch. Per-market overrides go in linksByMarket
 // (market id from data/markets.json, e.g. DE, EN_GBP).
@@ -20,4 +22,10 @@ export const linksByMarket = {};
 
 export function linkFor(name, marketId) {
   return linksByMarket[marketId]?.[name] ?? links[name] ?? '#';
+}
+
+// Deposit link of one campaign day (data/links.json, imported from the client links sheet). Same link for every market;
+// a per-market override in linksByMarket wins, '#' placeholder is the last fallback.
+export function depositLinkFor(day, marketId) {
+  return linksByMarket[marketId]?.deposit ?? dayLinks.find((l) => l.day === day)?.deposit ?? links.deposit;
 }

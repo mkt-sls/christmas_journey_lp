@@ -549,11 +549,7 @@ function section(title, intro, items) {
   sections.push({ title, intro, items });
 }
 
-section(
-  'RO_MDL (Moldova) amounts look suspicious - please confirm',
-  'We kept every RO_MDL amount exactly as written in the sheet (only the day 4 currency label was corrected, see "Fixes applied"). These days look like they might still be GBP numbers or might not make sense:',
-  roLines,
-);
+// RO_MDL amounts: resolved. The client corrected the MDL column in the links sheet; scripts/import-links.mjs applies it (runs at the end of this script).
 
 // Game spelling
 const spellItems = [];
@@ -598,6 +594,7 @@ const missing = [];
 if (timerRowSeen) missing.push('The last row of the UI ELEMENT tab is called "Timer" but has no text or translations. We use the countdown format 14:32:08 (HH:MM:SS) from the "gift_timer" row and the "Unlocks in" text; please confirm that is all that is needed.');
 else missing.push('The "Timer" row was not found in the UI ELEMENT tab.');
 missing.push(`There is no "campaign ended" message in the sheet. After 26 December the page needs one, so we added the English placeholder "${PLACEHOLDER_ENDED}" under the key campaign_ended, in all 12 UI languages. Please send the translations.`);
+missing.push('Login link and Terms & Conditions links (card "Full terms & conditions" and the legal line "Full campaign terms apply") are not in the links sheet and not confirmed. src/config.js still has "#" placeholders for login, terms and campaignTerms. Please send the final URLs. (Deposit links per day come from the links sheet via scripts/import-links.mjs.)');
 section('Missing in the sheet', '', missing);
 
 section(
@@ -652,3 +649,7 @@ fs.writeFileSync(path.join(dataDir, 'ISSUES.md'), md.join('\n'), 'utf8');
 
 console.log(`Wrote ${UI_LANGS.length} ui files, ${MARKETS.length} cards files, markets.json, browser-map.json, ISSUES.md`);
 console.log(`Fixes applied: ${fixes.length}; open points listed: ${n} (sections: ${sections.length})`);
+
+// ---- links sheet: per-day deposit links, MDL amounts, diff report ----------------
+import { execFileSync } from 'node:child_process';
+execFileSync(process.execPath, [path.join(root, 'scripts/import-links.mjs')], { stdio: 'inherit' });

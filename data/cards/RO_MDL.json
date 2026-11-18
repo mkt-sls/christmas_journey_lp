@@ -10,15 +10,15 @@
       "type": "bonus",
       "amount": {
         "percent": 70,
-        "max": 350,
+        "max": 7000,
         "currency": "MDL",
-        "text": "70% PÂNĂ LA 350 MDL"
+        "text": "70% PÂNĂ LA 7000 MDL"
       },
       "game": null,
       "minDeposit": {
-        "value": 35,
+        "value": 500,
         "currency": "MDL",
-        "text": "Depunere min.: 35 MDL"
+        "text": "Depunere min.: 500 MDL"
       },
       "wagering": {
         "multiplier": 25,
@@ -32,8 +32,8 @@
         "active": [
           "ZIUA 1 · 1 DECEMBRIE",
           "BONUS DE CRĂCIUN",
-          "70% PÂNĂ LA 350 MDL",
-          "Depunere min.: 35 MDL",
+          "70% PÂNĂ LA 7000 MDL",
+          "Depunere min.: 500 MDL",
           "Rulaj: x25",
           "Valabil până la: 23:59, 1 dec.",
           "DEPUNE ȘI REVENDICĂ",
@@ -42,8 +42,8 @@
         "expired": [
           "ZIUA 1 · 1 DECEMBRIE",
           "BONUS DE CRĂCIUN",
-          "70% PÂNĂ LA 350 MDL",
-          "Depunere min.: 35 MDL",
+          "70% PÂNĂ LA 7000 MDL",
+          "Depunere min.: 500 MDL",
           "Rulaj: x25",
           "Valabil până la: 23:59, 1 dec.",
           "Cadou expirat",
@@ -122,9 +122,9 @@
       "type": "bonus",
       "amount": {
         "percent": 55,
-        "max": 500,
+        "max": 10000,
         "currency": "MDL",
-        "text": "55% PÂNĂ LA 500 MDL"
+        "text": "55% PÂNĂ LA 10000 MDL"
       },
       "game": null,
       "minDeposit": {
@@ -144,7 +144,7 @@
         "active": [
           "ZIUA 3 · 3 DECEMBRIE",
           "BONUS DE CRĂCIUN",
-          "55% PÂNĂ LA 500 MDL",
+          "55% PÂNĂ LA 10000 MDL",
           "Depunere min.: 450 MDL",
           "Rulaj: x25",
           "Valabil până la: 23:59, 3 dec.",
@@ -154,7 +154,7 @@
         "expired": [
           "ZIUA 3 · 3 DECEMBRIE",
           "BONUS DE CRĂCIUN",
-          "55% PÂNĂ LA 500 MDL",
+          "55% PÂNĂ LA 10000 MDL",
           "Depunere min.: 450 MDL",
           "Rulaj: x25",
           "Valabil până la: 23:59, 3 dec.",
@@ -182,9 +182,9 @@
       },
       "game": "Big Bass Splash",
       "minDeposit": {
-        "value": 22,
+        "value": 300,
         "currency": "MDL",
-        "text": "Depunere min.: 22 MDL"
+        "text": "Depunere min.: 300 MDL"
       },
       "wagering": {
         "multiplier": 25,
@@ -200,7 +200,7 @@
           "ROTIRI GRATUITE DE CRĂCIUN",
           "65 ROTIRI GRATUITE",
           "în Big Bass Splash",
-          "Depunere min.: 22 MDL",
+          "Depunere min.: 300 MDL",
           "Rulaj: x25",
           "Valabil până la: 23:59, 4 dec.",
           "DEPUNE ȘI REVENDICĂ",
@@ -211,7 +211,7 @@
           "ROTIRI GRATUITE DE CRĂCIUN",
           "65 ROTIRI GRATUITE",
           "în Big Bass Splash",
-          "Depunere min.: 22 MDL",
+          "Depunere min.: 300 MDL",
           "Rulaj: x25",
           "Valabil până la: 23:59, 4 dec.",
           "Cadou expirat",
@@ -402,9 +402,9 @@
       "type": "bonus",
       "amount": {
         "percent": 65,
-        "max": 650,
+        "max": 13000,
         "currency": "MDL",
-        "text": "65% PÂNĂ LA 650 MDL"
+        "text": "65% PÂNĂ LA 13000 MDL"
       },
       "game": null,
       "minDeposit": {
@@ -424,7 +424,7 @@
         "active": [
           "ZIUA 8 · 8 DECEMBRIE",
           "BONUS DE CRĂCIUN",
-          "65% PÂNĂ LA 650 MDL",
+          "65% PÂNĂ LA 13000 MDL",
           "Depunere min.: 350 MDL",
           "Rulaj: x25",
           "Valabil până la: 23:59, 8 dec.",
@@ -434,7 +434,7 @@
         "expired": [
           "ZIUA 8 · 8 DECEMBRIE",
           "BONUS DE CRĂCIUN",
-          "65% PÂNĂ LA 650 MDL",
+          "65% PÂNĂ LA 13000 MDL",
           "Depunere min.: 350 MDL",
           "Rulaj: x25",
           "Valabil până la: 23:59, 8 dec.",
@@ -514,9 +514,9 @@
       "type": "bonus",
       "amount": {
         "percent": 62,
-        "max": 700,
+        "max": 14000,
         "currency": "MDL",
-        "text": "62% PÂNĂ LA 700 MDL"
+        "text": "62% PÂNĂ LA 14000 MDL"
       },
       "game": null,
       "minDeposit": {
@@ -536,7 +536,7 @@
         "active": [
           "ZIUA 10 · 10 DECEMBRIE",
           "BONUS DE CRĂCIUN",
-          "62% PÂNĂ LA 700 MDL",
+          "62% PÂNĂ LA 14000 MDL",
           "Depunere min.: 500 MDL",
           "Rulaj: x25",
           "Valabil până la: 23:59, 10 dec.",
@@ -546,7 +546,7 @@
         "expired": [
           "ZIUA 10 · 10 DECEMBRIE",
           "BONUS DE CRĂCIUN",
-          "62% PÂNĂ LA 700 MDL",
+          "62% PÂNĂ LA 14000 MDL",
           "Depunere min.: 500 MDL",
           "Rulaj: x25",
           "Valabil până la: 23:59, 10 dec.",
@@ -794,9 +794,9 @@
       "type": "bonus",
       "amount": {
         "percent": 58,
-        "max": 500,
+        "max": 10000,
         "currency": "MDL",
-        "text": "58% PÂNĂ LA 500 MDL"
+        "text": "58% PÂNĂ LA 10000 MDL"
       },
       "game": null,
       "minDeposit": {
@@ -816,7 +816,7 @@
         "active": [
           "ZIUA 15 · 15 DECEMBRIE",
           "BONUS DE CRĂCIUN",
-          "58% PÂNĂ LA 500 MDL",
+          "58% PÂNĂ LA 10000 MDL",
           "Depunere min.: 450 MDL",
           "Rulaj: x25",
           "Valabil până la: 23:59, 15 dec.",
@@ -826,7 +826,7 @@
         "expired": [
           "ZIUA 15 · 15 DECEMBRIE",
           "BONUS DE CRĂCIUN",
-          "58% PÂNĂ LA 500 MDL",
+          "58% PÂNĂ LA 10000 MDL",
           "Depunere min.: 450 MDL",
           "Rulaj: x25",
           "Valabil până la: 23:59, 15 dec.",
@@ -906,9 +906,9 @@
       "type": "bonus",
       "amount": {
         "percent": 45,
-        "max": 500,
+        "max": 10000,
         "currency": "MDL",
-        "text": "45% PÂNĂ LA 500 MDL"
+        "text": "45% PÂNĂ LA 10000 MDL"
       },
       "game": null,
       "minDeposit": {
@@ -928,7 +928,7 @@
         "active": [
           "ZIUA 17 · 17 DECEMBRIE",
           "BONUS DE CRĂCIUN",
-          "45% PÂNĂ LA 500 MDL",
+          "45% PÂNĂ LA 10000 MDL",
           "Depunere min.: 350 MDL",
           "Rulaj: x25",
           "Valabil până la: 23:59, 17 dec.",
@@ -938,7 +938,7 @@
         "expired": [
           "ZIUA 17 · 17 DECEMBRIE",
           "BONUS DE CRĂCIUN",
-          "45% PÂNĂ LA 500 MDL",
+          "45% PÂNĂ LA 10000 MDL",
           "Depunere min.: 350 MDL",
           "Rulaj: x25",
           "Valabil până la: 23:59, 17 dec.",
@@ -1130,9 +1130,9 @@
       "type": "bonus",
       "amount": {
         "percent": 65,
-        "max": 500,
+        "max": 10000,
         "currency": "MDL",
-        "text": "65% PÂNĂ LA 500 MDL"
+        "text": "65% PÂNĂ LA 10000 MDL"
       },
       "game": null,
       "minDeposit": {
@@ -1152,7 +1152,7 @@
         "active": [
           "ZIUA 21 · 21 DECEMBRIE",
           "BONUS DE CRĂCIUN",
-          "65% PÂNĂ LA 500 MDL",
+          "65% PÂNĂ LA 10000 MDL",
           "Depunere min.: 350 MDL",
           "Rulaj: x25",
           "Valabil până la: 23:59, 21 dec.",
@@ -1162,7 +1162,7 @@
         "expired": [
           "ZIUA 21 · 21 DECEMBRIE",
           "BONUS DE CRĂCIUN",
-          "65% PÂNĂ LA 500 MDL",
+          "65% PÂNĂ LA 10000 MDL",
           "Depunere min.: 350 MDL",
           "Rulaj: x25",
           "Valabil până la: 23:59, 21 dec.",
@@ -1298,9 +1298,9 @@
       "type": "bonus",
       "amount": {
         "percent": 80,
-        "max": 400,
+        "max": 8000,
         "currency": "MDL",
-        "text": "80% PÂNĂ LA 400 MDL"
+        "text": "80% PÂNĂ LA 8000 MDL"
       },
       "game": null,
       "minDeposit": {
@@ -1320,7 +1320,7 @@
         "active": [
           "ZIUA 24 · 24 DECEMBRIE",
           "BONUS DE CRĂCIUN",
-          "80% PÂNĂ LA 400 MDL",
+          "80% PÂNĂ LA 8000 MDL",
           "Depunere min.: 500 MDL",
           "Rulaj: x25",
           "Valabil până la: 23:59, 24 dec.",
@@ -1330,7 +1330,7 @@
         "expired": [
           "ZIUA 24 · 24 DECEMBRIE",
           "BONUS DE CRĂCIUN",
-          "80% PÂNĂ LA 400 MDL",
+          "80% PÂNĂ LA 8000 MDL",
           "Depunere min.: 500 MDL",
           "Rulaj: x25",
           "Valabil până la: 23:59, 24 dec.",
@@ -1410,9 +1410,9 @@
       "type": "bonus",
       "amount": {
         "percent": 60,
-        "max": 600,
+        "max": 12000,
         "currency": "MDL",
-        "text": "60% PÂNĂ LA 600 MDL"
+        "text": "60% PÂNĂ LA 12000 MDL"
       },
       "game": null,
       "minDeposit": {
@@ -1432,7 +1432,7 @@
         "active": [
           "ZIUA 26 · 26 DECEMBRIE",
           "BONUS DE CRĂCIUN",
-          "60% PÂNĂ LA 600 MDL",
+          "60% PÂNĂ LA 12000 MDL",
           "Depunere min.: 300 MDL",
           "Rulaj: x25",
           "Valabil până la: 23:59, 26 dec.",
@@ -1442,7 +1442,7 @@
         "expired": [
           "ZIUA 26 · 26 DECEMBRIE",
           "BONUS DE CRĂCIUN",
-          "60% PÂNĂ LA 600 MDL",
+          "60% PÂNĂ LA 12000 MDL",
           "Depunere min.: 300 MDL",
           "Rulaj: x25",
           "Valabil până la: 23:59, 26 dec.",

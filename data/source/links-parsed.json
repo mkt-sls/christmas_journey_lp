@@ -1,0 +1,1340 @@
+[
+  {
+    "day": 1,
+    "promo": "FROST",
+    "wager": 25,
+    "game": null,
+    "amounts": {
+      "EUR": {
+        "percent": 70,
+        "max": 350,
+        "min": 35
+      },
+      "MDL": {
+        "percent": 70,
+        "max": 7000,
+        "min": 500
+      },
+      "GBP": {
+        "percent": 70,
+        "max": 350,
+        "min": 35
+      },
+      "USD": {
+        "percent": 70,
+        "max": 350,
+        "min": 35
+      },
+      "CAD": {
+        "percent": 70,
+        "max": 550,
+        "min": 55
+      },
+      "AUD": {
+        "percent": 70,
+        "max": 550,
+        "min": 55
+      },
+      "NOK": {
+        "percent": 70,
+        "max": 3700,
+        "min": 400
+      },
+      "SEK": {
+        "percent": 70,
+        "max": 3700,
+        "min": 400
+      },
+      "DKK": {
+        "percent": 70,
+        "max": 2600,
+        "min": 260
+      },
+      "TRY": {
+        "percent": 70,
+        "max": 20000,
+        "min": 1900
+      }
+    }
+  },
+  {
+    "day": 2,
+    "promo": "SNOWLUCK",
+    "wager": 25,
+    "game": "Thunder Coins: Hold and Win Playson bet 0.10",
+    "amounts": {
+      "EUR": {
+        "spins": 82,
+        "min": 25
+      },
+      "MDL": {
+        "spins": 82,
+        "min": 350
+      },
+      "GBP": {
+        "spins": 82,
+        "min": 25
+      },
+      "USD": {
+        "spins": 82,
+        "min": 25
+      },
+      "CAD": {
+        "spins": 82,
+        "min": 40
+      },
+      "AUD": {
+        "spins": 82,
+        "min": 40
+      },
+      "NOK": {
+        "spins": 82,
+        "min": 280
+      },
+      "SEK": {
+        "spins": 82,
+        "min": 280
+      },
+      "DKK": {
+        "spins": 82,
+        "min": 180
+      },
+      "TRY": {
+        "spins": 82,
+        "min": 1300
+      }
+    }
+  },
+  {
+    "day": 3,
+    "promo": "ICEGOLD",
+    "wager": 25,
+    "game": null,
+    "amounts": {
+      "EUR": {
+        "percent": 55,
+        "max": 500,
+        "min": 30
+      },
+      "MDL": {
+        "percent": 55,
+        "max": 10000,
+        "min": 450
+      },
+      "GBP": {
+        "percent": 55,
+        "max": 500,
+        "min": 30
+      },
+      "USD": {
+        "percent": 55,
+        "max": 500,
+        "min": 30
+      },
+      "CAD": {
+        "percent": 55,
+        "max": 800,
+        "min": 50
+      },
+      "AUD": {
+        "percent": 55,
+        "max": 800,
+        "min": 50
+      },
+      "NOK": {
+        "percent": 55,
+        "max": 5000,
+        "min": 350
+      },
+      "SEK": {
+        "percent": 55,
+        "max": 5000,
+        "min": 350
+      },
+      "DKK": {
+        "percent": 55,
+        "max": 3700,
+        "min": 225
+      },
+      "TRY": {
+        "percent": 55,
+        "max": 28000,
+        "min": 1600
+      }
+    }
+  },
+  {
+    "day": 4,
+    "promo": "WINTER65",
+    "wager": 25,
+    "game": "Big Bass Splash Pragmatic Play bet 0.10",
+    "amounts": {
+      "EUR": {
+        "spins": 65,
+        "min": 22
+      },
+      "MDL": {
+        "spins": 65,
+        "min": 300
+      },
+      "GBP": {
+        "spins": 65,
+        "min": 22
+      },
+      "USD": {
+        "spins": 65,
+        "min": 22
+      },
+      "CAD": {
+        "spins": 65,
+        "min": 35
+      },
+      "AUD": {
+        "spins": 65,
+        "min": 35
+      },
+      "NOK": {
+        "spins": 65,
+        "min": 230
+      },
+      "SEK": {
+        "spins": 65,
+        "min": 230
+      },
+      "DKK": {
+        "spins": 65,
+        "min": 165
+      },
+      "TRY": {
+        "spins": 65,
+        "min": 1200
+      }
+    }
+  },
+  {
+    "day": 5,
+    "promo": "POLARWIN",
+    "wager": 25,
+    "game": "John Hunter and the Book of Tut bet 0.10",
+    "amounts": {
+      "EUR": {
+        "spins": 75,
+        "min": 25
+      },
+      "MDL": {
+        "spins": 75,
+        "min": 350
+      },
+      "GBP": {
+        "spins": 75,
+        "min": 25
+      },
+      "USD": {
+        "spins": 75,
+        "min": 25
+      },
+      "CAD": {
+        "spins": 75,
+        "min": 40
+      },
+      "AUD": {
+        "spins": 75,
+        "min": 40
+      },
+      "NOK": {
+        "spins": 75,
+        "min": 280
+      },
+      "SEK": {
+        "spins": 75,
+        "min": 280
+      },
+      "DKK": {
+        "spins": 75,
+        "min": 180
+      },
+      "TRY": {
+        "spins": 75,
+        "min": 1300
+      }
+    }
+  },
+  {
+    "day": 6,
+    "promo": "JOLLY",
+    "wager": 25,
+    "game": "Gemhalla BGaming 0.20 bet",
+    "amounts": {
+      "EUR": {
+        "spins": 80,
+        "min": 30
+      },
+      "MDL": {
+        "spins": 80,
+        "min": 450
+      },
+      "GBP": {
+        "spins": 80,
+        "min": 30
+      },
+      "USD": {
+        "spins": 80,
+        "min": 30
+      },
+      "CAD": {
+        "spins": 80,
+        "min": 50
+      },
+      "AUD": {
+        "spins": 80,
+        "min": 50
+      },
+      "NOK": {
+        "spins": 80,
+        "min": 350
+      },
+      "SEK": {
+        "spins": 80,
+        "min": 350
+      },
+      "DKK": {
+        "spins": 80,
+        "min": 225
+      },
+      "TRY": {
+        "spins": 80,
+        "min": 1600
+      }
+    }
+  },
+  {
+    "day": 7,
+    "promo": "FROSTY",
+    "wager": 25,
+    "game": "Bonanza Billion BGaming 0.20 bet",
+    "amounts": {
+      "EUR": {
+        "spins": 90,
+        "min": 35
+      },
+      "MDL": {
+        "spins": 90,
+        "min": 500
+      },
+      "GBP": {
+        "spins": 90,
+        "min": 35
+      },
+      "USD": {
+        "spins": 90,
+        "min": 35
+      },
+      "CAD": {
+        "spins": 90,
+        "min": 55
+      },
+      "AUD": {
+        "spins": 90,
+        "min": 55
+      },
+      "NOK": {
+        "spins": 90,
+        "min": 400
+      },
+      "SEK": {
+        "spins": 90,
+        "min": 400
+      },
+      "DKK": {
+        "spins": 90,
+        "min": 260
+      },
+      "TRY": {
+        "spins": 90,
+        "min": 1900
+      }
+    }
+  },
+  {
+    "day": 8,
+    "promo": "SNOWDROP",
+    "wager": 25,
+    "game": null,
+    "amounts": {
+      "EUR": {
+        "percent": 65,
+        "max": 650,
+        "min": 25
+      },
+      "MDL": {
+        "percent": 65,
+        "max": 13000,
+        "min": 350
+      },
+      "GBP": {
+        "percent": 65,
+        "max": 650,
+        "min": 25
+      },
+      "USD": {
+        "percent": 65,
+        "max": 650,
+        "min": 25
+      },
+      "CAD": {
+        "percent": 65,
+        "max": 1000,
+        "min": 40
+      },
+      "AUD": {
+        "percent": 65,
+        "max": 1000,
+        "min": 40
+      },
+      "NOK": {
+        "percent": 65,
+        "max": 7000,
+        "min": 280
+      },
+      "SEK": {
+        "percent": 65,
+        "max": 7000,
+        "min": 280
+      },
+      "DKK": {
+        "percent": 65,
+        "max": 5000,
+        "min": 180
+      },
+      "TRY": {
+        "percent": 65,
+        "max": 35000,
+        "min": 1300
+      }
+    }
+  },
+  {
+    "day": 9,
+    "promo": "MERRYLUCK",
+    "wager": 25,
+    "game": "Big Bass Christmas – Frozen Lake bet 0.10",
+    "amounts": {
+      "EUR": {
+        "spins": 74,
+        "min": 30
+      },
+      "MDL": {
+        "spins": 74,
+        "min": 450
+      },
+      "GBP": {
+        "spins": 74,
+        "min": 30
+      },
+      "USD": {
+        "spins": 74,
+        "min": 30
+      },
+      "CAD": {
+        "spins": 74,
+        "min": 50
+      },
+      "AUD": {
+        "spins": 74,
+        "min": 50
+      },
+      "NOK": {
+        "spins": 74,
+        "min": 350
+      },
+      "SEK": {
+        "spins": 74,
+        "min": 350
+      },
+      "DKK": {
+        "spins": 74,
+        "min": 225
+      },
+      "TRY": {
+        "spins": 74,
+        "min": 1600
+      }
+    }
+  },
+  {
+    "day": 10,
+    "promo": "GOLDENICE",
+    "wager": 25,
+    "game": null,
+    "amounts": {
+      "EUR": {
+        "percent": 62,
+        "max": 700,
+        "min": 35
+      },
+      "MDL": {
+        "percent": 62,
+        "max": 14000,
+        "min": 500
+      },
+      "GBP": {
+        "percent": 62,
+        "max": 700,
+        "min": 35
+      },
+      "USD": {
+        "percent": 62,
+        "max": 700,
+        "min": 35
+      },
+      "CAD": {
+        "percent": 62,
+        "max": 1100,
+        "min": 55
+      },
+      "AUD": {
+        "percent": 62,
+        "max": 1100,
+        "min": 55
+      },
+      "NOK": {
+        "percent": 62,
+        "max": 7400,
+        "min": 400
+      },
+      "SEK": {
+        "percent": 62,
+        "max": 7400,
+        "min": 400
+      },
+      "DKK": {
+        "percent": 62,
+        "max": 5300,
+        "min": 260
+      },
+      "TRY": {
+        "percent": 62,
+        "max": 39000,
+        "min": 1900
+      }
+    }
+  },
+  {
+    "day": 11,
+    "promo": "NORTHSTAR",
+    "wager": 25,
+    "game": "Thunder Coins: Hold and Win Playson bet 0.10",
+    "amounts": {
+      "EUR": {
+        "spins": 55,
+        "min": 22
+      },
+      "MDL": {
+        "spins": 55,
+        "min": 300
+      },
+      "GBP": {
+        "spins": 55,
+        "min": 22
+      },
+      "USD": {
+        "spins": 55,
+        "min": 22
+      },
+      "CAD": {
+        "spins": 55,
+        "min": 35
+      },
+      "AUD": {
+        "spins": 55,
+        "min": 35
+      },
+      "NOK": {
+        "spins": 55,
+        "min": 230
+      },
+      "SEK": {
+        "spins": 55,
+        "min": 230
+      },
+      "DKK": {
+        "spins": 55,
+        "min": 165
+      },
+      "TRY": {
+        "spins": 55,
+        "min": 1200
+      }
+    }
+  },
+  {
+    "day": 12,
+    "promo": "FESTIVE",
+    "wager": 25,
+    "game": "Fruits 'n' Stars Holiday Edition bet 0.10",
+    "amounts": {
+      "EUR": {
+        "spins": 80,
+        "min": 25
+      },
+      "MDL": {
+        "spins": 80,
+        "min": 350
+      },
+      "GBP": {
+        "spins": 80,
+        "min": 25
+      },
+      "USD": {
+        "spins": 80,
+        "min": 25
+      },
+      "CAD": {
+        "spins": 80,
+        "min": 40
+      },
+      "AUD": {
+        "spins": 80,
+        "min": 40
+      },
+      "NOK": {
+        "spins": 80,
+        "min": 280
+      },
+      "SEK": {
+        "spins": 80,
+        "min": 280
+      },
+      "DKK": {
+        "spins": 80,
+        "min": 180
+      },
+      "TRY": {
+        "spins": 80,
+        "min": 1300
+      }
+    }
+  },
+  {
+    "day": 13,
+    "promo": "WINTERGEM",
+    "wager": 25,
+    "game": "Yeti Quest bet 0.20",
+    "amounts": {
+      "EUR": {
+        "spins": 67,
+        "min": 25
+      },
+      "MDL": {
+        "spins": 67,
+        "min": 350
+      },
+      "GBP": {
+        "spins": 67,
+        "min": 25
+      },
+      "USD": {
+        "spins": 67,
+        "min": 25
+      },
+      "CAD": {
+        "spins": 67,
+        "min": 40
+      },
+      "AUD": {
+        "spins": 67,
+        "min": 40
+      },
+      "NOK": {
+        "spins": 67,
+        "min": 280
+      },
+      "SEK": {
+        "spins": 67,
+        "min": 280
+      },
+      "DKK": {
+        "spins": 67,
+        "min": 180
+      },
+      "TRY": {
+        "spins": 67,
+        "min": 1300
+      }
+    }
+  },
+  {
+    "day": 14,
+    "promo": "MAGICSNOW",
+    "wager": 25,
+    "game": "25 Cookies: Hit the Bonus bet 0.10",
+    "amounts": {
+      "EUR": {
+        "spins": 90,
+        "min": 35
+      },
+      "MDL": {
+        "spins": 90,
+        "min": 500
+      },
+      "GBP": {
+        "spins": 90,
+        "min": 35
+      },
+      "USD": {
+        "spins": 90,
+        "min": 35
+      },
+      "CAD": {
+        "spins": 90,
+        "min": 55
+      },
+      "AUD": {
+        "spins": 90,
+        "min": 55
+      },
+      "NOK": {
+        "spins": 90,
+        "min": 400
+      },
+      "SEK": {
+        "spins": 90,
+        "min": 400
+      },
+      "DKK": {
+        "spins": 90,
+        "min": 260
+      },
+      "TRY": {
+        "spins": 90,
+        "min": 1900
+      }
+    }
+  },
+  {
+    "day": 15,
+    "promo": "LUCKYBELL",
+    "wager": 25,
+    "game": null,
+    "amounts": {
+      "EUR": {
+        "percent": 58,
+        "max": 500,
+        "min": 30
+      },
+      "MDL": {
+        "percent": 58,
+        "max": 10000,
+        "min": 450
+      },
+      "GBP": {
+        "percent": 58,
+        "max": 500,
+        "min": 30
+      },
+      "USD": {
+        "percent": 58,
+        "max": 500,
+        "min": 30
+      },
+      "CAD": {
+        "percent": 58,
+        "max": 800,
+        "min": 50
+      },
+      "AUD": {
+        "percent": 58,
+        "max": 800,
+        "min": 50
+      },
+      "NOK": {
+        "percent": 58,
+        "max": 5000,
+        "min": 350
+      },
+      "SEK": {
+        "percent": 58,
+        "max": 5000,
+        "min": 350
+      },
+      "DKK": {
+        "percent": 58,
+        "max": 3700,
+        "min": 225
+      },
+      "TRY": {
+        "percent": 58,
+        "max": 28000,
+        "min": 1600
+      }
+    }
+  },
+  {
+    "day": 16,
+    "promo": "CANDYWIN",
+    "wager": 25,
+    "game": "Christmas Carol Megaways bet 0.20",
+    "amounts": {
+      "EUR": {
+        "spins": 82,
+        "min": 30
+      },
+      "MDL": {
+        "spins": 82,
+        "min": 450
+      },
+      "GBP": {
+        "spins": 82,
+        "min": 30
+      },
+      "USD": {
+        "spins": 82,
+        "min": 30
+      },
+      "CAD": {
+        "spins": 82,
+        "min": 50
+      },
+      "AUD": {
+        "spins": 82,
+        "min": 50
+      },
+      "NOK": {
+        "spins": 82,
+        "min": 350
+      },
+      "SEK": {
+        "spins": 82,
+        "min": 350
+      },
+      "DKK": {
+        "spins": 82,
+        "min": 225
+      },
+      "TRY": {
+        "spins": 82,
+        "min": 1600
+      }
+    }
+  },
+  {
+    "day": 17,
+    "promo": "SNOWRUSH",
+    "wager": 25,
+    "game": null,
+    "amounts": {
+      "EUR": {
+        "percent": 45,
+        "max": 500,
+        "min": 25
+      },
+      "MDL": {
+        "percent": 45,
+        "max": 10000,
+        "min": 350
+      },
+      "GBP": {
+        "percent": 45,
+        "max": 500,
+        "min": 25
+      },
+      "USD": {
+        "percent": 45,
+        "max": 500,
+        "min": 25
+      },
+      "CAD": {
+        "percent": 45,
+        "max": 800,
+        "min": 40
+      },
+      "AUD": {
+        "percent": 45,
+        "max": 800,
+        "min": 40
+      },
+      "NOK": {
+        "percent": 45,
+        "max": 5000,
+        "min": 280
+      },
+      "SEK": {
+        "percent": 45,
+        "max": 5000,
+        "min": 280
+      },
+      "DKK": {
+        "percent": 45,
+        "max": 3700,
+        "min": 180
+      },
+      "TRY": {
+        "percent": 45,
+        "max": 28000,
+        "min": 1300
+      }
+    }
+  },
+  {
+    "day": 18,
+    "promo": "JINGLE",
+    "wager": 25,
+    "game": "Big Bass Christmas – Frozen Lake bet 0.10",
+    "amounts": {
+      "EUR": {
+        "spins": 63,
+        "min": 25
+      },
+      "MDL": {
+        "spins": 63,
+        "min": 350
+      },
+      "GBP": {
+        "spins": 63,
+        "min": 25
+      },
+      "USD": {
+        "spins": 63,
+        "min": 25
+      },
+      "CAD": {
+        "spins": 63,
+        "min": 40
+      },
+      "AUD": {
+        "spins": 63,
+        "min": 40
+      },
+      "NOK": {
+        "spins": 63,
+        "min": 280
+      },
+      "SEK": {
+        "spins": 63,
+        "min": 280
+      },
+      "DKK": {
+        "spins": 63,
+        "min": 180
+      },
+      "TRY": {
+        "spins": 63,
+        "min": 1300
+      }
+    }
+  },
+  {
+    "day": 19,
+    "promo": "ARCTIC",
+    "wager": 25,
+    "game": "Fruits 'n' Stars Holiday Edition bet 0.10",
+    "amounts": {
+      "EUR": {
+        "spins": 95,
+        "min": 35
+      },
+      "MDL": {
+        "spins": 95,
+        "min": 500
+      },
+      "GBP": {
+        "spins": 95,
+        "min": 35
+      },
+      "USD": {
+        "spins": 95,
+        "min": 35
+      },
+      "CAD": {
+        "spins": 95,
+        "min": 55
+      },
+      "AUD": {
+        "spins": 95,
+        "min": 55
+      },
+      "NOK": {
+        "spins": 95,
+        "min": 400
+      },
+      "SEK": {
+        "spins": 95,
+        "min": 400
+      },
+      "DKK": {
+        "spins": 95,
+        "min": 260
+      },
+      "TRY": {
+        "spins": 95,
+        "min": 1900
+      }
+    }
+  },
+  {
+    "day": 20,
+    "promo": "XMASLUCK",
+    "wager": 25,
+    "game": "Sweet Bonanza XMas 0.20 bet",
+    "amounts": {
+      "EUR": {
+        "spins": 82,
+        "min": 30
+      },
+      "MDL": {
+        "spins": 82,
+        "min": 450
+      },
+      "GBP": {
+        "spins": 82,
+        "min": 30
+      },
+      "USD": {
+        "spins": 82,
+        "min": 30
+      },
+      "CAD": {
+        "spins": 82,
+        "min": 50
+      },
+      "AUD": {
+        "spins": 82,
+        "min": 50
+      },
+      "NOK": {
+        "spins": 82,
+        "min": 350
+      },
+      "SEK": {
+        "spins": 82,
+        "min": 350
+      },
+      "DKK": {
+        "spins": 82,
+        "min": 225
+      },
+      "TRY": {
+        "spins": 82,
+        "min": 1600
+      }
+    }
+  },
+  {
+    "day": 21,
+    "promo": "GOLDENJOY",
+    "wager": 25,
+    "game": null,
+    "amounts": {
+      "EUR": {
+        "percent": 65,
+        "max": 500,
+        "min": 25
+      },
+      "MDL": {
+        "percent": 65,
+        "max": 10000,
+        "min": 350
+      },
+      "GBP": {
+        "percent": 65,
+        "max": 500,
+        "min": 25
+      },
+      "USD": {
+        "percent": 65,
+        "max": 500,
+        "min": 25
+      },
+      "CAD": {
+        "percent": 65,
+        "max": 800,
+        "min": 40
+      },
+      "AUD": {
+        "percent": 65,
+        "max": 800,
+        "min": 40
+      },
+      "NOK": {
+        "percent": 65,
+        "max": 5000,
+        "min": 280
+      },
+      "SEK": {
+        "percent": 65,
+        "max": 5000,
+        "min": 280
+      },
+      "DKK": {
+        "percent": 65,
+        "max": 3700,
+        "min": 180
+      },
+      "TRY": {
+        "percent": 65,
+        "max": 28000,
+        "min": 1300
+      }
+    }
+  },
+  {
+    "day": 22,
+    "promo": "SPINBELL",
+    "wager": 25,
+    "game": "Yeti Quest bet 0.20",
+    "amounts": {
+      "EUR": {
+        "spins": 62,
+        "min": 22
+      },
+      "MDL": {
+        "spins": 62,
+        "min": 300
+      },
+      "GBP": {
+        "spins": 62,
+        "min": 22
+      },
+      "USD": {
+        "spins": 62,
+        "min": 22
+      },
+      "CAD": {
+        "spins": 62,
+        "min": 35
+      },
+      "AUD": {
+        "spins": 62,
+        "min": 35
+      },
+      "NOK": {
+        "spins": 62,
+        "min": 230
+      },
+      "SEK": {
+        "spins": 62,
+        "min": 230
+      },
+      "DKK": {
+        "spins": 62,
+        "min": 165
+      },
+      "TRY": {
+        "spins": 62,
+        "min": 1200
+      }
+    }
+  },
+  {
+    "day": 23,
+    "promo": "HOLIDAY",
+    "wager": 25,
+    "game": "25 Cookies: Hit the Bonus bet 0.10",
+    "amounts": {
+      "EUR": {
+        "spins": 99,
+        "min": 30
+      },
+      "MDL": {
+        "spins": 99,
+        "min": 450
+      },
+      "GBP": {
+        "spins": 99,
+        "min": 30
+      },
+      "USD": {
+        "spins": 99,
+        "min": 30
+      },
+      "CAD": {
+        "spins": 99,
+        "min": 50
+      },
+      "AUD": {
+        "spins": 99,
+        "min": 50
+      },
+      "NOK": {
+        "spins": 99,
+        "min": 350
+      },
+      "SEK": {
+        "spins": 99,
+        "min": 350
+      },
+      "DKK": {
+        "spins": 99,
+        "min": 225
+      },
+      "TRY": {
+        "spins": 99,
+        "min": 1600
+      }
+    }
+  },
+  {
+    "day": 24,
+    "promo": "SNOWCROWN",
+    "wager": 25,
+    "game": null,
+    "amounts": {
+      "EUR": {
+        "percent": 80,
+        "max": 400,
+        "min": 35
+      },
+      "MDL": {
+        "percent": 80,
+        "max": 8000,
+        "min": 500
+      },
+      "GBP": {
+        "percent": 80,
+        "max": 400,
+        "min": 35
+      },
+      "USD": {
+        "percent": 80,
+        "max": 400,
+        "min": 35
+      },
+      "CAD": {
+        "percent": 80,
+        "max": 600,
+        "min": 55
+      },
+      "AUD": {
+        "percent": 80,
+        "max": 600,
+        "min": 55
+      },
+      "NOK": {
+        "percent": 80,
+        "max": 4000,
+        "min": 400
+      },
+      "SEK": {
+        "percent": 80,
+        "max": 4000,
+        "min": 400
+      },
+      "DKK": {
+        "percent": 80,
+        "max": 3000,
+        "min": 260
+      },
+      "TRY": {
+        "percent": 80,
+        "max": 22000,
+        "min": 1900
+      }
+    }
+  },
+  {
+    "day": 25,
+    "promo": "DECEMBER",
+    "wager": 25,
+    "game": "Christmas Carol Megaways bet 0.20",
+    "amounts": {
+      "EUR": {
+        "spins": 101,
+        "min": 35
+      },
+      "MDL": {
+        "spins": 101,
+        "min": 500
+      },
+      "GBP": {
+        "spins": 101,
+        "min": 35
+      },
+      "USD": {
+        "spins": 101,
+        "min": 35
+      },
+      "CAD": {
+        "spins": 101,
+        "min": 55
+      },
+      "AUD": {
+        "spins": 101,
+        "min": 55
+      },
+      "NOK": {
+        "spins": 101,
+        "min": 400
+      },
+      "SEK": {
+        "spins": 101,
+        "min": 400
+      },
+      "DKK": {
+        "spins": 101,
+        "min": 260
+      },
+      "TRY": {
+        "spins": 101,
+        "min": 1900
+      }
+    }
+  },
+  {
+    "day": 26,
+    "promo": "SNOWFLAKE",
+    "wager": 25,
+    "game": null,
+    "amounts": {
+      "EUR": {
+        "percent": 60,
+        "max": 600,
+        "min": 22
+      },
+      "MDL": {
+        "percent": 60,
+        "max": 12000,
+        "min": 300
+      },
+      "GBP": {
+        "percent": 60,
+        "max": 600,
+        "min": 22
+      },
+      "USD": {
+        "percent": 60,
+        "max": 600,
+        "min": 22
+      },
+      "CAD": {
+        "percent": 60,
+        "max": 950,
+        "min": 35
+      },
+      "AUD": {
+        "percent": 60,
+        "max": 950,
+        "min": 35
+      },
+      "NOK": {
+        "percent": 60,
+        "max": 6000,
+        "min": 230
+      },
+      "SEK": {
+        "percent": 60,
+        "max": 6000,
+        "min": 230
+      },
+      "DKK": {
+        "percent": 60,
+        "max": 4500,
+        "min": 165
+      },
+      "TRY": {
+        "percent": 60,
+        "max": 33000,
+        "min": 1200
+      }
+    }
+  }
+]

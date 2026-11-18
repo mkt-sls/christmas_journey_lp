@@ -1,6 +1,6 @@
 // Bonus card for a day. Wording comes from the raw localized lines in data/cards (exactly the sheet's text);
 // the parsed fields only decide the layout (is there a game line?).
-import { linkFor } from '../config.js';
+import { depositLinkFor, linkFor } from '../config.js';
 import { dayState } from '../date.js';
 import { CLOSE_SVG, asset, esc } from './util.js';
 
@@ -65,7 +65,7 @@ export function renderCard({ card, day, today, ui, marketId }) {
       </dl>
       ${
         kind === 'active'
-          ? `<a class="btn-primary" href="${esc(linkFor('deposit', marketId))}" data-track="deposit_click" data-day="${day}">${esc(lines[n - 2])}</a>`
+          ? `<a class="btn-primary" href="${esc(depositLinkFor(day, marketId))}" data-track="deposit_click" data-day="${day}">${esc(lines[n - 2])}</a>`
           : `<button type="button" class="btn-primary" disabled>${esc(lines[n - 2])}</button>`
       }
       ${termsLink}`;
