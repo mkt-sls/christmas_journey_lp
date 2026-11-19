@@ -731,7 +731,8 @@
   font-size: 40px;
   font-weight: 900;
   line-height: 1.05;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word; /* not "anywhere": with text-wrap:balance every letter would count as a break point and balance cuts "ФРИСПИНО / В" */
+  text-wrap: balance;
   filter: drop-shadow(0 3px 0 #7a1430) drop-shadow(0 0 14px rgba(255, 204, 41, 0.35));
 }
 /* Gradient text lives on an inline span, not the block: an inline box is cut into one fragment per wrapped line,

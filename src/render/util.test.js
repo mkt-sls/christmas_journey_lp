@@ -21,4 +21,15 @@ describe('nb: numbers never break across lines', () => {
     expect(nb('Wagering: x25')).toBe('Wagering: x25');
     expect(nb('DAY 26 · 26 DECEMBER')).toBe(`DAY 26 · 26${N}DECEMBER`);
   });
+  it('breakBeforeCurrency (TR headline): amount may leave its currency code, digits stay whole', () => {
+    const o = { breakBeforeCurrency: true };
+    expect(nb('%60 BONUS, 33.000 TRY’YE KADAR', o)).toBe(`%60${N}BONUS, 33.000 TRY’YE KADAR`);
+    expect(nb('%70 BONUS, 20.000 TRY’YE KADAR', o)).toBe(`%70${N}BONUS, 20.000 TRY’YE KADAR`);
+    expect(nb('6 000 TRY', o)).toBe(`6${N}000 TRY`);
+    expect(nb('25 FREE SPINS', o)).toBe(`25${N}FREE SPINS`);
+    expect(nb('50 TL', o)).toBe(`50${N}TL`);
+  });
+  it('without the option the currency stays glued (all other markets)', () => {
+    expect(nb('%60 BONUS, 33.000 TRY’YE KADAR')).toBe(`%60${N}BONUS, 33.000${N}TRY’YE KADAR`);
+  });
 });

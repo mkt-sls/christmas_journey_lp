@@ -4,6 +4,9 @@ import { depositLinkFor, linkFor } from '../config.js';
 import { dayState } from '../date.js';
 import { CLOSE_SVG, asset, esc, escNb } from './util.js';
 
+// Markets whose long headline ("%60 BONUS, 33.000 TRY’YE KADAR") may break between the amount and the currency word (owner, 2026-11-19).
+const AMOUNT_BREAKS_BEFORE_CURRENCY = new Set(['TR']);
+
 const STARS = [
   [92, 67, 14], [324, 57, 11], [291, 137, 9], [125, 143, 8], [358, 105, 7], [50, 114, 6],
 ];
@@ -57,7 +60,7 @@ export function renderCard({ card, day, today, ui, marketId }) {
     body = `
       <p class="card__type">${escNb(lines[1])}</p>
       <div class="card__offer">
-        <h2 class="card__amount" id="card-title"><span class="card__amount-text">${escNb(lines[2])}</span></h2>
+        <h2 class="card__amount" id="card-title"><span class="card__amount-text">${escNb(lines[2], { breakBeforeCurrency: AMOUNT_BREAKS_BEFORE_CURRENCY.has(marketId) })}</span></h2>
         ${hasGame ? `<p class="card__game">${escNb(lines[3])}</p>` : ''}
       </div>
       <dl class="card__terms-list">

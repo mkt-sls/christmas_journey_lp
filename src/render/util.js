@@ -8,15 +8,17 @@ export const esc = (v) =>
  *  - between the French hour mark and the minutes ("23 h 59").
  * Rendering only: the sheet text and data JSON stay untouched.
  */
-export const nb = (v) =>
+export const nb = (v, { breakBeforeCurrency = false } = {}) =>
   String(v ?? '')
-    .replace(/(\d) (?=\d{3}(?!\d))/g, '$1 ')
-    .replace(/(\d) (?=[%€$£₽]|\p{L})/gu, '$1 ')
-    .replace(/(\dh|\d h) (?=\d)/g, '$1 ')
-    .replace(/(\d)([–-])(?=\d)/g, '$1⁠$2⁠'); // ranges "1–26": an en dash is a break point, the word joiners remove it
+    .replace(/(\d) (?=\d{3}(?!\d))/g, '$1\u00a0')
+    // opt-in (Turkish card headline only): the amount may drop to the next line before its currency code ("33.000 / TRY’YE KADAR"):
+    // the space before a 3-letter capital code (+ optional suffix after ’) stays a plain, breakable space
+    .replace(breakBeforeCurrency ? /(\d) (?=[%€$£₽]|(?![A-Z]{3}(?:[’']|\P{L}|$))\p{L})/gu : /(\d) (?=[%€$£₽]|\p{L})/gu, '$1\u00a0')
+    .replace(/(\dh|\d\u00a0h) (?=\d)/g, '$1\u00a0')
+    .replace(/(\d)([–-])(?=\d)/g, '$1\u2060$2\u2060'); // ranges "1–26": an en dash is a break point, the word joiners remove it
 
 /** esc() + nb(): for every visible string that can contain an amount, date or time. */
-export const escNb = (v) => esc(nb(v));
+export const escNb = (v, opts) => esc(nb(v, opts));
 
 /** URL of a file in public/assets (works with the relative Vite base). */
 export const asset = (name) => `${import.meta.env.BASE_URL}assets/${name}`;
