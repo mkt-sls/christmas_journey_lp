@@ -6,7 +6,7 @@
 // Measured with layout numbers (offsetHeight / line height), so the opening animation's transform does not disturb it.
 
 export const HEADLINE_MAX = 40; // design size (px), same as .card__amount in components.css
-export const HEADLINE_MIN = 28; // 70 % of the design size
+export const HEADLINE_MIN = 26; // 65 % of the design size
 
 const CAN_BALANCE = typeof CSS !== 'undefined' && CSS.supports?.('text-wrap', 'balance');
 

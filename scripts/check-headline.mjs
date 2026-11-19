@@ -55,7 +55,7 @@ const NUM_WIDTHS = (args.find((a) => a.startsWith('--widths='))?.slice(9).split(
 const ONLY = args.find((a) => a.startsWith('--markets='))?.slice(10).split(',');
 const ALL_MARKETS = fs.readdirSync(path.join(ROOT, 'data', 'cards')).filter((f) => f.endsWith('.json')).map((f) => f.replace('.json', '')).filter((m) => !ONLY || ONLY.includes(m));
 const FIT = args.includes('--fit');
-const HEADLINE_MIN = 28; // keep equal to src/render/fitText.js
+const HEADLINE_MIN = 26; // keep equal to src/render/fitText.js
 const NUMBERS_ONLY = FIT || args.includes('--numbers-only') || args.includes('--skip-ink');
 
 function inkProblems(m) {
@@ -273,7 +273,7 @@ function fitVerdict(r, ink) {
 }
 
 async function numbersRun(browser, base) {
-  const fit = { cards: 0, failing: 0, one: 0, two: 0, ratioMin: 9, ratioMinCase: '', cannot: new Map(), sizes: new Map(), other: new Map() };
+  const fit = { cards: 0, failing: 0, one: 0, two: 0, ratioMin: 9, ratioMinCase: '', cannot: new Map(), small: [], sizes: new Map(), other: new Map() };
   let fails = 0, cards = 0, tokens = 0;
   const CARD_ROOTS = ['.card'];
   const PAGE_ROOTS = ['.label', '.intro', '.how'];
@@ -313,6 +313,7 @@ async function numbersRun(browser, base) {
             fit.cards++;
             if (fr.head) { if (fr.head.lines === 1) fit.one++; else if (fr.head.lines === 2) fit.two++; }
             if (info.ratio !== undefined && info.ratio < fit.ratioMin) { fit.ratioMin = info.ratio; fit.ratioMinCase = `${market} day ${day} ${width}px "${fr.head.texts.join(' / ')}"`; }
+            if (fr.head && fr.head.fontSize < 28) fit.small.push(`${market} day ${day} ${width}px ${fr.head.fontSize}px (${fr.head.lines} lines): "${fr.head.texts.join(' / ')}"`);
             if (fr.head) fit.sizes.set(fr.head.fontSize, (fit.sizes.get(fr.head.fontSize) || 0) + 1);
             if (info.cannotFit) fit.cannot.set(`${market} day ${day} ${fr.layout}-card ${Math.round(fr.cardWidth)}px: "${fr.head.texts.join(' / ')}"`, fr.head.lines);
             if (problems.length) { fit.failing++; for (const p of problems) probs.push(`day ${day} ${fr.layout}: ${p}`); }
@@ -332,6 +333,7 @@ async function numbersRun(browser, base) {
   }
   if (FIT) {
     console.log(`FIT: ${fit.cards} cards (${fit.failing} with problems); headline 1 line: ${fit.one}, 2 lines: ${fit.two}, >2 lines: ${fit.cannot.size}`);
+    if (fit.small.length) console.log(`FIT: cards below 28px (${fit.small.length}):\n  ` + fit.small.join('\n  '));
     console.log(`FIT: font sizes used: ${[...fit.sizes].sort((a, b) => a[0] - b[0]).map(([k, v]) => k + 'px x' + v).join(', ')}`);
     console.log(`FIT: worst balance ${fit.ratioMin === 9 ? 'n/a' : (fit.ratioMin * 100).toFixed(0) + ' % at ' + fit.ratioMinCase}`);
     if (fit.cannot.size) { console.log('CANNOT FIT 2 lines even at the minimum size:'); for (const k of fit.cannot.keys()) console.log('  ' + k); }
