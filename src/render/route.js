@@ -24,6 +24,11 @@ const MOBILE = {
   py: [108.6, 294, 462.6],
   kActive: 1.05,
   kOther: 0.72,
+  // middle of today's gift art (opaque gift + podium, no TODAY pill) relative to the pedestal centre py, stage units
+  activeGiftMid: -14.69,
+  // today's label that grows to the right (slots 0 and 2) moves this far right so that, now level with the gift, it clears the
+  // right end of the TODAY pill (widest pill: FR_CA, plus the label's garland that sticks out ~9 px on its left; owner choice a, 2026-11-19)
+  activeShiftRight: 22,
   // label anchors per slot: [left edge, top offset from pedestal centre, grow to the left?]
   label: [
     { dx: 39, dy: -44.6, left: false },
@@ -255,7 +260,14 @@ function stopHtml({ layout, spec, slot, day, today, ui, uiLang, card, chipDay, c
     pos = `left:calc(${mid}px + var(--f) * ${cx - mid}px + var(--dx, 0px));top:${r(py + dy)}px;transform:translateX(-50%);transform-origin:0 50%`;
   } else {
     const a = MOBILE.label[slot];
-    pos = `left:${r(cx + a.dx)}px;top:${r(py + a.dy)}px;${a.left ? 'transform:translateX(-100%);transform-origin:-50% 50%' : ''}`;
+    if (state === 'active') {
+      // today's label: its vertical MIDDLE sits on the vertical middle of today's gift (gift + podium, without the TODAY pill),
+      // whatever the name's line count (translateY -50%). The un-translated box's top edge is then the visual centre, so the
+      // breathing `scale` grows about y 0 (x as before). Measured by scripts/check-label-centre.mjs.
+      pos = `left:${r(cx + a.dx + (a.left ? 0 : MOBILE.activeShiftRight))}px;top:${r(py + MOBILE.activeGiftMid)}px;transform:translate(${a.left ? '-100%' : '0'},-50%);transform-origin:${a.left ? '-50%' : '50%'} 0`;
+    } else {
+      pos = `left:${r(cx + a.dx)}px;top:${r(py + a.dy)}px;${a.left ? 'transform:translateX(-100%);transform-origin:-50% 50%' : ''}`;
+    }
   }
   const near = layout === 'desktop' ? Math.abs(slot - 2) === 1 : true;
   const name = esc(card.location);
