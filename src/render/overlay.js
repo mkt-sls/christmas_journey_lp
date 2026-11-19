@@ -74,6 +74,6 @@ export function closeOverlay(restoreFocus = true) {
   app.removeAttribute('aria-hidden');
   app.inert = false;
   const target = typeof returnFocus === 'function' ? returnFocus() : returnFocus;
-  if (restoreFocus && target && document.contains(target)) target.focus();
+  if (restoreFocus && target && document.contains(target)) target.focus({ preventScroll: true });
   onClose?.();
 }

@@ -409,11 +409,20 @@ export function drawGarlands(root) {
 }
 
 /**
+ * The ONE width every layout fit works from: the width the page really has, without the scrollbar. html always reserves the
+ * scrollbar gutter (base.css), and #app is a full-width block inside it, so this value is the same with the card overlay open or
+ * shut (documentElement.clientWidth is not: it reads the full window width while body.has-overlay hides the scrollbar).
+ */
+export function layoutWidth() {
+  return document.getElementById('app')?.clientWidth || document.documentElement.clientWidth;
+}
+
+/**
  * Keeps every label inside the viewport: a label that sticks out (long German/Russian names, narrow phones)
  * is nudged back with the independent `translate` property (transform and scale stay free for the animations).
  */
 export function fitLabels(root, margin = 8) {
-  const vw = document.documentElement.clientWidth;
+  const vw = layoutWidth();
   const labels = [...root.querySelectorAll('.label')];
   labels.forEach((el) => {
     el.style.translate = '';

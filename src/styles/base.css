@@ -5,6 +5,9 @@
 }
 
 html {
+  /* scrollbar space is always reserved: body.has-overlay hides the scrollbar, and without this the page widens by the scrollbar
+     width (~15px) and everything centred jumps every time the card overlay opens or closes */
+  scrollbar-gutter: stable;
   -webkit-text-size-adjust: 100%;
   background: var(--bg);
 }
