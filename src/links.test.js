@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import links from '../data/links.json';
-import { depositLinkFor } from './config.js';
+import { depositLinkFor, linksByMarket, loginLinkFor } from './config.js';
 
 describe('per-day deposit links', () => {
   it('has 26 days', () => {
@@ -20,5 +20,26 @@ describe('per-day deposit links', () => {
     expect(depositLinkFor(1, 'DE')).toBe(links[0].deposit);
     expect(depositLinkFor(1, 'RO_MDL')).toBe(depositLinkFor(1, 'EN_GBP'));
     expect(depositLinkFor(1, 'DE').endsWith('promocode=FROST')).toBe(true);
+  });
+});
+
+describe('header Login link = link of today', () => {
+  it('day 1 -> FROST, a mid day -> that day, before campaign -> day 1, after -> day 26', () => {
+    expect(loginLinkFor(1, 'NL')).toBe(links[0].deposit);
+    expect(loginLinkFor(1, 'NL').endsWith('promocode=FROST')).toBe(true);
+    expect(loginLinkFor(14, 'FR_CA')).toBe(links[13].deposit);
+    expect(loginLinkFor(0, 'NL')).toBe(links[0].deposit);
+    expect(loginLinkFor(-9, 'NL')).toBe(links[0].deposit);
+    expect(loginLinkFor(27, 'NL')).toBe(links[25].deposit);
+    expect(loginLinkFor(40, 'NL').endsWith('promocode=SNOWFLAKE')).toBe(true);
+  });
+  it('a per-market login override wins', () => {
+    linksByMarket.NL = { login: 'https://example.test/login' };
+    try {
+      expect(loginLinkFor(5, 'NL')).toBe('https://example.test/login');
+      expect(loginLinkFor(5, 'FR_CA')).toBe(links[4].deposit);
+    } finally {
+      delete linksByMarket.NL;
+    }
   });
 });
