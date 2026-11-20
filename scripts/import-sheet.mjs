@@ -328,8 +328,15 @@ const crossDiffs = [];
 let gbpReference = null;
 
 // ---- FR_CA cards: our translation of EN_CAD ----------------------------------
+// Wording finalised by the agency on 2026-11-20 (owner: the client will not verify FR_CA). Quebec French, tutoiement,
+// OQLF typography. Non-breaking spaces are written into the data only where the page's nb() (src/render/util.js) cannot
+// add them: before ":" and between "1er" and the month. "70 %", "1 000 CAD" and "23 h 59" are protected at render.
 function frDayLabel(n) {
   return n === 1 ? '1er' : String(n);
+}
+/** "1er déc." / "8 déc." ("1er" is kept on the same line as its month). */
+function frDate(n, month) {
+  return `${frDayLabel(n)}${n === 1 ? NBSP : ' '}${month}`;
 }
 function frNumber(n) {
   return n >= 1000 ? String(n).replace(/\B(?=(\d{3})+(?!\d))/g, NBSP) : String(n);
@@ -341,24 +348,26 @@ function buildFrCa(enCadDays, uiFr) {
   const opensTemplate = s.opens_dec8; // "S’ouvre le 8 décembre"
   const days = [];
   for (const d of enCadDays) {
-    const dl = frDayLabel(d.day);
-    const header = `JOUR ${d.day} · ${dl.toUpperCase()} DÉCEMBRE`;
+    const header = `JOUR ${d.day} · ${frDate(d.day, 'décembre').toUpperCase()}`;
     const typeLine = d.type === 'bonus' ? 'BONUS DE NOËL' : 'TOURS GRATUITS DE NOËL';
     const amountLine =
       d.type === 'bonus'
         ? `${d.amount.percent} % JUSQU’À ${frNumber(d.amount.max)} CAD`
         : `${d.amount.spins} TOURS GRATUITS`;
     const gameLine = d.type === 'freespins' ? `sur ${d.game}` : null;
-    const minLine = `Dépôt min. : ${frNumber(d.minDeposit.value)} CAD`;
-    const wagLine = `Exigence de mise : x${d.wagering.multiplier}`;
-    const validLine = `Valable jusqu’au ${dl} déc., ${d.validUntil.time.replace(':', ' h ')}`;
+    // The card shows these three rows as "label | value", split at the colon (src/render/card.js splitTerm), like every
+    // other market ("Valid until: 23:59, 1 Dec"). French puts no colon after a preposition ("jusqu’au :"), so the deadline
+    // row has a noun label: "Fin de l’offre : 1er déc., 23 h 59".
+    const minLine = `Dépôt min.${NBSP}: ${frNumber(d.minDeposit.value)} CAD`;
+    const wagLine = `Exigence de mise${NBSP}: x${d.wagering.multiplier}`;
+    const validLine = `Fin de l’offre${NBSP}: ${frDate(d.day, 'déc.')}, ${d.validUntil.time.replace(':', ' h ')}`;
     const common = [header, typeLine, amountLine, ...(gameLine ? [gameLine] : []), minLine, wagLine, validLine];
     const terms = s.full_terms;
     const active = [...common, x.cta_primary, terms];
     const expired = [...common, s.gift_expired, terms];
     const lockedHeader = header;
-    const opens = opensTemplate.replace(/8 décembre/, `${dl} décembre`);
-    const locked = [lockedHeader, s.surprise_gift, opens, s.come_back_tomorrow, `${s.locked} · ${dl} déc.`, terms];
+    const opens = opensTemplate.replace(/8 décembre/, frDate(d.day, 'décembre'));
+    const locked = [lockedHeader, s.surprise_gift, opens, s.come_back_tomorrow, `${s.locked} · ${frDate(d.day, 'déc.')}`, terms];
     days.push({ day: d.day, raw: { active, expired, locked } });
   }
   return days;
@@ -420,6 +429,24 @@ for (const l of UI_LANGS) {
   uiAll[l].strings.step3_body = STEP3_BODY[l];
 }
 log('OVERRIDE step3_body replaced in ' + UI_LANGS.length + ' languages (owner decision, agency translations).');
+
+// FR_CA interface wording finalised by the agency (owner, 2026-11-20: the client will not verify FR_CA).
+// Each entry: key, sheet text expected, text used. A sheet text that changed is kept and reported under "Good to know".
+const FR_CA_UI = [
+  // the page says "tu" everywhere ("Suis", "ouvre-le", "réclame ton bonus"); the footer was the only "vous"
+  ['responsible', '18+ · Jouez de façon responsable', '18+ · Joue de façon responsable'],
+  // OQLF: non-breaking space before ":" (a plain space lets the colon start a new line)
+  ['subtitle', 'Suis le père Noël dans un village anglais enneigé. Un nouveau cadeau se débloque chaque jour : ouvre-le et réclame ton bonus.',
+    `Suis le père Noël dans un village anglais enneigé. Un nouveau cadeau se débloque chaque jour${NBSP}: ouvre-le et réclame ton bonus.`],
+];
+for (const [k, from, to] of FR_CA_UI) {
+  if (uiAll.FR_CA.strings[k] === from) {
+    uiAll.FR_CA.strings[k] = to;
+    log(`FR_CA ${k}: "${from}" -> "${to}" (agency wording, 2026-11-20)`);
+  } else {
+    notes.push(`FR_CA ${k}: the sheet text is no longer "${from}", so the agency wording "${to}" was not applied (sheet text kept: "${uiAll.FR_CA.strings[k]}").`);
+  }
+}
 
 // campaign_ended placeholder
 for (const l of UI_LANGS) uiAll[l].strings.campaign_ended = PLACEHOLDER_ENDED;
@@ -512,7 +539,7 @@ for (const m of MARKETS) {
     days: cardsOut[m.id],
   };
   if (m.id === 'FR_CA') {
-    body.translatedBy = 'agency, client to verify';
+    body.translatedBy = 'agency, finalised 2026-11-20 (client not verifying)';
     body.sourceMarket = 'EN_CAD';
   }
   writeJson(`data/cards/${m.id}.json`, body);
@@ -543,11 +570,18 @@ for (const d of cardsOut.RO_MDL) {
 
 let n = 0;
 const sections = [];
+// items: strings (open points, counted) or { text, decided: true } (settled, listed but not counted)
 function section(title, intro, items) {
   if (!items || items.length === 0) return;
-  n += items.length;
-  sections.push({ title, intro, items });
+  n += items.filter((it) => !it.decided).length;
+  sections.push({ title, intro, items: items.map((it) => (typeof it === 'string' ? it : it.text)) });
 }
+// FR_CA: the agency finalises the wording itself (owner, 2026-11-20); the client will not verify it.
+const FR_CA_DECIDED = 'FR_CA decided by the agency on 2026-11-20, the client will not verify it';
+const FR_CA_DUP_DECISION = {
+  terms_conditions: 'the page keeps "Modalités et conditions" (the card link reads "Modalités et conditions complètes"), "Conditions générales" is not used',
+  step3_title: 'step 3 keeps "Dépose et réclame" (tu form, like the step titles "Reviens chaque jour" and "Ouvre le cadeau") and the card button keeps "Déposer et réclamer" (buttons use the infinitive, like "OUVRIR LE CADEAU")',
+};
 
 // RO_MDL amounts: resolved. The client corrected the MDL column in the links sheet; scripts/import-links.mjs applies it (runs at the end of this script).
 
@@ -577,13 +611,22 @@ const dupItems = [];
   ];
   for (const [a, b, label] of pairs) {
     const diffs = [];
+    const langs = [];
     for (const l of UI_LANGS) {
       const va = uiAll[l].strings[a];
       const vb = uiAll[l].extras[b];
       if (va === undefined || vb === undefined) continue;
-      if (va.trim().toLowerCase() !== vb.trim().toLowerCase()) diffs.push(`${l}: "${va}" vs "${vb}"`);
+      if (va.trim().toLowerCase() !== vb.trim().toLowerCase()) {
+        const decision = l === 'FR_CA' && FR_CA_DUP_DECISION[a] ? ` [${FR_CA_DECIDED}: ${FR_CA_DUP_DECISION[a]}]` : '';
+        diffs.push(`${l}: "${va}" vs "${vb}"${decision}`);
+        langs.push(l);
+      }
     }
-    if (diffs.length) dupItems.push(`"${label}" appears twice in the UI ELEMENT tab with different translations (${diffs.length} language${diffs.length > 1 ? 's' : ''}): ${diffs.join('; ')}. The page uses the main table value ("${a}") unless told otherwise.`);
+    if (!diffs.length) continue;
+    const text = `"${label}" appears twice in the UI ELEMENT tab with different translations (${diffs.length} language${diffs.length > 1 ? 's' : ''}): ${diffs.join('; ')}. The page uses the main table value ("${a}") unless told otherwise.`;
+    // a line where only FR_CA differs is settled; a line that also lists another language stays open for that language
+    const settled = langs.every((l) => l === 'FR_CA' && FR_CA_DUP_DECISION[a]);
+    dupItems.push(settled ? { text: `Settled, not an open point: ${text}`, decided: true } : text);
   }
 }
 for (const k of new Set(dupKeyHits)) dupItems.push(`The key "${k}" appears more than once in the main UI table; the last row wins.`);
@@ -600,13 +643,19 @@ section('Missing in the sheet', '', missing);
 section(
   'Step 3 text replaced - all 12 translations are agency-made, please verify',
   'The sheet text of step 3 (key step3_body, EN "The gift turns green when the bonus is credited.") described a green "credited" gift. The page has no such state (only missed / active / locked) and no tracking, so the owner replaced it with "Deposit before 23:59 to claim the day’s bonus." The script applies this override on every import, the sheet is untouched. The heading ("Deposit & claim") stays as in the sheet. These strings were written by the agency, not taken from the sheet:',
-  UI_LANGS.map((l) => `${l}: "${STEP3_BODY[l]}"`),
+  UI_LANGS.map((l) => (l === 'FR_CA' ? { text: `${l}: "${STEP3_BODY[l]}" - ${FR_CA_DECIDED}; kept as is.`, decided: true } : `${l}: "${STEP3_BODY[l]}"`)),
 );
 
 section(
-  'FR_CA (French Canada) cards are our translation',
-  '',
-  ['The sheet has a French (Canada) interface column but no French (Canada) card tab. We translated the cards from EN_CAD: same amounts in CAD, game names left unchanged, and the words already used in the FR_CA UI column reused where they exist (Cadeau expiré, Cadeau surprise, Déposer et réclamer, ...). Offer wording such as "Bonus de Noël", "Tours gratuits de Noël", "Dépôt min.", "Exigence de mise" and "Valable jusqu’au ... 23 h 59" is ours. Marked in data/cards/FR_CA.json as translatedBy "agency, client to verify". Please have it checked.'],
+  'FR_CA (French Canada) wording - finalised by the agency on 2026-11-20, no client check',
+  'The sheet has a French (Canada) interface column but no French (Canada) card tab. We translated the cards from EN_CAD: same amounts in CAD, game names, promo codes, links and dates unchanged. On 2026-11-20 the owner decided that the agency finalises the FR_CA wording itself, because the client will not verify it, so this is no longer an open point. data/cards/FR_CA.json is marked translatedBy "agency, finalised 2026-11-20 (client not verifying)". The review (Quebec French, "tu" everywhere, OQLF typography) changed:',
+  [
+    'Card deadline row: "Valable jusqu’au 1er déc., 23 h 59" -> "Fin de l’offre : 1er déc., 23 h 59". The card shows this row as label | value, split at the colon, like every other market ("Valid until: 23:59, 1 Dec"); without a colon the whole sentence sat in the grey label column and the deadline was not highlighted. French puts no colon after "jusqu’au", hence a noun label.',
+    'Non-breaking space before ":" in "Dépôt min. :", "Exigence de mise :", "Fin de l’offre :" and in the intro text ("chaque jour : ouvre-le").',
+    '"1er" stays on the same line as its month ("1er déc.", "1er décembre"); the route tag of 1 December reads "1ER DÉC." instead of "1 DÉC." (src/i18n.js, FR_CA only).',
+    'Footer: "18+ · Jouez de façon responsable" -> "18+ · Joue de façon responsable" (the page says "tu" everywhere else).',
+    'Checked and kept: "BONUS DE NOËL", "TOURS GRATUITS DE NOËL", "70 % JUSQU’À 550 CAD" (CAD as in EN_CAD), "sur <game>", "Dépôt min.", "Exigence de mise : x25", "Déposer et réclamer" (button), "Cadeau expiré", "Modalités et conditions complètes", "S’ouvre le …", "Verrouillé · … déc.", the step texts and the 26 location names.',
+  ].map((text) => ({ text, decided: true })),
 );
 
 section('Cells that could not be read cleanly', 'The import kept the raw sheet text for these, but the structured values (amount, min deposit, ...) may be missing or wrong:', unparsed.filter((u) => !/EN SOURCE/.test(u)));

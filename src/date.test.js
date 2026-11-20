@@ -132,6 +132,15 @@ describe('date formatting matches the sheet samples (Dec 7 2026)', () => {
     expect(longDate(new Date(2026, 11, 8), 'EN')).toBe('8 December');
     expect(longDate(new Date(2026, 11, 8), 'DE')).toBe('8. Dezember');
   });
+  it('FR_CA writes the first of the month "1er" (non-breaking space), other days and languages unchanged', () => {
+    const dec1 = new Date(2026, 11, 1);
+    expect(shortDate(dec1, 'FR_CA')).toBe('1ER\u00a0DÉC.');
+    expect(longDate(dec1, 'FR_CA')).toBe('1er\u00a0décembre');
+    expect(shortDate(new Date(2026, 11, 11), 'FR_CA').replace(/\s/g, ' ')).toBe('11 DÉC.');
+    expect(shortDate(new Date(2026, 11, 21), 'FR_CA').replace(/\s/g, ' ')).toBe('21 DÉC.');
+    expect(shortDate(dec1, 'EN')).toBe('DEC 1');
+    expect(shortDate(dec1, 'IT').replace(/\s/g, ' ')).toBe('1 DIC.');
+  });
   it('fills templates', () => {
     expect(fill('TOMORROW · {date}', { date: 'DEC 8' })).toBe('TOMORROW · DEC 8');
     expect(fill('Unlocks in {time}', { time: '01:02:03' })).toBe('Unlocks in 01:02:03');

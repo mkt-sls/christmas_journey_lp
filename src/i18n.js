@@ -33,6 +33,7 @@ export function shortDate(date, uiLang) {
     const month = new Intl.DateTimeFormat(locale, { month: 'long' }).format(date);
     s = `${date.getDate()} ${month.slice(0, 3)}`;
   }
+  s = frFirst(s, date, uiLang);
   s = s.toLocaleUpperCase(locale);
   if (uiLang !== 'EN' && !s.endsWith('.')) s += '.';
   return s;
@@ -41,5 +42,10 @@ export function shortDate(date, uiLang) {
 /** "8 December" / "8. Dezember" : long date for aria labels and prose. */
 export function longDate(date, uiLang) {
   const locale = LONG_LOCALE[uiLang] ?? 'en-GB';
-  return new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'long' }).format(date);
+  return frFirst(new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'long' }).format(date), date, uiLang);
+}
+
+/** French writes the first day of a month "1er" (OQLF), Intl gives "1 déc.": FR_CA only, "1er" + non-breaking space. */
+function frFirst(s, date, uiLang) {
+  return uiLang === 'FR_CA' && date.getDate() === 1 ? s.replace(/^1\s/, '1er\u00a0') : s;
 }
