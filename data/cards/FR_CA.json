@@ -18,34 +18,34 @@
       "minDeposit": {
         "value": 55,
         "currency": "CAD",
-        "text": "Dépôt min. : 55 CAD"
+        "text": "Dépôt min. : 55 CAD"
       },
       "wagering": {
         "multiplier": 25,
-        "text": "Exigence de mise : x25"
+        "text": "Exigence de mise : x25"
       },
       "validUntil": {
         "time": "23:59",
-        "text": "Fin de l’offre : 1er déc., 23 h 59"
+        "text": "Valide jusqu’au : 23 h 59, 1er déc."
       },
       "raw": {
         "active": [
           "JOUR 1 · 1ER DÉCEMBRE",
           "BONUS DE NOËL",
           "70 % JUSQU’À 550 CAD",
-          "Dépôt min. : 55 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 1er déc., 23 h 59",
-          "Déposer et réclamer",
+          "Dépôt min. : 55 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 1er déc.",
+          "Déposez et réclamez",
           "Modalités et conditions complètes"
         ],
         "expired": [
           "JOUR 1 · 1ER DÉCEMBRE",
           "BONUS DE NOËL",
           "70 % JUSQU’À 550 CAD",
-          "Dépôt min. : 55 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 1er déc., 23 h 59",
+          "Dépôt min. : 55 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 1er déc.",
           "Cadeau expiré",
           "Modalités et conditions complètes"
         ],
@@ -53,7 +53,7 @@
           "JOUR 1 · 1ER DÉCEMBRE",
           "CADEAU SURPRISE",
           "S’ouvre le 1er décembre",
-          "Reviens demain pour débloquer ce cadeau",
+          "Revenez demain pour débloquer ce cadeau",
           "Verrouillé · 1er déc.",
           "Modalités et conditions complètes"
         ]
@@ -72,15 +72,15 @@
       "minDeposit": {
         "value": 40,
         "currency": "CAD",
-        "text": "Dépôt min. : 40 CAD"
+        "text": "Dépôt min. : 40 CAD"
       },
       "wagering": {
         "multiplier": 25,
-        "text": "Exigence de mise : x25"
+        "text": "Exigence de mise : x25"
       },
       "validUntil": {
         "time": "23:59",
-        "text": "Fin de l’offre : 2 déc., 23 h 59"
+        "text": "Valide jusqu’au : 23 h 59, 2 déc."
       },
       "raw": {
         "active": [
@@ -88,10 +88,10 @@
           "TOURS GRATUITS DE NOËL",
           "82 TOURS GRATUITS",
           "sur Thunder Coins: Hold and Win",
-          "Dépôt min. : 40 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 2 déc., 23 h 59",
-          "Déposer et réclamer",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 2 déc.",
+          "Déposez et réclamez",
           "Modalités et conditions complètes"
         ],
         "expired": [
@@ -99,9 +99,9 @@
           "TOURS GRATUITS DE NOËL",
           "82 TOURS GRATUITS",
           "sur Thunder Coins: Hold and Win",
-          "Dépôt min. : 40 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 2 déc., 23 h 59",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 2 déc.",
           "Cadeau expiré",
           "Modalités et conditions complètes"
         ],
@@ -109,7 +109,7 @@
           "JOUR 2 · 2 DÉCEMBRE",
           "CADEAU SURPRISE",
           "S’ouvre le 2 décembre",
-          "Reviens demain pour débloquer ce cadeau",
+          "Revenez demain pour débloquer ce cadeau",
           "Verrouillé · 2 déc.",
           "Modalités et conditions complètes"
         ]
@@ -130,34 +130,34 @@
       "minDeposit": {
         "value": 50,
         "currency": "CAD",
-        "text": "Dépôt min. : 50 CAD"
+        "text": "Dépôt min. : 50 CAD"
       },
       "wagering": {
         "multiplier": 25,
-        "text": "Exigence de mise : x25"
+        "text": "Exigence de mise : x25"
       },
       "validUntil": {
         "time": "23:59",
-        "text": "Fin de l’offre : 3 déc., 23 h 59"
+        "text": "Valide jusqu’au : 23 h 59, 3 déc."
       },
       "raw": {
         "active": [
           "JOUR 3 · 3 DÉCEMBRE",
           "BONUS DE NOËL",
           "55 % JUSQU’À 800 CAD",
-          "Dépôt min. : 50 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 3 déc., 23 h 59",
-          "Déposer et réclamer",
+          "Dépôt min. : 50 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 3 déc.",
+          "Déposez et réclamez",
           "Modalités et conditions complètes"
         ],
         "expired": [
           "JOUR 3 · 3 DÉCEMBRE",
           "BONUS DE NOËL",
           "55 % JUSQU’À 800 CAD",
-          "Dépôt min. : 50 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 3 déc., 23 h 59",
+          "Dépôt min. : 50 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 3 déc.",
           "Cadeau expiré",
           "Modalités et conditions complètes"
         ],
@@ -165,7 +165,7 @@
           "JOUR 3 · 3 DÉCEMBRE",
           "CADEAU SURPRISE",
           "S’ouvre le 3 décembre",
-          "Reviens demain pour débloquer ce cadeau",
+          "Revenez demain pour débloquer ce cadeau",
           "Verrouillé · 3 déc.",
           "Modalités et conditions complètes"
         ]
@@ -184,15 +184,15 @@
       "minDeposit": {
         "value": 35,
         "currency": "CAD",
-        "text": "Dépôt min. : 35 CAD"
+        "text": "Dépôt min. : 35 CAD"
       },
       "wagering": {
         "multiplier": 25,
-        "text": "Exigence de mise : x25"
+        "text": "Exigence de mise : x25"
       },
       "validUntil": {
         "time": "23:59",
-        "text": "Fin de l’offre : 4 déc., 23 h 59"
+        "text": "Valide jusqu’au : 23 h 59, 4 déc."
       },
       "raw": {
         "active": [
@@ -200,10 +200,10 @@
           "TOURS GRATUITS DE NOËL",
           "65 TOURS GRATUITS",
           "sur Big Bass Splash",
-          "Dépôt min. : 35 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 4 déc., 23 h 59",
-          "Déposer et réclamer",
+          "Dépôt min. : 35 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 4 déc.",
+          "Déposez et réclamez",
           "Modalités et conditions complètes"
         ],
         "expired": [
@@ -211,9 +211,9 @@
           "TOURS GRATUITS DE NOËL",
           "65 TOURS GRATUITS",
           "sur Big Bass Splash",
-          "Dépôt min. : 35 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 4 déc., 23 h 59",
+          "Dépôt min. : 35 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 4 déc.",
           "Cadeau expiré",
           "Modalités et conditions complètes"
         ],
@@ -221,7 +221,7 @@
           "JOUR 4 · 4 DÉCEMBRE",
           "CADEAU SURPRISE",
           "S’ouvre le 4 décembre",
-          "Reviens demain pour débloquer ce cadeau",
+          "Revenez demain pour débloquer ce cadeau",
           "Verrouillé · 4 déc.",
           "Modalités et conditions complètes"
         ]
@@ -240,15 +240,15 @@
       "minDeposit": {
         "value": 40,
         "currency": "CAD",
-        "text": "Dépôt min. : 40 CAD"
+        "text": "Dépôt min. : 40 CAD"
       },
       "wagering": {
         "multiplier": 25,
-        "text": "Exigence de mise : x25"
+        "text": "Exigence de mise : x25"
       },
       "validUntil": {
         "time": "23:59",
-        "text": "Fin de l’offre : 5 déc., 23 h 59"
+        "text": "Valide jusqu’au : 23 h 59, 5 déc."
       },
       "raw": {
         "active": [
@@ -256,10 +256,10 @@
           "TOURS GRATUITS DE NOËL",
           "75 TOURS GRATUITS",
           "sur John Hunter and the Book of Tut",
-          "Dépôt min. : 40 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 5 déc., 23 h 59",
-          "Déposer et réclamer",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 5 déc.",
+          "Déposez et réclamez",
           "Modalités et conditions complètes"
         ],
         "expired": [
@@ -267,9 +267,9 @@
           "TOURS GRATUITS DE NOËL",
           "75 TOURS GRATUITS",
           "sur John Hunter and the Book of Tut",
-          "Dépôt min. : 40 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 5 déc., 23 h 59",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 5 déc.",
           "Cadeau expiré",
           "Modalités et conditions complètes"
         ],
@@ -277,7 +277,7 @@
           "JOUR 5 · 5 DÉCEMBRE",
           "CADEAU SURPRISE",
           "S’ouvre le 5 décembre",
-          "Reviens demain pour débloquer ce cadeau",
+          "Revenez demain pour débloquer ce cadeau",
           "Verrouillé · 5 déc.",
           "Modalités et conditions complètes"
         ]
@@ -296,15 +296,15 @@
       "minDeposit": {
         "value": 50,
         "currency": "CAD",
-        "text": "Dépôt min. : 50 CAD"
+        "text": "Dépôt min. : 50 CAD"
       },
       "wagering": {
         "multiplier": 25,
-        "text": "Exigence de mise : x25"
+        "text": "Exigence de mise : x25"
       },
       "validUntil": {
         "time": "23:59",
-        "text": "Fin de l’offre : 6 déc., 23 h 59"
+        "text": "Valide jusqu’au : 23 h 59, 6 déc."
       },
       "raw": {
         "active": [
@@ -312,10 +312,10 @@
           "TOURS GRATUITS DE NOËL",
           "80 TOURS GRATUITS",
           "sur Gemhalla",
-          "Dépôt min. : 50 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 6 déc., 23 h 59",
-          "Déposer et réclamer",
+          "Dépôt min. : 50 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 6 déc.",
+          "Déposez et réclamez",
           "Modalités et conditions complètes"
         ],
         "expired": [
@@ -323,9 +323,9 @@
           "TOURS GRATUITS DE NOËL",
           "80 TOURS GRATUITS",
           "sur Gemhalla",
-          "Dépôt min. : 50 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 6 déc., 23 h 59",
+          "Dépôt min. : 50 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 6 déc.",
           "Cadeau expiré",
           "Modalités et conditions complètes"
         ],
@@ -333,7 +333,7 @@
           "JOUR 6 · 6 DÉCEMBRE",
           "CADEAU SURPRISE",
           "S’ouvre le 6 décembre",
-          "Reviens demain pour débloquer ce cadeau",
+          "Revenez demain pour débloquer ce cadeau",
           "Verrouillé · 6 déc.",
           "Modalités et conditions complètes"
         ]
@@ -352,15 +352,15 @@
       "minDeposit": {
         "value": 55,
         "currency": "CAD",
-        "text": "Dépôt min. : 55 CAD"
+        "text": "Dépôt min. : 55 CAD"
       },
       "wagering": {
         "multiplier": 25,
-        "text": "Exigence de mise : x25"
+        "text": "Exigence de mise : x25"
       },
       "validUntil": {
         "time": "23:59",
-        "text": "Fin de l’offre : 7 déc., 23 h 59"
+        "text": "Valide jusqu’au : 23 h 59, 7 déc."
       },
       "raw": {
         "active": [
@@ -368,10 +368,10 @@
           "TOURS GRATUITS DE NOËL",
           "90 TOURS GRATUITS",
           "sur Bonanza Billion",
-          "Dépôt min. : 55 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 7 déc., 23 h 59",
-          "Déposer et réclamer",
+          "Dépôt min. : 55 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 7 déc.",
+          "Déposez et réclamez",
           "Modalités et conditions complètes"
         ],
         "expired": [
@@ -379,9 +379,9 @@
           "TOURS GRATUITS DE NOËL",
           "90 TOURS GRATUITS",
           "sur Bonanza Billion",
-          "Dépôt min. : 55 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 7 déc., 23 h 59",
+          "Dépôt min. : 55 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 7 déc.",
           "Cadeau expiré",
           "Modalités et conditions complètes"
         ],
@@ -389,7 +389,7 @@
           "JOUR 7 · 7 DÉCEMBRE",
           "CADEAU SURPRISE",
           "S’ouvre le 7 décembre",
-          "Reviens demain pour débloquer ce cadeau",
+          "Revenez demain pour débloquer ce cadeau",
           "Verrouillé · 7 déc.",
           "Modalités et conditions complètes"
         ]
@@ -410,34 +410,34 @@
       "minDeposit": {
         "value": 40,
         "currency": "CAD",
-        "text": "Dépôt min. : 40 CAD"
+        "text": "Dépôt min. : 40 CAD"
       },
       "wagering": {
         "multiplier": 25,
-        "text": "Exigence de mise : x25"
+        "text": "Exigence de mise : x25"
       },
       "validUntil": {
         "time": "23:59",
-        "text": "Fin de l’offre : 8 déc., 23 h 59"
+        "text": "Valide jusqu’au : 23 h 59, 8 déc."
       },
       "raw": {
         "active": [
           "JOUR 8 · 8 DÉCEMBRE",
           "BONUS DE NOËL",
           "65 % JUSQU’À 1 000 CAD",
-          "Dépôt min. : 40 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 8 déc., 23 h 59",
-          "Déposer et réclamer",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 8 déc.",
+          "Déposez et réclamez",
           "Modalités et conditions complètes"
         ],
         "expired": [
           "JOUR 8 · 8 DÉCEMBRE",
           "BONUS DE NOËL",
           "65 % JUSQU’À 1 000 CAD",
-          "Dépôt min. : 40 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 8 déc., 23 h 59",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 8 déc.",
           "Cadeau expiré",
           "Modalités et conditions complètes"
         ],
@@ -445,7 +445,7 @@
           "JOUR 8 · 8 DÉCEMBRE",
           "CADEAU SURPRISE",
           "S’ouvre le 8 décembre",
-          "Reviens demain pour débloquer ce cadeau",
+          "Revenez demain pour débloquer ce cadeau",
           "Verrouillé · 8 déc.",
           "Modalités et conditions complètes"
         ]
@@ -464,15 +464,15 @@
       "minDeposit": {
         "value": 50,
         "currency": "CAD",
-        "text": "Dépôt min. : 50 CAD"
+        "text": "Dépôt min. : 50 CAD"
       },
       "wagering": {
         "multiplier": 25,
-        "text": "Exigence de mise : x25"
+        "text": "Exigence de mise : x25"
       },
       "validUntil": {
         "time": "23:59",
-        "text": "Fin de l’offre : 9 déc., 23 h 59"
+        "text": "Valide jusqu’au : 23 h 59, 9 déc."
       },
       "raw": {
         "active": [
@@ -480,10 +480,10 @@
           "TOURS GRATUITS DE NOËL",
           "74 TOURS GRATUITS",
           "sur Big Bass Christmas – Frozen Lake",
-          "Dépôt min. : 50 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 9 déc., 23 h 59",
-          "Déposer et réclamer",
+          "Dépôt min. : 50 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 9 déc.",
+          "Déposez et réclamez",
           "Modalités et conditions complètes"
         ],
         "expired": [
@@ -491,9 +491,9 @@
           "TOURS GRATUITS DE NOËL",
           "74 TOURS GRATUITS",
           "sur Big Bass Christmas – Frozen Lake",
-          "Dépôt min. : 50 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 9 déc., 23 h 59",
+          "Dépôt min. : 50 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 9 déc.",
           "Cadeau expiré",
           "Modalités et conditions complètes"
         ],
@@ -501,7 +501,7 @@
           "JOUR 9 · 9 DÉCEMBRE",
           "CADEAU SURPRISE",
           "S’ouvre le 9 décembre",
-          "Reviens demain pour débloquer ce cadeau",
+          "Revenez demain pour débloquer ce cadeau",
           "Verrouillé · 9 déc.",
           "Modalités et conditions complètes"
         ]
@@ -522,34 +522,34 @@
       "minDeposit": {
         "value": 55,
         "currency": "CAD",
-        "text": "Dépôt min. : 55 CAD"
+        "text": "Dépôt min. : 55 CAD"
       },
       "wagering": {
         "multiplier": 25,
-        "text": "Exigence de mise : x25"
+        "text": "Exigence de mise : x25"
       },
       "validUntil": {
         "time": "23:59",
-        "text": "Fin de l’offre : 10 déc., 23 h 59"
+        "text": "Valide jusqu’au : 23 h 59, 10 déc."
       },
       "raw": {
         "active": [
           "JOUR 10 · 10 DÉCEMBRE",
           "BONUS DE NOËL",
           "62 % JUSQU’À 1 100 CAD",
-          "Dépôt min. : 55 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 10 déc., 23 h 59",
-          "Déposer et réclamer",
+          "Dépôt min. : 55 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 10 déc.",
+          "Déposez et réclamez",
           "Modalités et conditions complètes"
         ],
         "expired": [
           "JOUR 10 · 10 DÉCEMBRE",
           "BONUS DE NOËL",
           "62 % JUSQU’À 1 100 CAD",
-          "Dépôt min. : 55 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 10 déc., 23 h 59",
+          "Dépôt min. : 55 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 10 déc.",
           "Cadeau expiré",
           "Modalités et conditions complètes"
         ],
@@ -557,7 +557,7 @@
           "JOUR 10 · 10 DÉCEMBRE",
           "CADEAU SURPRISE",
           "S’ouvre le 10 décembre",
-          "Reviens demain pour débloquer ce cadeau",
+          "Revenez demain pour débloquer ce cadeau",
           "Verrouillé · 10 déc.",
           "Modalités et conditions complètes"
         ]
@@ -576,15 +576,15 @@
       "minDeposit": {
         "value": 35,
         "currency": "CAD",
-        "text": "Dépôt min. : 35 CAD"
+        "text": "Dépôt min. : 35 CAD"
       },
       "wagering": {
         "multiplier": 25,
-        "text": "Exigence de mise : x25"
+        "text": "Exigence de mise : x25"
       },
       "validUntil": {
         "time": "23:59",
-        "text": "Fin de l’offre : 11 déc., 23 h 59"
+        "text": "Valide jusqu’au : 23 h 59, 11 déc."
       },
       "raw": {
         "active": [
@@ -592,10 +592,10 @@
           "TOURS GRATUITS DE NOËL",
           "55 TOURS GRATUITS",
           "sur Thunder Coins: Hold and Win",
-          "Dépôt min. : 35 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 11 déc., 23 h 59",
-          "Déposer et réclamer",
+          "Dépôt min. : 35 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 11 déc.",
+          "Déposez et réclamez",
           "Modalités et conditions complètes"
         ],
         "expired": [
@@ -603,9 +603,9 @@
           "TOURS GRATUITS DE NOËL",
           "55 TOURS GRATUITS",
           "sur Thunder Coins: Hold and Win",
-          "Dépôt min. : 35 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 11 déc., 23 h 59",
+          "Dépôt min. : 35 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 11 déc.",
           "Cadeau expiré",
           "Modalités et conditions complètes"
         ],
@@ -613,7 +613,7 @@
           "JOUR 11 · 11 DÉCEMBRE",
           "CADEAU SURPRISE",
           "S’ouvre le 11 décembre",
-          "Reviens demain pour débloquer ce cadeau",
+          "Revenez demain pour débloquer ce cadeau",
           "Verrouillé · 11 déc.",
           "Modalités et conditions complètes"
         ]
@@ -632,15 +632,15 @@
       "minDeposit": {
         "value": 40,
         "currency": "CAD",
-        "text": "Dépôt min. : 40 CAD"
+        "text": "Dépôt min. : 40 CAD"
       },
       "wagering": {
         "multiplier": 25,
-        "text": "Exigence de mise : x25"
+        "text": "Exigence de mise : x25"
       },
       "validUntil": {
         "time": "23:59",
-        "text": "Fin de l’offre : 12 déc., 23 h 59"
+        "text": "Valide jusqu’au : 23 h 59, 12 déc."
       },
       "raw": {
         "active": [
@@ -648,10 +648,10 @@
           "TOURS GRATUITS DE NOËL",
           "80 TOURS GRATUITS",
           "sur Fruits 'n' Stars Holiday Edition",
-          "Dépôt min. : 40 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 12 déc., 23 h 59",
-          "Déposer et réclamer",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 12 déc.",
+          "Déposez et réclamez",
           "Modalités et conditions complètes"
         ],
         "expired": [
@@ -659,9 +659,9 @@
           "TOURS GRATUITS DE NOËL",
           "80 TOURS GRATUITS",
           "sur Fruits 'n' Stars Holiday Edition",
-          "Dépôt min. : 40 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 12 déc., 23 h 59",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 12 déc.",
           "Cadeau expiré",
           "Modalités et conditions complètes"
         ],
@@ -669,7 +669,7 @@
           "JOUR 12 · 12 DÉCEMBRE",
           "CADEAU SURPRISE",
           "S’ouvre le 12 décembre",
-          "Reviens demain pour débloquer ce cadeau",
+          "Revenez demain pour débloquer ce cadeau",
           "Verrouillé · 12 déc.",
           "Modalités et conditions complètes"
         ]
@@ -688,15 +688,15 @@
       "minDeposit": {
         "value": 40,
         "currency": "CAD",
-        "text": "Dépôt min. : 40 CAD"
+        "text": "Dépôt min. : 40 CAD"
       },
       "wagering": {
         "multiplier": 25,
-        "text": "Exigence de mise : x25"
+        "text": "Exigence de mise : x25"
       },
       "validUntil": {
         "time": "23:59",
-        "text": "Fin de l’offre : 13 déc., 23 h 59"
+        "text": "Valide jusqu’au : 23 h 59, 13 déc."
       },
       "raw": {
         "active": [
@@ -704,10 +704,10 @@
           "TOURS GRATUITS DE NOËL",
           "67 TOURS GRATUITS",
           "sur Yeti Quest",
-          "Dépôt min. : 40 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 13 déc., 23 h 59",
-          "Déposer et réclamer",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 13 déc.",
+          "Déposez et réclamez",
           "Modalités et conditions complètes"
         ],
         "expired": [
@@ -715,9 +715,9 @@
           "TOURS GRATUITS DE NOËL",
           "67 TOURS GRATUITS",
           "sur Yeti Quest",
-          "Dépôt min. : 40 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 13 déc., 23 h 59",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 13 déc.",
           "Cadeau expiré",
           "Modalités et conditions complètes"
         ],
@@ -725,7 +725,7 @@
           "JOUR 13 · 13 DÉCEMBRE",
           "CADEAU SURPRISE",
           "S’ouvre le 13 décembre",
-          "Reviens demain pour débloquer ce cadeau",
+          "Revenez demain pour débloquer ce cadeau",
           "Verrouillé · 13 déc.",
           "Modalités et conditions complètes"
         ]
@@ -744,15 +744,15 @@
       "minDeposit": {
         "value": 55,
         "currency": "CAD",
-        "text": "Dépôt min. : 55 CAD"
+        "text": "Dépôt min. : 55 CAD"
       },
       "wagering": {
         "multiplier": 25,
-        "text": "Exigence de mise : x25"
+        "text": "Exigence de mise : x25"
       },
       "validUntil": {
         "time": "23:59",
-        "text": "Fin de l’offre : 14 déc., 23 h 59"
+        "text": "Valide jusqu’au : 23 h 59, 14 déc."
       },
       "raw": {
         "active": [
@@ -760,10 +760,10 @@
           "TOURS GRATUITS DE NOËL",
           "90 TOURS GRATUITS",
           "sur 25 Cookies: Hit the Bonus",
-          "Dépôt min. : 55 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 14 déc., 23 h 59",
-          "Déposer et réclamer",
+          "Dépôt min. : 55 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 14 déc.",
+          "Déposez et réclamez",
           "Modalités et conditions complètes"
         ],
         "expired": [
@@ -771,9 +771,9 @@
           "TOURS GRATUITS DE NOËL",
           "90 TOURS GRATUITS",
           "sur 25 Cookies: Hit the Bonus",
-          "Dépôt min. : 55 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 14 déc., 23 h 59",
+          "Dépôt min. : 55 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 14 déc.",
           "Cadeau expiré",
           "Modalités et conditions complètes"
         ],
@@ -781,7 +781,7 @@
           "JOUR 14 · 14 DÉCEMBRE",
           "CADEAU SURPRISE",
           "S’ouvre le 14 décembre",
-          "Reviens demain pour débloquer ce cadeau",
+          "Revenez demain pour débloquer ce cadeau",
           "Verrouillé · 14 déc.",
           "Modalités et conditions complètes"
         ]
@@ -802,34 +802,34 @@
       "minDeposit": {
         "value": 50,
         "currency": "CAD",
-        "text": "Dépôt min. : 50 CAD"
+        "text": "Dépôt min. : 50 CAD"
       },
       "wagering": {
         "multiplier": 25,
-        "text": "Exigence de mise : x25"
+        "text": "Exigence de mise : x25"
       },
       "validUntil": {
         "time": "23:59",
-        "text": "Fin de l’offre : 15 déc., 23 h 59"
+        "text": "Valide jusqu’au : 23 h 59, 15 déc."
       },
       "raw": {
         "active": [
           "JOUR 15 · 15 DÉCEMBRE",
           "BONUS DE NOËL",
           "58 % JUSQU’À 800 CAD",
-          "Dépôt min. : 50 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 15 déc., 23 h 59",
-          "Déposer et réclamer",
+          "Dépôt min. : 50 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 15 déc.",
+          "Déposez et réclamez",
           "Modalités et conditions complètes"
         ],
         "expired": [
           "JOUR 15 · 15 DÉCEMBRE",
           "BONUS DE NOËL",
           "58 % JUSQU’À 800 CAD",
-          "Dépôt min. : 50 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 15 déc., 23 h 59",
+          "Dépôt min. : 50 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 15 déc.",
           "Cadeau expiré",
           "Modalités et conditions complètes"
         ],
@@ -837,7 +837,7 @@
           "JOUR 15 · 15 DÉCEMBRE",
           "CADEAU SURPRISE",
           "S’ouvre le 15 décembre",
-          "Reviens demain pour débloquer ce cadeau",
+          "Revenez demain pour débloquer ce cadeau",
           "Verrouillé · 15 déc.",
           "Modalités et conditions complètes"
         ]
@@ -856,15 +856,15 @@
       "minDeposit": {
         "value": 50,
         "currency": "CAD",
-        "text": "Dépôt min. : 50 CAD"
+        "text": "Dépôt min. : 50 CAD"
       },
       "wagering": {
         "multiplier": 25,
-        "text": "Exigence de mise : x25"
+        "text": "Exigence de mise : x25"
       },
       "validUntil": {
         "time": "23:59",
-        "text": "Fin de l’offre : 16 déc., 23 h 59"
+        "text": "Valide jusqu’au : 23 h 59, 16 déc."
       },
       "raw": {
         "active": [
@@ -872,10 +872,10 @@
           "TOURS GRATUITS DE NOËL",
           "82 TOURS GRATUITS",
           "sur Christmas Carol Megaways",
-          "Dépôt min. : 50 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 16 déc., 23 h 59",
-          "Déposer et réclamer",
+          "Dépôt min. : 50 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 16 déc.",
+          "Déposez et réclamez",
           "Modalités et conditions complètes"
         ],
         "expired": [
@@ -883,9 +883,9 @@
           "TOURS GRATUITS DE NOËL",
           "82 TOURS GRATUITS",
           "sur Christmas Carol Megaways",
-          "Dépôt min. : 50 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 16 déc., 23 h 59",
+          "Dépôt min. : 50 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 16 déc.",
           "Cadeau expiré",
           "Modalités et conditions complètes"
         ],
@@ -893,7 +893,7 @@
           "JOUR 16 · 16 DÉCEMBRE",
           "CADEAU SURPRISE",
           "S’ouvre le 16 décembre",
-          "Reviens demain pour débloquer ce cadeau",
+          "Revenez demain pour débloquer ce cadeau",
           "Verrouillé · 16 déc.",
           "Modalités et conditions complètes"
         ]
@@ -914,34 +914,34 @@
       "minDeposit": {
         "value": 40,
         "currency": "CAD",
-        "text": "Dépôt min. : 40 CAD"
+        "text": "Dépôt min. : 40 CAD"
       },
       "wagering": {
         "multiplier": 25,
-        "text": "Exigence de mise : x25"
+        "text": "Exigence de mise : x25"
       },
       "validUntil": {
         "time": "23:59",
-        "text": "Fin de l’offre : 17 déc., 23 h 59"
+        "text": "Valide jusqu’au : 23 h 59, 17 déc."
       },
       "raw": {
         "active": [
           "JOUR 17 · 17 DÉCEMBRE",
           "BONUS DE NOËL",
           "45 % JUSQU’À 800 CAD",
-          "Dépôt min. : 40 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 17 déc., 23 h 59",
-          "Déposer et réclamer",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 17 déc.",
+          "Déposez et réclamez",
           "Modalités et conditions complètes"
         ],
         "expired": [
           "JOUR 17 · 17 DÉCEMBRE",
           "BONUS DE NOËL",
           "45 % JUSQU’À 800 CAD",
-          "Dépôt min. : 40 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 17 déc., 23 h 59",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 17 déc.",
           "Cadeau expiré",
           "Modalités et conditions complètes"
         ],
@@ -949,7 +949,7 @@
           "JOUR 17 · 17 DÉCEMBRE",
           "CADEAU SURPRISE",
           "S’ouvre le 17 décembre",
-          "Reviens demain pour débloquer ce cadeau",
+          "Revenez demain pour débloquer ce cadeau",
           "Verrouillé · 17 déc.",
           "Modalités et conditions complètes"
         ]
@@ -968,15 +968,15 @@
       "minDeposit": {
         "value": 40,
         "currency": "CAD",
-        "text": "Dépôt min. : 40 CAD"
+        "text": "Dépôt min. : 40 CAD"
       },
       "wagering": {
         "multiplier": 25,
-        "text": "Exigence de mise : x25"
+        "text": "Exigence de mise : x25"
       },
       "validUntil": {
         "time": "23:59",
-        "text": "Fin de l’offre : 18 déc., 23 h 59"
+        "text": "Valide jusqu’au : 23 h 59, 18 déc."
       },
       "raw": {
         "active": [
@@ -984,10 +984,10 @@
           "TOURS GRATUITS DE NOËL",
           "63 TOURS GRATUITS",
           "sur Big Bass Christmas – Frozen Lake",
-          "Dépôt min. : 40 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 18 déc., 23 h 59",
-          "Déposer et réclamer",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 18 déc.",
+          "Déposez et réclamez",
           "Modalités et conditions complètes"
         ],
         "expired": [
@@ -995,9 +995,9 @@
           "TOURS GRATUITS DE NOËL",
           "63 TOURS GRATUITS",
           "sur Big Bass Christmas – Frozen Lake",
-          "Dépôt min. : 40 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 18 déc., 23 h 59",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 18 déc.",
           "Cadeau expiré",
           "Modalités et conditions complètes"
         ],
@@ -1005,7 +1005,7 @@
           "JOUR 18 · 18 DÉCEMBRE",
           "CADEAU SURPRISE",
           "S’ouvre le 18 décembre",
-          "Reviens demain pour débloquer ce cadeau",
+          "Revenez demain pour débloquer ce cadeau",
           "Verrouillé · 18 déc.",
           "Modalités et conditions complètes"
         ]
@@ -1024,15 +1024,15 @@
       "minDeposit": {
         "value": 55,
         "currency": "CAD",
-        "text": "Dépôt min. : 55 CAD"
+        "text": "Dépôt min. : 55 CAD"
       },
       "wagering": {
         "multiplier": 25,
-        "text": "Exigence de mise : x25"
+        "text": "Exigence de mise : x25"
       },
       "validUntil": {
         "time": "23:59",
-        "text": "Fin de l’offre : 19 déc., 23 h 59"
+        "text": "Valide jusqu’au : 23 h 59, 19 déc."
       },
       "raw": {
         "active": [
@@ -1040,10 +1040,10 @@
           "TOURS GRATUITS DE NOËL",
           "95 TOURS GRATUITS",
           "sur Fruits 'n' Stars Holiday Edition",
-          "Dépôt min. : 55 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 19 déc., 23 h 59",
-          "Déposer et réclamer",
+          "Dépôt min. : 55 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 19 déc.",
+          "Déposez et réclamez",
           "Modalités et conditions complètes"
         ],
         "expired": [
@@ -1051,9 +1051,9 @@
           "TOURS GRATUITS DE NOËL",
           "95 TOURS GRATUITS",
           "sur Fruits 'n' Stars Holiday Edition",
-          "Dépôt min. : 55 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 19 déc., 23 h 59",
+          "Dépôt min. : 55 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 19 déc.",
           "Cadeau expiré",
           "Modalités et conditions complètes"
         ],
@@ -1061,7 +1061,7 @@
           "JOUR 19 · 19 DÉCEMBRE",
           "CADEAU SURPRISE",
           "S’ouvre le 19 décembre",
-          "Reviens demain pour débloquer ce cadeau",
+          "Revenez demain pour débloquer ce cadeau",
           "Verrouillé · 19 déc.",
           "Modalités et conditions complètes"
         ]
@@ -1080,15 +1080,15 @@
       "minDeposit": {
         "value": 50,
         "currency": "CAD",
-        "text": "Dépôt min. : 50 CAD"
+        "text": "Dépôt min. : 50 CAD"
       },
       "wagering": {
         "multiplier": 25,
-        "text": "Exigence de mise : x25"
+        "text": "Exigence de mise : x25"
       },
       "validUntil": {
         "time": "23:59",
-        "text": "Fin de l’offre : 20 déc., 23 h 59"
+        "text": "Valide jusqu’au : 23 h 59, 20 déc."
       },
       "raw": {
         "active": [
@@ -1096,10 +1096,10 @@
           "TOURS GRATUITS DE NOËL",
           "82 TOURS GRATUITS",
           "sur Sweet Bonanza Xmas",
-          "Dépôt min. : 50 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 20 déc., 23 h 59",
-          "Déposer et réclamer",
+          "Dépôt min. : 50 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 20 déc.",
+          "Déposez et réclamez",
           "Modalités et conditions complètes"
         ],
         "expired": [
@@ -1107,9 +1107,9 @@
           "TOURS GRATUITS DE NOËL",
           "82 TOURS GRATUITS",
           "sur Sweet Bonanza Xmas",
-          "Dépôt min. : 50 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 20 déc., 23 h 59",
+          "Dépôt min. : 50 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 20 déc.",
           "Cadeau expiré",
           "Modalités et conditions complètes"
         ],
@@ -1117,7 +1117,7 @@
           "JOUR 20 · 20 DÉCEMBRE",
           "CADEAU SURPRISE",
           "S’ouvre le 20 décembre",
-          "Reviens demain pour débloquer ce cadeau",
+          "Revenez demain pour débloquer ce cadeau",
           "Verrouillé · 20 déc.",
           "Modalités et conditions complètes"
         ]
@@ -1138,34 +1138,34 @@
       "minDeposit": {
         "value": 40,
         "currency": "CAD",
-        "text": "Dépôt min. : 40 CAD"
+        "text": "Dépôt min. : 40 CAD"
       },
       "wagering": {
         "multiplier": 25,
-        "text": "Exigence de mise : x25"
+        "text": "Exigence de mise : x25"
       },
       "validUntil": {
         "time": "23:59",
-        "text": "Fin de l’offre : 21 déc., 23 h 59"
+        "text": "Valide jusqu’au : 23 h 59, 21 déc."
       },
       "raw": {
         "active": [
           "JOUR 21 · 21 DÉCEMBRE",
           "BONUS DE NOËL",
           "65 % JUSQU’À 800 CAD",
-          "Dépôt min. : 40 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 21 déc., 23 h 59",
-          "Déposer et réclamer",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 21 déc.",
+          "Déposez et réclamez",
           "Modalités et conditions complètes"
         ],
         "expired": [
           "JOUR 21 · 21 DÉCEMBRE",
           "BONUS DE NOËL",
           "65 % JUSQU’À 800 CAD",
-          "Dépôt min. : 40 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 21 déc., 23 h 59",
+          "Dépôt min. : 40 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 21 déc.",
           "Cadeau expiré",
           "Modalités et conditions complètes"
         ],
@@ -1173,7 +1173,7 @@
           "JOUR 21 · 21 DÉCEMBRE",
           "CADEAU SURPRISE",
           "S’ouvre le 21 décembre",
-          "Reviens demain pour débloquer ce cadeau",
+          "Revenez demain pour débloquer ce cadeau",
           "Verrouillé · 21 déc.",
           "Modalités et conditions complètes"
         ]
@@ -1192,15 +1192,15 @@
       "minDeposit": {
         "value": 35,
         "currency": "CAD",
-        "text": "Dépôt min. : 35 CAD"
+        "text": "Dépôt min. : 35 CAD"
       },
       "wagering": {
         "multiplier": 25,
-        "text": "Exigence de mise : x25"
+        "text": "Exigence de mise : x25"
       },
       "validUntil": {
         "time": "23:59",
-        "text": "Fin de l’offre : 22 déc., 23 h 59"
+        "text": "Valide jusqu’au : 23 h 59, 22 déc."
       },
       "raw": {
         "active": [
@@ -1208,10 +1208,10 @@
           "TOURS GRATUITS DE NOËL",
           "62 TOURS GRATUITS",
           "sur Yeti Quest",
-          "Dépôt min. : 35 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 22 déc., 23 h 59",
-          "Déposer et réclamer",
+          "Dépôt min. : 35 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 22 déc.",
+          "Déposez et réclamez",
           "Modalités et conditions complètes"
         ],
         "expired": [
@@ -1219,9 +1219,9 @@
           "TOURS GRATUITS DE NOËL",
           "62 TOURS GRATUITS",
           "sur Yeti Quest",
-          "Dépôt min. : 35 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 22 déc., 23 h 59",
+          "Dépôt min. : 35 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 22 déc.",
           "Cadeau expiré",
           "Modalités et conditions complètes"
         ],
@@ -1229,7 +1229,7 @@
           "JOUR 22 · 22 DÉCEMBRE",
           "CADEAU SURPRISE",
           "S’ouvre le 22 décembre",
-          "Reviens demain pour débloquer ce cadeau",
+          "Revenez demain pour débloquer ce cadeau",
           "Verrouillé · 22 déc.",
           "Modalités et conditions complètes"
         ]
@@ -1248,15 +1248,15 @@
       "minDeposit": {
         "value": 50,
         "currency": "CAD",
-        "text": "Dépôt min. : 50 CAD"
+        "text": "Dépôt min. : 50 CAD"
       },
       "wagering": {
         "multiplier": 25,
-        "text": "Exigence de mise : x25"
+        "text": "Exigence de mise : x25"
       },
       "validUntil": {
         "time": "23:59",
-        "text": "Fin de l’offre : 23 déc., 23 h 59"
+        "text": "Valide jusqu’au : 23 h 59, 23 déc."
       },
       "raw": {
         "active": [
@@ -1264,10 +1264,10 @@
           "TOURS GRATUITS DE NOËL",
           "99 TOURS GRATUITS",
           "sur 25 Cookies: Hit the Bonus",
-          "Dépôt min. : 50 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 23 déc., 23 h 59",
-          "Déposer et réclamer",
+          "Dépôt min. : 50 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 23 déc.",
+          "Déposez et réclamez",
           "Modalités et conditions complètes"
         ],
         "expired": [
@@ -1275,9 +1275,9 @@
           "TOURS GRATUITS DE NOËL",
           "99 TOURS GRATUITS",
           "sur 25 Cookies: Hit the Bonus",
-          "Dépôt min. : 50 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 23 déc., 23 h 59",
+          "Dépôt min. : 50 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 23 déc.",
           "Cadeau expiré",
           "Modalités et conditions complètes"
         ],
@@ -1285,7 +1285,7 @@
           "JOUR 23 · 23 DÉCEMBRE",
           "CADEAU SURPRISE",
           "S’ouvre le 23 décembre",
-          "Reviens demain pour débloquer ce cadeau",
+          "Revenez demain pour débloquer ce cadeau",
           "Verrouillé · 23 déc.",
           "Modalités et conditions complètes"
         ]
@@ -1306,34 +1306,34 @@
       "minDeposit": {
         "value": 55,
         "currency": "CAD",
-        "text": "Dépôt min. : 55 CAD"
+        "text": "Dépôt min. : 55 CAD"
       },
       "wagering": {
         "multiplier": 25,
-        "text": "Exigence de mise : x25"
+        "text": "Exigence de mise : x25"
       },
       "validUntil": {
         "time": "23:59",
-        "text": "Fin de l’offre : 24 déc., 23 h 59"
+        "text": "Valide jusqu’au : 23 h 59, 24 déc."
       },
       "raw": {
         "active": [
           "JOUR 24 · 24 DÉCEMBRE",
           "BONUS DE NOËL",
           "80 % JUSQU’À 600 CAD",
-          "Dépôt min. : 55 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 24 déc., 23 h 59",
-          "Déposer et réclamer",
+          "Dépôt min. : 55 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 24 déc.",
+          "Déposez et réclamez",
           "Modalités et conditions complètes"
         ],
         "expired": [
           "JOUR 24 · 24 DÉCEMBRE",
           "BONUS DE NOËL",
           "80 % JUSQU’À 600 CAD",
-          "Dépôt min. : 55 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 24 déc., 23 h 59",
+          "Dépôt min. : 55 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 24 déc.",
           "Cadeau expiré",
           "Modalités et conditions complètes"
         ],
@@ -1341,7 +1341,7 @@
           "JOUR 24 · 24 DÉCEMBRE",
           "CADEAU SURPRISE",
           "S’ouvre le 24 décembre",
-          "Reviens demain pour débloquer ce cadeau",
+          "Revenez demain pour débloquer ce cadeau",
           "Verrouillé · 24 déc.",
           "Modalités et conditions complètes"
         ]
@@ -1360,15 +1360,15 @@
       "minDeposit": {
         "value": 55,
         "currency": "CAD",
-        "text": "Dépôt min. : 55 CAD"
+        "text": "Dépôt min. : 55 CAD"
       },
       "wagering": {
         "multiplier": 25,
-        "text": "Exigence de mise : x25"
+        "text": "Exigence de mise : x25"
       },
       "validUntil": {
         "time": "23:59",
-        "text": "Fin de l’offre : 25 déc., 23 h 59"
+        "text": "Valide jusqu’au : 23 h 59, 25 déc."
       },
       "raw": {
         "active": [
@@ -1376,10 +1376,10 @@
           "TOURS GRATUITS DE NOËL",
           "101 TOURS GRATUITS",
           "sur Christmas Carol Megaways",
-          "Dépôt min. : 55 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 25 déc., 23 h 59",
-          "Déposer et réclamer",
+          "Dépôt min. : 55 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 25 déc.",
+          "Déposez et réclamez",
           "Modalités et conditions complètes"
         ],
         "expired": [
@@ -1387,9 +1387,9 @@
           "TOURS GRATUITS DE NOËL",
           "101 TOURS GRATUITS",
           "sur Christmas Carol Megaways",
-          "Dépôt min. : 55 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 25 déc., 23 h 59",
+          "Dépôt min. : 55 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 25 déc.",
           "Cadeau expiré",
           "Modalités et conditions complètes"
         ],
@@ -1397,7 +1397,7 @@
           "JOUR 25 · 25 DÉCEMBRE",
           "CADEAU SURPRISE",
           "S’ouvre le 25 décembre",
-          "Reviens demain pour débloquer ce cadeau",
+          "Revenez demain pour débloquer ce cadeau",
           "Verrouillé · 25 déc.",
           "Modalités et conditions complètes"
         ]
@@ -1418,34 +1418,34 @@
       "minDeposit": {
         "value": 35,
         "currency": "CAD",
-        "text": "Dépôt min. : 35 CAD"
+        "text": "Dépôt min. : 35 CAD"
       },
       "wagering": {
         "multiplier": 25,
-        "text": "Exigence de mise : x25"
+        "text": "Exigence de mise : x25"
       },
       "validUntil": {
         "time": "23:59",
-        "text": "Fin de l’offre : 26 déc., 23 h 59"
+        "text": "Valide jusqu’au : 23 h 59, 26 déc."
       },
       "raw": {
         "active": [
           "JOUR 26 · 26 DÉCEMBRE",
           "BONUS DE NOËL",
           "60 % JUSQU’À 950 CAD",
-          "Dépôt min. : 35 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 26 déc., 23 h 59",
-          "Déposer et réclamer",
+          "Dépôt min. : 35 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 26 déc.",
+          "Déposez et réclamez",
           "Modalités et conditions complètes"
         ],
         "expired": [
           "JOUR 26 · 26 DÉCEMBRE",
           "BONUS DE NOËL",
           "60 % JUSQU’À 950 CAD",
-          "Dépôt min. : 35 CAD",
-          "Exigence de mise : x25",
-          "Fin de l’offre : 26 déc., 23 h 59",
+          "Dépôt min. : 35 CAD",
+          "Exigence de mise : x25",
+          "Valide jusqu’au : 23 h 59, 26 déc.",
           "Cadeau expiré",
           "Modalités et conditions complètes"
         ],
@@ -1453,13 +1453,13 @@
           "JOUR 26 · 26 DÉCEMBRE",
           "CADEAU SURPRISE",
           "S’ouvre le 26 décembre",
-          "Reviens demain pour débloquer ce cadeau",
+          "Revenez demain pour débloquer ce cadeau",
           "Verrouillé · 26 déc.",
           "Modalités et conditions complètes"
         ]
       }
     }
   ],
-  "translatedBy": "agency, finalised 2026-11-20 (client not verifying)",
+  "translatedBy": "client (French in EN_CAD tab, 2026-11-20); agency fixes: deadline row layout, Xmas, 1 000, 1er",
   "sourceMarket": "EN_CAD"
 }

@@ -1,11 +1,22 @@
 #!/usr/bin/env node
 // Turns data/source/sheet.json into the JSON the page uses:
 //   data/ui/<lang>.json       UI strings + 26 location names per language
-//   data/cards/<MARKET>.json  26 daily cards per market (FR_CA is our own translation of EN_CAD)
+//   data/cards/<MARKET>.json  26 daily cards per market (FR_CA: see "EN_CAD tab language" below)
 //   data/markets.json         list of markets
 //   data/browser-map.json     browser language -> market rules
 //   data/ISSUES.md            plain-English list of fixes and open questions for the client
 // Re-run it whenever the sheet changes: node scripts/extract-sheet.mjs <dump> && node scripts/import-sheet.mjs
+//
+// EN_CAD tab language (since 2026-11-20). The sheet has no FR_CA card tab. On 2026-11-20 the client put FRENCH (Canada) card
+// text into the EN_CAD tab ("JOUR 1 · 1 DÉCEMBRE ... Déposez et réclamez"). The script therefore checks the language of the
+// EN_CAD tab on every run (isFrenchCardTab: all 26 day headers start with "JOUR <n> · "):
+//   - tab is FRENCH (today): FR_CA cards = that tab, verbatim (vous-form), plus only the technical fixes of frCaClientFixes():
+//     deadline row split "label : value", "1er" on 1 December, "1 000" thousands, "Xmas". EN_CAD (the English page) is taken from
+//     the frozen English tab data/source/en-cad-english.json (the English text exists nowhere else any more). The script stops if
+//     that file is missing or is not English.
+//   - tab is ENGLISH (the client moved French to its own tab, English is back): EN_CAD from the tab; FR_CA is built from the
+//     English EN_CAD data by buildFrCa() as before (agency wording), until a real FR_CA tab is wired in here.
+//   - anything else: the script stops.
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -16,6 +27,26 @@ const dataDir = path.join(root, 'data');
 const sheet = JSON.parse(fs.readFileSync(path.join(dataDir, 'source', 'sheet.json'), 'utf8')).tabs;
 
 const DAYS = 26;
+
+// ---- EN_CAD tab language -------------------------------------------------------
+/** True when every day's first line of the tab is "<prefix> <n> · ...". */
+function hasDayHeaders(tab, prefix) {
+  return Boolean(tab) && tab.rows.length === DAYS && tab.rows.every((r, i) => new RegExp('^' + prefix + ' ' + (i + 1) + ' · ').test(String(r[0]).split('\n')[0]));
+}
+let frCaClientTab = null; // the French EN_CAD tab, when the client put French there
+if (hasDayHeaders(sheet.EN_CAD, 'JOUR')) {
+  const frozenPath = path.join(dataDir, 'source', 'en-cad-english.json');
+  if (!fs.existsSync(frozenPath)) throw new Error('The EN_CAD tab is French but data/source/en-cad-english.json (frozen English EN_CAD) is missing.');
+  const frozen = JSON.parse(fs.readFileSync(frozenPath, 'utf8')).tab;
+  if (!hasDayHeaders(frozen, 'DAY')) throw new Error('data/source/en-cad-english.json is not an English EN_CAD tab ("DAY <n> · " headers expected).');
+  frCaClientTab = sheet.EN_CAD;
+  sheet.EN_CAD = frozen;
+  console.log('[tab] EN_CAD tab in the sheet is FRENCH: FR_CA cards come from it; EN_CAD English comes from data/source/en-cad-english.json');
+} else if (hasDayHeaders(sheet.EN_CAD, 'DAY')) {
+  console.log('[tab] EN_CAD tab is English: FR_CA is built from it (buildFrCa)');
+} else {
+  throw new Error('The EN_CAD tab is neither English ("DAY <n> · ") nor French ("JOUR <n> · "); check the sheet before importing.');
+}
 const NBSP = ' ';
 const UI_LANGS = ['EN', 'RU', 'FR_CA', 'DE', 'BG', 'NL', 'RO_MD', 'TR', 'NO', 'IT', 'DA', 'SV'];
 
@@ -232,8 +263,8 @@ function parseLockedCard(lines, day) {
 const cardIssues = []; // strings
 const STATES = [['active', 0], ['expired', 2], ['locked', 3]]; // columns in sheet.json rows (1 = credited, unused)
 
-function buildMarketCards(market, uiByLang) {
-  const tab = sheet[market.id];
+function buildMarketCards(market, uiByLang, tabOverride) {
+  const tab = tabOverride || sheet[market.id];
   if (!tab) throw new Error('Missing tab for market ' + market.id);
   if (tab.rows.length !== DAYS) throw new Error(`${market.id}: ${tab.rows.length} rows, expected ${DAYS}`);
   const days = [];
@@ -282,7 +313,7 @@ function applyCardFixes(market, days) {
     }
     // The "Bonus credited" column is not imported at all.
     if (count === 0) {
-      notes.push('Expected "22 GBP" on RO_MDL day 4 was not found any more (maybe already fixed in the sheet).');
+      notes.push('RO_MDL day 4: resolved. The sheet said "22 GBP" for the minimum deposit; the client fixed it (now "300 MDL"), so the GBP -> MDL fix no longer fires.');
     } else {
       addFix(`RO_MDL day 4: "GBP" replaced by "MDL" in ${count} line(s) (min deposit is now "22 MDL" in the active and expired cards; the locked card has no amount).`);
     }
@@ -342,7 +373,35 @@ function finishMarket(market, days, ui) {
 const crossDiffs = [];
 let gbpReference = null;
 
-// ---- FR_CA cards: our translation of EN_CAD ----------------------------------
+// ---- FR_CA cards, client's French (EN_CAD tab) --------------------------------
+// Owner decision 2026-11-20: FR_CA = the client's French from the EN_CAD tab, verbatim ("vous" form), with ONLY these technical fixes:
+//   a. deadline row "Valide jusqu’au 1 déc. à 23 h 59" -> "Valide jusqu’au : 23 h 59, 1er déc." (non-breaking space before ":"). The card shows
+//      the three term rows as "label | value" split at the colon (splitTerm in src/render/card.js), exactly like EN_CAD
+//      ("Valid until | 23:59, 1 Dec"): grey label, white value.
+//   b. "1er" (+ non-breaking space) for 1 December wherever the date is written; "1 000 CAD" (non-breaking space) instead of "1,000 CAD";
+//      "XMas" -> "Xmas" (applyCardFixes, same as every market).
+//   c. the route tag "1ER DÉC." comes from src/i18n.js.
+const FR_DEADLINE = /^Valide jusqu’au (.+?) à (\d{1,2} h \d{2})$/;
+function frCaClientFixes(days) {
+  for (const d of days) {
+    for (const state of ['active', 'expired']) {
+      const lines = d.raw[state];
+      const i = lines.length - 3; // deadline row: 3rd from the end (then button/state line, terms link)
+      const m = lines[i].match(FR_DEADLINE);
+      if (m) lines[i] = `Valide jusqu’au${NBSP}: ${m[2]}, ${m[1]}`;
+      else unparsed.push(`FR_CA day ${d.day} (${state} card): deadline row "${lines[i]}" is not "Valide jusqu’au <date> à <h min>", left as in the sheet`);
+    }
+    for (const state of ['active', 'expired', 'locked']) {
+      d.raw[state] = d.raw[state].map((l) => {
+        if (/ CAD\b/.test(l)) l = l.replace(/(\d),(\d{3})(?!\d)/g, `$1${NBSP}$2`);
+        if (d.day === 1) l = l.replace(/(?<!\d)1 (?=D[ÉE]C)/g, `1ER${NBSP}`).replace(/(?<!\d)1 (?=d[ée]c)/g, `1er${NBSP}`);
+        return l;
+      });
+    }
+  }
+}
+
+// ---- FR_CA cards, legacy: our translation of EN_CAD (used only while the EN_CAD tab is English) ----
 // Wording finalised by the agency on 2026-11-20 (owner: the client will not verify FR_CA). Quebec French, tutoiement,
 // OQLF typography. Non-breaking spaces are written into the data only where the page's nb() (src/render/util.js) cannot
 // add them: before ":" and between "1er" and the month. "70 %", "1 000 CAD" and "23 h 59" are protected at render.
@@ -445,21 +504,20 @@ for (const l of UI_LANGS) {
 }
 log('OVERRIDE step3_body replaced in ' + UI_LANGS.length + ' languages (owner decision, agency translations).');
 
-// FR_CA interface wording finalised by the agency (owner, 2026-11-20: the client will not verify FR_CA).
-// Each entry: key, sheet text expected, text used. A sheet text that changed is kept and reported under "Good to know".
+// FR_CA interface: the client's FR_CA column as is (owner, 2026-11-20). The agency-only wording of commit 6b5db5c (footer "Joue")
+// was reverted; only typography stays (no word changes). Each entry: key, sheet text expected, text used. A sheet text that changed
+// is kept and reported under "Good to know".
 const FR_CA_UI = [
-  // the page says "tu" everywhere ("Suis", "ouvre-le", "réclame ton bonus"); the footer was the only "vous"
-  ['responsible', '18+ · Jouez de façon responsable', '18+ · Joue de façon responsable'],
-  // OQLF: non-breaking space before ":" (a plain space lets the colon start a new line)
+  // OQLF: non-breaking space before ":" (a plain space lets the colon start a new line); same words as the sheet
   ['subtitle', 'Suis le père Noël dans un village anglais enneigé. Un nouveau cadeau se débloque chaque jour : ouvre-le et réclame ton bonus.',
     `Suis le père Noël dans un village anglais enneigé. Un nouveau cadeau se débloque chaque jour${NBSP}: ouvre-le et réclame ton bonus.`],
 ];
 for (const [k, from, to] of FR_CA_UI) {
   if (uiAll.FR_CA.strings[k] === from) {
     uiAll.FR_CA.strings[k] = to;
-    log(`FR_CA ${k}: "${from}" -> "${to}" (agency wording, 2026-11-20)`);
+    log(`FR_CA ${k}: non-breaking space before ":" (typography only)`);
   } else {
-    notes.push(`FR_CA ${k}: the sheet text is no longer "${from}", so the agency wording "${to}" was not applied (sheet text kept: "${uiAll.FR_CA.strings[k]}").`);
+    notes.push(`FR_CA ${k}: the sheet text is no longer "${from}", so the typography fix "${to}" was not applied (sheet text kept: "${uiAll.FR_CA.strings[k]}").`);
   }
 }
 
@@ -518,10 +576,17 @@ for (const m of MARKETS) {
   cardsOut[m.id] = finishMarket(m, rawByMarket[m.id], uiLang);
 }
 
-// FR_CA from EN_CAD
+// FR_CA: the client's French from the EN_CAD tab, or (EN_CAD tab English) built from EN_CAD
 {
   const m = MARKETS.find((x) => x.id === 'FR_CA');
-  const frRaw = buildFrCa(cardsOut.EN_CAD, uiAll.FR_CA);
+  let frRaw;
+  if (frCaClientTab) {
+    frRaw = buildMarketCards(m, uiAll.FR_CA, frCaClientTab);
+    applyCardFixes(m, frRaw);
+    frCaClientFixes(frRaw);
+  } else {
+    frRaw = buildFrCa(cardsOut.EN_CAD, uiAll.FR_CA);
+  }
   cardsOut.FR_CA = finishMarket(m, frRaw, uiAll.FR_CA);
 }
 
@@ -581,7 +646,9 @@ for (const m of MARKETS) {
     days: cardsOut[m.id],
   };
   if (m.id === 'FR_CA') {
-    body.translatedBy = 'agency, finalised 2026-11-20 (client not verifying)';
+    body.translatedBy = frCaClientTab
+      ? 'client (French in EN_CAD tab, 2026-11-20); agency fixes: deadline row layout, Xmas, 1 000, 1er'
+      : 'agency, finalised 2026-11-20 (client not verifying)';
     body.sourceMarket = 'EN_CAD';
   }
   writeJson(`data/cards/${m.id}.json`, body);
@@ -618,11 +685,11 @@ function section(title, intro, items) {
   n += items.filter((it) => !it.decided).length;
   sections.push({ title, intro, items: items.map((it) => (typeof it === 'string' ? it : it.text)) });
 }
-// FR_CA: the agency finalises the wording itself (owner, 2026-11-20); the client will not verify it.
-const FR_CA_DECIDED = 'FR_CA decided by the agency on 2026-11-20, the client will not verify it';
+// FR_CA: the client's own French is used as is (owner, 2026-11-20); the client's UI column is not changed.
+const FR_CA_DECIDED = 'FR_CA decided by the owner on 2026-11-20 (the page uses the client’s French)';
 const FR_CA_DUP_DECISION = {
   terms_conditions: 'the page keeps "Modalités et conditions" (the card link reads "Modalités et conditions complètes"), "Conditions générales" is not used',
-  step3_title: 'step 3 keeps "Dépose et réclame" (tu form, like the step titles "Reviens chaque jour" and "Ouvre le cadeau") and the card button keeps "Déposer et réclamer" (buttons use the infinitive, like "OUVRIR LE CADEAU")',
+  step3_title: 'step 3 keeps "Dépose et réclame" (the client’s UI column) while the card button shows the client’s card text "Déposez et réclamez" (EN_CAD tab, vous form)',
 };
 
 // RO_MDL amounts: resolved. The client corrected the MDL column in the links sheet; scripts/import-links.mjs applies it (runs at the end of this script).
@@ -641,7 +708,6 @@ for (const [day, mm] of gameVariants) {
 }
 if (xmasFixed.size) {
   const where = [...xmasFixed].map(([m, ds]) => `${m} (day ${[...ds].join(', ')})`);
-  if (xmasFixed.has('EN_CAD')) where.push('FR_CA (built from EN_CAD)');
   const text = `Settled, not an open point (owner decision 2026-11-20: "Xmas" is correct): the sheet spells the game "Sweet Bonanza XMas" in ${where.join(', ')}. The script writes "Sweet Bonanza Xmas" there on every import, like every other market; the sheet is untouched.`;
   spellItems.unshift({ text, decided: true });
   log(`"XMas" -> "Xmas" in ${where.join(', ')} (owner decision 2026-11-20)`);
@@ -690,7 +756,7 @@ missing.push({
   text: `Settled, not an open point: there is no "campaign ended" message in the sheet. After 26 December the page shows one under the intro title (key campaign_ended). The agency translated it on 2026-11-20 (owner decision: we translate it ourselves); the script writes these texts on every import, the sheet is untouched: ${UI_LANGS.map((l) => `${l}: "${CAMPAIGN_ENDED[l]}"`).join('; ')}. If you want a different wording in any language, tell us.`,
   decided: true,
 });
-missing.push('Login link and Terms & Conditions links (card "Full terms & conditions" and the legal line "Full campaign terms apply") are not in the links sheet and not confirmed. src/config.js still has "#" placeholders for login, terms and campaignTerms. Please send the final URLs. (Deposit links per day come from the links sheet via scripts/import-links.mjs.)');
+missing.push('Login now opens today’s day link (the deposit link with the promo code of the day, commit c73ad50); tell us if Login should go somewhere else. Terms & Conditions links (card "Full terms & conditions" and the legal line "Full campaign terms apply") are still not in the links sheet and not confirmed: src/config.js still has "#" placeholders for terms and campaignTerms. Please send the final URLs. (Deposit links per day come from the links sheet via scripts/import-links.mjs.)');
 section('Missing in the sheet', '', missing);
 
 section(
@@ -700,15 +766,36 @@ section(
 );
 
 section(
-  'FR_CA (French Canada) wording - finalised by the agency on 2026-11-20, no client check',
-  'The sheet has a French (Canada) interface column but no French (Canada) card tab. We translated the cards from EN_CAD: same amounts in CAD, game names, promo codes, links and dates unchanged. On 2026-11-20 the owner decided that the agency finalises the FR_CA wording itself, because the client will not verify it, so this is no longer an open point. data/cards/FR_CA.json is marked translatedBy "agency, finalised 2026-11-20 (client not verifying)". The review (Quebec French, "tu" everywhere, OQLF typography) changed:',
+  frCaClientTab ? 'FR_CA (French Canada) - the client’s French from the EN_CAD tab, used as is' : 'FR_CA (French Canada) wording - finalised by the agency on 2026-11-20, no client check',
+  frCaClientTab
+    ? 'The sheet has no FR_CA card tab. On 2026-11-20 the client put French (Canada) card text into the EN_CAD tab. The page uses it word for word for the FR_CA cards (vous form, e.g. "Déposez et réclamez", "Revenez demain"); the English EN_CAD page keeps the English text of the earlier sheet version (data/source/en-cad-english.json). The FR_CA interface texts are the client’s FR_CA column as is. data/cards/FR_CA.json is marked translatedBy "client (French in EN_CAD tab, 2026-11-20); agency fixes: deadline row layout, Xmas, 1 000, 1er". Only these technical fixes are applied on every import:'
+    : 'The sheet has a French (Canada) interface column but no French (Canada) card tab, and the EN_CAD tab is English again. We translated the cards from EN_CAD (same amounts in CAD, game names, promo codes, links and dates unchanged); the agency finalised the wording on 2026-11-20. Changes of that review:',
+  (frCaClientTab
+    ? [
+        'Card deadline row: the client wrote "Valide jusqu’au 1 déc. à 23 h 59". The card shows this row as label | value, split at the colon, like every other market ("Valid until: 23:59, 1 Dec"), so it is stored as "Valide jusqu’au : 23 h 59, 1er déc." (grey label, white value). Same words, different order.',
+        '"1er" with a non-breaking space for 1 December in every card line ("1ER DÉCEMBRE", "1er déc."); the route tag of 1 December reads "1ER DÉC." (src/i18n.js, FR_CA only).',
+        '"1,000 CAD" -> "1 000 CAD" (French thousands separator, days 8 and 10); "Sweet Bonanza XMas" -> "Xmas" (day 20, owner decision).',
+        'Non-breaking space before ":" in the intro text ("chaque jour : ouvre-le"), same words as the sheet.',
+        'Not changed, for information: the client’s card text uses "vous" ("Déposez et réclamez", "Revenez demain") while the client’s interface column uses "tu" ("Dépose et réclame", "Reviens demain"). Both are shown as the client wrote them.',
+      ]
+    : [
+        'Card deadline row: "Valable jusqu’au 1er déc., 23 h 59" -> "Fin de l’offre : 1er déc., 23 h 59" (label | value split at the colon, like every other market).',
+        'Non-breaking space before ":" in "Dépôt min. :", "Exigence de mise :", "Fin de l’offre :" and in the intro text ("chaque jour : ouvre-le").',
+        '"1er" stays on the same line as its month; the route tag of 1 December reads "1ER DÉC." (src/i18n.js, FR_CA only).',
+        'Footer: "18+ · Jouez de façon responsable" -> "18+ · Joue de façon responsable".',
+      ]
+  ).map((text) => ({ text, decided: true })),
+);
+
+// New for the client, 2026-11-20
+section(
+  'New since 2026-11-20 - please check',
+  '',
   [
-    'Card deadline row: "Valable jusqu’au 1er déc., 23 h 59" -> "Fin de l’offre : 1er déc., 23 h 59". The card shows this row as label | value, split at the colon, like every other market ("Valid until: 23:59, 1 Dec"); without a colon the whole sentence sat in the grey label column and the deadline was not highlighted. French puts no colon after "jusqu’au", hence a noun label.',
-    'Non-breaking space before ":" in "Dépôt min. :", "Exigence de mise :", "Fin de l’offre :" and in the intro text ("chaque jour : ouvre-le").',
-    '"1er" stays on the same line as its month ("1er déc.", "1er décembre"); the route tag of 1 December reads "1ER DÉC." instead of "1 DÉC." (src/i18n.js, FR_CA only).',
-    'Footer: "18+ · Jouez de façon responsable" -> "18+ · Joue de façon responsable" (the page says "tu" everywhere else).',
-    'Checked and kept: "BONUS DE NOËL", "TOURS GRATUITS DE NOËL", "70 % JUSQU’À 550 CAD" (CAD as in EN_CAD), "sur <game>", "Dépôt min.", "Exigence de mise : x25", "Déposer et réclamer" (button), "Cadeau expiré", "Modalités et conditions complètes", "S’ouvre le …", "Verrouillé · … déc.", the step texts and the 26 location names.',
-  ].map((text) => ({ text, decided: true })),
+    'Please put the French (Canada) card text in its own tab (FR_CA) and the English text back in the EN_CAD tab. Today the EN_CAD tab holds French; the page works around it (the English EN_CAD page text is a frozen copy of the earlier English tab), so any English change you make for Canada cannot reach the page until the tab is English again.',
+    'RO_MDL tab: the maximum bonus numbers are still GBP-sized numbers labelled MDL (day 1 "350 MDL", day 3 maximum 500 MDL is lower than the minimum deposit 450 MDL, day 8 "650 MDL", ...) and the day 1 minimum deposit says "35 MDL". The page does not use them: it shows the MDL values of the links sheet (maximum bonus 20 times the tab number, e.g. day 1 maximum 7 000 MDL, minimum 500 MDL). Please confirm the links-sheet values are the right ones and fix the RO_MDL tab to match.',
+    'The links sheet now asks for a sign-in (HTTP 401) and can no longer be read by the import. Please share it again as "anyone with the link can view" so we can re-check the deposit links, promo codes and MDL values.',
+  ],
 );
 
 section('Cells that could not be read cleanly', 'The import kept the raw sheet text for these, but the structured values (amount, min deposit, ...) may be missing or wrong:', unparsed.filter((u) => !/EN SOURCE/.test(u)));

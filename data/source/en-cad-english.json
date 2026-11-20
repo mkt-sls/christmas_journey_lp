@@ -1,0 +1,169 @@
+{
+  "note": "Frozen English EN_CAD card tab (sheet snapshot before 2026-11-20). On 2026-11-20 the client put French (Canada) text into the EN_CAD tab of the sheet; scripts/import-sheet.mjs takes the EN_CAD English page text from this file while the tab is French.",
+  "tab": {
+    "columns": [
+      "FULL CARD TEXT · DEPOSIT & CLAIM",
+      "FULL CARD TEXT · BONUS CREDITED",
+      "FULL CARD TEXT · GIFT EXPIRED",
+      "FULL CARD TEXT · LOCKED"
+    ],
+    "rows": [
+      [
+        "DAY 1 · 1 DECEMBER\nCHRISTMAS BONUS\n70% UP TO 550 CAD\nMin. deposit: 55 CAD\nWagering: x25\nValid until: 23:59, 1 Dec\nDeposit & Claim\nFull terms & conditions",
+        "DAY 1 · 1 DECEMBER\nCHRISTMAS BONUS\n70% UP TO 550 CAD\nMin. deposit: 55 CAD\nWagering: x25\nValid until: 23:59, 1 Dec\n✓ Bonus credited\nFull terms & conditions",
+        "DAY 1 · 1 DECEMBER\nCHRISTMAS BONUS\n70% UP TO 550 CAD\nMin. deposit: 55 CAD\nWagering: x25\nValid until: 23:59, 1 Dec\nGift expired\nFull terms & conditions",
+        "DAY 1 · 1 DECEMBER\nSURPRISE GIFT\nOpens 1 December\nCome back tomorrow to unlock this gift\nLocked · 1 Dec\nFull terms & conditions"
+      ],
+      [
+        "DAY 2 · 2 DECEMBER\nCHRISTMAS FREE SPINS\n82 FREE SPINS\non Thunder Coins: Hold and Win\nMin. deposit: 40 CAD\nWagering: x25\nValid until: 23:59, 2 Dec\nDeposit & Claim\nFull terms & conditions",
+        "DAY 2 · 2 DECEMBER\nCHRISTMAS FREE SPINS\n82 FREE SPINS\non Thunder Coins: Hold and Win\nMin. deposit: 40 CAD\nWagering: x25\nValid until: 23:59, 2 Dec\n✓ Bonus credited\nFull terms & conditions",
+        "DAY 2 · 2 DECEMBER\nCHRISTMAS FREE SPINS\n82 FREE SPINS\non Thunder Coins: Hold and Win\nMin. deposit: 40 CAD\nWagering: x25\nValid until: 23:59, 2 Dec\nGift expired\nFull terms & conditions",
+        "DAY 2 · 2 DECEMBER\nSURPRISE GIFT\nOpens 2 December\nCome back tomorrow to unlock this gift\nLocked · 2 Dec\nFull terms & conditions"
+      ],
+      [
+        "DAY 3 · 3 DECEMBER\nCHRISTMAS BONUS\n55% UP TO 800 CAD\nMin. deposit: 50 CAD\nWagering: x25\nValid until: 23:59, 3 Dec\nDeposit & Claim\nFull terms & conditions",
+        "DAY 3 · 3 DECEMBER\nCHRISTMAS BONUS\n55% UP TO 800 CAD\nMin. deposit: 50 CAD\nWagering: x25\nValid until: 23:59, 3 Dec\n✓ Bonus credited\nFull terms & conditions",
+        "DAY 3 · 3 DECEMBER\nCHRISTMAS BONUS\n55% UP TO 800 CAD\nMin. deposit: 50 CAD\nWagering: x25\nValid until: 23:59, 3 Dec\nGift expired\nFull terms & conditions",
+        "DAY 3 · 3 DECEMBER\nSURPRISE GIFT\nOpens 3 December\nCome back tomorrow to unlock this gift\nLocked · 3 Dec\nFull terms & conditions"
+      ],
+      [
+        "DAY 4 · 4 DECEMBER\nCHRISTMAS FREE SPINS\n65 FREE SPINS\non Big Bass Splash\nMin. deposit: 35 CAD\nWagering: x25\nValid until: 23:59, 4 Dec\nDeposit & Claim\nFull terms & conditions",
+        "DAY 4 · 4 DECEMBER\nCHRISTMAS FREE SPINS\n65 FREE SPINS\non Big Bass Splash\nMin. deposit: 35 CAD\nWagering: x25\nValid until: 23:59, 4 Dec\n✓ Bonus credited\nFull terms & conditions",
+        "DAY 4 · 4 DECEMBER\nCHRISTMAS FREE SPINS\n65 FREE SPINS\non Big Bass Splash\nMin. deposit: 35 CAD\nWagering: x25\nValid until: 23:59, 4 Dec\nGift expired\nFull terms & conditions",
+        "DAY 4 · 4 DECEMBER\nSURPRISE GIFT\nOpens 4 December\nCome back tomorrow to unlock this gift\nLocked · 4 Dec\nFull terms & conditions"
+      ],
+      [
+        "DAY 5 · 5 DECEMBER\nCHRISTMAS FREE SPINS\n75 FREE SPINS\non John Hunter and the Book of Tut\nMin. deposit: 40 CAD\nWagering: x25\nValid until: 23:59, 5 Dec\nDeposit & Claim\nFull terms & conditions",
+        "DAY 5 · 5 DECEMBER\nCHRISTMAS FREE SPINS\n75 FREE SPINS\non John Hunter and the Book of Tut\nMin. deposit: 40 CAD\nWagering: x25\nValid until: 23:59, 5 Dec\n✓ Bonus credited\nFull terms & conditions",
+        "DAY 5 · 5 DECEMBER\nCHRISTMAS FREE SPINS\n75 FREE SPINS\non John Hunter and the Book of Tut\nMin. deposit: 40 CAD\nWagering: x25\nValid until: 23:59, 5 Dec\nGift expired\nFull terms & conditions",
+        "DAY 5 · 5 DECEMBER\nSURPRISE GIFT\nOpens 5 December\nCome back tomorrow to unlock this gift\nLocked · 5 Dec\nFull terms & conditions"
+      ],
+      [
+        "DAY 6 · 6 DECEMBER\nCHRISTMAS FREE SPINS\n80 FREE SPINS\non Gemhalla\nMin. deposit: 50 CAD\nWagering: x25\nValid until: 23:59, 6 Dec\nDeposit & Claim\nFull terms & conditions",
+        "DAY 6 · 6 DECEMBER\nCHRISTMAS FREE SPINS\n80 FREE SPINS\non Gemhalla\nMin. deposit: 50 CAD\nWagering: x25\nValid until: 23:59, 6 Dec\n✓ Bonus credited\nFull terms & conditions",
+        "DAY 6 · 6 DECEMBER\nCHRISTMAS FREE SPINS\n80 FREE SPINS\non Gemhalla\nMin. deposit: 50 CAD\nWagering: x25\nValid until: 23:59, 6 Dec\nGift expired\nFull terms & conditions",
+        "DAY 6 · 6 DECEMBER\nSURPRISE GIFT\nOpens 6 December\nCome back tomorrow to unlock this gift\nLocked · 6 Dec\nFull terms & conditions"
+      ],
+      [
+        "DAY 7 · 7 DECEMBER\nCHRISTMAS FREE SPINS\n90 FREE SPINS\non Bonanza Billion\nMin. deposit: 55 CAD\nWagering: x25\nValid until: 23:59, 7 Dec\nDeposit & Claim\nFull terms & conditions",
+        "DAY 7 · 7 DECEMBER\nCHRISTMAS FREE SPINS\n90 FREE SPINS\non Bonanza Billion\nMin. deposit: 55 CAD\nWagering: x25\nValid until: 23:59, 7 Dec\n✓ Bonus credited\nFull terms & conditions",
+        "DAY 7 · 7 DECEMBER\nCHRISTMAS FREE SPINS\n90 FREE SPINS\non Bonanza Billion\nMin. deposit: 55 CAD\nWagering: x25\nValid until: 23:59, 7 Dec\nGift expired\nFull terms & conditions",
+        "DAY 7 · 7 DECEMBER\nSURPRISE GIFT\nOpens 7 December\nCome back tomorrow to unlock this gift\nLocked · 7 Dec\nFull terms & conditions"
+      ],
+      [
+        "DAY 8 · 8 DECEMBER\nCHRISTMAS BONUS\n65% UP TO 1,000 CAD\nMin. deposit: 40 CAD\nWagering: x25\nValid until: 23:59, 8 Dec\nDeposit & Claim\nFull terms & conditions",
+        "DAY 8 · 8 DECEMBER\nCHRISTMAS BONUS\n65% UP TO 1,000 CAD\nMin. deposit: 40 CAD\nWagering: x25\nValid until: 23:59, 8 Dec\n✓ Bonus credited\nFull terms & conditions",
+        "DAY 8 · 8 DECEMBER\nCHRISTMAS BONUS\n65% UP TO 1,000 CAD\nMin. deposit: 40 CAD\nWagering: x25\nValid until: 23:59, 8 Dec\nGift expired\nFull terms & conditions",
+        "DAY 8 · 8 DECEMBER\nSURPRISE GIFT\nOpens 8 December\nCome back tomorrow to unlock this gift\nLocked · 8 Dec\nFull terms & conditions"
+      ],
+      [
+        "DAY 9 · 9 DECEMBER\nCHRISTMAS FREE SPINS\n74 FREE SPINS\non Big Bass Christmas – Frozen Lake\nMin. deposit: 50 CAD\nWagering: x25\nValid until: 23:59, 9 Dec\nDeposit & Claim\nFull terms & conditions",
+        "DAY 9 · 9 DECEMBER\nCHRISTMAS FREE SPINS\n74 FREE SPINS\non Big Bass Christmas – Frozen Lake\nMin. deposit: 50 CAD\nWagering: x25\nValid until: 23:59, 9 Dec\n✓ Bonus credited\nFull terms & conditions",
+        "DAY 9 · 9 DECEMBER\nCHRISTMAS FREE SPINS\n74 FREE SPINS\non Big Bass Christmas – Frozen Lake\nMin. deposit: 50 CAD\nWagering: x25\nValid until: 23:59, 9 Dec\nGift expired\nFull terms & conditions",
+        "DAY 9 · 9 DECEMBER\nSURPRISE GIFT\nOpens 9 December\nCome back tomorrow to unlock this gift\nLocked · 9 Dec\nFull terms & conditions"
+      ],
+      [
+        "DAY 10 · 10 DECEMBER\nCHRISTMAS BONUS\n62% UP TO 1,100 CAD\nMin. deposit: 55 CAD\nWagering: x25\nValid until: 23:59, 10 Dec\nDeposit & Claim\nFull terms & conditions",
+        "DAY 10 · 10 DECEMBER\nCHRISTMAS BONUS\n62% UP TO 1,100 CAD\nMin. deposit: 55 CAD\nWagering: x25\nValid until: 23:59, 10 Dec\n✓ Bonus credited\nFull terms & conditions",
+        "DAY 10 · 10 DECEMBER\nCHRISTMAS BONUS\n62% UP TO 1,100 CAD\nMin. deposit: 55 CAD\nWagering: x25\nValid until: 23:59, 10 Dec\nGift expired\nFull terms & conditions",
+        "DAY 10 · 10 DECEMBER\nSURPRISE GIFT\nOpens 10 December\nCome back tomorrow to unlock this gift\nLocked · 10 Dec\nFull terms & conditions"
+      ],
+      [
+        "DAY 11 · 11 DECEMBER\nCHRISTMAS FREE SPINS\n55 FREE SPINS\non Thunder Coins: Hold and Win\nMin. deposit: 35 CAD\nWagering: x25\nValid until: 23:59, 11 Dec\nDeposit & Claim\nFull terms & conditions",
+        "DAY 11 · 11 DECEMBER\nCHRISTMAS FREE SPINS\n55 FREE SPINS\non Thunder Coins: Hold and Win\nMin. deposit: 35 CAD\nWagering: x25\nValid until: 23:59, 11 Dec\n✓ Bonus credited\nFull terms & conditions",
+        "DAY 11 · 11 DECEMBER\nCHRISTMAS FREE SPINS\n55 FREE SPINS\non Thunder Coins: Hold and Win\nMin. deposit: 35 CAD\nWagering: x25\nValid until: 23:59, 11 Dec\nGift expired\nFull terms & conditions",
+        "DAY 11 · 11 DECEMBER\nSURPRISE GIFT\nOpens 11 December\nCome back tomorrow to unlock this gift\nLocked · 11 Dec\nFull terms & conditions"
+      ],
+      [
+        "DAY 12 · 12 DECEMBER\nCHRISTMAS FREE SPINS\n80 FREE SPINS\non Fruits 'n' Stars Holiday Edition\nMin. deposit: 40 CAD\nWagering: x25\nValid until: 23:59, 12 Dec\nDeposit & Claim\nFull terms & conditions",
+        "DAY 12 · 12 DECEMBER\nCHRISTMAS FREE SPINS\n80 FREE SPINS\non Fruits 'n' Stars Holiday Edition\nMin. deposit: 40 CAD\nWagering: x25\nValid until: 23:59, 12 Dec\n✓ Bonus credited\nFull terms & conditions",
+        "DAY 12 · 12 DECEMBER\nCHRISTMAS FREE SPINS\n80 FREE SPINS\non Fruits 'n' Stars Holiday Edition\nMin. deposit: 40 CAD\nWagering: x25\nValid until: 23:59, 12 Dec\nGift expired\nFull terms & conditions",
+        "DAY 12 · 12 DECEMBER\nSURPRISE GIFT\nOpens 12 December\nCome back tomorrow to unlock this gift\nLocked · 12 Dec\nFull terms & conditions"
+      ],
+      [
+        "DAY 13 · 13 DECEMBER\nCHRISTMAS FREE SPINS\n67 FREE SPINS\non Yeti Quest\nMin. deposit: 40 CAD\nWagering: x25\nValid until: 23:59, 13 Dec\nDeposit & Claim\nFull terms & conditions",
+        "DAY 13 · 13 DECEMBER\nCHRISTMAS FREE SPINS\n67 FREE SPINS\non Yeti Quest\nMin. deposit: 40 CAD\nWagering: x25\nValid until: 23:59, 13 Dec\n✓ Bonus credited\nFull terms & conditions",
+        "DAY 13 · 13 DECEMBER\nCHRISTMAS FREE SPINS\n67 FREE SPINS\non Yeti Quest\nMin. deposit: 40 CAD\nWagering: x25\nValid until: 23:59, 13 Dec\nGift expired\nFull terms & conditions",
+        "DAY 13 · 13 DECEMBER\nSURPRISE GIFT\nOpens 13 December\nCome back tomorrow to unlock this gift\nLocked · 13 Dec\nFull terms & conditions"
+      ],
+      [
+        "DAY 14 · 14 DECEMBER\nCHRISTMAS FREE SPINS\n90 FREE SPINS\non 25 Cookies: Hit the Bonus\nMin. deposit: 55 CAD\nWagering: x25\nValid until: 23:59, 14 Dec\nDeposit & Claim\nFull terms & conditions",
+        "DAY 14 · 14 DECEMBER\nCHRISTMAS FREE SPINS\n90 FREE SPINS\non 25 Cookies: Hit the Bonus\nMin. deposit: 55 CAD\nWagering: x25\nValid until: 23:59, 14 Dec\n✓ Bonus credited\nFull terms & conditions",
+        "DAY 14 · 14 DECEMBER\nCHRISTMAS FREE SPINS\n90 FREE SPINS\non 25 Cookies: Hit the Bonus\nMin. deposit: 55 CAD\nWagering: x25\nValid until: 23:59, 14 Dec\nGift expired\nFull terms & conditions",
+        "DAY 14 · 14 DECEMBER\nSURPRISE GIFT\nOpens 14 December\nCome back tomorrow to unlock this gift\nLocked · 14 Dec\nFull terms & conditions"
+      ],
+      [
+        "DAY 15 · 15 DECEMBER\nCHRISTMAS BONUS\n58% UP TO 800 CAD\nMin. deposit: 50 CAD\nWagering: x25\nValid until: 23:59, 15 Dec\nDeposit & Claim\nFull terms & conditions",
+        "DAY 15 · 15 DECEMBER\nCHRISTMAS BONUS\n58% UP TO 800 CAD\nMin. deposit: 50 CAD\nWagering: x25\nValid until: 23:59, 15 Dec\n✓ Bonus credited\nFull terms & conditions",
+        "DAY 15 · 15 DECEMBER\nCHRISTMAS BONUS\n58% UP TO 800 CAD\nMin. deposit: 50 CAD\nWagering: x25\nValid until: 23:59, 15 Dec\nGift expired\nFull terms & conditions",
+        "DAY 15 · 15 DECEMBER\nSURPRISE GIFT\nOpens 15 December\nCome back tomorrow to unlock this gift\nLocked · 15 Dec\nFull terms & conditions"
+      ],
+      [
+        "DAY 16 · 16 DECEMBER\nCHRISTMAS FREE SPINS\n82 FREE SPINS\non Christmas Carol Megaways\nMin. deposit: 50 CAD\nWagering: x25\nValid until: 23:59, 16 Dec\nDeposit & Claim\nFull terms & conditions",
+        "DAY 16 · 16 DECEMBER\nCHRISTMAS FREE SPINS\n82 FREE SPINS\non Christmas Carol Megaways\nMin. deposit: 50 CAD\nWagering: x25\nValid until: 23:59, 16 Dec\n✓ Bonus credited\nFull terms & conditions",
+        "DAY 16 · 16 DECEMBER\nCHRISTMAS FREE SPINS\n82 FREE SPINS\non Christmas Carol Megaways\nMin. deposit: 50 CAD\nWagering: x25\nValid until: 23:59, 16 Dec\nGift expired\nFull terms & conditions",
+        "DAY 16 · 16 DECEMBER\nSURPRISE GIFT\nOpens 16 December\nCome back tomorrow to unlock this gift\nLocked · 16 Dec\nFull terms & conditions"
+      ],
+      [
+        "DAY 17 · 17 DECEMBER\nCHRISTMAS BONUS\n45% UP TO 800 CAD\nMin. deposit: 40 CAD\nWagering: x25\nValid until: 23:59, 17 Dec\nDeposit & Claim\nFull terms & conditions",
+        "DAY 17 · 17 DECEMBER\nCHRISTMAS BONUS\n45% UP TO 800 CAD\nMin. deposit: 40 CAD\nWagering: x25\nValid until: 23:59, 17 Dec\n✓ Bonus credited\nFull terms & conditions",
+        "DAY 17 · 17 DECEMBER\nCHRISTMAS BONUS\n45% UP TO 800 CAD\nMin. deposit: 40 CAD\nWagering: x25\nValid until: 23:59, 17 Dec\nGift expired\nFull terms & conditions",
+        "DAY 17 · 17 DECEMBER\nSURPRISE GIFT\nOpens 17 December\nCome back tomorrow to unlock this gift\nLocked · 17 Dec\nFull terms & conditions"
+      ],
+      [
+        "DAY 18 · 18 DECEMBER\nCHRISTMAS FREE SPINS\n63 FREE SPINS\non Big Bass Christmas – Frozen Lake\nMin. deposit: 40 CAD\nWagering: x25\nValid until: 23:59, 18 Dec\nDeposit & Claim\nFull terms & conditions",
+        "DAY 18 · 18 DECEMBER\nCHRISTMAS FREE SPINS\n63 FREE SPINS\non Big Bass Christmas – Frozen Lake\nMin. deposit: 40 CAD\nWagering: x25\nValid until: 23:59, 18 Dec\n✓ Bonus credited\nFull terms & conditions",
+        "DAY 18 · 18 DECEMBER\nCHRISTMAS FREE SPINS\n63 FREE SPINS\non Big Bass Christmas – Frozen Lake\nMin. deposit: 40 CAD\nWagering: x25\nValid until: 23:59, 18 Dec\nGift expired\nFull terms & conditions",
+        "DAY 18 · 18 DECEMBER\nSURPRISE GIFT\nOpens 18 December\nCome back tomorrow to unlock this gift\nLocked · 18 Dec\nFull terms & conditions"
+      ],
+      [
+        "DAY 19 · 19 DECEMBER\nCHRISTMAS FREE SPINS\n95 FREE SPINS\non Fruits 'n' Stars Holiday Edition\nMin. deposit: 55 CAD\nWagering: x25\nValid until: 23:59, 19 Dec\nDeposit & Claim\nFull terms & conditions",
+        "DAY 19 · 19 DECEMBER\nCHRISTMAS FREE SPINS\n95 FREE SPINS\non Fruits 'n' Stars Holiday Edition\nMin. deposit: 55 CAD\nWagering: x25\nValid until: 23:59, 19 Dec\n✓ Bonus credited\nFull terms & conditions",
+        "DAY 19 · 19 DECEMBER\nCHRISTMAS FREE SPINS\n95 FREE SPINS\non Fruits 'n' Stars Holiday Edition\nMin. deposit: 55 CAD\nWagering: x25\nValid until: 23:59, 19 Dec\nGift expired\nFull terms & conditions",
+        "DAY 19 · 19 DECEMBER\nSURPRISE GIFT\nOpens 19 December\nCome back tomorrow to unlock this gift\nLocked · 19 Dec\nFull terms & conditions"
+      ],
+      [
+        "DAY 20 · 20 DECEMBER\nCHRISTMAS FREE SPINS\n82 FREE SPINS\non Sweet Bonanza XMas\nMin. deposit: 50 CAD\nWagering: x25\nValid until: 23:59, 20 Dec\nDeposit & Claim\nFull terms & conditions",
+        "DAY 20 · 20 DECEMBER\nCHRISTMAS FREE SPINS\n82 FREE SPINS\non Sweet Bonanza XMas\nMin. deposit: 50 CAD\nWagering: x25\nValid until: 23:59, 20 Dec\n✓ Bonus credited\nFull terms & conditions",
+        "DAY 20 · 20 DECEMBER\nCHRISTMAS FREE SPINS\n82 FREE SPINS\non Sweet Bonanza XMas\nMin. deposit: 50 CAD\nWagering: x25\nValid until: 23:59, 20 Dec\nGift expired\nFull terms & conditions",
+        "DAY 20 · 20 DECEMBER\nSURPRISE GIFT\nOpens 20 December\nCome back tomorrow to unlock this gift\nLocked · 20 Dec\nFull terms & conditions"
+      ],
+      [
+        "DAY 21 · 21 DECEMBER\nCHRISTMAS BONUS\n65% UP TO 800 CAD\nMin. deposit: 40 CAD\nWagering: x25\nValid until: 23:59, 21 Dec\nDeposit & Claim\nFull terms & conditions",
+        "DAY 21 · 21 DECEMBER\nCHRISTMAS BONUS\n65% UP TO 800 CAD\nMin. deposit: 40 CAD\nWagering: x25\nValid until: 23:59, 21 Dec\n✓ Bonus credited\nFull terms & conditions",
+        "DAY 21 · 21 DECEMBER\nCHRISTMAS BONUS\n65% UP TO 800 CAD\nMin. deposit: 40 CAD\nWagering: x25\nValid until: 23:59, 21 Dec\nGift expired\nFull terms & conditions",
+        "DAY 21 · 21 DECEMBER\nSURPRISE GIFT\nOpens 21 December\nCome back tomorrow to unlock this gift\nLocked · 21 Dec\nFull terms & conditions"
+      ],
+      [
+        "DAY 22 · 22 DECEMBER\nCHRISTMAS FREE SPINS\n62 FREE SPINS\non Yeti Quest\nMin. deposit: 35 CAD\nWagering: x25\nValid until: 23:59, 22 Dec\nDeposit & Claim\nFull terms & conditions",
+        "DAY 22 · 22 DECEMBER\nCHRISTMAS FREE SPINS\n62 FREE SPINS\non Yeti Quest\nMin. deposit: 35 CAD\nWagering: x25\nValid until: 23:59, 22 Dec\n✓ Bonus credited\nFull terms & conditions",
+        "DAY 22 · 22 DECEMBER\nCHRISTMAS FREE SPINS\n62 FREE SPINS\non Yeti Quest\nMin. deposit: 35 CAD\nWagering: x25\nValid until: 23:59, 22 Dec\nGift expired\nFull terms & conditions",
+        "DAY 22 · 22 DECEMBER\nSURPRISE GIFT\nOpens 22 December\nCome back tomorrow to unlock this gift\nLocked · 22 Dec\nFull terms & conditions"
+      ],
+      [
+        "DAY 23 · 23 DECEMBER\nCHRISTMAS FREE SPINS\n99 FREE SPINS\non 25 Cookies: Hit the Bonus\nMin. deposit: 50 CAD\nWagering: x25\nValid until: 23:59, 23 Dec\nDeposit & Claim\nFull terms & conditions",
+        "DAY 23 · 23 DECEMBER\nCHRISTMAS FREE SPINS\n99 FREE SPINS\non 25 Cookies: Hit the Bonus\nMin. deposit: 50 CAD\nWagering: x25\nValid until: 23:59, 23 Dec\n✓ Bonus credited\nFull terms & conditions",
+        "DAY 23 · 23 DECEMBER\nCHRISTMAS FREE SPINS\n99 FREE SPINS\non 25 Cookies: Hit the Bonus\nMin. deposit: 50 CAD\nWagering: x25\nValid until: 23:59, 23 Dec\nGift expired\nFull terms & conditions",
+        "DAY 23 · 23 DECEMBER\nSURPRISE GIFT\nOpens 23 December\nCome back tomorrow to unlock this gift\nLocked · 23 Dec\nFull terms & conditions"
+      ],
+      [
+        "DAY 24 · 24 DECEMBER\nCHRISTMAS BONUS\n80% UP TO 600 CAD\nMin. deposit: 55 CAD\nWagering: x25\nValid until: 23:59, 24 Dec\nDeposit & Claim\nFull terms & conditions",
+        "DAY 24 · 24 DECEMBER\nCHRISTMAS BONUS\n80% UP TO 600 CAD\nMin. deposit: 55 CAD\nWagering: x25\nValid until: 23:59, 24 Dec\n✓ Bonus credited\nFull terms & conditions",
+        "DAY 24 · 24 DECEMBER\nCHRISTMAS BONUS\n80% UP TO 600 CAD\nMin. deposit: 55 CAD\nWagering: x25\nValid until: 23:59, 24 Dec\nGift expired\nFull terms & conditions",
+        "DAY 24 · 24 DECEMBER\nSURPRISE GIFT\nOpens 24 December\nCome back tomorrow to unlock this gift\nLocked · 24 Dec\nFull terms & conditions"
+      ],
+      [
+        "DAY 25 · 25 DECEMBER\nCHRISTMAS FREE SPINS\n101 FREE SPINS\non Christmas Carol Megaways\nMin. deposit: 55 CAD\nWagering: x25\nValid until: 23:59, 25 Dec\nDeposit & Claim\nFull terms & conditions",
+        "DAY 25 · 25 DECEMBER\nCHRISTMAS FREE SPINS\n101 FREE SPINS\non Christmas Carol Megaways\nMin. deposit: 55 CAD\nWagering: x25\nValid until: 23:59, 25 Dec\n✓ Bonus credited\nFull terms & conditions",
+        "DAY 25 · 25 DECEMBER\nCHRISTMAS FREE SPINS\n101 FREE SPINS\non Christmas Carol Megaways\nMin. deposit: 55 CAD\nWagering: x25\nValid until: 23:59, 25 Dec\nGift expired\nFull terms & conditions",
+        "DAY 25 · 25 DECEMBER\nSURPRISE GIFT\nOpens 25 December\nCome back tomorrow to unlock this gift\nLocked · 25 Dec\nFull terms & conditions"
+      ],
+      [
+        "DAY 26 · 26 DECEMBER\nCHRISTMAS BONUS\n60% UP TO 950 CAD\nMin. deposit: 35 CAD\nWagering: x25\nValid until: 23:59, 26 Dec\nDeposit & Claim\nFull terms & conditions",
+        "DAY 26 · 26 DECEMBER\nCHRISTMAS BONUS\n60% UP TO 950 CAD\nMin. deposit: 35 CAD\nWagering: x25\nValid until: 23:59, 26 Dec\n✓ Bonus credited\nFull terms & conditions",
+        "DAY 26 · 26 DECEMBER\nCHRISTMAS BONUS\n60% UP TO 950 CAD\nMin. deposit: 35 CAD\nWagering: x25\nValid until: 23:59, 26 Dec\nGift expired\nFull terms & conditions",
+        "DAY 26 · 26 DECEMBER\nSURPRISE GIFT\nOpens 26 December\nCome back tomorrow to unlock this gift\nLocked · 26 Dec\nFull terms & conditions"
+      ]
+    ]
+  }
+}
