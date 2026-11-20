@@ -17,7 +17,6 @@ const sheet = JSON.parse(fs.readFileSync(path.join(dataDir, 'source', 'sheet.jso
 
 const DAYS = 26;
 const NBSP = ' ';
-const PLACEHOLDER_ENDED = 'The Christmas Journey has ended. Thank you for travelling with us!';
 const UI_LANGS = ['EN', 'RU', 'FR_CA', 'DE', 'BG', 'NL', 'RO_MD', 'TR', 'NO', 'IT', 'DA', 'SV'];
 
 // ---- market table ------------------------------------------------------------
@@ -250,8 +249,24 @@ function buildMarketCards(market, uiByLang) {
   return days;
 }
 
+// "Xmas" spelling (owner decision 2026-11-20: "Xmas" is correct). The sheet spells the day-20 game "Sweet Bonanza XMas" in
+// EN_GBP, EN_USD, EN_CAD and RO_MDL and "Sweet Bonanza Xmas" in every other market; every "XMas" in the card text becomes
+// "Xmas" on each import (FR_CA follows, it is built from EN_CAD). Case-sensitive: the promo code "XMASLUCK" is not touched.
+const xmasFixed = new Map(); // market -> days where "XMas" was replaced
+
 /** Applies explicit known fixes to raw lines before parsing. */
 function applyCardFixes(market, days) {
+  for (const d of days) {
+    for (const state of ['active', 'expired', 'locked']) {
+      d.raw[state] = d.raw[state].map((l) => {
+        if (!l.includes('XMas')) return l;
+        if (!xmasFixed.has(market.id)) xmasFixed.set(market.id, new Set());
+        xmasFixed.get(market.id).add(d.day);
+        return l.replaceAll('XMas', 'Xmas');
+      });
+    }
+  }
+
   if (market.id === 'RO_MDL') {
     const day4 = days[3];
     let count = 0;
@@ -448,8 +463,35 @@ for (const [k, from, to] of FR_CA_UI) {
   }
 }
 
-// campaign_ended placeholder
-for (const l of UI_LANGS) uiAll[l].strings.campaign_ended = PLACEHOLDER_ENDED;
+// "Campaign ended" message (key campaign_ended, shown under the intro title after 26 December). The sheet has no such row.
+// Translated by the agency on 2026-11-20 (owner: "tradu tu", we translate it ourselves). Each language uses the campaign
+// name of its own campaign_title and the same informal "you" as the rest of its page. RU avoids a past-tense verb after
+// "ты" (it would force a gender: "путешествовал/а"), hence "Спасибо за компанию в пути!". FR_CA: OQLF, no space before "!".
+// Length matters on phones: the dotted route (.route-wrap, margin-top -20px) is painted over the bottom 20 px of the message
+// box, so the LAST line must be short and centred. A text that fits on one line, or whose last line is long, gets a route dot
+// on its first letters (measured 2026-11-20: "Julresan är slut. Tack för att du reste med oss!" on one line from 365 px,
+// -2.4 px). Check any new wording with: node scripts/check-texts.mjs --widths=<w> --mobile --ended (rule route-over-text).
+const CAMPAIGN_ENDED = {
+  EN: 'The Christmas Journey has ended. Thank you for travelling with us!',
+  RU: 'Рождественское путешествие завершено. Спасибо за компанию в пути!',
+  FR_CA: 'Le Voyage de Noël est terminé. Merci d’avoir voyagé avec nous!',
+  DE: 'Die Weihnachtsreise ist zu Ende. Danke, dass du mit uns gereist bist!',
+  BG: 'Коледното пътешествие приключи. Благодарим ти, че беше с нас!',
+  NL: 'Het Kerstavontuur is afgelopen. Bedankt dat je met ons meereisde!',
+  RO_MD: 'Călătoria de Crăciun s-a încheiat. Îți mulțumim că ai călătorit cu noi!',
+  TR: 'Noel Yolculuğu sona erdi. Bizimle yolculuk ettiğin için teşekkürler!',
+  NO: 'Julereisen er over. Takk for at du ble med på reisen!',
+  IT: 'Il Viaggio di Natale è terminato. Grazie per aver viaggiato con noi!',
+  DA: 'Juleeventyret er slut. Tak, fordi du var med på rejsen!',
+  SV: 'Julresan är slut. Tack för att du följde med på resan!',
+};
+for (const l of UI_LANGS) {
+  if (!CAMPAIGN_ENDED[l]) throw new Error('CAMPAIGN_ENDED missing for ' + l);
+  const sheetText = uiAll[l].strings.campaign_ended;
+  if (sheetText && sheetText !== CAMPAIGN_ENDED[l]) notes.push(`${l} campaign_ended: the sheet now has "${sheetText}"; the agency text "${CAMPAIGN_ENDED[l]}" is still used (change CAMPAIGN_ENDED in scripts/import-sheet.mjs to take the sheet text).`);
+  uiAll[l].strings.campaign_ended = CAMPAIGN_ENDED[l];
+}
+log('OVERRIDE campaign_ended written in ' + UI_LANGS.length + ' languages (agency translation, 2026-11-20).');
 
 // Cards: parse EN_GBP first (reference), then everything else
 const rawByMarket = {};
@@ -597,7 +639,15 @@ for (const [day, mm] of gameVariants) {
     spellItems.push(`Day ${day}: different game names across markets - ${parts.join(' and ')}.`);
   }
 }
-section('Game name spelling differs between markets ("Sweet Bonanza XMas" vs "Xmas")', '', spellItems);
+if (xmasFixed.size) {
+  const where = [...xmasFixed].map(([m, ds]) => `${m} (day ${[...ds].join(', ')})`);
+  if (xmasFixed.has('EN_CAD')) where.push('FR_CA (built from EN_CAD)');
+  const text = `Settled, not an open point (owner decision 2026-11-20: "Xmas" is correct): the sheet spells the game "Sweet Bonanza XMas" in ${where.join(', ')}. The script writes "Sweet Bonanza Xmas" there on every import, like every other market; the sheet is untouched.`;
+  spellItems.unshift({ text, decided: true });
+  log(`"XMas" -> "Xmas" in ${where.join(', ')} (owner decision 2026-11-20)`);
+}
+const spellOpen = spellItems.some((it) => typeof it === 'string');
+section(`Game name spelling differs between markets ("Sweet Bonanza XMas" vs "Xmas")${spellOpen ? '' : ' - decided by the owner on 2026-11-20'}`, '', spellItems);
 
 // Duplicate keys with different translations
 const dupItems = [];
@@ -636,7 +686,10 @@ section('Same text translated differently in two places of the UI ELEMENT tab', 
 const missing = [];
 if (timerRowSeen) missing.push('The last row of the UI ELEMENT tab is called "Timer" but has no text or translations. We use the countdown format 14:32:08 (HH:MM:SS) from the "gift_timer" row and the "Unlocks in" text; please confirm that is all that is needed.');
 else missing.push('The "Timer" row was not found in the UI ELEMENT tab.');
-missing.push(`There is no "campaign ended" message in the sheet. After 26 December the page needs one, so we added the English placeholder "${PLACEHOLDER_ENDED}" under the key campaign_ended, in all 12 UI languages. Please send the translations.`);
+missing.push({
+  text: `Settled, not an open point: there is no "campaign ended" message in the sheet. After 26 December the page shows one under the intro title (key campaign_ended). The agency translated it on 2026-11-20 (owner decision: we translate it ourselves); the script writes these texts on every import, the sheet is untouched: ${UI_LANGS.map((l) => `${l}: "${CAMPAIGN_ENDED[l]}"`).join('; ')}. If you want a different wording in any language, tell us.`,
+  decided: true,
+});
 missing.push('Login link and Terms & Conditions links (card "Full terms & conditions" and the legal line "Full campaign terms apply") are not in the links sheet and not confirmed. src/config.js still has "#" placeholders for login, terms and campaignTerms. Please send the final URLs. (Deposit links per day come from the links sheet via scripts/import-links.mjs.)');
 section('Missing in the sheet', '', missing);
 

@@ -1,6 +1,6 @@
 // Numeric check of EVERY visible text of the page (T6e addition, owner 2026-11-19). Nothing is hand-listed: the texts are discovered from the DOM.
 //
-//   node scripts/check-texts.mjs --widths=390 [--markets=TR,RU] [--out=DIR]
+//   node scripts/check-texts.mjs --widths=390 [--markets=TR,RU] [--out=DIR] [--mobile] [--ended]
 //
 // Run ONE width per process on a small machine (about 6 minutes per width for 15 markets x 26 days).
 // For every market x day 1-26 x width it collects, from the rendered page and from the opened card (and the market menu):
@@ -48,6 +48,13 @@ const ONLY = arg('markets')?.split(',');
 const OUT = arg('out') || process.cwd();
 // --mobile: phone emulation (touch, overlay scrollbars => no 15px gutter, DPR 3) for widths <= 768, like a real phone
 const MOBILE_EMU = args.includes('--mobile');
+// --ended: the campaign-over page (2026-11-20). One load per market at ?date=2026-12-28 (no active gift, no card): every
+// page text is checked as above, the "campaign ended" message under the intro title (.intro__ended) included; its size and
+// line count are printed per market, and a market where it is missing counts as a failure. On phones the dotted route
+// (.route-wrap, margin-top -20px) is painted over the bottom of that message box: rule route-over-text fails when the route
+// stroke comes closer than 0 px to a text line box of the message (a dot on the letters).
+const ENDED = args.includes('--ended');
+const ENDED_DATE = '2026-12-28';
 const ALL_MARKETS = fs
   .readdirSync(path.join(ROOT, 'data', 'cards'))
   .filter((f) => f.endsWith('.json'))
@@ -230,6 +237,7 @@ const seenKey = new Set();
 const counts = new Map(); // `${type}|${market}` -> fail count
 const owned = new Map(); // market -> checked element count
 let checked = 0;
+const endedInfo = []; // --ended: { market, width, text, w, h, lines, fontSize, vw }
 
 function record(market, day, width, scope, res) {
   if (res.error) { failures.push({ market, day, width, scope, selector: scope, type: 'scope', text: '', rule: 'no-scope', values: { error: res.error } }); return; }
@@ -256,6 +264,65 @@ async function main() {
         const emu = MOBILE_EMU && width <= 768;
         const ctx = await browser.newContext({ viewport: { width, height: width <= 768 ? 844 : 900 }, deviceScaleFactor: emu ? 3 : 1, ...(emu ? { isMobile: true, hasTouch: true } : {}) });
         const page = await ctx.newPage();
+        if (ENDED) {
+          await page.goto(`${base}/?date=${ENDED_DATE}&market=${market}`, { waitUntil: 'networkidle' });
+          await page.evaluate(() => document.fonts.ready);
+          await page.waitForTimeout(300);
+          const info = await page.evaluate(async () => {
+            const el = document.querySelector('.intro__ended');
+            if (!el || !el.getClientRects().length) return null;
+            const r = el.getBoundingClientRect();
+            const rng = document.createRange();
+            rng.selectNodeContents(el);
+            const lines = [...rng.getClientRects()];
+            const tops = new Set(lines.map((x) => Math.round(x.top)));
+            // Mobile: .route-wrap (margin-top -20px, positioned, later in the DOM) paints the dotted route over the bottom of the
+            // message box. routeGap = smallest distance (CSS px) from the painted route stroke to a text line box of the message,
+            // only where the route is visible (inside .route-wrap); < 0 means a route dot can sit on the text.
+            let routeGap = null;
+            const img = document.querySelector('.route--base');
+            const wrap = document.querySelector('.route-wrap');
+            if (img && wrap && document.querySelector('.page[data-layout="mobile"]')) {
+              const svgText = await (await fetch(img.src)).text();
+              const doc = new DOMParser().parseFromString(svgText, 'image/svg+xml');
+              const src = doc.querySelector('path');
+              const vb = doc.documentElement.getAttribute('viewBox').split(/\s+/).map(Number);
+              const ns = 'http://www.w3.org/2000/svg';
+              const svg = document.createElementNS(ns, 'svg');
+              svg.style.cssText = 'position:absolute;width:0;height:0;overflow:hidden';
+              const p = document.createElementNS(ns, 'path');
+              p.setAttribute('d', src.getAttribute('d'));
+              svg.appendChild(p);
+              document.body.appendChild(svg);
+              const ir = img.getBoundingClientRect();
+              const wr = wrap.getBoundingClientRect();
+              const sx = ir.width / vb[2], sy = ir.height / vb[3];
+              const half = (Number(src.getAttribute('stroke-width')) / 2) * Math.max(sx, sy);
+              const len = p.getTotalLength();
+              for (let s = 0; s <= len; s += 0.5) {
+                const pt = p.getPointAtLength(s);
+                const x = ir.left + pt.x * sx, y = ir.top + pt.y * sy;
+                if (x < wr.left || x > wr.right || y < wr.top || y > wr.bottom) continue;
+                for (const ln of lines) {
+                  const dx = Math.max(ln.left - x, 0, x - ln.right), dy = Math.max(ln.top - y, 0, y - ln.bottom);
+                  const g = Math.hypot(dx, dy) - half;
+                  if (routeGap === null || g < routeGap) routeGap = g;
+                }
+              }
+              svg.remove();
+              if (routeGap !== null) routeGap = +routeGap.toFixed(1);
+            }
+            return { text: el.textContent.trim(), w: +r.width.toFixed(1), h: +r.height.toFixed(1), lines: tops.size, fontSize: getComputedStyle(el).fontSize, vw: document.documentElement.clientWidth, routeGap };
+          });
+          if (!info) failures.push({ market, day: null, width, scope: 'page', selector: '.intro__ended', type: '.intro__ended', text: '', rule: 'ended-missing', values: {} });
+          else {
+            endedInfo.push({ market, width, ...info });
+            if (info.routeGap !== null && info.routeGap < 0) failures.push({ market, day: 28, width, scope: 'page', selector: '.intro__ended', type: '.intro__ended', text: info.text, rule: 'route-over-text', values: { routeGap: info.routeGap } });
+          }
+          record(market, 28, width, 'page', await page.evaluate(collectTexts, { scope: 'body', exclude: '.overlay, [hidden]', market }));
+          await ctx.close();
+          continue;
+        }
         const seen = new Set();
         let d = 1, first = true;
         for (let guard = 0; guard < 30 && seen.size < 26; guard++) {
@@ -298,6 +365,10 @@ async function main() {
   } finally {
     await browser.close();
     await server.close();
+  }
+  if (ENDED) {
+    console.log(`\nENDED MESSAGE (?date=${ENDED_DATE}): market | width | box w x h | lines | font | route gap px (mobile, < 0 = route on text) | text`);
+    for (const e of endedInfo) console.log(`${e.market.padEnd(7)} ${String(e.width).padStart(5)} ${`${e.w} x ${e.h}`.padStart(14)} ${String(e.lines).padStart(3)} ${e.fontSize.padStart(5)} ${String(e.routeGap ?? '-').padStart(6)}  ${e.text}`);
   }
   // summary: element type x market -> fails
   const types = [...new Set([...counts.keys()].map((k) => k.split('|')[0]))].sort();
