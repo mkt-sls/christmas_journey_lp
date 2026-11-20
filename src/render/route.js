@@ -26,10 +26,15 @@ const MOBILE = {
   kOther: 0.72,
   // middle of today's gift art (opaque gift + podium, no TODAY pill) relative to the pedestal centre py, stage units
   activeGiftMid: -14.69,
+  // the same for the smaller past (missed) and future (locked) gifts (kOther), measured by scripts/check-label-centre.mjs (giftMidRel)
+  otherGiftMid: { missed: -9.54, locked: -9.9 },
+  // the past label of slot 0 is raised this far above its centred position (stage px): Santa, riding between slot 0 and 1, would otherwise
+  // poke into its bottom-left corner (owner choice b, 2026-11-20; scripts/check-santa.mjs)
+  pastSlot0Raise: 4,
   // today's label that grows to the right (slots 0 and 2) moves this far right so that, now level with the gift, it clears the
   // right end of the TODAY pill (widest pill: FR_CA, plus the label's garland that sticks out ~9 px on its left; owner choice a, 2026-11-19)
   activeShiftRight: 22,
-  // label anchors per slot: [left edge, top offset from pedestal centre, grow to the left?]
+  // label anchors per slot: [left edge offset, top offset from pedestal centre (only used by the top-pinned past labels, see stopHtml), grow to the left?]; the other labels get their vertical position from the gift middle (activeGiftMid / otherGiftMid)
   label: [
     { dx: 39, dy: -44.6, left: false },
     { dx: -69, dy: -67, left: true },
@@ -266,7 +271,17 @@ function stopHtml({ layout, spec, slot, day, today, ui, uiLang, card, chipDay, c
       // breathing `scale` grows about y 0 (x as before). Measured by scripts/check-label-centre.mjs.
       pos = `left:${r(cx + a.dx + (a.left ? 0 : MOBILE.activeShiftRight))}px;top:${r(py + MOBILE.activeGiftMid)}px;transform:translate(${a.left ? '-100%' : '0'},-50%);transform-origin:${a.left ? '-50%' : '50%'} 0`;
     } else {
-      pos = `left:${r(cx + a.dx)}px;top:${r(py + a.dy)}px;${a.left ? 'transform:translateX(-100%);transform-origin:-50% 50%' : ''}`;
+      // past / future labels: same idea, the label's vertical middle sits on the middle of ITS gift (smaller art, kOther), whatever
+      // its line count or the countdown pill. These labels only fade in (no scale), so the origin is only kept consistent with today's.
+      // Two PAST states stay TOP-pinned at the old dy (no centring): the past label of slot 1 (today in slot 2) and of slot 2 (campaign over,
+      // Santa at the route end). Centred, it would sit right where Santa rides (his bag pokes 10 / 16 px into it, Dec 26 / Dec 28).
+      // Santa clearance, owner decision 2026-11-20. The past label of slot 0 is centred but raised (pastSlot0Raise).
+      if (state === 'missed' && slot > 0) {
+        pos = `left:${r(cx + a.dx)}px;top:${r(py + a.dy)}px;${a.left ? 'transform:translateX(-100%);transform-origin:-50% 50%' : ''}`;
+      } else {
+        const raise = state === 'missed' ? MOBILE.pastSlot0Raise : 0; // state missed and slot 0 here
+        pos = `left:${r(cx + a.dx)}px;top:${r(py + MOBILE.otherGiftMid[state] - raise)}px;transform:translate(${a.left ? '-100%' : '0'},-50%);transform-origin:${a.left ? '-50%' : '0'} 0`;
+      }
     }
   }
   const near = layout === 'desktop' ? Math.abs(slot - 2) === 1 : true;

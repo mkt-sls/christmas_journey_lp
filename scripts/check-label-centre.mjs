@@ -42,6 +42,8 @@ const [D0, D1] = (arg('days') || '1-26').split('-').map(Number);
 const ACTIVE_ONLY = args.includes('--active-only');
 const OUT = arg('out');
 const SHOTS = arg('shots');
+// --mobile: phone emulation (touch, overlay scrollbars => stage = full viewport width like a real phone, no 15px gutter)
+const MOBILE_EMU = args.includes('--mobile');
 const SHIFT = arg('shift'); // QA only: a = today label +14 stage px right in slot 0/2, b = only as far as the pill needs (per market)
 const MARKETS = fs
   .readdirSync(path.join(ROOT, 'data', 'cards'))
@@ -92,6 +94,24 @@ async function measure() {
     return w > 0 && h > 0 ? { w, h, a: w * h } : null;
   };
   const labels = [...document.querySelectorAll('.label')];
+  const extOf = (lab) => {
+    const e = R(lab);
+    for (const d of lab.querySelectorAll('*')) {
+      const q = R(d);
+      e.l = Math.min(e.l, q.l);
+      e.t = Math.min(e.t, q.t);
+      e.r = Math.max(e.r, q.r);
+      e.b = Math.max(e.b, q.b);
+    }
+    return e;
+  };
+  const gifts = [];
+  for (const g of document.querySelectorAll('.gift')) {
+    const im = g.querySelector('.gift__img');
+    const m = await maskOf(im);
+    const ib = im.getBoundingClientRect();
+    gifts.push({ day: Number(g.dataset.open), m, ib, sx: ib.width / m.W, sy: ib.height / m.H });
+  }
   const santa = document.querySelector('.santa img');
   const santaBox = santa ? R(santa) : null;
   const out = [];
@@ -126,42 +146,41 @@ async function measure() {
       const st = gb.width / (120 * k);
       rec.giftMidRel = (rec.giftMid - gb.top) / st - 80 * k;
     }
-    if (state === 'active') {
-      // opaque gift art pixels under the label: sample the intersection on a 0.5px grid
-      // the label's decorations (snow cap, holly, garland bulbs) stick out of its box: cover tests use the union of all its parts
-      const ext = { ...lb };
-      for (const d of lab.querySelectorAll('*')) {
-        const q = R(d);
-        ext.l = Math.min(ext.l, q.l);
-        ext.t = Math.min(ext.t, q.t);
-        ext.r = Math.max(ext.r, q.r);
-        ext.b = Math.max(ext.b, q.b);
-      }
+    {
+      // what the label covers (every state): opaque art pixels of ANY gift, the TODAY pill, Santa's image box, every other label.
+      // gift art: tested against the label BOX (its decorations are bounding boxes of mostly transparent SVGs); pill / Santa / other labels: against the union of all its parts (snow cap, holly, garland bulbs stick out of the box)
+      const ext = extOf(lab);
       rec.extBox = ext;
       let px = 0;
-      const ix = inter(lb, { l: ib.left, t: ib.top, r: ib.right, b: ib.bottom });
-      if (ix) {
-        const L = Math.max(lb.l, ib.left);
-        const T = Math.max(lb.t, ib.top);
-        for (let y = T; y < Math.min(lb.b, ib.bottom); y += 0.5)
-          for (let x = L; x < Math.min(lb.r, ib.right); x += 0.5) {
-            const ux = Math.floor((x - ib.left) / sx);
-            const uy = Math.floor((y - ib.top) / sy);
-            if (ux >= 0 && uy >= 0 && ux < m.W && uy < m.H && m.d[(uy * m.W + ux) * 4 + 3] > 128) px += 0.25;
-          }
+      const perGift = [];
+      for (const g of gifts) {
+        let n = 0;
+        const gm = g.m;
+        const gb = g.ib;
+        if (inter(lb, { l: gb.left, t: gb.top, r: gb.right, b: gb.bottom })) {
+          const L = Math.max(lb.l, gb.left);
+          const T = Math.max(lb.t, gb.top);
+          for (let y = T; y < Math.min(lb.b, gb.bottom); y += 0.5)
+            for (let x = L; x < Math.min(lb.r, gb.right); x += 0.5) {
+              const ux = Math.floor((x - gb.left) / g.sx);
+              const uy = Math.floor((y - gb.top) / g.sy);
+              if (ux >= 0 && uy >= 0 && ux < gm.W && uy < gm.H && gm.d[(uy * gm.W + ux) * 4 + 3] > 128) n += 0.25;
+            }
+        }
+        if (n > 0) perGift.push({ day: g.day, px: n });
+        px += n;
       }
-      rec.cover = { giftArtPx: px };
-      const pill = gift.querySelector('.today-pill');
+      rec.cover = { giftArtPx: px, giftArt: perGift };
+      const pill = document.querySelector('.gift--active .today-pill');
       const pi = pill ? inter(ext, R(pill)) : null;
       rec.cover.pill = pi ? pi.a : 0;
       const si = santaBox ? inter(ext, santaBox) : null;
       rec.cover.santaBox = si ? si.a : 0;
       rec.cover.other = labels
         .filter((o) => o !== lab)
-        .map((o) => ({ day: Number(o.dataset.open), a: inter(ext, R(o))?.a || 0 }))
+        .map((o) => ({ day: Number(o.dataset.open), a: inter(ext, extOf(o))?.a || 0 }))
         .filter((o) => o.a > 0);
-      const pr = pill ? R(pill) : null;
-      rec.pillBox = pr;
+      rec.pillBox = pill ? R(pill) : null;
     }
     out.push(rec);
   }
@@ -192,7 +211,7 @@ async function main() {
   const browser = await chromium.launch({ executablePath: CHROME });
   const rows = [];
   try {
-    const ctx = await browser.newContext({ viewport: { width: WIDTH, height: 844 }, deviceScaleFactor: SHOTS ? 2 : 1 });
+    const ctx = await browser.newContext({ viewport: { width: WIDTH, height: 844 }, deviceScaleFactor: SHOTS ? 2 : MOBILE_EMU ? 3 : 1, ...(MOBILE_EMU ? { isMobile: true, hasTouch: true } : {}) });
     const page = await ctx.newPage();
     for (const market of MARKETS)
       for (let day = D0; day <= D1; day++) {
@@ -248,9 +267,12 @@ async function main() {
   if (OUT) fs.writeFileSync(OUT, JSON.stringify({ width: WIDTH, rows }));
   const f = (v) => v.toFixed(2);
   console.log(`width ${WIDTH}: ${rows.length} labels measured`);
+  // owner decision 2026-11-20 (Santa clearance): the PAST labels of slot 1 / slot 2 stay top-pinned (not centred), the past label of slot 0 is centred then raised
+  // by MOBILE.pastSlot0Raise. They are reported, not counted as centring failures.
+  const pinned = (r) => r.state === 'past' && r.slot > 0;
   const groups = new Map();
   for (const r of rows) {
-    const k = `${r.state} slot ${r.slot}`;
+    const k = `${r.state} slot ${r.slot}${pinned(r) ? ' [top-pinned by owner decision]' : r.state === 'past' && r.slot === 0 ? ' [raised 4 by owner decision]' : ''}`;
     if (!groups.has(k)) groups.set(k, []);
     groups.get(k).push(Math.abs(r.delta));
   }
@@ -263,11 +285,17 @@ async function main() {
   if (act.length) {
     const v = act.map((r) => Math.abs(r.delta));
     console.log(`ACTIVE total  n=${v.length} max |d| ${f(Math.max(...v))} mean |d| ${f(v.reduce((a, b) => a + b, 0) / v.length)} (>1px: ${v.filter((x) => x > 1).length})`);
-    const bad = act.filter((r) => r.cover.giftArtPx > 0.5 || (r.cover.pillPx ?? 0) > 0 || r.cover.santaBox > 0 || r.cover.other.length);
-    console.log(`ACTIVE overlaps (gift art px>0.5 | pill | santa img box | other label): ${bad.length}`);
-    for (const r of bad.slice(0, 40))
-      console.log(`  ${r.market} day ${r.today} slot ${r.slot}: art ${f(r.cover.giftArtPx)}px2, pill ${f(r.cover.pill)}, santaBox ${f(r.cover.santaBox)}, other ${JSON.stringify(r.cover.other)}`);
   }
+  const nonAct = rows.filter((r) => r.state !== 'active' && !pinned(r) && !(r.state === 'past' && r.slot === 0));
+  if (nonAct.length) {
+    const v = nonAct.map((r) => Math.abs(r.delta));
+    console.log(`NON-ACTIVE centred (future + nothing pinned/raised) total  n=${v.length} max |d| ${f(Math.max(...v))} mean |d| ${f(v.reduce((a, b) => a + b, 0) / v.length)} (>1px: ${v.filter((x) => x > 1).length})`);
+  }
+  // overlaps, every state: gift art px (any gift) > 0.5 | TODAY pill (pixel truth for the active label, rectangles for the others) | Santa image box | another label
+  const bad = rows.filter((r) => r.cover.giftArtPx > 0.5 || (r.state === 'active' ? (r.cover.pillPx ?? 0) > 0 : r.cover.pill > 0) || r.cover.santaBox > 0 || r.cover.other.length);
+  console.log(`OVERLAPS (gift art px>0.5 | pill | santa img box | other label): ${bad.length} (active ${bad.filter((r) => r.state === 'active').length}, past ${bad.filter((r) => r.state === 'past').length}, future ${bad.filter((r) => r.state === 'future').length})`);
+  for (const r of bad.slice(0, 60))
+    console.log(`  ${r.market} day ${r.today} ${r.state} slot ${r.slot} (label day ${r.day}): art ${f(r.cover.giftArtPx)}px2 ${JSON.stringify(r.cover.giftArt)}, pill ${f(r.cover.pill)}, santaBox ${f(r.cover.santaBox)}, other ${JSON.stringify(r.cover.other)}`);
 }
 
 await main();

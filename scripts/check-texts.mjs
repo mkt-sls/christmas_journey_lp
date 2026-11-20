@@ -46,6 +46,8 @@ const arg = (name) => args.find((a) => a.startsWith(`--${name}=`))?.slice(name.l
 const WIDTHS = (arg('widths') || '360,390,430,768,1024,1366,1920').split(',').map(Number);
 const ONLY = arg('markets')?.split(',');
 const OUT = arg('out') || process.cwd();
+// --mobile: phone emulation (touch, overlay scrollbars => no 15px gutter, DPR 3) for widths <= 768, like a real phone
+const MOBILE_EMU = args.includes('--mobile');
 const ALL_MARKETS = fs
   .readdirSync(path.join(ROOT, 'data', 'cards'))
   .filter((f) => f.endsWith('.json'))
@@ -251,7 +253,8 @@ async function main() {
     for (const width of WIDTHS) {
       const before = failures.length;
       for (const market of ALL_MARKETS) {
-        const ctx = await browser.newContext({ viewport: { width, height: width <= 768 ? 844 : 900 }, deviceScaleFactor: 1 });
+        const emu = MOBILE_EMU && width <= 768;
+        const ctx = await browser.newContext({ viewport: { width, height: width <= 768 ? 844 : 900 }, deviceScaleFactor: emu ? 3 : 1, ...(emu ? { isMobile: true, hasTouch: true } : {}) });
         const page = await ctx.newPage();
         const seen = new Set();
         let d = 1, first = true;
