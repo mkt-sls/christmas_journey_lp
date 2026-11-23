@@ -499,6 +499,34 @@ for (const [k, from, to] of FR_CA_UI) {
   }
 }
 
+// UI ELEMENT duplicates: the agency picks ONE translation per text (owner, 2026-11-23: "choose the best one"). The sheet is untouched;
+// the main-table value is overwritten here. Each entry: key, language, sheet text expected, text used. A sheet text that changed is
+// kept and reported under "Good to know" (and the duplicate stays open for that language). Number/time placeholders are unchanged:
+// the "4" in gifts_collected is part of the sheet text (the page does not render these three keys today; step3_title is rendered).
+const UI_DUP_PICKS = [
+  ['processing', 'NL', 'Bezig met verwerken...', 'Bezig met verwerken...'], // standard Dutch UI status wording
+  ['processing', 'IT', 'Elaborazione...', 'Elaborazione in corso...'], // "Elaborazione..." alone reads as a noun
+  ['step3_title', 'TR', 'Yatır ve al', 'Yatır ve al'], // Turkish UI writes "ve", not "&"
+  ['gifts_collected', 'RU', 'Собрано подарков: 4', 'Собрано подарков: 4'], // label form avoids plural agreement when the number changes
+  ['gifts_collected', 'BG', 'Събрани подаръци: 4', 'Събрани подаръци: 4'], // same reason
+  ['next_gift', 'TR', 'Sonraki hediye', 'Sonraki hediyeye kalan'], // it precedes the countdown: "time left to the next gift"
+];
+const dupPicked = new Map(); // `${key}:${lang}` -> { from: sheet main text, to: text used }
+for (const [k, l, from, to] of UI_DUP_PICKS) {
+  const cur = uiAll[l].strings[k];
+  if (cur === from) {
+    if (from !== to) {
+      uiAll[l].strings[k] = to;
+      log(`OVERRIDE ${l} ${k}: "${from}" -> "${to}" (agency pick between two sheet translations, owner 2026-11-23)`);
+    } else {
+      log(`OVERRIDE ${l} ${k}: sheet text "${to}" kept (agency pick between two sheet translations, owner 2026-11-23)`);
+    }
+    dupPicked.set(`${k}:${l}`, { from, to });
+  } else {
+    notes.push(`${l} ${k}: the sheet text is no longer "${from}", so the agency pick "${to}" was not applied (sheet text kept: "${cur}").`);
+  }
+}
+
 // "Campaign ended" message (key campaign_ended, shown under the intro title after 26 December). The sheet has no such row.
 // Translated by the agency on 2026-11-20 (owner: "tradu tu", we translate it ourselves). Each language uses the campaign
 // name of its own campaign_title and the same informal "you" as the rest of its page. RU avoids a past-tense verb after
@@ -700,19 +728,20 @@ const dupItems = [];
     const diffs = [];
     const langs = [];
     for (const l of UI_LANGS) {
-      const va = uiAll[l].strings[a];
+      const pick = dupPicked.get(`${a}:${l}`);
+      const va = pick ? pick.from : uiAll[l].strings[a]; // the sheet's main-table text (a pick may have replaced it in strings)
       const vb = uiAll[l].extras[b];
       if (va === undefined || vb === undefined) continue;
       if (va.trim().toLowerCase() !== vb.trim().toLowerCase()) {
-        const decision = l === 'FR_CA' && FR_CA_DUP_DECISION[a] ? ` [${FR_CA_DECIDED}: ${FR_CA_DUP_DECISION[a]}]` : '';
+        const decision = l === 'FR_CA' && FR_CA_DUP_DECISION[a] ? ` [${FR_CA_DECIDED}: ${FR_CA_DUP_DECISION[a]}]` : pick ? ` [agency choice 2026-11-23: "${pick.to}"]` : '';
         diffs.push(`${l}: "${va}" vs "${vb}"${decision}`);
         langs.push(l);
       }
     }
     if (!diffs.length) continue;
     const text = `"${label}" appears twice in the UI ELEMENT tab with different translations (${diffs.length} language${diffs.length > 1 ? 's' : ''}): ${diffs.join('; ')}. The page uses the main table value ("${a}") unless told otherwise.`;
-    // a line where only FR_CA differs is settled; a line that also lists another language stays open for that language
-    const settled = langs.every((l) => l === 'FR_CA' && FR_CA_DUP_DECISION[a]);
+    // a line is settled when every language on it is decided (FR_CA by the owner, others by an agency pick); one undecided language keeps it open
+    const settled = langs.every((l) => (l === 'FR_CA' && FR_CA_DUP_DECISION[a]) || dupPicked.has(`${a}:${l}`));
     dupItems.push(settled ? { text: `Settled, not an open point: ${text}`, decided: true } : text);
   }
 }
