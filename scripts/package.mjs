@@ -54,6 +54,14 @@ for (const f of fs.readdirSync(path.join(DIST, 'assets')).filter((n) => n.endsWi
   const hit = fs.readFileSync(path.join(DIST, 'assets', f), 'utf8').match(DATE_READ);
   if (hit) throw new Error(`client bundle assets/${f} still reads ?date= (${hit[0]})`);
 }
+// only shipped asset types may be in the client zip (internal notes in public/ once leaked as assets/README.md)
+const ALLOWED = new Set(['.html', '.js', '.css', '.svg', '.webp', '.png', '.jpg', '.woff2', '.json', '.ico']);
+const walk = (d) => fs.readdirSync(d, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]));
+for (const f of walk(DIST)) {
+  const ext = path.extname(f).toLowerCase();
+  const ok = ALLOWED.has(ext) || (ext === '.txt' && /^LICENSE/i.test(path.basename(f)));
+  if (!ok) throw new Error(`unexpected file in the client build: ${path.relative(DIST, f)}`);
+}
 const absolute = [...html.matchAll(/(?:src|href)="(\/[^"]*)"/g)].map((m) => m[1]);
 if (absolute.length) throw new Error(`dist/index.html has root-absolute URLs: ${absolute.join(', ')}`);
 
