@@ -1,12 +1,12 @@
-# Handoff — Christmas Journey LP (2026-11-20)
+# Handoff — Christmas Journey LP (2026-11-23)
 
-This file replaces the 2026-11-17 handoff. Older history: `git log`, `docs/PLAN.md`, `data/ISSUES.md`.
+This file replaces the 2026-11-20 handoff. Older history: `git log`, `docs/PLAN.md`, `data/ISSUES.md`.
 
 ## Where things stand
 - Repo: https://github.com/mkt-sls/christmas_journey_lp, branch `main`. Every push to `main` deploys GitHub Pages
   (`.github/workflows/pages.yml`).
 - Live: https://mkt-sls.github.io/christmas_journey_lp/
-- Last code commit: `fec58a7` (Pages run 44766999480 green). This handoff file comes in the commit after it. Check that it is pushed and that the Pages run is green: `git log origin/main -1`, `gh run list -L 1`.
+- Last pushed commit before this handoff: `7ae2ace`. The handoff file comes in the commit after it. Check that it is pushed and that the Pages run is green: `git log origin/main -1`, `gh run list -L 1`.
 - Sources:
   - Copy sheet `1sepZEdNocfKZ6jvqroIgmZRAD2bxS3GSCdxIH89ynr0`. It is public; read each tab with `/export?format=csv&gid=<gid>`.
   - Links sheet `1qpxJhrKTPyaUyGmJRrwPQNbh4T8s7458HJCCi2QwiTo`, tab JP gid 0. It is **private on purpose** (owner 2026-11-23; the public 401 is intended, nobody re-shares it). Check it in the owner's logged-in Chrome (Claude in Chrome): fetch `gviz/tq?tqx=out:html&gid=0` in a docs.google.com tab, parse with a trustedTypes policy for DOMParser, hash each row and compare with `data/source/links-sheet.txt` (2026-11-23: identical). The Drive connector cannot see the file.
@@ -22,38 +22,36 @@ This file replaces the 2026-11-17 handoff. Older history: `git log`, `docs/PLAN.
 - Responsive means fill: layouts scale up to fill the width and height, never leaving empty bands.
 - The owner is impatient with long option lists. Recommend one option and say why.
 
-## Shipped 2026-11-19 / 11-20 (all live)
+## Shipped 2026-11-23 (all live)
+The 2026-11-19 / 11-20 table is in git history: `git show 93dd51c:docs/HANDOFF.md`.
+
 | Commit | What |
 |---|---|
-| `a14ec67`, `1a97c1f` | Card headline fits on at most 2 balanced lines; minimum 26px in every market; TR may break before the currency |
-| `c42d464` | `scripts/check-texts.mjs` checks every visible text (flags: `--mobile` phone emulation, `--ended`) |
-| `38af0f5` | Mobile: today's label centred vertically on today's gift (`scripts/check-label-centre.mjs`) |
-| `ee9033f` | The page no longer jumps when the card overlay opens or closes (`scrollbar-gutter: stable`, `scripts/check-overlay-jump.mjs`) |
-| `5ec1c40` | Mobile: the other route labels are centred on their gifts too. Owner decisions for Santa clearance: the past slot-0 label is raised 4 stage px; the past slot-1 label (when today is in slot 2) and the past slot-2 label (after the campaign) stay at the old top-pinned position |
-| `c73ad50` | The header Login goes to TODAY's day link with the day's promo code (`loginLinkFor` in `src/config.js`). Before 1 Dec it uses day 1, after 26 Dec it uses day 26 |
-| `6b5db5c` | FR_CA agency wording (since superseded by the commit below) |
-| `01b9eab` | `campaign_ended` translated by the agency into the 11 non-EN languages (`CAMPAIGN_ENDED` in `scripts/import-sheet.mjs`); "Sweet Bonanza Xmas" in every market (owner: Xmas is correct) |
-| `fec58a7` | FR_CA = the client French from the EN_CAD tab. EN_CAD English is frozen in `data/source/en-cad-english.json`. The import detects the French tab, and re-import is proven idempotent. `data/ISSUES.md` updated (20 open points) |
+| `1085537`, `196dc09` | `check-texts` ignores today's label card over today's invisible gift hit-area (1366: 90 -> 0, NL 360: 7 -> 0); nothing visible |
+| `b25df2a` | `check-label-centre --ended` covers the campaign-ended state (Dec 28). Owner-pinned labels are reported as expected. Slots 1-2 are not position-checked; `check-santa` covers Santa |
+| `4fa4030` | FR_CA keeps the client's French: FR_CA tab > French EN_CAD tab > `data/source/fr-ca-french.json`. `buildFrCa` removed. Refresh the frozen file by hand when the import logs "IT DIFFERS" |
+| `651c402` | RO_MDL tab numbers are information only (the page uses the links-sheet MDL values) |
+| `c8815c1` | One translation per duplicated UI text (`UI_DUP_PICKS`); `processing`, `gifts_collected`, `next_gift` are not rendered by the page |
+| `fd44322` | Links sheet stays private on purpose |
+| `86d5ccf` | Timer row settled: the page's only timer is the "Unlocks in" chip on tomorrow's gift |
+| `7ae2ace` | Step 3 text final (no tracker); handoff uses real commit hashes |
 
 ## Owner decisions to remember
 - Minimum headline font is 26px in all markets. The TR currency split is OK.
-- FR_CA uses the CLIENT's French. The client put it in the **EN_CAD tab**, with "vous" and no FR_CA tab. EN_CAD stays English
-  from a frozen snapshot. Agency fixes on FR_CA only:
-  - the deadline row "Valide jusqu’au : 23 h 59, 1er déc.", laid out label|value like EN_CAD;
-  - Xmas; "1 000 CAD"; "1er"; the route tag "1ER DÉC.".
-- RO_MDL: the page uses the MDL amounts from the links sheet (for example day 1 max 7000 / min 500). The RO_MDL tab still has GBP-sized
-  max numbers labelled MDL, which were reported to the client.
-- No tracker on the page (owner 2026-11-23): no credited state; the step-3 agency text is final.
-- T&C links (`terms`, `campaignTerms` in `src/config.js`) stay `#`. The owner said "later", so do not raise them until the owner does.
+- FR_CA uses the CLIENT's French (EN_CAD tab, "vous", no FR_CA tab). EN_CAD stays English from a frozen snapshot
+  (`data/source/en-cad-english.json`). Agency fixes on FR_CA only: the deadline row "Valide jusqu’au : 23 h 59, 1er déc."
+  laid out label|value; Xmas; "1 000 CAD"; "1er"; the route tag "1ER DÉC.".
+- RO_MDL: the page uses the MDL amounts from the links sheet (for example day 1 max 7000 / min 500). The RO_MDL tab numbers are unused.
+- NO TRACKER on the page (owner 2026-11-23): no credited state. The step-3 agency text is final. Never ask the client about it again.
+- The links sheet is private on purpose (owner 2026-11-23).
+- The Google Sheet is never edited by us. Fixes are import overrides in `scripts/import-sheet.mjs`.
+- T&C links (`terms`, `campaignTerms` in `src/config.js`) stay `#` until the owner raises them.
 - `data/ISSUES.md` is the list of questions for the client.
 
 ## Open
-1. Still open (open points for the client: 1): Login target (Login opens today's day link, waiting for the client to confirm) and T&C URLs (later, the owner raises them). Step 3 is decided: no tracker on the page (owner 2026-11-23), the agency text is final, it is not a client question. The duplicate UI strings are settled (agency picks, commit c8815c1; see item 6).
-2. Resolved 2026-11-23 by the check-texts exemption, commit 1085537: today's label card over today's invisible gift hit-area; nothing visible; the investigation found 90 hits at 1366 (not 30) and 7 for NL at 360.
-3. `check-label-centre` covers the campaign-ended state: covered since 2026-11-23 (`--ended`), commit b25df2a. The owner-pinned labels (past slot 1 and 2 top-pinned, past slot 0 raised 4 stage px, commit 5ec1c40) are reported as expected, not failures. The Santa check for Dec 28 covers Santa.
-4. Owner decision 2026-11-23, commit 4fa4030: the Google Sheet is NOT changed. FR_CA always keeps the client's French: source order FR_CA tab (optional) > French EN_CAD tab > frozen copy `data/source/fr-ca-french.json`; `buildFrCa` (agency tu-form) is removed. The frozen file is refreshed by hand when the import logs "IT DIFFERS".
-5. RO_MDL max values: information, not an open point (commit 651c402). The page uses the links-sheet MDL values; the RO_MDL tab numbers are unused, fixing the tab is optional. Links sheet re-checked 2026-11-23 in the owner's browser: unchanged (private on purpose).
-6. UI ELEMENT duplicates settled 2026-11-23 (agency picks in `UI_DUP_PICKS`, `scripts/import-sheet.mjs`, commit c8815c1; sheet untouched): IT processing "Elaborazione in corso...", TR next_gift "Sonraki hediyeye kalan"; NL/TR/RU/BG already used the pick. Open points 18 -> 14. `processing`, `gifts_collected`, `next_gift` are not rendered by the page today.
+1. Client: confirm the Login target (the header Login opens today's day link, commit `c73ad50`). `data/ISSUES.md` open count: 1.
+2. Owner: T&C URLs (later, the owner raises them).
+- Known check limit: `check-label-centre --ended` does not position-check past slots 1-2.
 
 ## Rules for every check run (learned the hard way)
 - After any route or Santa change, run `scripts/check-santa.mjs`. Eyeballing missed bugs three times.
