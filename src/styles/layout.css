@@ -50,6 +50,18 @@
   gap: 8px;
 }
 
+/* mobile (< 1024): logo centred on the full header width, market selector stays on the right (owner 2026-11-23) */
+.page:not([data-layout='desktop']) .header__inner {
+  position: relative;
+  justify-content: flex-end;
+}
+.page:not([data-layout='desktop']) .header__logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* ---- hero: intro + route ---- */
 .hero {
   position: relative;
