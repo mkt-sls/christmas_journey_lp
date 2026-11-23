@@ -5,10 +5,12 @@
 // 1920x930 JPEG desktop screenshot of the landing (not referenced by index.html; a preview image for the platform).
 //
 // What it does:
-//   1. `npm run build` -> dist/ (vite base './', so every asset URL is relative; checked below).
+//   1. `VITE_CLIENT=1 npm run build` -> dist/ (vite base './', so every asset URL is relative; checked below). VITE_CLIENT=1
+//      compiles the QA override `?date=` out of main.js: on the client's domain a visitor cannot open a future day.
 //   2. Serves dist/ on a local static server and takes image.jpg: market EN_GBP, campaign day 5 Dec 2026
-//      (?market=EN_GBP&date=2026-12-05), viewport 1920x930, JPEG quality 85, after fonts, images and the network
+//      (?market=EN_GBP, the clock faked to 5 Dec 2026 12:00 with Playwright page.clock), viewport 1920x930, JPEG quality 85, after fonts, images and the network
 //      are idle plus ~1 s so Santa and the pulse are settled.
+//      Then proves the client build ignores `?date=`: /?market=EN_GBP&date=2026-12-24 must still show day 5 as active.
 //   3. Writes status.json.
 //   4. Zips dist/* + status.json + image.jpg into ChristmasJourney.zip (bsdtar, everything at the zip root).
 //
@@ -24,7 +26,8 @@ const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace
 const DIST = path.join(ROOT, 'dist');
 const STAGE = path.join(ROOT, 'dist-package');
 const ZIP = path.join(ROOT, 'ChristmasJourney.zip');
-const URL_PARAMS = '?market=EN_GBP&date=2026-12-05';
+const URL_PARAMS = '?market=EN_GBP';
+const FAKE_NOW = new Date(2026, 11, 5, 12, 0, 0);
 const PW =
   process.env.PLAYWRIGHT_MODULE ||
   path.join(process.env.LOCALAPPDATA || '', 'npm-cache/_npx/9833c18b2d85bc59/node_modules/playwright/index.mjs');
@@ -43,7 +46,7 @@ try {
 }
 
 // 1. build
-execFileSync('npm run build', { cwd: ROOT, stdio: 'inherit', shell: true });
+execFileSync('npm run build', { cwd: ROOT, stdio: 'inherit', shell: true, env: { ...process.env, VITE_CLIENT: '1' } });
 const html = fs.readFileSync(path.join(DIST, 'index.html'), 'utf8');
 const absolute = [...html.matchAll(/(?:src|href)="(\/[^"]*)"/g)].map((m) => m[1]);
 if (absolute.length) throw new Error(`dist/index.html has root-absolute URLs: ${absolute.join(', ')}`);
@@ -68,6 +71,8 @@ fs.cpSync(DIST, STAGE, { recursive: true });
 const browser = await chromium.launch({ executablePath: CHROME, args: ['--hide-scrollbars'] });
 try {
   const page = await (await browser.newContext({ viewport: { width: 1920, height: 930 }, deviceScaleFactor: 1 })).newPage();
+  if (!page.clock) throw new Error('this Playwright has no page.clock; upgrade Playwright');
+  await page.clock.setFixedTime(FAKE_NOW);
   await page.goto(`http://127.0.0.1:${port}/${URL_PARAMS}`, { waitUntil: 'networkidle' });
   await page.evaluate(async () => {
     await document.fonts.ready;
@@ -75,6 +80,13 @@ try {
   });
   await page.waitForTimeout(1000);
   await page.screenshot({ path: path.join(STAGE, 'image.jpg'), type: 'jpeg', quality: 85 });
+
+  // the client build must ignore ?date= (day 5 stays active, day 24 is not)
+  await page.goto(`http://127.0.0.1:${port}/${URL_PARAMS}&date=2026-12-24`, { waitUntil: 'networkidle' });
+  await page.waitForSelector('.gift--active');
+  const active = await page.$$eval('.gift--active', (els) => els.map((e) => e.dataset.open));
+  if (active.join() !== '5') throw new Error(`client build honours ?date=: active day(s) ${active.join()} instead of 5`);
+  console.log('check ok: ?date=2026-12-24 ignored in the client build (active day 5)');
 } finally {
   await browser.close();
   server.close();

@@ -11,7 +11,7 @@ This file replaces the 2026-11-20 handoff. Older history: `git log`, `docs/PLAN.
   - Copy sheet `1sepZEdNocfKZ6jvqroIgmZRAD2bxS3GSCdxIH89ynr0`. It is public; read each tab with `/export?format=csv&gid=<gid>`.
   - Links sheet `1qpxJhrKTPyaUyGmJRrwPQNbh4T8s7458HJCCi2QwiTo`, tab JP gid 0. It is **private on purpose** (owner 2026-11-23; the public 401 is intended, nobody re-shares it). Check it in the owner's logged-in Chrome (Claude in Chrome): fetch `gviz/tq?tqx=out:html&gid=0` in a docs.google.com tab, parse with a trustedTypes policy for DOMParser, hash each row and compare with `data/source/links-sheet.txt` (2026-11-23: identical). The Drive connector cannot see the file.
   - Figma `2MyylxdZblfGnf05nQacUz`, node 156:1930. The sheet wins over Figma for text.
-- QA: `?date=2026-12-07&market=DE` forces the date and the market. Tests: `npm test`, `npm run build`.
+- QA: `?date=2026-12-07&market=DE` forces the date and the market. Tests: `npm test`, `npm run build`. `?date=` works in dev/Pages only, never in ChristmasJourney.zip (built with VITE_CLIENT=1).
 
 ## Working with the owner
 - Reply in Romanian, short and explicit. Explain in plain words with a concrete example from this page, and say what was
