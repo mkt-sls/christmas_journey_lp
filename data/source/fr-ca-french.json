@@ -1,0 +1,169 @@
+{
+  "note": "Frozen French (Canada) card tab = the client's French as it stood in the EN_CAD tab of the sheet on 2026-11-20 (headers \"JOUR <n> · \"). scripts/import-sheet.mjs uses it for the FR_CA cards when the sheet has no FR_CA tab and the EN_CAD tab is English again. Source order: FR_CA tab > French EN_CAD tab > this file. It is never overwritten by the script; if the client changes the French, the import logs it and this file is refreshed by hand.",
+  "tab": {
+    "columns": [
+      "TEXTE COMPLET · DÉPÔT ET RÉCLAMATION",
+      "TEXTE COMPLET · BONUS CRÉDITÉ",
+      "TEXTE COMPLET · CADEAU EXPIRÉ",
+      "TEXTE COMPLET · VERROUILLÉ"
+    ],
+    "rows": [
+      [
+        "JOUR 1 · 1 DÉCEMBRE\nBONUS DE NOËL\n70 % JUSQU’À 550 CAD\nDépôt min. : 55 CAD\nExigence de mise : x25\nValide jusqu’au 1 déc. à 23 h 59\nDéposez et réclamez\nModalités et conditions complètes",
+        "JOUR 1 · 1 DÉCEMBRE\nBONUS DE NOËL\n70 % JUSQU’À 550 CAD\nDépôt min. : 55 CAD\nExigence de mise : x25\nValide jusqu’au 1 déc. à 23 h 59\n✓ Bonus crédité\nModalités et conditions complètes",
+        "JOUR 1 · 1 DÉCEMBRE\nBONUS DE NOËL\n70 % JUSQU’À 550 CAD\nDépôt min. : 55 CAD\nExigence de mise : x25\nValide jusqu’au 1 déc. à 23 h 59\nCadeau expiré\nModalités et conditions complètes",
+        "JOUR 1 · 1 DÉCEMBRE\nCADEAU SURPRISE\nS’ouvre le 1 décembre\nRevenez demain pour débloquer ce cadeau\nVerrouillé · 1 déc.\nModalités et conditions complètes"
+      ],
+      [
+        "JOUR 2 · 2 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n82 TOURS GRATUITS\nsur Thunder Coins: Hold and Win\nDépôt min. : 40 CAD\nExigence de mise : x25\nValide jusqu’au 2 déc. à 23 h 59\nDéposez et réclamez\nModalités et conditions complètes",
+        "JOUR 2 · 2 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n82 TOURS GRATUITS\nsur Thunder Coins: Hold and Win\nDépôt min. : 40 CAD\nExigence de mise : x25\nValide jusqu’au 2 déc. à 23 h 59\n✓ Bonus crédité\nModalités et conditions complètes",
+        "JOUR 2 · 2 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n82 TOURS GRATUITS\nsur Thunder Coins: Hold and Win\nDépôt min. : 40 CAD\nExigence de mise : x25\nValide jusqu’au 2 déc. à 23 h 59\nCadeau expiré\nModalités et conditions complètes",
+        "JOUR 2 · 2 DÉCEMBRE\nCADEAU SURPRISE\nS’ouvre le 2 décembre\nRevenez demain pour débloquer ce cadeau\nVerrouillé · 2 déc.\nModalités et conditions complètes"
+      ],
+      [
+        "JOUR 3 · 3 DÉCEMBRE\nBONUS DE NOËL\n55 % JUSQU’À 800 CAD\nDépôt min. : 50 CAD\nExigence de mise : x25\nValide jusqu’au 3 déc. à 23 h 59\nDéposez et réclamez\nModalités et conditions complètes",
+        "JOUR 3 · 3 DÉCEMBRE\nBONUS DE NOËL\n55 % JUSQU’À 800 CAD\nDépôt min. : 50 CAD\nExigence de mise : x25\nValide jusqu’au 3 déc. à 23 h 59\n✓ Bonus crédité\nModalités et conditions complètes",
+        "JOUR 3 · 3 DÉCEMBRE\nBONUS DE NOËL\n55 % JUSQU’À 800 CAD\nDépôt min. : 50 CAD\nExigence de mise : x25\nValide jusqu’au 3 déc. à 23 h 59\nCadeau expiré\nModalités et conditions complètes",
+        "JOUR 3 · 3 DÉCEMBRE\nCADEAU SURPRISE\nS’ouvre le 3 décembre\nRevenez demain pour débloquer ce cadeau\nVerrouillé · 3 déc.\nModalités et conditions complètes"
+      ],
+      [
+        "JOUR 4 · 4 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n65 TOURS GRATUITS\nsur Big Bass Splash\nDépôt min. : 35 CAD\nExigence de mise : x25\nValide jusqu’au 4 déc. à 23 h 59\nDéposez et réclamez\nModalités et conditions complètes",
+        "JOUR 4 · 4 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n65 TOURS GRATUITS\nsur Big Bass Splash\nDépôt min. : 35 CAD\nExigence de mise : x25\nValide jusqu’au 4 déc. à 23 h 59\n✓ Bonus crédité\nModalités et conditions complètes",
+        "JOUR 4 · 4 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n65 TOURS GRATUITS\nsur Big Bass Splash\nDépôt min. : 35 CAD\nExigence de mise : x25\nValide jusqu’au 4 déc. à 23 h 59\nCadeau expiré\nModalités et conditions complètes",
+        "JOUR 4 · 4 DÉCEMBRE\nCADEAU SURPRISE\nS’ouvre le 4 décembre\nRevenez demain pour débloquer ce cadeau\nVerrouillé · 4 déc.\nModalités et conditions complètes"
+      ],
+      [
+        "JOUR 5 · 5 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n75 TOURS GRATUITS\nsur John Hunter and the Book of Tut\nDépôt min. : 40 CAD\nExigence de mise : x25\nValide jusqu’au 5 déc. à 23 h 59\nDéposez et réclamez\nModalités et conditions complètes",
+        "JOUR 5 · 5 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n75 TOURS GRATUITS\nsur John Hunter and the Book of Tut\nDépôt min. : 40 CAD\nExigence de mise : x25\nValide jusqu’au 5 déc. à 23 h 59\n✓ Bonus crédité\nModalités et conditions complètes",
+        "JOUR 5 · 5 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n75 TOURS GRATUITS\nsur John Hunter and the Book of Tut\nDépôt min. : 40 CAD\nExigence de mise : x25\nValide jusqu’au 5 déc. à 23 h 59\nCadeau expiré\nModalités et conditions complètes",
+        "JOUR 5 · 5 DÉCEMBRE\nCADEAU SURPRISE\nS’ouvre le 5 décembre\nRevenez demain pour débloquer ce cadeau\nVerrouillé · 5 déc.\nModalités et conditions complètes"
+      ],
+      [
+        "JOUR 6 · 6 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n80 TOURS GRATUITS\nsur Gemhalla\nDépôt min. : 50 CAD\nExigence de mise : x25\nValide jusqu’au 6 déc. à 23 h 59\nDéposez et réclamez\nModalités et conditions complètes",
+        "JOUR 6 · 6 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n80 TOURS GRATUITS\nsur Gemhalla\nDépôt min. : 50 CAD\nExigence de mise : x25\nValide jusqu’au 6 déc. à 23 h 59\n✓ Bonus crédité\nModalités et conditions complètes",
+        "JOUR 6 · 6 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n80 TOURS GRATUITS\nsur Gemhalla\nDépôt min. : 50 CAD\nExigence de mise : x25\nValide jusqu’au 6 déc. à 23 h 59\nCadeau expiré\nModalités et conditions complètes",
+        "JOUR 6 · 6 DÉCEMBRE\nCADEAU SURPRISE\nS’ouvre le 6 décembre\nRevenez demain pour débloquer ce cadeau\nVerrouillé · 6 déc.\nModalités et conditions complètes"
+      ],
+      [
+        "JOUR 7 · 7 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n90 TOURS GRATUITS\nsur Bonanza Billion\nDépôt min. : 55 CAD\nExigence de mise : x25\nValide jusqu’au 7 déc. à 23 h 59\nDéposez et réclamez\nModalités et conditions complètes",
+        "JOUR 7 · 7 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n90 TOURS GRATUITS\nsur Bonanza Billion\nDépôt min. : 55 CAD\nExigence de mise : x25\nValide jusqu’au 7 déc. à 23 h 59\n✓ Bonus crédité\nModalités et conditions complètes",
+        "JOUR 7 · 7 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n90 TOURS GRATUITS\nsur Bonanza Billion\nDépôt min. : 55 CAD\nExigence de mise : x25\nValide jusqu’au 7 déc. à 23 h 59\nCadeau expiré\nModalités et conditions complètes",
+        "JOUR 7 · 7 DÉCEMBRE\nCADEAU SURPRISE\nS’ouvre le 7 décembre\nRevenez demain pour débloquer ce cadeau\nVerrouillé · 7 déc.\nModalités et conditions complètes"
+      ],
+      [
+        "JOUR 8 · 8 DÉCEMBRE\nBONUS DE NOËL\n65 % JUSQU’À 1,000 CAD\nDépôt min. : 40 CAD\nExigence de mise : x25\nValide jusqu’au 8 déc. à 23 h 59\nDéposez et réclamez\nModalités et conditions complètes",
+        "JOUR 8 · 8 DÉCEMBRE\nBONUS DE NOËL\n65 % JUSQU’À 1,000 CAD\nDépôt min. : 40 CAD\nExigence de mise : x25\nValide jusqu’au 8 déc. à 23 h 59\n✓ Bonus crédité\nModalités et conditions complètes",
+        "JOUR 8 · 8 DÉCEMBRE\nBONUS DE NOËL\n65 % JUSQU’À 1,000 CAD\nDépôt min. : 40 CAD\nExigence de mise : x25\nValide jusqu’au 8 déc. à 23 h 59\nCadeau expiré\nModalités et conditions complètes",
+        "JOUR 8 · 8 DÉCEMBRE\nCADEAU SURPRISE\nS’ouvre le 8 décembre\nRevenez demain pour débloquer ce cadeau\nVerrouillé · 8 déc.\nModalités et conditions complètes"
+      ],
+      [
+        "JOUR 9 · 9 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n74 TOURS GRATUITS\nsur Big Bass Christmas – Frozen Lake\nDépôt min. : 50 CAD\nExigence de mise : x25\nValide jusqu’au 9 déc. à 23 h 59\nDéposez et réclamez\nModalités et conditions complètes",
+        "JOUR 9 · 9 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n74 TOURS GRATUITS\nsur Big Bass Christmas – Frozen Lake\nDépôt min. : 50 CAD\nExigence de mise : x25\nValide jusqu’au 9 déc. à 23 h 59\n✓ Bonus crédité\nModalités et conditions complètes",
+        "JOUR 9 · 9 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n74 TOURS GRATUITS\nsur Big Bass Christmas – Frozen Lake\nDépôt min. : 50 CAD\nExigence de mise : x25\nValide jusqu’au 9 déc. à 23 h 59\nCadeau expiré\nModalités et conditions complètes",
+        "JOUR 9 · 9 DÉCEMBRE\nCADEAU SURPRISE\nS’ouvre le 9 décembre\nRevenez demain pour débloquer ce cadeau\nVerrouillé · 9 déc.\nModalités et conditions complètes"
+      ],
+      [
+        "JOUR 10 · 10 DÉCEMBRE\nBONUS DE NOËL\n62 % JUSQU’À 1,100 CAD\nDépôt min. : 55 CAD\nExigence de mise : x25\nValide jusqu’au 10 déc. à 23 h 59\nDéposez et réclamez\nModalités et conditions complètes",
+        "JOUR 10 · 10 DÉCEMBRE\nBONUS DE NOËL\n62 % JUSQU’À 1,100 CAD\nDépôt min. : 55 CAD\nExigence de mise : x25\nValide jusqu’au 10 déc. à 23 h 59\n✓ Bonus crédité\nModalités et conditions complètes",
+        "JOUR 10 · 10 DÉCEMBRE\nBONUS DE NOËL\n62 % JUSQU’À 1,100 CAD\nDépôt min. : 55 CAD\nExigence de mise : x25\nValide jusqu’au 10 déc. à 23 h 59\nCadeau expiré\nModalités et conditions complètes",
+        "JOUR 10 · 10 DÉCEMBRE\nCADEAU SURPRISE\nS’ouvre le 10 décembre\nRevenez demain pour débloquer ce cadeau\nVerrouillé · 10 déc.\nModalités et conditions complètes"
+      ],
+      [
+        "JOUR 11 · 11 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n55 TOURS GRATUITS\nsur Thunder Coins: Hold and Win\nDépôt min. : 35 CAD\nExigence de mise : x25\nValide jusqu’au 11 déc. à 23 h 59\nDéposez et réclamez\nModalités et conditions complètes",
+        "JOUR 11 · 11 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n55 TOURS GRATUITS\nsur Thunder Coins: Hold and Win\nDépôt min. : 35 CAD\nExigence de mise : x25\nValide jusqu’au 11 déc. à 23 h 59\n✓ Bonus crédité\nModalités et conditions complètes",
+        "JOUR 11 · 11 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n55 TOURS GRATUITS\nsur Thunder Coins: Hold and Win\nDépôt min. : 35 CAD\nExigence de mise : x25\nValide jusqu’au 11 déc. à 23 h 59\nCadeau expiré\nModalités et conditions complètes",
+        "JOUR 11 · 11 DÉCEMBRE\nCADEAU SURPRISE\nS’ouvre le 11 décembre\nRevenez demain pour débloquer ce cadeau\nVerrouillé · 11 déc.\nModalités et conditions complètes"
+      ],
+      [
+        "JOUR 12 · 12 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n80 TOURS GRATUITS\nsur Fruits 'n' Stars Holiday Edition\nDépôt min. : 40 CAD\nExigence de mise : x25\nValide jusqu’au 12 déc. à 23 h 59\nDéposez et réclamez\nModalités et conditions complètes",
+        "JOUR 12 · 12 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n80 TOURS GRATUITS\nsur Fruits 'n' Stars Holiday Edition\nDépôt min. : 40 CAD\nExigence de mise : x25\nValide jusqu’au 12 déc. à 23 h 59\n✓ Bonus crédité\nModalités et conditions complètes",
+        "JOUR 12 · 12 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n80 TOURS GRATUITS\nsur Fruits 'n' Stars Holiday Edition\nDépôt min. : 40 CAD\nExigence de mise : x25\nValide jusqu’au 12 déc. à 23 h 59\nCadeau expiré\nModalités et conditions complètes",
+        "JOUR 12 · 12 DÉCEMBRE\nCADEAU SURPRISE\nS’ouvre le 12 décembre\nRevenez demain pour débloquer ce cadeau\nVerrouillé · 12 déc.\nModalités et conditions complètes"
+      ],
+      [
+        "JOUR 13 · 13 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n67 TOURS GRATUITS\nsur Yeti Quest\nDépôt min. : 40 CAD\nExigence de mise : x25\nValide jusqu’au 13 déc. à 23 h 59\nDéposez et réclamez\nModalités et conditions complètes",
+        "JOUR 13 · 13 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n67 TOURS GRATUITS\nsur Yeti Quest\nDépôt min. : 40 CAD\nExigence de mise : x25\nValide jusqu’au 13 déc. à 23 h 59\n✓ Bonus crédité\nModalités et conditions complètes",
+        "JOUR 13 · 13 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n67 TOURS GRATUITS\nsur Yeti Quest\nDépôt min. : 40 CAD\nExigence de mise : x25\nValide jusqu’au 13 déc. à 23 h 59\nCadeau expiré\nModalités et conditions complètes",
+        "JOUR 13 · 13 DÉCEMBRE\nCADEAU SURPRISE\nS’ouvre le 13 décembre\nRevenez demain pour débloquer ce cadeau\nVerrouillé · 13 déc.\nModalités et conditions complètes"
+      ],
+      [
+        "JOUR 14 · 14 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n90 TOURS GRATUITS\nsur 25 Cookies: Hit the Bonus\nDépôt min. : 55 CAD\nExigence de mise : x25\nValide jusqu’au 14 déc. à 23 h 59\nDéposez et réclamez\nModalités et conditions complètes",
+        "JOUR 14 · 14 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n90 TOURS GRATUITS\nsur 25 Cookies: Hit the Bonus\nDépôt min. : 55 CAD\nExigence de mise : x25\nValide jusqu’au 14 déc. à 23 h 59\n✓ Bonus crédité\nModalités et conditions complètes",
+        "JOUR 14 · 14 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n90 TOURS GRATUITS\nsur 25 Cookies: Hit the Bonus\nDépôt min. : 55 CAD\nExigence de mise : x25\nValide jusqu’au 14 déc. à 23 h 59\nCadeau expiré\nModalités et conditions complètes",
+        "JOUR 14 · 14 DÉCEMBRE\nCADEAU SURPRISE\nS’ouvre le 14 décembre\nRevenez demain pour débloquer ce cadeau\nVerrouillé · 14 déc.\nModalités et conditions complètes"
+      ],
+      [
+        "JOUR 15 · 15 DÉCEMBRE\nBONUS DE NOËL\n58 % JUSQU’À 800 CAD\nDépôt min. : 50 CAD\nExigence de mise : x25\nValide jusqu’au 15 déc. à 23 h 59\nDéposez et réclamez\nModalités et conditions complètes",
+        "JOUR 15 · 15 DÉCEMBRE\nBONUS DE NOËL\n58 % JUSQU’À 800 CAD\nDépôt min. : 50 CAD\nExigence de mise : x25\nValide jusqu’au 15 déc. à 23 h 59\n✓ Bonus crédité\nModalités et conditions complètes",
+        "JOUR 15 · 15 DÉCEMBRE\nBONUS DE NOËL\n58 % JUSQU’À 800 CAD\nDépôt min. : 50 CAD\nExigence de mise : x25\nValide jusqu’au 15 déc. à 23 h 59\nCadeau expiré\nModalités et conditions complètes",
+        "JOUR 15 · 15 DÉCEMBRE\nCADEAU SURPRISE\nS’ouvre le 15 décembre\nRevenez demain pour débloquer ce cadeau\nVerrouillé · 15 déc.\nModalités et conditions complètes"
+      ],
+      [
+        "JOUR 16 · 16 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n82 TOURS GRATUITS\nsur Christmas Carol Megaways\nDépôt min. : 50 CAD\nExigence de mise : x25\nValide jusqu’au 16 déc. à 23 h 59\nDéposez et réclamez\nModalités et conditions complètes",
+        "JOUR 16 · 16 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n82 TOURS GRATUITS\nsur Christmas Carol Megaways\nDépôt min. : 50 CAD\nExigence de mise : x25\nValide jusqu’au 16 déc. à 23 h 59\n✓ Bonus crédité\nModalités et conditions complètes",
+        "JOUR 16 · 16 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n82 TOURS GRATUITS\nsur Christmas Carol Megaways\nDépôt min. : 50 CAD\nExigence de mise : x25\nValide jusqu’au 16 déc. à 23 h 59\nCadeau expiré\nModalités et conditions complètes",
+        "JOUR 16 · 16 DÉCEMBRE\nCADEAU SURPRISE\nS’ouvre le 16 décembre\nRevenez demain pour débloquer ce cadeau\nVerrouillé · 16 déc.\nModalités et conditions complètes"
+      ],
+      [
+        "JOUR 17 · 17 DÉCEMBRE\nBONUS DE NOËL\n45 % JUSQU’À 800 CAD\nDépôt min. : 40 CAD\nExigence de mise : x25\nValide jusqu’au 17 déc. à 23 h 59\nDéposez et réclamez\nModalités et conditions complètes",
+        "JOUR 17 · 17 DÉCEMBRE\nBONUS DE NOËL\n45 % JUSQU’À 800 CAD\nDépôt min. : 40 CAD\nExigence de mise : x25\nValide jusqu’au 17 déc. à 23 h 59\n✓ Bonus crédité\nModalités et conditions complètes",
+        "JOUR 17 · 17 DÉCEMBRE\nBONUS DE NOËL\n45 % JUSQU’À 800 CAD\nDépôt min. : 40 CAD\nExigence de mise : x25\nValide jusqu’au 17 déc. à 23 h 59\nCadeau expiré\nModalités et conditions complètes",
+        "JOUR 17 · 17 DÉCEMBRE\nCADEAU SURPRISE\nS’ouvre le 17 décembre\nRevenez demain pour débloquer ce cadeau\nVerrouillé · 17 déc.\nModalités et conditions complètes"
+      ],
+      [
+        "JOUR 18 · 18 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n63 TOURS GRATUITS\nsur Big Bass Christmas – Frozen Lake\nDépôt min. : 40 CAD\nExigence de mise : x25\nValide jusqu’au 18 déc. à 23 h 59\nDéposez et réclamez\nModalités et conditions complètes",
+        "JOUR 18 · 18 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n63 TOURS GRATUITS\nsur Big Bass Christmas – Frozen Lake\nDépôt min. : 40 CAD\nExigence de mise : x25\nValide jusqu’au 18 déc. à 23 h 59\n✓ Bonus crédité\nModalités et conditions complètes",
+        "JOUR 18 · 18 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n63 TOURS GRATUITS\nsur Big Bass Christmas – Frozen Lake\nDépôt min. : 40 CAD\nExigence de mise : x25\nValide jusqu’au 18 déc. à 23 h 59\nCadeau expiré\nModalités et conditions complètes",
+        "JOUR 18 · 18 DÉCEMBRE\nCADEAU SURPRISE\nS’ouvre le 18 décembre\nRevenez demain pour débloquer ce cadeau\nVerrouillé · 18 déc.\nModalités et conditions complètes"
+      ],
+      [
+        "JOUR 19 · 19 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n95 TOURS GRATUITS\nsur Fruits 'n' Stars Holiday Edition\nDépôt min. : 55 CAD\nExigence de mise : x25\nValide jusqu’au 19 déc. à 23 h 59\nDéposez et réclamez\nModalités et conditions complètes",
+        "JOUR 19 · 19 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n95 TOURS GRATUITS\nsur Fruits 'n' Stars Holiday Edition\nDépôt min. : 55 CAD\nExigence de mise : x25\nValide jusqu’au 19 déc. à 23 h 59\n✓ Bonus crédité\nModalités et conditions complètes",
+        "JOUR 19 · 19 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n95 TOURS GRATUITS\nsur Fruits 'n' Stars Holiday Edition\nDépôt min. : 55 CAD\nExigence de mise : x25\nValide jusqu’au 19 déc. à 23 h 59\nCadeau expiré\nModalités et conditions complètes",
+        "JOUR 19 · 19 DÉCEMBRE\nCADEAU SURPRISE\nS’ouvre le 19 décembre\nRevenez demain pour débloquer ce cadeau\nVerrouillé · 19 déc.\nModalités et conditions complètes"
+      ],
+      [
+        "JOUR 20 · 20 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n82 TOURS GRATUITS\nsur Sweet Bonanza XMas\nDépôt min. : 50 CAD\nExigence de mise : x25\nValide jusqu’au 20 déc. à 23 h 59\nDéposez et réclamez\nModalités et conditions complètes",
+        "JOUR 20 · 20 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n82 TOURS GRATUITS\nsur Sweet Bonanza XMas\nDépôt min. : 50 CAD\nExigence de mise : x25\nValide jusqu’au 20 déc. à 23 h 59\n✓ Bonus crédité\nModalités et conditions complètes",
+        "JOUR 20 · 20 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n82 TOURS GRATUITS\nsur Sweet Bonanza XMas\nDépôt min. : 50 CAD\nExigence de mise : x25\nValide jusqu’au 20 déc. à 23 h 59\nCadeau expiré\nModalités et conditions complètes",
+        "JOUR 20 · 20 DÉCEMBRE\nCADEAU SURPRISE\nS’ouvre le 20 décembre\nRevenez demain pour débloquer ce cadeau\nVerrouillé · 20 déc.\nModalités et conditions complètes"
+      ],
+      [
+        "JOUR 21 · 21 DÉCEMBRE\nBONUS DE NOËL\n65 % JUSQU’À 800 CAD\nDépôt min. : 40 CAD\nExigence de mise : x25\nValide jusqu’au 21 déc. à 23 h 59\nDéposez et réclamez\nModalités et conditions complètes",
+        "JOUR 21 · 21 DÉCEMBRE\nBONUS DE NOËL\n65 % JUSQU’À 800 CAD\nDépôt min. : 40 CAD\nExigence de mise : x25\nValide jusqu’au 21 déc. à 23 h 59\n✓ Bonus crédité\nModalités et conditions complètes",
+        "JOUR 21 · 21 DÉCEMBRE\nBONUS DE NOËL\n65 % JUSQU’À 800 CAD\nDépôt min. : 40 CAD\nExigence de mise : x25\nValide jusqu’au 21 déc. à 23 h 59\nCadeau expiré\nModalités et conditions complètes",
+        "JOUR 21 · 21 DÉCEMBRE\nCADEAU SURPRISE\nS’ouvre le 21 décembre\nRevenez demain pour débloquer ce cadeau\nVerrouillé · 21 déc.\nModalités et conditions complètes"
+      ],
+      [
+        "JOUR 22 · 22 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n62 TOURS GRATUITS\nsur Yeti Quest\nDépôt min. : 35 CAD\nExigence de mise : x25\nValide jusqu’au 22 déc. à 23 h 59\nDéposez et réclamez\nModalités et conditions complètes",
+        "JOUR 22 · 22 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n62 TOURS GRATUITS\nsur Yeti Quest\nDépôt min. : 35 CAD\nExigence de mise : x25\nValide jusqu’au 22 déc. à 23 h 59\n✓ Bonus crédité\nModalités et conditions complètes",
+        "JOUR 22 · 22 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n62 TOURS GRATUITS\nsur Yeti Quest\nDépôt min. : 35 CAD\nExigence de mise : x25\nValide jusqu’au 22 déc. à 23 h 59\nCadeau expiré\nModalités et conditions complètes",
+        "JOUR 22 · 22 DÉCEMBRE\nCADEAU SURPRISE\nS’ouvre le 22 décembre\nRevenez demain pour débloquer ce cadeau\nVerrouillé · 22 déc.\nModalités et conditions complètes"
+      ],
+      [
+        "JOUR 23 · 23 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n99 TOURS GRATUITS\nsur 25 Cookies: Hit the Bonus\nDépôt min. : 50 CAD\nExigence de mise : x25\nValide jusqu’au 23 déc. à 23 h 59\nDéposez et réclamez\nModalités et conditions complètes",
+        "JOUR 23 · 23 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n99 TOURS GRATUITS\nsur 25 Cookies: Hit the Bonus\nDépôt min. : 50 CAD\nExigence de mise : x25\nValide jusqu’au 23 déc. à 23 h 59\n✓ Bonus crédité\nModalités et conditions complètes",
+        "JOUR 23 · 23 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n99 TOURS GRATUITS\nsur 25 Cookies: Hit the Bonus\nDépôt min. : 50 CAD\nExigence de mise : x25\nValide jusqu’au 23 déc. à 23 h 59\nCadeau expiré\nModalités et conditions complètes",
+        "JOUR 23 · 23 DÉCEMBRE\nCADEAU SURPRISE\nS’ouvre le 23 décembre\nRevenez demain pour débloquer ce cadeau\nVerrouillé · 23 déc.\nModalités et conditions complètes"
+      ],
+      [
+        "JOUR 24 · 24 DÉCEMBRE\nBONUS DE NOËL\n80 % JUSQU’À 600 CAD\nDépôt min. : 55 CAD\nExigence de mise : x25\nValide jusqu’au 24 déc. à 23 h 59\nDéposez et réclamez\nModalités et conditions complètes",
+        "JOUR 24 · 24 DÉCEMBRE\nBONUS DE NOËL\n80 % JUSQU’À 600 CAD\nDépôt min. : 55 CAD\nExigence de mise : x25\nValide jusqu’au 24 déc. à 23 h 59\n✓ Bonus crédité\nModalités et conditions complètes",
+        "JOUR 24 · 24 DÉCEMBRE\nBONUS DE NOËL\n80 % JUSQU’À 600 CAD\nDépôt min. : 55 CAD\nExigence de mise : x25\nValide jusqu’au 24 déc. à 23 h 59\nCadeau expiré\nModalités et conditions complètes",
+        "JOUR 24 · 24 DÉCEMBRE\nCADEAU SURPRISE\nS’ouvre le 24 décembre\nRevenez demain pour débloquer ce cadeau\nVerrouillé · 24 déc.\nModalités et conditions complètes"
+      ],
+      [
+        "JOUR 25 · 25 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n101 TOURS GRATUITS\nsur Christmas Carol Megaways\nDépôt min. : 55 CAD\nExigence de mise : x25\nValide jusqu’au 25 déc. à 23 h 59\nDéposez et réclamez\nModalités et conditions complètes",
+        "JOUR 25 · 25 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n101 TOURS GRATUITS\nsur Christmas Carol Megaways\nDépôt min. : 55 CAD\nExigence de mise : x25\nValide jusqu’au 25 déc. à 23 h 59\n✓ Bonus crédité\nModalités et conditions complètes",
+        "JOUR 25 · 25 DÉCEMBRE\nTOURS GRATUITS DE NOËL\n101 TOURS GRATUITS\nsur Christmas Carol Megaways\nDépôt min. : 55 CAD\nExigence de mise : x25\nValide jusqu’au 25 déc. à 23 h 59\nCadeau expiré\nModalités et conditions complètes",
+        "JOUR 25 · 25 DÉCEMBRE\nCADEAU SURPRISE\nS’ouvre le 25 décembre\nRevenez demain pour débloquer ce cadeau\nVerrouillé · 25 déc.\nModalités et conditions complètes"
+      ],
+      [
+        "JOUR 26 · 26 DÉCEMBRE\nBONUS DE NOËL\n60 % JUSQU’À 950 CAD\nDépôt min. : 35 CAD\nExigence de mise : x25\nValide jusqu’au 26 déc. à 23 h 59\nDéposez et réclamez\nModalités et conditions complètes",
+        "JOUR 26 · 26 DÉCEMBRE\nBONUS DE NOËL\n60 % JUSQU’À 950 CAD\nDépôt min. : 35 CAD\nExigence de mise : x25\nValide jusqu’au 26 déc. à 23 h 59\n✓ Bonus crédité\nModalités et conditions complètes",
+        "JOUR 26 · 26 DÉCEMBRE\nBONUS DE NOËL\n60 % JUSQU’À 950 CAD\nDépôt min. : 35 CAD\nExigence de mise : x25\nValide jusqu’au 26 déc. à 23 h 59\nCadeau expiré\nModalités et conditions complètes",
+        "JOUR 26 · 26 DÉCEMBRE\nCADEAU SURPRISE\nS’ouvre le 26 décembre\nRevenez demain pour débloquer ce cadeau\nVerrouillé · 26 déc.\nModalités et conditions complètes"
+      ]
+    ]
+  }
+}

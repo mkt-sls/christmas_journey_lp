@@ -47,10 +47,11 @@ This file replaces the 2026-11-17 handoff. Older history: `git log`, `docs/PLAN.
 - `data/ISSUES.md` is the list of questions for the client.
 
 ## Open
-1. **Client:** re-share the links sheet; T&C URLs (later); put French in a FR_CA tab; confirm the RO_MDL max values; the duplicate
+1. **Client:** re-share the links sheet; T&C URLs (later); confirm the RO_MDL max values; the duplicate
    UI strings (NL, IT, TR, RU, BG); the empty timer row; checking the step-3 agency texts.
 2. Resolved 2026-11-23 by the check-texts exemption, commit 1085537: today's label card over today's invisible gift hit-area; nothing visible; the investigation found 90 hits at 1366 (not 30) and 7 for NL at 360.
 3. `check-label-centre` covers the campaign-ended state: covered since 2026-11-23 (`--ended`), this commit. The owner-pinned labels (past slot 1 and 2 top-pinned, past slot 0 raised 4 stage px, commit 5ec1c40) are reported as expected, not failures. The Santa check for Dec 28 covers Santa.
+4. Owner decision 2026-11-23, this commit: the Google Sheet is NOT changed. FR_CA always keeps the client's French: source order FR_CA tab (optional) > French EN_CAD tab > frozen copy `data/source/fr-ca-french.json`; `buildFrCa` (agency tu-form) is removed. The frozen file is refreshed by hand when the import logs "IT DIFFERS".
 
 ## Rules for every check run (learned the hard way)
 - After any route or Santa change, run `scripts/check-santa.mjs`. Eyeballing missed bugs three times.
