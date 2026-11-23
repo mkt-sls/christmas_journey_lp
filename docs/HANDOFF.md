@@ -46,11 +46,11 @@ The 2026-11-19 / 11-20 table is in git history: `git show 93dd51c:docs/HANDOFF.m
 - The links sheet is private on purpose (owner 2026-11-23).
 - The Google Sheet is never edited by us. Fixes are import overrides in `scripts/import-sheet.mjs`.
 - T&C links (`terms`, `campaignTerms` in `src/config.js`) stay `#` until the owner raises them.
+- Login target confirmed by the owner (2026-11-23): the header Login opens today's day link (commit `c73ad50`).
 - `data/ISSUES.md` is the list of questions for the client.
 
 ## Open
-1. Client: confirm the Login target (the header Login opens today's day link, commit `c73ad50`). `data/ISSUES.md` open count: 1.
-2. Owner: T&C URLs (later, the owner raises them).
+1. Owner: T&C URLs (later, the owner raises them). `data/ISSUES.md` open count: 1 (this T&C item).
 - Known check limit: `check-label-centre --ended` does not position-check past slots 1-2.
 
 ## Rules for every check run (learned the hard way)
