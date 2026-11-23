@@ -1,6 +1,6 @@
 // Numeric check (mobile): the vertical MIDDLE of every route label equals the vertical MIDDLE of its gift (owner 2026-11-19).
 //
-//   node scripts/check-label-centre.mjs --width=360 [--markets=NL,TR] [--days=1-26] [--active-only] [--out=FILE.json] [--shots=DIR]
+//   node scripts/check-label-centre.mjs --width=360 [--markets=NL,TR] [--days=1-26] [--active-only] [--out=FILE.json] [--shots=DIR] [--ended]
 //
 // ONE width per process (small machine). For every market x day it opens ?date=2026-12-DD&market=XX (mobile layout), pauses every
 // animation at t = 0 and measures, from the rendered page:
@@ -10,6 +10,11 @@
 //   delta         = label middle - gift middle (positive = label sits lower than the gift)
 // For today's (active) label it also reports what the label covers: opaque gift art pixels, the TODAY pill, Santa's image box
 // and every other label (rectangle intersections, CSS px).
+// --ended: the campaign-ended page (mirrors check-texts --ended): ONE load per market at ?date=2026-12-28 (no active gift, all three
+//   labels are past). --days is ignored. Owner decisions (commit 5ec1c40), keyed on what src/render/route.js does (state 'missed' +
+//   slot): the past label of slot > 0 stays TOP-pinned (not centred) -> reported "expected (owner decision 5ec1c40)", not a failure;
+//   the past label of slot 0 is centred then raised by MOBILE.pastSlot0Raise stage px -> expected delta = -raise x stage scale (the
+//   raise is read from route.js, not a pixel constant here). Any other label must be centred within TOL (1 px). Exit code 1 on a FAIL.
 // Prints max / mean |delta| per state and slot, and the overlap cases. Playwright is not a project dependency: PLAYWRIGHT_MODULE /
 // CHROME as in check-santa.mjs.
 import fs from 'node:fs';
@@ -42,6 +47,9 @@ const [D0, D1] = (arg('days') || '1-26').split('-').map(Number);
 const ACTIVE_ONLY = args.includes('--active-only');
 const OUT = arg('out');
 const SHOTS = arg('shots');
+const ENDED = args.includes('--ended');
+const ENDED_DATE = '2026-12-28'; // same date as check-texts --ended
+const TOL = 1; // px, as the existing '>1px' counts
 // --mobile: phone emulation (touch, overlay scrollbars => stage = full viewport width like a real phone, no 15px gutter)
 const MOBILE_EMU = args.includes('--mobile');
 const SHIFT = arg('shift'); // QA only: a = today label +14 stage px right in slot 0/2, b = only as far as the pill needs (per market)
@@ -145,6 +153,7 @@ async function measure() {
       const gb = gift.getBoundingClientRect();
       const st = gb.width / (120 * k);
       rec.giftMidRel = (rec.giftMid - gb.top) / st - 80 * k;
+      rec.st = st; // CSS px per stage px
     }
     {
       // what the label covers (every state): opaque art pixels of ANY gift, the TODAY pill, Santa's image box, every other label.
@@ -214,10 +223,10 @@ async function main() {
     const ctx = await browser.newContext({ viewport: { width: WIDTH, height: 844 }, deviceScaleFactor: SHOTS ? 2 : MOBILE_EMU ? 3 : 1, ...(MOBILE_EMU ? { isMobile: true, hasTouch: true } : {}) });
     const page = await ctx.newPage();
     for (const market of MARKETS)
-      for (let day = D0; day <= D1; day++) {
-        const date = `2026-12-${String(day).padStart(2, '0')}`;
+      for (let day = ENDED ? 28 : D0; day <= (ENDED ? 28 : D1); day++) {
+        const date = ENDED ? ENDED_DATE : `2026-12-${String(day).padStart(2, '0')}`;
         await page.goto(`${base}/?date=${date}&market=${market}`, { waitUntil: 'networkidle' });
-        await page.waitForSelector('.label--active');
+        await page.waitForSelector(ENDED ? '.label' : '.label--active');
         await page.evaluate(async () => {
           await document.fonts.ready;
           await Promise.all([...document.images].map((i) => (i.complete ? 0 : i.decode().catch(() => 0))));
@@ -267,6 +276,28 @@ async function main() {
   if (OUT) fs.writeFileSync(OUT, JSON.stringify({ width: WIDTH, rows }));
   const f = (v) => v.toFixed(2);
   console.log(`width ${WIDTH}: ${rows.length} labels measured`);
+  if (ENDED) {
+    const raise = (/pastSlot0Raise:\s*([\d.]+)/.exec(fs.readFileSync(path.join(ROOT, 'src/render/route.js'), 'utf8')) || [])[1];
+    if (raise === undefined) throw new Error('pastSlot0Raise not found in src/render/route.js');
+    let fails = 0;
+    let expected = 0;
+    let maxAbs = 0;
+    for (const r of rows) {
+      let verdict;
+      if (r.state === 'past' && r.slot > 0) verdict = 'expected (owner decision 5ec1c40: top-pinned)';
+      else if (r.state === 'past' && r.slot === 0) {
+        const want = -Number(raise) * r.st;
+        verdict = Math.abs(r.delta - want) <= TOL ? `expected (owner decision 5ec1c40: raised ${raise} stage px = ${f(want)} px)` : `FAIL (raised label should sit ${f(want)} px, sits ${f(r.delta)})`;
+      } else verdict = Math.abs(r.delta) <= TOL ? 'ok (centred)' : 'FAIL (not centred)';
+      if (verdict.startsWith('FAIL')) fails++;
+      else if (verdict.startsWith('expected')) expected++;
+      maxAbs = Math.max(maxAbs, Math.abs(r.delta));
+      console.log(`  ${r.market.padEnd(7)} ${r.state} slot ${r.slot} (day ${r.day}) delta ${f(r.delta)} px: ${verdict}`);
+    }
+    console.log(`ENDED width ${WIDTH}: ${rows.length} labels, expected ${expected}, centred-ok ${rows.length - expected - fails}, FAIL ${fails}, max |delta| ${f(maxAbs)}`);
+    process.exitCode = fails ? 1 : 0;
+    return;
+  }
   // owner decision 2026-11-20 (Santa clearance): the PAST labels of slot 1 / slot 2 stay top-pinned (not centred), the past label of slot 0 is centred then raised
   // by MOBILE.pastSlot0Raise. They are reported, not counted as centring failures.
   const pinned = (r) => r.state === 'past' && r.slot > 0;
