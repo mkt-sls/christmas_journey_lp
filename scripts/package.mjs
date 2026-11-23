@@ -48,6 +48,12 @@ try {
 // 1. build
 execFileSync('npm run build', { cwd: ROOT, stdio: 'inherit', shell: true, env: { ...process.env, VITE_CLIENT: '1' } });
 const html = fs.readFileSync(path.join(DIST, 'index.html'), 'utf8');
+// the client bundle must not contain any reader of ?date= (owner 2026-11-23)
+const DATE_READ = /(?:get|has)(s*[`"']date[`"']s*)|["'`]date=/;
+for (const f of fs.readdirSync(path.join(DIST, 'assets')).filter((n) => n.endsWith('.js'))) {
+  const hit = fs.readFileSync(path.join(DIST, 'assets', f), 'utf8').match(DATE_READ);
+  if (hit) throw new Error(`client bundle assets/${f} still reads ?date= (${hit[0]})`);
+}
 const absolute = [...html.matchAll(/(?:src|href)="(\/[^"]*)"/g)].map((m) => m[1]);
 if (absolute.length) throw new Error(`dist/index.html has root-absolute URLs: ${absolute.join(', ')}`);
 

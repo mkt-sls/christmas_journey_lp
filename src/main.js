@@ -29,10 +29,10 @@ const mq = window.matchMedia('(min-width: 1024px)');
 
 // QA clock: ?date= replaces "now" but keeps ticking, so the midnight rollover can be watched.
 // VITE_CLIENT=1 (scripts/package.mjs, the client zip) removes the override: a visitor must never open a future day.
-const QA_DATE = import.meta.env.VITE_CLIENT !== '1';
-const base = parseNow(search, new Date(), QA_DATE);
+const CLIENT = import.meta.env.VITE_CLIENT === '1'; // replaced at build time; the unused branch and parseNow are tree-shaken
+const base = CLIENT ? new Date() : parseNow(search);
 const clockOffset = base.getTime() - Date.now();
-const hasOverride = QA_DATE && new URLSearchParams(search).has('date') && base.getTime() !== Date.now();
+const hasOverride = CLIENT ? false : new URLSearchParams(search).has('date') && base.getTime() !== Date.now();
 const now = () => new Date(hasOverride ? Date.now() + clockOffset : Date.now());
 
 const state = { market: null, ui: null, cards: null, today: null };
