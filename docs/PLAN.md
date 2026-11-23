@@ -28,12 +28,12 @@ bonus card.
 | Copy source | The **sheet wins** over Figma for all text, location names and offers |
 | Sheet errors | Fix the obvious ones: RO_MDL day 4 "22 GBP" becomes MDL, and DE "1. bis 25." becomes 26. Flag the RO_MDL amounts for the client but keep them |
 | Data | One-time import script turns the sheet into JSON in the repo. Re-run it when the sheet changes |
-| Links | One config file (`src/config.js`): deposit links per day from the links sheet (`data/links.json`), no Login button, T&C and campaign terms = https://jack-pot-uk.top/bonus-policy, BeGambleAware = https://www.begambleaware.org |
+| Links | One config file (`src/config.js`): deposit links per day from the links sheet (`data/links.json`), no Login button, T&C and campaign terms = https://jack-pot-uk.top/bonus-policy (BeGambleAware link removed, owner 2026-11-23) |
 | Figma frame | **Main frames (A)**: header full width (logo at 200px), **no legend**. Fix the day-6 label bug |
 | Route | A fixed window as in Figma: 5 days on desktop (−2…+2) and 3 on mobile (−1…+1), centred on today and clamped at the edges |
 | Progress block | Not built. Only the "Unlocks in" countdown on tomorrow's gift |
 | Clicks | Every visible day opens its card: missed shows the "Gift expired" card with the offer struck through, future shows "SURPRISE GIFT · Opens N December" |
-| Legal | The full line everywhere, desktop and mobile: "18+ · Play responsibly · BeGambleAware.org · Full campaign terms apply" |
+| Legal | The full line everywhere, desktop and mobile: "18+ · Play responsibly · Full campaign terms apply" (BeGambleAware.org removed, owner 2026-11-23) |
 | Images | The current Figma art is final. Export it as WebP @2x |
 | Animations | All except Completed: snow + garland twinkle + parallax, pulse on today, gift opening, card in (modal on desktop / sheet on mobile), Santa moving to the new day, expired desaturation. `prefers-reduced-motion` reduces this to fades only |
 | Responsive | We decide: below ~1024 use the mobile layout; 1024–1920 scales the desktop; above 1920 stays centred. Screenshots go to the owner |

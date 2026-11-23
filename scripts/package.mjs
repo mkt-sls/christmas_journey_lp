@@ -67,7 +67,7 @@ for (const f of walk(DIST)) {
 // their deposit link still carries 'promocode=' and the tracking host, which are checked for every file.
 const CODES = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/links.json'), 'utf8')).map((l) => l.promo);
 const COPY_WORDS = new Set(['DECEMBER', 'HOLIDAY']);
-const NEEDLES = ['promocode', 'track.jack-pot.io', ...CODES.filter((c) => !COPY_WORDS.has(c))];
+const NEEDLES = ['promocode', 'track.jack-pot.io', 'gambleaware', ...CODES.filter((c) => !COPY_WORDS.has(c))];
 for (const f of walk(DIST)) {
   if (/.(webp|png|jpg|woff2)$/i.test(f)) continue;
   const text = fs.readFileSync(f, 'utf8').toLowerCase();

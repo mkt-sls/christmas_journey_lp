@@ -514,6 +514,10 @@ for (const [l, from, to] of DOT_SPACE) {
   }
 }
 
+// BeGambleAware removed everywhere (owner 2026-11-23): the page has no such link, so the sheet row is not carried into the page data.
+for (const l of UI_LANGS) delete uiAll[l].strings.be_gamble_aware;
+log('OVERRIDE be_gamble_aware dropped from the ui data in ' + UI_LANGS.length + ' languages (owner 2026-11-23)');
+
 // UI ELEMENT duplicates: the agency picks ONE translation per text (owner, 2026-11-23: "choose the best one"). The sheet is untouched;
 // the main-table value is overwritten here. Each entry: key, language, sheet text expected, text used. A sheet text that changed is
 // kept and reported under "Good to know" (and the duplicate stays open for that language). Number/time placeholders are unchanged:

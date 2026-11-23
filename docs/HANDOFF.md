@@ -37,7 +37,7 @@ The 2026-11-19 / 11-20 table is in git history: `git show 93dd51c:docs/HANDOFF.m
 | `7ae2ace` | Step 3 text final (no tracker); handoff uses real commit hashes |
 | `33e413b` | Login target confirmed (later superseded by `8811313`) |
 | `8811313` | Header Login button removed on every market (owner 2026-11-23); `loginLinkFor`, its test and `.btn-outline` CSS gone; the `login` keys in `data/ui/*.json` stay unused |
-| `c45c694` | T&C: card "Full terms & conditions" and legal line "Full campaign terms apply" both open https://jack-pot-uk.top/bonus-policy in a new tab (like BeGambleAware) on every market; `data/ISSUES.md` open count 0 |
+| `c45c694` | T&C: card "Full terms & conditions" and legal line "Full campaign terms apply" both open https://jack-pot-uk.top/bonus-policy in a new tab on every market; `data/ISSUES.md` open count 0 |
 | `10fd2c1` | `scripts/package.mjs` builds the client delivery `ChristmasJourney.zip` (gitignored) in the `JacPot_TEMPLATE.zip` layout |
 
 ## Owner decisions to remember
@@ -50,7 +50,7 @@ The 2026-11-19 / 11-20 table is in git history: `git show 93dd51c:docs/HANDOFF.m
 - The links sheet is private on purpose (owner 2026-11-23).
 - The Google Sheet is never edited by us. Fixes are import overrides in `scripts/import-sheet.mjs`.
 - T&C links: both `terms` and `campaignTerms` = https://jack-pot-uk.top/bonus-policy on every market (owner 2026-11-23; the site picks the language).
-- T&C opens in a new tab (owner 2026-11-23), like BeGambleAware; the deposit button stays in the same tab.
+- T&C opens in a new tab (owner 2026-11-23); the deposit button stays in the same tab. BeGambleAware removed everywhere, owner 2026-11-23 (link, text and the `be_gamble_aware` key; import-sheet drops it).
 - Header Login button removed (owner 2026-11-23).
 - Delivery to the client = `ChristmasJourney.zip` in the layout of `JacPot_TEMPLATE.zip` (repo root, untracked, never commit it): files at the zip root, `status.json` = `{ "available": "true" }`, `image.jpg` = 1920x930 desktop screenshot of EN_GBP on 5 December (not referenced by the page; preview image for the client's platform - our reading, not confirmed by the client). The owner approved the 2026-11-23 image.jpg as is (a ~15px scrollbar strip on the right and the step cards cut at the bottom are accepted). Rebuild with `node scripts/package.mjs` after any page change and hand the new zip over.
 - `data/ISSUES.md` is the list of questions for the client.

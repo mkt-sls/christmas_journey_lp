@@ -14,7 +14,6 @@ export const links = {
   deposit: '#',
   terms: 'https://jack-pot-uk.top/bonus-policy', // "Full terms & conditions" on the card
   campaignTerms: 'https://jack-pot-uk.top/bonus-policy', // "Full campaign terms apply" in the legal line
-  beGambleAware: 'https://www.begambleaware.org',
 };
 
 // Optional per-market overrides, e.g. { DE: { deposit: 'https://...', terms: 'https://...' } }
