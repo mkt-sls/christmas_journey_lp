@@ -1,6 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import links from '../data/links.json';
 import { depositLinkFor, linkFor, links as cfgLinks } from './config.js';
+import enc from 'virtual:links-enc';
+import { decodeLink, encodeLink } from './obfuscate.js';
 
 describe('per-day deposit links', () => {
   it('has 26 days', () => {
@@ -20,6 +22,21 @@ describe('per-day deposit links', () => {
     expect(depositLinkFor(1, 'DE')).toBe(links[0].deposit);
     expect(depositLinkFor(1, 'RO_MDL')).toBe(depositLinkFor(1, 'EN_GBP'));
     expect(depositLinkFor(1, 'DE').endsWith('promocode=FROST')).toBe(true);
+  });
+});
+
+describe('obfuscated deposit links', () => {
+  const MARKETS = ['DE', 'EN_GBP', 'EN_USD', 'EN_AUD', 'EN_CAD', 'FR_CA', 'RO_MDL', 'NL', 'BG', 'IT', 'NO', 'RU', 'SV', 'TR', 'DA'];
+  it('encode/decode round-trips for all 26 days', () => {
+    for (const l of links) expect(decodeLink(l.day, encodeLink(l.day, l.deposit)), `day ${l.day}`).toBe(l.deposit);
+  });
+  it('the encoded table holds no plaintext', () => {
+    const blob = JSON.stringify(enc);
+    expect(blob).not.toMatch(/promocode|track.jack-pot|https?:/i);
+    for (const l of links) expect(blob.toLowerCase()).not.toContain(l.promo.toLowerCase());
+  });
+  it('depositLinkFor returns the exact data/links.json URL for every day x market', () => {
+    for (const l of links) for (const m of MARKETS) expect(depositLinkFor(l.day, m), `${l.day} ${m}`).toBe(l.deposit);
   });
 });
 

@@ -62,6 +62,17 @@ for (const f of walk(DIST)) {
   const ok = ALLOWED.has(ext) || (ext === '.txt' && /^LICENSE/i.test(path.basename(f)));
   if (!ok) throw new Error(`unexpected file in the client build: ${path.relative(DIST, f)}`);
 }
+// no plaintext deposit link / promo code anywhere in the shipped files (they are XOR+base64 encoded, src/obfuscate.js).
+// DECEMBER and HOLIDAY are also ordinary copy in the card texts ("1-26 DECEMBER", "holiday"), so they cannot be hidden;
+// their deposit link still carries 'promocode=' and the tracking host, which are checked for every file.
+const CODES = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/links.json'), 'utf8')).map((l) => l.promo);
+const COPY_WORDS = new Set(['DECEMBER', 'HOLIDAY']);
+const NEEDLES = ['promocode', 'track.jack-pot.io', ...CODES.filter((c) => !COPY_WORDS.has(c))];
+for (const f of walk(DIST)) {
+  if (/.(webp|png|jpg|woff2)$/i.test(f)) continue;
+  const text = fs.readFileSync(f, 'utf8').toLowerCase();
+  for (const n of NEEDLES) if (text.includes(n.toLowerCase())) throw new Error(`plaintext '${n}' found in the client build: ${path.relative(DIST, f)}`);
+}
 const absolute = [...html.matchAll(/(?:src|href)="(\/[^"]*)"/g)].map((m) => m[1]);
 if (absolute.length) throw new Error(`dist/index.html has root-absolute URLs: ${absolute.join(', ')}`);
 

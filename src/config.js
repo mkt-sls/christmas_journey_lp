@@ -1,4 +1,5 @@
-import dayLinks from '../data/links.json';
+import dayLinks from 'virtual:links-enc'; // data/links.json, encoded at build time (vite.config.js, src/obfuscate.js)
+import { decodeLink } from './obfuscate.js';
 
 // Campaign settings and every outgoing link in one place.
 // Per-market overrides go in linksByMarket
@@ -25,6 +26,11 @@ export function linkFor(name, marketId) {
 
 // Deposit link of one campaign day (data/links.json, imported from the client links sheet). Same link for every market;
 // a per-market override in linksByMarket wins, '#' placeholder is the last fallback.
+function decodeDay(day) {
+  const row = dayLinks.find((l) => l.day === day);
+  return row ? decodeLink(day, row.d) : undefined;
+}
+
 export function depositLinkFor(day, marketId) {
-  return linksByMarket[marketId]?.deposit ?? dayLinks.find((l) => l.day === day)?.deposit ?? links.deposit;
+  return linksByMarket[marketId]?.deposit ?? decodeDay(day) ?? links.deposit;
 }
