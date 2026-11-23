@@ -39,20 +39,29 @@
 .market__btn {
   display: flex;
   align-items: center;
-  gap: 8px;
-  min-height: 44px;
-  padding: 0 10px;
+  gap: 6.5px;
+  min-height: 35px; /* 80% of the former 44px (owner 2026-11-23) */
+  padding: 0 8px;
   border: 1px solid var(--line-2);
-  border-radius: 12px;
+  border-radius: 10px;
   background: rgba(255, 255, 255, 0.07);
   color: var(--text);
-  font-size: 13px;
+  font-size: 10.5px;
   font-weight: 600;
 }
 
 .page[data-layout='desktop'] .market__btn {
-  padding: 0 14px 0 12px;
-  font-size: 14px;
+  padding: 0 11px 0 10px;
+  font-size: 11.2px;
+}
+
+.market__btn .flag {
+  width: 17.6px;
+  height: 12.8px;
+}
+.market__btn .market__chev svg {
+  width: 6.4px;
+  height: 3.2px;
 }
 
 .market__chev {
@@ -73,8 +82,6 @@
   overscroll-behavior: contain;
   padding: 6px 4px 6px 6px;
   scrollbar-gutter: stable;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.22) transparent;
   border: 1px solid var(--line-2);
   border-radius: var(--r-card);
   background: var(--list-bg);
@@ -88,10 +95,24 @@
   max-height: min(70vh / var(--z, 1), 640px);
 }
 
-@supports not (scrollbar-color: auto) {
-  .market__list::-webkit-scrollbar { width: 6px; }
-  .market__list::-webkit-scrollbar-track { background: transparent; }
-  .market__list::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.22); border-radius: 3px; }
+/* styled scrollbars (market list and page): navy track, thin rounded muted blue-grey thumb, a bit brighter on hover.
+   Chrome/Safari use ::-webkit-scrollbar (8px box, 1px transparent border = 6px thumb); Firefox uses scrollbar-color. */
+.market__list::-webkit-scrollbar,
+html::-webkit-scrollbar { width: 8px; height: 8px; }
+.market__list::-webkit-scrollbar-track { background: transparent; }
+html::-webkit-scrollbar-track { background: #0b1220; }
+.market__list::-webkit-scrollbar-thumb,
+html::-webkit-scrollbar-thumb {
+  background: rgba(131, 156, 191, 0.55); /* --muted */
+  background-clip: padding-box;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.market__list::-webkit-scrollbar-thumb:hover,
+html::-webkit-scrollbar-thumb:hover { background: rgba(131, 156, 191, 0.85); background-clip: padding-box; }
+@supports not selector(::-webkit-scrollbar) {
+  .market__list { scrollbar-width: thin; scrollbar-color: rgba(131, 156, 191, 0.4) transparent; }
+  html { scrollbar-width: thin; scrollbar-color: rgba(131, 156, 191, 0.4) #0b1220; }
 }
 
 /* top/bottom fades, shown only while there is more content in that direction */
