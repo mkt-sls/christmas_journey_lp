@@ -17,6 +17,8 @@
 //                       (exception: the Turkish card headline amount / 3-letter currency code, owner decision 2026-11-19)
 //   overlap-text        two text lines of different elements overlap
 //   overlap-button      a text line overlaps a button / link box it is not inside of
+//                       (the only exception: today's .label--active text over today's .gift--active hit-area with the same
+//                       data-open - the hit-area is transparent, same click target, nothing visible; owner 2026-11-23)
 // Output: a summary table (element type x market -> fail count) and texts-failures-w<width>.json (one entry per failure:
 // market, day, width, scope, selector, text, rule, measured values). Playwright is not a project dependency: PLAYWRIGHT_MODULE / CHROME as in check-headline.mjs.
 import fs from 'node:fs';
@@ -222,6 +224,11 @@ function collectTexts({ scope, exclude, market }) {
     }
     for (const bx of boxes) {
       if (bx.contains(a.el) || a.el.contains(bx)) continue; // a link inside the paragraph that owns the text is part of that text
+      // Exception (owner 2026-11-23): today's red label card sits above the bottom of today's gift hit-area box. That box is
+      // transparent (the visible podium is an <img> inside it) and both open the same day, so nothing is visible and the click
+      // target is the same. Only this exact pair is skipped: label--active text vs gift--active button with the same data-open.
+      const lab = a.el.closest('.label--active');
+      if (lab && bx.classList.contains('gift--active') && lab.dataset.open && lab.dataset.open === bx.dataset.open) continue;
       // one box per line fragment: an inline link that wraps is not one big rectangle
       for (const r of bx.getClientRects()) {
         const rr = { l: r.left, t: r.top, r: r.right, b: r.bottom };

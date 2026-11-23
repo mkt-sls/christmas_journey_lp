@@ -49,9 +49,8 @@ This file replaces the 2026-11-17 handoff. Older history: `git log`, `docs/PLAN.
 ## Open
 1. **Client:** re-share the links sheet; T&C URLs (later); put French in a FR_CA tab; confirm the RO_MDL max values; the duplicate
    UI strings (NL, IT, TR, RU, BG); the empty timer row; checking the step-3 agency texts.
-2. `check-texts` known family: 7 NL days at 360px where the label tag sits 1px into the invisible gift box. Nothing is visible, so it is not fixed.
-3. 1366 check-texts: 30 old "TODAY'S STOP label vs button" hits, unchanged for a long time and not investigated.
-4. `check-label-centre` does not cover the campaign-ended state. The Santa check for Dec 28 covers it.
+2. Resolved 2026-11-23 by the check-texts exemption, commit bda3656: today's label card over today's invisible gift hit-area; nothing visible; the investigation found 90 hits at 1366 (not 30) and 7 for NL at 360.
+3. `check-label-centre` does not cover the campaign-ended state. The Santa check for Dec 28 covers it.
 
 ## Rules for every check run (learned the hard way)
 - After any route or Santa change, run `scripts/check-santa.mjs`. Eyeballing missed bugs three times.
