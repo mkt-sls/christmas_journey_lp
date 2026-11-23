@@ -499,6 +499,21 @@ for (const [k, from, to] of FR_CA_UI) {
   }
 }
 
+// Hero eyebrow typo: the sheet has "·26" with no space after the middle dot in DE and RO_MD (every other language has "A · B").
+// Typography only; a sheet text that changed is kept and reported under "Good to know".
+const DOT_SPACE = [
+  ['DE', '1.–26. DEZEMBER ·26 GESCHENKE', '1.–26. DEZEMBER · 26 GESCHENKE'],
+  ['RO_MD', '1–26 DECEMBRIE ·26 CADOURI', '1–26 DECEMBRIE · 26 CADOURI'],
+];
+for (const [l, from, to] of DOT_SPACE) {
+  if (uiAll[l].strings.campaign_dates === from) {
+    uiAll[l].strings.campaign_dates = to;
+    log(`OVERRIDE ${l} campaign_dates: space after "·" (typo in the sheet, typography only)`);
+  } else {
+    notes.push(`${l} campaign_dates: the sheet text is no longer "${from}", so the "·" spacing fix was not applied (sheet text kept: "${uiAll[l].strings.campaign_dates}").`);
+  }
+}
+
 // UI ELEMENT duplicates: the agency picks ONE translation per text (owner, 2026-11-23: "choose the best one"). The sheet is untouched;
 // the main-table value is overwritten here. Each entry: key, language, sheet text expected, text used. A sheet text that changed is
 // kept and reported under "Good to know" (and the duplicate stays open for that language). Number/time placeholders are unchanged:
