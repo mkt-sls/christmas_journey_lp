@@ -753,8 +753,8 @@ section(
   'New since 2026-11-20 - please check',
   '',
   [
-    'RO_MDL tab: the maximum bonus numbers are still GBP-sized numbers labelled MDL (day 1 "350 MDL", day 3 maximum 500 MDL is lower than the minimum deposit 450 MDL, day 8 "650 MDL", ...) and the day 1 minimum deposit says "35 MDL". The page does not use them: it shows the MDL values of the links sheet (maximum bonus 20 times the tab number, e.g. day 1 maximum 7 000 MDL, minimum 500 MDL). Please confirm the links-sheet values are the right ones and fix the RO_MDL tab to match.',
-    'The links sheet now asks for a sign-in (HTTP 401) and can no longer be read by the import. Please share it again as "anyone with the link can view" so we can re-check the deposit links, promo codes and MDL values.',
+    { decided: true, text: 'Settled, not an open point (information only): the RO_MDL tab still has GBP-sized maximum bonus numbers labelled MDL (day 1 "350 MDL", day 3 maximum 500 MDL is lower than the minimum deposit 450 MDL, day 8 "650 MDL", ...) and the day 1 minimum deposit says "35 MDL". The page does not use them: it shows the MDL values of the links sheet, which the client confirmed there (maximum bonus 20 times the tab number, e.g. day 1 maximum 7 000 MDL, minimum 500 MDL). Fixing the RO_MDL tab to match is optional.' },
+    'The links sheet now asks for a sign-in (HTTP 401) and can no longer be read by the import (it can still be read in the owner’s browser; checked 2026-11-23: unchanged). Please share it again as "anyone with the link can view" so we can re-check the deposit links, promo codes and MDL values.',
   ],
 );
 
