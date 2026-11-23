@@ -7,6 +7,7 @@
 // And applies the client's corrected MDL amounts to data/cards/RO_MDL.json (the only data change).
 // Any other difference is only listed, never applied: the owner decides.
 // The dump is the sheet read through the gviz html view (rows flattened to one line each).
+// The links sheet is PRIVATE on purpose (owner 2026-11-23; the public 401 is intended): dump it via the owner's logged-in browser, not a public fetch.
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';

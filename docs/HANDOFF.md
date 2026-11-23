@@ -9,7 +9,7 @@ This file replaces the 2026-11-17 handoff. Older history: `git log`, `docs/PLAN.
 - Last code commit: `fec58a7` (Pages run 44766999480 green). This handoff file comes in the commit after it. Check that it is pushed and that the Pages run is green: `git log origin/main -1`, `gh run list -L 1`.
 - Sources:
   - Copy sheet `1sepZEdNocfKZ6jvqroIgmZRAD2bxS3GSCdxIH89ynr0`. It is public; read each tab with `/export?format=csv&gid=<gid>`.
-  - Links sheet `1qpxJhrKTPyaUyGmJRrwPQNbh4T8s7458HJCCi2QwiTo`, tab JP gid 0. It returns **401 since 2026-11-20**, so the client must re-share it.
+  - Links sheet `1qpxJhrKTPyaUyGmJRrwPQNbh4T8s7458HJCCi2QwiTo`, tab JP gid 0. It is **private on purpose** (owner 2026-11-23; the public 401 is intended, nobody re-shares it). Check it in the owner's logged-in Chrome (Claude in Chrome): fetch `gviz/tq?tqx=out:html&gid=0` in a docs.google.com tab, parse with a trustedTypes policy for DOMParser, hash each row and compare with `data/source/links-sheet.txt` (2026-11-23: identical). The Drive connector cannot see the file.
   - Figma `2MyylxdZblfGnf05nQacUz`, node 156:1930. The sheet wins over Figma for text.
 - QA: `?date=2026-12-07&market=DE` forces the date and the market. Tests: `npm test`, `npm run build`.
 
@@ -47,12 +47,12 @@ This file replaces the 2026-11-17 handoff. Older history: `git log`, `docs/PLAN.
 - `data/ISSUES.md` is the list of questions for the client.
 
 ## Open
-1. **Client:** re-share the links sheet; T&C URLs (later); the duplicate
+1. **Client:** T&C URLs (later); the duplicate
    UI strings are settled (agency picks, this commit; see item 6); the empty timer row; checking the step-3 agency texts.
 2. Resolved 2026-11-23 by the check-texts exemption, commit 1085537: today's label card over today's invisible gift hit-area; nothing visible; the investigation found 90 hits at 1366 (not 30) and 7 for NL at 360.
 3. `check-label-centre` covers the campaign-ended state: covered since 2026-11-23 (`--ended`), this commit. The owner-pinned labels (past slot 1 and 2 top-pinned, past slot 0 raised 4 stage px, commit 5ec1c40) are reported as expected, not failures. The Santa check for Dec 28 covers Santa.
 4. Owner decision 2026-11-23, this commit: the Google Sheet is NOT changed. FR_CA always keeps the client's French: source order FR_CA tab (optional) > French EN_CAD tab > frozen copy `data/source/fr-ca-french.json`; `buildFrCa` (agency tu-form) is removed. The frozen file is refreshed by hand when the import logs "IT DIFFERS".
-5. RO_MDL max values: information, not an open point (this commit). The page uses the links-sheet MDL values; the RO_MDL tab numbers are unused, fixing the tab is optional. Links sheet re-checked 2026-11-23 in the owner's browser: unchanged, still 401 publicly.
+5. RO_MDL max values: information, not an open point (this commit). The page uses the links-sheet MDL values; the RO_MDL tab numbers are unused, fixing the tab is optional. Links sheet re-checked 2026-11-23 in the owner's browser: unchanged (private on purpose).
 6. UI ELEMENT duplicates settled 2026-11-23 (agency picks in `UI_DUP_PICKS`, `scripts/import-sheet.mjs`, this commit; sheet untouched): IT processing "Elaborazione in corso...", TR next_gift "Sonraki hediyeye kalan"; NL/TR/RU/BG already used the pick. Open points 18 -> 14. `processing`, `gifts_collected`, `next_gift` are not rendered by the page today.
 
 ## Rules for every check run (learned the hard way)
