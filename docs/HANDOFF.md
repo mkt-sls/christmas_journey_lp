@@ -6,7 +6,7 @@ This file replaces the 2026-11-20 handoff. Older history: `git log`, `docs/PLAN.
 - Repo: https://github.com/mkt-sls/christmas_journey_lp, branch `main`. Every push to `main` deploys GitHub Pages
   (`.github/workflows/pages.yml`).
 - Live: https://mkt-sls.github.io/christmas_journey_lp/
-- Last pushed commit before this handoff: `7ae2ace`. The handoff file comes in the commit after it. Check that it is pushed and that the Pages run is green: `git log origin/main -1`, `gh run list -L 1`.
+- Last pushed commit before this handoff: `10fd2c1`. The handoff file comes in the commit after it. Check that it is pushed and that the Pages run is green: `git log origin/main -1`, `gh run list -L 1`.
 - Sources:
   - Copy sheet `1sepZEdNocfKZ6jvqroIgmZRAD2bxS3GSCdxIH89ynr0`. It is public; read each tab with `/export?format=csv&gid=<gid>`.
   - Links sheet `1qpxJhrKTPyaUyGmJRrwPQNbh4T8s7458HJCCi2QwiTo`, tab JP gid 0. It is **private on purpose** (owner 2026-11-23; the public 401 is intended, nobody re-shares it). Check it in the owner's logged-in Chrome (Claude in Chrome): fetch `gviz/tq?tqx=out:html&gid=0` in a docs.google.com tab, parse with a trustedTypes policy for DOMParser, hash each row and compare with `data/source/links-sheet.txt` (2026-11-23: identical). The Drive connector cannot see the file.
@@ -35,6 +35,10 @@ The 2026-11-19 / 11-20 table is in git history: `git show 93dd51c:docs/HANDOFF.m
 | `fd44322` | Links sheet stays private on purpose |
 | `86d5ccf` | Timer row settled: the page's only timer is the "Unlocks in" chip on tomorrow's gift |
 | `7ae2ace` | Step 3 text final (no tracker); handoff uses real commit hashes |
+| `33e413b` | Login target confirmed (later superseded by `8811313`) |
+| `8811313` | Header Login button removed on every market (owner 2026-11-23); `loginLinkFor`, its test and `.btn-outline` CSS gone; the `login` keys in `data/ui/*.json` stay unused |
+| `c45c694` | T&C: card "Full terms & conditions" and legal line "Full campaign terms apply" both open https://jack-pot-uk.top/bonus-policy in a new tab (like BeGambleAware) on every market; `data/ISSUES.md` open count 0 |
+| `10fd2c1` | `scripts/package.mjs` builds the client delivery `ChristmasJourney.zip` (gitignored) in the `JacPot_TEMPLATE.zip` layout |
 
 ## Owner decisions to remember
 - Minimum headline font is 26px in all markets. The TR currency split is OK.
@@ -46,12 +50,15 @@ The 2026-11-19 / 11-20 table is in git history: `git show 93dd51c:docs/HANDOFF.m
 - The links sheet is private on purpose (owner 2026-11-23).
 - The Google Sheet is never edited by us. Fixes are import overrides in `scripts/import-sheet.mjs`.
 - T&C links: both `terms` and `campaignTerms` = https://jack-pot-uk.top/bonus-policy on every market (owner 2026-11-23; the site picks the language).
+- T&C opens in a new tab (owner 2026-11-23), like BeGambleAware; the deposit button stays in the same tab.
 - Header Login button removed (owner 2026-11-23).
+- Delivery to the client = `ChristmasJourney.zip` in the layout of `JacPot_TEMPLATE.zip` (repo root, untracked, never commit it): files at the zip root, `status.json` = `{ "available": "true" }`, `image.jpg` = 1920x930 desktop screenshot of EN_GBP on 5 December (not referenced by the page; preview image for the client's platform - our reading, not confirmed by the client). The owner approved the 2026-11-23 image.jpg as is (a ~15px scrollbar strip on the right and the step cards cut at the bottom are accepted). Rebuild with `node scripts/package.mjs` after any page change and hand the new zip over.
 - `data/ISSUES.md` is the list of questions for the client.
 
 ## Open
 Nothing open for the client.
 - Known check limit: `check-label-centre --ended` does not position-check past slots 1-2.
+- Nothing open for the owner either. Next likely step: hand `ChristmasJourney.zip` to the client (owner does it).
 
 ## Rules for every check run (learned the hard way)
 - After any route or Santa change, run `scripts/check-santa.mjs`. Eyeballing missed bugs three times.
@@ -61,4 +68,3 @@ Nothing open for the client.
   Check `git diff data/` after any import: it must be empty unless the client changed something.
 - Python never reads stdin from a terminal it does not have: use `</dev/null`.
 - If Orca is not installed on this PC, work directly but keep the same start/push discipline.
-- Client delivery: `node scripts/package.mjs` builds ChristmasJourney.zip in the JacPot_TEMPLATE.zip layout (index.html + assets, status.json, image.jpg = EN_GBP 5 Dec at 1920x930); owner 2026-11-23.
