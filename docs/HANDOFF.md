@@ -61,3 +61,4 @@ Nothing open for the client.
   Check `git diff data/` after any import: it must be empty unless the client changed something.
 - Python never reads stdin from a terminal it does not have: use `</dev/null`.
 - If Orca is not installed on this PC, work directly but keep the same start/push discipline.
+- Client delivery: `node scripts/package.mjs` builds ChristmasJourney.zip in the JacPot_TEMPLATE.zip layout (index.html + assets, status.json, image.jpg = EN_GBP 5 Dec at 1920x930); owner 2026-11-23.
