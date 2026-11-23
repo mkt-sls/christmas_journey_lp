@@ -750,7 +750,7 @@ section('Same text translated differently in two places of the UI ELEMENT tab', 
 
 // Missing pieces
 const missing = [];
-if (timerRowSeen) missing.push('The last row of the UI ELEMENT tab is called "Timer" but has no text or translations. We use the countdown format 14:32:08 (HH:MM:SS) from the "gift_timer" row and the "Unlocks in" text; please confirm that is all that is needed.');
+if (timerRowSeen) missing.push({ decided: true, text: 'Settled, not an open point (owner 2026-11-23): the page has one timer, the countdown chip "Unlocks in 14:32:08" on tomorrow’s gift, translated via the "Unlocks in" row; the empty Timer row needs nothing.' });
 else missing.push('The "Timer" row was not found in the UI ELEMENT tab.');
 missing.push({
   text: `Settled, not an open point: there is no "campaign ended" message in the sheet. After 26 December the page shows one under the intro title (key campaign_ended). The agency translated it on 2026-11-20 (owner decision: we translate it ourselves); the script writes these texts on every import, the sheet is untouched: ${UI_LANGS.map((l) => `${l}: "${CAMPAIGN_ENDED[l]}"`).join('; ')}. If you want a different wording in any language, tell us.`,
