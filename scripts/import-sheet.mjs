@@ -757,7 +757,7 @@ missing.push({
   decided: true,
 });
 missing.push({ decided: true, text: 'Settled, not an open point (owner 2026-11-23): the header Login button was removed.' });
-missing.push('Terms & Conditions links (card "Full terms & conditions" and the legal line "Full campaign terms apply") are still not in the links sheet and not confirmed: src/config.js still has "#" placeholders for terms and campaignTerms. Please send the final URLs. (Deposit links per day come from the links sheet via scripts/import-links.mjs.)');
+missing.push({ decided: true, text: 'Settled, not an open point (owner 2026-11-23): both T&C links (card "Full terms & conditions" and legal line "Full campaign terms apply") open https://jack-pot-uk.top/bonus-policy on every market; the site picks the language itself.' });
 section('Missing in the sheet', '', missing);
 
 section(

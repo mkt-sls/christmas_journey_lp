@@ -1,7 +1,7 @@
 import dayLinks from '../data/links.json';
 
 // Campaign settings and every outgoing link in one place.
-// Replace the "#" placeholders before launch. Per-market overrides go in linksByMarket
+// Per-market overrides go in linksByMarket
 // (market id from data/markets.json, e.g. DE, EN_GBP).
 export const CAMPAIGN = {
   year: 2026,
@@ -11,8 +11,8 @@ export const CAMPAIGN = {
 
 export const links = {
   deposit: '#',
-  terms: '#', // "Full terms & conditions" on the card
-  campaignTerms: '#', // "Full campaign terms apply" in the legal line
+  terms: 'https://jack-pot-uk.top/bonus-policy', // "Full terms & conditions" on the card
+  campaignTerms: 'https://jack-pot-uk.top/bonus-policy', // "Full campaign terms apply" in the legal line
   beGambleAware: 'https://www.begambleaware.org',
 };
 

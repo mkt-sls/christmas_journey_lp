@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import links from '../data/links.json';
-import { depositLinkFor } from './config.js';
+import { depositLinkFor, linkFor, links as cfgLinks } from './config.js';
 
 describe('per-day deposit links', () => {
   it('has 26 days', () => {
@@ -20,5 +20,19 @@ describe('per-day deposit links', () => {
     expect(depositLinkFor(1, 'DE')).toBe(links[0].deposit);
     expect(depositLinkFor(1, 'RO_MDL')).toBe(depositLinkFor(1, 'EN_GBP'));
     expect(depositLinkFor(1, 'DE').endsWith('promocode=FROST')).toBe(true);
+  });
+});
+
+describe('T&C links', () => {
+  const TC = 'https://jack-pot-uk.top/bonus-policy';
+  it('terms and campaignTerms are the bonus-policy URL', () => {
+    expect(cfgLinks.terms).toBe(TC);
+    expect(cfgLinks.campaignTerms).toBe(TC);
+  });
+  it('every market gets the same URL (no override)', () => {
+    for (const m of ['DE', 'EN_GBP', 'EN_CAD', 'FR_CA', 'RO_MDL', 'NL']) {
+      expect(linkFor('terms', m)).toBe(TC);
+      expect(linkFor('campaignTerms', m)).toBe(TC);
+    }
   });
 });

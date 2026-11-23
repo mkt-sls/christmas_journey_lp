@@ -28,7 +28,7 @@ bonus card.
 | Copy source | The **sheet wins** over Figma for all text, location names and offers |
 | Sheet errors | Fix the obvious ones: RO_MDL day 4 "22 GBP" becomes MDL, and DE "1. bis 25." becomes 26. Flag the RO_MDL amounts for the client but keep them |
 | Data | One-time import script turns the sheet into JSON in the repo. Re-run it when the sheet changes |
-| Links | Placeholder `#` values kept in one config file: deposit, login, T&C, campaign terms, BeGambleAware |
+| Links | One config file (`src/config.js`): deposit links per day from the links sheet (`data/links.json`), no Login button, T&C and campaign terms = https://jack-pot-uk.top/bonus-policy, BeGambleAware = https://www.begambleaware.org |
 | Figma frame | **Main frames (A)**: header full width (logo at 200px), **no legend**. Fix the day-6 label bug |
 | Route | A fixed window as in Figma: 5 days on desktop (−2…+2) and 3 on mobile (−1…+1), centred on today and clamped at the edges |
 | Progress block | Not built. Only the "Unlocks in" countdown on tomorrow's gift |

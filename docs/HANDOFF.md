@@ -45,12 +45,12 @@ The 2026-11-19 / 11-20 table is in git history: `git show 93dd51c:docs/HANDOFF.m
 - NO TRACKER on the page (owner 2026-11-23): no credited state. The step-3 agency text is final. Never ask the client about it again.
 - The links sheet is private on purpose (owner 2026-11-23).
 - The Google Sheet is never edited by us. Fixes are import overrides in `scripts/import-sheet.mjs`.
-- T&C links (`terms`, `campaignTerms` in `src/config.js`) stay `#` until the owner raises them.
+- T&C links: both `terms` and `campaignTerms` = https://jack-pot-uk.top/bonus-policy on every market (owner 2026-11-23; the site picks the language).
 - Header Login button removed (owner 2026-11-23).
 - `data/ISSUES.md` is the list of questions for the client.
 
 ## Open
-1. Owner: T&C URLs (later, the owner raises them). `data/ISSUES.md` open count: 1 (this T&C item).
+Nothing open for the client.
 - Known check limit: `check-label-centre --ended` does not position-check past slots 1-2.
 
 ## Rules for every check run (learned the hard way)
