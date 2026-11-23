@@ -760,9 +760,9 @@ missing.push('Login now opens today’s day link (the deposit link with the prom
 section('Missing in the sheet', '', missing);
 
 section(
-  'Step 3 text replaced - all 12 translations are agency-made, please verify',
-  'The sheet text of step 3 (key step3_body, EN "The gift turns green when the bonus is credited.") described a green "credited" gift. The page has no such state (only missed / active / locked) and no tracking, so the owner replaced it with "Deposit before 23:59 to claim the day’s bonus." The script applies this override on every import, the sheet is untouched. The heading ("Deposit & claim") stays as in the sheet. These strings were written by the agency, not taken from the sheet:',
-  UI_LANGS.map((l) => (l === 'FR_CA' ? { text: `${l}: "${STEP3_BODY[l]}" - ${FR_CA_DECIDED}; kept as is.`, decided: true } : `${l}: "${STEP3_BODY[l]}"`)),
+  'Step 3 text replaced - decided by the owner (no tracker on the page, 2026-11-23): the agency text is final, nothing to verify',
+  'The sheet text of step 3 (key step3_body, EN "The gift turns green when the bonus is credited.") described a green "credited" gift. The page has no such state (only missed / active / locked) and no tracking, so the owner replaced it with "Deposit before 23:59 to claim the day’s bonus." The owner decided on 2026-11-23 that the page will not have a tracker, so this text is final; it is not a question for the client. The script applies this override on every import, the sheet is untouched. The heading ("Deposit & claim") stays as in the sheet. For information, the agency wrote these strings (they are not taken from the sheet):',
+  UI_LANGS.map((l) => ({ text: l === 'FR_CA' ? `${l}: "${STEP3_BODY[l]}" - ${FR_CA_DECIDED}; kept as is.` : `${l}: "${STEP3_BODY[l]}"`, decided: true })),
 );
 
 section(
