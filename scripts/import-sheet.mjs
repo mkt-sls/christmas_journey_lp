@@ -756,7 +756,7 @@ missing.push({
   text: `Settled, not an open point: there is no "campaign ended" message in the sheet. After 26 December the page shows one under the intro title (key campaign_ended). The agency translated it on 2026-11-20 (owner decision: we translate it ourselves); the script writes these texts on every import, the sheet is untouched: ${UI_LANGS.map((l) => `${l}: "${CAMPAIGN_ENDED[l]}"`).join('; ')}. If you want a different wording in any language, tell us.`,
   decided: true,
 });
-missing.push({ decided: true, text: 'Settled, not an open point (owner 2026-11-23): Login opens today’s day link (the deposit link with the promo code of the day, commit c73ad50).' });
+missing.push({ decided: true, text: 'Settled, not an open point (owner 2026-11-23): the header Login button was removed.' });
 missing.push('Terms & Conditions links (card "Full terms & conditions" and the legal line "Full campaign terms apply") are still not in the links sheet and not confirmed: src/config.js still has "#" placeholders for terms and campaignTerms. Please send the final URLs. (Deposit links per day come from the links sheet via scripts/import-links.mjs.)');
 section('Missing in the sheet', '', missing);
 

@@ -1,8 +1,7 @@
 import { MARKETS, marketCode } from '../market.js';
-import { loginLinkFor } from '../config.js';
 import { CHEVRON_SVG, asset, esc, flagUrl } from './util.js';
 
-export function renderHeader({ ui, market, today }) {
+export function renderHeader({ ui, market }) {
   const code = marketCode(market);
   return `
   <header class="header">
@@ -26,7 +25,6 @@ export function renderHeader({ ui, market, today }) {
             ).join('')}
           </ul>
         </div>
-        <a class="btn-outline" href="${esc(loginLinkFor(today, market.id))}" data-track="login">${esc(ui.login)}</a>
       </div>
     </div>
   </header>`;
