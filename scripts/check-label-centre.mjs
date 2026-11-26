@@ -53,10 +53,8 @@ const TOL = 1; // px, as the existing '>1px' counts
 // --mobile: phone emulation (touch, overlay scrollbars => stage = full viewport width like a real phone, no 15px gutter)
 const MOBILE_EMU = args.includes('--mobile');
 const SHIFT = arg('shift'); // QA only: a = today label +14 stage px right in slot 0/2, b = only as far as the pill needs (per market)
-const MARKETS = fs
-  .readdirSync(path.join(ROOT, 'data', 'cards'))
-  .filter((f) => f.endsWith('.json'))
-  .map((f) => f.replace('.json', ''))
+const MARKETS = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'markets.json'), 'utf8')) // live markets only: disabled ones keep their card files
+  .map((m) => m.id)
   .filter((m) => !ONLY || ONLY.includes(m));
 
 /** In the page: every label with its gift. */

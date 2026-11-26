@@ -54,7 +54,12 @@ The 2026-11-19 / 11-20 table is in git history: `git show 93dd51c:docs/HANDOFF.m
 - FR_CA uses the CLIENT's French (EN_CAD tab, "vous", no FR_CA tab). EN_CAD stays English from a frozen snapshot
   (`data/source/en-cad-english.json`). Agency fixes on FR_CA only: the deadline row "Valide jusqu’au : 23 h 59, 1er déc."
   laid out label|value; Xmas; "1 000 CAD"; "1er"; the route tag "1ER DÉC.".
-- RO_MDL: the page uses the MDL amounts from the links sheet (for example day 1 max 7000 / min 500). The RO_MDL tab numbers are unused.
+- **Moldova (RO_MDL) is switched off (owner 2026-11-26), and it is not in the client zip.** It is gone from the selector, and
+  `?market=RO_MDL` or a saved RO_MDL choice is ignored. A "ro" browser falls back to EN_GBP, like any language without a
+  market. The data stays in the repo (`data/cards/RO_MDL.json`, `data/ui/RO_MD.json`, `data/disabled/flags/md.svg`).
+  `package.mjs` fails if MDL, Moldova or the md flag reach the build. To switch it back on, follow the comment at
+  `DISABLED_MARKETS` in `scripts/import-sheet.mjs`.
+- RO_MDL (while it was on): the page used the MDL amounts from the links sheet (for example day 1 max 7000 / min 500). The RO_MDL tab numbers are unused.
 - NO TRACKER on the page (owner 2026-11-23): no credited state. The step-3 agency text is final. Never ask the client about it again.
 - The links sheet is private on purpose (owner 2026-11-23).
 - The Google Sheet is never edited by us. Fixes are import overrides in `scripts/import-sheet.mjs`.
@@ -68,7 +73,7 @@ The 2026-11-19 / 11-20 table is in git history: `git show 93dd51c:docs/HANDOFF.m
 Nothing open for the client.
 - Known check limit: `check-label-centre --ended` does not position-check past slots 1-2.
 - Nothing open for the owner either. Next likely step: hand `ChristmasJourney.zip` to the client (owner does it).
-- 2026-11-26: zip rebuilt from `a2c0879` on macOS (918055 bytes; includes the garland and resize fixes; `npm test` 68/68; `?date=` check ok). Root layout matches
+- 2026-11-26: zip rebuilt after Moldova was switched off (911423 bytes, 14 markets; `npm test` 70/70; `?date=` and MDL checks ok). Root layout matches
   the template (index.html, status.json, image.jpg + favicons and assets). The new image.jpg has no scrollbar strip.
 - Hero subtitle stays exactly as the client wrote it in the sheet, in every language, with no override (owner 2026-11-26).
   EN and RU use an em dash, DE and BG an en dash, the others a colon or a full stop. Never ask about it again.

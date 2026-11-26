@@ -18,8 +18,7 @@
     "sv": "SV",
     "nb": "NO",
     "no": "NO",
-    "nn": "NO",
-    "ro": "RO_MDL"
+    "nn": "NO"
   },
   "fallback": "EN_GBP"
 }

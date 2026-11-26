@@ -104,6 +104,17 @@ const BROWSER_MAP = {
   fallback: 'EN_GBP',
 };
 
+// Markets switched off on the page (owner 2026-11-26: Moldova off, and not in the client zip). Their cards and UI files are
+// still written below, so the data stays ready, but they are left out of markets.json (selector, ?market=, saved choice)
+// and out of browser-map.json (a "ro" browser then falls back like any language without a market). To switch RO_MDL back
+// on: remove it here, re-add 'ro-MD' in src/market.js HTML_LANG and src/i18n.js DATE_LOCALE (and the date.test.js row),
+// drop the '!' globs in src/i18n.js, move data/disabled/flags/md.svg back to public/assets/flags/, and drop the MDL
+// check in scripts/package.mjs.
+const DISABLED_MARKETS = ['RO_MDL'];
+const LIVE_MARKETS = MARKETS.filter((m) => !DISABLED_MARKETS.includes(m.id));
+for (const [lang, id] of Object.entries(BROWSER_MAP.language)) if (DISABLED_MARKETS.includes(id)) delete BROWSER_MAP.language[lang];
+for (const [tag, id] of Object.entries(BROWSER_MAP.exact)) if (DISABLED_MARKETS.includes(id)) delete BROWSER_MAP.exact[tag];
+
 // ---- logs --------------------------------------------------------------------
 const fixes = []; // applied fixes
 const issues = []; // { title, lines[] } numbered open points for the client
@@ -671,7 +682,7 @@ for (const m of MARKETS) {
   }
   writeJson(`data/cards/${m.id}.json`, body);
 }
-writeJson('data/markets.json', MARKETS);
+writeJson('data/markets.json', LIVE_MARKETS);
 writeJson('data/browser-map.json', BROWSER_MAP);
 
 // ---- ISSUES.md ---------------------------------------------------------------

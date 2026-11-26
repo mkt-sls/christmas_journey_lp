@@ -124,14 +124,5 @@
     "flagEmoji": "🇨🇦",
     "label": "Français (Canada)",
     "cardsFile": "data/cards/FR_CA.json"
-  },
-  {
-    "id": "RO_MDL",
-    "uiLang": "RO_MD",
-    "currency": "MDL",
-    "flag": "md",
-    "flagEmoji": "🇲🇩",
-    "label": "Română (Moldova)",
-    "cardsFile": "data/cards/RO_MDL.json"
   }
 ]

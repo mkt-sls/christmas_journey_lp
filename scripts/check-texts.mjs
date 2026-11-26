@@ -57,10 +57,8 @@ const MOBILE_EMU = args.includes('--mobile');
 // stroke comes closer than 0 px to a text line box of the message (a dot on the letters).
 const ENDED = args.includes('--ended');
 const ENDED_DATE = '2026-12-28';
-const ALL_MARKETS = fs
-  .readdirSync(path.join(ROOT, 'data', 'cards'))
-  .filter((f) => f.endsWith('.json'))
-  .map((f) => f.replace('.json', ''))
+const ALL_MARKETS = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'markets.json'), 'utf8')) // live markets only: disabled ones keep their card files
+  .map((m) => m.id)
   .filter((m) => !ONLY || ONLY.includes(m));
 
 /** Runs in the page. scope: CSS selector of the root to walk; exclude: selector of subtrees to skip. */

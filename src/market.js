@@ -62,7 +62,7 @@ export function marketCode(market) {
   return market.uiLang.split('_')[0];
 }
 
-const HTML_LANG = { EN_GBP: 'en-GB', EN_AUD: 'en-AU', EN_USD: 'en-US', EN_CAD: 'en-CA', FR_CA: 'fr-CA', RO_MDL: 'ro-MD', NO: 'nb', DA: 'da', SV: 'sv' };
+const HTML_LANG = { EN_GBP: 'en-GB', EN_AUD: 'en-AU', EN_USD: 'en-US', EN_CAD: 'en-CA', FR_CA: 'fr-CA', NO: 'nb', DA: 'da', SV: 'sv' };
 
 /** Value for <html lang>. */
 export function htmlLangFor(market) {

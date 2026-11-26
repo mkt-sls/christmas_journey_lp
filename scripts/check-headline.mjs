@@ -48,12 +48,12 @@ try {
 
 const args = process.argv.slice(2);
 const SHOTS = args.includes('--shots');
-const MARKETS = ['RO_MDL', 'DE', 'TR', 'RU', 'SV', 'FR_CA', 'EN_GBP'];
+const MARKETS = ['DE', 'TR', 'RU', 'SV', 'FR_CA', 'EN_GBP'];
 const DATES = ['2026-12-26', '2026-12-02'];
 const WIDTHS = [390, 1366];
 const NUM_WIDTHS = (args.find((a) => a.startsWith('--widths='))?.slice(9).split(',').map(Number)) || (args.includes('--fit') ? [360, 390, 430, 768, 1024, 1366, 1920] : [360, 390, 768, 1366, 1920]);
 const ONLY = args.find((a) => a.startsWith('--markets='))?.slice(10).split(',');
-const ALL_MARKETS = fs.readdirSync(path.join(ROOT, 'data', 'cards')).filter((f) => f.endsWith('.json')).map((f) => f.replace('.json', '')).filter((m) => !ONLY || ONLY.includes(m));
+const ALL_MARKETS = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'markets.json'), 'utf8')).map((m) => m.id).filter((m) => !ONLY || ONLY.includes(m)); // live markets only
 const FIT = args.includes('--fit');
 const HEADLINE_MIN = 26; // keep equal to src/render/fitText.js
 const NUMBERS_ONLY = FIT || args.includes('--numbers-only') || args.includes('--skip-ink');

@@ -1,12 +1,13 @@
 // UI strings, card data loading and date formatting per UI language.
-const uiFiles = import.meta.glob('../data/ui/*.json');
-const cardFiles = import.meta.glob('../data/cards/*.json');
+// Disabled markets (RO_MDL, owner 2026-11-26; see DISABLED_MARKETS in scripts/import-sheet.mjs) are left out of the build.
+const uiFiles = import.meta.glob(['../data/ui/*.json', '!../data/ui/RO_MD.json']);
+const cardFiles = import.meta.glob(['../data/cards/*.json', '!../data/cards/RO_MDL.json']);
 
 // Locale used to format dates, per UI language (keys of data/ui/<lang>.json).
 // EN uses en-US on purpose: the sheet's English tags read "DEC 7" for every English market.
 const DATE_LOCALE = {
   EN: 'en-US', RU: 'ru-RU', FR_CA: 'fr-CA', DE: 'de-DE', BG: 'bg-BG', NL: 'nl-NL',
-  RO_MD: 'ro-MD', TR: 'tr-TR', NO: 'nb-NO', IT: 'it-IT', DA: 'da-DK', SV: 'sv-SE',
+  TR: 'tr-TR', NO: 'nb-NO', IT: 'it-IT', DA: 'da-DK', SV: 'sv-SE',
 };
 // Locale for the long "8 December" form (EN follows the sheet's "Opens 8 December").
 const LONG_LOCALE = { ...DATE_LOCALE, EN: 'en-GB' };

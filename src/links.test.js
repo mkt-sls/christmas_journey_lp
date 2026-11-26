@@ -20,13 +20,13 @@ describe('per-day deposit links', () => {
   it('promo codes are unique and depositLinkFor returns the day link for every market', () => {
     expect(new Set(links.map((l) => l.promo)).size).toBe(26);
     expect(depositLinkFor(1, 'DE')).toBe(links[0].deposit);
-    expect(depositLinkFor(1, 'RO_MDL')).toBe(depositLinkFor(1, 'EN_GBP'));
+    expect(depositLinkFor(1, 'TR')).toBe(depositLinkFor(1, 'EN_GBP'));
     expect(depositLinkFor(1, 'DE').endsWith('promocode=FROST')).toBe(true);
   });
 });
 
 describe('obfuscated deposit links', () => {
-  const MARKETS = ['DE', 'EN_GBP', 'EN_USD', 'EN_AUD', 'EN_CAD', 'FR_CA', 'RO_MDL', 'NL', 'BG', 'IT', 'NO', 'RU', 'SV', 'TR', 'DA'];
+  const MARKETS = ['DE', 'EN_GBP', 'EN_USD', 'EN_AUD', 'EN_CAD', 'FR_CA', 'NL', 'BG', 'IT', 'NO', 'RU', 'SV', 'TR', 'DA'];
   it('encode/decode round-trips for all 26 days', () => {
     for (const l of links) expect(decodeLink(l.day, encodeLink(l.day, l.deposit)), `day ${l.day}`).toBe(l.deposit);
   });
@@ -47,7 +47,7 @@ describe('T&C links', () => {
     expect(cfgLinks.campaignTerms).toBe(TC);
   });
   it('every market gets the same URL (no override)', () => {
-    for (const m of ['DE', 'EN_GBP', 'EN_CAD', 'FR_CA', 'RO_MDL', 'NL']) {
+    for (const m of ['DE', 'EN_GBP', 'EN_CAD', 'FR_CA', 'NL']) {
       expect(linkFor('terms', m)).toBe(TC);
       expect(linkFor('campaignTerms', m)).toBe(TC);
     }

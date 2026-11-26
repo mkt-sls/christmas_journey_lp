@@ -73,6 +73,16 @@ for (const f of walk(DIST)) {
   const text = fs.readFileSync(f, 'utf8').toLowerCase();
   for (const n of NEEDLES) if (text.includes(n.toLowerCase())) throw new Error(`plaintext '${n}' found in the client build: ${path.relative(DIST, f)}`);
 }
+// disabled markets must not ship (Moldova, owner 2026-11-26: "si in arhiva sa nu fie"): no MDL card data, no Romanian
+// UI file, no md flag. Remove this check when RO_MDL is switched back on (DISABLED_MARKETS in scripts/import-sheet.mjs).
+const MD_NEEDLES = ['MDL', 'RO_MD', 'ro-MD', 'Moldov', 'Română', 'flags/md.svg'];
+for (const f of walk(DIST)) {
+  const rel = path.relative(DIST, f).replace(/\\/g, '/');
+  if (rel === 'assets/flags/md.svg') throw new Error('disabled market RO_MDL: assets/flags/md.svg is in the client build');
+  if (/.(webp|png|jpg|woff2)$/i.test(f)) continue;
+  const text = fs.readFileSync(f, 'utf8');
+  for (const n of MD_NEEDLES) if (text.includes(n)) throw new Error(`disabled market RO_MDL: '${n}' found in the client build: ${rel}`);
+}
 const absolute = [...html.matchAll(/(?:src|href)="(\/[^"]*)"/g)].map((m) => m[1]);
 if (absolute.length) throw new Error(`dist/index.html has root-absolute URLs: ${absolute.join(', ')}`);
 
