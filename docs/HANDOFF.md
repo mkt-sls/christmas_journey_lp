@@ -6,7 +6,7 @@ This file replaces the 2026-11-20 handoff. Older history: `git log`, `docs/PLAN.
 - Repo: https://github.com/mkt-sls/christmas_journey_lp, branch `main`. Every push to `main` deploys GitHub Pages
   (`.github/workflows/pages.yml`).
 - Live: https://mkt-sls.github.io/christmas_journey_lp/
-- Last code commit covered by this handoff: `6fe54f0` (2026-11-23). This update comes in the commit after it. Check that it is pushed and that the Pages run is green: `git log origin/main -1`, `gh run list -L 1`.
+- Last code commit covered by this handoff: `a2c0879` (2026-11-26). This update comes in the commit after it. Check that it is pushed and that the Pages run is green: `git log origin/main -1`, `gh run list -L 1`.
 - Sources:
   - Copy sheet `1sepZEdNocfKZ6jvqroIgmZRAD2bxS3GSCdxIH89ynr0`. It is public; read each tab with `/export?format=csv&gid=<gid>`.
   - Links sheet `1qpxJhrKTPyaUyGmJRrwPQNbh4T8s7458HJCCi2QwiTo`, tab JP gid 0. It is **private on purpose** (owner 2026-11-23; the public 401 is intended, nobody re-shares it). Check it in the owner's logged-in Chrome (Claude in Chrome): fetch `gviz/tq?tqx=out:html&gid=0` in a docs.google.com tab, parse with a trustedTypes policy for DOMParser, hash each row and compare with `data/source/links-sheet.txt` (2026-11-23: identical). The Drive connector cannot see the file.
@@ -68,7 +68,7 @@ The 2026-11-19 / 11-20 table is in git history: `git show 93dd51c:docs/HANDOFF.m
 Nothing open for the client.
 - Known check limit: `check-label-centre --ended` does not position-check past slots 1-2.
 - Nothing open for the owner either. Next likely step: hand `ChristmasJourney.zip` to the client (owner does it).
-- 2026-11-26: zip rebuilt from `6fe54f0` on macOS (918388 bytes; `npm test` 68/68; `?date=` check ok). Root layout matches
+- 2026-11-26: zip rebuilt from `a2c0879` on macOS (918055 bytes; includes the garland and resize fixes; `npm test` 68/68; `?date=` check ok). Root layout matches
   the template (index.html, status.json, image.jpg + favicons and assets). The new image.jpg has no scrollbar strip.
 - Hero subtitle stays exactly as the client wrote it in the sheet, in every language, with no override (owner 2026-11-26).
   EN and RU use an em dash, DE and BG an en dash, the others a colon or a full stop. Never ask about it again.
