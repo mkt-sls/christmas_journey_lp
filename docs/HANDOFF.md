@@ -68,8 +68,8 @@ Nothing open for the client.
 - Nothing open for the owner either. Next likely step: hand `ChristmasJourney.zip` to the client (owner does it).
 - 2026-11-26: zip rebuilt from `6fe54f0` on macOS (918388 bytes; `npm test` 68/68; `?date=` check ok). Root layout matches
   the template (index.html, status.json, image.jpg + favicons and assets). The new image.jpg has no scrollbar strip.
-- Copy note, not acted on: the EN_GBP hero subtitle has an em dash ("every day — open it"). It comes from the sheet; the
-  owner decides whether to override it.
+- Hero subtitle stays exactly as the client wrote it in the sheet, in every language, with no override (owner 2026-11-26).
+  EN and RU use an em dash, DE and BG an en dash, the others a colon or a full stop. Never ask about it again.
 
 ## Rules for every check run (learned the hard way)
 - After any route or Santa change, run `scripts/check-santa.mjs`. Eyeballing missed bugs three times.
