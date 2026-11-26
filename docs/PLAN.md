@@ -22,7 +22,7 @@ bonus card.
 | Clock | The visitor's local time (browser). The day switches at local midnight and "Valid until 23:59" is local |
 | Before 1 Dec | Everything locked, with a countdown to day 1 |
 | After 26 Dec | Everything expired, plus a "campaign ended" message. This text is an EN placeholder in all languages until the client supplies translations |
-| Markets | All 14 markets, plus FR_CA (15), with a market selector in the header. The dropdown list is designed by us: flag + language + currency |
+| Markets | All 14 markets, plus FR_CA (15), with a market selector in the header. Update 2026-11-26: RO_MDL switched off, PL (PLN) added, 15 live markets. The dropdown list is designed by us: flag + language + currency |
 | Market pick | Auto from the browser language plus region: en-AU→AUD, en-CA→CAD, en-US→USD, other en→GBP, fr-CA→FR_CA, de→DE, and so on. The selector overrides this choice and remembers it in localStorage |
 | fr-CA | French UI from the sheet. The French cards are **translated by us** from EN_CAD (CAD amounts) and flagged "client to verify" |
 | Copy source | The **sheet wins** over Figma for all text, location names and offers |

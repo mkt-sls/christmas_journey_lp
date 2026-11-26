@@ -6,11 +6,12 @@ This file replaces the 2026-11-20 handoff. Older history: `git log`, `docs/PLAN.
 - Repo: https://github.com/mkt-sls/christmas_journey_lp, branch `main`. Every push to `main` deploys GitHub Pages
   (`.github/workflows/pages.yml`).
 - Live: https://mkt-sls.github.io/christmas_journey_lp/
-- Last code commit covered by this handoff: `a2c0879` (2026-11-26). This update comes in the commit after it. Check that it is pushed and that the Pages run is green: `git log origin/main -1`, `gh run list -L 1`.
+- Last code commit covered by this handoff: `cf25fb1` (2026-11-26, Poland + PLN compare). This update comes in the commit after it. Check that it is pushed and that the Pages run is green: `git log origin/main -1`, `gh run list -L 1`.
 - Sources:
   - Copy sheet `1sepZEdNocfKZ6jvqroIgmZRAD2bxS3GSCdxIH89ynr0`. It is public; read each tab with `/export?format=csv&gid=<gid>`.
   - Links sheet `1qpxJhrKTPyaUyGmJRrwPQNbh4T8s7458HJCCi2QwiTo`, tab JP gid 0. It is **private on purpose** (owner 2026-11-23; the public 401 is intended, nobody re-shares it). Check it in the owner's logged-in Chrome (Claude in Chrome): fetch `gviz/tq?tqx=out:html&gid=0` in a docs.google.com tab, parse with a trustedTypes policy for DOMParser, hash each row and compare with `data/source/links-sheet.txt` (2026-11-23: identical). The Drive connector cannot see the file.
   - Figma `2MyylxdZblfGnf05nQacUz`, node 156:1930. The sheet wins over Figma for text.
+  - Copy sheet tab PL = gid 1526370949 (added by the client by 2026-11-26). The links sheet has a PLN column (R) since then.
 - QA: `?date=2026-12-07&market=DE` forces the date and the market. Tests: `npm test`, `npm run build`. `?date=` works in dev/Pages only, never in ChristmasJourney.zip (built with VITE_CLIENT=1).
 
 ## Working with the owner
@@ -48,6 +49,9 @@ The 2026-11-19 / 11-20 table is in git history: `git show 93dd51c:docs/HANDOFF.m
 | `6fe54f0` | Smaller market selector button; styled scrollbars (owner 2026-11-23) |
 | 2026-11-26 | Garland fix: today's light garland redraws whenever its card changes size (`drawGarlands`, ResizeObserver). Before, a page loaded in a narrow window and then widened kept two long green wires below the card (owner report). New check `scripts/check-garland.mjs` (narrow load then widen, desktop <-> mobile; old code: 3 FAIL, new: 21/21 PASS) |
 | 2026-11-26 | Resize fix: `fitStage` fits the layout the page was rendered with (`.page[data-layout]`), not the current media query. Crossing 1024px fires `resize` before the re-render, and on Dec 25-26 the desktop Santa slot (3-4) was looked up in the mobile table (0-2): `TypeError ... is not iterable` in `santaAngle`. `check-garland.mjs` now FAILs on any page error and takes `--dates all` (old code: 2 FAIL, new: 87/87 PASS) |
+| `4703050` | Poland (PL, PLN) added: client's PL tab + `plClientFixes()`, agency `PL_UI`, pl-PL dates, `pl.svg`, "pl" browsers -> PL. Checks on PL: `check-texts` 320/390/1366 0 failures, `check-headline` ALL PASS, `check-label-centre` 360 = EN_GBP |
+| `b8eb5c2` | Owner decisions on PL: same games as every market, the PL interface is ours, same links as every geo |
+| `cf25fb1` | `import-links.mjs` parses the links sheet's PLN column (1560 values, 0 differences); PLN point closed; links-diff header fixed (it printed the template text) |
 
 ## Owner decisions to remember
 - **Poland (PL, PLN) added (owner 2026-11-26: "adaugam polonia limba si currency, tradu tu").** Cards = the client's PL tab (gid
@@ -87,9 +91,11 @@ The 2026-11-19 / 11-20 table is in git history: `git show 93dd51c:docs/HANDOFF.m
   30/35 per currency, PLN 100/110/125/135/155); the import ignores it (it reads only "<n> December" rows).
 - Known, not PL-specific: `check-texts --mobile --ended` at 320px flags the route dot 2.1px over the campaign-ended text in every market (EN_GBP, DE, PL alike); 360 and 390 pass.
 - Known check limit: `check-label-centre --ended` does not position-check past slots 1-2.
-- Nothing open for the owner either. Next likely step: hand `ChristmasJourney.zip` to the client (owner does it).
-- 2026-11-26: zip rebuilt after Moldova was switched off (911423 bytes, 14 markets; `npm test` 70/70; `?date=` and MDL checks ok). Root layout matches
-  the template (index.html, status.json, image.jpg + favicons and assets). The new image.jpg has no scrollbar strip.
+- Nothing open for the owner. Next step: hand `ChristmasJourney.zip` to the client with the 3 PL points of `data/ISSUES.md` (owner does it).
+- 2026-11-26: zip rebuilt with Poland (915895 bytes, 15 markets; `npm test` 72/72; `?date=` and MDL checks ok). Root layout matches
+  the template (index.html, status.json, image.jpg + favicons and assets). image.jpg is still EN_GBP on 5 December.
+- Lesson 2026-11-26: the links sheet changed (PLN column) after our 2026-11-23 copy, and the owner was told "no PLN column" from the
+  old copy. Before stating what a sheet has or lacks, read it LIVE (copy sheet: public CSV; links sheet: owner's Chrome/Edge).
 - Hero subtitle stays exactly as the client wrote it in the sheet, in every language, with no override (owner 2026-11-26).
   EN and RU use an em dash, DE and BG an en dash, the others a colon or a full stop. Never ask about it again.
 

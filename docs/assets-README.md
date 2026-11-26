@@ -22,7 +22,7 @@ Raster = WebP @2x (lossy, with alpha where noted). Vectors = SVG.
 | route-desktop-gold.svg / route-mobile-gold.svg | derived from route-desktop.svg / route-mobile.svg (task 3) | same as source | SVG | Full route with the travelled colour (#FFD14D, stroke 7 / 6). The page clips it up to the today slot, so the travelled part can end at any slot (the Figma travelled overlays only cover the first half). The gold glow is added in CSS |
 | snow-cap.svg | 156:2536 (desktop today card, 253x29) | 259x29 | SVG | Stretchable; smaller variants exist at 156:2474 (126x20), 156:2815 (mobile 132x20), 156:2858 (139x20), bonus card 156:2185 (420x22) |
 | holly.svg | 156:2538 (desktop today card, 52x39) | 52x39 | SVG | Smaller variants 156:2476 (32x24), 156:2817 (28x21) – scale this one |
-| flags/*.svg | not in Figma (only an AU flag, 156:2435) | 4:3 | SVG | gb au us ca de bg nl it ru tr dk se no md. FR-CA uses `ca.svg`. See license |
+| flags/*.svg | not in Figma (only an AU flag, 156:2435) | 4:3 | SVG | gb au us ca de bg nl it ru tr dk se no pl (md moved to `data/disabled/flags/` 2026-11-26, pl added 2026-11-26). FR-CA uses `ca.svg`. See license |
 
 ## Garland (CSS, not exported)
 Node 156:2508 (desktop) / 156:2834 (mobile). 269x175 rounded wire (stroke #14301F), 26 bulbs of 9px (4.5 radius, white 60% ring), repeating order red, gold, green, blue:
