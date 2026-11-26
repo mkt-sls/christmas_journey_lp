@@ -47,6 +47,7 @@ The 2026-11-19 / 11-20 table is in git history: `git show 93dd51c:docs/HANDOFF.m
 | `777a0e5` | Mobile: logo centred in the header (owner 2026-11-23) |
 | `6fe54f0` | Smaller market selector button; styled scrollbars (owner 2026-11-23) |
 | 2026-11-26 | Garland fix: today's light garland redraws whenever its card changes size (`drawGarlands`, ResizeObserver). Before, a page loaded in a narrow window and then widened kept two long green wires below the card (owner report). New check `scripts/check-garland.mjs` (narrow load then widen, desktop <-> mobile; old code: 3 FAIL, new: 21/21 PASS) |
+| 2026-11-26 | Resize fix: `fitStage` fits the layout the page was rendered with (`.page[data-layout]`), not the current media query. Crossing 1024px fires `resize` before the re-render, and on Dec 25-26 the desktop Santa slot (3-4) was looked up in the mobile table (0-2): `TypeError ... is not iterable` in `santaAngle`. `check-garland.mjs` now FAILs on any page error and takes `--dates all` (old code: 2 FAIL, new: 87/87 PASS) |
 
 ## Owner decisions to remember
 - Minimum headline font is 26px in all markets. The TR currency split is OK.
@@ -66,10 +67,6 @@ The 2026-11-19 / 11-20 table is in git history: `git show 93dd51c:docs/HANDOFF.m
 ## Open
 Nothing open for the client.
 - Known check limit: `check-label-centre --ended` does not position-check past slots 1-2.
-- Found 2026-11-26, not fixed (owner not asked yet): on 26 December, resizing from desktop to mobile width throws
-  `TypeError ... is not iterable` in `spot` (`src/render/route.js`, via `santaAngle` in `fitStage`). The resize handler runs
-  `fitStage` with the old desktop Santa slot before the media-query change re-renders the page. It already happened before
-  the garland fix. The page re-renders right after, so the visible effect is probably nil; not measured.
 - Nothing open for the owner either. Next likely step: hand `ChristmasJourney.zip` to the client (owner does it).
 - 2026-11-26: zip rebuilt from `6fe54f0` on macOS (918388 bytes; `npm test` 68/68; `?date=` check ok). Root layout matches
   the template (index.html, status.json, image.jpg + favicons and assets). The new image.jpg has no scrollbar strip.
@@ -78,7 +75,7 @@ Nothing open for the client.
 
 ## Rules for every check run (learned the hard way)
 - After any route or Santa change, run `scripts/check-santa.mjs`. Eyeballing missed bugs three times.
-- After any change to today's label card or its garland, run `scripts/check-garland.mjs`.
+- After any change to today's label card, its garland or the resize path (`fitStage`), run `scripts/check-garland.mjs --dates all`.
 - Before each browser run, check that free RAM is at least 2 GB. Run ONE width per process, never in parallel.
   Figma, After Effects and Edge in the background ate 4-9 GB and killed sweeps.
 - Never re-run `scripts/import-sheet.mjs` without reading its header. Since 2026-11-20 it detects the French EN_CAD tab.

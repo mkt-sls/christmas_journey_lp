@@ -56,7 +56,10 @@ async function setMarket(id, { persist = true } = {}) {
 function fitStage() {
   const page = app.querySelector('.page');
   if (!page) return;
-  const l = layout();
+  // Fit the layout the page was RENDERED with, not the one the media query says now. Crossing 1024px fires `resize` before the
+  // media query's `change` re-renders, so for a moment a desktop page sits in a mobile window: reading layout() there looked up
+  // the desktop Santa slot (up to 4) in the mobile table (slots 0-2) and threw in santaAngle (Dec 26, 2026-11-26).
+  const l = page.dataset.layout;
   const spec = stageSpec(l);
   // desktop: see desktopFit; mobile: the 390px stage shrinks on narrower phones (360 -> 0.92) so nothing is cut off
   // desktop wider than the 1920 design: the whole page is CSS-zoomed by z so it fills the viewport; everything inside works in

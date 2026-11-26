@@ -10,6 +10,8 @@
 // Starts its own Vite dev server. For each date and each step "<w0>x<h0>:<w1>x<h1>" it loads the page at the first size,
 // resizes to the second, waits, and compares the garland SVG with the card: width and height must equal the card's
 // offsetWidth / offsetHeight + 2 * pad (pad = the --gp the garland was drawn with). One row per case, PASS or FAIL.
+// Any uncaught page error during load or resize also FAILs the row: crossing 1024px once ran fitStage with the old layout's
+// Santa slot and threw in santaAngle (Dec 26, 2026-11-26). `--dates all` runs every date from 2026-11-30 to 2026-12-28.
 // Playwright is not a project dependency: PLAYWRIGHT_MODULE / CHROME as in scripts/check-santa.mjs.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -36,7 +38,8 @@ try {
 
 const args = process.argv.slice(2);
 const arg = (k, d) => (args.includes(k) ? args[args.indexOf(k) + 1] : d);
-const DATES = arg('--dates', '2026-12-01,2026-12-07,2026-12-26').split(',');
+const ALL_DATES = Array.from({ length: 29 }, (_, i) => new Date(Date.UTC(2026, 10, 30 + i)).toISOString().slice(0, 10));
+const DATES = arg('--dates', '2026-12-01,2026-12-07,2026-12-26') === 'all' ? ALL_DATES : arg('--dates', '2026-12-01,2026-12-07,2026-12-26').split(',');
 // narrow load then widen (the reported bug), wide load then narrow, desktop <-> mobile, and plain loads (same size twice)
 const STEPS = arg('--steps', '60x900:565x1000,200x600:390x844,390x844:1440x900,1440x900:390x844,1440x900:1024x768,390x844:390x844,1440x900:1440x900')
   .split(',')
@@ -65,15 +68,19 @@ try {
     for (const [[w0, h0], [w1, h1]] of STEPS) {
       const ctx = await browser.newContext({ viewport: { width: w0, height: h0 } });
       const page = await ctx.newPage();
+      const errors = [];
+      page.on('pageerror', (e) => errors.push(e.message.slice(0, 80)));
       await page.goto(`${base}/?date=${date}&market=EN_GBP`, { waitUntil: 'networkidle' });
       await page.evaluate(() => document.fonts.ready);
       await page.setViewportSize({ width: w1, height: h1 });
       await page.waitForTimeout(600);
       const rows = await measure(page);
       const bad = rows.filter((r) => !r.got || r.got[0] !== r.want[0] || r.got[1] !== r.want[1]);
-      const ok = rows.length > 0 && bad.length === 0;
+      const ended = date < '2026-12-01' || date > '2026-12-26'; // campaign not running: no today card, no garland
+      const ok = (ended || rows.length > 0) && bad.length === 0 && errors.length === 0;
       if (!ok) fails++;
-      const detail = rows.length ? rows.map((r) => `svg ${r.got?.join('x')} card+pad ${r.want.join('x')}`).join('; ') : 'no garland on the page';
+      let detail = rows.length ? rows.map((r) => `svg ${r.got?.join('x')} card+pad ${r.want.join('x')}`).join('; ') : ended ? 'campaign not running, no garland (expected)' : 'no garland on the page';
+      if (errors.length) detail += `  PAGE ERROR: ${errors.join(' | ')}`;
       console.log(`${ok ? 'PASS' : 'FAIL'}  ${date}  ${w0}x${h0} -> ${w1}x${h1}  ${detail}`);
       await ctx.close();
     }
