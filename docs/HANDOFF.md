@@ -82,8 +82,9 @@ The 2026-11-19 / 11-20 table is in git history: `git show 93dd51c:docs/HANDOFF.m
 ## Open
 - For the client: the 3 open PL points in `data/ISSUES.md` (locked-card day, spins grammar, term-row colons; fixed on the page already).
 - `data/source/links-sheet.txt` (2026-11-26) = the 2026-11-23 copy plus the PLN column read live; every column the import uses was
-  compared live that day (amounts of all currencies, promo codes, deposit links, games, wager): identical. A row-hash check of the
-  whole file against the live sheet was not finished (the Chrome extension disconnected); redo it in the owner's Chrome.
+  compared live that day (amounts of all currencies, promo codes, deposit links, games, wager): identical, and a SHA-256 hash of
+  every row (header + 26 days) equals the live sheet. Below the table the sheet has a min-deposit conversion helper (EUR 22/25/28/
+  30/35 per currency, PLN 100/110/125/135/155); the import ignores it (it reads only "<n> December" rows).
 - Known, not PL-specific: `check-texts --mobile --ended` at 320px flags the route dot 2.1px over the campaign-ended text in every market (EN_GBP, DE, PL alike); 360 and 390 pass.
 - Known check limit: `check-label-centre --ended` does not position-check past slots 1-2.
 - Nothing open for the owner either. Next likely step: hand `ChristmasJourney.zip` to the client (owner does it).
