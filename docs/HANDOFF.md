@@ -55,11 +55,11 @@ The 2026-11-19 / 11-20 table is in git history: `git show 93dd51c:docs/HANDOFF.m
   fixes of `plClientFixes()` in `scripts/import-sheet.mjs`: game line "na <game>" from EN_GBP (the tab has none), "DARMOWE SPINY"
   after 2/3/4, colons in the term rows (label | value layout) and "gru.", locked-card day (the tab wrote the next day). The UI
   ELEMENT tab has no PL column: interface + 26 location names are the agency's (`PL_UI`; "DZISIEJSZY POSTÓJ", not "PRZYSTANEK",
-  which filled the label edge to edge at 390/320). PLN amounts come only from the PL tab; the links sheet has no PLN column, so
-  `import-links.mjs` skips PL in its diff. A "pl" browser gets PL.
+  which filled the label edge to edge at 390/320). PLN amounts: the links sheet got a PLN column (R) by 2026-11-26; read live
+  that day, all 26 days match the PL tab, and `import-links.mjs` now compares PLN like every other currency. A "pl" browser gets PL.
   Owner 2026-11-26, settled: the PL games are the same as every market (the EN_GBP game line stays); the PL interface is ours
-  (not asked of the client); PL uses the same deposit links and promo codes as every geo. Still open in `data/ISSUES.md` (4):
-  locked-card day, spins grammar, term-row colons, PLN amounts (no PLN column in the links sheet).
+  (not asked of the client); PL uses the same deposit links and promo codes as every geo. Still open in `data/ISSUES.md` (3):
+  locked-card day, spins grammar, term-row colons (all three already fixed on the page by the import).
 - Minimum headline font is 26px in all markets. The TR currency split is OK.
 - FR_CA uses the CLIENT's French (EN_CAD tab, "vous", no FR_CA tab). EN_CAD stays English from a frozen snapshot
   (`data/source/en-cad-english.json`). Agency fixes on FR_CA only: the deadline row "Valide jusqu’au : 23 h 59, 1er déc."
@@ -80,7 +80,10 @@ The 2026-11-19 / 11-20 table is in git history: `git show 93dd51c:docs/HANDOFF.m
 - `data/ISSUES.md` is the list of questions for the client.
 
 ## Open
-- For the client: the 4 open PL points in `data/ISSUES.md` (locked-card day, spins grammar, term-row colons, PLN amounts not in the links sheet).
+- For the client: the 3 open PL points in `data/ISSUES.md` (locked-card day, spins grammar, term-row colons; fixed on the page already).
+- `data/source/links-sheet.txt` (2026-11-26) = the 2026-11-23 copy plus the PLN column read live; every column the import uses was
+  compared live that day (amounts of all currencies, promo codes, deposit links, games, wager): identical. A row-hash check of the
+  whole file against the live sheet was not finished (the Chrome extension disconnected); redo it in the owner's Chrome.
 - Known, not PL-specific: `check-texts --mobile --ended` at 320px flags the route dot 2.1px over the campaign-ended text in every market (EN_GBP, DE, PL alike); 360 and 390 pass.
 - Known check limit: `check-label-centre --ended` does not position-check past slots 1-2.
 - Nothing open for the owner either. Next likely step: hand `ChristmasJourney.zip` to the client (owner does it).

@@ -21,8 +21,8 @@
 //
 // PL (Poland, PLN; owner 2026-11-26 "adaugam polonia"): cards = the client's PL tab (3 columns: active, expired, locked; no "bonus
 // credited" column) with the agency fixes of plClientFixes(). The UI ELEMENT tab has no PL column, so the PL interface texts and
-// the 26 location names are agency translations (PL_UI below). The PLN amounts come from the PL tab only: the links sheet has no
-// PLN column (copy of 2026-11-23), so scripts/import-links.mjs cannot compare them.
+// the 26 location names are agency translations (PL_UI below). The PLN amounts of the PL tab are compared with the links sheet's
+// PLN column by scripts/import-links.mjs, like every other currency (2026-11-26: identical on all 26 days).
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -992,7 +992,7 @@ section(
     'Locked card: the PL tab writes the next day (day 1 "OTWARCIE 2 GRUDNIA", "ZABLOKOWANE · 2 GRU"; day 26 "27 GRUDNIA"). Every other market writes the card’s own day ("Opens 1 December"), so the page shows "OTWARCIE 1 GRUDNIA", "ZABLOKOWANE · 1 GRU.".',
     'Grammar: after 2, 3 or 4 (not 12-14) Polish says "DARMOWE SPINY", not "DARMOWYCH SPINÓW" (days 2, 9, 16, 18, 20, 22: 82, 74, 82, 63, 82, 62 spins). The page uses "DARMOWE SPINY" there.',
     'Term rows: the page adds a colon ("Min. depozyt: 155 PLN", "Wymagany obrót: x25", "Ważne do: 23:59, 1 gru.") so the card shows them as label | value like every market; "gru." takes the abbreviation dot.',
-    'PLN amounts: the links sheet has no PLN column, so the PL amounts (for example day 1 "70% DO 1 500 PLN", min. deposit 155 PLN) come only from the PL tab and could not be cross-checked. Please confirm them, or add a PLN column to the links sheet.',
+    { decided: true, text: 'Settled, not an open point (2026-11-26): the PLN amounts of the PL tab match the PLN column of the links sheet on all 26 days (percent or spins, maximum bonus, minimum deposit, wagering); see data/source/links-diff.md.' },
   ],
 );
 
