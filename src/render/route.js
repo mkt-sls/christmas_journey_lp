@@ -385,42 +385,63 @@ export function tickCountdown(root, ui, now) {
 
 const BULBS = ['#FF4D5E', '#FFD66B', '#4ADE80', '#5EC4FF'];
 
-/** Draws the light garland (26 bulbs, red-gold-green-blue) round today's label card. */
+// Redraws a garland whenever its card changes size. The garland is sized from the card's box, so a box measured once went
+// stale: a page loaded in a narrow window has a tall card (text wraps), and after widening the card shrank but the garland
+// kept its old height (two long green wires below the card, owner 2026-11-26). Covers resize, rotation, fonts and fitText.
+let garlandObserver = null;
+
+/** Draws the light garland (26 bulbs, red-gold-green-blue) round today's label card and keeps it sized to the card. */
 export function drawGarlands(root) {
-  root.querySelectorAll('[data-garland]').forEach((el) => {
-    const card = el.parentElement;
-    const pad = card.classList.contains('label--active') ? (card.closest('[data-layout=mobile]') ? 5 : 7) : 7;
-    const w = card.offsetWidth + pad * 2;
-    const h = card.offsetHeight + pad * 2;
-    const rad = 20;
-    const ns = 'http://www.w3.org/2000/svg';
-    const svg = document.createElementNS(ns, 'svg');
-    svg.setAttribute('width', w);
-    svg.setAttribute('height', h);
-    svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
-    const path = document.createElementNS(ns, 'path');
-    path.setAttribute('d', `M${rad + 1} 1H${w - rad - 1}A${rad} ${rad} 0 0 1 ${w - 1} ${rad + 1}V${h - rad - 1}A${rad} ${rad} 0 0 1 ${w - rad - 1} ${h - 1}H${rad + 1}A${rad} ${rad} 0 0 1 1 ${h - rad - 1}V${rad + 1}A${rad} ${rad} 0 0 1 ${rad + 1} 1Z`);
-    path.setAttribute('fill', 'none');
-    path.setAttribute('stroke', '#14301F');
-    path.setAttribute('stroke-width', '1.5');
-    svg.appendChild(path);
-    const len = path.getTotalLength();
-    for (let i = 0; i < 26; i++) {
-      const p = path.getPointAtLength((len / 26) * i);
-      const c = document.createElementNS(ns, 'circle');
-      c.setAttribute('cx', p.x);
-      c.setAttribute('cy', p.y);
-      c.setAttribute('r', 4.5);
-      c.setAttribute('fill', BULBS[i % 4]);
-      c.setAttribute('stroke', 'rgba(255,255,255,0.6)');
-      c.setAttribute('stroke-width', '1');
-      c.setAttribute('class', 'bulb');
-      c.style.setProperty('--i', i);
-      svg.appendChild(c);
+  const els = [...root.querySelectorAll('[data-garland]')];
+  els.forEach(drawGarland);
+  garlandObserver?.disconnect();
+  if (typeof ResizeObserver === 'undefined') return;
+  const sizes = new WeakMap(els.map((el) => [el.parentElement, `${el.parentElement.offsetWidth}x${el.parentElement.offsetHeight}`]));
+  garlandObserver = new ResizeObserver((entries) => {
+    for (const { target } of entries) {
+      const size = `${target.offsetWidth}x${target.offsetHeight}`;
+      if (sizes.get(target) === size) continue;
+      sizes.set(target, size);
+      const el = target.querySelector(':scope > [data-garland]');
+      if (el) drawGarland(el);
     }
-    el.style.setProperty('--gp', `${pad}px`);
-    el.replaceChildren(svg);
   });
+  els.forEach((el) => garlandObserver.observe(el.parentElement));
+}
+
+function drawGarland(el) {
+  const card = el.parentElement;
+  const pad = card.classList.contains('label--active') ? (card.closest('[data-layout=mobile]') ? 5 : 7) : 7;
+  const w = card.offsetWidth + pad * 2;
+  const h = card.offsetHeight + pad * 2;
+  const rad = 20;
+  const ns = 'http://www.w3.org/2000/svg';
+  const svg = document.createElementNS(ns, 'svg');
+  svg.setAttribute('width', w);
+  svg.setAttribute('height', h);
+  svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
+  const path = document.createElementNS(ns, 'path');
+  path.setAttribute('d', `M${rad + 1} 1H${w - rad - 1}A${rad} ${rad} 0 0 1 ${w - 1} ${rad + 1}V${h - rad - 1}A${rad} ${rad} 0 0 1 ${w - rad - 1} ${h - 1}H${rad + 1}A${rad} ${rad} 0 0 1 1 ${h - rad - 1}V${rad + 1}A${rad} ${rad} 0 0 1 ${rad + 1} 1Z`);
+  path.setAttribute('fill', 'none');
+  path.setAttribute('stroke', '#14301F');
+  path.setAttribute('stroke-width', '1.5');
+  svg.appendChild(path);
+  const len = path.getTotalLength();
+  for (let i = 0; i < 26; i++) {
+    const p = path.getPointAtLength((len / 26) * i);
+    const c = document.createElementNS(ns, 'circle');
+    c.setAttribute('cx', p.x);
+    c.setAttribute('cy', p.y);
+    c.setAttribute('r', 4.5);
+    c.setAttribute('fill', BULBS[i % 4]);
+    c.setAttribute('stroke', 'rgba(255,255,255,0.6)');
+    c.setAttribute('stroke-width', '1');
+    c.setAttribute('class', 'bulb');
+    c.style.setProperty('--i', i);
+    svg.appendChild(c);
+  }
+  el.style.setProperty('--gp', `${pad}px`);
+  el.replaceChildren(svg);
 }
 
 /**
