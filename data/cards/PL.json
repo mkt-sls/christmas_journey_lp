@@ -1,0 +1,1464 @@
+{
+  "market": "PL",
+  "uiLang": "PL",
+  "currency": "PLN",
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-12-01",
+      "location": "Sekrety Mikołaja",
+      "type": "bonus",
+      "amount": {
+        "percent": 70,
+        "max": 1500,
+        "currency": "PLN",
+        "text": "70% DO 1 500 PLN"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 155,
+        "currency": "PLN",
+        "text": "Min. depozyt: 155 PLN"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wymagany obrót: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Ważne do: 23:59, 1 gru."
+      },
+      "raw": {
+        "active": [
+          "DZIEŃ 1 · 1 GRUDNIA",
+          "ŚWIĄTECZNY BONUS",
+          "70% DO 1 500 PLN",
+          "Min. depozyt: 155 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 1 gru.",
+          "WPŁAĆ I ODBIERZ",
+          "Pełny regulamin"
+        ],
+        "expired": [
+          "DZIEŃ 1 · 1 GRUDNIA",
+          "ŚWIĄTECZNY BONUS",
+          "70% DO 1 500 PLN",
+          "Min. depozyt: 155 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 1 gru.",
+          "PREZENT WYGASŁ",
+          "Pełny regulamin"
+        ],
+        "locked": [
+          "DZIEŃ 1 · 1 GRUDNIA",
+          "NIESPODZIANKA",
+          "OTWARCIE 1 GRUDNIA",
+          "Wróć jutro, aby odblokować ten prezent",
+          "ZABLOKOWANE · 1 GRU.",
+          "Pełny regulamin"
+        ]
+      }
+    },
+    {
+      "day": 2,
+      "date": "2026-12-02",
+      "location": "Jackpot pod choinką",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 DARMOWE SPINY"
+      },
+      "game": "Thunder Coins: Hold and Win",
+      "minDeposit": {
+        "value": 110,
+        "currency": "PLN",
+        "text": "Min. depozyt: 110 PLN"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wymagany obrót: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Ważne do: 23:59, 2 gru."
+      },
+      "raw": {
+        "active": [
+          "DZIEŃ 2 · 2 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "82 DARMOWE SPINY",
+          "na Thunder Coins: Hold and Win",
+          "Min. depozyt: 110 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 2 gru.",
+          "WPŁAĆ I ODBIERZ",
+          "Pełny regulamin"
+        ],
+        "expired": [
+          "DZIEŃ 2 · 2 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "82 DARMOWE SPINY",
+          "na Thunder Coins: Hold and Win",
+          "Min. depozyt: 110 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 2 gru.",
+          "PREZENT WYGASŁ",
+          "Pełny regulamin"
+        ],
+        "locked": [
+          "DZIEŃ 2 · 2 GRUDNIA",
+          "NIESPODZIANKA",
+          "OTWARCIE 2 GRUDNIA",
+          "Wróć jutro, aby odblokować ten prezent",
+          "ZABLOKOWANE · 2 GRU.",
+          "Pełny regulamin"
+        ]
+      }
+    },
+    {
+      "day": 3,
+      "date": "2026-12-03",
+      "location": "Piernikowy domek",
+      "type": "bonus",
+      "amount": {
+        "percent": 55,
+        "max": 2200,
+        "currency": "PLN",
+        "text": "55% DO 2 200 PLN"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 135,
+        "currency": "PLN",
+        "text": "Min. depozyt: 135 PLN"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wymagany obrót: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Ważne do: 23:59, 3 gru."
+      },
+      "raw": {
+        "active": [
+          "DZIEŃ 3 · 3 GRUDNIA",
+          "ŚWIĄTECZNY BONUS",
+          "55% DO 2 200 PLN",
+          "Min. depozyt: 135 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 3 gru.",
+          "WPŁAĆ I ODBIERZ",
+          "Pełny regulamin"
+        ],
+        "expired": [
+          "DZIEŃ 3 · 3 GRUDNIA",
+          "ŚWIĄTECZNY BONUS",
+          "55% DO 2 200 PLN",
+          "Min. depozyt: 135 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 3 gru.",
+          "PREZENT WYGASŁ",
+          "Pełny regulamin"
+        ],
+        "locked": [
+          "DZIEŃ 3 · 3 GRUDNIA",
+          "NIESPODZIANKA",
+          "OTWARCIE 3 GRUDNIA",
+          "Wróć jutro, aby odblokować ten prezent",
+          "ZABLOKOWANE · 3 GRU.",
+          "Pełny regulamin"
+        ]
+      }
+    },
+    {
+      "day": 4,
+      "date": "2026-12-04",
+      "location": "Fabryka prezentów Mikołaja",
+      "type": "freespins",
+      "amount": {
+        "spins": 65,
+        "text": "65 DARMOWYCH SPINÓW"
+      },
+      "game": "Big Bass Splash",
+      "minDeposit": {
+        "value": 100,
+        "currency": "PLN",
+        "text": "Min. depozyt: 100 PLN"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wymagany obrót: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Ważne do: 23:59, 4 gru."
+      },
+      "raw": {
+        "active": [
+          "DZIEŃ 4 · 4 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "65 DARMOWYCH SPINÓW",
+          "na Big Bass Splash",
+          "Min. depozyt: 100 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 4 gru.",
+          "WPŁAĆ I ODBIERZ",
+          "Pełny regulamin"
+        ],
+        "expired": [
+          "DZIEŃ 4 · 4 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "65 DARMOWYCH SPINÓW",
+          "na Big Bass Splash",
+          "Min. depozyt: 100 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 4 gru.",
+          "PREZENT WYGASŁ",
+          "Pełny regulamin"
+        ],
+        "locked": [
+          "DZIEŃ 4 · 4 GRUDNIA",
+          "NIESPODZIANKA",
+          "OTWARCIE 4 GRUDNIA",
+          "Wróć jutro, aby odblokować ten prezent",
+          "ZABLOKOWANE · 4 GRU.",
+          "Pełny regulamin"
+        ]
+      }
+    },
+    {
+      "day": 5,
+      "date": "2026-12-05",
+      "location": "Zaśnieżony park",
+      "type": "freespins",
+      "amount": {
+        "spins": 75,
+        "text": "75 DARMOWYCH SPINÓW"
+      },
+      "game": "John Hunter and the Book of Tut",
+      "minDeposit": {
+        "value": 110,
+        "currency": "PLN",
+        "text": "Min. depozyt: 110 PLN"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wymagany obrót: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Ważne do: 23:59, 5 gru."
+      },
+      "raw": {
+        "active": [
+          "DZIEŃ 5 · 5 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "75 DARMOWYCH SPINÓW",
+          "na John Hunter and the Book of Tut",
+          "Min. depozyt: 110 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 5 gru.",
+          "WPŁAĆ I ODBIERZ",
+          "Pełny regulamin"
+        ],
+        "expired": [
+          "DZIEŃ 5 · 5 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "75 DARMOWYCH SPINÓW",
+          "na John Hunter and the Book of Tut",
+          "Min. depozyt: 110 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 5 gru.",
+          "PREZENT WYGASŁ",
+          "Pełny regulamin"
+        ],
+        "locked": [
+          "DZIEŃ 5 · 5 GRUDNIA",
+          "NIESPODZIANKA",
+          "OTWARCIE 5 GRUDNIA",
+          "Wróć jutro, aby odblokować ten prezent",
+          "ZABLOKOWANE · 5 GRU.",
+          "Pełny regulamin"
+        ]
+      }
+    },
+    {
+      "day": 6,
+      "date": "2026-12-06",
+      "location": "Sklep z zabawkami",
+      "type": "freespins",
+      "amount": {
+        "spins": 80,
+        "text": "80 DARMOWYCH SPINÓW"
+      },
+      "game": "Gemhalla",
+      "minDeposit": {
+        "value": 135,
+        "currency": "PLN",
+        "text": "Min. depozyt: 135 PLN"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wymagany obrót: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Ważne do: 23:59, 6 gru."
+      },
+      "raw": {
+        "active": [
+          "DZIEŃ 6 · 6 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "80 DARMOWYCH SPINÓW",
+          "na Gemhalla",
+          "Min. depozyt: 135 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 6 gru.",
+          "WPŁAĆ I ODBIERZ",
+          "Pełny regulamin"
+        ],
+        "expired": [
+          "DZIEŃ 6 · 6 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "80 DARMOWYCH SPINÓW",
+          "na Gemhalla",
+          "Min. depozyt: 135 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 6 gru.",
+          "PREZENT WYGASŁ",
+          "Pełny regulamin"
+        ],
+        "locked": [
+          "DZIEŃ 6 · 6 GRUDNIA",
+          "NIESPODZIANKA",
+          "OTWARCIE 6 GRUDNIA",
+          "Wróć jutro, aby odblokować ten prezent",
+          "ZABLOKOWANE · 6 GRU.",
+          "Pełny regulamin"
+        ]
+      }
+    },
+    {
+      "day": 7,
+      "date": "2026-12-07",
+      "location": "Plac Mikołaja",
+      "type": "freespins",
+      "amount": {
+        "spins": 90,
+        "text": "90 DARMOWYCH SPINÓW"
+      },
+      "game": "Bonanza Billion",
+      "minDeposit": {
+        "value": 155,
+        "currency": "PLN",
+        "text": "Min. depozyt: 155 PLN"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wymagany obrót: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Ważne do: 23:59, 7 gru."
+      },
+      "raw": {
+        "active": [
+          "DZIEŃ 7 · 7 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "90 DARMOWYCH SPINÓW",
+          "na Bonanza Billion",
+          "Min. depozyt: 155 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 7 gru.",
+          "WPŁAĆ I ODBIERZ",
+          "Pełny regulamin"
+        ],
+        "expired": [
+          "DZIEŃ 7 · 7 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "90 DARMOWYCH SPINÓW",
+          "na Bonanza Billion",
+          "Min. depozyt: 155 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 7 gru.",
+          "PREZENT WYGASŁ",
+          "Pełny regulamin"
+        ],
+        "locked": [
+          "DZIEŃ 7 · 7 GRUDNIA",
+          "NIESPODZIANKA",
+          "OTWARCIE 7 GRUDNIA",
+          "Wróć jutro, aby odblokować ten prezent",
+          "ZABLOKOWANE · 7 GRU.",
+          "Pełny regulamin"
+        ]
+      }
+    },
+    {
+      "day": 8,
+      "date": "2026-12-08",
+      "location": "Kaplica życzeń",
+      "type": "bonus",
+      "amount": {
+        "percent": 65,
+        "max": 2900,
+        "currency": "PLN",
+        "text": "65% DO 2 900 PLN"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 110,
+        "currency": "PLN",
+        "text": "Min. depozyt: 110 PLN"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wymagany obrót: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Ważne do: 23:59, 8 gru."
+      },
+      "raw": {
+        "active": [
+          "DZIEŃ 8 · 8 GRUDNIA",
+          "ŚWIĄTECZNY BONUS",
+          "65% DO 2 900 PLN",
+          "Min. depozyt: 110 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 8 gru.",
+          "WPŁAĆ I ODBIERZ",
+          "Pełny regulamin"
+        ],
+        "expired": [
+          "DZIEŃ 8 · 8 GRUDNIA",
+          "ŚWIĄTECZNY BONUS",
+          "65% DO 2 900 PLN",
+          "Min. depozyt: 110 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 8 gru.",
+          "PREZENT WYGASŁ",
+          "Pełny regulamin"
+        ],
+        "locked": [
+          "DZIEŃ 8 · 8 GRUDNIA",
+          "NIESPODZIANKA",
+          "OTWARCIE 8 GRUDNIA",
+          "Wróć jutro, aby odblokować ten prezent",
+          "ZABLOKOWANE · 8 GRU.",
+          "Pełny regulamin"
+        ]
+      }
+    },
+    {
+      "day": 9,
+      "date": "2026-12-09",
+      "location": "Magiczna karuzela",
+      "type": "freespins",
+      "amount": {
+        "spins": 74,
+        "text": "74 DARMOWE SPINY"
+      },
+      "game": "Big Bass Christmas – Frozen Lake",
+      "minDeposit": {
+        "value": 135,
+        "currency": "PLN",
+        "text": "Min. depozyt: 135 PLN"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wymagany obrót: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Ważne do: 23:59, 9 gru."
+      },
+      "raw": {
+        "active": [
+          "DZIEŃ 9 · 9 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "74 DARMOWE SPINY",
+          "na Big Bass Christmas – Frozen Lake",
+          "Min. depozyt: 135 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 9 gru.",
+          "WPŁAĆ I ODBIERZ",
+          "Pełny regulamin"
+        ],
+        "expired": [
+          "DZIEŃ 9 · 9 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "74 DARMOWE SPINY",
+          "na Big Bass Christmas – Frozen Lake",
+          "Min. depozyt: 135 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 9 gru.",
+          "PREZENT WYGASŁ",
+          "Pełny regulamin"
+        ],
+        "locked": [
+          "DZIEŃ 9 · 9 GRUDNIA",
+          "NIESPODZIANKA",
+          "OTWARCIE 9 GRUDNIA",
+          "Wróć jutro, aby odblokować ten prezent",
+          "ZABLOKOWANE · 9 GRU.",
+          "Pełny regulamin"
+        ]
+      }
+    },
+    {
+      "day": 10,
+      "date": "2026-12-10",
+      "location": "Szczęśliwa uliczka",
+      "type": "bonus",
+      "amount": {
+        "percent": 62,
+        "max": 3000,
+        "currency": "PLN",
+        "text": "62% DO 3 000 PLN"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 155,
+        "currency": "PLN",
+        "text": "Min. depozyt: 155 PLN"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wymagany obrót: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Ważne do: 23:59, 10 gru."
+      },
+      "raw": {
+        "active": [
+          "DZIEŃ 10 · 10 GRUDNIA",
+          "ŚWIĄTECZNY BONUS",
+          "62% DO 3 000 PLN",
+          "Min. depozyt: 155 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 10 gru.",
+          "WPŁAĆ I ODBIERZ",
+          "Pełny regulamin"
+        ],
+        "expired": [
+          "DZIEŃ 10 · 10 GRUDNIA",
+          "ŚWIĄTECZNY BONUS",
+          "62% DO 3 000 PLN",
+          "Min. depozyt: 155 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 10 gru.",
+          "PREZENT WYGASŁ",
+          "Pełny regulamin"
+        ],
+        "locked": [
+          "DZIEŃ 10 · 10 GRUDNIA",
+          "NIESPODZIANKA",
+          "OTWARCIE 10 GRUDNIA",
+          "Wróć jutro, aby odblokować ten prezent",
+          "ZABLOKOWANE · 10 GRU.",
+          "Pełny regulamin"
+        ]
+      }
+    },
+    {
+      "day": 11,
+      "date": "2026-12-11",
+      "location": "Skarb bałwana",
+      "type": "freespins",
+      "amount": {
+        "spins": 55,
+        "text": "55 DARMOWYCH SPINÓW"
+      },
+      "game": "Thunder Coins: Hold and Win",
+      "minDeposit": {
+        "value": 100,
+        "currency": "PLN",
+        "text": "Min. depozyt: 100 PLN"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wymagany obrót: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Ważne do: 23:59, 11 gru."
+      },
+      "raw": {
+        "active": [
+          "DZIEŃ 11 · 11 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "55 DARMOWYCH SPINÓW",
+          "na Thunder Coins: Hold and Win",
+          "Min. depozyt: 100 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 11 gru.",
+          "WPŁAĆ I ODBIERZ",
+          "Pełny regulamin"
+        ],
+        "expired": [
+          "DZIEŃ 11 · 11 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "55 DARMOWYCH SPINÓW",
+          "na Thunder Coins: Hold and Win",
+          "Min. depozyt: 100 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 11 gru.",
+          "PREZENT WYGASŁ",
+          "Pełny regulamin"
+        ],
+        "locked": [
+          "DZIEŃ 11 · 11 GRUDNIA",
+          "NIESPODZIANKA",
+          "OTWARCIE 11 GRUDNIA",
+          "Wróć jutro, aby odblokować ten prezent",
+          "ZABLOKOWANE · 11 GRU.",
+          "Pełny regulamin"
+        ]
+      }
+    },
+    {
+      "day": 12,
+      "date": "2026-12-12",
+      "location": "Poczta Mikołaja",
+      "type": "freespins",
+      "amount": {
+        "spins": 80,
+        "text": "80 DARMOWYCH SPINÓW"
+      },
+      "game": "Fruits 'n' Stars Holiday Edition",
+      "minDeposit": {
+        "value": 110,
+        "currency": "PLN",
+        "text": "Min. depozyt: 110 PLN"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wymagany obrót: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Ważne do: 23:59, 12 gru."
+      },
+      "raw": {
+        "active": [
+          "DZIEŃ 12 · 12 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "80 DARMOWYCH SPINÓW",
+          "na Fruits 'n' Stars Holiday Edition",
+          "Min. depozyt: 110 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 12 gru.",
+          "WPŁAĆ I ODBIERZ",
+          "Pełny regulamin"
+        ],
+        "expired": [
+          "DZIEŃ 12 · 12 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "80 DARMOWYCH SPINÓW",
+          "na Fruits 'n' Stars Holiday Edition",
+          "Min. depozyt: 110 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 12 gru.",
+          "PREZENT WYGASŁ",
+          "Pełny regulamin"
+        ],
+        "locked": [
+          "DZIEŃ 12 · 12 GRUDNIA",
+          "NIESPODZIANKA",
+          "OTWARCIE 12 GRUDNIA",
+          "Wróć jutro, aby odblokować ten prezent",
+          "ZABLOKOWANE · 12 GRU.",
+          "Pełny regulamin"
+        ]
+      }
+    },
+    {
+      "day": 13,
+      "date": "2026-12-13",
+      "location": "Lodowy pałac",
+      "type": "freespins",
+      "amount": {
+        "spins": 67,
+        "text": "67 DARMOWYCH SPINÓW"
+      },
+      "game": "Yeti Quest",
+      "minDeposit": {
+        "value": 110,
+        "currency": "PLN",
+        "text": "Min. depozyt: 110 PLN"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wymagany obrót: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Ważne do: 23:59, 13 gru."
+      },
+      "raw": {
+        "active": [
+          "DZIEŃ 13 · 13 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "67 DARMOWYCH SPINÓW",
+          "na Yeti Quest",
+          "Min. depozyt: 110 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 13 gru.",
+          "WPŁAĆ I ODBIERZ",
+          "Pełny regulamin"
+        ],
+        "expired": [
+          "DZIEŃ 13 · 13 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "67 DARMOWYCH SPINÓW",
+          "na Yeti Quest",
+          "Min. depozyt: 110 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 13 gru.",
+          "PREZENT WYGASŁ",
+          "Pełny regulamin"
+        ],
+        "locked": [
+          "DZIEŃ 13 · 13 GRUDNIA",
+          "NIESPODZIANKA",
+          "OTWARCIE 13 GRUDNIA",
+          "Wróć jutro, aby odblokować ten prezent",
+          "ZABLOKOWANE · 13 GRU.",
+          "Pełny regulamin"
+        ]
+      }
+    },
+    {
+      "day": 14,
+      "date": "2026-12-14",
+      "location": "Sklep cudów",
+      "type": "freespins",
+      "amount": {
+        "spins": 90,
+        "text": "90 DARMOWYCH SPINÓW"
+      },
+      "game": "25 Cookies: Hit the Bonus",
+      "minDeposit": {
+        "value": 155,
+        "currency": "PLN",
+        "text": "Min. depozyt: 155 PLN"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wymagany obrót: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Ważne do: 23:59, 14 gru."
+      },
+      "raw": {
+        "active": [
+          "DZIEŃ 14 · 14 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "90 DARMOWYCH SPINÓW",
+          "na 25 Cookies: Hit the Bonus",
+          "Min. depozyt: 155 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 14 gru.",
+          "WPŁAĆ I ODBIERZ",
+          "Pełny regulamin"
+        ],
+        "expired": [
+          "DZIEŃ 14 · 14 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "90 DARMOWYCH SPINÓW",
+          "na 25 Cookies: Hit the Bonus",
+          "Min. depozyt: 155 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 14 gru.",
+          "PREZENT WYGASŁ",
+          "Pełny regulamin"
+        ],
+        "locked": [
+          "DZIEŃ 14 · 14 GRUDNIA",
+          "NIESPODZIANKA",
+          "OTWARCIE 14 GRUDNIA",
+          "Wróć jutro, aby odblokować ten prezent",
+          "ZABLOKOWANE · 14 GRU.",
+          "Pełny regulamin"
+        ]
+      }
+    },
+    {
+      "day": 15,
+      "date": "2026-12-15",
+      "location": "Jarmark świąteczny",
+      "type": "bonus",
+      "amount": {
+        "percent": 58,
+        "max": 2200,
+        "currency": "PLN",
+        "text": "58% DO 2 200 PLN"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 135,
+        "currency": "PLN",
+        "text": "Min. depozyt: 135 PLN"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wymagany obrót: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Ważne do: 23:59, 15 gru."
+      },
+      "raw": {
+        "active": [
+          "DZIEŃ 15 · 15 GRUDNIA",
+          "ŚWIĄTECZNY BONUS",
+          "58% DO 2 200 PLN",
+          "Min. depozyt: 135 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 15 gru.",
+          "WPŁAĆ I ODBIERZ",
+          "Pełny regulamin"
+        ],
+        "expired": [
+          "DZIEŃ 15 · 15 GRUDNIA",
+          "ŚWIĄTECZNY BONUS",
+          "58% DO 2 200 PLN",
+          "Min. depozyt: 135 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 15 gru.",
+          "PREZENT WYGASŁ",
+          "Pełny regulamin"
+        ],
+        "locked": [
+          "DZIEŃ 15 · 15 GRUDNIA",
+          "NIESPODZIANKA",
+          "OTWARCIE 15 GRUDNIA",
+          "Wróć jutro, aby odblokować ten prezent",
+          "ZABLOKOWANE · 15 GRU.",
+          "Pełny regulamin"
+        ]
+      }
+    },
+    {
+      "day": 16,
+      "date": "2026-12-16",
+      "location": "Zimowy ogród",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 DARMOWE SPINY"
+      },
+      "game": "Christmas Carol Megaways",
+      "minDeposit": {
+        "value": 135,
+        "currency": "PLN",
+        "text": "Min. depozyt: 135 PLN"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wymagany obrót: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Ważne do: 23:59, 16 gru."
+      },
+      "raw": {
+        "active": [
+          "DZIEŃ 16 · 16 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "82 DARMOWE SPINY",
+          "na Christmas Carol Megaways",
+          "Min. depozyt: 135 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 16 gru.",
+          "WPŁAĆ I ODBIERZ",
+          "Pełny regulamin"
+        ],
+        "expired": [
+          "DZIEŃ 16 · 16 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "82 DARMOWE SPINY",
+          "na Christmas Carol Megaways",
+          "Min. depozyt: 135 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 16 gru.",
+          "PREZENT WYGASŁ",
+          "Pełny regulamin"
+        ],
+        "locked": [
+          "DZIEŃ 16 · 16 GRUDNIA",
+          "NIESPODZIANKA",
+          "OTWARCIE 16 GRUDNIA",
+          "Wróć jutro, aby odblokować ten prezent",
+          "ZABLOKOWANE · 16 GRU.",
+          "Pełny regulamin"
+        ]
+      }
+    },
+    {
+      "day": 17,
+      "date": "2026-12-17",
+      "location": "Zaczarowany las",
+      "type": "bonus",
+      "amount": {
+        "percent": 45,
+        "max": 2200,
+        "currency": "PLN",
+        "text": "45% DO 2 200 PLN"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 110,
+        "currency": "PLN",
+        "text": "Min. depozyt: 110 PLN"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wymagany obrót: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Ważne do: 23:59, 17 gru."
+      },
+      "raw": {
+        "active": [
+          "DZIEŃ 17 · 17 GRUDNIA",
+          "ŚWIĄTECZNY BONUS",
+          "45% DO 2 200 PLN",
+          "Min. depozyt: 110 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 17 gru.",
+          "WPŁAĆ I ODBIERZ",
+          "Pełny regulamin"
+        ],
+        "expired": [
+          "DZIEŃ 17 · 17 GRUDNIA",
+          "ŚWIĄTECZNY BONUS",
+          "45% DO 2 200 PLN",
+          "Min. depozyt: 110 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 17 gru.",
+          "PREZENT WYGASŁ",
+          "Pełny regulamin"
+        ],
+        "locked": [
+          "DZIEŃ 17 · 17 GRUDNIA",
+          "NIESPODZIANKA",
+          "OTWARCIE 17 GRUDNIA",
+          "Wróć jutro, aby odblokować ten prezent",
+          "ZABLOKOWANE · 17 GRU.",
+          "Pełny regulamin"
+        ]
+      }
+    },
+    {
+      "day": 18,
+      "date": "2026-12-18",
+      "location": "Śnieżna jaskinia",
+      "type": "freespins",
+      "amount": {
+        "spins": 63,
+        "text": "63 DARMOWE SPINY"
+      },
+      "game": "Big Bass Christmas – Frozen Lake",
+      "minDeposit": {
+        "value": 110,
+        "currency": "PLN",
+        "text": "Min. depozyt: 110 PLN"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wymagany obrót: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Ważne do: 23:59, 18 gru."
+      },
+      "raw": {
+        "active": [
+          "DZIEŃ 18 · 18 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "63 DARMOWE SPINY",
+          "na Big Bass Christmas – Frozen Lake",
+          "Min. depozyt: 110 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 18 gru.",
+          "WPŁAĆ I ODBIERZ",
+          "Pełny regulamin"
+        ],
+        "expired": [
+          "DZIEŃ 18 · 18 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "63 DARMOWE SPINY",
+          "na Big Bass Christmas – Frozen Lake",
+          "Min. depozyt: 110 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 18 gru.",
+          "PREZENT WYGASŁ",
+          "Pełny regulamin"
+        ],
+        "locked": [
+          "DZIEŃ 18 · 18 GRUDNIA",
+          "NIESPODZIANKA",
+          "OTWARCIE 18 GRUDNIA",
+          "Wróć jutro, aby odblokować ten prezent",
+          "ZABLOKOWANE · 18 GRU.",
+          "Pełny regulamin"
+        ]
+      }
+    },
+    {
+      "day": 19,
+      "date": "2026-12-19",
+      "location": "Lodowisko pod gwiazdami",
+      "type": "freespins",
+      "amount": {
+        "spins": 95,
+        "text": "95 DARMOWYCH SPINÓW"
+      },
+      "game": "Fruits 'n' Stars Holiday Edition",
+      "minDeposit": {
+        "value": 155,
+        "currency": "PLN",
+        "text": "Min. depozyt: 155 PLN"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wymagany obrót: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Ważne do: 23:59, 19 gru."
+      },
+      "raw": {
+        "active": [
+          "DZIEŃ 19 · 19 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "95 DARMOWYCH SPINÓW",
+          "na Fruits 'n' Stars Holiday Edition",
+          "Min. depozyt: 155 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 19 gru.",
+          "WPŁAĆ I ODBIERZ",
+          "Pełny regulamin"
+        ],
+        "expired": [
+          "DZIEŃ 19 · 19 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "95 DARMOWYCH SPINÓW",
+          "na Fruits 'n' Stars Holiday Edition",
+          "Min. depozyt: 155 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 19 gru.",
+          "PREZENT WYGASŁ",
+          "Pełny regulamin"
+        ],
+        "locked": [
+          "DZIEŃ 19 · 19 GRUDNIA",
+          "NIESPODZIANKA",
+          "OTWARCIE 19 GRUDNIA",
+          "Wróć jutro, aby odblokować ten prezent",
+          "ZABLOKOWANE · 19 GRU.",
+          "Pełny regulamin"
+        ]
+      }
+    },
+    {
+      "day": 20,
+      "date": "2026-12-20",
+      "location": "Zorza polarna",
+      "type": "freespins",
+      "amount": {
+        "spins": 82,
+        "text": "82 DARMOWE SPINY"
+      },
+      "game": "Sweet Bonanza Xmas",
+      "minDeposit": {
+        "value": 135,
+        "currency": "PLN",
+        "text": "Min. depozyt: 135 PLN"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wymagany obrót: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Ważne do: 23:59, 20 gru."
+      },
+      "raw": {
+        "active": [
+          "DZIEŃ 20 · 20 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "82 DARMOWE SPINY",
+          "na Sweet Bonanza Xmas",
+          "Min. depozyt: 135 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 20 gru.",
+          "WPŁAĆ I ODBIERZ",
+          "Pełny regulamin"
+        ],
+        "expired": [
+          "DZIEŃ 20 · 20 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "82 DARMOWE SPINY",
+          "na Sweet Bonanza Xmas",
+          "Min. depozyt: 135 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 20 gru.",
+          "PREZENT WYGASŁ",
+          "Pełny regulamin"
+        ],
+        "locked": [
+          "DZIEŃ 20 · 20 GRUDNIA",
+          "NIESPODZIANKA",
+          "OTWARCIE 20 GRUDNIA",
+          "Wróć jutro, aby odblokować ten prezent",
+          "ZABLOKOWANE · 20 GRU.",
+          "Pełny regulamin"
+        ]
+      }
+    },
+    {
+      "day": 21,
+      "date": "2026-12-21",
+      "location": "Nocny ekspres",
+      "type": "bonus",
+      "amount": {
+        "percent": 65,
+        "max": 2200,
+        "currency": "PLN",
+        "text": "65% DO 2 200 PLN"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 110,
+        "currency": "PLN",
+        "text": "Min. depozyt: 110 PLN"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wymagany obrót: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Ważne do: 23:59, 21 gru."
+      },
+      "raw": {
+        "active": [
+          "DZIEŃ 21 · 21 GRUDNIA",
+          "ŚWIĄTECZNY BONUS",
+          "65% DO 2 200 PLN",
+          "Min. depozyt: 110 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 21 gru.",
+          "WPŁAĆ I ODBIERZ",
+          "Pełny regulamin"
+        ],
+        "expired": [
+          "DZIEŃ 21 · 21 GRUDNIA",
+          "ŚWIĄTECZNY BONUS",
+          "65% DO 2 200 PLN",
+          "Min. depozyt: 110 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 21 gru.",
+          "PREZENT WYGASŁ",
+          "Pełny regulamin"
+        ],
+        "locked": [
+          "DZIEŃ 21 · 21 GRUDNIA",
+          "NIESPODZIANKA",
+          "OTWARCIE 21 GRUDNIA",
+          "Wróć jutro, aby odblokować ten prezent",
+          "ZABLOKOWANE · 21 GRU.",
+          "Pełny regulamin"
+        ]
+      }
+    },
+    {
+      "day": 22,
+      "date": "2026-12-22",
+      "location": "Zaśnieżona chatka",
+      "type": "freespins",
+      "amount": {
+        "spins": 62,
+        "text": "62 DARMOWE SPINY"
+      },
+      "game": "Yeti Quest",
+      "minDeposit": {
+        "value": 100,
+        "currency": "PLN",
+        "text": "Min. depozyt: 100 PLN"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wymagany obrót: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Ważne do: 23:59, 22 gru."
+      },
+      "raw": {
+        "active": [
+          "DZIEŃ 22 · 22 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "62 DARMOWE SPINY",
+          "na Yeti Quest",
+          "Min. depozyt: 100 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 22 gru.",
+          "WPŁAĆ I ODBIERZ",
+          "Pełny regulamin"
+        ],
+        "expired": [
+          "DZIEŃ 22 · 22 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "62 DARMOWE SPINY",
+          "na Yeti Quest",
+          "Min. depozyt: 100 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 22 gru.",
+          "PREZENT WYGASŁ",
+          "Pełny regulamin"
+        ],
+        "locked": [
+          "DZIEŃ 22 · 22 GRUDNIA",
+          "NIESPODZIANKA",
+          "OTWARCIE 22 GRUDNIA",
+          "Wróć jutro, aby odblokować ten prezent",
+          "ZABLOKOWANE · 22 GRU.",
+          "Pełny regulamin"
+        ]
+      }
+    },
+    {
+      "day": 23,
+      "date": "2026-12-23",
+      "location": "Sejf Mikołaja",
+      "type": "freespins",
+      "amount": {
+        "spins": 99,
+        "text": "99 DARMOWYCH SPINÓW"
+      },
+      "game": "25 Cookies: Hit the Bonus",
+      "minDeposit": {
+        "value": 135,
+        "currency": "PLN",
+        "text": "Min. depozyt: 135 PLN"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wymagany obrót: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Ważne do: 23:59, 23 gru."
+      },
+      "raw": {
+        "active": [
+          "DZIEŃ 23 · 23 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "99 DARMOWYCH SPINÓW",
+          "na 25 Cookies: Hit the Bonus",
+          "Min. depozyt: 135 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 23 gru.",
+          "WPŁAĆ I ODBIERZ",
+          "Pełny regulamin"
+        ],
+        "expired": [
+          "DZIEŃ 23 · 23 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "99 DARMOWYCH SPINÓW",
+          "na 25 Cookies: Hit the Bonus",
+          "Min. depozyt: 135 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 23 gru.",
+          "PREZENT WYGASŁ",
+          "Pełny regulamin"
+        ],
+        "locked": [
+          "DZIEŃ 23 · 23 GRUDNIA",
+          "NIESPODZIANKA",
+          "OTWARCIE 23 GRUDNIA",
+          "Wróć jutro, aby odblokować ten prezent",
+          "ZABLOKOWANE · 23 GRU.",
+          "Pełny regulamin"
+        ]
+      }
+    },
+    {
+      "day": 24,
+      "date": "2026-12-24",
+      "location": "Tajny pokój",
+      "type": "bonus",
+      "amount": {
+        "percent": 80,
+        "max": 1800,
+        "currency": "PLN",
+        "text": "80% DO 1 800 PLN"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 155,
+        "currency": "PLN",
+        "text": "Min. depozyt: 155 PLN"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wymagany obrót: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Ważne do: 23:59, 24 gru."
+      },
+      "raw": {
+        "active": [
+          "DZIEŃ 24 · 24 GRUDNIA",
+          "ŚWIĄTECZNY BONUS",
+          "80% DO 1 800 PLN",
+          "Min. depozyt: 155 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 24 gru.",
+          "WPŁAĆ I ODBIERZ",
+          "Pełny regulamin"
+        ],
+        "expired": [
+          "DZIEŃ 24 · 24 GRUDNIA",
+          "ŚWIĄTECZNY BONUS",
+          "80% DO 1 800 PLN",
+          "Min. depozyt: 155 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 24 gru.",
+          "PREZENT WYGASŁ",
+          "Pełny regulamin"
+        ],
+        "locked": [
+          "DZIEŃ 24 · 24 GRUDNIA",
+          "NIESPODZIANKA",
+          "OTWARCIE 24 GRUDNIA",
+          "Wróć jutro, aby odblokować ten prezent",
+          "ZABLOKOWANE · 24 GRU.",
+          "Pełny regulamin"
+        ]
+      }
+    },
+    {
+      "day": 25,
+      "date": "2026-12-25",
+      "location": "Worek z prezentami",
+      "type": "freespins",
+      "amount": {
+        "spins": 101,
+        "text": "101 DARMOWYCH SPINÓW"
+      },
+      "game": "Christmas Carol Megaways",
+      "minDeposit": {
+        "value": 155,
+        "currency": "PLN",
+        "text": "Min. depozyt: 155 PLN"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wymagany obrót: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Ważne do: 23:59, 25 gru."
+      },
+      "raw": {
+        "active": [
+          "DZIEŃ 25 · 25 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "101 DARMOWYCH SPINÓW",
+          "na Christmas Carol Megaways",
+          "Min. depozyt: 155 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 25 gru.",
+          "WPŁAĆ I ODBIERZ",
+          "Pełny regulamin"
+        ],
+        "expired": [
+          "DZIEŃ 25 · 25 GRUDNIA",
+          "ŚWIĄTECZNE DARMOWE SPINY",
+          "101 DARMOWYCH SPINÓW",
+          "na Christmas Carol Megaways",
+          "Min. depozyt: 155 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 25 gru.",
+          "PREZENT WYGASŁ",
+          "Pełny regulamin"
+        ],
+        "locked": [
+          "DZIEŃ 25 · 25 GRUDNIA",
+          "NIESPODZIANKA",
+          "OTWARCIE 25 GRUDNIA",
+          "Wróć jutro, aby odblokować ten prezent",
+          "ZABLOKOWANE · 25 GRU.",
+          "Pełny regulamin"
+        ]
+      }
+    },
+    {
+      "day": 26,
+      "date": "2026-12-26",
+      "location": "Skrzynia z jackpotem",
+      "type": "bonus",
+      "amount": {
+        "percent": 60,
+        "max": 2600,
+        "currency": "PLN",
+        "text": "60% DO 2 600 PLN"
+      },
+      "game": null,
+      "minDeposit": {
+        "value": 100,
+        "currency": "PLN",
+        "text": "Min. depozyt: 100 PLN"
+      },
+      "wagering": {
+        "multiplier": 25,
+        "text": "Wymagany obrót: x25"
+      },
+      "validUntil": {
+        "time": "23:59",
+        "text": "Ważne do: 23:59, 26 gru."
+      },
+      "raw": {
+        "active": [
+          "DZIEŃ 26 · 26 GRUDNIA",
+          "ŚWIĄTECZNY BONUS",
+          "60% DO 2 600 PLN",
+          "Min. depozyt: 100 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 26 gru.",
+          "WPŁAĆ I ODBIERZ",
+          "Pełny regulamin"
+        ],
+        "expired": [
+          "DZIEŃ 26 · 26 GRUDNIA",
+          "ŚWIĄTECZNY BONUS",
+          "60% DO 2 600 PLN",
+          "Min. depozyt: 100 PLN",
+          "Wymagany obrót: x25",
+          "Ważne do: 23:59, 26 gru.",
+          "PREZENT WYGASŁ",
+          "Pełny regulamin"
+        ],
+        "locked": [
+          "DZIEŃ 26 · 26 GRUDNIA",
+          "NIESPODZIANKA",
+          "OTWARCIE 26 GRUDNIA",
+          "Wróć jutro, aby odblokować ten prezent",
+          "ZABLOKOWANE · 26 GRU.",
+          "Pełny regulamin"
+        ]
+      }
+    }
+  ],
+  "translatedBy": "client (PL tab, 2026-11-26); agency fixes: game line, DARMOWE SPINY after 2-4, term-row colons and \"gru.\", locked card day"
+}

@@ -7,7 +7,7 @@ const cardFiles = import.meta.glob(['../data/cards/*.json', '!../data/cards/RO_M
 // EN uses en-US on purpose: the sheet's English tags read "DEC 7" for every English market.
 const DATE_LOCALE = {
   EN: 'en-US', RU: 'ru-RU', FR_CA: 'fr-CA', DE: 'de-DE', BG: 'bg-BG', NL: 'nl-NL',
-  TR: 'tr-TR', NO: 'nb-NO', IT: 'it-IT', DA: 'da-DK', SV: 'sv-SE',
+  TR: 'tr-TR', NO: 'nb-NO', IT: 'it-IT', DA: 'da-DK', SV: 'sv-SE', PL: 'pl-PL',
 };
 // Locale for the long "8 December" form (EN follows the sheet's "Opens 8 December").
 const LONG_LOCALE = { ...DATE_LOCALE, EN: 'en-GB' };

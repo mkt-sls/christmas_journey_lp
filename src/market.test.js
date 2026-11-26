@@ -7,12 +7,16 @@ describe('disabled market RO_MDL', () => {
 
   it('is not in the market list (selector)', () => {
     expect(MARKETS.map((m) => m.id)).not.toContain('RO_MDL');
-    expect(MARKETS).toHaveLength(14);
+    expect(MARKETS).toHaveLength(15);
   });
   it('a Romanian browser falls back to EN_GBP, like any language without a market', () => {
     expect(marketFromLanguages(['ro-MD'])).toBe('EN_GBP');
     expect(marketFromLanguages(['ro', 'de'])).toBe('DE');
-    expect(marketFromLanguages(['pl'])).toBe('EN_GBP');
+    expect(marketFromLanguages(['fi'])).toBe('EN_GBP');
+  });
+  it('a Polish browser gets PL (added 2026-11-26)', () => {
+    expect(marketFromLanguages(['pl-PL'])).toBe('PL');
+    expect(normaliseMarketId('pl')).toBe('PL');
   });
   it('?market=RO_MDL and a saved RO_MDL choice are ignored', () => {
     expect(normaliseMarketId('RO_MDL')).toBeNull();

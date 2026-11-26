@@ -129,13 +129,14 @@ describe('date formatting matches the sheet samples (Dec 7 2026)', () => {
   const d = new Date(2026, 11, 7);
   it.each([
     ['EN', 'DEC 7'], ['RU', '7 ДЕК.'], ['FR_CA', '7 DÉC.'], ['DE', '7. DEZ.'], ['BG', '7 ДЕК.'], ['NL', '7 DEC.'],
-    ['TR', '7 ARA.'], ['NO', '7. DES.'], ['IT', '7 DIC.'], ['DA', '7. DEC.'], ['SV', '7 DEC.'],
+    ['TR', '7 ARA.'], ['NO', '7. DES.'], ['IT', '7 DIC.'], ['DA', '7. DEC.'], ['SV', '7 DEC.'], ['PL', '7 GRU.'],
   ])('%s -> %s', (lang, expected) => {
     expect(shortDate(d, lang).replace(/ /g, ' ')).toBe(expected);
   });
   it('long dates', () => {
     expect(longDate(new Date(2026, 11, 8), 'EN')).toBe('8 December');
     expect(longDate(new Date(2026, 11, 8), 'DE')).toBe('8. Dezember');
+    expect(longDate(new Date(2026, 11, 8), 'PL')).toBe('8 grudnia');
   });
   it('FR_CA writes the first of the month "1er" (non-breaking space), other days and languages unchanged', () => {
     const dec1 = new Date(2026, 11, 1);

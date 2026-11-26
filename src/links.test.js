@@ -26,7 +26,7 @@ describe('per-day deposit links', () => {
 });
 
 describe('obfuscated deposit links', () => {
-  const MARKETS = ['DE', 'EN_GBP', 'EN_USD', 'EN_AUD', 'EN_CAD', 'FR_CA', 'NL', 'BG', 'IT', 'NO', 'RU', 'SV', 'TR', 'DA'];
+  const MARKETS = ['DE', 'EN_GBP', 'EN_USD', 'EN_AUD', 'EN_CAD', 'FR_CA', 'NL', 'BG', 'IT', 'NO', 'RU', 'SV', 'TR', 'DA', 'PL'];
   it('encode/decode round-trips for all 26 days', () => {
     for (const l of links) expect(decodeLink(l.day, encodeLink(l.day, l.deposit)), `day ${l.day}`).toBe(l.deposit);
   });

@@ -50,6 +50,13 @@ The 2026-11-19 / 11-20 table is in git history: `git show 93dd51c:docs/HANDOFF.m
 | 2026-11-26 | Resize fix: `fitStage` fits the layout the page was rendered with (`.page[data-layout]`), not the current media query. Crossing 1024px fires `resize` before the re-render, and on Dec 25-26 the desktop Santa slot (3-4) was looked up in the mobile table (0-2): `TypeError ... is not iterable` in `santaAngle`. `check-garland.mjs` now FAILs on any page error and takes `--dates all` (old code: 2 FAIL, new: 87/87 PASS) |
 
 ## Owner decisions to remember
+- **Poland (PL, PLN) added (owner 2026-11-26: "adaugam polonia limba si currency, tradu tu").** Cards = the client's PL tab (gid
+  1526370949, added to `data/source/sheet.json` by hand from the public CSV export; 3 columns, no "credited" column) plus the
+  fixes of `plClientFixes()` in `scripts/import-sheet.mjs`: game line "na <game>" from EN_GBP (the tab has none), "DARMOWE SPINY"
+  after 2/3/4, colons in the term rows (label | value layout) and "gru.", locked-card day (the tab wrote the next day). The UI
+  ELEMENT tab has no PL column: interface + 26 location names are the agency's (`PL_UI`; "DZISIEJSZY POSTÓJ", not "PRZYSTANEK",
+  which filled the label edge to edge at 390/320). PLN amounts come only from the PL tab; the links sheet has no PLN column, so
+  `import-links.mjs` skips PL in its diff. The five PL points are open for the client in `data/ISSUES.md`. A "pl" browser gets PL.
 - Minimum headline font is 26px in all markets. The TR currency split is OK.
 - FR_CA uses the CLIENT's French (EN_CAD tab, "vous", no FR_CA tab). EN_CAD stays English from a frozen snapshot
   (`data/source/en-cad-english.json`). Agency fixes on FR_CA only: the deadline row "Valide jusqu’au : 23 h 59, 1er déc."
@@ -70,7 +77,8 @@ The 2026-11-19 / 11-20 table is in git history: `git show 93dd51c:docs/HANDOFF.m
 - `data/ISSUES.md` is the list of questions for the client.
 
 ## Open
-Nothing open for the client.
+- For the client: the 5 PL points in `data/ISSUES.md` (game line, locked-card day, spins grammar, term-row colons, PLN amounts not in the links sheet).
+- Known, not PL-specific: `check-texts --mobile --ended` at 320px flags the route dot 2.1px over the campaign-ended text in every market (EN_GBP, DE, PL alike); 360 and 390 pass.
 - Known check limit: `check-label-centre --ended` does not position-check past slots 1-2.
 - Nothing open for the owner either. Next likely step: hand `ChristmasJourney.zip` to the client (owner does it).
 - 2026-11-26: zip rebuilt after Moldova was switched off (911423 bytes, 14 markets; `npm test` 70/70; `?date=` and MDL checks ok). Root layout matches

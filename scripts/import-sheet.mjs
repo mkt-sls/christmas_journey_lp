@@ -18,6 +18,11 @@
 // EN_CAD (the English page): an English EN_CAD tab is used as is; if the tab is French, the English text comes from the frozen
 // data/source/en-cad-english.json (it exists nowhere else any more). The script stops if that file is missing or not English.
 // Neither tab French nor English: the script stops.
+//
+// PL (Poland, PLN; owner 2026-11-26 "adaugam polonia"): cards = the client's PL tab (3 columns: active, expired, locked; no "bonus
+// credited" column) with the agency fixes of plClientFixes(). The UI ELEMENT tab has no PL column, so the PL interface texts and
+// the 26 location names are agency translations (PL_UI below). The PLN amounts come from the PL tab only: the links sheet has no
+// PLN column (copy of 2026-11-23), so scripts/import-links.mjs cannot compare them.
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -72,7 +77,8 @@ if (frCaClientTab) {
   console.log('[tab] no French tab in the sheet: FR_CA cards come from data/source/fr-ca-french.json');
 }
 const NBSP = ' ';
-const UI_LANGS = ['EN', 'RU', 'FR_CA', 'DE', 'BG', 'NL', 'RO_MD', 'TR', 'NO', 'IT', 'DA', 'SV'];
+const SHEET_UI_LANGS = ['EN', 'RU', 'FR_CA', 'DE', 'BG', 'NL', 'RO_MD', 'TR', 'NO', 'IT', 'DA', 'SV']; // columns of the UI ELEMENT tab
+const UI_LANGS = [...SHEET_UI_LANGS, 'PL']; // PL: agency translation (PL_UI), the sheet has no PL column
 
 // ---- market table ------------------------------------------------------------
 // flag = lowercase ISO country code (also used for the flag image name); flagEmoji for text-only use.
@@ -86,6 +92,7 @@ const MARKETS = [
   { id: 'DA', uiLang: 'DA', currency: 'DKK', flag: 'dk', flagEmoji: '🇩🇰', label: 'Dansk' },
   { id: 'SV', uiLang: 'SV', currency: 'SEK', flag: 'se', flagEmoji: '🇸🇪', label: 'Svenska' },
   { id: 'NO', uiLang: 'NO', currency: 'NOK', flag: 'no', flagEmoji: '🇳🇴', label: 'Norsk' },
+  { id: 'PL', uiLang: 'PL', currency: 'PLN', flag: 'pl', flagEmoji: '🇵🇱', label: 'Polski' },
   { id: 'EN_AUD', uiLang: 'EN', currency: 'AUD', flag: 'au', flagEmoji: '🇦🇺', label: 'English (Australia)' },
   { id: 'EN_GBP', uiLang: 'EN', currency: 'GBP', flag: 'gb', flagEmoji: '🇬🇧', label: 'English (UK)' },
   { id: 'EN_USD', uiLang: 'EN', currency: 'USD', flag: 'us', flagEmoji: '🇺🇸', label: 'English (US)' },
@@ -99,7 +106,7 @@ const BROWSER_MAP = {
   exact: { 'en-AU': 'EN_AUD', 'en-CA': 'EN_CAD', 'en-US': 'EN_USD', 'fr-CA': 'FR_CA' },
   language: {
     en: 'EN_GBP', de: 'DE', bg: 'BG', nl: 'NL', it: 'IT', ru: 'RU', tr: 'TR',
-    da: 'DA', sv: 'SV', nb: 'NO', no: 'NO', nn: 'NO', ro: 'RO_MDL',
+    da: 'DA', sv: 'SV', nb: 'NO', no: 'NO', nn: 'NO', pl: 'PL', ro: 'RO_MDL',
   },
   fallback: 'EN_GBP',
 };
@@ -132,13 +139,13 @@ function buildUi() {
   const ui = sheet['UI ELEMENT'];
   const mainCols = ui.main.columns; // GROUP, KEY / DAY, EN SOURCE, EN, RU, ...
   const langIdx = {};
-  UI_LANGS.forEach((l) => {
+  SHEET_UI_LANGS.forEach((l) => {
     const i = mainCols.indexOf(l);
     if (i < 0) throw new Error('UI column missing: ' + l);
     langIdx[l] = i;
   });
   const out = {};
-  for (const l of UI_LANGS) out[l] = { lang: l, strings: {}, extras: {}, locations: {} };
+  for (const l of SHEET_UI_LANGS) out[l] = { lang: l, strings: {}, extras: {}, locations: {} };
 
   const seenKeys = new Map();
   for (const row of ui.main.rows) {
@@ -146,9 +153,9 @@ function buildUi() {
     if (group === 'UI') {
       if (seenKeys.has(key)) issueDupKey(key);
       seenKeys.set(key, true);
-      for (const l of UI_LANGS) out[l].strings[key] = row[langIdx[l]];
+      for (const l of SHEET_UI_LANGS) out[l].strings[key] = row[langIdx[l]];
     } else if (group === 'LOCATION') {
-      for (const l of UI_LANGS) out[l].locations[key] = row[langIdx[l]];
+      for (const l of SHEET_UI_LANGS) out[l].locations[key] = row[langIdx[l]];
     } else {
       unparsed.push(`UI ELEMENT row with unknown group "${group}"`);
     }
@@ -166,7 +173,7 @@ function buildUi() {
       unparsed.push(`UI extra row not recognised: ${row[0]}`);
       continue;
     }
-    for (const l of UI_LANGS) out[l].extras[ctaKeys[k]] = row[ctaCols.indexOf(l)];
+    for (const l of SHEET_UI_LANGS) out[l].extras[ctaKeys[k]] = row[ctaCols.indexOf(l)];
   }
   // Second block: columns are EN SOURCE, EN, RU, FR_CA, DE, BG, NL, RO_MD, TR, NO, IT, DA, SV.
   const extraLangs = ['EN', 'RU', 'FR_CA', 'DE', 'BG', 'NL', 'RO_MD', 'TR', 'NO', 'IT', 'DA', 'SV'];
@@ -204,7 +211,7 @@ function issueDupKey(key) {
 const NUM_RE = /\d{1,3}(?:[   .,]\d{3})+(?!\d)|\d+/g;
 const toInt = (s) => parseInt(s.replace(/[   .,]/g, ''), 10);
 const numbersIn = (s) => (s.match(NUM_RE) || []).map(toInt);
-const CURRENCY_TOKENS = ['EUR', '€', 'GBP', 'USD', 'CAD', 'AUD', 'TRY', 'DKK', 'SEK', 'NOK', 'MDL', '£', '$', '₺'];
+const CURRENCY_TOKENS = ['EUR', '€', 'GBP', 'USD', 'CAD', 'AUD', 'TRY', 'DKK', 'SEK', 'NOK', 'MDL', 'PLN', '£', '$', '₺'];
 
 function currencyIn(s) {
   const found = CURRENCY_TOKENS.filter((t) => s.includes(t));
@@ -302,13 +309,16 @@ function buildMarketCards(market, uiByLang, tabOverride) {
   const tab = tabOverride || sheet[market.id];
   if (!tab) throw new Error('Missing tab for market ' + market.id);
   if (tab.rows.length !== DAYS) throw new Error(`${market.id}: ${tab.rows.length} rows, expected ${DAYS}`);
+  // 4 columns (active, credited, expired, locked) in every tab except PL, which has no "credited" column (active, expired, locked)
+  const col = tab.columns.length === 3 ? { active: 0, expired: 1, locked: 2 } : tab.columns.length === 4 ? { active: 0, expired: 2, locked: 3 } : null;
+  if (!col) throw new Error(`${market.id}: ${tab.columns.length} columns, expected 3 or 4`);
   const days = [];
   for (let d = 1; d <= DAYS; d++) {
     const row = tab.rows[d - 1];
     const raw = {
-      active: row[0].split('\n'),
-      expired: row[2].split('\n'),
-      locked: row[3].split('\n'),
+      active: row[col.active].split('\n'),
+      expired: row[col.expired].split('\n'),
+      locked: row[col.locked].split('\n'),
     };
     days.push({ day: d, raw });
   }
@@ -436,8 +446,164 @@ function frCaClientFixes(days) {
   }
 }
 
+// ---- PL cards, the client's PL tab ------------------------------------------------------------------------
+// Owner 2026-11-26 ("ai grija la traducere si la amplasare"): the client's Polish, with ONLY these fixes (the sheet is untouched):
+//   a. free-spin days: the PL tab has no game line (every other market has one). "na <game>" is added under the amount, with the
+//      game name of the EN_GBP tab ("82 darmowe spiny na Thunder Coins: Hold and Win" is the usual Polish casino wording).
+//   b. "DARMOWYCH SPINÓW" after 2, 3, 4 (not 12-14) is a grammar error: Polish says "82 DARMOWE SPINY", "65 DARMOWYCH SPINÓW".
+//   c. term rows get the colon the card splits on ("Min. depozyt: 155 PLN", "Wymagany obrót: x25", "Ważne do: 23:59, 1 gru."),
+//      so they show label | value like every market. "gru." takes the abbreviation dot, like the route tags ("7 GRU.").
+//   d. locked card: the PL tab writes the NEXT day ("DZIEŃ 1 ... OTWARCIE 2 GRUDNIA ... ZABLOKOWANE · 2 GRU", day 26 "27 GRUDNIA");
+//      every other market writes the card's own day ("Opens 1 December", "Locked · 1 Dec"), so it becomes the card's day.
+// A line that does not look as expected is left as in the sheet and listed under "Cells that could not be read cleanly".
+const plFixCounts = { game: 0, plural: 0, colon: 0, lockedDay: 0 };
+const plSpinsPlural = (n) => n % 10 >= 2 && n % 10 <= 4 && !(n % 100 >= 12 && n % 100 <= 14);
+function plClientFixes(days, gbpRef) {
+  for (const d of days) {
+    const g = gbpRef[d.day - 1];
+    for (const state of ['active', 'expired']) {
+      const lines = d.raw[state];
+      const where = `PL day ${d.day} (${state} card)`;
+      if (lines.length !== 8) {
+        unparsed.push(`${where}: ${lines.length} lines, expected 8; PL fixes not applied`);
+        continue;
+      }
+      const sm = lines[2].match(/^(\d+) DARMOWYCH SPINÓW$/);
+      if (sm && plSpinsPlural(Number(sm[1]))) {
+        lines[2] = `${sm[1]} DARMOWE SPINY`;
+        plFixCounts.plural++;
+      }
+      const term = [
+        [3, /^Min\. depozyt (\d[\d  ]* PLN)$/, (m) => `Min. depozyt: ${m[1]}`],
+        [4, /^Wymagany obrót (x\d+)$/, (m) => `Wymagany obrót: ${m[1]}`],
+        [5, /^Ważne do (\d{1,2}:\d{2}, \d{1,2} gru)\.?$/, (m) => `Ważne do: ${m[1]}.`],
+      ];
+      for (const [i, re, to] of term) {
+        const m = lines[i].match(re);
+        if (m) {
+          lines[i] = to(m);
+          plFixCounts.colon++;
+        } else unparsed.push(`${where}: term row "${lines[i]}" is not in the expected form, left as in the sheet`);
+      }
+      if (g.type === 'freespins') {
+        if (/SPIN/.test(lines[2]) && g.game) {
+          lines.splice(3, 0, `na ${g.game}`);
+          plFixCounts.game++;
+        } else unparsed.push(`${where}: EN_GBP has free spins on "${g.game}" but the PL amount is "${lines[2]}"; no game line added`);
+      }
+    }
+    const lk = d.raw.locked;
+    if (lk.length !== 6) {
+      unparsed.push(`PL day ${d.day} (locked card): ${lk.length} lines, expected 6; PL fixes not applied`);
+      continue;
+    }
+    const om = lk[2].match(/^OTWARCIE (\d{1,2}) GRUDNIA$/);
+    const zm = lk[4].match(/^ZABLOKOWANE · (\d{1,2}) GRU\.?$/);
+    if (om && zm && Number(om[1]) === Number(zm[1]) && [d.day, d.day + 1].includes(Number(om[1]))) {
+      if (Number(om[1]) === d.day + 1) plFixCounts.lockedDay++;
+      lk[2] = `OTWARCIE ${d.day} GRUDNIA`;
+      lk[4] = `ZABLOKOWANE · ${d.day} GRU.`;
+    } else unparsed.push(`PL day ${d.day} (locked card): "${lk[2]}" / "${lk[4]}" not in the expected form, left as in the sheet`);
+  }
+}
+
 // ---- main --------------------------------------------------------------------
 const { out: uiAll, timerRowSeen } = buildUi();
+
+// PL interface (owner 2026-11-26: "tradu tu", the agency translates it; the UI ELEMENT tab has no PL column). Informal "ty", like
+// the client's PL card text ("Wróć jutro", "WPŁAĆ I ODBIERZ"); the card words are reused where the UI repeats them (step 3 =
+// card button, "Pełny regulamin", "NIESPODZIANKA", "Prezent wygasł"). Sample dates/time follow the sheet's Dec-7 samples so the
+// template step below turns them into {date} / {time} like every other language. Plural-free label forms where a number changes
+// ("Zebrane prezenty: 4"). "campaign_ended" and "step3_body" come from CAMPAIGN_ENDED / STEP3_BODY like every language.
+const PL_UI = {
+  strings: {
+    brand: 'Jackpot',
+    login: 'Zaloguj się',
+    campaign_dates: '1–26 GRUDNIA · 26 PREZENTÓW',
+    campaign_title: 'Świąteczna podróż',
+    subtitle: 'Podążaj za Świętym Mikołajem przez zaśnieżoną angielską wioskę. Każdego dnia odblokowuje się nowy prezent: otwórz go i odbierz swój bonus.',
+    today: 'DZIŚ',
+    '26 DAYS': '26 DNI',
+    yesterday: 'WCZORAJ · 6 GRU.',
+    todays_stop: 'DZISIEJSZY POSTÓJ · 7 GRU.',
+    tomorrow: 'JUTRO · 8 GRU.',
+    in_two_days: 'ZA 2 DNI · 9 GRU.',
+    missed: 'PRZEGAPIONY · 6 GRU.',
+    open_gift: 'OTWÓRZ PREZENT',
+    unlocks_in: 'Otwarcie za 14:32:08',
+    how_it_works: 'Jak to działa',
+    step1_title: 'Wracaj codziennie',
+    step1_body: 'Od 1 do 26 grudnia każdego dnia odblokowuje się nowe miejsce.',
+    step2_title: 'Otwórz prezent',
+    step2_body: 'Kliknij dzisiejszy świecący prezent, aby odkryć swój bonus.',
+    step3_title: 'Wpłać i odbierz',
+    step3_body: '',
+    responsible: '18+ · Graj odpowiedzialnie',
+    campaign_terms: 'Obowiązuje pełny regulamin promocji',
+    day_of: 'Dzień 7 z 26',
+    gifts_collected: 'Zebrane prezenty: 4',
+    next_gift: 'Następny prezent za',
+    gift_timer: '14:32:08',
+    bonus_credited: 'Bonus przyznany',
+    gift_expired: 'Prezent wygasł',
+    locked: 'Zablokowane',
+    processing: 'Przetwarzanie...',
+    terms_conditions: 'Regulamin',
+    full_terms: 'Pełny regulamin',
+    surprise_gift: 'NIESPODZIANKA',
+    opens_dec8: 'Otwarcie 8 grudnia',
+    come_back_tomorrow: 'Wróć jutro, aby odblokować ten prezent',
+  },
+  extras: {
+    cta_primary: 'Wpłać i odbierz',
+    cta_processing: 'Przetwarzanie...',
+    cta_terms: 'Regulamin',
+    day_7: 'Dzień 7',
+    of_26: 'z 26',
+    gifts_collected_4: 'Zebrane prezenty: 4',
+    next_gift_in: 'Następny prezent za',
+  },
+  locations: {
+    1: 'Sekrety Mikołaja',
+    2: 'Jackpot pod choinką',
+    3: 'Piernikowy domek',
+    4: 'Fabryka prezentów Mikołaja',
+    5: 'Zaśnieżony park',
+    6: 'Sklep z zabawkami',
+    7: 'Plac Mikołaja',
+    8: 'Kaplica życzeń',
+    9: 'Magiczna karuzela',
+    10: 'Szczęśliwa uliczka',
+    11: 'Skarb bałwana',
+    12: 'Poczta Mikołaja',
+    13: 'Lodowy pałac',
+    14: 'Sklep cudów',
+    15: 'Jarmark świąteczny',
+    16: 'Zimowy ogród',
+    17: 'Zaczarowany las',
+    18: 'Śnieżna jaskinia',
+    19: 'Lodowisko pod gwiazdami',
+    20: 'Zorza polarna',
+    21: 'Nocny ekspres',
+    22: 'Zaśnieżona chatka',
+    23: 'Sejf Mikołaja',
+    24: 'Tajny pokój',
+    25: 'Worek z prezentami',
+    26: 'Skrzynia z jackpotem',
+  },
+};
+{
+  // same keys as the sheet's English (a key the sheet adds later must get a PL text here; be_gamble_aware is dropped below anyway)
+  const en = uiAll.EN;
+  const keys = (o) => Object.keys(o).sort().join('|');
+  const enStrings = Object.fromEntries(Object.entries(en.strings).filter(([k]) => k !== 'be_gamble_aware'));
+  for (const part of ['strings', 'extras', 'locations']) {
+    const ref = part === 'strings' ? enStrings : en[part];
+    if (keys(PL_UI[part]) !== keys(ref)) throw new Error(`PL_UI.${part}: keys differ from the sheet's EN keys; add or remove PL texts in scripts/import-sheet.mjs`);
+  }
+  uiAll.PL = { lang: 'PL', strings: { ...PL_UI.strings }, extras: { ...PL_UI.extras }, locations: Object.fromEntries(Object.entries(PL_UI.locations).map(([k, v]) => [String(k), v])) };
+  log('PL interface: agency translation (PL_UI), the sheet has no PL column');
+}
 
 // Known fix 2 + 3 on UI strings
 {
@@ -486,6 +652,7 @@ const STEP3_BODY = {
   IT: 'Deposita entro le 23:59 per riscuotere il bonus del giorno.',
   DA: 'Indbetal inden kl. 23:59 for at hente dagens bonus.',
   SV: 'Sätt in före kl. 23:59 för att hämta dagens bonus.',
+  PL: 'Wpłać do 23:59, aby odebrać dzisiejszy bonus.',
 };
 for (const l of UI_LANGS) {
   if (!STEP3_BODY[l]) throw new Error('STEP3_BODY missing for ' + l);
@@ -578,6 +745,8 @@ const CAMPAIGN_ENDED = {
   IT: 'Il Viaggio di Natale è terminato. Grazie per aver viaggiato con noi!',
   DA: 'Juleeventyret er slut. Tak, fordi du var med på rejsen!',
   SV: 'Julresan är slut. Tack för att du följde med på resan!',
+  // PL: no past-tense verb after "ty" (it would force a gender: "podróżowałeś/aś"), same reason as RU
+  PL: 'Świąteczna podróż dobiegła końca. Dziękujemy za wspólną podróż!',
 };
 for (const l of UI_LANGS) {
   if (!CAMPAIGN_ENDED[l]) throw new Error('CAMPAIGN_ENDED missing for ' + l);
@@ -604,6 +773,10 @@ for (const m of MARKETS) {
     day: e.day,
   }));
 }
+
+// PL: the client's PL tab + plClientFixes (needs the EN_GBP game names)
+plClientFixes(rawByMarket.PL, gbpReference);
+addFix(`PL cards (client's PL tab): game line "na <game>" added on ${plFixCounts.game / 2} free-spin days; "DARMOWE SPINY" after 2/3/4 on ${plFixCounts.plural / 2} days; colon added in ${plFixCounts.colon} term rows (label | value layout, "gru."); locked card date set to the card's own day on ${plFixCounts.lockedDay} days (the tab wrote the next day).`);
 
 const cardsOut = {};
 for (const m of MARKETS) {
@@ -680,6 +853,7 @@ for (const m of MARKETS) {
     body.translatedBy = 'client (French in EN_CAD tab, 2026-11-20); agency fixes: deadline row layout, Xmas, 1 000, 1er';
     body.sourceMarket = 'EN_CAD';
   }
+  if (m.id === 'PL') body.translatedBy = 'client (PL tab, 2026-11-26); agency fixes: game line, DARMOWE SPINY after 2-4, term-row colons and "gru.", locked card day';
   writeJson(`data/cards/${m.id}.json`, body);
 }
 writeJson('data/markets.json', LIVE_MARKETS);
@@ -806,6 +980,18 @@ section(
     'Non-breaking space before ":" in the intro text ("chaque jour : ouvre-le"), same words as the sheet.',
     'Not changed, for information: the client’s card text uses "vous" ("Déposez et réclamez", "Revenez demain") while the client’s interface column uses "tu" ("Dépose et réclame", "Reviens demain"). Both are shown as the client wrote them.',
   ].map((text) => ({ text, decided: true })),
+);
+
+section(
+  'PL (Poland, PLN) - the client’s PL tab, with fixes - please check',
+  'The page uses the client’s PL tab for the cards (added to the sheet by 2026-11-26) and these fixes, applied on every import (the sheet is untouched). The UI ELEMENT tab has no PL column: the agency translated the PL interface texts and the 26 location names (scripts/import-sheet.mjs, PL_UI).',
+  [
+    'Free-spin days (2, 4, 5, 6, 7, 9, 11, 12, 13, 14, 16, 18, 19, 20, 22, 23, 25): the PL tab has no game name. The page adds "na <game>" under the amount with the game of the EN_GBP tab (for example day 2 "82 DARMOWE SPINY / na Thunder Coins: Hold and Win"). Please confirm or add the game line to the PL tab.',
+    'Locked card: the PL tab writes the next day (day 1 "OTWARCIE 2 GRUDNIA", "ZABLOKOWANE · 2 GRU"; day 26 "27 GRUDNIA"). Every other market writes the card’s own day ("Opens 1 December"), so the page shows "OTWARCIE 1 GRUDNIA", "ZABLOKOWANE · 1 GRU.".',
+    'Grammar: after 2, 3 or 4 (not 12-14) Polish says "DARMOWE SPINY", not "DARMOWYCH SPINÓW" (days 2, 9, 16, 18, 20, 22: 82, 74, 82, 63, 82, 62 spins). The page uses "DARMOWE SPINY" there.',
+    'Term rows: the page adds a colon ("Min. depozyt: 155 PLN", "Wymagany obrót: x25", "Ważne do: 23:59, 1 gru.") so the card shows them as label | value like every market; "gru." takes the abbreviation dot.',
+    'PLN amounts: the links sheet has no PLN column, so the PL amounts (for example day 1 "70% DO 1 500 PLN", min. deposit 155 PLN) come only from the PL tab and could not be cross-checked. Please confirm them, or add a PLN column to the links sheet.',
+  ],
 );
 
 // New for the client, 2026-11-20
