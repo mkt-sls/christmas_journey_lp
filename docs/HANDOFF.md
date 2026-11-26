@@ -1,4 +1,4 @@
-# Handoff — Christmas Journey LP (2026-11-23)
+# Handoff — Christmas Journey LP (2026-11-23, updated 2026-11-26)
 
 This file replaces the 2026-11-20 handoff. Older history: `git log`, `docs/PLAN.md`, `data/ISSUES.md`.
 
@@ -6,7 +6,7 @@ This file replaces the 2026-11-20 handoff. Older history: `git log`, `docs/PLAN.
 - Repo: https://github.com/mkt-sls/christmas_journey_lp, branch `main`. Every push to `main` deploys GitHub Pages
   (`.github/workflows/pages.yml`).
 - Live: https://mkt-sls.github.io/christmas_journey_lp/
-- Last pushed commit before this handoff: `10fd2c1`. The handoff file comes in the commit after it. Check that it is pushed and that the Pages run is green: `git log origin/main -1`, `gh run list -L 1`.
+- Last code commit covered by this handoff: `6fe54f0` (2026-11-23). This update comes in the commit after it. Check that it is pushed and that the Pages run is green: `git log origin/main -1`, `gh run list -L 1`.
 - Sources:
   - Copy sheet `1sepZEdNocfKZ6jvqroIgmZRAD2bxS3GSCdxIH89ynr0`. It is public; read each tab with `/export?format=csv&gid=<gid>`.
   - Links sheet `1qpxJhrKTPyaUyGmJRrwPQNbh4T8s7458HJCCi2QwiTo`, tab JP gid 0. It is **private on purpose** (owner 2026-11-23; the public 401 is intended, nobody re-shares it). Check it in the owner's logged-in Chrome (Claude in Chrome): fetch `gviz/tq?tqx=out:html&gid=0` in a docs.google.com tab, parse with a trustedTypes policy for DOMParser, hash each row and compare with `data/source/links-sheet.txt` (2026-11-23: identical). The Drive connector cannot see the file.
@@ -39,6 +39,13 @@ The 2026-11-19 / 11-20 table is in git history: `git show 93dd51c:docs/HANDOFF.m
 | `8811313` | Header Login button removed on every market (owner 2026-11-23); `loginLinkFor`, its test and `.btn-outline` CSS gone; the `login` keys in `data/ui/*.json` stay unused |
 | `c45c694` | T&C: card "Full terms & conditions" and legal line "Full campaign terms apply" both open https://jack-pot-uk.top/bonus-policy in a new tab on every market; `data/ISSUES.md` open count 0 |
 | `10fd2c1` | `scripts/package.mjs` builds the client delivery `ChristmasJourney.zip` (gitignored) in the `JacPot_TEMPLATE.zip` layout |
+| `39cd462`, `c83910b` | Client zip ignores `?date=` (VITE_CLIENT build, the reader is compiled out); `package.mjs` fails if it comes back; image.jpg uses the Playwright clock |
+| `cf4d094` | Internal notes stay out of the client zip; `package.mjs` fails on any unexpected file type |
+| `6012269` | Per-day deposit links and promo codes are obfuscated in the bundle (`src/obfuscate.js`); `package.mjs` fails on plaintext |
+| `6b5b580` | DE: space after `·` in the hero eyebrow (import override) |
+| `1ae0a47` | BeGambleAware removed everywhere (owner 2026-11-23) |
+| `777a0e5` | Mobile: logo centred in the header (owner 2026-11-23) |
+| `6fe54f0` | Smaller market selector button; styled scrollbars (owner 2026-11-23) |
 
 ## Owner decisions to remember
 - Minimum headline font is 26px in all markets. The TR currency split is OK.
@@ -59,6 +66,10 @@ The 2026-11-19 / 11-20 table is in git history: `git show 93dd51c:docs/HANDOFF.m
 Nothing open for the client.
 - Known check limit: `check-label-centre --ended` does not position-check past slots 1-2.
 - Nothing open for the owner either. Next likely step: hand `ChristmasJourney.zip` to the client (owner does it).
+- 2026-11-26: zip rebuilt from `6fe54f0` on macOS (918388 bytes; `npm test` 68/68; `?date=` check ok). Root layout matches
+  the template (index.html, status.json, image.jpg + favicons and assets). The new image.jpg has no scrollbar strip.
+- Copy note, not acted on: the EN_GBP hero subtitle has an em dash ("every day — open it"). It comes from the sheet; the
+  owner decides whether to override it.
 
 ## Rules for every check run (learned the hard way)
 - After any route or Santa change, run `scripts/check-santa.mjs`. Eyeballing missed bugs three times.
@@ -68,3 +79,5 @@ Nothing open for the client.
   Check `git diff data/` after any import: it must be empty unless the client changed something.
 - Python never reads stdin from a terminal it does not have: use `</dev/null`.
 - If Orca is not installed on this PC, work directly but keep the same start/push discipline.
+- `package.mjs` on macOS: Playwright is not a project dependency. Install it outside the repo (for example in a scratch
+  folder) and run `PLAYWRIGHT_MODULE=<dir>/node_modules/playwright/index.mjs CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" node scripts/package.mjs`.
